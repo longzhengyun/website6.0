@@ -72,9 +72,9 @@ jobs:
           echo "secret scan OK"
 
       - name: Configure Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5   # v4 会忽略 enablement；v5 支持首部署自动建仓 Pages
         with:
-          enablement: automatic   # 首次部署自动建仓 Pages（Actions 构建型）；已存在则复用
+          enablement: automatic
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
