@@ -1,9 +1,55 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T09:51:20.669Z",
+  "generated_at": "2026-10-23T10:18:03.372Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "4fbe85ea055cb026",
+      "url": "https://www.infoq.cn/article/UmD4aAerZEts8sZ5t791?utm_source=rss&utm_medium=article",
+      "title_original": "刘铁岩、诺奖、图灵奖得主等嘉宾共话AI的下一个十年：Transformer一统天下之后，AI的下一张王牌是什么？",
+      "title_zh": "刘铁岩、诺奖、图灵奖得主等嘉宾共话AI的下一个十年：Transformer一统天下之后，AI的下一张王牌是什么？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T17:54:19.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
+      "fingerprint": "0c2c5e0ce7ccb409",
+      "url": "https://www.infoq.cn/article/AkDgwN6h72cqUOJ35Zok?utm_source=rss&utm_medium=article",
+      "title_original": "AI Agent 正在改写 CPU 的价值：当 Token 变成行动，算力竞争不再只是拼 GPU",
+      "title_zh": "AI Agent 正在改写 CPU 的价值：当 Token 变成行动，算力竞争不再只是拼 GPU",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T17:53:09.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
     {
       "fingerprint": "90770735688191cc",
       "url": "https://www.infoq.cn/article/Q6mgHWCSqV6KeZzee3NT?utm_source=rss&utm_medium=article",
@@ -281,6 +327,98 @@
       }
     },
     {
+      "fingerprint": "67985b9c44cab5dd",
+      "url": "https://juejin.cn/post/7699672273653350409",
+      "title_original": "如何使用 Python 在 Word 文档中创建和格式化列表",
+      "title_zh": "如何使用 Python 在 Word 文档中创建和格式化列表",
+      "summary_zh": "生成操作手册时，步骤必须带编号；整理需求清单时，条目通常用圆点；而在规格说明里，条目往往要分成\"1. 概述 / 1.1 背景 / 1.1.1 范围\"这样的多级结构。手工在 Word 里操作并不难，点一",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T10:14:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
+      "fingerprint": "dcca9f375db821b2",
+      "url": "https://juejin.cn/post/7699685792612270115",
+      "title_original": "uni-app 本地打包 iOS，在 Windows 上使用 KXBuild 产出 ipa 并上架的完整流程",
+      "title_zh": "uni-app 本地打包 iOS，在 Windows 上使用 KXBuild 产出 ipa 并上架的完整流程",
+      "summary_zh": "uni-app 本地打包 iOS，在 Windows 上用 KXBuild 导出 Xcode 工程、真机调试并构建 ipa 上架，不用排队等云打包。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T10:13:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
+      "fingerprint": "9bc6315b0464cba5",
+      "url": "https://juejin.cn/post/7699685792612253731",
+      "title_original": "Claude Code 入门必会：@、!、Slash Commands，一篇讲清楚",
+      "title_zh": "Claude Code 入门必会：@、!、Slash Commands，一篇讲清楚",
+      "summary_zh": "Claude Code 入门必会：@、!、Slash Commands，一篇讲清楚 一、先记住这张图：三个符号分别负责什么？ Claude Code 是面向终端和代码项目的 AI 编程工具。它可以阅读",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T10:11:48.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
+      "fingerprint": "8b17c845b00b61f8",
+      "url": "https://juejin.cn/post/7699645097806479396",
+      "title_original": "Flink ResourceManager启动流程源码深度剖析：从ClusterEntrypoint到Slot分配的完整链路",
+      "title_zh": "Flink ResourceManager启动流程源码深度剖析：从ClusterEntrypoint到Slot分配的完整链路",
+      "summary_zh": "上一篇讲了 Flink ApplicationMaster 的启动流程，AM 启动后会依次启动 ResourceManager、Dispatcher、REST 端点。这篇聚焦 ResourceMana",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T09:51:45.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
       "fingerprint": "d4dacc7769609347",
       "url": "https://juejin.cn/post/7699704049008377890",
       "title_original": "从 Jev 范式决策模型接入，到参与 Team 协作的完整实践",
@@ -324,6 +462,52 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "local-20261023095120"
+      }
+    },
+    {
+      "fingerprint": "42d9175a9bec5388",
+      "url": "https://juejin.cn/post/7699685792611909667",
+      "title_original": "影刀元素点击功能有什么替代方案？含 AI 自愈的几条实测路线",
+      "title_zh": "影刀元素点击功能有什么替代方案？含 AI 自愈的几条实测路线",
+      "summary_zh": "元素点击失效是所有 RPA 的通病。本文从排查清单、四条兜底路线讲到 AI 自愈和内网离线部署，附决策表与需求对照，回答\"影刀元素点击功能有什么替代方案\"这个问题。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T09:08:14.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
+      "fingerprint": "9fd7d9596cfbacc0",
+      "url": "https://juejin.cn/post/7699667640302141450",
+      "title_original": "Kimi K3.1 疑似现身 LMArena：匿名代号 Kibitz、SGLang 单日六条加固 PR，月底有望官宣",
+      "title_zh": "Kimi K3.1 疑似现身 LMArena：匿名代号 Kibitz、SGLang 单日六条加固 PR，月底有望官宣",
+      "summary_zh": "一个代号，一天之内凑齐四条旁证 2026-10-22 凌晨，LMArena 上多出两个匿名模型：Kibitz 和 Kalmia。名字不带任何厂商前缀，对战记录很快被截图传开。圈子里普遍的判断是，Kib",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T09:05:22.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
       }
     },
     {
@@ -534,6 +718,52 @@
       }
     },
     {
+      "fingerprint": "026f3f381f34fda0",
+      "url": "https://juejin.cn/post/7699528799918768169",
+      "title_original": "自动化发布器里最贵的 Bug：返回成功，但什么都没发生",
+      "title_zh": "自动化发布器里最贵的 Bug：返回成功，但什么都没发生",
+      "summary_zh": "三次真实的静默失败事故：按钮文案变了但请求没发、标题被文件覆盖、多账号串号。附 verify-first 发布器写法和提交前 8 条硬检查。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T05:15:58.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
+      "fingerprint": "f241218c49231c70",
+      "url": "https://juejin.cn/post/7699487378045894692",
+      "title_original": "LiteLLM 1.107.0 投毒排查实战：依赖、Docker、CI 环境分别怎么查？",
+      "title_zh": "LiteLLM 1.107.0 投毒排查实战：依赖、Docker、CI 环境分别怎么查？",
+      "summary_zh": "LiteLLM 1.107.0 供应链安全事件涉及 Python 依赖、容器镜像和 CI 环境。本文从工程排查出发，梳理版本核对、启动文件检查、镜像摘要验证、凭证轮换与日志审计等关键步骤",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T05:09:04.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
       "fingerprint": "3275d84acb5188c5",
       "url": "https://www.oschina.net/news/503171",
       "title_original": "SqlToy-ORM 能力全景介绍",
@@ -577,6 +807,29 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "local-20261023094915"
+      }
+    },
+    {
+      "fingerprint": "c5300850b302a53f",
+      "url": "https://juejin.cn/post/7699428155871100991",
+      "title_original": "SeaweedFS 原理与实践：从文件上传到分布式存储",
+      "title_zh": "SeaweedFS 原理与实践：从文件上传到分布式存储",
+      "summary_zh": "SeaweedFS 原理与实践：从文件上传到分布式存储 一张图片、一份文档或一段视频上传到分布式存储后，文件名由谁保存？内容放在哪台机器？增加存储节点后，系统又如何找到原来的文件？ 理解 Seawee",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T03:23:48.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
       }
     },
     {
@@ -741,6 +994,52 @@
       }
     },
     {
+      "fingerprint": "4e7e85b1f3779701",
+      "url": "https://juejin.cn/post/7699422260411383851",
+      "title_original": "Java 字符串拼接：+、StringBuilder、StringBuffer的区别",
+      "title_zh": "Java 字符串拼接：+、StringBuilder、StringBuffer的区别",
+      "summary_zh": "Java 字符串拼接：+、StringBuilder、StringBuffer的区别。StringBuilder、StringBuffer的对比。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T02:55:03.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
+      "fingerprint": "d209ba3e2a50beab",
+      "url": "https://juejin.cn/post/7699387374883455011",
+      "title_original": "大语言模型常见评估指标与经典模型架构解析",
+      "title_zh": "大语言模型常见评估指标与经典模型架构解析",
+      "summary_zh": "大语言模型常见评估指标与经典模型架构解析 一、NLP模型常用评估指标 在机器翻译、文本摘要、文本生成等任务中，我们需要客观指标量化模型输出文本质量，下面介绍工业界和学术界高频使用的三个指标：BLEU、",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T02:49:25.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
       "fingerprint": "05002e013ff87d94",
       "url": "https://juejin.cn/post/7699414743458791443",
       "title_original": "RAG 进阶：Agentic RAG 与多智能体协作（系列三·第5篇·收官）：生产级 Agentic RAG 系统全景",
@@ -902,6 +1201,52 @@
       }
     },
     {
+      "fingerprint": "b082b59b14beafcb",
+      "url": "https://juejin.cn/post/7699392912446980111",
+      "title_original": "Docker 部署 MaxKB：轻松搭建企业级智能体平台",
+      "title_zh": "Docker 部署 MaxKB：轻松搭建企业级智能体平台",
+      "summary_zh": "MaxKB 是一款面向企业和团队的开源智能体平台，旨在把知识库与对话模型放在一起，并通过文档分段和向量检索回答问题。本文将介绍如何通过 Docker Compose 部署 MaxKB，搭建企业知识问答",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T02:30:03.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
+      "fingerprint": "34dc886672ff8956",
+      "url": "https://juejin.cn/post/7699392912446930959",
+      "title_original": "对话一长，AI 就忘了你说过的话？Claude Code、Codex、Aider、WES Code 怎么压缩上下文",
+      "title_zh": "对话一长，AI 就忘了你说过的话？Claude Code、Codex、Aider、WES Code 怎么压缩上下文",
+      "summary_zh": "对话太长 AI 为什么会忘事？对比 Claude Code、Codex、Aider 让模型写总结的做法和 WES Code 的分层压缩，用 Go 程序演示怎样保住你交代过的约束。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T02:28:45.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
       "fingerprint": "bcb1fac885e4a2b3",
       "url": "https://juejin.cn/post/7699396410890665999",
       "title_original": "Embedding、向量与向量数据库：彻底理解 AI 是如何进行语义检索的",
@@ -968,6 +1313,52 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "local-20261023094915"
+      }
+    },
+    {
+      "fingerprint": "35223d32fdfe648e",
+      "url": "https://juejin.cn/post/7699372774717292554",
+      "title_original": "qwen-deep-research 接入实录：两阶段调用、SSE 解析、报告结构与 35 处不可追溯的引用",
+      "title_zh": "qwen-deep-research 接入实录：两阶段调用、SSE 解析、报告结构与 35 处不可追溯的引用",
+      "summary_zh": "两阶段协议 qwen-deep-research 不是一个普通的 chat 模型。它要求两阶段调用： 第一步只发用户问题，模型返回澄清式反问 第二步把「用户问题 + assistant 反问 + 用户",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T02:07:28.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
+      }
+    },
+    {
+      "fingerprint": "78f9125de29e1431",
+      "url": "https://juejin.cn/post/7699422260410810411",
+      "title_original": "HC05蓝牙模块主机与从机进行连接通信",
+      "title_zh": "HC05蓝牙模块主机与从机进行连接通信",
+      "summary_zh": "HC-05蓝牙模块采用串口通信，是一款基于 Bluetooth Specification V2.0 带 EDR 蓝牙协议的数传模块，模块主要采用串口AT指令的方式进行参数配置与数据通信",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-23T02:02:47.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T10:18:03.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023101803"
       }
     },
     {

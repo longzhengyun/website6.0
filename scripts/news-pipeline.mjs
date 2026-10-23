@@ -575,6 +575,9 @@ async function main() {
   writeFileSync(P.stats, statsJson, 'utf8');
   log('DONE', `mode=${feed.mode} items_total=${merged.length} new=${cleanNew.length} ai_enriched=${stats.counts.ai_enriched} re=${stats.counts.re_enriched} llm_calls=${stats.llm.calls} sources_ok=${stats.sources.filter((s) => s.status === 'ok').length}/${stats.sources.length}`);
   if (stats.errors.length) log('ERRORS', stats.errors.slice(-5).map((e) => String(e).slice(0, 200).replaceAll(LLM_KEY || '\u0000', '[REDACTED]')).join(' | '));
+  // per-source 失败概要（开发运维诉求）：仅失败源 id + 错误短文本，REDACTED，不打印响应体
+  const failedSources = stats.sources.filter((s) => s.status !== 'ok');
+  if (failedSources.length) log('SOURCES_FAILED', failedSources.map((s) => `${s.id}: ${String(s.error || 'unknown').slice(0, 160).replaceAll(LLM_KEY || '\u0000', '[REDACTED]')}`).join(' | '));
 }
 
 main().catch((e) => {
