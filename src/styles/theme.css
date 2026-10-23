@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+/* website6.0 设计 token —— 源：shared/website6.0-impl-design-spec.md v1.0 §2
+   双模式跟随系统；accent 每屏 ≤3 处；正文禁用朱红小字（亮色模式小字用 accent-ink-safe）。 */
+
+@theme {
+  --font-sans: "Geist Variable", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC",
+    ui-sans-serif, sans-serif;
+  --font-mono: "Geist Mono Variable", "SF Mono", "Cascadia Code", ui-monospace, monospace;
+
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-ink: var(--c-ink);
+  --color-ink-muted: var(--c-ink-muted);
+  --color-ink-faint: var(--c-ink-faint);
+  --color-line: var(--c-line);
+  --color-accent: var(--c-accent);
+  --color-accent-ink: var(--c-accent-ink);
+
+  --breakpoint-sm: 425px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
+
+  --radius: 0;
+}
+
+:root {
+  --c-bg: #fafaf8;
+  --c-surface: #ffffff;
+  --c-ink: #14161a;
+  --c-ink-muted: #5a5e66;
+  --c-ink-faint: #8b9098;
+  --c-line: #e3e2de;
+  --c-accent: #e5484d;
+  --c-accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #0b0d11;
+    --c-surface: #14171d;
+    --c-ink: #f2f3f0;
+    --c-ink-muted: #9ba3af;
+    --c-ink-faint: #5f6773;
+    --c-line: #262b33;
+    --c-accent: #5eead4;
+    --c-accent-ink: #0b0d11;
+    color-scheme: dark;
+  }
+}
+
+/* ---- 字号阶梯（M=375 基线 / D=≥768 覆写，spec §2.2）---- */
+.t-display {
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 620;
+}
+.t-h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 600;
+}
+.t-h2 {
+  font-size: 1.375rem;
+  line-height: 1.25;
+  font-weight: 560;
+}
+.t-h3 {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  font-weight: 540;
+}
+.t-body {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.t-small {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 440;
+}
+.t-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+@media (min-width: 768px) {
+  .t-display {
+    font-size: 6.5rem;
+  }
+  .t-h1 {
+    font-size: 2.75rem;
+  }
+  .t-h2 {
+    font-size: 1.5rem;
+  }
+  .t-h3 {
+    font-size: 1.25rem;
+  }
+  .t-body {
+    font-size: 1.0625rem;
+  }
+  .t-small {
+    font-size: 0.9375rem;
+  }
+  .t-label {
+    font-size: 0.8125rem;
+  }
+}
+
+/* 中文标题字重上限（spec §2.2 注意） */
+.zh-title {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* ---- 版心与栅格（spec §2.4）---- */
+.shell {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+@media (min-width: 426px) {
+  .shell {
+    padding-inline: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .shell {
+    max-width: 768px; /* 720 版心 + 2×24 内衬 */
+  }
+}
+@media (min-width: 1200px) {
+  .shell {
+    max-width: 1128px; /* 1080 内容 + 内衬 */
+  }
+  .shell-wide {
+    max-width: 1328px; /* 首页 hero 区 1280 */
+  }
+}
+
+/* 移动端底部 tab 条避让（spec §6.2：56px + 安全区） */
+.tab-bar {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 40;
+  height: calc(56px + env(safe-area-inset-bottom));
+  padding-bottom: env(safe-area-inset-bottom);
+  background: var(--c-surface);
+  border-top: 1px solid var(--c-line);
+}
+@media (min-width: 768px) {
+  .tab-bar {
+    display: none;
+  }
+  .pb-tab {
+    padding-bottom: 0 !important;
+  }
+}
+.tab-item {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
