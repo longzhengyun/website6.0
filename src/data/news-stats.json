@@ -1,0 +1,85 @@
+{
+  "run_id": "local-20261023053919",
+  "generated_at": "2026-10-23T05:39:19.016Z",
+  "mode": "rss_only",
+  "llm": {
+    "key_present": false,
+    "model": null,
+    "calls": 0,
+    "batches_failed": 0,
+    "aborted": false,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "sources": [
+    {
+      "id": "hn-frontpage",
+      "status": "ok",
+      "items_fetched": 20,
+      "items_new": 0,
+      "ms": 5226,
+      "error": null
+    },
+    {
+      "id": "webdev",
+      "status": "failed",
+      "items_fetched": 0,
+      "items_new": 0,
+      "ms": 10674,
+      "error": "fetch failed"
+    },
+    {
+      "id": "smashing",
+      "status": "ok",
+      "items_fetched": 40,
+      "items_new": 0,
+      "ms": 455,
+      "error": null
+    },
+    {
+      "id": "css-tricks",
+      "status": "ok",
+      "items_fetched": 15,
+      "items_new": 0,
+      "ms": 1216,
+      "error": null
+    },
+    {
+      "id": "mozilla-hacks",
+      "status": "ok",
+      "items_fetched": 20,
+      "items_new": 0,
+      "ms": 1921,
+      "error": null
+    },
+    {
+      "id": "simonwillison",
+      "status": "ok",
+      "items_fetched": 30,
+      "items_new": 0,
+      "ms": 1735,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs-ai",
+      "status": "failed",
+      "items_fetched": 0,
+      "items_new": 0,
+      "ms": 10336,
+      "error": "fetch failed"
+    }
+  ],
+  "counts": {
+    "fetched": 125,
+    "in_window": 0,
+    "deduped_existing": 25,
+    "new_items": 0,
+    "ai_enriched": 0,
+    "re_enriched": 0,
+    "dropped_invalid": 0
+  },
+  "news_items_total": 25,
+  "degraded_all_sources": false,
+  "errors": [],
+  "short_circuited": true
+}

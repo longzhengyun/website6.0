@@ -1,0 +1,587 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-23T05:39:05.857Z",
+  "mode": "rss_only",
+  "stats_ref": "news-stats.json",
+  "items": [
+    {
+      "fingerprint": "84dd324ab5985c4e",
+      "url": "https://endler.dev/2024/move-slow-and-fix-things/",
+      "title_original": "Move Slow and Fix Things",
+      "title_zh": "Move Slow and Fix Things",
+      "summary_zh": "Article URL: https://endler.dev/2024/move-slow-and-fix-things/ Comments URL: https://news.ycombinator.com/item?id=50204…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-23T05:12:39.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "d2e1c90caf13ead0",
+      "url": "https://news.ycombinator.com/item?id=50204125",
+      "title_original": "Median product \"lifespan\" has fallen from ~4y down to ~1.5y",
+      "title_zh": "Median product \"lifespan\" has fallen from ~4y down to ~1.5y",
+      "summary_zh": "The \"product graveyard\" of SaaSHub has been tracking the status (and lifespan) of hundreds of thousands of products. It…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-23T03:20:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "c0a20c3752cc5338",
+      "url": "https://www.awakin.org/v2/read/view.php?tid=468",
+      "title_original": "This I Believe",
+      "title_zh": "This I Believe",
+      "summary_zh": "Article URL: https://www.awakin.org/v2/read/view.php?tid=468 Comments URL: https://news.ycombinator.com/item?id=5020375…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-23T02:19:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "63640e7cc1c616d4",
+      "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
+      "title_original": "The foolishness of \"natural language programming\" (1978)",
+      "title_zh": "The foolishness of \"natural language programming\" (1978)",
+      "summary_zh": "Article URL: https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html Comments URL: https://news.ycombinator.c…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-23T00:52:01.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "1a74aa7e08c8384c",
+      "url": "https://www.maps.com/star-map-charts-stars-and-constellations-of-northern-hemisphere/",
+      "title_original": "Mapping the Northern Sky",
+      "title_zh": "Mapping the Northern Sky",
+      "summary_zh": "Article URL: https://www.maps.com/star-map-charts-stars-and-constellations-of-northern-hemisphere/ Comments URL: https:…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T23:56:39.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "9baa6083d4b5e7a6",
+      "url": "https://jank-lang.org/",
+      "title_original": "Jank – The native Clojure dialect with seamless C++ interop",
+      "title_zh": "Jank – The native Clojure dialect with seamless C++ interop",
+      "summary_zh": "Article URL: https://jank-lang.org/ Comments URL: https://news.ycombinator.com/item?id=50202762 Points: 56 # Comments: 2",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T23:56:36.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "eaf6e95c99cc4135",
+      "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+      "title_original": "Docker is weird",
+      "title_zh": "Docker is weird",
+      "summary_zh": "Article URL: https://codeandcake.dev/posts/2026-10-22-docker-is-weird Comments URL: https://news.ycombinator.com/item?i…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T23:45:56.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "f6a301346a05e615",
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "title_original": "LLMs are making formal software verification feasible at a much larger scale",
+      "title_zh": "LLMs are making formal software verification feasible at a much larger scale",
+      "summary_zh": "Article URL: https://www.anthropic.com/research/formal-verification Comments URL: https://news.ycombinator.com/item?id=…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T22:54:43.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "1c05c4a65f2eb7ae",
+      "url": "https://train.samismith.com/",
+      "title_original": "Railpass",
+      "title_zh": "Railpass",
+      "summary_zh": "Article URL: https://train.samismith.com/ Comments URL: https://news.ycombinator.com/item?id=50201414 Points: 79 # Comm…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T21:38:32.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "d1cc4ab1d566d815",
+      "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
+      "title_original": "DE STAAT - FREEDOM (Official Music Video)",
+      "title_zh": "DE STAAT - FREEDOM (Official Music Video)",
+      "summary_zh": "DE STAAT - FREEDOM (Official Music Video) OK well this is a first for me... at 00:44 in this new music video by Dutch a…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "simonwillison",
+      "source_name": "Simon Willison (Web.dev for AI)",
+      "original_lang": "en",
+      "published_at": "2026-10-22T19:42:26.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "4d0a18eaa787a25f",
+      "url": "https://github.com/maxilevi/project-hedra/tree/pre-ai",
+      "title_original": "Hedra is a 3D open world game I wrote from scratch while in highschool",
+      "title_zh": "Hedra is a 3D open world game I wrote from scratch while in highschool",
+      "summary_zh": "Article URL: https://github.com/maxilevi/project-hedra/tree/pre-ai Comments URL: https://news.ycombinator.com/item?id=5…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T18:44:36.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "39f0af155c70bc46",
+      "url": "https://arxiv.org/abs/2610.27251",
+      "title_original": "AI and the Enclosure of the Scientific Commons",
+      "title_zh": "AI and the Enclosure of the Scientific Commons",
+      "summary_zh": "Article URL: https://arxiv.org/abs/2610.27251 Comments URL: https://news.ycombinator.com/item?id=50199230 Points: 128 #…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T18:28:16.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "ee487a66d7e4ee85",
+      "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+      "title_original": "Donating Agent Skills to the Agentic AI Foundation",
+      "title_zh": "Donating Agent Skills to the Agentic AI Foundation",
+      "summary_zh": "Donating Agent Skills to the Agentic AI Foundation News today from Anthropic: We’re committed to keeping Agent Skills o…",
+      "tags": [
+        "standards",
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "simonwillison",
+      "source_name": "Simon Willison (Web.dev for AI)",
+      "original_lang": "en",
+      "published_at": "2026-10-22T18:09:56.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "6eb73169f84ce43f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title_original": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "title_zh": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "summary_zh": "Article URL: https://github.com/NVIDIA/OpenShell Comments URL: https://news.ycombinator.com/item?id=50198675 Points: 34…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T17:44:06.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "fee3d05e48142d8e",
+      "url": "https://www.taler.net/en/news/2026-13.html",
+      "title_original": "Getting ready to operate GNU Taler in Germany",
+      "title_zh": "Getting ready to operate GNU Taler in Germany",
+      "summary_zh": "Article URL: https://www.taler.net/en/news/2026-13.html Comments URL: https://news.ycombinator.com/item?id=50197404 Poi…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T16:14:31.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "c4ef979d44385fe4",
+      "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+      "title_original": "Every AI model has the same \"controversial\" take on humans",
+      "title_zh": "Every AI model has the same \"controversial\" take on humans",
+      "summary_zh": "Article URL: https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans Comments URL: https://news.ycombin…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T16:08:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "6619134087094c0c",
+      "url": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
+      "title_original": "Quoting Armin Ronacher",
+      "title_zh": "Quoting Armin Ronacher",
+      "summary_zh": "As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sin…",
+      "tags": [
+        "security",
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "simonwillison",
+      "source_name": "Simon Willison (Web.dev for AI)",
+      "original_lang": "en",
+      "published_at": "2026-10-22T15:34:13.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "045a2ef443d2dc19",
+      "url": "https://github.com/oosexgang/hackios-xnu-kernel",
+      "title_original": "Run full iOS 16.5 firmware on Android Devices",
+      "title_zh": "Run full iOS 16.5 firmware on Android Devices",
+      "summary_zh": "https://hackios-web.vercel.app/en Comments URL: https://news.ycombinator.com/item?id=50196718 Points: 370 # Comments: 1…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T15:26:22.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "fef8c35062d21620",
+      "url": "https://quad9.net/news/blog/au-revoir-france/",
+      "title_original": "Quad9 (DNS Resolver) to Exit France",
+      "title_zh": "Quad9 (DNS Resolver) to Exit France",
+      "summary_zh": "Article URL: https://quad9.net/news/blog/au-revoir-france/ Comments URL: https://news.ycombinator.com/item?id=50195959 …",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T14:32:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "4172a5d1f8093727",
+      "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+      "title_original": "eMudhra to exit global SSL/TLS certificate business",
+      "title_zh": "eMudhra to exit global SSL/TLS certificate business",
+      "summary_zh": "Article URL: https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business Comments URL: htt…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T13:33:39.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "3a48e2c07f84bde6",
+      "url": "https://www.404media.co/amanda-smith-opened-a-cashapp-in-her-name-she-faces-years-in-prison-cashapp-fraud/",
+      "title_original": "Woman charged with computer fraud due to scam CashApp account being in her name",
+      "title_zh": "Woman charged with computer fraud due to scam CashApp account being in her name",
+      "summary_zh": "Article URL: https://www.404media.co/amanda-smith-opened-a-cashapp-in-her-name-she-faces-years-in-prison-cashapp-fraud/…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T13:11:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "cda78f4c48ea7539",
+      "url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
+      "title_original": "Xbox wants you to pay 24 to 40 cents per hour to stream games you bought",
+      "title_zh": "Xbox wants you to pay 24 to 40 cents per hour to stream games you bought",
+      "summary_zh": "Article URL: https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-a…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T11:42:03.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "760ea34d457135c0",
+      "url": "https://news.ycombinator.com/item?id=50193416",
+      "title_original": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
+      "title_zh": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
+      "summary_zh": "I posted here about the then-upcoming PHP RCEs related to CVE-2026-109618 & CVE-2026-109619. I appreciate this has had …",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-22T10:11:44.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "de377fdb3304eb69",
+      "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+      "title_original": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+      "title_zh": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+      "summary_zh": "Today's PHP Security Release, and How We're Strengthening PHP Security If you're running anything on PHP it's vital you…",
+      "tags": [
+        "security",
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "simonwillison",
+      "source_name": "Simon Willison (Web.dev for AI)",
+      "original_lang": "en",
+      "published_at": "2026-10-21T18:41:53.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    },
+    {
+      "fingerprint": "24e7bc55449594d8",
+      "url": "https://simonwillison.net/2026/Oct/21/panache/",
+      "title_original": "Panache — RTS Belle Époque pour mobile",
+      "title_zh": "Panache — RTS Belle Époque pour mobile",
+      "summary_zh": "Panache — RTS Belle Époque pour mobile Well this is delightful: I released Battle Drones yesterday under an Apache 2.0 …",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "simonwillison",
+      "source_name": "Simon Willison (Web.dev for AI)",
+      "original_lang": "en",
+      "published_at": "2026-10-21T16:25:16.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-23T05:39:05.857Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "local-20261023053905"
+      }
+    }
+  ]
+}
