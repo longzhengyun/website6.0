@@ -36,6 +36,8 @@ jobs:
       LLM_API_KEY: ${{ secrets.LLM_API_KEY }}      # 未配置 => 后端脚本走降级模式
       LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}       # 可选：站主设 tongyi 切千问（DashScope）；未设/空 => 脚本默认 gemini
       LLM_MODEL: ${{ vars.LLM_MODEL }}             # 可选覆盖；缺省由脚本按 provider 兜底（gemini-2.5-flash / qwen-flash）
+      LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}       # 可选：tongyi 分支端点覆盖（站主按量付费域名）；未设/空 => dashscope 兼容模式默认
+      LLM_TOKEN_BUDGET: ${{ vars.LLM_TOKEN_BUDGET }} # 可选：单 run 累计 token 上限（防超额）；未设/非法/≤0 => 不限（≤100 calls 硬顶仍在）
       GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}       # 旧变量兼容（仅 gemini 分支生效），可留空
     steps:
       - name: Checkout

@@ -53,6 +53,12 @@ const MODEL =
   PROVIDER === 'tongyi'
     ? (process.env.LLM_MODEL || '').trim() || 'qwen-flash'
     : (process.env.LLM_MODEL || process.env.GEMINI_MODEL || '').trim() || 'gemini-2.5-flash';
+// tongyi 分支 base URL 可配置（站主按量付费端点域名与 dashscope 不同）；缺省 dashscope 兼容模式，向后兼容。
+// 红线：仅接受 https（Bearer key 不得明文出网）；尾部斜杠归一化后再拼 /chat/completions。
+const TONGYI_BASE_RAW = (process.env.LLM_BASE_URL || '').trim() || 'https://dashscope.aliyuncs.com/compatible-mode/v1';
+const TONGYI_BASE = (/^https:\/\//i.test(TONGYI_BASE_RAW) ? TONGYI_BASE_RAW : 'https://dashscope.aliyuncs.com/compatible-mode/v1').replace(/\/+$/, '');
+// 防超额（站主点名）：单次 run 累计 input+output token 上限；未设/非法/≤0 = 不限；≤100 calls/10 batch 硬顶不受影响
+const TOKEN_BUDGET = (() => { const n = Number.parseInt(process.env.LLM_TOKEN_BUDGET || '', 10); return Number.isFinite(n) && n > 0 ? n : null; })();
 const NOW = new Date();
 const fetchedAt = NOW.toISOString();
 
@@ -257,7 +263,7 @@ async function llmComplete({ system, user, jsonSchema }) {
 /** tongyi（千问/DashScope）走 OpenAI 兼容模式：response_format json_object 结构化输出；
  * 兼容模式无 responseSchema，字段约束由 SYSTEM_PROMPT + 应用层 postValidate 兜底（与 gemini 分支同一套后校验）。 */
 async function llmCompleteTongyi({ system, user }) {
-  const url = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
+  const url = `${TONGYI_BASE}/chat/completions`;
   const body = {
     model: MODEL,
     messages: [
@@ -323,7 +329,7 @@ async function main() {
     run_id: RUN_ID,
     generated_at: fetchedAt,
     mode: 'rss_only',
-    llm: { key_present: Boolean(LLM_KEY), provider: PROVIDER, model: LLM_KEY ? MODEL : null, calls: 0, batches_failed: 0, aborted: false, input_tokens: 0, output_tokens: 0 },
+    llm: { key_present: Boolean(LLM_KEY), provider: PROVIDER, model: LLM_KEY ? MODEL : null, token_budget: TOKEN_BUDGET, budget_exceeded: false, calls: 0, batches_failed: 0, aborted: false, input_tokens: 0, output_tokens: 0 },
     sources: [],
     counts: { fetched: 0, in_window: 0, deduped_existing: 0, new_items: 0, ai_enriched: 0, re_enriched: 0, dropped_invalid: 0 },
     news_items_total: 0,
@@ -433,6 +439,13 @@ async function main() {
     const enrichByFp = new Map();
     for (let b = 0; b < aiSet.length; b += CFG.batch_size) {
       if (stats.llm.aborted) break;
+      // 防超额：每批开跑前核累计 token；超限停后续批次（本批已计入的除外）
+      if (TOKEN_BUDGET != null && stats.llm.input_tokens + stats.llm.output_tokens >= TOKEN_BUDGET) {
+        stats.llm.budget_exceeded = true;
+        stats.errors.push(`token budget exceeded: used ${stats.llm.input_tokens + stats.llm.output_tokens} >= LLM_TOKEN_BUDGET ${TOKEN_BUDGET}, remaining batches skipped`);
+        log('BUDGET', `stop enrichment (used ${stats.llm.input_tokens + stats.llm.output_tokens} / ${TOKEN_BUDGET} tokens)`);
+        break;
+      }
       const chunk = aiSet.slice(b, b + CFG.batch_size);
       const batch = chunk.map(({ target }, idx) => ({
         id: `b${b}_${idx}`,
