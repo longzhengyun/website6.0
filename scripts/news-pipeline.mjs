@@ -325,13 +325,17 @@ async function main() {
   const sourcesCfg = JSON.parse(readFileSync(P.sources, 'utf8'));
   const schemaJson = JSON.parse(readFileSync(P.schema, 'utf8'));
   const enabled = sourcesCfg.sources.filter((s) => s.enabled);
+  // R17 裁定（产品 v1.6）：源级 lang 口径的展示过滤谓词——非中文源的 rss_only 展示形态不入 feed；
+  // ai 模式条目豁免（译文全覆盖）；一条规则同时覆盖新条目、存量清洗与补跑失败态，不做逐条文本语言推断
+  const srcLangById = new Map(sourcesCfg.sources.map((s) => [s.id, s.lang || 'en']));
+  const keepZhDisplay = (it) => it.pipeline?.mode === 'ai' || srcLangById.get(it.source_id) === 'zh';
   const stats = {
     run_id: RUN_ID,
     generated_at: fetchedAt,
     mode: 'rss_only',
     llm: { key_present: Boolean(LLM_KEY), provider: PROVIDER, model: LLM_KEY ? MODEL : null, token_budget: TOKEN_BUDGET, budget_exceeded: false, calls: 0, batches_failed: 0, aborted: false, input_tokens: 0, output_tokens: 0 },
     sources: [],
-    counts: { fetched: 0, in_window: 0, deduped_existing: 0, new_items: 0, ai_enriched: 0, re_enriched: 0, dropped_invalid: 0 },
+    counts: { fetched: 0, in_window: 0, deduped_existing: 0, new_items: 0, ai_enriched: 0, re_enriched: 0, dropped_invalid: 0, dropped_nonzh_r17: 0 },
     news_items_total: 0,
     degraded_all_sources: false,
     errors: [],
@@ -361,7 +365,10 @@ async function main() {
       });
       if (!r.ok) throw new Error(`http_${r.status}`);
       const xml = await r.text();
-      const items = parseFeed(xml, source).filter((i) => /^https?:\/\//.test(i.url || '') && i.title);
+      // schema 契约 url 必须 ^https://：feed 内 http 直链在解析处统一升级为 https（数据侧归一化，fp 与入库同源一致；schema 零漂移）
+      const items = parseFeed(xml, source)
+        .map((i) => ({ ...i, url: String(i.url || '').replace(/^http:\/\//i, 'https://') }))
+        .filter((i) => /^https?:\/\//.test(i.url || '') && i.title);
       rec.items_fetched = items.length;
       return { source, items, rec };
     } catch (e) {
@@ -398,6 +405,9 @@ async function main() {
     for (const it of sorted) {
       if (take >= cap) break;
       if (it._d < cutoff) continue;
+      // R17：降级模式（无 LLM key）下非中文源条目在候选层直接不进 feed（避免每轮重新抓取再丢弃的 churn）；
+      // ai 模式不受限——英文条目经译文全覆盖后豁免展示过滤
+      if (!LLM_KEY && source.lang !== 'zh') { stats.counts.dropped_nonzh_r17++; continue; }
       const fp = fingerprintOf(it.url);
       if (knownFp.has(fp) || seenThisRun.has(fp)) { stats.counts.deduped_existing++; continue; }
       seenThisRun.add(fp);
@@ -410,9 +420,11 @@ async function main() {
   stats.counts.new_items = candidates.length;
 
   // 5. 空增量短路（pipeline.md §1 步5：news.json 已存在且无新条目 => 不调 LLM、不改 news.json，仅写心跳后退出）
+  // R17 豁免：存量里有按源级 lang 口径应剔除的条目（如历史英文 rss_only）时不短路，走合并层一次性清洗
   const newOnes = candidates.map(({ item, source }) => buildDegradedItem(item, source, knownFp));
   let toWrite = newOnes;
-  if (!newOnes.length && existingFeed) {
+  const droppableExisting = existingFeed ? (existingFeed.items ?? []).filter((it) => !keepZhDisplay(it)).length : 0;
+  if (!newOnes.length && existingFeed && !droppableExisting) {
     stats.news_items_total = existingFeed.items?.length ?? 0;
     stats.short_circuited = true;
     const statsJsonS = JSON.stringify(stats, null, 2) + '\n';
@@ -517,9 +529,13 @@ async function main() {
     }
   }
 
-  // 7. 合并写出（新→旧排序、300 截断、剥离内部字段）
+  // 7. 合并写出（R17：源级 lang 口径展示过滤一条规则覆盖新旧+存量清洗；新→旧排序、300 截断、剥离内部字段）
   const cleanNew = toWrite.map((i) => { const { __new: _n, ...rest } = i; return rest; });
-  const merged = [...cleanNew, ...(existingFeed?.items ?? [])]
+  const preMerge = [...cleanNew, ...(existingFeed?.items ?? [])];
+  // 累计：候选层跳过（降级模式新 en 条目）+ 合并层剔除（存量一次性清洗 / ai 模式补跑失败批）
+  stats.counts.dropped_nonzh_r17 += preMerge.filter((it) => !keepZhDisplay(it)).length;
+  const merged = preMerge
+    .filter(keepZhDisplay)
     .sort((a, b) => b.published_at.localeCompare(a.published_at))
     .slice(0, CFG.total_cap);
   const anyAi = merged.some((i) => i.pipeline?.mode === 'ai' && i.pipeline?.enriched_by);

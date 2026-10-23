@@ -1,6 +1,6 @@
 {
-  "run_id": "local-20261023073838",
-  "generated_at": "2026-10-23T07:38:38.221Z",
+  "run_id": "local-20261023095120",
+  "generated_at": "2026-10-23T09:51:20.669Z",
   "mode": "rss_only",
   "llm": {
     "key_present": false,
@@ -19,8 +19,8 @@
       "id": "hn-frontpage",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 8,
-      "ms": 1309,
+      "items_new": 0,
+      "ms": 1431,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "failed",
       "items_fetched": 0,
       "items_new": 0,
-      "ms": 10732,
+      "ms": 10663,
       "error": "fetch failed"
     },
     {
@@ -36,7 +36,7 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 667,
+      "ms": 437,
       "error": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "ok",
       "items_fetched": 15,
       "items_new": 0,
-      "ms": 1320,
+      "ms": 1331,
       "error": null
     },
     {
@@ -52,7 +52,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 1586,
+      "ms": 1179,
       "error": null
     },
     {
@@ -60,7 +60,7 @@
       "status": "ok",
       "items_fetched": 30,
       "items_new": 0,
-      "ms": 1027,
+      "ms": 913,
       "error": null
     },
     {
@@ -68,20 +68,53 @@
       "status": "failed",
       "items_fetched": 0,
       "items_new": 0,
-      "ms": 10422,
+      "ms": 10333,
       "error": "fetch failed"
+    },
+    {
+      "id": "infoq-cn",
+      "status": "ok",
+      "items_fetched": 20,
+      "items_new": 0,
+      "ms": 125,
+      "error": null
+    },
+    {
+      "id": "oschina-news",
+      "status": "ok",
+      "items_fetched": 50,
+      "items_new": 0,
+      "ms": 265,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "status": "ok",
+      "items_fetched": 20,
+      "items_new": 3,
+      "ms": 126,
+      "error": null
+    },
+    {
+      "id": "ruanyifeng",
+      "status": "ok",
+      "items_fetched": 3,
+      "items_new": 0,
+      "ms": 812,
+      "error": null
     }
   ],
   "counts": {
-    "fetched": 125,
-    "in_window": 8,
-    "deduped_existing": 17,
-    "new_items": 8,
+    "fetched": 218,
+    "in_window": 3,
+    "deduped_existing": 68,
+    "new_items": 3,
     "ai_enriched": 0,
     "re_enriched": 0,
-    "dropped_invalid": 0
+    "dropped_invalid": 0,
+    "dropped_nonzh_r17": 25
   },
-  "news_items_total": 36,
+  "news_items_total": 76,
   "degraded_all_sources": false,
   "errors": []
 }

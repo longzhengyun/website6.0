@@ -93,10 +93,48 @@
       "type": "rss",
       "url": "https://www.infoq.cn/feed",
       "lang": "zh",
-      "enabled": false,
+      "enabled": true,
       "verify": true,
       "category_hint": ["frontend", "career", "security"],
-      "note": "中文源候选；实测可达后启用，AI 模式下中文源仅做去重+标签（已是中文不强行转写）"
+      "max_items_per_run": 20,
+      "note": "R17 裁定（产品 v1.6）中文主源，本地 preflight 200；verify 待 CI 一轮 sources_ok 后去除"
+    },
+    {
+      "id": "oschina-news",
+      "name": "OSCHINA 开源中国",
+      "type": "rss",
+      "url": "https://www.oschina.net/news/rss",
+      "lang": "zh",
+      "enabled": true,
+      "verify": true,
+      "category_hint": ["ai", "frontend", "tools"],
+      "max_items_per_run": 20,
+      "note": "R17 中文源候选；本地 preflight 200 items=50；verify 待 CI 一轮 sources_ok 后去除"
+    },
+    {
+      "id": "juejin",
+      "name": "掘金",
+      "type": "rss",
+      "url": "https://juejin.cn/rss",
+      "lang": "zh",
+      "enabled": true,
+      "verify": true,
+      "category_hint": ["frontend", "ai", "tools"],
+      "max_items_per_run": 15,
+      "note": "R17 中文源候选；本地 preflight 200 items=20；verify 待 CI 一轮 sources_ok 后去除"
+    },
+    {
+      "id": "ruanyifeng",
+      "name": "阮一峰的网络日志",
+      "type": "atom",
+      "url": "https://www.ruanyifeng.com/blog/atom.xml",
+      "lang": "zh",
+      "enabled": true,
+      "verify": true,
+      "category_hint": ["tools", "career"],
+      "max_items_per_run": 10,
+      "fetch_window_hours": 192,
+      "note": "R17 低频对冲源（周更，本地 preflight 200 items=3；窗口放宽到 8 天避免周更错过）；verify 待 CI 一轮 sources_ok 后去除"
     },
     {
       "id": "openai-news",
