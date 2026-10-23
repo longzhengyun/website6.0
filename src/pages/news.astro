@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { sortedItems, allTags, news } from '../data/news';
+---
+
+<BaseLayout
+  title={`业内新闻 — ${site.nameZh} · ${site.nameEn}`}
+  desc="业内新闻：标题 + 简介 + 直跳链接，构建期 AI 管线聚合更新。"
+>
+  <article class="shell">
+    <header class="pt-10 md:pt-16 pb-8">
+      <p class="t-label text-ink-faint uppercase">§02 / news</p>
+      <h1 class="t-h1 zh-title mt-2">业内新闻</h1>
+      <p class="t-small text-ink-muted mt-3 max-w-[42em]">
+        只展示标题、简介与直跳链接。内容由构建期管线聚合（RSS → 摘要 → 标签），运行时零密钥。
+      </p>
+    </header>
+
+    <div class="enhanced-only chip-row pb-6" data-filter role="group" aria-label="按标签筛选">
+      <button type="button" class="chip t-label" data-tag="all" aria-pressed="true">
+        all
+      </button>
+      {allTags.map((t) => (
+        <button type="button" class="chip t-label" data-tag={t} aria-pressed="false">
+          {t}
+        </button>
+      ))}
+    </div>
+
+    <ul class="flex flex-col gap-3">
+      {
+        sortedItems.map((item, i) => (
+          <li class="scroll-rise" data-tags={item.tags.join(' ')} data-news-item>
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="news-card block p-5 sm:p-6"
+            >
+              <div class="md:grid md:grid-cols-[3fr_1fr] md:gap-8">
+                <div class="min-w-0">
+                  <h2 class="t-h2 zh-title arrow-link">
+                    <span class="row-num t-label mr-3">{String(i + 1).padStart(2, '0')}/</span>
+                    {item.title}
+                    <span class="arrow text-[0.7em]" aria-hidden="true">↗</span>
+                  </h2>
+                  <p class="t-body text-ink-muted mt-2 clamp-2">{item.summary}</p>
+                </div>
+                <div class="md:text-right mt-3 md:mt-0">
+                  <p class="t-label text-ink-faint">{item.publishedAt}</p>
+                  <p class="t-label text-ink-faint mt-1 md:mt-3">{item.source}</p>
+                  <p class="t-label text-ink-faint mt-1 md:mt-3">
+                    {item.tags.map((t) => `#${t}`).join(' ')}
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <footer class="mt-10 border-t border-line pt-4">
+      <p class="t-label text-ink-faint uppercase">
+        data source: RSS · 构建期更新 · build {news.generatedAt.slice(0, 16)}Z · mode
+        {news.mode}
+      </p>
+    </footer>
+  </article>
+
+  <script>
+    const group = document.querySelector<HTMLElement>('[data-filter]');
+    const items = [...document.querySelectorAll<HTMLElement>('[data-news-item]')];
+    if (group) {
+      const buttons = [...group.querySelectorAll<HTMLButtonElement>('button[data-tag]')];
+      const apply = (tag: string) => {
+        for (const el of items) {
+          el.hidden = tag !== 'all' && !(el.dataset.tags ?? '').split(' ').includes(tag);
+        }
+      };
+      for (const btn of buttons) {
+        btn.addEventListener('click', () => {
+          for (const b of buttons) b.setAttribute('aria-pressed', String(b === btn));
+          apply(btn.dataset.tag ?? 'all');
+        });
+      }
+    }
+  </script>
+</BaseLayout>

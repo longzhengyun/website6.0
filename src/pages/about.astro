@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { skills, timeline } from '../data/about';
+
+const blocks = (rank: number) =>
+  Array.from({ length: 5 }, (_, i) => (i < rank ? '■' : '·'));
+---
+
+<BaseLayout
+  title={`关于 — ${site.nameZh} · ${site.nameEn}`}
+  desc="关于 jary8：技能栈、履历时间线与在线简历入口。"
+>
+  <article class="shell">
+    <header class="pt-10 md:pt-16 pb-8">
+      <p class="t-label text-ink-faint uppercase">§03 / about</p>
+      <h1 class="t-h1 zh-title mt-2">关于站长</h1>
+    </header>
+
+    <section aria-labelledby="self-title" class="mb-12 md:mb-16">
+      <h2 id="self-title" class="sr-only">自述</h2>
+      <p class="t-body max-w-[34em] text-balance">
+        我是 jary8，web 前端开发工程师，「佳瑞网」的站长。这个站点本身就是我的技术履历——
+        Astro 纯静态 + 可变字体与 scroll-driven 原生动效 + 构建期 AI 新闻管线，
+        浏览器能做的最新的事，我都尽量做成每天可用的东西。{site.tagline}
+      </p>
+    </section>
+
+    <section aria-labelledby="skills-title" class="mb-12 md:mb-16">
+      <h2 id="skills-title" class="t-h2 zh-title mb-6">
+        <span class="row-num t-label mr-3">01/</span>技能栈
+      </h2>
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        {
+          skills.map((s) => (
+            <li class="news-card p-4">
+              <h3 class="t-h3">{s.name}</h3>
+              <p class="rank-blocks t-label mt-2" aria-label={`熟练度 ${s.rank}/5`}>
+                {blocks(s.rank).map((b) => (
+                  <span class={b === '·' ? 'empty' : undefined} aria-hidden="true">
+                    {b}
+                  </span>
+                ))}
+              </p>
+              <p class="t-small text-ink-muted mt-2">{s.note}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section aria-labelledby="timeline-title" class="mb-12 md:mb-16">
+      <h2 id="timeline-title" class="t-h2 zh-title mb-6">
+        <span class="row-num t-label mr-3">02/</span>履历时间线
+      </h2>
+      <ol class="border-l border-line ml-1">
+        {
+          timeline.map((t) => (
+            <li class="pl-5 pb-8 relative">
+              <p class="t-label text-accent">{t.period}</p>
+              <h3 class="t-h3 mt-1">
+                {t.role}
+                <span class="t-small text-ink-muted"> · {t.org}</span>
+              </h3>
+              <p class="t-small text-ink-muted mt-2 max-w-[42em]">{t.desc}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <section aria-labelledby="ask-title" class="mb-12">
+      <h2 id="ask-title" class="sr-only">问站长（实验位）</h2>
+      <p class="ask-slot block px-4 py-3 text-[15px]" role="presentation">
+        &gt; ask jary8 --about
+        <span class="t-label text-ink-faint ml-3">［实验位 · 端侧 RAG 问答 P1 建设中］</span>
+      </p>
+    </section>
+
+    <section aria-labelledby="resume-link-title">
+      <h2 id="resume-link-title" class="sr-only">简历入口</h2>
+      <a
+        href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/resume`}
+        class="t-small text-ink-muted hover:text-accent focus-visible:text-accent transition-colors duration-120 arrow-link"
+      >
+        需要 PDF？→ 在线简历<span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <span class="t-label text-ink-faint ml-3">打印即导出</span>
+    </section>
+  </article>
+</BaseLayout>

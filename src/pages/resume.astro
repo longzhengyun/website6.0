@@ -1,0 +1,126 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { resume } from '../data/resume';
+import { skills } from '../data/about';
+---
+
+<BaseLayout
+  title={`在线简历 — ${resume.name}`}
+  desc="jary8 的在线简历：网页为主，打印导出 PDF。"
+  bare
+>
+  <div class="shell py-4 flex items-center justify-between no-print">
+    <a
+      href={import.meta.env.BASE_URL}
+      class="tab-item t-label text-ink arrow-link"
+      style="min-width:44px;min-height:44px;display:inline-flex"
+    >
+      ← jary8
+    </a>
+    <button
+      type="button"
+      class="chip t-label enhanced-only"
+      data-print
+    >
+      打印 / 导出 PDF
+    </button>
+  </div>
+
+  <article class="shell max-w-[680px] pb-24 md:pb-16">
+    <p class="t-small text-accent border border-line px-3 py-2 mb-8 no-print">
+      {resume.sampleNote}
+    </p>
+
+    <header class="mb-8">
+      <h1 class="t-h1 zh-title">{resume.name}</h1>
+      <p class="t-h3 text-ink-muted mt-1">{resume.title}</p>
+      <p class="t-label text-ink-faint mt-3">
+        <a
+          href={`mailto:${resume.contact.email}`}
+          class="hover:text-accent"
+          data-print-url={resume.contact.email}
+        >{resume.contact.email}</a
+        >
+        ·
+        <a
+          href={resume.contact.github}
+          class="hover:text-accent"
+          data-print-url={resume.contact.github}
+          >github.com/longzhengyun</a
+        >
+      </p>
+    </header>
+
+    <section class="resume-section mb-8" aria-labelledby="r-summary">
+      <h2 id="r-summary" class="t-label uppercase text-ink-faint border-b border-line pb-2 mb-4">
+        Summary
+      </h2>
+      <p class="t-body max-w-[42em]">{resume.summary}</p>
+    </section>
+
+    <section class="resume-section mb-8" aria-labelledby="r-skills">
+      <h2 id="r-skills" class="t-label uppercase text-ink-faint border-b border-line pb-2 mb-4">
+        Core Skills
+      </h2>
+      <p class="t-body">{skills.map((s) => s.name).join(' · ')}</p>
+    </section>
+
+    {
+      resume.experience.length > 0 && (
+        <section class="resume-section mb-8" aria-labelledby="r-exp">
+          <h2 id="r-exp" class="t-label uppercase text-ink-faint border-b border-line pb-2 mb-4">
+            Experience
+          </h2>
+          {resume.experience.map((e) => (
+            <div class="mb-6">
+              <h3 class="t-h3">
+                {e.role} <span class="t-small text-ink-muted">· {e.org}</span>
+              </h3>
+              <p class="t-label text-ink-faint md:text-right">{e.period}</p>
+              <ul class="t-body text-ink-muted mt-2 list-disc pl-5">
+                {e.bullets.map((b) => (
+                  <li>{b}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
+      )
+    }
+
+    <section class="resume-section mb-8" aria-labelledby="r-projects">
+      <h2 id="r-projects" class="t-label uppercase text-ink-faint border-b border-line pb-2 mb-4">
+        Selected Projects
+      </h2>
+      {
+        resume.projects.map((p) => (
+          <div class="mb-4">
+            <h3 class="t-h3">
+              {p.name} <span class="t-label text-ink-faint md:text-right">{p.period}</span>
+            </h3>
+            <p class="t-small text-ink-muted mt-1">{p.desc}</p>
+          </div>
+        ))
+      }
+    </section>
+
+    <section class="resume-section" aria-labelledby="r-edu">
+      <h2 id="r-edu" class="t-label uppercase text-ink-faint border-b border-line pb-2 mb-4">
+        Education
+      </h2>
+      {
+        resume.education.map((ed) => (
+          <p class="t-body">
+            {ed.school} <span class="t-label text-ink-faint">{ed.period}</span>
+          </p>
+        ))
+      }
+    </section>
+  </article>
+
+  <script>
+    document.querySelector<HTMLButtonElement>('[data-print]')?.addEventListener('click', () => {
+      window.print();
+    });
+  </script>
+</BaseLayout>

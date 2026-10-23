@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { sortedItems } from '../data/news';
+
+const latest = sortedItems.slice(0, 3);
+---
+
+<BaseLayout
+  title={`${site.nameZh} · ${site.nameEn} — ${site.tagline}`}
+  desc="web 前端工程师 jary8 的个人站：前沿前端技术与 AI 结合的落地实践。"
+>
+  <article>
+    <!-- Hero：站名版式 L1「双语叠印」（design-spec §3）+ 单一视觉焦点=字体呼吸 -->
+    <section class="shell shell-wide pt-[24vh] pb-16 md:pb-24" aria-labelledby="hero-title">
+      <h1 id="hero-title" class="t-display">
+        <span class="md:hidden zh-title block">佳瑞网</span>
+        <span
+          class="md:hidden hero-en-mono t-label inline-block mt-2 border-b-2 border-accent pb-1"
+        >
+          jary8
+        </span>
+        <span class="hidden md:inline">
+          <span class="hero-en">jary8</span><span class="text-accent">·</span><span
+            class="zh-title">佳瑞网</span
+          >
+        </span>
+      </h1>
+      <p class="t-h2 text-ink-muted mt-6 max-w-[34em]">
+        {site.tagline}<span class="prompt-cursor" aria-hidden="true">▍</span>
+      </p>
+      <p class="t-label text-ink-faint mt-3 uppercase">{site.taglineEn}</p>
+    </section>
+
+    <!-- 最新 3 条新闻预览：编号 + 标题 + 简介截断，整卡新窗口直跳 -->
+    <section class="shell" aria-labelledby="latest-title">
+      <h2 id="latest-title" class="t-label text-ink-faint uppercase mb-6">
+        01/ latest news · <a
+          class="arrow-link text-ink-muted hover:text-accent transition-colors"
+          href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/news`}>全部新闻 →</a
+        >
+      </h2>
+      <ul class="flex flex-col gap-3">
+        {
+          latest.map((item, i) => (
+            <li class="scroll-rise">
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="news-card block p-5 sm:p-6"
+              >
+                <div class="flex gap-4">
+                  <span class="row-num t-label shrink-0">
+                    {String(i + 1).padStart(2, '0')}/
+                  </span>
+                  <div class="min-w-0">
+                    <h3 class="t-h2 zh-title arrow-link">
+                      {item.title}
+                      <span class="arrow text-[0.7em]" aria-hidden="true">
+                        ↗
+                      </span>
+                    </h3>
+                    <p class="t-small text-ink-muted mt-2 clamp-2">{item.summary}</p>
+                    <p class="t-label text-ink-faint mt-3">
+                      {item.source} · {item.publishedAt}
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</BaseLayout>
