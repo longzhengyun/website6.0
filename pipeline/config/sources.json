@@ -129,12 +129,12 @@
       "type": "atom",
       "url": "https://www.ruanyifeng.com/blog/atom.xml",
       "lang": "zh",
-      "enabled": true,
+      "enabled": false,
       "verify": true,
       "category_hint": ["tools", "career"],
       "max_items_per_run": 10,
       "fetch_window_hours": 192,
-      "note": "R17 低频对冲源（周更，本地 preflight 200 items=3；窗口放宽到 8 天避免周更错过）；verify 待 CI 一轮 sources_ok 后去除"
+      "note": "R17 低频对冲源。本地 preflight 200（3 条·周更），但 CI run 39938499522 实测 runner 侧 http_403（疑地域/WAF 拦截出口 IP）。后端裁定置 enabled=false 保留配置：周更源价值低，移除后 zh 活跃源仍 3 个≥裁定基线，且避免每轮 SOURCES_FAILED 噪声与 verify 永挂。待有可达的抓取通路（国内 runner/合规代理）再启用"
     },
     {
       "id": "openai-news",
