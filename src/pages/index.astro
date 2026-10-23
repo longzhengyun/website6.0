@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../data/site';
 import { sortedItems } from '../data/news';
 
-const latest = sortedItems.slice(0, 3);
+const latest = sortedItems.slice(0, 2);
 ---
 
 <BaseLayout
@@ -11,9 +11,10 @@ const latest = sortedItems.slice(0, 3);
   desc="web 前端工程师 jary8 的个人站：前沿前端技术与 AI 结合的落地实践。"
 >
   <article>
-    <!-- Hero：站名版式 L1「双语叠印」（design-spec §3）+ 单一视觉焦点=字体呼吸 -->
+    <!-- Hero：站名版式 L1「双语叠印」（design-spec §3）+ 单一视觉焦点=字体呼吸；
+         R15 单屏：移动 hero 在 tab 条上方可视区内垂直居中（100svh 防 iOS 地址栏跳动） -->
     <section
-      class="shell shell-wide pt-[24vh] pb-16 md:pb-24 max-md:min-h-[60vh]"
+      class="shell shell-wide pt-[20vh] pb-16 md:pb-16 max-md:min-h-[calc(100svh-300px)] max-md:pt-0 max-md:flex max-md:flex-col max-md:justify-center"
       aria-labelledby="hero-title"
     >
       <h1 id="hero-title" class="t-display">
@@ -35,46 +36,46 @@ const latest = sortedItems.slice(0, 3);
       <p class="t-label text-ink-faint mt-3 uppercase">{site.taglineEn}</p>
     </section>
 
-    <!-- 最新 3 条新闻预览：编号 + 标题 + 简介截断，整卡新窗口直跳 -->
-    <section class="shell" aria-labelledby="latest-title">
-      <h2 id="latest-title" class="t-label text-ink-faint uppercase mb-6">
-        01/ latest news · <a
-          class="arrow-link text-ink-muted hover:text-accent transition-colors"
-          href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/news`}>全部新闻 →</a
-        >
-      </h2>
-      <ul class="flex flex-col gap-3">
-        {
-          latest.map((item, i) => (
-            <li class="scroll-rise">
+    <!-- R15 桌面超紧凑新闻动态条（≤64px、单行两项、仅标题级）；移动端由同步脚本整块移出 DOM（非隐藏） -->
+    {
+      latest.length > 0 && (
+        <section class="shell hidden md:block" data-home-pulse aria-labelledby="pulse-title">
+          <h2 id="pulse-title" class="sr-only">最新新闻速览</h2>
+          <div class="flex items-baseline gap-8 border-t border-line pt-3">
+            {latest.map((item, i) => (
               <a
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="news-card block p-5 sm:p-6"
+                class="min-w-0 flex-1 block"
               >
-                <div class="flex gap-4">
+                <p class="t-small text-ink arrow-link flex items-baseline gap-2 min-w-0">
                   <span class="row-num t-label shrink-0">
                     {String(i + 1).padStart(2, '0')}/
                   </span>
-                  <div class="min-w-0">
-                    <h3 class="t-h2 zh-title arrow-link">
-                      {item.title_zh}
-                      <span class="arrow text-[0.7em]" aria-hidden="true">
-                        ↗
-                      </span>
-                    </h3>
-                    <p class="t-small text-ink-muted mt-2 clamp-2">{item.summary_zh}</p>
-                    <p class="t-label text-ink-faint mt-3">
-                      {item.source_name} · {item.published_at.slice(0, 10)}
-                    </p>
-                  </div>
-                </div>
+                  <span class="truncate">{item.title_zh}</span>
+                  <span class="arrow text-[0.7em] shrink-0" aria-hidden="true">↗</span>
+                </p>
+                <p class="t-label text-ink-faint mt-1">{item.published_at.slice(5, 10)}</p>
               </a>
-            </li>
-          ))
+            ))}
+            <a
+              class="arrow-link shrink-0 t-label text-ink-muted hover:text-accent transition-colors"
+              href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/news`}
+            >
+              全部新闻 →
+            </a>
+          </div>
+        </section>
+      )
+    }
+    <script is:inline>
+      (function () {
+        if (!window.matchMedia('(min-width: 768px)').matches) {
+          var el = document.querySelector('[data-home-pulse]');
+          if (el) el.parentNode.removeChild(el);
         }
-      </ul>
-    </section>
+      })();
+    </script>
   </article>
 </BaseLayout>
