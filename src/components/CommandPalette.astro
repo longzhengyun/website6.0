@@ -34,9 +34,7 @@ const index: PaletteEntry[] = (Astro.props.index as PaletteEntry[]).map((e) =>
   </div>
 </div>
 
-<script type="application/json" data-palette-index>
-  {JSON.stringify(index)}
-</script>
+<script type="application/json" data-palette-index set:html={JSON.stringify(index)}></script>
 
 <script>
   const json = document.querySelector<HTMLScriptElement>('[data-palette-index]');
