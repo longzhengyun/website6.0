@@ -1,0 +1,61 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import '@fontsource-variable/geist/index.css';
+import '@fontsource-variable/geist-mono/index.css';
+import '../styles/theme.css';
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import TabBar from '../components/TabBar.astro';
+import CommandPalette from '../components/CommandPalette.astro';
+import { news } from '../data/news';
+
+interface Props {
+  title: string;
+  desc: string;
+  bare?: boolean;
+}
+
+const { title, desc, bare = false } = Astro.props;
+const paletteIndex = [
+  { label: 'Home 首页', href: '/' },
+  { label: 'News 业内新闻', href: '/news' },
+  { label: 'About 关于', href: '/about' },
+  { label: 'Résumé 在线简历', href: '/resume' },
+  ...news.items.slice(0, 12).map((i) => ({ label: i.title, href: i.url, external: true })),
+];
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={desc} />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <ClientRouter />
+  </head>
+  <body class="min-h-screen antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-surface focus:border focus:border-line focus:px-4 focus:py-2"
+      >跳至主要内容</a
+    >
+    {
+      bare ? (
+        <></>
+      ) : (
+        <>
+          <SiteHeader />
+          <TabBar />
+        </>
+      )
+    }
+    <main id="main" class:list={[!bare && 'pb-24 md:pb-0']}>
+      <slot />
+    </main>
+    {!bare && <SiteFooter />}
+    <CommandPalette index={paletteIndex} />
+  </body>
+</html>

@@ -1,0 +1,33 @@
+---
+import { nav, relativePath, isActive } from '../data/site';
+
+const current = relativePath(Astro.url.pathname);
+const desktopNav = nav.filter((n) => n.href !== '/');
+---
+
+<header class="border-b border-line no-print">
+  <div class="shell flex items-center justify-between h-14">
+    <a
+      href={import.meta.env.BASE_URL}
+      class="t-label text-ink arrow-link"
+      aria-label="jary8 佳瑞网首页"
+    >
+      jary8<span class="text-accent">·</span>佳瑞网
+    </a>
+    <nav aria-label="主导航" class="hidden md:flex items-center gap-8">
+      {
+        desktopNav.map((item) => (
+          <a
+            href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${item.href}`}
+            class="t-label hover:text-ink transition-colors duration-120"
+            class:list={{ 'text-accent': isActive(item.href, current) }}
+            aria-current={isActive(item.href, current) ? 'page' : undefined}
+          >
+            <span class="text-ink-faint mr-1">{item.num}/</span>
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>

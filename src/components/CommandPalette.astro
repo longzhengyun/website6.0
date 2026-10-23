@@ -1,0 +1,134 @@
+---
+interface PaletteEntry {
+  label: string;
+  href: string;
+  external?: boolean;
+}
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const index: PaletteEntry[] = (Astro.props.index as PaletteEntry[]).map((e) =>
+  e.external ? e : { ...e, href: `${base}${e.href === '/' ? '/' : e.href}` },
+);
+---
+
+<div data-palette hidden>
+  <div class="palette-overlay" data-palette-overlay></div>
+  <div
+    class="palette-panel fixed top-[12vh] left-1/2 -translate-x-1/2 z-50 w-[min(92vw,560px)] border border-line"
+    role="dialog"
+    aria-modal="true"
+    aria-label="命令面板"
+    data-palette-panel
+  >
+    <input
+      type="text"
+      data-palette-input
+      class="w-full bg-transparent px-4 py-3 text-base border-b border-line outline-none"
+      style="font-size: 16px"
+      placeholder="搜索页面 / 新闻…"
+      aria-controls="palette-results"
+      aria-autocomplete="list"
+      autocomplete="off"
+      enterkeyhint="search"
+    />
+    <ul id="palette-results" role="listbox" class="max-h-[48vh] overflow-y-auto py-2"></ul>
+  </div>
+</div>
+
+<script type="application/json" data-palette-index>
+  {JSON.stringify(index)}
+</script>
+
+<script>
+  const json = document.querySelector<HTMLScriptElement>('[data-palette-index]');
+  const root = document.querySelector<HTMLElement>('[data-palette]');
+  if (json?.textContent && root) {
+    const entries: { label: string; href: string; external?: boolean }[] =
+      JSON.parse(json.textContent);
+    const panel = root.querySelector<HTMLElement>('[data-palette-panel]')!;
+    const input = root.querySelector<HTMLInputElement>('[data-palette-input]')!;
+    const list = root.querySelector<HTMLElement>('#palette-results')!;
+    let selected = 0;
+    let lastFocus: Element | null = null;
+
+    document.documentElement.setAttribute('data-enhanced', '');
+
+    const render = () => {
+      const q = input.value.trim().toLowerCase();
+      const hits = entries.filter((e) => e.label.toLowerCase().includes(q)).slice(0, 10);
+      selected = Math.min(selected, Math.max(hits.length - 1, 0));
+      list.innerHTML = '';
+      hits.forEach((e, i) => {
+        const li = document.createElement('li');
+        li.setAttribute('role', 'option');
+        li.setAttribute('aria-selected', String(i === selected));
+        const a = document.createElement('a');
+        a.href = e.href;
+        if (e.external) {
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+        }
+        a.className =
+          'block px-4 py-3 t-small hover:bg-bg' + (i === selected ? ' text-accent' : '');
+        a.textContent = e.label;
+        li.append(a);
+        list.append(li);
+      });
+      (list.children[selected] as HTMLElement | undefined)?.querySelector('a')?.focus({
+        preventScroll: true,
+      });
+    };
+
+    const open = () => {
+      lastFocus = document.activeElement;
+      root.hidden = false;
+      input.value = '';
+      selected = 0;
+      render();
+      input.focus();
+    };
+    const close = () => {
+      root.hidden = true;
+      (lastFocus as HTMLElement | null)?.focus?.();
+    };
+
+    document.addEventListener('keydown', (ev) => {
+      if ((ev.metaKey || ev.ctrlKey) && ev.key.toLowerCase() === 'k') {
+        ev.preventDefault();
+        root.hidden ? open() : close();
+      } else if (ev.key === 'Escape' && !root.hidden) {
+        close();
+      } else if (!root.hidden && (ev.key === 'ArrowDown' || ev.key === 'ArrowUp')) {
+        ev.preventDefault();
+        const n = list.children.length;
+        if (!n) return;
+        selected = (selected + (ev.key === 'ArrowDown' ? 1 : n - 1)) % n;
+        render();
+      }
+    });
+
+    input.addEventListener('input', () => {
+      selected = 0;
+      render();
+    });
+
+    root.querySelector<HTMLElement>('[data-palette-overlay]')!.addEventListener('click', close);
+
+    panel.addEventListener('keydown', (ev) => {
+      if (ev.key !== 'Tab') return;
+      const f = [...panel.querySelectorAll<HTMLElement>('input, a')];
+      const first = f[0];
+      const last = f[f.length - 1];
+      if (ev.shiftKey && document.activeElement === first) {
+        ev.preventDefault();
+        last.focus();
+      } else if (!ev.shiftKey && document.activeElement === last) {
+        ev.preventDefault();
+        first.focus();
+      }
+    });
+
+    document
+      .querySelectorAll<HTMLElement>('[data-palette-open]')
+      .forEach((el) => el.addEventListener('click', open));
+  }
+</script>

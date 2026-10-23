@@ -1,0 +1,32 @@
+---
+import { nav, relativePath, isActive } from '../data/site';
+
+const current = relativePath(Astro.url.pathname);
+---
+
+<nav aria-label="移动端导航" class="tab-bar md:hidden no-print">
+  <ul class="h-14 flex items-stretch justify-around">
+    {
+      nav.map((item) => (
+        <li class="flex">
+          <a
+            href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${item.href}`}
+            class:list={['tab-item t-label', { 'text-accent': isActive(item.href, current) }]}
+            aria-current={isActive(item.href, current) ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))
+    }
+    <li class="flex">
+      <button
+        type="button"
+        data-palette-open
+        class="tab-item t-label enhanced-only text-ink-muted"
+      >
+        ⌘K
+      </button>
+    </li>
+  </ul>
+</nav>
