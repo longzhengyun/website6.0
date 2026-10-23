@@ -167,6 +167,14 @@ html[data-enhanced] .enhanced-only {
   overflow-wrap: anywhere;
 }
 
+/* BUG-M4R-02（WCAG 1.4.1 / axe link-in-text-block）：正文内链接需非颜色线索——静态下划线；
+   tab/按钮形态（.tab-item）与卡片形态（.news-card 整卡可点）不在涉罪名单，保持无下划线 */
+main a.arrow-link:not(.tab-item) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
 /* 筛选胶囊 */
 .chip {
   min-height: 44px;
