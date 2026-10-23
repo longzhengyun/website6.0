@@ -468,6 +468,7 @@ async function main() {
         .slice(0, CFG.seen_headlines_max)
         .map((i) => ({ fingerprint: i.fingerprint, title_zh: i.title_zh, published_at: i.published_at }));
       let res = null;
+      let lastErr = null;
       for (let attempt = 0; attempt <= CFG.batch_retry; attempt++) {
         if (attempt) await sleep(CFG.retry_backoff_ms[Math.min(attempt - 1, CFG.retry_backoff_ms.length - 1)]);
         stats.llm.calls++;
@@ -475,12 +476,15 @@ async function main() {
         if (r.ok) {
           const m = postValidate(r.json?.results, batch, new Set(userObj.seen_headlines.map((h) => h.fingerprint)), stats);
           if (m) { res = m; stats.llm.input_tokens += r.usage.inputTokens; stats.llm.output_tokens += r.usage.outputTokens; consecutiveFail = 0; break; }
-        }
+          lastErr = 'postvalidate_rejected';
+        } else lastErr = r.error;
         res = null;
       }
       if (!res) {
         stats.llm.batches_failed++;
         consecutiveFail++;
+        // 诊断：失败原因（http_4xx/timeout/postvalidate 等短文本）入 stats.errors；条数上限=失败批数（≤10），无泄露面
+        stats.errors.push(`enrichment batch ${b} failed: ${String(lastErr ?? 'unknown').slice(0, 200)}`);
         if (consecutiveFail >= CFG.abort_after_consecutive_failures) { stats.llm.aborted = true; stats.errors.push('AI aborted after consecutive failures, remainder stored rss_only'); }
       } else {
         for (const [fp, e] of res) enrichByFp.set(fp, e);
@@ -554,6 +558,7 @@ async function main() {
   writeFileSync(P.out, outJson, 'utf8');
   writeFileSync(P.stats, statsJson, 'utf8');
   log('DONE', `mode=${feed.mode} items_total=${merged.length} new=${cleanNew.length} ai_enriched=${stats.counts.ai_enriched} re=${stats.counts.re_enriched} llm_calls=${stats.llm.calls} sources_ok=${stats.sources.filter((s) => s.status === 'ok').length}/${stats.sources.length}`);
+  if (stats.errors.length) log('ERRORS', stats.errors.slice(-5).map((e) => String(e).slice(0, 200).replaceAll(LLM_KEY || '\u0000', '[REDACTED]')).join(' | '));
 }
 
 main().catch((e) => {

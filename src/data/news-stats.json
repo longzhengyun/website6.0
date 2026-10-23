@@ -1,6 +1,6 @@
 {
-  "run_id": "local-20261023062054",
-  "generated_at": "2026-10-23T06:20:54.864Z",
+  "run_id": "local-20261023073838",
+  "generated_at": "2026-10-23T07:38:38.221Z",
   "mode": "rss_only",
   "llm": {
     "key_present": false,
@@ -17,50 +17,50 @@
   "sources": [
     {
       "id": "hn-frontpage",
-      "status": "failed",
-      "items_fetched": 0,
-      "items_new": 0,
-      "ms": 10753,
-      "error": "fetch failed"
+      "status": "ok",
+      "items_fetched": 20,
+      "items_new": 8,
+      "ms": 1309,
+      "error": null
     },
     {
       "id": "webdev",
       "status": "failed",
       "items_fetched": 0,
       "items_new": 0,
-      "ms": 10688,
+      "ms": 10732,
       "error": "fetch failed"
     },
     {
       "id": "smashing",
-      "status": "failed",
-      "items_fetched": 0,
+      "status": "ok",
+      "items_fetched": 40,
       "items_new": 0,
-      "ms": 5096,
-      "error": "fetch failed"
+      "ms": 667,
+      "error": null
     },
     {
       "id": "css-tricks",
       "status": "ok",
       "items_fetched": 15,
       "items_new": 0,
-      "ms": 1574,
+      "ms": 1320,
       "error": null
     },
     {
       "id": "mozilla-hacks",
-      "status": "failed",
-      "items_fetched": 0,
+      "status": "ok",
+      "items_fetched": 20,
       "items_new": 0,
-      "ms": 10639,
-      "error": "fetch failed"
+      "ms": 1586,
+      "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
       "items_new": 0,
-      "ms": 2474,
+      "ms": 1027,
       "error": null
     },
     {
@@ -68,21 +68,20 @@
       "status": "failed",
       "items_fetched": 0,
       "items_new": 0,
-      "ms": 10233,
+      "ms": 10422,
       "error": "fetch failed"
     }
   ],
   "counts": {
-    "fetched": 45,
-    "in_window": 0,
-    "deduped_existing": 5,
-    "new_items": 0,
+    "fetched": 125,
+    "in_window": 8,
+    "deduped_existing": 17,
+    "new_items": 8,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0
   },
-  "news_items_total": 28,
+  "news_items_total": 36,
   "degraded_all_sources": false,
-  "errors": [],
-  "short_circuited": true
+  "errors": []
 }
