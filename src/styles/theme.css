@@ -170,3 +170,15 @@
   justify-content: center;
   gap: 4px;
 }
+/* BUG-M4-03：tab 条内均分收缩 + 省略号，200% 缩放恒在视口内（不引入缩放锁） */
+.tab-bar .tab-item {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+}
+.tab-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

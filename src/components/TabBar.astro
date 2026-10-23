@@ -8,24 +8,24 @@ const current = relativePath(Astro.url.pathname);
   <ul class="h-14 flex items-stretch justify-around">
     {
       nav.map((item) => (
-        <li class="flex">
+        <li class="flex min-w-0">
           <a
             href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${item.href}`}
             class:list={['tab-item t-label', { 'text-accent': isActive(item.href, current) }]}
             aria-current={isActive(item.href, current) ? 'page' : undefined}
           >
-            {item.label}
+            <span class="tab-label">{item.label}</span>
           </a>
         </li>
       ))
     }
-    <li class="flex">
+    <li class="flex min-w-0">
       <button
         type="button"
         data-palette-open
         class="tab-item t-label enhanced-only text-ink-muted"
       >
-        ⌘K
+        <span class="tab-label">⌘K</span>
       </button>
     </li>
   </ul>
