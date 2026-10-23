@@ -3,6 +3,8 @@ export const site = {
   nameEn: 'jary8',
   tagline: '把浏览器能做的，做到最新。',
   taglineEn: 'Pushing the browser to its latest.',
+  /** R16 三行制固定身份行（站主硬需求 5：站长身份必须稳定，不轮播） */
+  role: 'web 前端开发工程师',
   email: 'jary0419@163.com',
   github: 'https://github.com/longzhengyun',
   year: 2026,

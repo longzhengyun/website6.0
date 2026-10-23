@@ -160,6 +160,13 @@ html[data-enhanced] .enhanced-only {
   display: inline-flex;
 }
 
+/* R16 轮播副行：固定单行行盒（不换行、原位替换）防 CLS；超长条目省略号兜底（375/200% 不破版） */
+.tagline-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* 筛选胶囊 */
 .chip {
   min-height: 44px;

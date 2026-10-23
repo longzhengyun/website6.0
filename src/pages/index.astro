@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../data/site';
+import { taglines } from '../data/taglines';
 import { sortedItems } from '../data/news';
 
 const latest = sortedItems.slice(0, 2);
@@ -31,9 +32,30 @@ const latest = sortedItems.slice(0, 2);
         </span>
       </h1>
       <p class="t-h2 text-ink-muted mt-6 max-w-[34em]">
-        {site.tagline}<span class="prompt-cursor" aria-hidden="true">▍</span>
+        {site.role}
       </p>
-      <p class="t-label text-ink-faint mt-3 uppercase">{site.taglineEn}</p>
+      <!-- R16 三行制轮播副行：SSR 渲池首条（无 JS 稳定降级），同步内联脚本首帧前原位替换随机条目；
+           固定单行行盒防 CLS；window 级记忆=整页刷新重抽、ClientRouter 站内跳转不重抽；不进 aria-live -->
+      <p class="t-label text-ink-faint mt-3 tagline-line">
+        <span aria-hidden="true">▍</span><span id="tagline-text">{taglines[0]}</span>
+      </p>
+      <script type="application/json" id="tagline-pool" set:html={JSON.stringify(taglines).replace(/</g, '\\u003c')} />
+      <script is:inline>
+        (function () {
+          var el = document.getElementById('tagline-text');
+          var pool = document.getElementById('tagline-pool');
+          if (!el || !pool) return;
+          if (window.__tagline === undefined) {
+            try {
+              var arr = JSON.parse(pool.textContent);
+              window.__tagline = arr[Math.floor(Math.random() * arr.length)];
+            } catch (e) {
+              window.__tagline = null;
+            }
+          }
+          if (window.__tagline) el.textContent = window.__tagline;
+        })();
+      </script>
     </section>
 
     <!-- R15 桌面超紧凑新闻动态条（≤64px、单行两项、仅标题级）；移动端由同步脚本整块移出 DOM（非隐藏） -->
