@@ -57,9 +57,20 @@ body {
 .scroll-rise {
   animation: rise 250ms ease-out both;
 }
+/* BUG-M4R-04（spec v1.1.1 §8.6 方案③）：滚动时间线把进度绑滚动位置，底缘静止位会冻出低对比
+   必读文本；view() 路径改 transform-only，opacity 恒 1，任意静止位=静态对比度。时间轴回退保留淡入。 */
+@keyframes rise-shift {
+  from {
+    transform: translateY(12px);
+  }
+  to {
+    transform: none;
+  }
+}
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
     .scroll-rise {
+      animation-name: rise-shift;
       animation-timeline: view();
       animation-range: cover 0% cover 35%;
     }
