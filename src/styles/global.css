@@ -181,6 +181,12 @@ html[data-enhanced] .enhanced-only {
   scrollbar-width: none;
   mask-image: linear-gradient(to right, black 92%, transparent);
 }
+/* BUG-M4-01：enhanced-only 的 inline-flex 优先级更高，chip-row 被内容撑宽（526px）顶破页面；
+   显式覆盖回块级 flex，宽度收缩到版心，overflow-x 才在容器内生效（spec §6.3） */
+html[data-enhanced] .chip-row.enhanced-only {
+  display: flex;
+  max-width: 100%;
+}
 .chip-row::-webkit-scrollbar {
   display: none;
 }
