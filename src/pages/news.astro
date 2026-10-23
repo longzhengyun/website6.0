@@ -42,14 +42,14 @@ import { sortedItems, allTags, news } from '../data/news';
                 <div class="min-w-0">
                   <h2 class="t-h2 zh-title arrow-link">
                     <span class="row-num t-label mr-3">{String(i + 1).padStart(2, '0')}/</span>
-                    {item.title}
+                    {item.title_zh}
                     <span class="arrow text-[0.7em]" aria-hidden="true">↗</span>
                   </h2>
-                  <p class="t-body text-ink-muted mt-2 clamp-2">{item.summary}</p>
+                  <p class="t-body text-ink-muted mt-2 clamp-2">{item.summary_zh}</p>
                 </div>
                 <div class="md:text-right mt-3 md:mt-0">
-                  <p class="t-label text-ink-faint">{item.publishedAt}</p>
-                  <p class="t-label text-ink-faint mt-1 md:mt-3">{item.source}</p>
+                  <p class="t-label text-ink-faint">{item.published_at.slice(0, 10)}</p>
+                  <p class="t-label text-ink-faint mt-1 md:mt-3">{item.source_name}</p>
                   <p class="t-label text-ink-faint mt-1 md:mt-3">
                     {item.tags.map((t) => `#${t}`).join(' ')}
                   </p>
@@ -63,7 +63,7 @@ import { sortedItems, allTags, news } from '../data/news';
 
     <footer class="mt-10 border-t border-line pt-4">
       <p class="t-label text-ink-faint uppercase">
-        data source: RSS · 构建期更新 · build {news.generatedAt.slice(0, 16)}Z · mode
+        data source: RSS · 构建期更新 · build {news.generated_at.slice(0, 16)}Z · mode
         {news.mode}
       </p>
     </footer>

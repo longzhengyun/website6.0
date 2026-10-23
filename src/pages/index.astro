@@ -59,14 +59,14 @@ const latest = sortedItems.slice(0, 3);
                   </span>
                   <div class="min-w-0">
                     <h3 class="t-h2 zh-title arrow-link">
-                      {item.title}
+                      {item.title_zh}
                       <span class="arrow text-[0.7em]" aria-hidden="true">
                         ↗
                       </span>
                     </h3>
-                    <p class="t-small text-ink-muted mt-2 clamp-2">{item.summary}</p>
+                    <p class="t-small text-ink-muted mt-2 clamp-2">{item.summary_zh}</p>
                     <p class="t-label text-ink-faint mt-3">
-                      {item.source} · {item.publishedAt}
+                      {item.source_name} · {item.published_at.slice(0, 10)}
                     </p>
                   </div>
                 </div>

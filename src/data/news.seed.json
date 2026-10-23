@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-23T04:45:00Z",
+  "mode": "rss_only",
+  "items": [
+    {
+      "fingerprint": "23394d0e3d2367cb",
+      "url": "https://developer.chrome.com/docs/ai/built-in",
+      "title_original": "Chrome 内置 AI（Gemini Nano）API 正式文档更新",
+      "title_zh": "Chrome 内置 AI（Gemini Nano）API 正式文档更新",
+      "summary_zh": "Built-in AI 提供 Prompt/Summarize/Writer/Translator 等 API，网页可在端侧直接调用浏览器管理的 Gemini Nano 模型，零密钥零下载。",
+      "tags": [
+        "ai",
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "chrome-developers-blog",
+      "source_name": "developer.chrome.com",
+      "published_at": "2026-10-18T09:00:00Z",
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "seed"
+      }
+    },
+    {
+      "fingerprint": "b813e2725ba3955f",
+      "url": "https://web.dev/explore/ai",
+      "title_original": "web.dev Web AI 专区：WebLLM 与 Prompt API 实操教程",
+      "title_zh": "web.dev Web AI 专区：WebLLM 与 Prompt API 实操教程",
+      "summary_zh": "官方教程演示如何用 WebAssembly+WebGPU 在浏览器本地跑开源大模型，以及用 Chrome 探索性 Prompt API 构建离线聊天能力。",
+      "tags": [
+        "ai",
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "webdev",
+      "source_name": "web.dev",
+      "published_at": "2026-09-20T08:00:00Z",
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "seed"
+      }
+    },
+    {
+      "fingerprint": "4e020e44a83ca3e4",
+      "url": "https://juejin.cn/post/7680137672493563938",
+      "title_original": "2026 年 JS 五大新趋势：ES2026、Wasm 组件模型与端侧 AI 落地",
+      "title_zh": "2026 年 JS 五大新趋势：ES2026、Wasm 组件模型与端侧 AI 落地",
+      "summary_zh": "端侧 AI 从 Demo 变成产品决策：Transformers.js v4、WebLLM、ONNX Runtime Web 与浏览器内置模型四条路线并行成熟；红线是推理必须离开主线程。",
+      "tags": [
+        "frontend",
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "published_at": "2026-09-01T10:00:00Z",
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "seed"
+      }
+    },
+    {
+      "fingerprint": "51a9796c8701a5d9",
+      "url": "https://front-end-fire.com/",
+      "title_original": "Front-end Fire #156：State of CSS 年度盘点、Cloudflare 收购 Astro",
+      "title_zh": "Front-end Fire #156：State of CSS 年度盘点、Cloudflare 收购 Astro",
+      "summary_zh": "State of CSS 确认 Tailwind 仍主导但 AI 尚写不好 CSS；CodePen 现代化 4.0 发布；Cloudflare 收购 Astro 成为年度框架格局事件。",
+      "tags": [
+        "standards",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "front-end-fire",
+      "source_name": "Front-end Fire",
+      "published_at": "2026-08-03T12:00:00Z",
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "seed"
+      }
+    },
+    {
+      "fingerprint": "310b3e71be09852d",
+      "url": "https://tailwindcss.com/docs",
+      "title_original": "Tailwind CSS v4 文档：CSS-first 配置与 @theme 令牌体系",
+      "title_zh": "Tailwind CSS v4 文档：CSS-first 配置与 @theme 令牌体系",
+      "summary_zh": "v4 以原生 CSS 变量为中心重构配置：@theme 定义 token、零 JS 配置文件、浏览器原生嵌套与层叠，标志原子化 CSS 进入平台化时代。",
+      "tags": [
+        "standards",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "tailwindcss",
+      "source_name": "tailwindcss.com",
+      "published_at": "2026-01-29T07:00:00Z",
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "seed"
+      }
+    },
+    {
+      "fingerprint": "d114c1f365facd59",
+      "url": "https://astro.build",
+      "title_original": "Astro 文档：内容驱动站点的 Islands 架构与零 JS 默认",
+      "title_zh": "Astro 文档：内容驱动站点的 Islands 架构与零 JS 默认",
+      "summary_zh": "Astro 以「默认不发送 JS、按需水合岛屿」成为内容型前端站首选；Content Collections 与 View Transitions 提供类型安全内容与原生转场。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "astro-build",
+      "source_name": "astro.build",
+      "published_at": "2026-03-17T06:00:00Z",
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "seed"
+      }
+    }
+  ]
+}
