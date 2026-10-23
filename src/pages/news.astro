@@ -17,49 +17,59 @@ import { sortedItems, allTags, news } from '../data/news';
       </p>
     </header>
 
-    <div class="enhanced-only chip-row pb-6" data-filter role="group" aria-label="按标签筛选">
-      <button type="button" class="chip t-label" data-tag="all" aria-pressed="true">
-        all
-      </button>
-      {allTags.map((t) => (
-        <button type="button" class="chip t-label" data-tag={t} aria-pressed="false">
-          {t}
+    {sortedItems.length > 0 && (
+      <div class="enhanced-only chip-row pb-6" data-filter role="group" aria-label="按标签筛选">
+        <button type="button" class="chip t-label" data-tag="all" aria-pressed="true">
+          all
         </button>
-      ))}
-    </div>
+        {allTags.map((t) => (
+          <button type="button" class="chip t-label" data-tag={t} aria-pressed="false">
+            {t}
+          </button>
+        ))}
+      </div>
+    )}
 
-    <ul class="flex flex-col gap-3">
-      {
-        sortedItems.map((item, i) => (
-          <li class="scroll-rise" data-tags={item.tags.join(' ')} data-news-item>
-            <a
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="news-card block p-5 sm:p-6"
-            >
-              <div class="md:grid md:grid-cols-[3fr_1fr] md:gap-8">
-                <div class="min-w-0">
-                  <h2 class="t-h2 zh-title arrow-link">
-                    <span class="row-num t-label mr-3">{String(i + 1).padStart(2, '0')}/</span>
-                    {item.title_zh}
-                    <span class="arrow text-[0.7em]" aria-hidden="true">↗</span>
-                  </h2>
-                  <p class="t-body text-ink-muted mt-2 clamp-2">{item.summary_zh}</p>
-                </div>
-                <div class="md:text-right mt-3 md:mt-0">
-                  <p class="t-label text-ink-faint">{item.published_at.slice(0, 10)}</p>
-                  <p class="t-label text-ink-faint mt-1 md:mt-3">{item.source_name}</p>
-                  <p class="t-label text-ink-faint mt-1 md:mt-3">
-                    {item.tags.map((t) => `#${t}`).join(' ')}
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+    {
+      sortedItems.length === 0 ? (
+        <p class="t-h2 text-ink-muted py-10" data-news-empty>
+          本期暂无更新，稍后再来。
+        </p>
+      ) : (
+        <ul class="flex flex-col gap-3">
+          {
+            sortedItems.map((item, i) => (
+              <li class="scroll-rise" data-tags={item.tags.join(' ')} data-news-item>
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="news-card block p-5 sm:p-6"
+                >
+                  <div class="md:grid md:grid-cols-[3fr_1fr] md:gap-8">
+                    <div class="min-w-0">
+                      <h2 class="t-h2 zh-title arrow-link">
+                        <span class="row-num t-label mr-3">{String(i + 1).padStart(2, '0')}/</span>
+                        {item.title_zh}
+                        <span class="arrow text-[0.7em]" aria-hidden="true">↗</span>
+                      </h2>
+                      <p class="t-body text-ink-muted mt-2 clamp-2">{item.summary_zh}</p>
+                    </div>
+                    <div class="md:text-right mt-3 md:mt-0">
+                      <p class="t-label text-ink-faint">{item.published_at.slice(0, 10)}</p>
+                      <p class="t-label text-ink-faint mt-1 md:mt-3">{item.source_name}</p>
+                      <p class="t-label text-ink-faint mt-1 md:mt-3">
+                        {item.tags.map((t) => `#${t}`).join(' ')}
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      )
+    }
 
     <footer class="mt-10 border-t border-line pt-4">
       <p class="t-label text-ink-faint uppercase">
