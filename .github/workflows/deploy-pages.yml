@@ -73,6 +73,8 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: automatic   # 首次部署自动建仓 Pages（Actions 构建型）；已存在则复用
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
