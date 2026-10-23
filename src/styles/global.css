@@ -185,9 +185,25 @@ main a.arrow-link:not(.tab-item) {
   border-radius: 0;
   white-space: nowrap;
 }
+/* BUG-M4R-01 R-2 激活态：文字=ink 加深、字重+50、accent 2px 指示条（非文字件 1.4.11 3:1）。
+   字重必须走非分层规则——t-label 自带 font-weight:500 为非分层，Tailwind font-semibold utility 压不过 */
+nav a[aria-current="page"] {
+  font-weight: 600;
+}
+/* 品牌分隔点图形化：13px accent 文字违反 <18px 禁 accent，改等视觉重心图形件 */
+.brand-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--c-accent);
+  margin-inline: 6px;
+  vertical-align: middle;
+}
 .chip[aria-pressed="true"] {
   border-color: var(--c-accent);
-  color: var(--c-accent);
+  color: var(--c-ink);
+  font-weight: 600;
 }
 .chip-row {
   display: flex;

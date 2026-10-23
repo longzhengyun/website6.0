@@ -65,8 +65,10 @@ const index: PaletteEntry[] = (Astro.props.index as PaletteEntry[]).map((e) =>
           a.target = '_blank';
           a.rel = 'noopener noreferrer';
         }
+        // BUG-M4R-01 R-2: selected row uses inverted fill instead of accent text (<18px no accent color)
         a.className =
-          'block px-4 py-3 t-small hover:bg-bg' + (i === selected ? ' text-accent' : '');
+          'block px-4 py-3 t-small hover:bg-bg' +
+          (i === selected ? ' bg-ink text-accent-ink' : '');
         a.textContent = e.label;
         li.append(a);
         list.append(li);

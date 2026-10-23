@@ -10,7 +10,7 @@ import { sortedItems, allTags, news } from '../data/news';
 >
   <article class="shell">
     <header class="pt-10 md:pt-16 pb-8">
-      <p class="t-label text-ink-faint uppercase">§02 / news</p>
+      <p class="t-label text-ink-muted uppercase">§02 / news</p>
       <h1 class="t-h1 zh-title mt-2">业内新闻</h1>
       <p class="t-small text-ink-muted mt-3 max-w-[42em]">
         只展示标题、简介与直跳链接。内容由构建期管线聚合（RSS → 摘要 → 标签），运行时零密钥。
@@ -56,9 +56,9 @@ import { sortedItems, allTags, news } from '../data/news';
                       <p class="t-body text-ink-muted mt-2 clamp-2">{item.summary_zh}</p>
                     </div>
                     <div class="md:text-right mt-3 md:mt-0">
-                      <p class="t-label text-ink-faint">{item.published_at.slice(0, 10)}</p>
-                      <p class="t-label text-ink-faint mt-1 md:mt-3">{item.source_name}</p>
-                      <p class="t-label text-ink-faint mt-1 md:mt-3">
+                      <p class="t-label text-ink-muted">{item.published_at.slice(0, 10)}</p>
+                      <p class="t-label text-ink-muted mt-1 md:mt-3">{item.source_name}</p>
+                      <p class="t-label text-ink-muted mt-1 md:mt-3">
                         {item.tags.map((t) => `#${t}`).join(' ')}
                       </p>
                     </div>

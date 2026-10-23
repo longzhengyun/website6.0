@@ -27,14 +27,14 @@ import { skills } from '../data/about';
   </div>
 
   <article class="shell max-w-[680px] pb-24 md:pb-16">
-    <p class="t-small text-accent border border-line px-3 py-2 mb-8 no-print">
+    <p class="t-small text-ink border border-accent px-3 py-2 mb-8 no-print">
       {resume.sampleNote}
     </p>
 
     <header class="mb-8">
       <h1 class="t-h1 zh-title">{resume.name}</h1>
       <p class="t-h3 text-ink-muted mt-1">{resume.title}</p>
-      <p class="t-label text-ink-faint mt-3">
+      <p class="t-label text-ink-muted mt-3">
         <a
           href={`mailto:${resume.contact.email}`}
           class="hover:text-accent [overflow-wrap:anywhere]"
@@ -52,14 +52,14 @@ import { skills } from '../data/about';
     </header>
 
     <section class="resume-section mb-8" aria-labelledby="r-summary">
-      <h2 id="r-summary" class="t-label uppercase text-ink-faint border-b border-line pb-2 mb-4">
+      <h2 id="r-summary" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
         Summary
       </h2>
       <p class="t-body max-w-[42em]">{resume.summary}</p>
     </section>
 
     <section class="resume-section mb-8" aria-labelledby="r-skills">
-      <h2 id="r-skills" class="t-label uppercase text-ink-faint border-b border-line pb-2 mb-4">
+      <h2 id="r-skills" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
         Core Skills
       </h2>
       <p class="t-body">{skills.map((s) => s.name).join(' · ')}</p>
@@ -68,7 +68,7 @@ import { skills } from '../data/about';
     {
       resume.experience.length > 0 && (
         <section class="resume-section mb-8" aria-labelledby="r-exp">
-          <h2 id="r-exp" class="t-label uppercase text-ink-faint border-b border-line pb-2 mb-4">
+          <h2 id="r-exp" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
             Experience
           </h2>
           {resume.experience.map((e) => (
@@ -76,7 +76,7 @@ import { skills } from '../data/about';
               <h3 class="t-h3">
                 {e.role} <span class="t-small text-ink-muted">· {e.org}</span>
               </h3>
-              <p class="t-label text-ink-faint md:text-right">{e.period}</p>
+              <p class="t-label text-ink-muted md:text-right">{e.period}</p>
               <ul class="t-body text-ink-muted mt-2 list-disc pl-5">
                 {e.bullets.map((b) => (
                   <li>{b}</li>
@@ -89,14 +89,14 @@ import { skills } from '../data/about';
     }
 
     <section class="resume-section mb-8" aria-labelledby="r-projects">
-      <h2 id="r-projects" class="t-label uppercase text-ink-faint border-b border-line pb-2 mb-4">
+      <h2 id="r-projects" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
         Selected Projects
       </h2>
       {
         resume.projects.map((p) => (
           <div class="mb-4">
             <h3 class="t-h3">
-              {p.name} <span class="t-label text-ink-faint md:text-right">{p.period}</span>
+              {p.name} <span class="t-label text-ink-muted md:text-right">{p.period}</span>
             </h3>
             <p class="t-small text-ink-muted mt-1">{p.desc}</p>
           </div>
@@ -105,13 +105,13 @@ import { skills } from '../data/about';
     </section>
 
     <section class="resume-section" aria-labelledby="r-edu">
-      <h2 id="r-edu" class="t-label uppercase text-ink-faint border-b border-line pb-2 mb-4">
+      <h2 id="r-edu" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
         Education
       </h2>
       {
         resume.education.map((ed) => (
           <p class="t-body">
-            {ed.school} <span class="t-label text-ink-faint">{ed.period}</span>
+            {ed.school} <span class="t-label text-ink-muted">{ed.period}</span>
           </p>
         ))
       }

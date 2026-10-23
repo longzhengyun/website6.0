@@ -13,7 +13,7 @@ const blocks = (rank: number) =>
 >
   <article class="shell">
     <header class="pt-10 md:pt-16 pb-8">
-      <p class="t-label text-ink-faint uppercase">§03 / about</p>
+      <p class="t-label text-ink-muted uppercase">§03 / about</p>
       <h1 class="t-h1 zh-title mt-2">关于站长</h1>
     </header>
 
@@ -57,7 +57,7 @@ const blocks = (rank: number) =>
         {
           timeline.map((t) => (
             <li class="pl-5 pb-8 relative">
-              <p class="t-label text-ink-faint">{t.period}</p>
+              <p class="t-label text-ink-muted">{t.period}</p>
               <h3 class="t-h3 mt-1">
                 {t.role}
                 <span class="t-small text-ink-muted"> · {t.org}</span>
@@ -73,7 +73,7 @@ const blocks = (rank: number) =>
       <h2 id="ask-title" class="sr-only">问站长（实验位）</h2>
       <p class="ask-slot block px-4 py-3 text-[15px]" role="presentation">
         &gt; ask jary8 --about
-        <span class="t-label text-ink-faint ml-3">［实验位 · 端侧 RAG 问答 P1 建设中］</span>
+        <span class="t-label text-ink-muted ml-3">［实验位 · 端侧 RAG 问答 P1 建设中］</span>
       </p>
     </section>
 
@@ -85,7 +85,7 @@ const blocks = (rank: number) =>
       >
         需要 PDF？→ 在线简历<span class="arrow" aria-hidden="true">↗</span>
       </a>
-      <span class="t-label text-ink-faint ml-3">打印即导出</span>
+      <span class="t-label text-ink-muted ml-3">打印即导出</span>
     </section>
   </article>
 </BaseLayout>

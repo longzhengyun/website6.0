@@ -36,7 +36,7 @@ const latest = sortedItems.slice(0, 2);
       </p>
       <!-- R16 三行制轮播副行：SSR 渲池首条（无 JS 稳定降级），同步内联脚本首帧前原位替换随机条目；
            固定单行行盒防 CLS；window 级记忆=整页刷新重抽、ClientRouter 站内跳转不重抽；不进 aria-live -->
-      <p class="t-label text-ink-faint mt-3 tagline-line">
+      <p class="t-label text-ink-muted mt-3 tagline-line">
         <span aria-hidden="true">▍</span><span id="tagline-text">{taglines[0]}</span>
       </p>
       <script type="application/json" id="tagline-pool" set:html={JSON.stringify(taglines).replace(/</g, '\\u003c')} />
@@ -78,7 +78,7 @@ const latest = sortedItems.slice(0, 2);
                   <span class="truncate">{item.title_zh}</span>
                   <span class="arrow text-[0.7em] shrink-0" aria-hidden="true">↗</span>
                 </p>
-                <p class="t-label text-ink-faint mt-1">{item.published_at.slice(5, 10)}</p>
+                <p class="t-label text-ink-muted mt-1">{item.published_at.slice(5, 10)}</p>
               </a>
             ))}
             <a

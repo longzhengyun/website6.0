@@ -29,7 +29,8 @@
   --c-surface: #ffffff;
   --c-ink: #14161a;
   --c-ink-muted: #5a5e66;
-  --c-ink-faint: #8b9098;
+  /* BUG-M4R-01 R-1：装饰档 ink-faint 加深至 AA 地板值（4.90:1@#FAFAF8 / 5.12:1@#fff） */
+  --c-ink-faint: #6a6e76;
   --c-line: #e3e2de;
   --c-accent: #e5484d;
   --c-accent-ink: #ffffff;
@@ -42,7 +43,8 @@
     --c-surface: #14171d;
     --c-ink: #f2f3f0;
     --c-ink-muted: #9ba3af;
-    --c-ink-faint: #5f6773;
+    /* BUG-M4R-01 R-1：暗色装饰档加深（5.11:1@#0B0D11 / 4.71:1@#14171D） */
+    --c-ink-faint: #7b8394;
     --c-line: #262b33;
     --c-accent: #5eead4;
     --c-accent-ink: #0b0d11;
