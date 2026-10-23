@@ -1,9 +1,10 @@
 {
-  "run_id": "local-20261023053919",
-  "generated_at": "2026-10-23T05:39:19.016Z",
+  "run_id": "local-20261023060159",
+  "generated_at": "2026-10-23T06:01:59.740Z",
   "mode": "rss_only",
   "llm": {
     "key_present": false,
+    "provider": "gemini",
     "model": null,
     "calls": 0,
     "batches_failed": 0,
@@ -14,50 +15,50 @@
   "sources": [
     {
       "id": "hn-frontpage",
-      "status": "ok",
-      "items_fetched": 20,
+      "status": "failed",
+      "items_fetched": 0,
       "items_new": 0,
-      "ms": 5226,
-      "error": null
+      "ms": 10736,
+      "error": "fetch failed"
     },
     {
       "id": "webdev",
       "status": "failed",
       "items_fetched": 0,
       "items_new": 0,
-      "ms": 10674,
+      "ms": 10667,
       "error": "fetch failed"
     },
     {
       "id": "smashing",
-      "status": "ok",
-      "items_fetched": 40,
+      "status": "failed",
+      "items_fetched": 0,
       "items_new": 0,
-      "ms": 455,
-      "error": null
+      "ms": 5095,
+      "error": "fetch failed"
     },
     {
       "id": "css-tricks",
       "status": "ok",
       "items_fetched": 15,
       "items_new": 0,
-      "ms": 1216,
+      "ms": 1282,
       "error": null
     },
     {
       "id": "mozilla-hacks",
-      "status": "ok",
-      "items_fetched": 20,
+      "status": "failed",
+      "items_fetched": 0,
       "items_new": 0,
-      "ms": 1921,
-      "error": null
+      "ms": 10399,
+      "error": "fetch failed"
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
       "items_new": 0,
-      "ms": 1735,
+      "ms": 983,
       "error": null
     },
     {
@@ -65,14 +66,14 @@
       "status": "failed",
       "items_fetched": 0,
       "items_new": 0,
-      "ms": 10336,
-      "error": "fetch failed"
+      "ms": 20003,
+      "error": "The operation was aborted due to timeout"
     }
   ],
   "counts": {
-    "fetched": 125,
+    "fetched": 45,
     "in_window": 0,
-    "deduped_existing": 25,
+    "deduped_existing": 5,
     "new_items": 0,
     "ai_enriched": 0,
     "re_enriched": 0,

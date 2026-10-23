@@ -47,7 +47,12 @@ const VOCAB = ['frontend', 'ai', 'tools', 'standards', 'career', 'security', 'ot
 
 const RUN_ID = process.env.GITHUB_RUN_ID || `local-${new Date().toISOString().replace(/[-:TZ.]/g, '').slice(0, 14)}`;
 const LLM_KEY = (process.env.LLM_API_KEY || '').trim();
-const GEMINI_MODEL = (process.env.GEMINI_MODEL || '').trim() || 'gemini-2.5-flash';
+// provider 选择：默认 gemini（向后兼容）；站主在 Actions Variables 设 LLM_PROVIDER=tongyi 切千问（DashScope 兼容模式）
+const PROVIDER = (process.env.LLM_PROVIDER || 'gemini').trim().toLowerCase() || 'gemini';
+const MODEL =
+  PROVIDER === 'tongyi'
+    ? (process.env.LLM_MODEL || '').trim() || 'qwen-flash'
+    : (process.env.LLM_MODEL || process.env.GEMINI_MODEL || '').trim() || 'gemini-2.5-flash';
 const NOW = new Date();
 const fetchedAt = NOW.toISOString();
 
@@ -217,8 +222,9 @@ const OUTPUT_SCHEMA = {
 };
 
 async function llmComplete({ system, user, jsonSchema }) {
+  if (PROVIDER === 'tongyi') return llmCompleteTongyi({ system, user });
   const base = 'https://generativelanguage.googleapis.com/v1beta/models';
-  const url = `${base}/${GEMINI_MODEL}:generateContent`;
+  const url = `${base}/${MODEL}:generateContent`;
   const body = {
     systemInstruction: { parts: [{ text: system }] },
     contents: [{ role: 'user', parts: [{ text: user }] }],
@@ -243,6 +249,39 @@ async function llmComplete({ system, user, jsonSchema }) {
     const json = JSON.parse(text);
     const u = j?.usageMetadata ?? {};
     return { ok: true, json, usage: { inputTokens: u.promptTokenCount ?? 0, outputTokens: u.candidatesTokenCount ?? 0 }, ms: Date.now() - t0 };
+  } catch (e) {
+    return { ok: false, error: e.name === 'TimeoutError' ? 'timeout' : String(e.message || e).slice(0, 200).replaceAll(LLM_KEY, '[REDACTED]') };
+  }
+}
+
+/** tongyi（千问/DashScope）走 OpenAI 兼容模式：response_format json_object 结构化输出；
+ * 兼容模式无 responseSchema，字段约束由 SYSTEM_PROMPT + 应用层 postValidate 兜底（与 gemini 分支同一套后校验）。 */
+async function llmCompleteTongyi({ system, user }) {
+  const url = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
+  const body = {
+    model: MODEL,
+    messages: [
+      { role: 'system', content: system },
+      { role: 'user', content: user },
+    ],
+    temperature: 0.2,
+    max_tokens: CFG.max_output_tokens,
+    response_format: { type: 'json_object' },
+  };
+  const t0 = Date.now();
+  try {
+    const r = await fetch(url, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${LLM_KEY}`, 'content-type': 'application/json' },
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(CFG.timeout_ms),
+    });
+    if (!r.ok) return { ok: false, error: `http_${r.status}` };
+    const j = await r.json();
+    const text = j?.choices?.[0]?.message?.content ?? '';
+    const json = JSON.parse(text);
+    const u = j?.usage ?? {};
+    return { ok: true, json, usage: { inputTokens: u.prompt_tokens ?? 0, outputTokens: u.completion_tokens ?? 0 }, ms: Date.now() - t0 };
   } catch (e) {
     return { ok: false, error: e.name === 'TimeoutError' ? 'timeout' : String(e.message || e).slice(0, 200).replaceAll(LLM_KEY, '[REDACTED]') };
   }
@@ -284,7 +323,7 @@ async function main() {
     run_id: RUN_ID,
     generated_at: fetchedAt,
     mode: 'rss_only',
-    llm: { key_present: Boolean(LLM_KEY), model: LLM_KEY ? GEMINI_MODEL : null, calls: 0, batches_failed: 0, aborted: false, input_tokens: 0, output_tokens: 0 },
+    llm: { key_present: Boolean(LLM_KEY), provider: PROVIDER, model: LLM_KEY ? MODEL : null, calls: 0, batches_failed: 0, aborted: false, input_tokens: 0, output_tokens: 0 },
     sources: [],
     counts: { fetched: 0, in_window: 0, deduped_existing: 0, new_items: 0, ai_enriched: 0, re_enriched: 0, dropped_invalid: 0 },
     news_items_total: 0,
@@ -445,7 +484,7 @@ async function main() {
           if (e.summary_zh) target.summary_zh = e.summary_zh;
         }
         target.tags = e.tags; target.level = e.level; target.duplicate_of = e.duplicate_of;
-        target.pipeline = { mode: 'ai', enriched_by: GEMINI_MODEL, run_id: RUN_ID };
+        target.pipeline = { mode: 'ai', enriched_by: MODEL, run_id: RUN_ID };
         kind === 'new' ? stats.counts.ai_enriched++ : stats.counts.re_enriched++;
         seenFps.delete(target.fingerprint);
       }
