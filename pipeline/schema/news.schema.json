@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jary8.com/schemas/news.schema.json",
+  "title": "website6.0 news.json",
+  "description": "构建期新闻管线产物。前端唯一数据契约：两种模式（ai/rss_only）下同构，前端无需感知模式。生成方与校验规则见 website6.0-impl-backend-pipeline.md。",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "mode", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "mode": {
+      "enum": ["ai", "rss_only"],
+      "description": "本次产物的最高 enrichment 水平；items 级别另有逐条 pipeline.mode"
+    },
+    "stats_ref": {
+      "type": "string",
+      "description": "同批产出的 news-stats.json 相对路径，供『本站数据心跳』折叠区消费",
+      "default": "news-stats.json"
+    },
+    "items": {
+      "type": "array",
+      "maxItems": 300,
+      "items": { "$ref": "#/$defs/newsItem" }
+    }
+  },
+  "$defs": {
+    "newsItem": {
+      "type": "object",
+      "required": [
+        "fingerprint", "url", "title_original", "title_zh", "summary_zh",
+        "tags", "level", "source_id", "source_name", "published_at", "pipeline"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "fingerprint": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{16}$",
+          "description": "SHA-256(归一化URL) 前16位。归一化=去 utm*/fragment/尾斜杠/小写 host。跨 run 去重主键"
+        },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "title_original": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "title_zh": {
+          "type": "string", "minLength": 1, "maxLength": 120,
+          "description": "AI 模式=LLM 直译；rss_only 模式=原文（英文源即英文，前端同一字段渲染）"
+        },
+        "summary_zh": {
+          "type": "string", "minLength": 1, "maxLength": 160,
+          "description": "硬性需求 5b 的『简介』。AI ≤80 字目标；降级=feed description 去 HTML 截断 ≤120 字符（上限放宽到 160 容纳中文源）"
+        },
+        "tags": {
+          "type": "array", "minItems": 1, "maxItems": 3,
+          "items": { "enum": ["frontend", "ai", "tools", "standards", "career", "security", "other"] },
+          "description": "固定词表；AI 越表输出经应用层校验降级为 other"
+        },
+        "level": { "enum": ["must-read", "trending", "general"] },
+        "source_id": { "type": "string", "description": "对应 sources.json 的 id" },
+        "source_name": { "type": "string" },
+        "original_lang": { "enum": ["en", "zh"], "default": "en" },
+        "published_at": { "type": "string", "format": "date-time" },
+        "date_inferred": {
+          "type": "boolean", "default": false,
+          "description": "feed 缺失/坏日期时 published_at 取 fetched_at 的标记（宽容解析，见 impl 文档 §8）"
+        },
+        "fetched_at": { "type": "string", "format": "date-time" },
+        "duplicate_of": {
+          "type": ["string", "null"], "default": null,
+          "description": "LLM 跨源语义去重命中的既存条目 fingerprint；非 null 条目默认不在列表渲染，仅存档"
+        },
+        "pipeline": {
+          "type": "object",
+          "required": ["mode", "run_id"],
+          "additionalProperties": false,
+          "properties": {
+            "mode": { "enum": ["ai", "rss_only"] },
+            "enriched_by": {
+              "type": ["string", "null"], "default": null,
+              "description": "AI 模式记模型名（如 gemini-2.5-flash）；降级/未补记 null。审计用，绝不含密钥信息"
+            },
+            "run_id": { "type": "string", "description": "Actions run_id，可回查日志（日志已脱敏）" }
+          }
+        }
+      }
+    }
+  }
+}
