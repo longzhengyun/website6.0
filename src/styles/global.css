@@ -160,11 +160,11 @@ html[data-enhanced] .enhanced-only {
   display: inline-flex;
 }
 
-/* R16 轮播副行：固定单行行盒（不换行、原位替换）防 CLS；超长条目省略号兜底（375/200% 不破版） */
+/* R16 副行行盒（BUG-M4R-03 修订）：@100% 池内最长条目单行可容纳（实测 right=223<375）；
+   高文字缩放改为整句换行而非 nowrap 裁切——替换脚本同步执行于首绘前，换行不产生 CLS。
+   原 nowrap+ellipsis 会把 200% 下越界文本裁在视口外不可找回，违反 WCAG 1.4.4。 */
 .tagline-line {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-wrap: anywhere;
 }
 
 /* 筛选胶囊 */
