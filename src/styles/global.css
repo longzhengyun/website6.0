@@ -65,6 +65,12 @@ body {
     }
   }
 }
+/* L2：reduce 用户直接可见（spec §5 A2 降级列） */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-rise {
+    animation: none;
+  }
+}
 
 /* A6 滚动书脊（D 端 2px accent 进度线，原生 scroll timeline） */
 .spine {
@@ -101,16 +107,23 @@ body {
   }
 }
 
-/* A4 hover/focus：颜色 120ms、箭头位移 160ms；无 hover 设备不依赖悬停信息 */
+/* A4 hover/focus：颜色 120ms、箭头位移 160ms；无 hover 设备不依赖悬停信息
+   B1：accent 预算回收——箭头常态 ink-muted，仅 hover/focus 交互态转 accent */
 .arrow-link .arrow {
   display: inline-block;
   transition: transform 160ms ease-out, color 120ms;
-  color: var(--c-accent);
+  color: var(--c-ink-muted);
 }
 @media (hover: hover) {
-  .arrow-link:hover .arrow {
+  .arrow-link:hover .arrow,
+  .news-card:hover .arrow {
     transform: translateX(2px);
+    color: var(--c-accent);
   }
+}
+.arrow-link:focus-visible .arrow,
+.news-card:focus-visible .arrow {
+  color: var(--c-accent);
 }
 
 /* 新闻整卡：surface 底 + 1px 线区分（禁阴影），hover 边色转 ink */
@@ -172,22 +185,36 @@ html[data-enhanced] .enhanced-only {
   display: none;
 }
 
-/* 技能等级方块 */
+/* 技能等级方块（B1：非交互元素，常态 ink-muted，不占 accent 预算） */
 .rank-blocks {
   font-family: var(--font-mono);
-  color: var(--c-accent);
+  color: var(--c-ink-muted);
   letter-spacing: 2px;
 }
 .rank-blocks .empty {
   color: var(--c-ink-faint);
 }
 
-/* A5 ⌘K 面板 */
+/* L1：编号统一取 ink-faint（spec §2.1：编号为弱化信息，正文禁用强调） */
+.row-num {
+  color: var(--c-ink-faint);
+}
+
+/* A5 ⌘K 面板（L4：遮罩 120ms 淡入） */
+@keyframes overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .palette-overlay {
   position: fixed;
   inset: 0;
   z-index: 50;
   background: color-mix(in srgb, var(--c-ink) 40%, transparent);
+  animation: overlay-in 120ms ease-out both;
 }
 @keyframes palette-in {
   from {
@@ -205,16 +232,23 @@ html[data-enhanced] .enhanced-only {
   animation: palette-in 180ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 @media (prefers-reduced-motion: reduce) {
-  .palette-panel {
+  .palette-panel,
+  .palette-overlay {
     animation: none;
   }
 }
 
-/* A3 View Transitions：根交叉淡入 200ms */
+/* A3 View Transitions：根交叉淡入 200ms；L3：reduce 下同帧替换（spec §5 A3 降级列） */
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation-duration: 200ms;
   animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
 }
 
 /* 终端实验位提示行（About「问站长」占位装饰） */

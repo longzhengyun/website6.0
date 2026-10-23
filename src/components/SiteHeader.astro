@@ -9,7 +9,7 @@ const desktopNav = nav.filter((n) => n.href !== '/');
   <div class="shell flex items-center justify-between h-14">
     <a
       href={import.meta.env.BASE_URL}
-      class="t-label text-ink arrow-link"
+      class="t-label text-ink arrow-link inline-flex items-center min-h-[44px]"
       aria-label="jary8 佳瑞网首页"
     >
       jary8<span class="text-accent">·</span>佳瑞网
@@ -19,7 +19,7 @@ const desktopNav = nav.filter((n) => n.href !== '/');
         desktopNav.map((item) => (
           <a
             href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${item.href}`}
-            class="t-label hover:text-ink transition-colors duration-120"
+            class="t-label hover:text-ink transition-colors duration-120 inline-flex items-center min-h-[44px]"
             class:list={{ 'text-accent': isActive(item.href, current) }}
             aria-current={isActive(item.href, current) ? 'page' : undefined}
           >

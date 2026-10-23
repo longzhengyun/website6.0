@@ -12,11 +12,14 @@ const latest = sortedItems.slice(0, 3);
 >
   <article>
     <!-- Hero：站名版式 L1「双语叠印」（design-spec §3）+ 单一视觉焦点=字体呼吸 -->
-    <section class="shell shell-wide pt-[24vh] pb-16 md:pb-24" aria-labelledby="hero-title">
+    <section
+      class="shell shell-wide pt-[24vh] pb-16 md:pb-24 max-md:min-h-[60vh]"
+      aria-labelledby="hero-title"
+    >
       <h1 id="hero-title" class="t-display">
-        <span class="md:hidden zh-title block">佳瑞网</span>
+        <span class="md:hidden zh-title block text-[2.25rem]! leading-[1.2]">佳瑞网</span>
         <span
-          class="md:hidden hero-en-mono t-label inline-block mt-2 border-b-2 border-accent pb-1"
+          class="md:hidden hero-en-mono t-label text-[0.875rem]! inline-block mt-2 border-b-2 border-accent pb-1"
         >
           jary8
         </span>

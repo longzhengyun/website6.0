@@ -4,7 +4,7 @@ import { site } from '../data/site';
 import { skills, timeline } from '../data/about';
 
 const blocks = (rank: number) =>
-  Array.from({ length: 5 }, (_, i) => (i < rank ? '■' : '·'));
+  Array.from({ length: 5 }, (_, i) => (i < rank ? '■' : '□'));
 ---
 
 <BaseLayout
@@ -37,7 +37,7 @@ const blocks = (rank: number) =>
               <h3 class="t-h3">{s.name}</h3>
               <p class="rank-blocks t-label mt-2" aria-label={`熟练度 ${s.rank}/5`}>
                 {blocks(s.rank).map((b) => (
-                  <span class={b === '·' ? 'empty' : undefined} aria-hidden="true">
+                  <span class={b === '□' ? 'empty' : undefined} aria-hidden="true">
                     {b}
                   </span>
                 ))}
@@ -57,7 +57,7 @@ const blocks = (rank: number) =>
         {
           timeline.map((t) => (
             <li class="pl-5 pb-8 relative">
-              <p class="t-label text-accent">{t.period}</p>
+              <p class="t-label text-ink-faint">{t.period}</p>
               <h3 class="t-h3 mt-1">
                 {t.role}
                 <span class="t-small text-ink-muted"> · {t.org}</span>
@@ -81,7 +81,7 @@ const blocks = (rank: number) =>
       <h2 id="resume-link-title" class="sr-only">简历入口</h2>
       <a
         href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/resume`}
-        class="t-small text-ink-muted hover:text-accent focus-visible:text-accent transition-colors duration-120 arrow-link"
+        class="t-small text-ink-muted hover:text-accent focus-visible:text-accent transition-colors duration-120 arrow-link inline-flex items-center min-h-[44px]"
       >
         需要 PDF？→ 在线简历<span class="arrow" aria-hidden="true">↗</span>
       </a>
