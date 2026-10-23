@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "mode": "seed",
+  "generatedAt": "2026-10-23T04:45:00Z",
+  "note": "M2 种子数据：真实链接与摘要由 M3 构建期管线覆盖（mode=rss/degraded 降级模式 → full 完整模式）。结构即 news-schema 对齐锚点。",
+  "items": [
+    {
+      "id": "seed-001",
+      "title": "Chrome 内置 AI（Gemini Nano）API 正式文档更新",
+      "summary": "Built-in AI 提供 Prompt/Summarize/Writer/Translator 等 API，网页可在端侧直接调用浏览器管理的 Gemini Nano 模型，零密钥零下载。",
+      "url": "https://developer.chrome.com/docs/ai/built-in",
+      "source": "developer.chrome.com",
+      "publishedAt": "2026-10-18",
+      "tags": ["ai", "browser"]
+    },
+    {
+      "id": "seed-002",
+      "title": "web.dev Web AI 专区：WebLLM 与 Prompt API 实操教程",
+      "summary": "官方教程演示如何用 WebAssembly+WebGPU 在浏览器本地跑开源大模型，以及用 Chrome 探索性 Prompt API 构建离线聊天能力。",
+      "url": "https://web.dev/explore/ai",
+      "source": "web.dev",
+      "publishedAt": "2026-09-20",
+      "tags": ["ai", "webgpu"]
+    },
+    {
+      "id": "seed-003",
+      "title": "2026 年 JS 五大新趋势：ES2026、Wasm 组件模型与端侧 AI 落地",
+      "summary": "端侧 AI 从 Demo 变成产品决策：Transformers.js v4、WebLLM、ONNX Runtime Web 与浏览器内置模型四条路线并行成熟；红线是推理必须离开主线程。",
+      "url": "https://juejin.cn/post/7680137672493563938",
+      "source": "掘金",
+      "publishedAt": "2026-09-01",
+      "tags": ["js", "ai", "wasm"]
+    },
+    {
+      "id": "seed-004",
+      "title": "Front-end Fire #156：State of CSS 年度盘点、Cloudflare 收购 Astro",
+      "summary": "State of CSS 确认 Tailwind 仍主导但 AI 尚写不好 CSS；CodePen 现代化 4.0 发布；Cloudflare 收购 Astro 成为年度框架格局事件。",
+      "url": "https://front-end-fire.com/",
+      "source": "Front-end Fire",
+      "publishedAt": "2026-08-03",
+      "tags": ["css", "framework"]
+    },
+    {
+      "id": "seed-005",
+      "title": "Tailwind CSS v4 文档：CSS-first 配置与 @theme 令牌体系",
+      "summary": "v4 以原生 CSS 变量为中心重构配置：@theme 定义 token、零 JS 配置文件、浏览器原生嵌套与层叠，标志原子化 CSS 进入平台化时代。",
+      "url": "https://tailwindcss.com/docs",
+      "source": "tailwindcss.com",
+      "publishedAt": "2026-01-29",
+      "tags": ["css", "build"]
+    },
+    {
+      "id": "seed-006",
+      "title": "Astro 文档：内容驱动站点的 Islands 架构与零 JS 默认",
+      "summary": "Astro 以「默认不发送 JS、按需水合岛屿」成为内容型前端站首选；Content Collections 与 View Transitions 提供类型安全内容与原生转场。",
+      "url": "https://astro.build",
+      "source": "astro.build",
+      "publishedAt": "2026-03-17",
+      "tags": ["framework", "build"]
+    }
+  ]
+}
