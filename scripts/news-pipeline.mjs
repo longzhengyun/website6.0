@@ -514,7 +514,8 @@ async function main() {
         }
         target.tags = e.tags; target.level = e.level; target.duplicate_of = e.duplicate_of;
         target.pipeline = { mode: 'ai', enriched_by: MODEL, run_id: RUN_ID };
-        kind === 'new' ? stats.counts.ai_enriched++ : stats.counts.re_enriched++;
+        if (kind === 'new') stats.counts.ai_enriched++;
+        else stats.counts.re_enriched++;
         seenFps.delete(target.fingerprint);
       }
       // 补跑结果同步进既存 items
