@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-26T06:10:59.516Z",
-  "mode": "rss_only",
+  "generated_at": "2026-10-26T06:41:24.881Z",
+  "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
     {
@@ -235,6 +235,30 @@
       }
     },
     {
+      "fingerprint": "93c066e5c820e0a6",
+      "url": "https://proc-cli.com/",
+      "title_original": "Show HN: Proc-CLI – An agent-friendly CLI tool for process and port management",
+      "title_zh": "Show HN：Proc-CLI——一款面向 AI Agent 的进程与端口管理命令行工具",
+      "summary_zh": "Proc-CLI 是一款专为 AI Agent 设计的命令行工具，用于管理进程与端口。",
+      "tags": [
+        "tools",
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:14:35.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
       "fingerprint": "69326eb62772d113",
       "url": "https://juejin.cn/post/7700642997075869722",
       "title_original": "Claude Duet 安全设计拆解：替你回邮件、付账单的 agent，碰不到你的密码",
@@ -255,6 +279,266 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40269401529"
+      }
+    },
+    {
+      "fingerprint": "11f803bdf2d21098",
+      "url": "https://contraptions.venkateshrao.com/p/cognitive-mercantilism",
+      "title_original": "Cognitive Mercantilism: AI panic resembles fears of early capitalism",
+      "title_zh": "认知重商主义：AI 恐慌类似于早期资本主义的恐惧",
+      "summary_zh": "文章将当前对 AI 的恐慌情绪与早期资本主义引发的社会担忧进行类比分析。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:11:40.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "5f576791a98a9560",
+      "url": "https://arxiv.org/abs/2610.31701",
+      "title_original": "Tradeoff-Aware Territory Design: A Multi-Objective Decision System for Enterprise Customer-to-Seller Allocation",
+      "title_zh": "权衡感知的区域设计：用于企业客户与销售分配的多目标决策系统",
+      "summary_zh": "提出一种多目标决策系统，用于优化企业客户与销售人员的分配，以平衡不同业务需求。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "bb157bb6b3d38a63",
+      "url": "https://arxiv.org/abs/2610.31789",
+      "title_original": "Phronix: The Capability-Centric Learning Paradigm for Agents",
+      "title_zh": "Phronix：面向智能体的能力中心学习范式",
+      "summary_zh": "提出一种名为 Phronix 的能力中心学习范式，旨在提升基于大语言模型的科学计算智能体性能。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "8c3de05bbbcf22cf",
+      "url": "https://arxiv.org/abs/2610.31808",
+      "title_original": "Patronizing and Condescending Language Detection in English and Mandarin",
+      "title_zh": "英语和汉语中的居高临下与贬低性语言检测",
+      "summary_zh": "研究英语和汉语中居高临下及贬低性语言的检测方法，属于有害语言识别领域。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "d762df67a1c93fa4",
+      "url": "https://arxiv.org/abs/2610.31810",
+      "title_original": "PaperFormalizer: Author-in-the-Loop Autoformalization of Research Papers in Lean",
+      "title_zh": "PaperFormalizer：Lean 中研究论文的作者参与式自动形式化",
+      "summary_zh": "介绍 PaperFormalizer 工具，允许作者参与将研究论文中的证明自动形式化为 Lean 代码的过程。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "929adda0efb128e5",
+      "url": "https://arxiv.org/abs/2610.31846",
+      "title_original": "Don't Forget What You Just Learned: Self-Directed Repair Turns Agent Mistakes Into Lasting Lessons",
+      "title_zh": "别忘了刚学到的：自我导向修复将智能体错误转化为持久经验",
+      "summary_zh": "提出一种自我导向修复机制，使智能体能够从错误中学习并将其转化为持久的经验教训。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "0011f44db0acd064",
+      "url": "https://arxiv.org/abs/2610.31882",
+      "title_original": "TACS-RF: Tool-driven Agentic Circuit Synthesis of RF and mmWave Modules",
+      "title_zh": "TACS-RF：射频与毫米波模块的工具驱动智能体电路合成",
+      "summary_zh": "展示 TACS-RF 框架，利用工具驱动的智能体进行射频和毫米波电路的合成设计。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "b4a230b7efdc5793",
+      "url": "https://arxiv.org/abs/2610.31916",
+      "title_original": "Permission to Retry: A Study of Authorization and Recovery in AI Agent Workflows",
+      "title_zh": "重试许可：AI 智能体工作流中的授权与恢复研究",
+      "summary_zh": "研究 AI 智能体工作流中的授权机制与故障恢复策略，探讨持久化智能体在权限变化下的行为。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "22f689f1c4c7ac34",
+      "url": "https://arxiv.org/abs/2610.31918",
+      "title_original": "Beyond On-Policy vs. Off-Policy: At What Level Should LLM Agent Distillation Follow the Student?",
+      "title_zh": "超越同策略与异策略：LLM 智能体蒸馏应在何种层面跟随学生？",
+      "summary_zh": "探讨交互式 LLM 智能体蒸馏过程中，教师生成数据与学生策略之间的层级匹配问题。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "94ca820f73fd50fd",
+      "url": "https://arxiv.org/abs/2610.31937",
+      "title_original": "$M^3$: A Multi-LLM System for Multi-Turn Jailbreaking as a Markov Decision Process",
+      "title_zh": "$M^3$：作为马尔可夫决策过程的多轮越狱多 LLM 系统",
+      "summary_zh": "提出 $M^3$ 系统，将针对大语言模型的多轮越狱攻击建模为马尔可夫决策过程。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "31654d812ef6de5e",
+      "url": "https://arxiv.org/abs/2610.31971",
+      "title_original": "Knowing Whom to Trust is not Enough: The Trust--Agreement Gap in Repeated Multi-Party LLM Negotiation",
+      "title_zh": "知道信任谁还不够：重复多方 LLM 谈判中的信任-协议差距",
+      "summary_zh": "分析大语言模型智能体在重复多方谈判中存在的信任与协议达成之间的差距。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-26T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
       }
     },
     {
@@ -396,6 +680,53 @@
       }
     },
     {
+      "fingerprint": "b30cb355942dc554",
+      "url": "https://exhibits.stanford.edu/menuez/browse/next-computer-inc?per_page=96&sort=pub_year_isi+asc%2C+title_sort+asc&view=masonry",
+      "title_original": "Behind the scenes at the NeXT Computer office",
+      "title_zh": "NeXT 计算机办公室幕后花絮",
+      "summary_zh": "展示斯坦福大学关于 NeXT Computer Inc. 的历史档案与办公室幕后细节。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T03:31:11.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "ed18f8ab0f26929a",
+      "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+      "title_original": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
+      "title_zh": "PaperPilot：零云依赖、纯 Rust 编写的 PDF 引擎，支持 WASM 与 MCP",
+      "summary_zh": "PaperPilot 是一个基于 Rust 开发的 PDF 引擎，支持 WebAssembly 和 MCP 协议。",
+      "tags": [
+        "tools",
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T03:29:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
       "fingerprint": "087e05de2c979bf2",
       "url": "https://juejin.cn/post/7700601438522687539",
       "title_original": "代理网络环境下 Linux Pro 在线激活实操指南",
@@ -439,6 +770,53 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40269401529"
+      }
+    },
+    {
+      "fingerprint": "022d187ab0fe3a99",
+      "url": "https://titleart.dvy.io/",
+      "title_original": "Show HN: TitleArt – Make text like it's 1997",
+      "title_zh": "Show HN：TitleArt——制作复古 1997 风格文字效果",
+      "summary_zh": "TitleArt 是一个在线工具，可将文本转换为 1997 年风格的复古视觉效果。",
+      "tags": [
+        "tools",
+        "frontend"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T03:23:57.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "d49005444cecbadb",
+      "url": "https://shattered.io/microsoft-decision-1-qwen3-5-9b-model-2026/",
+      "title_original": "Microsoft Decision-1: 9B Qwen Model Launch Explained",
+      "title_zh": "微软 Decision-1：9B Qwen 模型发布详解",
+      "summary_zh": "文章详细解析了微软推出的 Decision-1 模型及其基于 9B 参数 Qwen 的技术细节。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T03:12:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
       }
     },
     {
@@ -903,6 +1281,29 @@
       }
     },
     {
+      "fingerprint": "f91680b3d171ca61",
+      "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+      "title_original": "IBM CEO says open weight models are now good and cheap on-prem",
+      "title_zh": "IBM CEO 称开源权重模型在本地部署上已具备高性价比",
+      "summary_zh": "IBM 首席执行官表示，开源权重模型目前在本地部署方面表现出色且成本低廉。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T01:47:46.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
       "fingerprint": "c281324aa383ad20",
       "url": "https://www.oschina.net/news/503199",
       "title_original": ":fire::fire::fire: Claude Code 工程最佳实践 | 主数据平台 1.7.0 发布，移动端上线",
@@ -1041,6 +1442,29 @@
       }
     },
     {
+      "fingerprint": "8f4b4dc2fbb592ba",
+      "url": "https://www.ifixit.com/News/119895/iphone-duo-teardown",
+      "title_original": "iPhone Duo Teardown",
+      "title_zh": "iPhone Duo 拆解报告",
+      "summary_zh": "iFixit 发布了 iPhone Duo 设备的内部结构拆解与分析结果。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T01:23:24.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
       "fingerprint": "ad4539b6354c50a1",
       "url": "https://juejin.cn/post/7700520116152287295",
       "title_original": "AI 编程时代，为什么 Dart 分析会拖慢大型项目的开发",
@@ -1084,6 +1508,29 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "b7430d49dae6956a",
+      "url": "https://korindiehacker.bloffy.blog/en/removing-nextjs-got-my-blog-to-100-on-every-lighthouse-category",
+      "title_original": "Removing Next.js Got My Blog to 100 on Every Lighthouse Category",
+      "title_zh": "移除 Next.js 后我的博客在 Lighthouse 所有类别均获满分",
+      "summary_zh": "作者分享移除 Next.js 框架后，其博客在 Lighthouse 性能测试中获得满分的经验。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T01:03:39.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
       }
     },
     {
@@ -1156,6 +1603,75 @@
       }
     },
     {
+      "fingerprint": "7ebbeeb2f7fed1f2",
+      "url": "https://www.reuters.com/live/brazil-election-live-lula-bolsonaro-face-off-presidential-runoff-2026-10-25/",
+      "title_original": "Lula wins election after final votes tallied",
+      "title_zh": "最终计票完成，卢拉赢得大选",
+      "summary_zh": "路透社报道，随着最终选票统计完毕，卢拉在巴西总统大选中获胜。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T00:31:07.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "4900a66af91ecec4",
+      "url": "https://github.com/KillaBoi/StealMyBitcoin-PoC",
+      "title_original": "Steal My Bitcoin CTF PoC",
+      "title_zh": "Steal My Bitcoin CTF PoC",
+      "summary_zh": "GitHub 上公开的 Steal My Bitcoin CTF 概念验证项目，包含相关代码与 Hacker News 讨论链接。",
+      "tags": [
+        "security"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-26T00:15:17.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "7a3d1687e523ceaa",
+      "url": "https://arxiv.org/abs/2512.19428",
+      "title_original": "Attention Is Not What You Need (2025)",
+      "title_zh": "注意力并非你所需要的（2025）",
+      "summary_zh": "arXiv 论文《Attention Is Not What You Need (2025)》的链接及 Hacker News 讨论，当前热度 73 分。",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-25T23:52:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
       "fingerprint": "33c8980fb09aa892",
       "url": "https://juejin.cn/post/7700247737962676224",
       "title_original": "2026年第43周GitHub趋势周报",
@@ -1179,6 +1695,167 @@
       }
     },
     {
+      "fingerprint": "5b7c1720d48e816c",
+      "url": "https://hypnotize.works/gdx-3ds/postmortem/index.html",
+      "title_original": "F-Zero X on Nintendo 3DS",
+      "title_zh": "任天堂 3DS 上的 F-Zero X",
+      "summary_zh": "关于在任天堂 3DS 上运行 F-Zero X 的开发复盘文章，附 Hacker News 讨论链接。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-25T23:27:30.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "8e02db679d885502",
+      "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+      "title_original": "The State of Context Engineering",
+      "title_zh": "上下文工程的现状",
+      "summary_zh": "Derek Breunig 撰写的关于上下文工程现状的文章，附 Hacker News 讨论链接。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-25T20:32:31.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "859f7d7e497e5aea",
+      "url": "https://www.disneyanimation.com/process/",
+      "title_original": "What goes into making an animated film?",
+      "title_zh": "制作一部动画电影需要什么？",
+      "summary_zh": "迪士尼动画官网介绍动画电影制作流程的页面，附 Hacker News 讨论链接。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-25T20:27:09.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "9df18c08fcaf8dcc",
+      "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
+      "title_original": "Why I Am a Programmer",
+      "title_zh": "我为什么是一名程序员",
+      "summary_zh": "Alfie 撰写的个人博客文章，阐述其成为程序员的原因，附 Hacker News 讨论链接。",
+      "tags": [
+        "career"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-25T19:11:31.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "fdb83d286de8b0b2",
+      "url": "https://imaginationlibrary.com/",
+      "title_original": "Dolly Parton's Imagination Library",
+      "title_zh": "多莉·帕顿的想象力图书馆",
+      "summary_zh": "分享多莉·帕顿发起的“想象力图书馆”儿童阅读推广项目，附 Hacker News 讨论链接。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-25T18:23:54.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "07d9b2ee4610db0b",
+      "url": "https://gwern.net/doc/fiction/science-fiction/1995-egan.pdf",
+      "title_original": "Learning to Be Me (1990) [pdf]",
+      "title_zh": "学习成为我（1990）[PDF]",
+      "summary_zh": "格雷格·伊根科幻小说《学习成为我》的 PDF 文档链接，附 Hacker News 讨论。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-25T17:43:20.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "b83204b7e9c12d9e",
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "title_original": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+      "title_zh": "10 年前的 CNN 在皮肤癌诊断上超越前沿大语言模型",
+      "summary_zh": "Lynch Lab 研究指出，早期卷积神经网络在皮肤癌诊断任务中表现优于当前前沿大语言模型，附 Hacker News 讨论。",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-25T17:15:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
+      }
+    },
+    {
       "fingerprint": "5905c3f49ae50751",
       "url": "https://juejin.cn/post/7700194552506286107",
       "title_original": "Windows也能用 Apple Watch 解锁",
@@ -1199,6 +1876,29 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40269401529"
+      }
+    },
+    {
+      "fingerprint": "0186c0f1dfec08d5",
+      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+      "title_original": "Seam Cutter",
+      "title_zh": "Seam Cutter",
+      "summary_zh": "一款名为 Seam Cutter 的特定图像裁剪工具，支持水平或垂直切割，附 Hacker News 讨论链接。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "simonwillison",
+      "source_name": "Simon Willison (Web.dev for AI)",
+      "original_lang": "en",
+      "published_at": "2026-10-25T15:10:19.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:41:24.881Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40281271512"
       }
     },
     {
