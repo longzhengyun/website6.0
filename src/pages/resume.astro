@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { resume } from '../data/resume';
-import { skills } from '../data/about';
 ---
 
 <BaseLayout
@@ -27,10 +26,6 @@ import { skills } from '../data/about';
   </div>
 
   <article class="shell max-w-[680px] pb-24 md:pb-16">
-    <p class="t-small text-ink border border-accent px-3 py-2 mb-8 no-print">
-      {resume.sampleNote}
-    </p>
-
     <header class="mb-8">
       <h1 class="t-h1 zh-title">{resume.name}</h1>
       <p class="t-h3 text-ink-muted mt-1">{resume.title}</p>
@@ -49,6 +44,7 @@ import { skills } from '../data/about';
           >github.com/longzhengyun</a
         >
       </p>
+      <p class="t-label text-ink-muted mt-3">{resume.meta}</p>
     </header>
 
     <section class="resume-section mb-8" aria-labelledby="r-summary">
@@ -62,16 +58,25 @@ import { skills } from '../data/about';
       <h2 id="r-skills" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
         Core Skills
       </h2>
-      <p class="t-body">{skills.map((s) => s.name).join(' · ')}</p>
+      {
+        resume.skills.map((g) => (
+          <div class="mb-3">
+            <h3 class="t-h3">{g.group}</h3>
+            <p class="t-body text-ink-muted mt-1">
+              {g.items.map((it) => `${it.name}（${it.level}）`).join(' · ')}
+            </p>
+          </div>
+        ))
+      }
     </section>
 
-    {
-      resume.experience.length > 0 && (
-        <section class="resume-section mb-8" aria-labelledby="r-exp">
-          <h2 id="r-exp" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
-            Experience
-          </h2>
-          {resume.experience.map((e) => (
+    <section class="resume-section mb-8" aria-labelledby="r-exp">
+      <h2 id="r-exp" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
+        Experience
+      </h2>
+      {
+        resume.experience.length > 0 ? (
+          resume.experience.map((e) => (
             <div class="mb-6">
               <h3 class="t-h3">
                 {e.role} <span class="t-small text-ink-muted">· {e.org}</span>
@@ -83,10 +88,12 @@ import { skills } from '../data/about';
                 ))}
               </ul>
             </div>
-          ))}
-        </section>
-      )
-    }
+          ))
+        ) : (
+          <p class="t-small text-ink-muted">{resume.emptyNote}</p>
+        )
+      }
+    </section>
 
     <section class="resume-section mb-8" aria-labelledby="r-projects">
       <h2 id="r-projects" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
@@ -109,11 +116,15 @@ import { skills } from '../data/about';
         Education
       </h2>
       {
-        resume.education.map((ed) => (
-          <p class="t-body">
-            {ed.school} <span class="t-label text-ink-muted">{ed.period}</span>
-          </p>
-        ))
+        resume.education.length > 0 ? (
+          resume.education.map((ed) => (
+            <p class="t-body">
+              {ed.school} <span class="t-label text-ink-muted">{ed.period}</span>
+            </p>
+          ))
+        ) : (
+          <p class="t-small text-ink-muted">{resume.emptyNote}</p>
+        )
       }
     </section>
   </article>
