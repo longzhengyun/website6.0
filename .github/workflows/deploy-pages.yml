@@ -39,6 +39,9 @@ jobs:
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
 
+      - name: Lint (ESLint, P-4 gate)
+        run: npm run lint
+
       - name: Type & content check (Astro check)
         run: npm run check --if-present
 
