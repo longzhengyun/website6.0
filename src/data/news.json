@@ -1,9 +1,677 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T10:18:03.372Z",
+  "generated_at": "2026-10-26T02:49:19.017Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "72c4667fbd4da5c7",
+      "url": "https://www.infoq.cn/article/y7YQmP1p42Uj69H1C6uf?utm_source=rss&utm_medium=article",
+      "title_original": "CircleCI 正式发布 Machine Runner Orchestrator",
+      "title_zh": "CircleCI 正式发布 Machine Runner Orchestrator",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T09:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "c36358af97150a65",
+      "url": "https://juejin.cn/post/7700531646281547839",
+      "title_original": "Python 的函数调用到底贵在哪？拆开一次 call：51 纳秒栈帧与 *args 的 40 纳秒罚单",
+      "title_zh": "Python 的函数调用到底贵在哪？拆开一次 call：51 纳秒栈帧与 *args 的 40 纳秒罚单",
+      "summary_zh": "写 Python 的人常被教育「函数调用有开销，热点路径要内联」。可这个开销到底多大、由什么构成？本文用 CPython 3.13.14 实测，把一次函数调用拆到底。 一、结论先行 一次空函数调用实测",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:44:27.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "6ed6eeca35b9bbbc",
+      "url": "https://juejin.cn/post/7700404334723170339",
+      "title_original": "Python 实现 Markdown 与 Word 文档互转",
+      "title_zh": "Python 实现 Markdown 与 Word 文档互转",
+      "summary_zh": "本文以 Spire.Doc for Python 为例，介绍 Markdown 与 Word（DOC/DOCX）互转的实现方式，并讨论转换中需要注意的实际问题。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:41:13.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "0b126f1f777cb7bc",
+      "url": "https://juejin.cn/post/7700157486074904611",
+      "title_original": "程序员 1v1 访谈系列第七期：失业半年所想到的",
+      "title_zh": "程序员 1v1 访谈系列第七期：失业半年所想到的",
+      "summary_zh": "大家好，我是双越。我最近正在搞一个《程序员 1v1 访谈系列》即和我 1v1 微信语音或文字聊天，分享你的状态和困惑，我给出建议。以下是第 7 位沟通者的主要内容，分享出来供大家参考。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:29:11.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "c63491b0272039d2",
+      "url": "https://juejin.cn/post/7700267917770424370",
+      "title_original": "【封闭结束3】ReAct 循环：从一次 Function Call 到多步 Agent",
+      "title_zh": "【封闭结束3】ReAct 循环：从一次 Function Call 到多步 Agent",
+      "summary_zh": "用户说：“看看支付服务最近报错，顺便对照一下文档里的处理建议。” 上一篇把意图认清楚了。这篇盯住：认完意图之后，Agent 往往不是调一次工具就结束，而是要走好几步。 很多团队接上 Function",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:28:26.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "63eee0e382d8935f",
+      "url": "https://juejin.cn/post/7700647882442227753",
+      "title_original": "编程智能体卡在\"需要登录\"这步，六种接法代价差得很远",
+      "title_zh": "编程智能体卡在\"需要登录\"这步，六种接法代价差得很远",
+      "summary_zh": "Browser Use 团队整理出六种让编程智能体复用已登录 Chrome 的方案，从 claude --chrome 扩展到远程调试端口、MCP 协议挂载，路径不同但核心矛盾一致：登录态给了智能体读",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:20:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "594312bca35fbdbe",
+      "url": "https://juejin.cn/post/7700510231650271275",
+      "title_original": "AI 热点日报（2026-10-26）：英伟达转向GPU软件订阅，蚂蚁数科决策模型登顶，DeepSeek千亿融资引关注",
+      "title_zh": "AI 热点日报（2026-10-26）：英伟达转向GPU软件订阅，蚂蚁数科决策模型登顶，DeepSeek千亿融资引关注",
+      "summary_zh": "英伟达推GPU软件订阅，蚂蚁数科决策模型超微软，智元110台人形机器人创吉尼斯纪录，DeepSeek千亿融资引关注，AI芯片算力网上升为国家战略。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:16:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "086779c3af2d0622",
+      "url": "https://www.oschina.net/news/503202",
+      "title_original": "SmartCall v1.0.9 发布：智能体知识库上线，让 AI 客服先查资料再回答",
+      "title_zh": "SmartCall v1.0.9 发布：智能体知识库上线，让 AI 客服先查资料再回答",
+      "summary_zh": "📖 项目简介 SmartCall 是一套基于 AI 大模型 + Asterisk 通信引擎构建的新一代智能客服呼叫中心系统。系统深度融合了 AI 语音机器人、智能 IVR 流程编排、端到端双工对话模型、实时语音识别（ASR）、语音合成（…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:12:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "db1bfbf1ce9ab3f9",
+      "url": "https://www.oschina.net/news/503201",
+      "title_original": "ToolForge v0.2.2 正式发布：AI Agent 也能调用工具了！支持 MCP、CLI 与插件级权限管理",
+      "title_zh": "ToolForge v0.2.2 正式发布：AI Agent 也能调用工具了！支持 MCP、CLI 与插件级权限管理",
+      "summary_zh": "最近一直在持续完善自己的开源项目 ToolForge，今天正式发布 v0.2.2！ ToolForge 是一款基于 Rust + Tauri 2 构建的开源桌面工具箱，面向开发者与效率工作者，通过插件化架构整合开发调试、数据转换、文件处理…",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:08:49.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "9d3b99a021ac3304",
+      "url": "https://juejin.cn/post/7700520116152811583",
+      "title_original": "出题人自己算错了，AI成绩从88%直接跳到98%",
+      "title_zh": "出题人自己算错了，AI成绩从88%直接跳到98%",
+      "summary_zh": "35位物理学家凑出50道从未发表的科研级题目，每题顶尖专家独立推导约需一天。最强AI答对49道、单题成本2.3美元，部分题目复核后发现参考答案本身有误，成绩从88%修正至98%。但题目属于已知框架下的",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:01:11.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "c281324aa383ad20",
+      "url": "https://www.oschina.net/news/503199",
+      "title_original": ":fire::fire::fire: Claude Code 工程最佳实践 | 主数据平台 1.7.0 发布，移动端上线",
+      "title_zh": ":fire::fire::fire: Claude Code 工程最佳实践 | 主数据平台 1.7.0 发布，移动端上线",
+      "summary_zh": "更新版本：V1.7.0 升级简介： 新增权限组申请与审核（开发者自助申请、运营逐组审批）；开放平台接口在线调试；Feign 内部接口统一迁移 /inner/** 并接入令牌鉴权；附件体系与文件存储增强（公开桶）；用户体系增强（身份证号等）…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:43:39.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "dc1613d3a6c7dc59",
+      "url": "https://juejin.cn/post/7700647882441867305",
+      "title_original": "北漂 13 年，我把 Java 家底钉成了这张知识图谱（全站免费）",
+      "title_zh": "北漂 13 年，我把 Java 家底钉成了这张知识图谱（全站免费）",
+      "summary_zh": "北漂13年Java老兵，整理九大免费知识图谱：线上实战项目、源码深度拆解、模板化算法、Java落地RAG、面试原理题、高并发场景设计，附带工具箱，不卖课不割韭菜，求职进阶、转AI方向都能用。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:39:44.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "116559135141665b",
+      "url": "https://juejin.cn/post/7700267917769916466",
+      "title_original": "🔥说一说在线文档的 Block 架构是如何实现的",
+      "title_zh": "🔥说一说在线文档的 Block 架构是如何实现的",
+      "summary_zh": "最近组里有个很漂亮的妹子问我在线文档很难吗？我跟她说这个可以算是前端技术天花板之一了。在我初入前端的时候，就觉得这个东西可望而不可即。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:36:19.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "d2eaf878e69cfef4",
+      "url": "https://juejin.cn/post/7700499904883408946",
+      "title_original": "通过 Rspack 源码学 Rust（一）：`mod`、`pub` 与 `use crate`/`use super`",
+      "title_zh": "通过 Rspack 源码学 Rust（一）：`mod`、`pub` 与 `use crate`/`use super`",
+      "summary_zh": "从 Rspack 的模块树学习 `mod`、`pub`、`use crate` 与 `use super`，理解路径解析、可见性边界和 re-export，并用 rustc 验证最小",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:29:42.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "590d9321b897a5a1",
+      "url": "https://juejin.cn/post/7700782390200778790",
+      "title_original": "Rspack 源码解析（三十一）：HotModuleReplacementPlugin 如何用 hash 比对生成增量更新",
+      "title_zh": "Rspack 源码解析（三十一）：HotModuleReplacementPlugin 如何用 hash 比对生成增量更新",
+      "summary_zh": "本文进入 `rspack_plugin_hmr`，看 HMR 如何通过比对两次构建的 module hash 与 runtime module hash，找出「变化的模块」，生成 hot update",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:28:41.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "ad4539b6354c50a1",
+      "url": "https://juejin.cn/post/7700520116152287295",
+      "title_original": "AI 编程时代，为什么 Dart 分析会拖慢大型项目的开发",
+      "title_zh": "AI 编程时代，为什么 Dart 分析会拖慢大型项目的开发",
+      "summary_zh": "写在前面 现在用 AI 写代码，已经不再是一件新鲜事。 我自己的工作方式也发生了变化：先让 AI 理解问题、修改代码，然后立刻让它验证结果；如果验证失败，再把错误交给 AI 继续修。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:07:25.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "0603051f13d882de",
+      "url": "https://juejin.cn/post/7700157486074478627",
+      "title_original": "介绍一个开源项目 —— 烂笔头",
+      "title_zh": "介绍一个开源项目 —— 烂笔头",
+      "summary_zh": "今天给大家介绍一个我自己的开源项目，在整理github仓库的时候发现的，叫做烂笔头，一款笔记软件，目前自己已经用了好久，今天分享给大家： 开源地址：https://github.com/Hxd1234",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:06:56.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "4d2224b5adc5a1fc",
+      "url": "https://juejin.cn/post/7700267917769818162",
+      "title_original": "花旗、安永、英伟达联手写的文档摄取系统报告：92% 的页面根本不需要 OCR",
+      "title_zh": "花旗、安永、英伟达联手写的文档摄取系统报告：92% 的页面根本不需要 OCR",
+      "summary_zh": "MLSys industrial track 系统报告：来自花旗、安永与英伟达的作者把企业文档摄",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:01:25.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "a621a57680aa00c9",
+      "url": "https://juejin.cn/post/7700359102766727178",
+      "title_original": "2026年AI安全测试工具大全，14款大模型与Agent安全工具一次配齐",
+      "title_zh": "2026年AI安全测试工具大全，14款大模型与Agent安全工具一次配齐",
+      "summary_zh": "前面盘完接口、性能、APP、UI、安全五篇传统工具，群里果然有人来问，那 AI 呢，测大模型用什么，测 Agent 用什么。 问得正是时候。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:00:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "53bfa8894cc3acbf",
+      "url": "https://www.oschina.net/news/503198",
+      "title_original": ":fire:MybatisPlus 发布 3.5.18 版本",
+      "title_zh": ":fire:MybatisPlus 发布 3.5.18 版本",
+      "summary_zh": "Mybatis-Plus 是一款 MyBatis 的增强工具包，简化 CRUD 操作。启动加载 XML 配置时注入单表 SQL 操作 ，为简化开发工作、提高生产率而生。Mybatis-Plus 启动注入动态 SQL 脚本、性能更优，让你专…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T00:44:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "ad58ebb2e2af5566",
+      "url": "https://www.infoq.cn/article/4647jBOxmf3Ut0i1aVbx?utm_source=rss&utm_medium=article",
+      "title_original": "Cloudflare 的 OHTTP 网关拒绝解密通过 Cloudflare 传入的请求",
+      "title_zh": "Cloudflare 的 OHTTP 网关拒绝解密通过 Cloudflare 传入的请求",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-25T14:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "f5f33685ca24e7e6",
+      "url": "https://www.oschina.net/news/503197",
+      "title_original": "Reqmango 是面向团队的自建开源项目管理工具",
+      "title_zh": "Reqmango 是面向团队的自建开源项目管理工具",
+      "summary_zh": "Reqmango 是面向团队的自建开源项目管理工具。 解决什么问题 很多团队熟悉 Jira 一类工具的工作项类型、工作流与自动化，但也会卡在云端成本、数据驻留，以及入口需求仍靠人肉分诊。Reqmango 用 Docker 一键部署，数据留…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-25T12:24:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "fb6e1a983a6ca158",
+      "url": "https://www.infoq.cn/article/9TSuUDxrUSGS26XTA2yB?utm_source=rss&utm_medium=article",
+      "title_original": "四分之一PR是“AI垃圾”！Linux基金会发布新报告：AI写代码快了52%，开源维护者却更累了",
+      "title_zh": "四分之一PR是“AI垃圾”！Linux基金会发布新报告：AI写代码快了52%，开源维护者却更累了",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-25T10:30:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "33378bc295262c16",
+      "url": "https://www.oschina.net/news/503196",
+      "title_original": "10 MB 的桌面 AI 客户端：用仓颉 + 系统 WebView 替代 Electron",
+      "title_zh": "10 MB 的桌面 AI 客户端：用仓颉 + 系统 WebView 替代 Electron",
+      "summary_zh": "我用华为仓颉写了个桌面框架，产物 4.7–10 MB. 项目：cj-tauri（仓颉版 Tauri），MIT 仓库：https://atomgit.com/qq8864/cj-tauri 官网：https://yangyongzhen.g…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-25T10:13:31.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "f7f1fb33355ed884",
+      "url": "https://www.infoq.cn/article/BHWP4JJDeExZZWsifFlg?utm_source=rss&utm_medium=article",
+      "title_original": "Java 近期新闻：Grails 8、Open Liberty、GlassFish、Infinispan、LangChain4j、Spock",
+      "title_zh": "Java 近期新闻：Grails 8、Open Liberty、GlassFish、Infinispan、LangChain4j、Spock",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-25T09:06:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "d89ab94a1a6f5101",
+      "url": "https://www.infoq.cn/article/jNX6EAzqP34xRjqUMU1N?utm_source=rss&utm_medium=article",
+      "title_original": "React 19.3 新增 browser() API，使“仅客户端渲染”成为一等公民",
+      "title_zh": "React 19.3 新增 browser() API，使“仅客户端渲染”成为一等公民",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-24T13:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "0d6655e09201754c",
+      "url": "https://www.oschina.net/news/503195",
+      "title_original": "IDEA enjoy 模板引擎 插件 1.0 发布",
+      "title_zh": "IDEA enjoy 模板引擎 插件 1.0 发布",
+      "summary_zh": "Changelog 1.0 (2026-10-24) 首个正式版本。为 JFinal Enjoy 模板引擎提供完整的 IntelliJ IDEA 编辑支持。 语法高亮与编辑 Enjoy 模板语法高亮（指令、表达式、注释、字符串等，可在颜色…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-24T11:30:10.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "c2b179c839ae6b50",
+      "url": "https://www.infoq.cn/article/lkefSu7SjjIHL1Fmk0Pv?utm_source=rss&utm_medium=article",
+      "title_original": "何时应使用 Liquid Clustering？湖仓布局策略基准测试",
+      "title_zh": "何时应使用 Liquid Clustering？湖仓布局策略基准测试",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-24T10:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "eed0fb8f3a1b1973",
+      "url": "https://www.oschina.net/news/503193",
+      "title_original": "Jync v1.8.0 新增统一认证 & 调整导航页面",
+      "title_zh": "Jync v1.8.0 新增统一认证 & 调整导航页面",
+      "summary_zh": "企业门户的现有账号可以直接登录 Jync：支持「账号密码（OA 接口校验）」「网关头」「票据」三种统一认证方式，同一时刻只生效一种；导航按「配置管理」「日志管理」分组，新增系统日志查询页。界面把「项目」统一改称「同步任务」。升级后外部认证…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-24T07:52:39.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
     {
       "fingerprint": "4fbe85ea055cb026",
       "url": "https://www.infoq.cn/article/UmD4aAerZEts8sZ5t791?utm_source=rss&utm_medium=article",
