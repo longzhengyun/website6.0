@@ -48,6 +48,9 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: QA gates G2-G5 (test baseline §2.1)
+        run: node scripts/qa-gates.mjs
+
       - name: Verify CNAME and place it in artifact
         shell: bash
         run: |
@@ -92,7 +95,31 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+  smoke:
+    name: Post-deploy smoke G6 (test baseline §2.1)
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      # 失败语义：不部署新内容时的回退手段；run 变红即"deploy success ≠ 站点健康"告警（本阶段无独立告警渠道，站主裁定）
+      - name: Run G6 live smoke
+        env:
+          LIVE_URL: ${{ needs.deploy.outputs.page_url }}
+        run: node scripts/qa-gates.mjs --live "$LIVE_URL"
