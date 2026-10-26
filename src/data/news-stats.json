@@ -1,34 +1,34 @@
 {
-  "run_id": "40269401529",
-  "generated_at": "2026-10-26T04:30:30.442Z",
+  "run_id": "40275662186",
+  "generated_at": "2026-10-26T05:42:38.794Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
     "provider": "tongyi",
-    "model": "auto",
+    "model": "qwen-plus",
     "token_budget": 100000,
     "budget_exceeded": false,
-    "calls": 4,
-    "batches_failed": 2,
-    "aborted": false,
+    "calls": 6,
+    "batches_failed": 3,
+    "aborted": true,
     "input_tokens": 0,
     "output_tokens": 0
   },
   "sources": [
     {
       "id": "hn-frontpage",
-      "status": "failed",
-      "items_fetched": 0,
-      "items_new": 0,
-      "ms": 10529,
-      "error": "fetch failed"
+      "status": "ok",
+      "items_fetched": 20,
+      "items_new": 20,
+      "ms": 2373,
+      "error": null
     },
     {
       "id": "webdev",
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 660,
+      "ms": 523,
       "error": null
     },
     {
@@ -36,7 +36,7 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 374,
+      "ms": 382,
       "error": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "ok",
       "items_fetched": 15,
       "items_new": 0,
-      "ms": 703,
+      "ms": 642,
       "error": null
     },
     {
@@ -52,7 +52,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 210,
+      "ms": 193,
       "error": null
     },
     {
@@ -60,7 +60,7 @@
       "status": "ok",
       "items_fetched": 30,
       "items_new": 1,
-      "ms": 80,
+      "ms": 93,
       "error": null
     },
     {
@@ -68,15 +68,15 @@
       "status": "ok",
       "items_fetched": 321,
       "items_new": 10,
-      "ms": 157,
+      "ms": 278,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 0,
-      "ms": 1246,
+      "items_new": 1,
+      "ms": 1162,
       "error": null
     },
     {
@@ -84,32 +84,34 @@
       "status": "ok",
       "items_fetched": 50,
       "items_new": 0,
-      "ms": 2718,
+      "ms": 2593,
       "error": null
     },
     {
       "id": "juejin",
       "status": "ok",
-      "items_fetched": 20,
-      "items_new": 8,
-      "ms": 1654,
+      "items_fetched": 0,
+      "items_new": 0,
+      "ms": 1209,
       "error": null
     }
   ],
   "counts": {
     "fetched": 526,
-    "in_window": 19,
-    "deduped_existing": 29,
-    "new_items": 19,
+    "in_window": 32,
+    "deduped_existing": 17,
+    "new_items": 32,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 11
+    "dropped_nonzh_r17": 31
   },
-  "news_items_total": 148,
+  "news_items_total": 149,
   "degraded_all_sources": false,
   "errors": [
     "enrichment batch 0 failed: http_403",
-    "enrichment batch 10 failed: http_403"
+    "enrichment batch 10 failed: http_403",
+    "enrichment batch 20 failed: http_403",
+    "AI aborted after consecutive failures, remainder stored rss_only"
   ]
 }

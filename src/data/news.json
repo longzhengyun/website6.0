@@ -1,9 +1,32 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-26T04:30:30.442Z",
+  "generated_at": "2026-10-26T05:42:38.794Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "4713be3eefee2bb7",
+      "url": "https://www.infoq.cn/article/qJB2DapLThovtxzyOtKW?utm_source=rss&utm_medium=article",
+      "title_original": "Terraform Google Cloud 8.0 发布：告别“永久 Diff”，代价是破坏性升级",
+      "title_zh": "Terraform Google Cloud 8.0 发布：告别“永久 Diff”，代价是破坏性升级",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T13:21:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T05:42:38.794Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40275662186"
+      }
+    },
     {
       "fingerprint": "01618a7453f586c2",
       "url": "https://www.infoq.cn/article/0C1Wgt7N9NzM6KjHSFeA?utm_source=rss&utm_medium=article",
