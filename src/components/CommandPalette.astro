@@ -1,12 +1,13 @@
 ---
 interface PaletteEntry {
   label: string;
-  href: string;
+  href?: string;
   external?: boolean;
+  action?: string;
 }
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const index: PaletteEntry[] = (Astro.props.index as PaletteEntry[]).map((e) =>
-  e.external ? e : { ...e, href: `${base}${e.href === '/' ? '/' : e.href}` },
+  e.external || e.action ? e : { ...e, href: `${base}${e.href === '/' ? '/' : e.href}` },
 );
 ---
 
@@ -37,10 +38,12 @@ const index: PaletteEntry[] = (Astro.props.index as PaletteEntry[]).map((e) =>
 <script type="application/json" data-palette-index set:html={JSON.stringify(index)}></script>
 
 <script>
+  import { LABEL, MODES, getMode } from '../scripts/theme';
+
   const json = document.querySelector<HTMLScriptElement>('[data-palette-index]');
   const root = document.querySelector<HTMLElement>('[data-palette]');
   if (json?.textContent && root) {
-    const entries: { label: string; href: string; external?: boolean }[] =
+    const entries: { label: string; href?: string; external?: boolean; action?: string }[] =
       JSON.parse(json.textContent);
     const panel = root.querySelector<HTMLElement>('[data-palette-panel]')!;
     const input = root.querySelector<HTMLInputElement>('[data-palette-input]')!;
@@ -50,32 +53,58 @@ const index: PaletteEntry[] = (Astro.props.index as PaletteEntry[]).map((e) =>
 
     document.documentElement.setAttribute('data-enhanced', '');
 
+    // SYNC:dark —— 主题动作条目实时展示当前态与下一态
+    const actionLabel = (action: string): string => {
+      if (action === 'theme-toggle') {
+        const cur = getMode();
+        const next = MODES[(MODES.indexOf(cur) + 1) % MODES.length];
+        return `切换主题（当前 ${LABEL[cur]} → ${LABEL[next]}）`;
+      }
+      return action;
+    };
+
     const render = () => {
       const q = input.value.trim().toLowerCase();
-      const hits = entries.filter((e) => e.label.toLowerCase().includes(q)).slice(0, 10);
+      const hits = entries
+        .map((e) => ({
+          ...e,
+          display: e.action ? actionLabel(e.action) : e.label,
+        }))
+        .filter((e) => e.display.toLowerCase().includes(q))
+        .slice(0, 10);
       selected = Math.min(selected, Math.max(hits.length - 1, 0));
       list.innerHTML = '';
       hits.forEach((e, i) => {
         const li = document.createElement('li');
         li.setAttribute('role', 'option');
         li.setAttribute('aria-selected', String(i === selected));
-        const a = document.createElement('a');
-        a.href = e.href;
-        if (e.external) {
-          a.target = '_blank';
-          a.rel = 'noopener noreferrer';
+        const cls =
+          'block w-full text-left px-4 py-3 t-small hover:bg-bg' +
+          (i === selected ? ' bg-ink text-bg' : '');
+        let el: HTMLAnchorElement | HTMLButtonElement;
+        if (e.action) {
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.dataset.paletteAction = e.action;
+          el = b;
+        } else {
+          const a = document.createElement('a');
+          a.href = e.href || '#';
+          if (e.external) {
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+          }
+          el = a;
         }
         // BUG-M4R-01 R-2: selected row uses inverted fill instead of accent text (<18px no accent color)
-        a.className =
-          'block px-4 py-3 t-small hover:bg-bg' +
-          (i === selected ? ' bg-ink text-accent-ink' : '');
-        a.textContent = e.label;
-        li.append(a);
+        el.className = cls;
+        el.textContent = e.display;
+        li.append(el);
         list.append(li);
       });
-      (list.children[selected] as HTMLElement | undefined)?.querySelector('a')?.focus({
-        preventScroll: true,
-      });
+      (list.children[selected] as HTMLElement | undefined)
+        ?.querySelector<HTMLElement>('a, button')
+        ?.focus({ preventScroll: true });
     };
 
     const open = () => {
@@ -114,9 +143,20 @@ const index: PaletteEntry[] = (Astro.props.index as PaletteEntry[]).map((e) =>
 
     root.querySelector<HTMLElement>('[data-palette-overlay]')!.addEventListener('click', close);
 
+    // 动作条目：委托点击 → 派发给 theme.ts 监听器并关闭面板
+    list.addEventListener('click', (ev) => {
+      const btn = (ev.target as Element | null)?.closest?.<HTMLElement>('[data-palette-action]');
+      if (!btn) return;
+      ev.preventDefault();
+      if (btn.dataset.paletteAction === 'theme-toggle') {
+        document.dispatchEvent(new CustomEvent('theme:cycle'));
+        close();
+      }
+    });
+
     panel.addEventListener('keydown', (ev) => {
       if (ev.key !== 'Tab') return;
-      const f = [...panel.querySelectorAll<HTMLElement>('input, a')];
+      const f = [...panel.querySelectorAll<HTMLElement>('input, a, button')];
       const first = f[0];
       const last = f[f.length - 1];
       if (ev.shiftKey && document.activeElement === first) {

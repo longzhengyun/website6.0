@@ -9,7 +9,6 @@ import SiteFooter from '../components/SiteFooter.astro';
 import TabBar from '../components/TabBar.astro';
 import CommandPalette from '../components/CommandPalette.astro';
 import { news } from '../data/news';
-
 interface Props {
   title: string;
   desc: string;
@@ -22,6 +21,7 @@ const paletteIndex = [
   { label: 'News 业内新闻', href: '/news' },
   { label: 'About 关于', href: '/about' },
   { label: 'Résumé 在线简历', href: '/resume' },
+  { label: '切换主题（跟随系统 → 亮色 → 暗色）', action: 'theme-toggle' },
   ...news.items.slice(0, 12).map((i) => ({ label: i.title_zh, href: i.url, external: true })),
 ];
 ---
@@ -31,6 +31,23 @@ const paletteIndex = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <script is:inline>
+      // L-1 预绘：首帧前写入实际解析值（auto 也解析），杜绝 FOUC；与 theme.ts 的 SYNC:dark 两块 token 对应
+      (function () {
+        let mode = 'auto';
+        try {
+          const v = localStorage.getItem('theme-mode');
+          if (v === 'light' || v === 'dark' || v === 'auto') mode = v;
+        } catch { /* localStorage 不可用：保持 auto */ }
+        const resolved = mode === 'auto'
+          ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+          : mode;
+        const el = document.documentElement;
+        el.setAttribute('data-theme', resolved);
+        el.dataset.themeMode = mode;
+      })();
+    </script>
+    <script>import '../scripts/theme';</script>
     <title>{title}</title>
     <meta name="description" content={desc} />
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
