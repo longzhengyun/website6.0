@@ -1,0 +1,114 @@
+{
+  "$comment": "website6.0 新闻管线源白名单 v1（后端维护）。enabled 初始以降级/AI 均可用为准；verify=true 的源需实施期 preflight 实测后定夺（见 impl-backend-pipeline.md §8）。fetch_window_hours: 只收录该时间窗内发布的条目。max_items_per_run: 本源单 run 最多贡献的新条目数。",
+  "version": 1,
+  "defaults": {
+    "fetch_timeout_ms": 20000,
+    "max_items_per_run": 40,
+    "fetch_window_hours": 48,
+    "user_agent": "jary8-news-pipeline/1.0 (+https://github.com/longzhengyun/website6.0)"
+  },
+  "sources": [
+    {
+      "id": "hn-frontpage",
+      "name": "Hacker News Front Page",
+      "type": "rss",
+      "url": "https://hnrss.org/frontpage",
+      "lang": "en",
+      "enabled": true,
+      "category_hint": ["ai", "frontend", "tools"],
+      "fetch_window_hours": 24,
+      "note": "免费第三方服务，连续 2 次 preflight 失败自动禁用，备选替换源：https://hn.algolia.com/api/v1/search?tags=front_page（JSON 型源，type=json）"
+    },
+    {
+      "id": "webdev",
+      "name": "web.dev",
+      "type": "rss",
+      "url": "https://web.dev/feed.xml",
+      "lang": "en",
+      "enabled": true,
+      "category_hint": ["frontend", "standards"]
+    },
+    {
+      "id": "smashing",
+      "name": "Smashing Magazine",
+      "type": "rss",
+      "url": "https://www.smashingmagazine.com/feed/",
+      "lang": "en",
+      "enabled": true,
+      "category_hint": ["frontend", "career"]
+    },
+    {
+      "id": "css-tricks",
+      "name": "CSS-Tricks",
+      "type": "rss",
+      "url": "https://css-tricks.com/feed/",
+      "lang": "en",
+      "enabled": true,
+      "category_hint": ["frontend"]
+    },
+    {
+      "id": "mozilla-hacks",
+      "name": "Mozilla Hacks",
+      "type": "rss",
+      "url": "https://hacks.mozilla.org/feed/",
+      "lang": "en",
+      "enabled": true,
+      "category_hint": ["frontend", "standards", "tools"]
+    },
+    {
+      "id": "simonwillison",
+      "name": "Simon Willison (Web.dev for AI)",
+      "type": "atom",
+      "url": "https://simonwillison.net/atom/everything/",
+      "lang": "en",
+      "enabled": true,
+      "category_hint": ["ai", "tools"],
+      "max_items_per_run": 10,
+      "note": "高频博客，限量防止单源挤占配额"
+    },
+    {
+      "id": "arxiv-cs-ai",
+      "name": "arXiv cs.AI new",
+      "type": "rss",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "lang": "en",
+      "enabled": true,
+      "max_items_per_run": 10,
+      "category_hint": ["ai"],
+      "note": "量大，仅取限量；摘要偏学术，level 恒 general"
+    },
+    {
+      "id": "chrome-developers-blog",
+      "name": "Chrome Developers Blog",
+      "type": "rss",
+      "url": "https://developer.chrome.com/static/blog/feed.xml",
+      "lang": "en",
+      "enabled": false,
+      "verify": true,
+      "category_hint": ["frontend", "standards", "ai"]
+    },
+    {
+      "id": "infoq-cn",
+      "name": "InfoQ 中文",
+      "type": "rss",
+      "url": "https://www.infoq.cn/feed",
+      "lang": "zh",
+      "enabled": false,
+      "verify": true,
+      "category_hint": ["frontend", "career", "security"],
+      "note": "中文源候选；实测可达后启用，AI 模式下中文源仅做去重+标签（已是中文不强行转写）"
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "type": "rss",
+      "url": "https://openai.com/news/rss.xml",
+      "lang": "en",
+      "enabled": false,
+      "verify": true,
+      "category_hint": ["ai"]
+    }
+  ],
+  "tag_vocabulary": ["frontend", "ai", "tools", "standards", "career", "security", "other"],
+  "level_vocabulary": ["must-read", "trending", "general"]
+}
