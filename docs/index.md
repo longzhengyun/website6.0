@@ -14,6 +14,7 @@
 | adr/website6.0-adr.md | ADR | 站主裁定归档 ADR-001~004 | 已收录 |
 | decisions/website6.0-decisions.md | 选型/否决记录 | S1-S9 采纳、V1-V8 否决/暂缓、遗留观察项 | 已收录 |
 | decisions/ruling-index-phase1.md | 裁定索引 | 一期站主裁定 seq→commit/文档 映射补录（本次新增） | 已收录 |
+| design/DESIGN.md | 设计系统契约（二期 P-2） | 朱红系统一 token 基线 rev2 定稿（前端评审通过、--c-warn 双档采纳；数据源=contrast-p2.mjs 实测复算，L-1/L-2/L-3/L-4 实施依据） | 已收录（2026-10-26 项目终审合入，二期新增） |
 
 ## 二、方案层（docs/proposal，8 份）
 | 文件 | 类型 | 去向 |
