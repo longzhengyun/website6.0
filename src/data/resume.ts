@@ -3,7 +3,8 @@
 // - 站史条目：website5.0/src/data/version-log.json（V3 2016.05 / V4 2020.06 / V5 2026.10）
 //   技术栈互证：website3.0 product/views/about.html（AngularJS 等）、website4.0 pages/mine/about.vue（VUE/NODE/SQLITE）
 // - 6.0/5.0 项目记录：本文件原示例基线（事实已由实施记录核验）
-// 工作经历/教育两节待站主提供后原文录入；手机/年龄/期望年薪等旧后端字段一律不公示。
+// 站主 seq=638 裁定「工作经历和教育背景先留空」：experience/education 保持空数组（后续提供原文时直接填数据、不动模板）；
+// 手机/年龄/期望年薪等旧后端字段一律不公示。
 import { site } from './site';
 
 export interface ResumeEntry {
@@ -22,7 +23,6 @@ export const resume = {
   name: 'Jary',
   title: 'Web 前端开发',
   meta: 'UTC+8 · 站点始于 2008 · 从业始于 2007',
-  sampleNote: '⚠ 部分字段待补充：工作经历与教育背景待站主提供后原文填入（此提示不随打印输出）。',
   summary:
     '多年 Web 前端开发经验。关心界面、性能与可维护性，也写字记录取舍；这里放着项目、文章，以及一些经得起回看的答案。',
   skills: [
@@ -52,6 +52,8 @@ export const resume = {
       ],
     },
   ] as SkillGroup[],
+  // 空态说明文案（站主选定的呈现方式：保留节标题 + 空态短句）
+  emptyNote: '暂未公示',
   experience: [] as ResumeEntry[],
   projects: [
     {
@@ -75,6 +77,6 @@ export const resume = {
       desc: 'AngularJS + PHP 版本，开始以文章与作品集的方式记录前端实践。',
     },
   ],
-  education: [{ school: '教育背景待站主补充', period: '—', note: '' }],
+  education: [] as { school: string; period: string; note: string }[],
   contact: { email: site.email, github: site.github },
 } as const;
