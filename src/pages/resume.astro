@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { resume } from '../data/resume';
-import { skills } from '../data/about';
 ---
 
 <BaseLayout
@@ -49,6 +48,7 @@ import { skills } from '../data/about';
           >github.com/longzhengyun</a
         >
       </p>
+      <p class="t-label text-ink-muted mt-3">{resume.meta}</p>
     </header>
 
     <section class="resume-section mb-8" aria-labelledby="r-summary">
@@ -62,11 +62,20 @@ import { skills } from '../data/about';
       <h2 id="r-skills" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
         Core Skills
       </h2>
-      <p class="t-body">{skills.map((s) => s.name).join(' · ')}</p>
+      {
+        resume.skills.map((g) => (
+          <div class="mb-3">
+            <h3 class="t-h3">{g.group}</h3>
+            <p class="t-body text-ink-muted mt-1">
+              {g.items.map((it) => `${it.name}（${it.level}）`).join(' · ')}
+            </p>
+          </div>
+        ))
+      }
     </section>
 
     {
-      resume.experience.length > 0 && (
+      resume.experience.length > 0 ? (
         <section class="resume-section mb-8" aria-labelledby="r-exp">
           <h2 id="r-exp" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
             Experience
@@ -84,6 +93,13 @@ import { skills } from '../data/about';
               </ul>
             </div>
           ))}
+        </section>
+      ) : (
+        <section class="resume-section mb-8" aria-labelledby="r-exp">
+          <h2 id="r-exp" class="t-label uppercase text-ink-muted border-b border-line pb-2 mb-4">
+            Experience
+          </h2>
+          <p class="t-small text-ink-muted">待站主补充（提供后原文录入）</p>
         </section>
       )
     }
