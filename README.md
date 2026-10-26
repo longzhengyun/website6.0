@@ -54,7 +54,7 @@ docs/               项目档案：ADR/选型否决/裁定索引/方案/实施/�
 - 红线（workflow 文件头注释为准）：仅 schedule/dispatch 触发、不 checkout 外部 ref；密钥只进 Secrets，产物入库前有 grep 密钥门禁；GITHUB_TOKEN 只读。
 - 数据约束：news.json 上限 100 条（站主指令 seq=621，total_cap 与 schema maxItems 对齐），无窗口外存档。
 - 本地跑一次（不提交）：设置环境变量后 `node scripts/news-pipeline.mjs`。
-- 已知缺陷（待站主批复是否修复，P-3a）：infoq-cn 时区解析致 13/100 条 `published_at` 为"未来日期"，污染排序展示。
+- 已知缺陷（站主 seq=100 已批复修复，P-3a 开工中）：上游 infoq-cn feed 将 UTC+8 墙钟时间错标为 GMT，致 13/100 条 `published_at` 为"未来日期"、污染排序展示（管线解析器本身无 bug；修复=F1 存量订正 + F2 源级补偿与未来日期钳制 + F3 落盘断言，见 docs/ 与群 shared/backend-q3-timezone-fix-plan-20261026.md）。
 
 ## CI/CD
 

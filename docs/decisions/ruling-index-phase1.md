@@ -35,7 +35,7 @@
 |---|---|---|
 | 二期主目标=C 技术展示（设计/UI/交互体现技术）；不考虑资讯影响力；长期纯静态、无后端无数据库 | seq=65 | shared/v6.0-phase2-plan-project-rev2.md；本表 |
 | D-R2-1 域名换绑延后至本版上线后（base 维持 /website6.0/）；D-R2-2 品牌色统一；D-R2-3 Playwright 不引；D-R2-4 V3=首页展位；D-R2-5 英文版暂不做；D-R2-6 资讯区保留（自动化展示位，pipeline 每日 2 次不动）；D-R2-7 告警/Dependabot 先不要 | seq=84 | shared/v6.0-phase2-dispatch-plan.md（T0/T1/T2 分派定稿） |
-| 待批复单点：P-3a 时区缺陷修复（线上 news.json 13/100 条"未来日期"）是否随第 7 项一并搁置 | 项目已向站主请示，待回复 | dispatch-plan §三 P-3a |
+| P-3a 单点批复：Q3 数据缺陷修复（线上 news.json 13/100 条"未来日期"）不随第 7 项搁置——站主裁定"数据缺陷修复不搁置"；根因后修正为上游 infoq-cn feed 把 UTC+8 墙钟错标 GMT（非管线解析器 bug） | seq=100 | dispatch-plan §三 P-3a（后端开工中，F1+F2+F3）；shared/backend-q3-timezone-fix-plan-20261026.md |
 
 ## 五、维护规则
 - 新裁定落表：裁定发生当日由项目/知识登记一行（依据 seq、原文要点、commit/文档落点）。
