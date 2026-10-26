@@ -94,7 +94,8 @@ const index: PaletteEntry[] = (Astro.props.index as PaletteEntry[]).map((e) =>
     document.addEventListener('keydown', (ev) => {
       if ((ev.metaKey || ev.ctrlKey) && ev.key.toLowerCase() === 'k') {
         ev.preventDefault();
-        root.hidden ? open() : close();
+        if (root.hidden) open();
+        else close();
       } else if (ev.key === 'Escape' && !root.hidden) {
         close();
       } else if (!root.hidden && (ev.key === 'ArrowDown' || ev.key === 'ArrowUp')) {

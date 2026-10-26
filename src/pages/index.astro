@@ -42,12 +42,12 @@ const latest = sortedItems.slice(0, 2);
       <script type="application/json" id="tagline-pool" set:html={JSON.stringify(taglines).replace(/</g, '\\u003c')} />
       <script is:inline>
         (function () {
-          var el = document.getElementById('tagline-text');
-          var pool = document.getElementById('tagline-pool');
+          const el = document.getElementById('tagline-text');
+          const pool = document.getElementById('tagline-pool');
           if (!el || !pool) return;
           if (window.__tagline === undefined) {
             try {
-              var arr = JSON.parse(pool.textContent);
+              const arr = JSON.parse(pool.textContent);
               window.__tagline = arr[Math.floor(Math.random() * arr.length)];
             } catch (e) {
               window.__tagline = null;
@@ -94,7 +94,7 @@ const latest = sortedItems.slice(0, 2);
     <script is:inline>
       (function () {
         if (!window.matchMedia('(min-width: 768px)').matches) {
-          var el = document.querySelector('[data-home-pulse]');
+          const el = document.querySelector('[data-home-pulse]');
           if (el) el.parentNode.removeChild(el);
         }
       })();
