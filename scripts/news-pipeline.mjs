@@ -37,7 +37,7 @@ const CFG = {
   input_title_desc_max: 600,
   input_body_max: 1500,
   seen_headlines_max: 80,
-  total_cap: 300,               // news.json items 上限（schema maxItems 同值）
+  total_cap: 100,               // news.json items 上限（schema maxItems 同值；站主 seq=621 指令：仅保留最新 100 条）
   summary_degraded_max: 120,    // rss_only 摘要目标长度（schema 上限 160 另有兜底截断）
   timeout_ms: 90000,
 };
@@ -529,7 +529,7 @@ async function main() {
     }
   }
 
-  // 7. 合并写出（R17：源级 lang 口径展示过滤一条规则覆盖新旧+存量清洗；新→旧排序、300 截断、剥离内部字段）
+  // 7. 合并写出（R17：源级 lang 口径展示过滤一条规则覆盖新旧+存量清洗；新→旧排序、total_cap 截断、剥离内部字段）
   const cleanNew = toWrite.map((i) => { const { __new: _n, ...rest } = i; return rest; });
   const preMerge = [...cleanNew, ...(existingFeed?.items ?? [])];
   // 累计：候选层跳过（降级模式新 en 条目）+ 合并层剔除（存量一次性清洗 / ai 模式补跑失败批）

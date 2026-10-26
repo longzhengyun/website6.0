@@ -20,7 +20,7 @@ export interface Website60NewsJson {
    */
   stats_ref?: string;
   /**
-   * @maxItems 300
+   * @maxItems 100
    */
   items: NewsItem[];
 }
