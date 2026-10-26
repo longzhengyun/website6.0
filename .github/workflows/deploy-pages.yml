@@ -103,7 +103,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
   smoke:
-    name: Post-deploy smoke G6 (test baseline §2.3)
+    name: Post-deploy smoke G6 (test baseline §2.1)
     needs: deploy
     runs-on: ubuntu-latest
     timeout-minutes: 5

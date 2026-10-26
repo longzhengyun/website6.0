@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * P-4/G1-G6 质量门禁断言（开发运维实现；口径=测试 shared/qa-v6p2-quality-baseline-v1.md §2.1/§2.3）
+ * P-4/G1-G6 质量门禁断言（开发运维实现；口径=测试 shared/qa-v6p2-quality-baseline-v1.md §2.1）
  * 本地模式（默认）：G2 dist 完整性+内链、G3 每页 meta 结构、G4 外链 rel 审计、G5 news 数据断言。
  * 在线模式（--live <url>）：G6 部署后 smoke（四页 200 / robots / 真 404 状态码 / _astro 哈希资源 / 首条一致性）。
- * 零第三方依赖（node builtins + fetch）。G5 容差 0min（站主裁定口径）；P-3a 修复合入前 QA_G5_MODE=warn，
- * 合入后默认切 fail（切换 PR 由开发运维发起并同步后端/测试对账）。
+ * 零第三方依赖（node builtins + fetch）。G5 容差 0min（站主裁定口径）；P-3a 修复合入后默认 fail（3f92c3b 起），
+ * 如需临时降级可显式 QA_G5_MODE=warn（切换已同步后端/测试对账）。
  */
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, resolve, dirname } from 'node:path';
@@ -15,6 +15,10 @@ const DIST = join(ROOT, 'dist');
 const args = process.argv.slice(2);
 const liveIdx = args.indexOf('--live');
 const LIVE = liveIdx >= 0 ? args[liveIdx + 1] : null;
+if (liveIdx >= 0 && (!LIVE || LIVE.startsWith('--'))) {
+  console.error('[qa-gates] --live 需要非空 URL 参数（在线模式 G6），例如: node scripts/qa-gates.mjs --live https://example.com/');
+  process.exit(1);
+}
 
 // base 从 astro.config.mjs 读取（M5 换绑 base 改 '/' 后无需改本脚本）
 const cfgSrc = readFileSync(join(ROOT, 'astro.config.mjs'), 'utf8');
@@ -200,10 +204,10 @@ async function liveGates(liveUrl) {
   for (const w of warnings) console.warn('WARN ' + w);
   if (failures.length) {
     const g5Only = failures.every((f) => f.startsWith('[G5]'));
-    const mode = process.env.QA_G5_MODE || 'warn';
+    const mode = process.env.QA_G5_MODE || 'fail'; // P-3a 已合入（3f92c3b）：默认 fail；临时降级需显式 QA_G5_MODE=warn
     if (g5Only && mode === 'warn') {
-      for (const f of failures) console.warn('WARN(G5 pending P-3a) ' + f);
-      console.log(`QA gates: ${failures.length} G5 违例按 warn 处理（P-3a 合入后切 fail）`);
+      for (const f of failures) console.warn('WARN(G5 degraded) ' + f);
+      console.log(`QA gates: ${failures.length} G5 违例按显式 warn 处理（默认口径为 fail）`);
       process.exit(0);
     }
     for (const f of failures) console.error('::error::' + f);
