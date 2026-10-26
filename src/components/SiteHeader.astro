@@ -1,5 +1,6 @@
 ---
 import { nav, relativePath, isActive } from '../data/site';
+import ThemeToggle from './ThemeToggle.astro';
 
 const current = relativePath(Astro.url.pathname);
 const desktopNav = nav.filter((n) => n.href !== '/');
@@ -14,7 +15,8 @@ const desktopNav = nav.filter((n) => n.href !== '/');
     >
       Jary<span class="brand-dot" aria-hidden="true"></span>佳瑞网
     </a>
-    <nav aria-label="主导航" class="hidden md:flex items-center gap-8">
+    <div class="hidden md:flex items-center gap-8">
+      <nav aria-label="主导航" class="flex items-center gap-8">
       {
         desktopNav.map((item) => (
           <a
@@ -34,6 +36,8 @@ const desktopNav = nav.filter((n) => n.href !== '/');
           </a>
         ))
       }
-    </nav>
+      </nav>
+      <ThemeToggle variant="header" />
+    </div>
   </div>
 </header>

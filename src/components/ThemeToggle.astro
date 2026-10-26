@@ -1,0 +1,30 @@
+---
+// L-1 三态主题切换按钮：仅markup，行为由 src/scripts/theme.ts 文档级委托驱动。
+interface Props {
+  variant?: 'header' | 'tab';
+}
+const { variant = 'header' } = Astro.props;
+---
+
+{
+  variant === 'tab' ? (
+    <button
+      type="button"
+      data-theme-toggle
+      class="tab-item t-label enhanced-only text-ink-muted"
+    >
+      <span class="tab-label">
+        <span data-theme-label>跟随系统</span>
+      </span>
+    </button>
+  ) : (
+    <button
+      type="button"
+      data-theme-toggle
+      class="t-label enhanced-only text-ink-muted hover:text-ink transition-colors duration-120 items-center min-h-[44px] border border-line px-3"
+    >
+      <span aria-hidden="true" class="mr-1">◐</span>
+      <span data-theme-label>跟随系统</span>
+    </button>
+  )
+}

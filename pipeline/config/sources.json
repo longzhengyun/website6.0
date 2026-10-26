@@ -1,5 +1,5 @@
 {
-  "$comment": "website6.0 新闻管线源白名单 v1（后端维护）。enabled 初始以降级/AI 均可用为准；verify=true 的源需实施期 preflight 实测后定夺（见 impl-backend-pipeline.md §8）。fetch_window_hours: 只收录该时间窗内发布的条目。max_items_per_run: 本源单 run 最多贡献的新条目数。",
+  "$comment": "website6.0 新闻管线源白名单 v1（后端维护）。enabled 初始以降级/AI 均可用为准；verify=true 的源需实施期 preflight 实测后定夺（见 impl-backend-pipeline.md §8）。fetch_window_hours: 只收录该时间窗内发布的条目。max_items_per_run: 本源单 run 最多贡献的新条目数。pubdate_tz_mislabel_hours: 本源 feed 发布时间时区错标小时数（Q3：标注比真实时刻快 N 小时则解析后回拨 N 小时）；缺省/0=无补偿。",
   "version": 1,
   "defaults": {
     "fetch_timeout_ms": 20000,
@@ -96,7 +96,8 @@
       "enabled": true,
       "category_hint": ["frontend", "career", "security"],
       "max_items_per_run": 20,
-      "note": "R17 裁定（产品 v1.6）中文主源；CI run 40260964099（PAT 修复后首轮）实测 ok，verify 已清除"
+      "pubdate_tz_mislabel_hours": 8,
+      "note": "R17 裁定（产品 v1.6）中文主源；CI run 40260964099（PAT 修复后首轮）实测 ok，verify 已清除。Q3（P-3a 2026-10-26）：feed 把 UTC+8 墙钟错标 GMT（超前量恒<8h 实证），按源回拨 8h 补偿；若上游改正需实测后清零该字段"
     },
     {
       "id": "oschina-news",

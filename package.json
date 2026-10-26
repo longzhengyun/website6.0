@@ -10,6 +10,7 @@
     "check": "astro check",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "test": "node --test \"scripts/tests/**/*.test.mjs\"",
     "qa": "node scripts/qa-gates.mjs"
   },
   "dependencies": {

@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 /* website6.0 设计 token —— 源：shared/website6.0-impl-design-spec.md v1.0 §2
-   双模式跟随系统；accent 每屏 ≤3 处；正文禁用朱红小字（亮色模式小字用 accent-ink-safe）。 */
+   三态主题（L-1）：auto 跟随系统 / light / dark，由 data-theme 显式覆写；
+   accent 每屏 ≤3 处；正文禁用朱红小字（亮色模式小字用 accent-ink-safe）。 */
 
 @theme {
   --font-sans: "Geist Variable", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC",
@@ -16,6 +17,8 @@
   --color-line: var(--c-line);
   --color-accent: var(--c-accent);
   --color-accent-ink: var(--c-accent-ink);
+  --color-accent-strong: var(--c-accent-strong);
+  --color-warn: var(--c-warn);
 
   --breakpoint-sm: 425px;
   --breakpoint-md: 768px;
@@ -34,11 +37,16 @@
   --c-line: #e3e2de;
   --c-accent: #e5484d;
   --c-accent-ink: #ffffff;
+  /* DESIGN.md §R-C3：实心 accent+白字 <18.66px bold 场景改用 accent-strong（fff 5.05:1） */
+  --c-accent-strong: #c93a3f;
+  /* DESIGN.md §R-C6：--c-warn 双模式，亮色 #b45309（fff 5.02:1 / bg 4.81:1） */
+  --c-warn: #b45309;
   color-scheme: light;
 }
 
+/* SYNC:dark —— 以下两个暗色块必须成对修改（L-1 三态：媒体查询回退 + 显式 data-theme） */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --c-bg: #0b0d11;
     --c-surface: #14171d;
     --c-ink: #f2f3f0;
@@ -46,11 +54,30 @@
     /* BUG-M4R-01 R-1：暗色装饰档加深（5.11:1@#0B0D11 / 4.71:1@#14171D） */
     --c-ink-faint: #7b8394;
     --c-line: #262b33;
-    --c-accent: #5eead4;
+    /* DESIGN.md 品牌统一：暗色 accent 5eead4 → ff7b81（bg 7.78:1 / surface 7.18:1） */
+    --c-accent: #ff7b81;
     --c-accent-ink: #0b0d11;
+    --c-accent-strong: #c93a3f;
+    /* DESIGN.md §R-C6：暗色 warn #ffa94d（bg 10.22:1 / surface 9.43:1） */
+    --c-warn: #ffa94d;
     color-scheme: dark;
   }
 }
+
+:root[data-theme="dark"] {
+  --c-bg: #0b0d11;
+  --c-surface: #14171d;
+  --c-ink: #f2f3f0;
+  --c-ink-muted: #9ba3af;
+  --c-ink-faint: #7b8394;
+  --c-line: #262b33;
+  --c-accent: #ff7b81;
+  --c-accent-ink: #0b0d11;
+  --c-accent-strong: #c93a3f;
+  --c-warn: #ffa94d;
+  color-scheme: dark;
+}
+/* SYNC:dark-end */
 
 /* ---- 字号阶梯（M=375 基线 / D=≥768 覆写，spec §2.2）---- */
 .t-display {

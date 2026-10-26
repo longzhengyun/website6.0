@@ -1,5 +1,6 @@
 ---
 import { nav, relativePath, isActive } from '../data/site';
+import ThemeToggle from './ThemeToggle.astro';
 
 const current = relativePath(Astro.url.pathname);
 ---
@@ -24,6 +25,9 @@ const current = relativePath(Astro.url.pathname);
         </li>
       ))
     }
+    <li class="flex min-w-0">
+      <ThemeToggle variant="tab" />
+    </li>
     <li class="flex min-w-0">
       <button
         type="button"
