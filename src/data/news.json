@@ -5,98 +5,6 @@
   "stats_ref": "news-stats.json",
   "items": [
     {
-      "fingerprint": "4713be3eefee2bb7",
-      "url": "https://www.infoq.cn/article/qJB2DapLThovtxzyOtKW?utm_source=rss&utm_medium=article",
-      "title_original": "Terraform Google Cloud 8.0 发布：告别“永久 Diff”，代价是破坏性升级",
-      "title_zh": "Terraform Google Cloud 8.0 发布：告别“永久 Diff”，代价是破坏性升级",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-26T05:21:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-26T05:42:38.794Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40275662186"
-      }
-    },
-    {
-      "fingerprint": "01618a7453f586c2",
-      "url": "https://www.infoq.cn/article/0C1Wgt7N9NzM6KjHSFeA?utm_source=rss&utm_medium=article",
-      "title_original": "从 Agent 工程化到任务交付，解读 AI 走向生产的关键挑战｜QCon 上海 2026 圆满收官",
-      "title_zh": "从 Agent 工程化到任务交付，解读 AI 走向生产的关键挑战｜QCon 上海 2026 圆满收官",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-26T03:53:09.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-26T03:58:54.036Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40266672433"
-      }
-    },
-    {
-      "fingerprint": "b37733b4e1eb2dab",
-      "url": "https://www.infoq.cn/article/6XMtxZevN1488WVGXdR1?utm_source=rss&utm_medium=article",
-      "title_original": "Android Bench 2 新增对长周期任务、智能评估和连续评分的支持",
-      "title_zh": "Android Bench 2 新增对长周期任务、智能评估和连续评分的支持",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-26T03:07:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-26T03:58:54.036Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40266672433"
-      }
-    },
-    {
-      "fingerprint": "72c4667fbd4da5c7",
-      "url": "https://www.infoq.cn/article/y7YQmP1p42Uj69H1C6uf?utm_source=rss&utm_medium=article",
-      "title_original": "CircleCI 正式发布 Machine Runner Orchestrator",
-      "title_zh": "CircleCI 正式发布 Machine Runner Orchestrator",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-26T01:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-26T02:49:19.017Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40260964099"
-      }
-    },
-    {
       "fingerprint": "1c7d033360e509ad",
       "url": "https://juejin.cn/post/7700377150851760128",
       "title_original": "10 个值得关注的 GitHub Agent Skills：让 AI 编程从“能写”走向“会做”",
@@ -140,6 +48,29 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40278300008"
+      }
+    },
+    {
+      "fingerprint": "4713be3eefee2bb7",
+      "url": "https://www.infoq.cn/article/qJB2DapLThovtxzyOtKW?utm_source=rss&utm_medium=article",
+      "title_original": "Terraform Google Cloud 8.0 发布：告别“永久 Diff”，代价是破坏性升级",
+      "title_zh": "Terraform Google Cloud 8.0 发布：告别“永久 Diff”，代价是破坏性升级",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T05:21:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T05:42:38.794Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40275662186"
       }
     },
     {
@@ -588,6 +519,29 @@
       }
     },
     {
+      "fingerprint": "01618a7453f586c2",
+      "url": "https://www.infoq.cn/article/0C1Wgt7N9NzM6KjHSFeA?utm_source=rss&utm_medium=article",
+      "title_original": "从 Agent 工程化到任务交付，解读 AI 走向生产的关键挑战｜QCon 上海 2026 圆满收官",
+      "title_zh": "从 Agent 工程化到任务交付，解读 AI 走向生产的关键挑战｜QCon 上海 2026 圆满收官",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:53:09.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
       "fingerprint": "3e881b408dbfff41",
       "url": "https://juejin.cn/post/7700267917771079730",
       "title_original": "Claude Duet 发布：又一个手机Agent可以用了！",
@@ -817,6 +771,29 @@
         "mode": "ai",
         "enriched_by": "qwen3.8-omni-flash",
         "run_id": "40281271512"
+      }
+    },
+    {
+      "fingerprint": "b37733b4e1eb2dab",
+      "url": "https://www.infoq.cn/article/6XMtxZevN1488WVGXdR1?utm_source=rss&utm_medium=article",
+      "title_original": "Android Bench 2 新增对长周期任务、智能评估和连续评分的支持",
+      "title_zh": "Android Bench 2 新增对长周期任务、智能评估和连续评分的支持",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:07:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
       }
     },
     {
@@ -1570,6 +1547,29 @@
       "source_name": "掘金",
       "original_lang": "zh",
       "published_at": "2026-10-26T01:00:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T02:49:19.017Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "72c4667fbd4da5c7",
+      "url": "https://www.infoq.cn/article/y7YQmP1p42Uj69H1C6uf?utm_source=rss&utm_medium=article",
+      "title_original": "CircleCI 正式发布 Machine Runner Orchestrator",
+      "title_zh": "CircleCI 正式发布 Machine Runner Orchestrator",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:00:00.000Z",
       "date_inferred": false,
       "fetched_at": "2026-10-26T02:49:19.017Z",
       "duplicate_of": null,

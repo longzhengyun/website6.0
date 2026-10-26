@@ -25,7 +25,7 @@ const cfgSrc = readFileSync(join(ROOT, 'astro.config.mjs'), 'utf8');
 const baseMatch = cfgSrc.match(/base:\s*'([^']*)'/);
 const BASE = (baseMatch ? baseMatch[1] : '/').replace(/\/$/, ''); // '' when base '/'
 const PAGES = ['index.html', 'about/index.html', 'news/index.html', 'resume/index.html'];
-const G5_WHITELIST = ['juejin']; // items_fetched=0 已知基线例外（测试 §2.1 G5；待后端定夺移除）
+const G5_WHITELIST = ['juejin']; // items_fetched=0 已知基线例外（测试 §2.1 G5；保留——后端定夺 seq=166，退出条件：实测 items_fetched>0 后由测试删行）
 
 let failures = [];
 let warnings = [];
@@ -136,7 +136,7 @@ async function localGates() {
       if ((s.items_fetched ?? 0) === 0 && !G5_WHITELIST.includes(s.id)) {
         fail('G5', `源静默掉取 items_fetched=0：${s.id}（status=${s.status}）`);
       } else if ((s.items_fetched ?? 0) === 0) {
-        warn('G5', `白名单例外源 items_fetched=0：${s.id}（待后端定夺）`);
+        warn('G5', `白名单例外源 items_fetched=0：${s.id}（保留，定夺 seq=166）`);
       }
     }
   }
