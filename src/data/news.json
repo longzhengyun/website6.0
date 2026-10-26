@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-26T05:42:38.794Z",
+  "generated_at": "2026-10-26T06:10:59.516Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
@@ -94,6 +94,121 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "1c7d033360e509ad",
+      "url": "https://juejin.cn/post/7700377150851760128",
+      "title_original": "10 个值得关注的 GitHub Agent Skills：让 AI 编程从“能写”走向“会做”",
+      "title_zh": "10 个值得关注的 GitHub Agent Skills：让 AI 编程从“能写”走向“会做”",
+      "summary_zh": "10 个值得关注的 GitHub Agent Skills：让 AI 编程从“能写”走向“会做” 很多人使用 AI 编程时都会遇到同一个问题：模型似乎什么都会一点，但一到真实项目，就可能漏掉安全检查、",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T05:52:01.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:10:59.516Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40278300008"
+      }
+    },
+    {
+      "fingerprint": "63d2ca46456b1894",
+      "url": "https://juejin.cn/post/7700647882466770986",
+      "title_original": "我重算了新云的账，发现亏的不是算力，是时间",
+      "title_zh": "我重算了新云的账，发现亏的不是算力，是时间",
+      "summary_zh": "Gartner 最新报告：到 2030 年，超 80% 的 Neocloud 服务商将终止独立运营。核心数字——AI 数据中心需 8.5 万亿美元收入才能覆盖成本，实际预计仅 3.6 万亿，缺口近 5",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T05:37:57.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:10:59.516Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40278300008"
+      }
+    },
+    {
+      "fingerprint": "3fc6982f8e065c68",
+      "url": "https://juejin.cn/post/7700647882466639914",
+      "title_original": "从今天起，你只需要一个浏览器之Ego lite",
+      "title_zh": "从今天起，你只需要一个浏览器之Ego lite",
+      "summary_zh": "大家好，我是农村程序员(2020年回农村，至今未出村)，独立开发者(致力于开发 1000 个小产品)，前端之虎陈随易(自封的)，我的官网是：https://yicode.tech。 最近 2 个月，我",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T05:19:28.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:10:59.516Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40278300008"
+      }
+    },
+    {
+      "fingerprint": "42dc6b8d68d54bcc",
+      "url": "https://juejin.cn/post/7700674628927078451",
+      "title_original": "Step 5 Preview 模型写 3D 象棋，两个小时上线",
+      "title_zh": "Step 5 Preview 模型写 3D 象棋，两个小时上线",
+      "summary_zh": "先把东西摆出来。https://jlnvv-tom.github.io/chinese-chess/下面这个 3D 中国象棋：楚河汉界直接写在木纹盘面上，七种棋子七种独立造型，红方朱漆金字、黑方乌木金",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T05:12:57.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:10:59.516Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40278300008"
+      }
+    },
+    {
+      "fingerprint": "8e7653a5b84dcaad",
+      "url": "https://juejin.cn/post/7700642997076049946",
+      "title_original": "我用 C# 做了个运动计数器：打开摄像头，让电脑帮你数次数",
+      "title_zh": "我用 C# 做了个运动计数器：打开摄像头，让电脑帮你数次数",
+      "summary_zh": "做一组深蹲，练一会儿开合跳，常常会遇到一件小事：动作还在继续，刚才数到第几个却记不清了。 如果让电脑看着画面，帮我们记录重复动作的次数，会是什么体验？ 最近，我把这个想法做成了一个 Windows 桌",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T05:06:18.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T06:10:59.516Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40278300008"
       }
     },
     {
