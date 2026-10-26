@@ -1,6 +1,6 @@
 {
-  "run_id": "40260964099",
-  "generated_at": "2026-10-26T02:49:19.017Z",
+  "run_id": "40266672433",
+  "generated_at": "2026-10-26T03:58:54.036Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
@@ -19,8 +19,8 @@
       "id": "hn-frontpage",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 17,
-      "ms": 267,
+      "items_new": 20,
+      "ms": 356,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 317,
+      "ms": 570,
       "error": null
     },
     {
@@ -36,7 +36,7 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 285,
+      "ms": 229,
       "error": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "ok",
       "items_fetched": 15,
       "items_new": 0,
-      "ms": 675,
+      "ms": 793,
       "error": null
     },
     {
@@ -52,7 +52,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 169,
+      "ms": 353,
       "error": null
     },
     {
@@ -60,7 +60,7 @@
       "status": "ok",
       "items_fetched": 30,
       "items_new": 1,
-      "ms": 84,
+      "ms": 128,
       "error": null
     },
     {
@@ -68,23 +68,23 @@
       "status": "ok",
       "items_fetched": 0,
       "items_new": 0,
-      "ms": 69,
+      "ms": 205,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 6,
-      "ms": 1383,
+      "items_new": 2,
+      "ms": 1494,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 8,
-      "ms": 5107,
+      "items_new": 1,
+      "ms": 3410,
       "error": null
     },
     {
@@ -92,21 +92,21 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 15,
-      "ms": 1648,
+      "ms": 1640,
       "error": null
     }
   ],
   "counts": {
     "fetched": 225,
-    "in_window": 47,
-    "deduped_existing": 0,
-    "new_items": 47,
+    "in_window": 39,
+    "deduped_existing": 14,
+    "new_items": 39,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 18
+    "dropped_nonzh_r17": 21
   },
-  "news_items_total": 122,
+  "news_items_total": 140,
   "degraded_all_sources": false,
   "errors": [
     "enrichment batch 0 failed: http_401",

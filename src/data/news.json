@@ -1,9 +1,55 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-26T02:49:19.017Z",
+  "generated_at": "2026-10-26T03:58:54.036Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "01618a7453f586c2",
+      "url": "https://www.infoq.cn/article/0C1Wgt7N9NzM6KjHSFeA?utm_source=rss&utm_medium=article",
+      "title_original": "从 Agent 工程化到任务交付，解读 AI 走向生产的关键挑战｜QCon 上海 2026 圆满收官",
+      "title_zh": "从 Agent 工程化到任务交付，解读 AI 走向生产的关键挑战｜QCon 上海 2026 圆满收官",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T11:53:09.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "b37733b4e1eb2dab",
+      "url": "https://www.infoq.cn/article/6XMtxZevN1488WVGXdR1?utm_source=rss&utm_medium=article",
+      "title_original": "Android Bench 2 新增对长周期任务、智能评估和连续评分的支持",
+      "title_zh": "Android Bench 2 新增对长周期任务、智能评估和连续评分的支持",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T11:07:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
     {
       "fingerprint": "72c4667fbd4da5c7",
       "url": "https://www.infoq.cn/article/y7YQmP1p42Uj69H1C6uf?utm_source=rss&utm_medium=article",
@@ -25,6 +71,282 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "5a91f018d18a8b69",
+      "url": "https://juejin.cn/post/7700377150851547136",
+      "title_original": "低代码选型避坑指南：为什么‘能拖拽’不等于‘能交付’？——基于JVS八大引擎的四维交付能力评估框架",
+      "title_zh": "低代码选型避坑指南：为什么‘能拖拽’不等于‘能交付’？——基于JVS八大引擎的四维交付能力评估框架",
+      "summary_zh": "破除误区：可视化 ≠ 可交付 很多团队误将‘拖拽建页面’等同于‘能交付系统’。但可视化仅解决前端表达效率，而企业级交付关注的是： 流程是否形成完整闭环； 数据是否可信、可溯、可治理； 配置变更是否低成",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:57:18.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "3e881b408dbfff41",
+      "url": "https://juejin.cn/post/7700267917771079730",
+      "title_original": "Claude Duet 发布：又一个手机Agent可以用了！",
+      "title_zh": "Claude Duet 发布：又一个手机Agent可以用了！",
+      "summary_zh": "前言 近日，Anthropic 发了一个独立 Agent App——Claude Duet。 今天 Carson 来主要分析这个移动端Agent： 1：Claude Duet 到底是什么，跟 Clau",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:50:22.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "3f908fbe3b803056",
+      "url": "https://juejin.cn/post/7700592903407927338",
+      "title_original": "06-01-源码-文件系统体系（IFileSystem）",
+      "title_zh": "06-01-源码-文件系统体系（IFileSystem）",
+      "summary_zh": "源码-文件系统体系（IFileSystem） 一、引言 本章将深入解析 YooAsset 文件系统体系（IFileSystem）的源码实现。IFileSystem 是 YooAsset 文件系统的核心",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:45:53.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "cb81bf9520a7bdab",
+      "url": "https://juejin.cn/post/7700647882466443306",
+      "title_original": "测试全绿，上线三周数据没入账——那个95%的兼容度报告，漏掉的是边界",
+      "title_zh": "测试全绿，上线三周数据没入账——那个95%的兼容度报告，漏掉的是边界",
+      "summary_zh": "本文拆解六类末梢语义差异的典型表现，给出差分测试的落地方法：真实流量回放、按差异来源构造用例、发现一条差异固化一条回归用例。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:45:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "3b6bfb3f4dd34a6a",
+      "url": "https://juejin.cn/post/7700601438522785843",
+      "title_original": "APP 人脸识别增值版 SDK：Camera2 无缝接入指南",
+      "title_zh": "APP 人脸识别增值版 SDK：Camera2 无缝接入指南",
+      "summary_zh": "本文以 APP Android V5.0 Demo 中的 Camera2 实现为例，说明相关文件的职责、方法调用关系，以及图像转换、检测参数配置和资源释放的处理要点，为接入与排查提供参考。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:37:29.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "087e05de2c979bf2",
+      "url": "https://juejin.cn/post/7700601438522687539",
+      "title_original": "代理网络环境下 Linux Pro 在线激活实操指南",
+      "title_zh": "代理网络环境下 Linux Pro 在线激活实操指南",
+      "summary_zh": "本文面向在受限网络（企业防火墙 / 代理服务器环境）中部署虹软人脸识别 Linux Pro SDK 的开发与运维人员，解决在线激活连不上授权服务器的问题。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:27:49.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "709a4c010d9bf6d6",
+      "url": "https://juejin.cn/post/7700267917770735666",
+      "title_original": "TRAE 10 月插件热榜，看看大家都在用什么",
+      "title_zh": "TRAE 10 月插件热榜，看看大家都在用什么",
+      "summary_zh": "插件是 TRAE 中为特定任务场景封装的能力组件——安装后，智能体即可在授权范围内调用对应服务，完成信息查询、内容处理和任务执行等操作。我们为大家整理了十个热门的的插件，快来看看吧！",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:05:50.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "bf76a77156d8c5f9",
+      "url": "https://juejin.cn/post/7700377150851153920",
+      "title_original": "[Android 从零到一] Glide 图片加载原理：三级缓存、生命周期绑定与内存优化",
+      "title_zh": "[Android 从零到一] Glide 图片加载原理：三级缓存、生命周期绑定与内存优化",
+      "summary_zh": "Glide 图片加载原理：三级缓存、生命周期绑定与内存优化 图片加载是 Android 开发中最常见的需求之一，但直接用 BitmapFactory 很快会遇到内存溢出、重复加载、生命周期管理",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:01:49.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "47af27c4133d73f2",
+      "url": "https://juejin.cn/post/7700267917770702898",
+      "title_original": "Apollo 经济学家：AI 在科技行业外的财务回报为零",
+      "title_zh": "Apollo 经济学家：AI 在科技行业外的财务回报为零",
+      "summary_zh": "Apollo Global Management 首席经济学家 Torsten Slok 称 AI 对科技行业以外的美国大公司财务回报为零，S&P 493 公司利润率和人均收入保持平稳，没有证据表明",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:01:21.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "23117ac12eb5b182",
+      "url": "https://juejin.cn/post/7700782390201663526",
+      "title_original": "阿里云Flink + Fluss年度发布：Streaming Agent 与湖流一体",
+      "title_zh": "阿里云Flink + Fluss年度发布：Streaming Agent 与湖流一体",
+      "summary_zh": "阿里云实时计算 Flink 通过 Streaming Agent 串联数据接入、模型理解与业务行动，Fluss 则通过湖流一体打通实时状态与历史数据。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:59:44.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "f3ced0d31e33b1b2",
+      "url": "https://www.oschina.net/news/503215",
+      "title_original": "PHP 基金会有多缺人？两个 RCE 漏洞的修复，暴露了答案",
+      "title_zh": "PHP 基金会有多缺人？两个 RCE 漏洞的修复，暴露了答案",
+      "summary_zh": "PHP 基金会最近很少这么坦诚。10 月 21 日它发了一篇博客，交代两个远程代码执行漏洞是怎么被拖了两年才修好的，里面有一句话大概让很多靠 PHP 吃饭的公司心里一沉：\"修复的延误是结构性的失败，既源于安全团队的决策流程，也源于它资源不…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:56:21.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "2aefa6ba4193ec0c",
+      "url": "https://juejin.cn/post/7700522130220023862",
+      "title_original": "天涯神贴《2027年以后，你要活成这个样子》有感，希望 2027 年可以活成自己想要的样子",
+      "title_zh": "天涯神贴《2027年以后，你要活成这个样子》有感，希望 2027 年可以活成自己想要的样子",
+      "summary_zh": "今天，2026 年 10 月 26 日，星期一。 在这个深秋的时刻，我无意间刷到了天涯 A11 大佬的一篇神贴——《2027年以后，你要活成这个样子》。 看完之后，我整个人就像是被雷劈了一样，呆坐在屏",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:55:37.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
       }
     },
     {
@@ -51,6 +373,29 @@
       }
     },
     {
+      "fingerprint": "5dcb05e728f4f02b",
+      "url": "https://juejin.cn/post/7700782390201483302",
+      "title_original": "Sebastian Raschka 11 小时视频课：用 PyTorch 从零构建推理模型",
+      "title_zh": "Sebastian Raschka 11 小时视频课：用 PyTorch 从零构建推理模型",
+      "summary_zh": "Sebastian Raschka 发布「Build a Reasoning Model (From Scratch)」完整视频课程，从预训练的 Qwen3 0.6B 出发，用 Python 和 Py",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:41:16.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
       "fingerprint": "6ed6eeca35b9bbbc",
       "url": "https://juejin.cn/post/7700404334723170339",
       "title_original": "Python 实现 Markdown 与 Word 文档互转",
@@ -71,6 +416,52 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "e20a7f6dc2a777f2",
+      "url": "https://juejin.cn/post/7700157486075035683",
+      "title_original": "一个人 + AI 做的小程序，今天，正式回本了",
+      "title_zh": "一个人 + AI 做的小程序，今天，正式回本了",
+      "summary_zh": "77 天，131.06 元，成本 129，今天回本。顺便认真回答一次：一个人 + AI，个人小程序到底能不能做——能做，但你要把预期钉在正确的尺子上。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:37:55.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "1d88cf4f59899d2c",
+      "url": "https://juejin.cn/post/7700462324586528778",
+      "title_original": "浏览器的“无痕模式”是当代最大安慰剂？我用 30 行 JS 提取硬件指纹，跨网络换代理照样精准锁定你",
+      "title_zh": "浏览器的“无痕模式”是当代最大安慰剂？我用 30 行 JS 提取硬件指纹，跨网络换代理照样精准锁定你",
+      "summary_zh": "在所有现代网民的认知潜意识里，有一个被供奉了近二十年的“数字隐身斗篷”：",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:34:45.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
       }
     },
     {
@@ -117,6 +508,29 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "489b1248b7ed09ff",
+      "url": "https://juejin.cn/post/7700404334723055651",
+      "title_original": "SVG 缩放预览：F12 无法定位子元素 & 放大模糊",
+      "title_zh": "SVG 缩放预览：F12 无法定位子元素 & 放大模糊",
+      "summary_zh": "问题一：F12 元素选择器点不到 SVG 子元素 现象 用 DevTools 左上角的「选择元素」工具点 SVG 内的线条、文字、图标，只能选中外层 div；删掉外层 DOM 后才能选中。 原因 样式",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:28:11.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T03:58:54.036Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40266672433"
       }
     },
     {
