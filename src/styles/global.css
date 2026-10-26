@@ -7,7 +7,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* A1 站名呼吸：仅桌面 jary8 拉丁 display（wght 400↔640，14s） */
+/* A1 站名呼吸：仅桌面 Jary 拉丁 display（wght 400↔640，14s） */
 @keyframes breathe {
   0%,
   100% {
@@ -27,7 +27,7 @@ body {
     animation: breathe 14s ease-in-out infinite;
   }
 }
-/* M 端降级：透明度微幅呼吸（spec §3 移动行制），且 jary8 以 mono 小字呈现 */
+/* M 端降级：透明度微幅呼吸（spec §3 移动行制），且 Jary 以 mono 小字呈现 */
 @keyframes breathe-mobile {
   0%,
   100% {

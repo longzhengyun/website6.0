@@ -9,7 +9,7 @@ export interface ResumeEntry {
 }
 
 export const resume = {
-  name: 'jary8 · 佳瑞网站长',
+  name: 'Jary · 佳瑞网站长',
   title: 'Web 前端开发工程师',
   sampleNote: '⚠ 以下为结构示例内容，真实履历由站主提供后替换（此提示不随打印输出）。',
   summary:

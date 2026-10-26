@@ -1,6 +1,6 @@
 export const site = {
   nameZh: '佳瑞网',
-  nameEn: 'jary8',
+  nameEn: 'Jary',
   tagline: '把浏览器能做的，做到最新。',
   taglineEn: 'Pushing the browser to its latest.',
   /** R16 三行制固定身份行（站主硬需求 5：站长身份必须稳定，不轮播） */
