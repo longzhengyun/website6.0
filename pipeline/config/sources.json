@@ -94,10 +94,9 @@
       "url": "https://www.infoq.cn/feed",
       "lang": "zh",
       "enabled": true,
-      "verify": true,
       "category_hint": ["frontend", "career", "security"],
       "max_items_per_run": 20,
-      "note": "R17 裁定（产品 v1.6）中文主源，本地 preflight 200；verify 待 CI 一轮 sources_ok 后去除"
+      "note": "R17 裁定（产品 v1.6）中文主源；CI run 40260964099（PAT 修复后首轮）实测 ok，verify 已清除"
     },
     {
       "id": "oschina-news",
@@ -106,10 +105,9 @@
       "url": "https://www.oschina.net/news/rss",
       "lang": "zh",
       "enabled": true,
-      "verify": true,
       "category_hint": ["ai", "frontend", "tools"],
       "max_items_per_run": 20,
-      "note": "R17 中文源候选；本地 preflight 200 items=50；verify 待 CI 一轮 sources_ok 后去除"
+      "note": "R17 中文源；CI run 40260964099 实测 ok，verify 已清除"
     },
     {
       "id": "juejin",
@@ -118,10 +116,9 @@
       "url": "https://juejin.cn/rss",
       "lang": "zh",
       "enabled": true,
-      "verify": true,
       "category_hint": ["frontend", "ai", "tools"],
       "max_items_per_run": 15,
-      "note": "R17 中文源候选；本地 preflight 200 items=20；verify 待 CI 一轮 sources_ok 后去除"
+      "note": "R17 中文源；CI run 40260964099 实测 ok，verify 已清除"
     },
     {
       "id": "ruanyifeng",
