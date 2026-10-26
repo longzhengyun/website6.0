@@ -1,0 +1,91 @@
+name: News AI Pipeline (M3 预留骨架)
+
+# website6.0 新闻管线 workflow 模板 v0（开发运维产出，脚本逻辑由后端在 M3 填充）
+# 归属仓库：longzhengyun/website6.0 → .github/workflows/news-pipeline.yml
+# 后端红线落实：
+#   红线2：仅 schedule + workflow_dispatch 触发，全文件无 pull_request_target、不 checkout 外部 ref
+#   红线1/3：LLM_API_KEY 只注入本 job 环境变量；产物入库前密钥痕迹 grep 门禁
+#   红线4：回写用独立 NEWS_SYNC_PAT（fine-grained，仅本仓库 contents 读写），与 LLM key 互相独立
+# 降级模式：LLM_API_KEY 未配置时脚本必须仍可运行（纯 RSS 聚合、无 AI 摘要），站主 key 到位后无需改 workflow。
+# 注意：bot 用 PAT push master 会触发 deploy-pages（期望行为：news.json 更新即重新发布站点）。
+
+on:
+  schedule:
+    - cron: "15 1,9 * * *"   # 每日 2 次（UTC），时段可调；平台限制：高峰期可能延迟数小时
+  workflow_dispatch:
+    inputs:
+      full_sync:
+        description: "全量重跑（默认增量去重）"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read   # GITHUB_TOKEN 保持只读；写回仅靠 NEWS_SYNC_PAT（红线4 权限分离）
+
+concurrency:
+  group: news-pipeline
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    name: Fetch RSS -> LLM summarize -> news.json
+    runs-on: ubuntu-latest
+    timeout-minutes: 30   # 含节流重试；防单 run 失控烧配额（配额层1：workflow 级硬顶）
+    env:
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}      # 未配置 => 后端脚本走降级模式
+      LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}       # 可选：站主设 tongyi 切千问（DashScope）；未设/空 => 脚本默认 gemini
+      LLM_MODEL: ${{ vars.LLM_MODEL }}             # 可选覆盖；缺省由脚本按 provider 兜底（gemini-2.5-flash / qwen-flash）
+      LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}       # 可选：tongyi 分支端点覆盖（站主按量付费域名）；未设/空 => dashscope 兼容模式默认
+      LLM_TOKEN_BUDGET: ${{ vars.LLM_TOKEN_BUDGET }} # 可选：单 run 累计 token 上限（防超额）；未设/非法/≤0 => 不限（≤100 calls 硬顶仍在）
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}       # 旧变量兼容（仅 gemini 分支生效），可留空
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          persist-credentials: false   # 不保留默认 GITHUB_TOKEN 写凭据
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Run news pipeline (backend script)
+        run: node scripts/news-pipeline.mjs   # M3 由后端提供；失败时保留上一版 news.json 不回写
+
+      - name: Secret trace scan on pipeline outputs (gate)
+        shell: bash
+        run: |
+          set -euo pipefail
+          PATTERNS='AIza[0-9A-Za-z_-]{20,}|ghp_[0-9A-Za-z]{36}|github_pat_[0-9A-Za-z_]{40,}|AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----'
+          # 同批产出双文件（后端 §7）：news.json + news-stats.json，任一命中即中止，不回写
+          for f in src/data/news.json src/data/news-stats.json; do
+            if [ -f "$f" ] && grep -qE "$PATTERNS" "$f"; then
+              echo "::error::secret-like pattern in $f, abort before commit"; exit 1
+            fi
+          done
+          echo "pipeline outputs scan OK"
+
+      - name: Commit & push pipeline outputs via independent PAT
+        if: ${{ success() }}
+        shell: bash
+        env:
+          SYNC_PAT: ${{ secrets.NEWS_SYNC_PAT }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${SYNC_PAT}@github.com/${GITHUB_REPOSITORY}.git"
+          if [ -n "$(git status --porcelain src/data/news.json src/data/news-stats.json)" ]; then
+            git add src/data/news.json src/data/news-stats.json
+            git commit -m "chore(news): pipeline update ${GITHUB_RUN_ID}"
+            git push origin HEAD:master
+          else
+            echo "news data unchanged, skip commit"
+          fi
+          # 注意：不把带 token 的 remote URL 打印到日志；set-url 不回显即安全
