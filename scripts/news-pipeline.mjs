@@ -16,6 +16,9 @@ import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const Ajv = require('ajv/dist/2020');
 
+// Q3（P-3a）数据质量辅助：源级时区错标补偿 / 未来日期钳制护栏 / 落盘断言
+import { applyTzMislabel, clampFutureDate, findDateViolations } from '../pipeline/src/dates/quality.mjs';
+
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
   sources: join(ROOT, 'pipeline/config/sources.json'),
@@ -61,6 +64,7 @@ const TONGYI_BASE = (/^https:\/\//i.test(TONGYI_BASE_RAW) ? TONGYI_BASE_RAW : 'h
 const TOKEN_BUDGET = (() => { const n = Number.parseInt(process.env.LLM_TOKEN_BUDGET || '', 10); return Number.isFinite(n) && n > 0 ? n : null; })();
 const NOW = new Date();
 const fetchedAt = NOW.toISOString();
+const RUN_COUNTERS = { future_clamped: 0 }; // Q3 F2 护栏计数（源错标补偿后仍出现未来日期的条数）
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const log = (...a) => console.log('[news-pipeline]', ...a);
@@ -124,7 +128,7 @@ function parseFeed(xml, source) {
         url: link,
         title: innerText(b, 'title'),
         provided_summary: innerText(b, 'description') || innerText(b, 'content:encoded'),
-        published_at: parseDateLoose(innerText(b, 'pubDate') || innerText(b, 'dc:date')),
+        published_at: applyTzMislabel(parseDateLoose(innerText(b, 'pubDate') || innerText(b, 'dc:date')), source.pubdate_tz_mislabel_hours),
         categories: allOf(b, 'category'),
       });
     }
@@ -140,11 +144,10 @@ function parseFeed(xml, source) {
       url: href,
       title: innerText(b, 'title'),
       provided_summary: innerText(b, 'summary') || innerText(b, 'content'),
-      published_at: parseDateLoose(innerText(b, 'published') || innerText(b, 'updated')),
+      published_at: applyTzMislabel(parseDateLoose(innerText(b, 'published') || innerText(b, 'updated')), source.pubdate_tz_mislabel_hours),
       categories: cats,
     });
   }
-  void source;
   return items;
 }
 
@@ -172,6 +175,10 @@ function buildDegradedItem(item, source, knownFp) {
   const summaryRaw = stripHtml(item.provided_summary);
   const summary = trunc(summaryRaw && summaryRaw !== item.title ? summaryRaw : titleOrig, CFG.summary_degraded_max);
   const dateKnown = item.published_at instanceof Date;
+  // Q3 F2 护栏：补偿后仍晚于运行时刻的发布时间一律钳制为 NOW 并降级标记（宁"不精确"，不出未来日期）
+  const pub = clampFutureDate(dateKnown ? item.published_at : null, NOW);
+  if (pub.clamped) RUN_COUNTERS.future_clamped++;
+  const inferred = !dateKnown || pub.clamped;
   return {
     fingerprint: fp,
     url,
@@ -183,8 +190,8 @@ function buildDegradedItem(item, source, knownFp) {
     source_id: source.id,
     source_name: source.name,
     original_lang: lang,
-    published_at: (dateKnown ? item.published_at : NOW).toISOString(),
-    date_inferred: !dateKnown,
+    published_at: (pub.date ?? NOW).toISOString(),
+    date_inferred: inferred,
     fetched_at: fetchedAt,
     duplicate_of: null,
     pipeline: { mode: 'rss_only', enriched_by: null, run_id: RUN_ID },
@@ -335,7 +342,7 @@ async function main() {
     mode: 'rss_only',
     llm: { key_present: Boolean(LLM_KEY), provider: PROVIDER, model: LLM_KEY ? MODEL : null, token_budget: TOKEN_BUDGET, budget_exceeded: false, calls: 0, batches_failed: 0, aborted: false, input_tokens: 0, output_tokens: 0 },
     sources: [],
-    counts: { fetched: 0, in_window: 0, deduped_existing: 0, new_items: 0, ai_enriched: 0, re_enriched: 0, dropped_invalid: 0, dropped_nonzh_r17: 0 },
+    counts: { fetched: 0, in_window: 0, deduped_existing: 0, new_items: 0, ai_enriched: 0, re_enriched: 0, dropped_invalid: 0, dropped_nonzh_r17: 0, future_clamped: 0 },
     news_items_total: 0,
     degraded_all_sources: false,
     errors: [],
@@ -548,6 +555,7 @@ async function main() {
     items: merged,
   };
   stats.news_items_total = merged.length;
+  stats.counts.future_clamped = RUN_COUNTERS.future_clamped; // Q3：>0 即源劣化信号，测试 G5/告警消费
 
   // schema 校验（ajv draft2020 + 手写 format：date-time/uri 真实生效，不依赖 ajv-formats）
   const ajv = new Ajv({ strict: false });
@@ -559,6 +567,15 @@ async function main() {
     // 校验失败：不落盘坏数据（等价 workflow fail，保留上一版）
     for (const err of validate.errors ?? []) log('schema_error', JSON.stringify(err));
     console.error('[news-pipeline] FATAL: schema validation failed, nothing written.');
+    process.exitCode = 1;
+    return;
+  }
+
+  // Q3 F3 落盘断言（站主批复 seq=100 口径：容差 0min）：发布时间不可能晚于抓取时间，违例即拒绝写盘
+  const dateViolations = findDateViolations(feed.items);
+  if (dateViolations.length) {
+    for (const v of dateViolations.slice(0, 5)) log('date_assert_violation', `${v.fingerprint} published_at=${v.published_at} > fetched_at=${v.fetched_at}`);
+    console.error(`[news-pipeline] FATAL: ${dateViolations.length} items violate published_at<=fetched_at, nothing written.`);
     process.exitCode = 1;
     return;
   }
