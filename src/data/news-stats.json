@@ -1,6 +1,6 @@
 {
-  "run_id": "40268688640",
-  "generated_at": "2026-10-26T04:22:06.538Z",
+  "run_id": "40269401529",
+  "generated_at": "2026-10-26T04:30:30.442Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
@@ -8,27 +8,27 @@
     "model": "auto",
     "token_budget": 100000,
     "budget_exceeded": false,
-    "calls": 6,
-    "batches_failed": 3,
-    "aborted": true,
+    "calls": 4,
+    "batches_failed": 2,
+    "aborted": false,
     "input_tokens": 0,
     "output_tokens": 0
   },
   "sources": [
     {
       "id": "hn-frontpage",
-      "status": "ok",
-      "items_fetched": 20,
-      "items_new": 20,
-      "ms": 1271,
-      "error": null
+      "status": "failed",
+      "items_fetched": 0,
+      "items_new": 0,
+      "ms": 10529,
+      "error": "fetch failed"
     },
     {
       "id": "webdev",
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 724,
+      "ms": 660,
       "error": null
     },
     {
@@ -36,7 +36,7 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 381,
+      "ms": 374,
       "error": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "ok",
       "items_fetched": 15,
       "items_new": 0,
-      "ms": 681,
+      "ms": 703,
       "error": null
     },
     {
@@ -52,7 +52,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 244,
+      "ms": 210,
       "error": null
     },
     {
@@ -60,7 +60,7 @@
       "status": "ok",
       "items_fetched": 30,
       "items_new": 1,
-      "ms": 103,
+      "ms": 80,
       "error": null
     },
     {
@@ -68,7 +68,7 @@
       "status": "ok",
       "items_fetched": 321,
       "items_new": 10,
-      "ms": 197,
+      "ms": 157,
       "error": null
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 1502,
+      "ms": 1246,
       "error": null
     },
     {
@@ -84,34 +84,32 @@
       "status": "ok",
       "items_fetched": 50,
       "items_new": 0,
-      "ms": 2375,
+      "ms": 2718,
       "error": null
     },
     {
       "id": "juejin",
       "status": "ok",
-      "items_fetched": 0,
-      "items_new": 0,
-      "ms": 2002,
+      "items_fetched": 20,
+      "items_new": 8,
+      "ms": 1654,
       "error": null
     }
   ],
   "counts": {
     "fetched": 526,
-    "in_window": 31,
-    "deduped_existing": 17,
-    "new_items": 31,
+    "in_window": 19,
+    "deduped_existing": 29,
+    "new_items": 19,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 31
+    "dropped_nonzh_r17": 11
   },
-  "news_items_total": 140,
+  "news_items_total": 148,
   "degraded_all_sources": false,
   "errors": [
-    "enrichment batch 0 failed: http_404",
-    "enrichment batch 10 failed: http_404",
-    "enrichment batch 20 failed: http_404",
-    "AI aborted after consecutive failures, remainder stored rss_only"
+    "enrichment batch 0 failed: http_403",
+    "enrichment batch 10 failed: http_403"
   ]
 }

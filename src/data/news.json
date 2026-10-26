@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-26T04:22:06.538Z",
+  "generated_at": "2026-10-26T04:30:30.442Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
@@ -71,6 +71,75 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "3a62b7c988e35403",
+      "url": "https://juejin.cn/post/7700512258648752168",
+      "title_original": "为什么AI做的汇报PPT像地摊货？3步搭出老板认可的架构汇报",
+      "title_zh": "为什么AI做的汇报PPT像地摊货？3步搭出老板认可的架构汇报",
+      "summary_zh": "本文从架构师视角拆解技术汇报的底层逻辑：先用因果链Prompt锁定命题与边界，再用结构化骨架填入真实度量，最后借Fireworks与矢量图还原系统全貌，附可直接抄的Prompt与版式规范。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T04:15:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T04:30:30.442Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40269401529"
+      }
+    },
+    {
+      "fingerprint": "69326eb62772d113",
+      "url": "https://juejin.cn/post/7700642997075869722",
+      "title_original": "Claude Duet 安全设计拆解：替你回邮件、付账单的 agent，碰不到你的密码",
+      "title_zh": "Claude Duet 安全设计拆解：替你回邮件、付账单的 agent，碰不到你的密码",
+      "summary_zh": "Anthropic 新推出的主动型 agent Claude Duet 替你回邮件、付账单，却碰不到你的密码。本文拆解它的三档权限、凭据占位符、模型外的审批分类器和独立浏览器。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T04:13:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T04:30:30.442Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40269401529"
+      }
+    },
+    {
+      "fingerprint": "b4b8aa87f2380459",
+      "url": "https://juejin.cn/post/7700404334723694627",
+      "title_original": "前端不懂业务有多可怕？",
+      "title_zh": "前端不懂业务有多可怕？",
+      "summary_zh": "前端工程师因不了解业务规则导致业务事故，技术防线无法拦截。作者分析需求文档质量低、前端定位偏差、业务知识未沉淀等原因，并提出需求评审带问题、写业务注释、按业务场景设计测试用例等实践方法。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:59:24.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T04:30:30.442Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40269401529"
       }
     },
     {
@@ -209,6 +278,29 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40266672433"
+      }
+    },
+    {
+      "fingerprint": "38a707b4ea7435dd",
+      "url": "https://juejin.cn/post/7700510231650844715",
+      "title_original": "模型吐出半截JSON，前端如何边收边渲染？2026年AI应用必须闯过的工程关",
+      "title_zh": "模型吐出半截JSON，前端如何边收边渲染？2026年AI应用必须闯过的工程关",
+      "summary_zh": "一、先分清：你处理的是两层完全不同的JSON 很多刚接触流式结构化输出的开发者会混淆一件事：“我在SSE里不是已经用buffer处理过半截数据了吗？” 你处理的是外层信封，不是内层业务JSON。 外层",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T03:26:16.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T04:30:30.442Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40269401529"
       }
     },
     {
@@ -534,6 +626,29 @@
       }
     },
     {
+      "fingerprint": "faf8bdc88b0c2270",
+      "url": "https://juejin.cn/post/7700237215260901417",
+      "title_original": "从 Function Calling 到 MCP（四）：把 Server 部署上线前，先处理好这五件事",
+      "title_zh": "从 Function Calling 到 MCP（四）：把 Server 部署上线前，先处理好这五件事",
+      "summary_zh": "前三篇写的都是能在本地跑起来的代码：stdio 的 Server、自己写的 Client、三个原语怎么配合。跑起来都很顺利，因为本地只有一个用户，就是你。 但第二篇我们把传输层从 stdio 换成了",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T02:24:50.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T04:30:30.442Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40269401529"
+      }
+    },
+    {
       "fingerprint": "63eee0e382d8935f",
       "url": "https://juejin.cn/post/7700647882442227753",
       "title_original": "编程智能体卡在\"需要登录\"这步，六种接法代价差得很远",
@@ -765,6 +880,29 @@
       }
     },
     {
+      "fingerprint": "52fca01631a5a45c",
+      "url": "https://juejin.cn/post/7700215375997370409",
+      "title_original": "一个人，带着一群 AI：一个 10 年前端如何做出几十个团队在用的在线文档",
+      "title_zh": "一个人，带着一群 AI：一个 10 年前端如何做出几十个团队在用的在线文档",
+      "summary_zh": "一个人，带着一群 AI：一个 10 年前端如何做出几十个团队在用的在线文档 去年有人问我：AI 这么猛，你一个写前端的还卷得动吗。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-26T01:27:31.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T04:30:30.442Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40269401529"
+      }
+    },
+    {
       "fingerprint": "ad4539b6354c50a1",
       "url": "https://juejin.cn/post/7700520116152287295",
       "title_original": "AI 编程时代，为什么 Dart 分析会拖慢大型项目的开发",
@@ -877,6 +1015,52 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40260964099"
+      }
+    },
+    {
+      "fingerprint": "33c8980fb09aa892",
+      "url": "https://juejin.cn/post/7700247737962676224",
+      "title_original": "2026年第43周GitHub趋势周报",
+      "title_zh": "2026年第43周GitHub趋势周报",
+      "summary_zh": "导读 本周 GitHub Trending 榜单呈现出一条非常清晰的主线特征——AI 代理正在完成从“对话式助手”向可生产、可管控、可审计的代理工程系统跃迁。过去很长一段时间里，AI 编码工具的形态大",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-25T23:44:35.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T04:30:30.442Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40269401529"
+      }
+    },
+    {
+      "fingerprint": "5905c3f49ae50751",
+      "url": "https://juejin.cn/post/7700194552506286107",
+      "title_original": "Windows也能用 Apple Watch 解锁",
+      "title_zh": "Windows也能用 Apple Watch 解锁",
+      "summary_zh": "Mac 能用 Apple Watch 自动解锁，Windows 不能。这个开源工具把它补上了：戴着手表走开就锁屏，走回来自动解锁。本文讲原理、用法、安全和局限。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "juejin",
+      "source_name": "掘金",
+      "original_lang": "zh",
+      "published_at": "2026-10-25T16:52:46.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-26T04:30:30.442Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40269401529"
       }
     },
     {
