@@ -81,6 +81,11 @@ body {
   .scroll-rise {
     animation: none;
   }
+  /* L-3 A7 reduce 列：筛选淡入降为瞬现（选择器须与 A7 规则同特异度，含 :not([hidden])）；
+     A9/A10a 已在 no-preference 块内隔离，无需重复收口 */
+  li[data-news-item]:not([hidden]) .news-card {
+    animation: none;
+  }
 }
 
 /* A6 滚动书脊（D 端 2px accent 进度线，原生 scroll timeline） */
@@ -305,6 +310,108 @@ html[data-enhanced] .chip-row.enhanced-only {
   ::view-transition-old(root),
   ::view-transition-new(root) {
     animation: none;
+  }
+}
+
+/* ================= L-3 动效体系：A7 / A9 / A10（纯 CSS 零 JS；proposal=shared/l3-a7a9a10-motion-proposal.md）
+   边界：只做合成/绘制属性（opacity/transform/color/font-variation），无布局属性、无 scroll 监听、无新脚本 ================= */
+
+/* A7 筛选/列表交叉淡入（A3 同参 200ms）：hidden 移除=display 恢复时动画重新起算，零 JS 触发。
+   A2 在 li 层、A7 在内层卡，两层不覆写；首屏两效同参并跑=视觉等价单一淡入。reduce 收口见上方 A2 块。 */
+@keyframes a7-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+li[data-news-item]:not([hidden]) .news-card {
+  animation: a7-fade 200ms cubic-bezier(0.33, 1, 0.68, 1) both;
+}
+
+/* A9 § 编号章节感应（载体修正版：§ 标签而非 spine tick，L-5 已挂书脊但 A6 进度语义不叠载）。
+   只作用于拉丁制式段（口径 C §3.4：CJK 不参与字重动画）；不支持 view() 的内核=类无效=现静置态。 */
+@keyframes a9-sense {
+  from {
+    color: var(--c-ink-faint);
+    font-variation-settings: 'wght' 500;
+  }
+  20%,
+  80% {
+    color: var(--c-ink-muted);
+    font-variation-settings: 'wght' 620;
+  }
+  to {
+    color: var(--c-ink-faint);
+    font-variation-settings: 'wght' 500;
+  }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .spine-sense {
+      animation: a9-sense linear both;
+      animation-timeline: view();
+      animation-range: entry 30% exit 70%;
+    }
+  }
+}
+
+/* A10(a) 404 光标块呼吸：blink 3 轮封顶后恒亮——有限循环是 WCAG 2.2.2（>5s 自动闪烁需暂停机制）的零 JS 合规路径；
+   L-2「光标静态」口径已由站主 L-3 批准更替（l2 spec §1.3 注记）。reduce=恒亮静态（现网态）。 */
+@keyframes a10-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .caret {
+    animation: a10-blink 0.8s steps(2, jump-none) 3;
+  }
+}
+
+/* A10(b/c) 零结果空态：纯 CSS :has（ask-slot 虚线语言）；不支持 :has=不显形=现状空白无回归；无 JS=筛选/面板不存在永不触发 */
+@keyframes a10-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@supports selector(:has(*)) {
+  ul[data-news-list]:not(:has(> li:not([hidden])))::after {
+    content: '> filter --no-match · 试试 all';
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    color: var(--c-ink-faint);
+    border: 1px dashed var(--c-line);
+    padding: 0.75rem 1rem;
+    animation: a10-fade 200ms cubic-bezier(0.33, 1, 0.68, 1) both;
+  }
+  #palette-results:not(:has(> li))::after {
+    content: '> no_results';
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    color: var(--c-ink-muted);
+    padding: 0.75rem 1rem;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    ul[data-news-list]:not(:has(> li:not([hidden])))::after {
+      animation: none;
+    }
   }
 }
 

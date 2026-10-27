@@ -14,7 +14,7 @@ import { sortedItems, allTags } from '../data/news';
 >
   <article class="shell">
     <header class="pt-10 md:pt-16 pb-8">
-      <p class="t-label text-ink-muted uppercase">§02 / news</p>
+      <p class="t-label spine-sense text-ink-muted uppercase">§02 / news</p>
       <h1 class="t-h1 zh-title mt-2">业内新闻</h1>
       <p class="t-small text-ink-muted mt-3 max-w-[42em]">
         只展示标题、简介与直跳链接。内容由构建期管线聚合（RSS → 摘要 → 标签），运行时零密钥。
@@ -40,7 +40,7 @@ import { sortedItems, allTags } from '../data/news';
           本期暂无更新，稍后再来。
         </p>
       ) : (
-        <ul class="flex flex-col gap-3">
+        <ul class="flex flex-col gap-3" data-news-list>
           {
             sortedItems.map((item, i) => (
               <li class="scroll-rise" data-tags={item.tags.join(' ')} data-news-item>
