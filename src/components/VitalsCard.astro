@@ -78,7 +78,7 @@ const runUrl = `https://github.com/longzhengyun/website6.0/actions/runs/${stats.
 
 <details class="vitals-card border border-line bg-surface">
   <summary class="t-label text-ink-muted px-4 py-3 cursor-pointer list-none flex items-center gap-3">
-    <span class={health.glyph === '▲' ? 'text-warn' : ''} aria-hidden="true">{health.glyph}</span>
+    <span class={health.glyph !== '●' ? 'text-warn' : ''} aria-hidden="true">{health.glyph}</span>
     <span>数据心跳 · {stats.mode} · {genTime}</span>
     <span class="text-ink-faint ml-auto">{health.text}</span>
   </summary>
@@ -86,7 +86,7 @@ const runUrl = `https://github.com/longzhengyun/website6.0/actions/runs/${stats.
     <section aria-label="管线运行">
       <h3 class="t-label text-ink-faint uppercase mb-2">pipeline run</h3>
       <dl class="vitals-dl">
-        <div><dt>run</dt><dd><a class="arrow-link text-ink-muted hover:text-ink" href={runUrl} rel="noopener noreferrer">#{stats.run_id} ↗</a></dd></div>
+        <div><dt>run</dt><dd><a class="arrow-link text-ink-muted hover:text-ink" href={runUrl} target="_blank" rel="noopener noreferrer">#{stats.run_id} ↗</a></dd></div>
         <div><dt>mode</dt><dd>{modeNote}</dd></div>
         <div><dt>生成</dt><dd>{genTime}</dd></div>
         <div><dt>LLM</dt><dd>{llmNote}</dd></div>
@@ -103,11 +103,12 @@ const runUrl = `https://github.com/longzhengyun/website6.0/actions/runs/${stats.
         {
           stats.sources.map((s) => {
             const flagged = s.status !== 'ok' || s.items_fetched === 0;
+            const name = sourceNames.get(s.id) ?? s.id;
             return (
               <li class="flex items-baseline justify-between gap-3 py-1 border-b border-line last:border-b-0">
                 <span class:list={['t-small', flagged ? 'text-warn' : 'text-ink-muted']}>
-                  {sourceNames.get(s.id) ?? s.id}
-                  <span class="text-ink-faint ml-2">{s.id}</span>
+                  {name}
+                  {name !== s.id && <span class="text-ink-faint ml-2">{s.id}</span>}
                 </span>
                 <span class:list={['t-label shrink-0', flagged ? 'text-warn' : 'text-ink-faint']}>
                   {flagged
