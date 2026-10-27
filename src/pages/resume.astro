@@ -1,11 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { resume } from '../data/resume';
+import { site } from '../data/site';
 ---
 
 <BaseLayout
   title={`在线简历 — ${resume.name}`}
   desc="Jary 的在线简历：网页为主，打印导出 PDF。"
+  ogTitle={`履历 — ${site.nameEn} ${site.nameZh}`}
+  ogDesc="Jary 的职业履历与技术栈档案。"
+  ogImage="og/og-resume.png"
   bare
 >
   <div class="shell py-4 flex items-center justify-between no-print">

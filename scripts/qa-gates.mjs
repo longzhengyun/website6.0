@@ -92,7 +92,8 @@ async function localGates() {
     if (countRe(html, /<meta[^>]+name=["']description["']/gi) !== 1) fail('G3', `${page}: description 数≠1`);
     if (countRe(html, /<meta[^>]+name=["']viewport["']/gi) !== 1) fail('G3', `${page}: viewport 数≠1`);
     if (countRe(html, /<h1[\s>]/gi) !== 1) fail('G3', `${page}: h1 数≠1`);
-    if (ogAsserted) {
+    if (ogAsserted && !/(^|\/)404\.html$/.test(page)) {
+      // L-2 设计 spec §3.2：404 不出 OG（错误页无分享价值且 canonical 不成立），豁免本断言
       for (const prop of ['og:title', 'og:description', 'og:url', 'og:image']) {
         if (!html.includes(`property="${prop}"`)) fail('G3', `${page}: 缺 ${prop}`);
       }
