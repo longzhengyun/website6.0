@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      SITE_URL: ${{ vars.SITE_URL || 'https://longzhengyun.github.io/website6.0/' }}
+      SITE_URL: ${{ vars.SITE_URL || 'https://www.jary8.com/' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4

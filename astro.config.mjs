@@ -1,11 +1,11 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
-// base 为路径验收阶段（longzhengyun.github.io/website6.0）；
-// M5 域名换绑后改回 '/' 即可（一行变更，由开发运维门禁流程触发）。
+// M5 换绑已完成（2026-10-27，站主 DNS+Pages custom domain，开发运维诊断留档 shared/devops-domain-rebind-evidence.md）：
+// base 回到站点根 '/'，site 切正式域名；OG/sitemap 绝对 URL 经 Astro.site 单出处自动跟随（seq=261 口径）。
 export default defineConfig({
-  base: '/website6.0/',
-  site: process.env.SITE_URL || 'https://longzhengyun.github.io/website6.0/',
+  base: '/',
+  site: process.env.SITE_URL || 'https://www.jary8.com/',
   output: 'static',
   trailingSlash: 'ignore',
   vite: {
