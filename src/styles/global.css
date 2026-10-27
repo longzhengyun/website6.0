@@ -76,14 +76,9 @@ body {
     }
   }
 }
-/* L2：reduce 用户直接可见（spec §5 A2 降级列） */
+/* L2：reduce 用户直接可见（spec §5 A2 降级列）；DEF-1：A7 不在此收口——同特异度下源序后被基础规则压制，改走 no-preference 闸门（见 L-3 块） */
 @media (prefers-reduced-motion: reduce) {
   .scroll-rise {
-    animation: none;
-  }
-  /* L-3 A7 reduce 列：筛选淡入降为瞬现（选择器须与 A7 规则同特异度，含 :not([hidden])）；
-     A9/A10a 已在 no-preference 块内隔离，无需重复收口 */
-  li[data-news-item]:not([hidden]) .news-card {
     animation: none;
   }
 }
@@ -317,7 +312,9 @@ html[data-enhanced] .chip-row.enhanced-only {
    边界：只做合成/绘制属性（opacity/transform/color/font-variation），无布局属性、无 scroll 监听、无新脚本 ================= */
 
 /* A7 筛选/列表交叉淡入（A3 同参 200ms）：hidden 移除=display 恢复时动画重新起算，零 JS 触发。
-   A2 在 li 层、A7 在内层卡，两层不覆写；首屏两效同参并跑=视觉等价单一淡入。reduce 收口见上方 A2 块。 */
+   A2 在 li 层、A7 在内层卡，两层不覆写；首屏两效同参并跑=视觉等价单一淡入。
+   DEF-1 修复：动画绑定整体入 no-preference 闸门（与 A9/A10a 同构）——reduce 无绑定=瞬现，
+   对源序/bundle 顺序免疫；不再依赖 reduce 侧重复规则收口。 */
 @keyframes a7-fade {
   from {
     opacity: 0;
@@ -328,8 +325,10 @@ html[data-enhanced] .chip-row.enhanced-only {
     transform: none;
   }
 }
-li[data-news-item]:not([hidden]) .news-card {
-  animation: a7-fade 200ms cubic-bezier(0.33, 1, 0.68, 1) both;
+@media (prefers-reduced-motion: no-preference) {
+  li[data-news-item]:not([hidden]) .news-card {
+    animation: a7-fade 200ms cubic-bezier(0.33, 1, 0.68, 1) both;
+  }
 }
 
 /* A9 § 编号章节感应（载体修正版：§ 标签而非 spine tick，L-5 已挂书脊但 A6 进度语义不叠载）。
