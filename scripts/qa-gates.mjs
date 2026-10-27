@@ -25,7 +25,7 @@ const cfgSrc = readFileSync(join(ROOT, 'astro.config.mjs'), 'utf8');
 const baseMatch = cfgSrc.match(/base:\s*'([^']*)'/);
 const BASE = (baseMatch ? baseMatch[1] : '/').replace(/\/$/, ''); // '' when base '/'
 const PAGES = ['index.html', 'about/index.html', 'news/index.html', 'resume/index.html'];
-const G5_WHITELIST = ['juejin']; // items_fetched=0 已知基线例外（测试 §2.1 G5；保留——后端定夺 seq=166，退出条件：实测 items_fetched>0 后由测试删行）
+const G5_WHITELIST = []; // juejin 例外已退出（定夺 seq=166 退出条件成立：run 40355909678 实测 items_fetched=20>0，测试 seq=224 扳机确认）
 
 let failures = [];
 let warnings = [];
