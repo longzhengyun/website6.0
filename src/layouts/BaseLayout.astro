@@ -9,13 +9,27 @@ import SiteFooter from '../components/SiteFooter.astro';
 import TabBar from '../components/TabBar.astro';
 import CommandPalette from '../components/CommandPalette.astro';
 import { news } from '../data/news';
+import { relativePath, site } from '../data/site';
 interface Props {
   title: string;
   desc: string;
   bare?: boolean;
+  /** L-2 OG：传入即出 og/twitter 全套（相对 path，如 'og/og-home.png'；404 页不传=不出 OG） */
+  ogImage?: string;
+  ogTitle?: string;
+  ogDesc?: string;
+  /** 404 等不可索引页 */
+  noindex?: boolean;
 }
 
-const { title, desc, bare = false } = Astro.props;
+const { title, desc, bare = false, ogImage, ogTitle, ogDesc, noindex = false } = Astro.props;
+// [L-2 spec §3.3 换绑替换点·项目 seq=261 口径] 绝对 URL 单一出处 = astro.config 的 site（CI 经 SITE_URL 变量注入）。
+// 不硬编码域名或 '/website6.0/'：换绑时 devops 只改 site+base（一次 config/Variable 变更），
+// OG/twitter 绝对 URL 即全站自动正确。前提不变式：site 含与 base 一致的路径前缀。
+const siteUrl = Astro.site ?? new URL(Astro.url.origin);
+const route = relativePath(Astro.url.pathname); // 去 base：'/' | '/news' | '/about' | '/resume'
+const pageAbsoluteUrl = new URL(route === '/' ? '' : route.slice(1), siteUrl).toString();
+const ogImageUrl = ogImage ? new URL(ogImage.replace(/^\/+/, ''), siteUrl).toString() : '';
 const paletteIndex = [
   { label: 'Home 首页', href: '/' },
   { label: 'News 业内新闻', href: '/news' },
@@ -50,6 +64,24 @@ const paletteIndex = [
     <script>import '../scripts/theme';</script>
     <title>{title}</title>
     <meta name="description" content={desc} />
+    {noindex && <meta name="robots" content="noindex" />}
+    {
+      ogImage && (
+        <>
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content={`${site.nameEn} ${site.nameZh}`} />
+          <meta property="og:locale" content="zh_CN" />
+          <meta property="og:url" content={pageAbsoluteUrl} />
+          <meta property="og:title" content={ogTitle ?? title} />
+          <meta property="og:description" content={ogDesc ?? desc} />
+          <meta property="og:image" content={ogImageUrl} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={ogTitle ?? title} />
+          <meta name="twitter:description" content={ogDesc ?? desc} />
+          <meta name="twitter:image" content={ogImageUrl} />
+        </>
+      )
+    }
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
     <ClientRouter />
   </head>

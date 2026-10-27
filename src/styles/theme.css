@@ -57,7 +57,9 @@
     /* DESIGN.md 品牌统一：暗色 accent 5eead4 → ff7b81（bg 7.78:1 / surface 7.18:1） */
     --c-accent: #ff7b81;
     --c-accent-ink: #0b0d11;
-    --c-accent-strong: #c93a3f;
+    /* S2（设计走查）：暗色 accent-strong 跟随暗色 accent #ff7b81（原亮色派生 #c93a3f 脏红语义不合）。
+       注意：暗色下实心 accent 位文字须用 --c-accent-ink(#0b0d11)，白字在 #ff7b81 上仅 ~1.9:1 不达标 */
+    --c-accent-strong: #ff7b81;
     /* DESIGN.md §R-C6：暗色 warn #ffa94d（bg 10.22:1 / surface 9.43:1） */
     --c-warn: #ffa94d;
     color-scheme: dark;
@@ -73,7 +75,8 @@
   --c-line: #262b33;
   --c-accent: #ff7b81;
   --c-accent-ink: #0b0d11;
-  --c-accent-strong: #c93a3f;
+  /* S2：与上方媒体查询暗色块成对（SYNC:dark），暗色 accent-strong = #ff7b81 */
+  --c-accent-strong: #ff7b81;
   --c-warn: #ffa94d;
   color-scheme: dark;
 }

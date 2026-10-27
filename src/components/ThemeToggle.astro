@@ -11,11 +11,11 @@ const { variant = 'header' } = Astro.props;
     <button
       type="button"
       data-theme-toggle
+      aria-label="切换主题（跟随系统）"
       class="tab-item t-label enhanced-only text-ink-muted"
     >
-      <span class="tab-label">
-        <span data-theme-label>跟随系统</span>
-      </span>
+      <!-- S1：tab 格用固定短词「主题」，避免 375px 五格截断；当前模式经 aria-label 动态播报 -->
+      <span class="tab-label">主题</span>
     </button>
   ) : (
     <button

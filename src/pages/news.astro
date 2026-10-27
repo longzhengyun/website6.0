@@ -8,6 +8,9 @@ import { sortedItems, allTags } from '../data/news';
 <BaseLayout
   title={`业内新闻 — ${site.nameZh} · ${site.nameEn}`}
   desc="业内新闻：标题 + 简介 + 直跳链接，构建期 AI 管线聚合更新。"
+  ogTitle={`业内新闻 — ${site.nameEn} ${site.nameZh}`}
+  ogDesc="每日两次自动管线：RSS 多源抓取 + AI 标题/摘要/标签扩写，零人工干预的资讯展位。"
+  ogImage="og/og-news.png"
 >
   <article class="shell">
     <header class="pt-10 md:pt-16 pb-8">
