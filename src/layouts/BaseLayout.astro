@@ -61,7 +61,7 @@ const paletteIndex = [
         el.dataset.themeMode = mode;
       })();
     </script>
-    <script>import '../scripts/theme';</script>
+    <script>import '../scripts/theme'; import '../scripts/local-reactions';</script>
     <title>{title}</title>
     <meta name="description" content={desc} />
     {noindex && <meta name="robots" content="noindex" />}
@@ -101,6 +101,8 @@ const paletteIndex = [
         </>
       )
     }
+    <!-- A6 书脊（§5.4：L-5 阅读进度的唯一可见进度件；纯 CSS scroll timeline，降级列见 global.css） -->
+    {!bare && <div class="spine" aria-hidden="true"></div>}
     <main id="main" class:list={[!bare && 'pb-24 md:pb-0']}>
       <slot />
     </main>
