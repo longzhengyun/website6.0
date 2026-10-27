@@ -149,6 +149,15 @@ body {
   }
 }
 
+/* L-5 已读态（§5.4）：标题转 ink-muted、编号保持 faint；
+   禁删除线/透明度<1（对比度地板 4.5）；非颜色线索由 sr-only「（已读）」补足（脚本注入） */
+.news-card.is-read .t-h2 {
+  color: var(--c-ink-muted);
+}
+.news-card.is-read .row-num {
+  color: var(--c-ink-faint);
+}
+
 /* 两行截断 */
 .clamp-2 {
   display: -webkit-box;

@@ -66,6 +66,15 @@
 - 移动端底部 tab 条避让：`56px + env(safe-area-inset-bottom)`，`.tab-item` 命中区 ≥44×44px。
 - 圆角全 0、禁阴影（卡片用 1px line 区分，hover 边色转 ink）；间距节奏以 4 倍数，区块间 mb-12/16。
 
+### 3.4 CJK 字重实际渲染口径（A8 spike 结论 C，2026-10-27 补；spike：shared/l3-a8-variable-cjk-spike.md）
+- **事实基线**（Windows+Chromium 实测，CJK 实际渲染者=Microsoft YaHei）：CJK 只有 Regular/Bold 两态；目标字重 ≥550 一律吸附 Bold，500-540 落 Regular，**无中间插值**；连续 wght 轴仅拉丁段（Geist Variable）真实生效。
+- 现阶梯的 CJK 有效档：t-body 400 / t-small 440 / t-label 500 / **t-h3 540 → Regular**；t-h1 600 / t-h2 560 / t-display 620 / .zh-title 600 → **Bold**。设计依赖只写两档：CJK 层级差=字号+色彩档+Regular/Bold，中间数值（540/560/620）仅约束拉丁段连续档。
+- **禁则**：CJK 场景字重不得 >700（900 档触发 Chromium 合成加粗，笔画糊连——截图实证 a8-chrome-light.png w900 行）；如某档含 CJK 需 >700 的视觉强度，改用字号或 accent 层级解决。
+- **混排已知特性**：同一行 CJK+拉丁在 550-650 区间，拉丁段视觉细于 CJK 段（如 hero 副行、404 大字行）——接受，不做合成粗补偿；需平衡时调拉丁档（拉丁 700 ≈ CJK Bold 观感）。
+- **暗色约束**：暗底亮字有光学增粗（glow），Bold CJK 小字号糊感明显 → **dark 下 <24px 的 CJK 禁用 ≥550 档**（与现阶梯无冲突：小字档均 ≤540；标题层 ≥24px 两态皆可 Bold）。
+- **跨平台口径**：macOS（PingFang 原生多档）/Android（Noto）出现的中间档差异按渐进增强处理，设计稿与验收一律以"两态最小公分母"为准；本结论实测范围仅 Windows+Chromium（Firefox 未测，如实注记）。
+- 选项 B（CJK VF subsets 白名单）**不入本版**；若未来立项，限 hero 级孤立大字（设计判断详见 L-3 走查消息），不并入常规阶梯。
+
 ## 4. 动效契约（现状 A1-A6 固化 + 二期 A7-A10 立项口径）
 
 | # | 动效 | 参数 | 降级（必测三列） |
