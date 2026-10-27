@@ -1,0 +1,157 @@
+---
+/* L-4 站点工程状态卡（「本站数据心跳」）：
+ * 消费管线同批产物 src/data/news-stats.json，零 JS（原生 details/summary）。
+ * 口径：rss_only / 源降级 均据实陈述，不假装精确；warn 语义色不占 accent 预算（DESIGN.md R-C6）。 */
+import { news } from '../data/news';
+
+interface StatsSource {
+  id: string;
+  status: string;
+  items_fetched: number;
+  items_new: number;
+  ms: number;
+  error: string | null;
+}
+interface PipelineStats {
+  run_id: string;
+  generated_at: string;
+  mode: string;
+  llm: {
+    key_present: boolean;
+    provider: string | null;
+    model: string | null;
+    token_budget: number;
+    budget_exceeded: boolean;
+    calls: number;
+    batches_failed: number;
+    aborted: boolean;
+    input_tokens: number;
+    output_tokens: number;
+  };
+  sources: StatsSource[];
+  counts: {
+    fetched: number;
+    in_window: number;
+    deduped_existing: number;
+    new_items: number;
+    ai_enriched: number;
+    re_enriched: number;
+    dropped_invalid: number;
+    dropped_nonzh_r17: number;
+  };
+  news_items_total: number;
+  degraded_all_sources: boolean;
+  errors: string[];
+}
+
+import raw from '../data/news-stats.json';
+// JSON 模块推断丢失枚举/可空细化；与 news.ts 同口径单次断言，运行时校验在管线落盘前（schema）
+const stats = raw as unknown as PipelineStats;
+
+const sourceNames = new Map<string, string>();
+for (const item of news.items) {
+  if (!sourceNames.has(item.source_id)) sourceNames.set(item.source_id, item.source_name);
+}
+
+const flagIssues = stats.sources.filter((s) => s.status !== 'ok' || s.items_fetched === 0);
+const runDegraded = stats.degraded_all_sources || stats.errors.length > 0;
+const health = runDegraded
+  ? { glyph: '▲', text: '本批运行异常' }
+  : flagIssues.length > 0
+    ? { glyph: '△', text: `${flagIssues.length} 个源降级` }
+    : { glyph: '●', text: '全部正常' };
+
+const modeNote =
+  stats.mode === 'ai'
+    ? 'RSS → AI 标题/摘要/标签扩写'
+    : stats.mode === 'rss_only'
+      ? 'RSS 直连降级：本批摘要为源站原文，未经模型扩写（数据不缺，精度口径降级）'
+      : `未知模式 ${stats.mode}（按原文展示）`;
+const llmNote = !stats.llm.key_present
+  ? '未配置 LLM 密钥（本批无扩写）'
+  : `${stats.llm.provider ?? '未知'} · ${stats.llm.model ?? '未知'} · ${stats.llm.calls} 批调用${
+      stats.llm.batches_failed > 0 ? `（${stats.llm.batches_failed} 批失败）` : ''
+    }${stats.llm.budget_exceeded ? ' · token 预算超限' : ''}${stats.llm.aborted ? ' · 中途放弃' : ''}`;
+const genTime = `${stats.generated_at.slice(0, 16).replace('T', ' ')}Z`;
+const runUrl = `https://github.com/longzhengyun/website6.0/actions/runs/${stats.run_id}`;
+---
+
+<details class="vitals-card border border-line bg-surface">
+  <summary class="t-label text-ink-muted px-4 py-3 cursor-pointer list-none flex items-center gap-3">
+    <span class={health.glyph === '▲' ? 'text-warn' : ''} aria-hidden="true">{health.glyph}</span>
+    <span>数据心跳 · {stats.mode} · {genTime}</span>
+    <span class="text-ink-faint ml-auto">{health.text}</span>
+  </summary>
+  <div class="px-4 pb-4 pt-1 border-t border-line grid gap-6 md:grid-cols-2">
+    <section aria-label="管线运行">
+      <h3 class="t-label text-ink-faint uppercase mb-2">pipeline run</h3>
+      <dl class="vitals-dl">
+        <div><dt>run</dt><dd><a class="arrow-link text-ink-muted hover:text-ink" href={runUrl} rel="noopener noreferrer">#{stats.run_id} ↗</a></dd></div>
+        <div><dt>mode</dt><dd>{modeNote}</dd></div>
+        <div><dt>生成</dt><dd>{genTime}</dd></div>
+        <div><dt>LLM</dt><dd>{llmNote}</dd></div>
+        <div><dt>窗口</dt><dd>抓取 {stats.counts.fetched} → 在窗 {stats.counts.in_window} → 新增 {stats.counts.new_items}（AI 扩写 {stats.counts.ai_enriched}）→ 弃 {stats.counts.dropped_invalid + stats.counts.dropped_nonzh_r17}</dd></div>
+        <div><dt>清单</dt><dd>当前收录 {stats.news_items_total} 条（上限 100）</dd></div>
+        {runDegraded && (
+          <div><dt>异常</dt><dd class="text-warn">{stats.errors.length > 0 ? stats.errors.join('；') : '全部源降级'}</dd></div>
+        )}
+      </dl>
+    </section>
+    <section aria-label="源健康">
+      <h3 class="t-label text-ink-faint uppercase mb-2">sources · {stats.sources.length}</h3>
+      <ul class="flex flex-col">
+        {
+          stats.sources.map((s) => {
+            const flagged = s.status !== 'ok' || s.items_fetched === 0;
+            return (
+              <li class="flex items-baseline justify-between gap-3 py-1 border-b border-line last:border-b-0">
+                <span class:list={['t-small', flagged ? 'text-warn' : 'text-ink-muted']}>
+                  {sourceNames.get(s.id) ?? s.id}
+                  <span class="text-ink-faint ml-2">{s.id}</span>
+                </span>
+                <span class:list={['t-label shrink-0', flagged ? 'text-warn' : 'text-ink-faint']}>
+                  {flagged
+                    ? s.error
+                      ? `${s.status} · ${s.error}`
+                      : `${s.status} · 0 条（源无产出）`
+                    : `${s.status} · ${s.items_fetched} 条 · ${s.ms}ms`}
+                </span>
+              </li>
+            );
+          })
+        }
+      </ul>
+      <p class="t-label text-ink-faint mt-3">降级=该源本批 0 产出或出错，不影响其余源入窗</p>
+    </section>
+  </div>
+</details>
+
+<style>
+  .vitals-card summary::-webkit-details-marker {
+    display: none;
+  }
+  .vitals-dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px 12px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  .vitals-dl dt {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--c-ink-faint);
+    padding-top: 2px;
+  }
+  .vitals-dl dd {
+    color: var(--c-ink-muted);
+  }
+  @media (min-width: 768px) {
+    .vitals-dl {
+      grid-template-columns: auto 1fr;
+      font-size: 0.9375rem;
+    }
+  }
+</style>
