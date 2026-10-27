@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import VitalsCard from '../components/VitalsCard.astro';
 import { site } from '../data/site';
-import { sortedItems, allTags, news } from '../data/news';
+import { sortedItems, allTags } from '../data/news';
 ---
 
 <BaseLayout
@@ -71,11 +72,8 @@ import { sortedItems, allTags, news } from '../data/news';
       )
     }
 
-    <footer class="mt-10 border-t border-line pt-4">
-      <p class="t-label text-ink-faint uppercase">
-        data source: RSS · 构建期更新 · build {news.generated_at.slice(0, 16)}Z · mode
-        {news.mode}
-      </p>
+    <footer class="mt-10">
+      <VitalsCard />
     </footer>
   </article>
 

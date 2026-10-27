@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import VitalsCard from '../components/VitalsCard.astro';
 import { site } from '../data/site';
 import { taglines } from '../data/taglines';
 import { sortedItems } from '../data/news';
@@ -99,5 +100,10 @@ const latest = sortedItems.slice(0, 2);
         }
       })();
     </script>
+
+    <!-- L-4：工程状态卡收进独立 shell 版心，随 hero section 的既有间距节奏落底 -->
+    <section class="shell mt-8 md:mt-10" aria-label="站点工程状态">
+      <VitalsCard />
+    </section>
   </article>
 </BaseLayout>
