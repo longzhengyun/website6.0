@@ -54,12 +54,13 @@
     /* BUG-M4R-01 R-1：暗色装饰档加深（5.11:1@#0B0D11 / 4.71:1@#14171D） */
     --c-ink-faint: #7b8394;
     --c-line: #262b33;
-    /* DESIGN.md 品牌统一：暗色 accent 5eead4 → ff7b81（bg 7.78:1 / surface 7.18:1） */
-    --c-accent: #ff7b81;
+    /* T2 主色定案（站主 seq=422）：暗色 accent #ff7b81 → #f2555a（bg 5.76:1 / surface 5.32:1，
+       两档均 ≥AA 文字地板；DESIGN.md §36 备选档实测值沿用） */
+    --c-accent: #f2555a;
     --c-accent-ink: #0b0d11;
-    /* S2（设计走查）：暗色 accent-strong 跟随暗色 accent #ff7b81（原亮色派生 #c93a3f 脏红语义不合）。
-       注意：暗色下实心 accent 位文字须用 --c-accent-ink(#0b0d11)，白字在 #ff7b81 上仅 ~1.9:1 不达标 */
-    --c-accent-strong: #ff7b81;
+    /* S2（设计走查）：暗色 accent-strong 跟随暗色 accent #f2555a（原亮色派生 #c93a3f 脏红语义不合）。
+       注意：暗色下实心 accent 位文字须用 --c-accent-ink(#0b0d11)，白字在 #f2555a 上仅 ~3.4:1 不达标 */
+    --c-accent-strong: #f2555a;
     /* DESIGN.md §R-C6：暗色 warn #ffa94d（bg 10.22:1 / surface 9.43:1） */
     --c-warn: #ffa94d;
     color-scheme: dark;
@@ -73,10 +74,10 @@
   --c-ink-muted: #9ba3af;
   --c-ink-faint: #7b8394;
   --c-line: #262b33;
-  --c-accent: #ff7b81;
+  --c-accent: #f2555a;
   --c-accent-ink: #0b0d11;
-  /* S2：与上方媒体查询暗色块成对（SYNC:dark），暗色 accent-strong = #ff7b81 */
-  --c-accent-strong: #ff7b81;
+  /* S2：与上方媒体查询暗色块成对（SYNC:dark），暗色 accent-strong = #f2555a（T2 主色定案 seq=422） */
+  --c-accent-strong: #f2555a;
   --c-warn: #ffa94d;
   color-scheme: dark;
 }
