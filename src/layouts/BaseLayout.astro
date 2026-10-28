@@ -85,7 +85,8 @@ const paletteIndex = [
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
     <ClientRouter />
   </head>
-  <body class="min-h-screen antialiased">
+  <!-- R-FOOTER-1：sticky footer 骨架（flex 列 + main flex-1）；spine/TabBar 为 fixed 出流、CommandPalette 根 hidden，均不受影响 -->
+  <body class="min-h-screen flex flex-col antialiased">
     <a
       href="#main"
       class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-surface focus:border focus:border-line focus:px-4 focus:py-2"
@@ -103,7 +104,7 @@ const paletteIndex = [
     }
     <!-- A6 书脊（§5.4：L-5 阅读进度的唯一可见进度件；纯 CSS scroll timeline，降级列见 global.css） -->
     {!bare && <div class="spine" aria-hidden="true"></div>}
-    <main id="main" class:list={[!bare && 'pb-24 md:pb-0']}>
+    <main id="main" class:list={[!bare && 'pb-24 md:pb-0 flex-1']}>
       <slot />
     </main>
     {!bare && <SiteFooter />}
