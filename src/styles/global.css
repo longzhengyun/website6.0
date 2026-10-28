@@ -453,3 +453,53 @@ html[data-enhanced] .chip-row.enhanced-only {
     break-inside: avoid;
   }
 }
+
+/* regenerate 链：无 JS 时隐藏（布局预位不变=CLS 0，visibility 不可达=keyboard 不落空键；.v3-js 由 v3-canvas 模块首执添加） */
+[data-v3-regen] {
+  visibility: hidden;
+}
+.v3-js [data-v3-regen] {
+  visibility: visible;
+}
+
+/* ---- N-3 V3 生成式画布（rev1.1 §1-§2；氛围层：指针穿透、可全删不损信息、不占 accent ≤3 处预算）----
+   CLS 护栏：两端固定高度盒（D=640px 与 SVG viewBox 母版同高；M=40vh）；canvas 初始透明，
+   JS 绘妥加 .v3-on；无 JS=noscript 内联 SVG 显形（currentColor 吃宿主 token，三态自动）。 */
+.v3-root {
+  pointer-events: none;
+  color: var(--c-accent); /* 内联 SVG stroke=currentColor 的取色位（亮/暗/auto 随 token） */
+}
+.v3-root[data-v3='hero'] {
+  position: absolute;
+  inset: 0;
+  z-index: -1; /* 文本层=普通流内容：负档置于其上、根背景之上（section relative z-auto 不成层叠上下文） */
+  height: 640px;
+  overflow: hidden;
+}
+.v3-root[data-v3='strip'] {
+  display: none;
+  height: 40vh;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .v3-root[data-v3='hero'] {
+    display: none;
+  }
+  .v3-root[data-v3='strip'] {
+    display: block;
+  }
+}
+.v3-canvas,
+.v3-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.v3-canvas.v3-on {
+  opacity: 1;
+}
+/* 无 JS：noscript 显形（JS 在位时 canvas 覆盖，双保险防闪；noscript 本身已被浏览器跳过解析） */
+.v3-canvas.v3-on ~ .v3-svg {
+  display: none;
+}

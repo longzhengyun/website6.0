@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import VitalsCard from '../components/VitalsCard.astro';
+import CanvasLayer from '../components/CanvasLayer.astro';
 import { site } from '../data/site';
 import { taglines } from '../data/taglines';
 import { sortedItems } from '../data/news';
@@ -8,10 +9,9 @@ import { sortedItems } from '../data/news';
 const latest = sortedItems.slice(0, 2);
 
 // N-5 导流行（shared/t2-n3n5-homepage-proposal.md rev1.1 §3）：SSR 静态零 JS。
-// 断链过渡（项目 seq=474-②，§3 预案二选一取「SSR 条件隐藏」）：$ open canvas? 在 N-3 画布合入前不渲染，
-// 合入时本常量翻 true 即恢复；不选「改指 /about 说明位」因说明位涉文案撰写（R6 公开粒度归产品口径）。
-// ↻ regenerate 尾链属画布交互件，随 N-3 批次出现，本批零 JS 边界不预埋。
-const HAS_V3_CANVAS = false;
+// N-3 已合入本批：HAS_V3_CANVAS=true → 第 4 链 $ open canvas?（#v3-canvas=hero 画布层，M 端该层
+// display:none 时锚点为页顶近邻静帧条，行为=到页首，回执披露）+ ↻ regenerate 尾链恢复。
+const HAS_V3_CANVAS = true;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const guideItems = [
   { cmd: 'cat DESIGN.md', href: `${base}/about#design` },
@@ -32,9 +32,11 @@ const guideItems = [
     <!-- Hero：站名版式 L1「双语叠印」（design-spec §3）+ 单一视觉焦点=字体呼吸；
          R15 单屏：移动 hero 在 tab 条上方可视区内垂直居中（100svh 防 iOS 地址栏跳动） -->
     <section
-      class="shell shell-wide pt-[20vh] pb-16 md:pb-16 max-md:min-h-[calc(100svh-300px)] max-md:pt-0 max-md:flex max-md:flex-col max-md:justify-center"
+      class="shell shell-wide relative pt-[20vh] pb-16 md:pb-16 max-md:min-h-[calc(100svh-300px)] max-md:pt-0 max-md:flex max-md:flex-col max-md:justify-center"
       aria-labelledby="hero-title"
     >
+      <!-- V3 画布 D 端氛围层：hero 全出血（z=0，文本层在其后渲染自然盖于其上）；M 端 CSS 隐藏 -->
+      <CanvasLayer variant="hero" />
       <h1 id="hero-title" class="t-display">
         <span class="md:hidden zh-title block text-[2.25rem]! leading-[1.2]">佳瑞网</span>
         <span
@@ -75,6 +77,11 @@ const guideItems = [
       </script>
     </section>
 
+    <!-- V3 M 端静帧条（R4 裁定）：hero 下缘 40vh 单帧海报位，D 端 CSS 隐藏；生成即定格零持续动画 -->
+    <div class="shell">
+      <CanvasLayer variant="strip" />
+    </div>
+
     <!-- N-5 技术亮点导流行：hero 下缘、脉动条上方；D 端单行 flex / M 端两行竖排（grid-2）。
          A4 锁定句（产品比对 seq=444-③）：本行=375px 无 JS 场景内容入口承担者，删除/降级须重判 A4（只做加法）。
          制式：$ … mono t-label 终端语言（404/OG 同源）+ arrow-link hover A4 参数；命中区 M 端 ≥44px。
@@ -102,6 +109,20 @@ const guideItems = [
               </span>
             </a>
           ))
+        }
+        {
+          HAS_V3_CANVAS && (
+            // ↻ regenerate：画布交互件（§2.2 换 seed 走 replaceState 不触 ClientRouter navigate）；
+            // 无 JS 时 visibility:hidden（不可聚焦、布局预位防 CLS），v3-canvas 模块首执后显形
+            <button
+              type="button"
+              data-v3-regen
+              class="arrow-link t-label inline-flex min-h-[44px] items-center gap-2 text-ink-muted transition-colors hover:text-ink md:min-h-0"
+            >
+              <span class="text-ink-faint" aria-hidden="true">↻</span>
+              <span>regenerate seed</span>
+            </button>
+          )
         }
       </nav>
     </section>
@@ -154,4 +175,12 @@ const guideItems = [
       <VitalsCard />
     </section>
   </article>
+  <!-- N-3 客户端：仅首页引用 → 独立小 chunk。load/astro:page-load 后动态 import：
+       不进 modulepreload、不与首屏字体/LCP 抢带宽（实测静态 import 时 LCP Δ≈+45ms，改此法 Δ≈0，见回执）；
+       模块内部自绑 astro:page-load，SPA 进出首页正常重初始化 -->
+  <script>
+    const once = () => import('../scripts/v3-canvas');
+    window.addEventListener('load', once, { once: true });
+    document.addEventListener('astro:page-load', once, { once: true });
+  </script>
 </BaseLayout>
