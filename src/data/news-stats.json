@@ -1,7 +1,7 @@
 {
-  "run_id": "40529995214",
-  "generated_at": "2026-10-27T15:20:55.082Z",
-  "mode": "ai",
+  "run_id": "40646366927",
+  "generated_at": "2026-10-28T06:51:14.718Z",
+  "mode": "rss_only",
   "llm": {
     "key_present": true,
     "provider": "tongyi",
@@ -9,26 +9,26 @@
     "token_budget": 100000,
     "budget_exceeded": false,
     "calls": 6,
-    "batches_failed": 0,
-    "aborted": false,
-    "input_tokens": 27243,
-    "output_tokens": 23113
+    "batches_failed": 3,
+    "aborted": true,
+    "input_tokens": 0,
+    "output_tokens": 0
   },
   "sources": [
     {
       "id": "hn-frontpage",
-      "status": "failed",
-      "items_fetched": 0,
-      "items_new": 0,
-      "ms": 10541,
-      "error": "fetch failed"
+      "status": "ok",
+      "items_fetched": 20,
+      "items_new": 20,
+      "ms": 5396,
+      "error": null
     },
     {
       "id": "webdev",
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 575,
+      "ms": 388,
       "error": null
     },
     {
@@ -36,15 +36,15 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 331,
+      "ms": 211,
       "error": null
     },
     {
       "id": "css-tricks",
       "status": "ok",
       "items_fetched": 15,
-      "items_new": 1,
-      "ms": 661,
+      "items_new": 0,
+      "ms": 584,
       "error": null
     },
     {
@@ -52,23 +52,23 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 267,
+      "ms": 385,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 3,
-      "ms": 117,
+      "items_new": 1,
+      "ms": 85,
       "error": null
     },
     {
       "id": "arxiv-cs-ai",
       "status": "ok",
-      "items_fetched": 321,
+      "items_fetched": 407,
       "items_new": 10,
-      "ms": 190,
+      "ms": 75,
       "error": null
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 6,
-      "ms": 1472,
+      "ms": 1531,
       "error": null
     },
     {
@@ -84,7 +84,7 @@
       "status": "ok",
       "items_fetched": 50,
       "items_new": 15,
-      "ms": 4508,
+      "ms": 3446,
       "error": null
     },
     {
@@ -92,22 +92,27 @@
       "status": "ok",
       "items_fetched": 0,
       "items_new": 0,
-      "ms": 2195,
+      "ms": 6489,
       "error": null
     }
   ],
   "counts": {
-    "fetched": 506,
-    "in_window": 35,
-    "deduped_existing": 44,
-    "new_items": 35,
-    "ai_enriched": 35,
+    "fetched": 612,
+    "in_window": 52,
+    "deduped_existing": 39,
+    "new_items": 52,
+    "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 0,
+    "dropped_nonzh_r17": 31,
     "future_clamped": 0
   },
   "news_items_total": 100,
   "degraded_all_sources": false,
-  "errors": []
+  "errors": [
+    "enrichment batch 0 failed: fetch failed",
+    "enrichment batch 10 failed: fetch failed",
+    "enrichment batch 20 failed: fetch failed",
+    "AI aborted after consecutive failures, remainder stored rss_only"
+  ]
 }
