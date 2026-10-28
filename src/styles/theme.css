@@ -187,6 +187,18 @@
   background: var(--c-surface);
   border-top: 1px solid var(--c-line);
 }
+/* R-FOOTER-2：页脚避让 fixed tab-bar（站主 seq=673 授权按最佳实践适配）。
+   留白 = tab-bar 全高（56px + safe-area），配合下方 ≥768px 归零规则仅 M 档生效 */
+.pb-tab {
+  padding-bottom: calc(56px + env(safe-area-inset-bottom));
+}
+/* R-FOOTER-2：sticky-footer 视口高 dvh 回退链 —— 100vh 保底（旧浏览器），
+   支持 dvh 时跟随工具栏伸缩；未分层规则优先级高于 Tailwind utilities 层，可覆写 min-h-screen */
+@supports (min-height: 100dvh) {
+  body {
+    min-height: 100dvh;
+  }
+}
 @media (min-width: 768px) {
   .tab-bar {
     display: none;
