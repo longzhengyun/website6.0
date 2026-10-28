@@ -51,7 +51,11 @@ const index: PaletteEntry[] = (Astro.props.index as PaletteEntry[]).map((e) =>
     let selected = 0;
     let lastFocus: Element | null = null;
 
-    document.documentElement.setAttribute('data-enhanced', '');
+    // DEF-THEME-1：data-enhanced 是 html 级运行时标记，ClientRouter swap 会擦除；
+    // 本模块脚本 swap 后不重执行，故在 page-load 重放（幂等 setAttribute）。
+    const markEnhanced = () => document.documentElement.setAttribute('data-enhanced', '');
+    markEnhanced();
+    document.addEventListener('astro:page-load', markEnhanced);
 
     // SYNC:dark —— 主题动作条目实时展示当前态与下一态
     const actionLabel = (action: string): string => {
