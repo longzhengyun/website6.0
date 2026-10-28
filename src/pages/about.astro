@@ -2,9 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../data/site';
 import { skills, timeline } from '../data/about';
+import { changelog } from '../data/changelog';
 
 const blocks = (rank: number) =>
   Array.from({ length: 5 }, (_, i) => (i < rank ? '■' : '□'));
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BaseLayout
@@ -74,6 +76,81 @@ const blocks = (rank: number) =>
           ))
         }
       </ol>
+    </section>
+
+    <!-- N-1 站点迭代时间线区块（两级 IA：区块=索引、/changelog=全量五字段档案）。
+         与 L-4 状态卡（现在）、N-5 导流位（能力）互链成工程叙事闭环。新条目只加数据不改本组件。 -->
+    <section id="site-timeline" aria-labelledby="site-timeline-title" class="mb-12 md:mb-16 scroll-mt-6">
+      <h2 id="site-timeline-title" class="t-h2 zh-title mb-6">
+        <span class="row-num t-label mr-3">03/</span>站点迭代时间线
+      </h2>
+      {
+        changelog.length === 0 ? (
+          // 空态默认口径（站主 seq=422 裁定「空态文案按默认」）
+          <p class="t-label text-ink-muted">［暂未公示 · 迭代档案整理中］</p>
+        ) : (
+          <>
+            <ol class="border-l border-line ml-1">
+              {changelog.map((e, i) => (
+                <li class="pl-5 pb-8 relative">
+                  <p class="t-label text-ink-muted">
+                    {String(i + 1).padStart(2, '0')} · {e.date}
+                  </p>
+                  <h3 class="t-h3 mt-1">
+                    {e.version}
+                    <span class="t-small text-ink-muted"> · {e.theme}</span>
+                  </h3>
+                  {e.status && <p class="t-small text-ink-faint mt-1">{e.status}</p>}
+                </li>
+              ))}
+            </ol>
+            <a
+              href={`${base}/changelog`}
+              class="arrow-link t-label text-ink-muted hover:text-ink focus-visible:text-ink transition-colors inline-flex items-center gap-2 min-h-[44px]"
+            >
+              $ cat CHANGELOG.md（为什么做/证据链全档）<span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </>
+        )
+      }
+    </section>
+
+    <!-- #design 锚点：N-5 导流行 $ cat DESIGN.md 的落地位（本批承载）。
+         摘要取自 docs/design/DESIGN.md rev2（master 可核验），全文挂仓库 blob 外链。 -->
+    <section id="design" aria-labelledby="design-title" class="mb-12 md:mb-16 scroll-mt-6">
+      <h2 id="design-title" class="t-h2 zh-title mb-6">
+        <span class="row-num t-label mr-3">04/</span>设计契约
+      </h2>
+      <ul class="grid gap-3 md:grid-cols-2">
+        {
+          [
+            { t: '单一品牌色', d: '全站一个记忆点——朱红（暗 #f2555a / 亮 #e5484d）。亮暗是同一色相的明度适配，不是两套品牌。' },
+            { t: '克制的炫技', d: '每个动效必须同时交付降级路径：reduce-motion / 低端机 / 无 JS 三列都写进契约，负责任比丰富更重要。' },
+            { t: 'accent 是预算不是涂料', d: '每屏 ≤3 处；<18px 文字禁用 accent 着色——小字朱红不达 AA，这是数学不是偏好。' },
+            { t: '零后端边界自守', d: '所有交互纯端侧：CSS / 原生 JS / localStorage / 构建期 JSON，无运行时外部请求，数据不出本机。' },
+          ].map((p) => (
+            <li class="news-card p-4">
+              <h3 class="t-h3">{p.t}</h3>
+              <p class="t-small text-ink-muted mt-2 max-w-[42em]">{p.d}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="t-small text-ink-muted mt-4">
+        全文（token 基线、字号阶梯、动效契约）：
+        <a
+          href="https://github.com/longzhengyun/website6.0/blob/master/docs/design/DESIGN.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="arrow-link text-ink hover:text-accent focus-visible:text-accent transition-colors inline-flex items-center gap-1 min-h-[44px]"
+        >docs/design/DESIGN.md<span class="arrow" aria-hidden="true">↗</span></a
+        >；演进过程见
+        <a
+          href={`${base}/changelog`}
+          class="arrow-link text-ink hover:text-accent focus-visible:text-accent transition-colors inline-flex items-center gap-1 min-h-[44px]"
+        >版本时间线<span class="arrow" aria-hidden="true">→</span></a
+        >。
+      </p>
     </section>
 
     <section aria-labelledby="ask-title" class="mb-12">

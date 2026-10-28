@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { changelog } from '../data/changelog';
+import { site } from '../data/site';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// N-1 独立档案页（product-t2-n1-narrative-framework-v1.md §一：/about 区块 + 独立 changelog 页两级）。
+// 纯 SSR 内容页：零 JS、无新依赖；新条目只加 src/data/changelog.ts 数据不改本页。
+const fieldLabel = 't-label text-ink-faint uppercase tracking-wider';
+---
+
+<BaseLayout
+  title={`版本时间线 — ${site.nameZh} · ${site.nameEn}`}
+  desc="佳瑞网 v6.0 迭代档案：每期为什么做、做了什么、证据链与下一步——页面本身就是迭代证据。"
+  ogTitle={`版本时间线 — ${site.nameEn} ${site.nameZh}`}
+  ogDesc="v6.0 二期/一期迭代档案：站主裁定可追溯，证据链全部挂 master 可核验 commit 与仓库文档。"
+  ogImage="og/og-changelog.png"
+>
+  <article class="shell pb-16 md:pb-24">
+    <header class="pt-10 md:pt-16 pb-6">
+      <p class="t-label spine-sense text-ink-muted uppercase">$ cat CHANGELOG.md</p>
+      <h1 class="t-h1 zh-title mt-2">版本时间线</h1>
+      <p class="t-body text-ink-muted mt-4 max-w-[42em]">
+        这个站不是「做过就完了」，而是「持续被 AI 团队迭代」——页面本身就是迭代证据。
+        本档案只写已发生事实：「为什么做」引用站主裁定编号，「证据链」全部挂 GitHub 仓库 master
+        可核验的 commit 与入库文档。
+      </p>
+    </header>
+
+    {
+      changelog.length === 0 ? (
+        // 空态默认口径（站主 seq=422 裁定「空态文案按默认」：不假装精确）
+        <p class="t-label text-ink-muted border-t border-line pt-6">［暂未公示 · 迭代档案整理中］</p>
+      ) : (
+        <ol class="mt-2">
+          {changelog.map((e) => (
+            <li class="border-t border-line py-8 md:py-10">
+              <h2 class="t-h2 zh-title flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                <span>{e.version}</span>
+                <span class="t-label text-ink-muted font-normal">{e.date}</span>
+              </h2>
+              <p class="t-h3 text-ink-muted mt-1">{e.theme}</p>
+              {e.status && <p class="t-small text-ink-faint mt-2">{e.status}</p>}
+
+              <div class="mt-6 max-w-[42em]">
+                <p class={fieldLabel}>// 为什么做</p>
+                <p class="t-body mt-2">{e.why}</p>
+                <ul class="mt-2 flex flex-col gap-1">
+                  {e.whySource.map((r) => (
+                    <li class="t-small">
+                      <a
+                        href={r.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="arrow-link text-ink-muted hover:text-ink focus-visible:text-ink transition-colors"
+                        ><code class="font-mono">{r.label}</code
+                        ><span class="arrow ml-1" aria-hidden="true">↗</span></a
+                      >
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="mt-6 max-w-[42em]">
+                <p class={fieldLabel}>// 做了什么</p>
+                <ul class="mt-2 flex flex-col gap-2">
+                  {e.what.map((w) => (
+                    <li class="t-body flex gap-3">
+                      <span class="text-accent shrink-0" aria-hidden="true">·</span>
+                      <span>{w}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="mt-6">
+                <p class={fieldLabel}>// 证据链（master 可核验）</p>
+                <ul class="mt-2 grid gap-x-8 gap-y-1 md:grid-cols-2">
+                  {e.evidence.map((r) => (
+                    <li class="t-small min-w-0">
+                      <a
+                        href={r.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="arrow-link text-ink-muted hover:text-ink focus-visible:text-ink transition-colors inline-flex items-baseline gap-1 max-w-full"
+                        ><code class="font-mono truncate">{r.label}</code
+                        ><span class="arrow shrink-0" aria-hidden="true">↗</span></a
+                      >
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="mt-6 max-w-[42em]">
+                <p class={fieldLabel}>// 下一步</p>
+                <ul class="mt-2 flex flex-col gap-1">
+                  {e.next.map((n) => (
+                    <li class="t-small text-ink-muted flex gap-3">
+                      <span class="text-ink-faint shrink-0" aria-hidden="true">→</span>
+                      <span>{n}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+          ))}
+        </ol>
+      )
+    }
+
+    <!-- 工程叙事闭环互链：状态卡（现在）→ 本页（历史）→ 展位/设计（能力） -->
+    <nav
+      aria-label="迭代叙事导航"
+      class="border-t border-line pt-6 mt-4 flex flex-wrap items-baseline gap-x-8 gap-y-3"
+    >
+      <a
+        href={`${base}/#vitals`}
+        class="arrow-link t-label text-ink-muted hover:text-ink focus-visible:text-ink transition-colors inline-flex items-center gap-2 min-h-[44px]"
+        >$ ls heartbeat（当前状态）<span class="arrow" aria-hidden="true">→</span></a
+      >
+      <a
+        href={`${base}/about#design`}
+        class="arrow-link t-label text-ink-muted hover:text-ink focus-visible:text-ink transition-colors inline-flex items-center gap-2 min-h-[44px]"
+        >$ cat DESIGN.md（设计契约）<span class="arrow" aria-hidden="true">→</span></a
+      >
+      <a
+        href={`${base}/about`}
+        class="arrow-link t-label text-ink-muted hover:text-ink focus-visible:text-ink transition-colors inline-flex items-center gap-2 min-h-[44px]"
+        >$ cd about（关于站长）<span class="arrow" aria-hidden="true">→</span></a
+      >
+    </nav>
+  </article>
+</BaseLayout>

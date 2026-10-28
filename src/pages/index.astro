@@ -173,6 +173,13 @@ const guideItems = [
          id=vitals 为 N-5 `$ ls heartbeat` 同页锚点（rev1.1 §3） -->
     <section id="vitals" class="shell mt-8 md:mt-10 scroll-mt-6" aria-label="站点工程状态">
       <VitalsCard />
+      <!-- N-1 叙事闭环：状态卡（现在）→ 版本时间线（历史）；SSR 零 JS，同导流行制式 -->
+      <p class="t-label mt-3">
+        <a
+          href={`${base}/changelog`}
+          class="arrow-link text-ink-muted hover:text-ink focus-visible:text-ink transition-colors inline-flex items-center gap-2 min-h-[44px]"
+        >$ cat changelog（迭代档案）<span class="arrow" aria-hidden="true">→</span></a>
+      </p>
     </section>
   </article>
   <!-- N-3 客户端：仅首页引用 → 独立小 chunk。load/astro:page-load 后动态 import：
