@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import VitalsCard from '../components/VitalsCard.astro';
 import { site } from '../data/site';
 import { skills, timeline } from '../data/about';
 import { changelog } from '../data/changelog';
@@ -151,6 +152,51 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         >版本时间线<span class="arrow" aria-hidden="true">→</span></a
         >。
       </p>
+    </section>
+
+    <!-- R-MHOME-1(D3)：首页导流行 4 链 + 状态卡 #vitals 迁入本小节（S 端首页一屏减法的大承接位）。
+         字面=产品确认单 shared/product-rmhome1-copy-confirm.md ①：标题「05/ 技术亮点与工程状态」、
+         引言、id="vitals" 与 aria-label 原字面全部不动，仅 href 落点归实现。
+         ↻ regenerate 按钮不在本页出现——v3-canvas 模块只随首页执行，/about 上它是死控件（改指/换 seed
+         均无落点），按产品「撞到字面-几何冲突回一句话」口径随回执报备，不静默改词。 -->
+    <section id="tech-status" aria-labelledby="tech-status-title" class="mb-12 md:mb-16 scroll-mt-6">
+      <h2 id="tech-status-title" class="t-h2 zh-title mb-3">
+        <span class="row-num t-label mr-3">05/</span>技术亮点与工程状态
+      </h2>
+      <p class="t-body text-ink-muted mb-6 max-w-[42em]">
+        四条命令看懂这个站怎么运转；下方是它的实时工程状态。
+      </p>
+      <nav
+        aria-label="技术亮点导流"
+        class="grid grid-cols-2 items-baseline gap-x-8 border-t border-line pt-4"
+      >
+        {
+          [
+            { cmd: 'cat DESIGN.md', href: '#design' },
+            { cmd: 'ls heartbeat', href: '#vitals' },
+            { cmd: 'tail -f feed', href: `${base}/news` },
+            { cmd: 'open canvas?', href: `${base}/#v3-canvas` },
+          ].map((g) => (
+            <a
+              href={g.href}
+              class="arrow-link t-label inline-flex min-h-[44px] items-center gap-2 text-ink-muted transition-colors hover:text-ink"
+            >
+              <span class="text-ink-faint" aria-hidden="true">
+                $
+              </span>
+              <span>{g.cmd}</span>
+              <span class="arrow text-[0.7em] shrink-0" aria-hidden="true">
+                →
+              </span>
+            </a>
+          ))
+        }
+      </nav>
+      <!-- 状态卡容器：id/aria-label 与首页原字面一致（迁入后仍为页内锚点，$ ls heartbeat 同页语义成立）；
+           第 4 链落点 #v3-canvas 在首页 hero section（D/M 两档均在文档流可达，产品注意项②满足,不隐藏） -->
+      <section id="vitals" class="mt-6 scroll-mt-6" aria-label="站点工程状态">
+        <VitalsCard />
+      </section>
     </section>
 
     <section aria-labelledby="ask-title" class="mb-12">

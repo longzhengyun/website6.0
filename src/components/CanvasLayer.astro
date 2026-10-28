@@ -2,7 +2,7 @@
 /**
  * N-3 V3 生成式画布挂点层（rev1.1 §1-§2；单源生成器 src/lib/v3-art.mjs）。
  * 氛围层不是内容层：aria-hidden、指针穿透、可全删不损信息；不占「每屏 accent ≤3 处」预算（§2.1 品牌点纪律）。
- * D 端=hero 全高出血绝对层；M 端=40vh 静帧条（R4 裁定）。
+ * D 端=hero 全高出血绝对层；M 端=R-MHOME-1 D2a 后并入 hero 背景（40vh 独立静帧条退役，落位规则见 global.css）。
  * 无 JS 降级=同 seed 构建期 SVG 静帧（内联 noscript，§2.3 设计指令「无需二进制资产」；
  * 单块/变体：同文档内联 SVG 的 currentColor 吃宿主 --c-accent，三态主题自动跟随，免亮/暗双份字节）。
  * CLS 护栏：容器固定高度盒 + 初始透明，canvas 等比拉伸铺满（slice 语义），JS 就绪只加像素不挪布局。
@@ -24,7 +24,6 @@ const svgStill = artToSvgString(art(DEFAULT_SEED_KEY, ART_W, ART_H), ART_W, ART_
 <div
   data-v3={variant}
   data-seed={DEFAULT_SEED_KEY}
-  {...(variant === 'hero' ? { id: 'v3-canvas' } : {})}
   class="v3-root"
   aria-hidden="true"
 >
