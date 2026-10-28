@@ -1,9 +1,126 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-28T11:15:48.836Z",
+  "generated_at": "2026-10-28T12:16:45.093Z",
   "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "7bd8dfd5902a5a83",
+      "url": "https://www.infoq.cn/article/TusFJkx6F151otgzliu2?utm_source=rss&utm_medium=article",
+      "title_original": "谷歌 Antigravity SDK 新增本地模型支持，提升 Token 效率和代码隐私性",
+      "title_zh": "谷歌 Antigravity SDK 新增本地模型支持，提升 Token 效率和代码隐私性",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-28T12:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "5a4f575db4e071e2",
+      "url": "https://www.reuters.com/business/media-telecom/amazon-signs-1157-billion-deal-satellite-firm-globalstar-challenge-starlink-2026-04-14/1157-billion-deal-satellite-firm-globalstar-challenge-starlink-2026-04-14/",
+      "title_original": "Amazon to buy satellite firm Globalstar in $11.57B deal",
+      "title_zh": "亚马逊将以115.7亿美元收购卫星公司Globalstar",
+      "summary_zh": "亚马逊宣布以115.7亿美元收购卫星公司Globalstar。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-28T11:54:23.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "7142103ed69166ab",
+      "url": "https://www.oschina.net/p/EVEngine",
+      "title_original": "EVEngine - 面向 AI Agent 的轻量游戏引擎",
+      "title_zh": "EVEngine - 面向 AI Agent 的轻量游戏引擎",
+      "summary_zh": "EVEngine 是一款非常适合 Agent 自己迭代造游戏的引擎 EVEngine ，核心优势有 3 个： 1. 随时热重载 - 脚本更新、资源更新不用等，立马就刷新，修改迭代时间短 2. 自带 MCP 和 debug 服务器，可以截图…",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-28T11:32:14.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "e6cf946b36c6e48c",
+      "url": "https://support.apple.com/en-us/149555",
+      "title_original": "About the compromised eMudhra intermediate CAs",
+      "title_zh": "关于被入侵的 eMudhra 中间证书颁发机构",
+      "summary_zh": "Apple发布支持文章，说明被入侵的eMudhra中间证书颁发机构情况。",
+      "tags": [
+        "security"
+      ],
+      "level": "must-read",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-28T11:08:49.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "a47fefdfcbeeae76",
+      "url": "https://emudhra.we-have-a-problem.com/apple.html",
+      "title_original": "Ten days later, Git on macOS still trusts the compromised eMudhra certificates",
+      "title_zh": "十天后，macOS 上的 Git 仍信任被入侵的 eMudhra 证书",
+      "summary_zh": "报道称，eMudhra中间CA被入侵十天后，macOS上的Git仍信任相关证书。",
+      "tags": [
+        "security"
+      ],
+      "level": "must-read",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-28T11:03:40.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
     {
       "fingerprint": "9ab1a689edb4b095",
       "url": "https://www.infoq.cn/article/r1ibrq9kmZ1qFAWAtzJf?utm_source=rss&utm_medium=article",
@@ -513,6 +630,241 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40646366927"
+      }
+    },
+    {
+      "fingerprint": "a4362185b5f0fe58",
+      "url": "https://arxiv.org/abs/2610.36239",
+      "title_original": "BehaveRec: When Does Long-Term Behavioral History Help Sequential Recommendation? A Study with Session, History, and Community Signals",
+      "title_zh": "BehaveRec：长期行为历史何时有助于序列推荐？一项结合会话、历史和社区信号的研究",
+      "summary_zh": "arXiv论文研究长期行为历史对序列推荐的作用，考察会话、历史与社区信号。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "8f95879ed507d25e",
+      "url": "https://arxiv.org/abs/2610.36287",
+      "title_original": "A Smart Instant Book Filter Model based on Dual-Objective Optimization",
+      "title_zh": "基于双目标优化的智能即时预订过滤模型",
+      "summary_zh": "arXiv论文提出基于双目标优化的即时预订过滤模型，用于在线酒店服务。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "0ed6edd9404f35cf",
+      "url": "https://arxiv.org/abs/2610.36298",
+      "title_original": "Spiking Neural Networks Are Harder to Steal: A Benchmark Study of Model Stealing Attacks",
+      "title_zh": "脉冲神经网络更难被窃取：模型窃取攻击基准研究",
+      "summary_zh": "arXiv论文基准测试模型窃取攻击，发现脉冲神经网络更难被窃取。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "a2ad1e8fe785e24b",
+      "url": "https://arxiv.org/abs/2610.36308",
+      "title_original": "When Retrieval Is Not Enough: Obsolete Facts in Agent Memory",
+      "title_zh": "当检索不足：智能体记忆中的过时事实",
+      "summary_zh": "arXiv 论文指出智能体记忆基准常混淆检索与答案生成，并关注过时事实问题。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "202d9ab2851e24f9",
+      "url": "https://arxiv.org/abs/2610.36325",
+      "title_original": "Ontology-guided multi-agent reasoning for explainable differential diagnosis",
+      "title_zh": "用于可解释鉴别诊断的本体引导多智能体推理",
+      "summary_zh": "arXiv 论文提出本体引导的多智能体推理方法，面向可解释鉴别诊断。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "71cf58516c356f01",
+      "url": "https://arxiv.org/abs/2610.36328",
+      "title_original": "How Stable Are LLM-Generated Proofs Under Program Refactoring? A Stress Test for Verifiable Code Generation",
+      "title_zh": "程序重构下大语言模型生成的证明有多稳定？面向可验证代码生成的压力测试",
+      "summary_zh": "arXiv 论文对可验证代码生成进行压力测试，考察大模型生成证明在程序重构下的稳定性。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "4b87f2ecf88f8d9f",
+      "url": "https://arxiv.org/abs/2610.36329",
+      "title_original": "Plenty of Room in the Middle: Revealing Opportunities on a GPU Cluster via Fine-Grained Monitoring",
+      "title_zh": "中间仍有大量空间：通过细粒度监控揭示 GPU 集群机会",
+      "summary_zh": "arXiv 论文通过细粒度监控揭示 GPU 集群中的资源利用机会。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "10a0df171a06e25d",
+      "url": "https://arxiv.org/abs/2610.36335",
+      "title_original": "OA-RAG: Ontology-based Agentic RAG for Faithful LLM Reasoning",
+      "title_zh": "OA-RAG：面向忠实大语言模型推理的本体智能体检索增强生成",
+      "summary_zh": "arXiv 论文提出 OA-RAG，结合本体与智能体检索增强，以提升大模型推理忠实性。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "885ae91d8583cb64",
+      "url": "https://arxiv.org/abs/2610.36341",
+      "title_original": "Executable Archaeology of Programs That Model Programming: Reanimating the Heuristic Compiler (1961) and KBEmacs (1984)",
+      "title_zh": "对建模编程的程序进行可执行考古：复活启发式编译器（1961）与 KBEmacs（1984）",
+      "summary_zh": "arXiv 论文以可执行考古方式复现早期编程模型程序，包括启发式编译器和 KBEmacs。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
+      }
+    },
+    {
+      "fingerprint": "8b75540f94518f9a",
+      "url": "https://arxiv.org/abs/2610.36355",
+      "title_original": "WAKMan: Workload Aware KVCache Manager",
+      "title_zh": "WAKMan：工作负载感知的 KVCache 管理器",
+      "summary_zh": "arXiv 论文提出 WAKMan，面向大模型服务器前缀缓存的工作负载感知 KVCache 管理器。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T12:16:45.093Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40686460717"
       }
     },
     {
@@ -1965,351 +2317,6 @@
       "source_name": "OSCHINA 开源中国",
       "original_lang": "zh",
       "published_at": "2026-10-27T04:36:21.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "8e534836b2f4e120",
-      "url": "https://juejin.cn/post/7700901949990895659",
-      "title_original": "副业搞钱点子之赛事与活动",
-      "title_zh": "副业搞钱点子之赛事与活动",
-      "summary_zh": "大家好，我是农村程序员(2020年回农村，至今未出村)，独立开发者(致力于开发 1000 个小产品)，前端之虎陈随易(自封的)，我的官网是：https://yicode.tech。 今天分享一个搞钱点",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "juejin",
-      "source_name": "掘金",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T04:25:10.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "6be596e02c425565",
-      "url": "https://juejin.cn/post/7700912127129255987",
-      "title_original": "PHP 9.2 分 RCE 的补丁比公告早公开 3 天，我读完 389 个文件的 diff，也把\"死在代码之前\"跑了出来",
-      "title_zh": "PHP 9.2 分 RCE 的补丁比公告早公开 3 天，我读完 389 个文件的 diff，也把\"死在代码之前\"跑了出来",
-      "summary_zh": "补丁比公告早公开 3 天。我拉下 389 个文件的 diff 读完，又在未修复的 8.1 上实测：解析期 OOM fatal 报 \"in Unknown on line 0\"，应用代码一行没跑；两道默",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "juejin",
-      "source_name": "掘金",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T04:13:23.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "bccce47abeed1067",
-      "url": "https://arxiv.org/abs/2610.32069",
-      "title_original": "DriveMind: Mind-Evolving Belief Tracking for Closed-Loop Autonomous Driving",
-      "title_zh": "DriveMind：用于闭环自动驾驶的心智演化信念跟踪",
-      "summary_zh": "arXiv 论文提出 DriveMind，研究闭环自动驾驶中的信念跟踪。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-27T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "d42a04b577f838e3",
-      "url": "https://arxiv.org/abs/2610.32087",
-      "title_original": "Behaviour analysis for large language model-driven agents",
-      "title_zh": "大型语言模型驱动智能体的行为分析",
-      "summary_zh": "论文探讨如何理解大型语言模型驱动智能体的行为及其动作形成。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-27T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "6925ee17bfc88281",
-      "url": "https://arxiv.org/abs/2610.32096",
-      "title_original": "DELA: Learning Controllable Edits for Diffusion Language Models",
-      "title_zh": "DELA：为扩散语言模型学习可控编辑",
-      "summary_zh": "论文提出 DELA，研究扩散语言模型的可控编辑学习方法。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-27T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "ffd0aaab3523514f",
-      "url": "https://arxiv.org/abs/2610.32099",
-      "title_original": "Learning Nonlinear Waveform Fusion Across Scales for Integrated Sensing and Communication",
-      "title_zh": "面向通感一体化的跨尺度非线性波形融合学习",
-      "summary_zh": "论文研究通感一体化场景下的跨尺度非线性波形融合学习方法。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-27T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "7df57fc5ebfb2f3d",
-      "url": "https://arxiv.org/abs/2610.32106",
-      "title_original": "PersonaScienceBench: Evaluating Scientific Agents with Diverse Simulated Researchers",
-      "title_zh": "PersonaScienceBench：使用多样化模拟研究人员评估科学智能体",
-      "summary_zh": "论文提出 PersonaScienceBench，用多样化模拟研究人员评估科学智能体。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-27T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "e84b72eb49f1535a",
-      "url": "https://arxiv.org/abs/2610.32110",
-      "title_original": "Who Verifies the Tools? How Warped Formatters Mislead Agents and Their Verifiers",
-      "title_zh": "谁来验证工具？扭曲格式化器如何误导智能体及其验证器",
-      "summary_zh": "论文分析工具输出格式化器如何误导智能体及其验证器。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-27T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "027c5bc38fca14b7",
-      "url": "https://arxiv.org/abs/2610.32127",
-      "title_original": "MPQ: A Message-Passing View of Post-Training Quantization",
-      "title_zh": "MPQ：后训练量化的消息传递视角",
-      "summary_zh": "论文提出 MPQ，从消息传递视角研究后训练量化（PTQ）。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-27T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "14628d0452b3d705",
-      "url": "https://arxiv.org/abs/2610.32177",
-      "title_original": "$\\Psi$-0.6: Adaptive Streams of Thought in a Unified Vision-Language World Model",
-      "title_zh": "Ψ-0.6：统一视觉语言世界模型中的自适应思维流",
-      "summary_zh": "论文提出 Ψ-0.6，在统一视觉语言世界模型中采用自适应思维流。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-27T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "3fd9d9ef6611fdd7",
-      "url": "https://arxiv.org/abs/2610.32181",
-      "title_original": "Not All Information Is Worth Asking For: Decision-Informed Information Seeking with LLMs",
-      "title_zh": "并非所有信息都值得询问：基于决策的大语言模型信息获取",
-      "summary_zh": "论文研究大语言模型在决策支持中如何判断并获取值得询问的信息。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-27T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "c9618822453ebfdf",
-      "url": "https://arxiv.org/abs/2610.32193",
-      "title_original": "Evidence-Grounded SLM Behavioral Prediction Architecture for Future Assistance Use",
-      "title_zh": "面向未来辅助使用的基于证据小语言模型行为预测架构",
-      "summary_zh": "论文提出面向未来辅助场景的基于证据小语言模型行为预测架构。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-27T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "03920d74fca8e97e",
-      "url": "https://www.oschina.net/news/503236",
-      "title_original": "Jync v1.8.0 支持企业统一认证，菜单调整，日志优化，bug修复",
-      "title_zh": "Jync v1.8.0 支持企业统一认证，菜单调整，日志优化，bug修复",
-      "summary_zh": "企业门户账号可直接登录 Jync：支持「账号密码（OA 接口校验）」「网关头」「票据」三种统一认证，同一时刻只生效一种；导航按「配置管理」「日志管理」分组，新增系统日志页；界面把「项目」统一改称「同步任务」；同步任务详情支持按需核对行数。…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T03:56:20.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "a3dd5b5625b657a8",
-      "url": "https://www.oschina.net/news/503235",
-      "title_original": "GrantForge 2026.3.0 发布：新增 5 大数据系统，统一权限治理再进一步",
-      "title_zh": "GrantForge 2026.3.0 发布：新增 5 大数据系统，统一权限治理再进一步",
-      "summary_zh": "一个权限平台，能否真正管理企业中的数据库、搜索引擎、消息队列和大数据组件？ 这正是 GrantForge 一直在尝试解决的问题。 在实际的软件系统中，权限管理远比用户、角色、菜单和按钮复杂。 一家企业可能同时运行着 MySQL、Postg…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T03:43:10.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "8ad08a17b93039d8",
-      "url": "https://www.oschina.net/news/503234",
-      "title_original": "做了个免费、无水印、只有 2.3MB 的 Mac vlog 剪辑软件，专为 M 芯片优化",
-      "title_zh": "做了个免费、无水印、只有 2.3MB 的 Mac vlog 剪辑软件，专为 M 芯片优化",
-      "summary_zh": "平时拍 vlog 用剪映，很多功能要会员，所以自己写了一个，先给自己用，顺手开源了。 FrameCut 只支持 Apple 芯片，把芯片里的专用硬件都用上了： 编解码走媒体引擎，调色和转场走 Metal GPU ，语音转字幕走神经网络引擎…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T03:36:51.000Z",
       "date_inferred": false,
       "fetched_at": "2026-10-27T06:15:39.035Z",
       "duplicate_of": null,

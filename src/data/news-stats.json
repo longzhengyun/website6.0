@@ -1,6 +1,6 @@
 {
-  "run_id": "40678544457",
-  "generated_at": "2026-10-28T11:15:48.836Z",
+  "run_id": "40686460717",
+  "generated_at": "2026-10-28T12:16:45.093Z",
   "mode": "ai",
   "llm": {
     "key_present": true,
@@ -8,19 +8,19 @@
     "model": "qwen3.8-omni-flash",
     "token_budget": 100000,
     "budget_exceeded": false,
-    "calls": 7,
+    "calls": 4,
     "batches_failed": 0,
     "aborted": false,
-    "input_tokens": 33549,
-    "output_tokens": 24314
+    "input_tokens": 20086,
+    "output_tokens": 15342
   },
   "sources": [
     {
       "id": "hn-frontpage",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 18,
-      "ms": 327,
+      "items_new": 3,
+      "ms": 2381,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 642,
+      "ms": 650,
       "error": null
     },
     {
@@ -36,15 +36,15 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 386,
+      "ms": 415,
       "error": null
     },
     {
       "id": "css-tricks",
       "status": "ok",
       "items_fetched": 15,
-      "items_new": 0,
-      "ms": 1630,
+      "items_new": 1,
+      "ms": 699,
       "error": null
     },
     {
@@ -52,15 +52,15 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 428,
+      "ms": 226,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 2,
-      "ms": 81,
+      "items_new": 3,
+      "ms": 113,
       "error": null
     },
     {
@@ -68,40 +68,32 @@
       "status": "ok",
       "items_fetched": 407,
       "items_new": 10,
-      "ms": 171,
+      "ms": 186,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 11,
-      "ms": 1283,
+      "items_new": 1,
+      "ms": 1671,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 2,
-      "ms": 2695,
-      "error": null
-    },
-    {
-      "id": "juejin",
-      "status": "ok",
-      "items_fetched": 0,
-      "items_new": 0,
-      "ms": 6227,
+      "items_new": 6,
+      "ms": 7834,
       "error": null
     }
   ],
   "counts": {
     "fetched": 612,
-    "in_window": 43,
-    "deduped_existing": 49,
-    "new_items": 43,
-    "ai_enriched": 43,
+    "in_window": 24,
+    "deduped_existing": 78,
+    "new_items": 24,
+    "ai_enriched": 24,
     "re_enriched": 0,
     "dropped_invalid": 0,
     "dropped_nonzh_r17": 0,
