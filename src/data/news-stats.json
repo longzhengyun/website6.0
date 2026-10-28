@@ -1,6 +1,6 @@
 {
-  "run_id": "40686460717",
-  "generated_at": "2026-10-28T12:16:45.093Z",
+  "run_id": "40721520972",
+  "generated_at": "2026-10-28T15:59:54.722Z",
   "mode": "ai",
   "llm": {
     "key_present": true,
@@ -8,19 +8,19 @@
     "model": "qwen3.8-omni-flash",
     "token_budget": 100000,
     "budget_exceeded": false,
-    "calls": 4,
-    "batches_failed": 0,
+    "calls": 6,
+    "batches_failed": 2,
     "aborted": false,
-    "input_tokens": 20086,
-    "output_tokens": 15342
+    "input_tokens": 13091,
+    "output_tokens": 7393
   },
   "sources": [
     {
       "id": "hn-frontpage",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 3,
-      "ms": 2381,
+      "items_new": 9,
+      "ms": 1472,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 650,
+      "ms": 476,
       "error": null
     },
     {
@@ -36,15 +36,15 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 415,
+      "ms": 395,
       "error": null
     },
     {
       "id": "css-tricks",
       "status": "ok",
       "items_fetched": 15,
-      "items_new": 1,
-      "ms": 699,
+      "items_new": 0,
+      "ms": 704,
       "error": null
     },
     {
@@ -52,15 +52,15 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 226,
+      "ms": 208,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 3,
-      "ms": 113,
+      "items_new": 4,
+      "ms": 589,
       "error": null
     },
     {
@@ -68,38 +68,41 @@
       "status": "ok",
       "items_fetched": 407,
       "items_new": 10,
-      "ms": 186,
+      "ms": 207,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 1,
-      "ms": 1671,
+      "items_new": 4,
+      "ms": 1242,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 6,
-      "ms": 7834,
+      "items_new": 7,
+      "ms": 3581,
       "error": null
     }
   ],
   "counts": {
     "fetched": 612,
-    "in_window": 24,
-    "deduped_existing": 78,
-    "new_items": 24,
-    "ai_enriched": 24,
+    "in_window": 34,
+    "deduped_existing": 79,
+    "new_items": 34,
+    "ai_enriched": 14,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 0,
+    "dropped_nonzh_r17": 13,
     "future_clamped": 0
   },
   "news_items_total": 100,
   "degraded_all_sources": false,
-  "errors": []
+  "errors": [
+    "enrichment batch 0 failed: timeout",
+    "enrichment batch 20 failed: timeout"
+  ]
 }

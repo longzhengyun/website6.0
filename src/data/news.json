@@ -1,9 +1,101 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-28T12:16:45.093Z",
+  "generated_at": "2026-10-28T15:59:54.722Z",
   "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "a787641ecf339e73",
+      "url": "https://www.infoq.cn/article/0tgCLAMXFiFo0Dco5P9m?utm_source=rss&utm_medium=article",
+      "title_original": "不再逐个生成 Token：扩散模型迈向 35B，开始挑战 Agent 编程",
+      "title_zh": "不再逐个生成 Token：扩散模型迈向 35B，开始挑战 Agent 编程",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-28T14:53:53.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40721520972"
+      }
+    },
+    {
+      "fingerprint": "ce11056fd3da6fc6",
+      "url": "https://www.infoq.cn/article/II91QKxeaEg7RuZR2rrf?utm_source=rss&utm_medium=article",
+      "title_original": "别再只写提示词了，开始真正雇用智能体：智能体企业管理实践 ｜ 技术实践",
+      "title_zh": "别再只写提示词了，开始真正雇用智能体：智能体企业管理实践 ｜ 技术实践",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-28T14:05:40.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40721520972"
+      }
+    },
+    {
+      "fingerprint": "14e05df156578d21",
+      "url": "https://www.infoq.cn/article/CxWoiprQltg8YXmwmghd?utm_source=rss&utm_medium=article",
+      "title_original": "当 AI 智能体代表用户行动时，企业治理将面临哪些新问题？ ｜ 技术趋势",
+      "title_zh": "当 AI 智能体代表用户行动时，企业治理将面临哪些新问题？ ｜ 技术趋势",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-28T13:39:45.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40721520972"
+      }
+    },
+    {
+      "fingerprint": "e58aac6a4f989d60",
+      "url": "https://www.infoq.cn/article/bXKVgLdpf7HONYHIi6Su?utm_source=rss&utm_medium=article",
+      "title_original": "Instagram 采用原生 AI 架构对用户界面进行了现代化改造，将 token 成本降低了 33%",
+      "title_zh": "Instagram 采用原生 AI 架构对用户界面进行了现代化改造，将 token 成本降低了 33%",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-28T13:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "40721520972"
+      }
+    },
     {
       "fingerprint": "7bd8dfd5902a5a83",
       "url": "https://www.infoq.cn/article/TusFJkx6F151otgzliu2?utm_source=rss&utm_medium=article",
@@ -630,6 +722,167 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "40646366927"
+      }
+    },
+    {
+      "fingerprint": "1cd33358fa8ed608",
+      "url": "https://arxiv.org/abs/2610.36386",
+      "title_original": "LoRA on a Budget: Function-Aware Post-Hoc Compression for Adapter Fleets",
+      "title_zh": "低成本 LoRA：面向适配器集群的函数感知事后压缩",
+      "summary_zh": "论文提出面向 LoRA 适配器集群的函数感知事后压缩方法，以降低低秩适配的存储或计算成本。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40721520972"
+      }
+    },
+    {
+      "fingerprint": "123381003ba50a8e",
+      "url": "https://arxiv.org/abs/2610.36389",
+      "title_original": "MAREval: A Multi-Agent Framework for Evaluating Natural Language Recommendation Explanations",
+      "title_zh": "MAREval：用于评估自然语言推荐解释的多智能体框架",
+      "summary_zh": "论文提出 MAREval，一个用于评估推荐系统中自然语言解释的多智能体框架。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40721520972"
+      }
+    },
+    {
+      "fingerprint": "8046d94113f28424",
+      "url": "https://arxiv.org/abs/2610.36405",
+      "title_original": "kw-bench: Breaking Frontier Harnesses on Real-World Tasks",
+      "title_zh": "kw-bench：在真实任务上突破前沿评测框架",
+      "summary_zh": "论文提出 kw-bench，用于在真实任务中测试前沿模型评测框架的局限。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40721520972"
+      }
+    },
+    {
+      "fingerprint": "1a620ff45a8f4f70",
+      "url": "https://arxiv.org/abs/2610.36415",
+      "title_original": "Verifiable Efficiency Limits of Innate LLM Planning in Sliding Puzzles",
+      "title_zh": "滑动谜题中 LLM 固有规划的可验证效率极限",
+      "summary_zh": "论文研究滑动谜题中大型语言模型固有规划能力的可验证效率限制。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40721520972"
+      }
+    },
+    {
+      "fingerprint": "190913b96a96b905",
+      "url": "https://arxiv.org/abs/2610.36433",
+      "title_original": "LM-DSB: A Lightweight Multi-agent System for Automated Daily Safety Bulletin Generation in Construction",
+      "title_zh": "LM-DSB：用于自动生成建筑施工每日安全简报的轻量多智能体系统",
+      "summary_zh": "论文提出 LM-DSB，一个自动生成建筑施工每日安全简报的轻量多智能体系统。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40721520972"
+      }
+    },
+    {
+      "fingerprint": "667b9e11ff372092",
+      "url": "https://arxiv.org/abs/2610.36435",
+      "title_original": "Your Agent Acts Differently When You're Around: How User Presence Changes Agent Behavior in Negotiation",
+      "title_zh": "你在场时智能体表现不同：用户在场如何改变谈判中的智能体行为",
+      "summary_zh": "论文研究用户在场对 LLM 智能体在谈判中行为的影响。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40721520972"
+      }
+    },
+    {
+      "fingerprint": "ef9f5df1d39918a8",
+      "url": "https://arxiv.org/abs/2610.36444",
+      "title_original": "RouteDRAG: Learning to Route and Control Agentic Execution for Multimodal Document RAG",
+      "title_zh": "RouteDRAG：为多模态文档 RAG 学习路由与控制智能体执行",
+      "summary_zh": "论文提出 RouteDRAG，用于多模态文档检索增强生成中的智能体执行路由与控制。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-28T15:59:54.722Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40721520972"
       }
     },
     {
@@ -2070,260 +2323,6 @@
         "mode": "ai",
         "enriched_by": "qwen3.8-omni-flash",
         "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "deb4dde618eb2a5b",
-      "url": "https://www.oschina.net/news/503241/anthropic-s1-sec",
-      "title_original": "Anthropic 递交招股书：半年营收 163 亿美元，首次实现运营利润",
-      "title_zh": "Anthropic 递交招股书：半年营收 163 亿美元，首次实现运营利润",
-      "summary_zh": "Anthropic 向美国证券交易委员会（SEC）递交了 S-1 招股书，正式启动 IPO。招股书里的数字口径很直接：2023 年营收 4100 万美元，2024 年 3.86 亿，2025 年 45.85 亿，而 2026 年上半年已经…",
-      "tags": [
-        "ai"
-      ],
-      "level": "trending",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T07:41:24.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": "b8eac1ac6e149cce",
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "287ce8e803eb0d12",
-      "url": "https://www.infoq.cn/article/3o7gwgKJt2SbH8AhdpkU?utm_source=rss&utm_medium=article",
-      "title_original": "TypeSafe AI发布Jev：一种只返回类型化概率而非文本的决策模型",
-      "title_zh": "TypeSafe AI发布Jev：一种只返回类型化概率而非文本的决策模型",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T07:22:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "b846845f544b5329",
-      "url": "https://www.oschina.net/news/503240/microsoft-voluntary-exit-offer",
-      "title_original": "微软向约四分之一员工发出“自愿离职要约”，预期接受率低至 3%~5%",
-      "title_zh": "微软向约四分之一员工发出“自愿离职要约”，预期接受率低至 3%~5%",
-      "summary_zh": "微软周一早上宣布，向美国、加拿大、印度和英国的副总级（VP）及以下员工发出\"自愿离职要约\"（voluntary exit offer），涵盖约四分之一的全员。Redmond 的这家巨头全球员工约 22.3 万人，其中约 5.2 万在总部。…",
-      "tags": [
-        "career"
-      ],
-      "level": "trending",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T07:19:41.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": "18cfd0471b6ef202",
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "c52c25733a38e79c",
-      "url": "https://www.oschina.net/news/503239",
-      "title_original": "openKylin走进山东大学 共探开源贡献与实践",
-      "title_zh": "openKylin走进山东大学 共探开源贡献与实践",
-      "summary_zh": "10月23日，开源中国“AI新生派”走进高校活动山东大学软件学院站举行。openKylin 社区作为共建方参与活动，围绕操作系统技术发展、AI 应用探索和开源贡献实践，与高校师生展开交流，帮助同学们了解国产开源操作系统，找到参与社区建设的…",
-      "tags": [
-        "career"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T06:19:36.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T15:20:55.082Z",
-      "duplicate_of": "9cfd1e61584aee89",
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40529995214"
-      }
-    },
-    {
-      "fingerprint": "ae29ae105d8e6743",
-      "url": "https://juejin.cn/post/7700961680713056296",
-      "title_original": "【大模型】EAGLE 与 EAGLE-3：用“特征预测“加速投机解码",
-      "title_zh": "【大模型】EAGLE 与 EAGLE-3：用“特征预测“加速投机解码",
-      "summary_zh": "EAGLE与EAGLE-3通过利用目标模型的隐藏状态进行特征外推，提升投机解码中草稿模型的生成质量与接受率。相比传统轻量模型，其在特征空间中融合多层信息，更贴近目标分布，从而减少需验证的串行步骤。",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "juejin",
-      "source_name": "掘金",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T06:11:22.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "9ce9b5464e625cdb",
-      "url": "https://juejin.cn/post/7700985536521142314",
-      "title_original": "AI Agent 的能力边界怎么测：3 个跨轮次任务的验收方法",
-      "title_zh": "AI Agent 的能力边界怎么测：3 个跨轮次任务的验收方法",
-      "summary_zh": "蚂蚁灵光2.0开启小范围内测，官方把定位从「陪聊 + 写应用」调成了「有长期记忆、能主动推进任务的个人智能体」。同一时间，腾讯 LightVela、阿里千问Go！、字节豆包「Spell」、Meta M",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "juejin",
-      "source_name": "掘金",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T05:56:19.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "5d4f3876d3bd732f",
-      "url": "https://juejin.cn/post/7700962023287128115",
-      "title_original": "又找到一个纯Java的OCR项目，识别的格式还挺多",
-      "title_zh": "又找到一个纯Java的OCR项目，识别的格式还挺多",
-      "summary_zh": "前两天分享一个**RapidOCR**的项目，今天又发现一款OCR项目，Python零依赖，纯Java项目， 不用GPU也能跑，这不就是为我们这种 Java 后端量身定做的吗Java后端调",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "juejin",
-      "source_name": "掘金",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T05:52:40.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "1727b8bdbdeaa5cd",
-      "url": "https://juejin.cn/post/7700912127129452595",
-      "title_original": "OctaFuse Gateway 2.17.0：新增维护模式、请求日志汇总、DashScope 语音路由拆分",
-      "title_zh": "OctaFuse Gateway 2.17.0：新增维护模式、请求日志汇总、DashScope 语音路由拆分",
-      "summary_zh": "OctaFuse Gateway 2.17.0 增加了维护模式。维护期间，新的推理请求会收到 503，健康检查和模型列表仍可用。请求日志可以按供应商、模型、用户等维度汇总，不必再把明细一页页拉完。 D",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "juejin",
-      "source_name": "掘金",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T05:25:16.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "01733b7c59c7d6cf",
-      "url": "https://juejin.cn/post/7700999735197466678",
-      "title_original": "营收涨13倍，却亏807亿？Anthropic这笔账不是这么算的",
-      "title_zh": "营收涨13倍，却亏807亿？Anthropic这笔账不是这么算的",
-      "summary_zh": "Anthropic 2026年S-1招股书：上半年营收162.86亿美元，同比增约1300%；净亏损807.48亿美元，其中约724亿是可转换票据与SAFE公允价值变动的非现金费用，并非实际烧钱。真正",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "juejin",
-      "source_name": "掘金",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T05:20:43.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "bbdd947b27db0e37",
-      "url": "https://www.infoq.cn/article/gXKvW3g4KXhTTiIaJFkl?utm_source=rss&utm_medium=article",
-      "title_original": "Docker Cloud Sandboxes在笔记本和云端之间提供一致的沙箱抽象",
-      "title_zh": "Docker Cloud Sandboxes在笔记本和云端之间提供一致的沙箱抽象",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
-      }
-    },
-    {
-      "fingerprint": "20efbc5dbf11f789",
-      "url": "https://www.oschina.net/news/503238",
-      "title_original": "mica-ppocr 1.2.4 发布：OCR 预处理内存砍半，检测提速 2.6 倍",
-      "title_zh": "mica-ppocr 1.2.4 发布：OCR 预处理内存砍半，检测提速 2.6 倍",
-      "summary_zh": "> 发布日期： 2026-10-25 · 上一版本：v1.2.3（2026-09-12） 这一版把预处理内存砍掉一半、检测提速 2.6 倍，顺手清掉了两类「写了却不生效」「关了却关不掉」的问题：PDF 双通道的配置终于传到了引擎，mica…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-27T04:36:21.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-27T06:15:39.035Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40460016597"
       }
     }
   ]
