@@ -116,10 +116,10 @@
       "type": "rss",
       "url": "https://juejin.cn/rss",
       "lang": "zh",
-      "enabled": true,
+      "enabled": false,
       "category_hint": ["frontend", "ai", "tools"],
       "max_items_per_run": 15,
-      "note": "R17 中文源；CI run 40260964099 实测 ok，verify 已清除"
+      "note": "站主 seq=788 裁定临时禁用（2026-10-28）：2026-10-28 两批（06:51Z/11:15Z）status=ok 但 items_fetched=0，空源率 100% > 观察窗 1/4 阈值，G5 静默掉取门禁单点拦截 Pages 部署；按可逆口径置 enabled=false 放行本批部署，条目完整保留，恢复=改回 enabled:true 一句话提交。根因排查由后端继续（上游疑 403/风控/改版），禁用不影响其余 9 源；zh 活跃源仍 2 个（infoq-cn/oschina-news）"
     },
     {
       "id": "ruanyifeng",
