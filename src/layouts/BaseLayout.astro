@@ -20,9 +20,11 @@ interface Props {
   ogDesc?: string;
   /** 404 等不可索引页 */
   noindex?: boolean;
+  /** R-MHOME-1：M 端严格一屏页（首页专用）——去掉 pb-24 触屏留白，main 标 one-screen 供 global.css 消费 */
+  oneScreen?: boolean;
 }
 
-const { title, desc, bare = false, ogImage, ogTitle, ogDesc, noindex = false } = Astro.props;
+const { title, desc, bare = false, ogImage, ogTitle, ogDesc, noindex = false, oneScreen = false } = Astro.props;
 // [L-2 spec §3.3 换绑替换点·项目 seq=261 口径] 绝对 URL 单一出处 = astro.config 的 site（CI 经 SITE_URL 变量注入）。
 // 不硬编码域名或 '/website6.0/'：换绑时 devops 只改 site+base（一次 config/Variable 变更），
 // OG/twitter 绝对 URL 即全站自动正确。前提不变式：site 含与 base 一致的路径前缀。
@@ -104,7 +106,14 @@ const paletteIndex = [
     }
     <!-- A6 书脊（§5.4：L-5 阅读进度的唯一可见进度件；纯 CSS scroll timeline，降级列见 global.css） -->
     {!bare && <div class="spine" aria-hidden="true"></div>}
-    <main id="main" class:list={[!bare && 'pb-24 md:pb-0 flex-1']}>
+    <main
+      id="main"
+      class:list={[
+        !bare && !oneScreen && 'pb-24 md:pb-0',
+        !bare && oneScreen && 'one-screen',
+        !bare && 'flex-1',
+      ]}
+    >
       <slot />
     </main>
     {!bare && <SiteFooter />}

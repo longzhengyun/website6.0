@@ -485,9 +485,38 @@ html[data-enhanced] .chip-row.enhanced-only {
   .v3-root[data-v3='hero'] {
     display: none;
   }
+  /* R-MHOME-1 D2a：M 端静帧不再独立占条（40vh 高度盒随 strip div 退役）——
+     根盒内联进 hero section（relative），absolute 铺满作背景层，z-index:-1 与 D 端 hero 层同制式 */
   .v3-root[data-v3='strip'] {
     display: block;
+    position: absolute;
+    inset: 0;
+    height: auto;
+    z-index: -1;
   }
+}
+
+/* R-MHOME-1（站主 seq=716，D1a/D2a/D3/D4）：M 端首页=严格一屏。
+   main.one-screen（BaseLayout oneScreen prop，仅首页）+ article.m-home flex 列：
+   hero 的 max-md:flex-1 自然吸收剩余高度、页脚随 sticky 骨架（R-FOOTER-1）落视口底，
+   布局自然收敛为主判据；以下规则全部 M-only，D 档零改动（判据⑤）。 */
+@media (max-width: 767px) {
+  main.one-screen {
+    display: flex;
+    flex-direction: column;
+  }
+  main.one-screen > .m-home {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+  }
+}
+
+/* R-MHOME-1 兜底护栏（判据① scrollW==innerWidth 防横向回归）：
+   clip 不生成滚动容器、不破坏 sticky、也不掩盖纵向超高（scrollH 检查仍会暴露实际问题） */
+html {
+  overflow-x: clip;
 }
 .v3-canvas {
   display: block;

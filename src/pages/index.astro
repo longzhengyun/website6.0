@@ -9,8 +9,8 @@ import { sortedItems } from '../data/news';
 const latest = sortedItems.slice(0, 2);
 
 // N-5 导流行（shared/t2-n3n5-homepage-proposal.md rev1.1 §3）：SSR 静态零 JS。
-// N-3 已合入本批：HAS_V3_CANVAS=true → 第 4 链 $ open canvas?（#v3-canvas=hero 画布层，M 端该层
-// display:none 时锚点为页顶近邻静帧条，行为=到页首，回执披露）+ ↻ regenerate 尾链恢复。
+// N-3 已合入本批：HAS_V3_CANVAS=true → 第 4 链 $ open canvas?（R-MHOME-1 后 #v3-canvas=hero section，
+// D/M 两档锚点均可命中：M 端静帧已并入 hero 背景、hero 本身占屏主体）+ ↻ regenerate 尾链。
 const HAS_V3_CANVAS = true;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const guideItems = [
@@ -27,16 +27,24 @@ const guideItems = [
   ogTitle={`Jary 佳瑞网 — ${site.tagline}`}
   ogDesc="web 前端开发工程师个人技术站点：Astro 静态站、暗色三态、命令面板、RSS+AI 资讯自动管线。"
   ogImage="og/og-home.png"
+  oneScreen
 >
-  <article>
+  <article class="m-home">
     <!-- Hero：站名版式 L1「双语叠印」（design-spec §3）+ 单一视觉焦点=字体呼吸；
-         R15 单屏：移动 hero 在 tab 条上方可视区内垂直居中（100svh 防 iOS 地址栏跳动） -->
+         R15 单屏：移动 hero 在 tab 条上方可视区内垂直居中（100svh 防 iOS 地址栏跳动）；
+         R-MHOME-1(D2a)：M 端静帧并入 hero 背景层（零独立高度），id=v3-canvas 上移到 section
+         使 D/M 两档锚点均可命中（N-5 第 4 链落点）；R-MHOME-1(A)：M 端 flex-1 吸收一屏余量，
+         pb 64→32 收容器留白，字号按 R5 裁定不动 -->
     <section
-      class="shell shell-wide relative pt-[20vh] pb-16 md:pb-16 max-md:min-h-[calc(100svh-300px)] max-md:pt-0 max-md:flex max-md:flex-col max-md:justify-center"
+      id="v3-canvas"
+      class="shell shell-wide relative pt-[20vh] pb-16 md:pb-16 max-md:flex-1 max-md:pb-8 max-md:pt-0 max-md:flex max-md:flex-col max-md:justify-center"
       aria-labelledby="hero-title"
     >
-      <!-- V3 画布 D 端氛围层：hero 全出血（z=0，文本层在其后渲染自然盖于其上）；M 端 CSS 隐藏 -->
+      <!-- V3 画布 D 端氛围层：hero 全出血（z=-1，文本层在其后渲染自然盖于其上）；M 端 CSS 隐藏 -->
       <CanvasLayer variant="hero" />
+      <!-- V3 M 端静帧（R-MHOME-1 D2a 并入 hero 背景）：同 seed 0x5EED、alpha 带 0.04–0.14、
+           叠印语义不变；D 端 CSS 隐藏（原 40vh 独立条位退役，零高度成本） -->
+      <CanvasLayer variant="strip" />
       <h1 id="hero-title" class="t-display">
         <span class="md:hidden zh-title block text-[2.25rem]! leading-[1.2]">佳瑞网</span>
         <span
@@ -77,18 +85,43 @@ const guideItems = [
       </script>
     </section>
 
-    <!-- V3 M 端静帧条（R4 裁定）：hero 下缘 40vh 单帧海报位，D 端 CSS 隐藏；生成即定格零持续动画 -->
-    <div class="shell">
-      <CanvasLayer variant="strip" />
-    </div>
+    <!-- R-MHOME-1(D2a)：M 端静帧已并入上方 hero 背景层，独立 40vh 条位退役 -->
 
-    <!-- N-5 技术亮点导流行：hero 下缘、脉动条上方；D 端单行 flex / M 端两行竖排（grid-2）。
+    <!-- R-MHOME-1(A)：M 端新闻条 1 条制式（标题 truncate/日期/↗ 与 D 端及 /news 一致）；
+         SSR 直出零 JS；D 端由下方既有超紧凑双条 bar 承载，互不重叠 -->
+    {
+      latest.length > 0 && (
+        <section class="shell md:hidden" aria-labelledby="pulse-m-title">
+          <h2 id="pulse-m-title" class="sr-only">最新新闻速览</h2>
+          <div class="border-t border-line pt-3">
+            <a href={latest[0].url} target="_blank" rel="noopener noreferrer" class="block min-w-0">
+              <p class="t-small text-ink arrow-link flex items-baseline gap-2 min-w-0">
+                <span class="row-num t-label shrink-0">01/</span>
+                <span class="truncate">{latest[0].title_zh}</span>
+                <span class="arrow text-[0.7em] shrink-0" aria-hidden="true">↗</span>
+              </p>
+              <p class="t-label text-ink-muted mt-1">{latest[0].published_at.slice(5, 10)}</p>
+            </a>
+            <p class="t-label mt-2">
+              <a
+                class="arrow-link text-ink-muted hover:text-ink transition-colors inline-flex items-center gap-2 min-h-[44px]"
+                href={`${base}/news`}
+              >全部新闻 →</a
+              >
+            </p>
+          </div>
+        </section>
+      )
+    }
+
+    <!-- N-5 技术亮点导流行：hero 下缘、脉动条上方；D 端单行 flex。R-MHOME-1(D3)：M 端整体迁 /about
+         （05 小节），本行 max-md:hidden 仅 D 档保留（D 档零回归）。
          A4 锁定句（产品比对 seq=444-③）：本行=375px 无 JS 场景内容入口承担者，删除/降级须重判 A4（只做加法）。
          制式：$ … mono t-label 终端语言（404/OG 同源）+ arrow-link hover A4 参数；命中区 M 端 ≥44px。
          同页锚点口径（n5-hash-probe2 双向对照）：不加 data-astro-reload——ClientRouter 对同页 hash
          链接拦截后仍原生滚到锚点（真实点击 scrollY/hash 均正确）；曾观测“不滚动”为探针几何伪影
          （400px 视口下点击坐标落在视口外，命中为空）。测试 A7'-5 可达断言按此口径。 -->
-    <section class="shell pb-12 md:pb-4" aria-labelledby="guide-title">
+    <section class="shell pb-12 md:pb-4 max-md:hidden" aria-labelledby="guide-title">
       <h2 id="guide-title" class="sr-only">技术亮点</h2>
       <nav
         aria-label="技术亮点导流"
@@ -171,7 +204,7 @@ const guideItems = [
 
     <!-- L-4：工程状态卡收进独立 shell 版心，随 hero section 的既有间距节奏落底；
          id=vitals 为 N-5 `$ ls heartbeat` 同页锚点（rev1.1 §3） -->
-    <section id="vitals" class="shell mt-8 md:mt-10 scroll-mt-6" aria-label="站点工程状态">
+    <section id="vitals" class="shell mt-8 md:mt-10 scroll-mt-6 max-md:hidden" aria-label="站点工程状态">
       <VitalsCard />
       <!-- N-1 叙事闭环：状态卡（现在）→ 版本时间线（历史）；SSR 零 JS，同导流行制式 -->
       <p class="t-label mt-3">
