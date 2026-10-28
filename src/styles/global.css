@@ -489,17 +489,24 @@ html[data-enhanced] .chip-row.enhanced-only {
     display: block;
   }
 }
-.v3-canvas,
-.v3-svg {
+.v3-canvas {
   display: block;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 0; /* 仅 canvas 承接渐入初值，由 .v3-on 提升（DEF-N3-1：noscript 列不得共享此 0 值） */
 }
 .v3-canvas.v3-on {
   opacity: 1;
 }
-/* 无 JS：noscript 显形（JS 在位时 canvas 覆盖，双保险防闪；noscript 本身已被浏览器跳过解析） */
+/* 无 JS 列静帧常显：scripting 启用时 noscript 内容不进渲染树，本规则无感；
+   禁 JS 时它是唯一渲染列，opacity 必须恒为 1（DEF-N3-1 修复，设计建议 a） */
+.v3-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+/* 双保险：canvas 已渐入提升时隐藏静帧列（防支持 noscript 盒保留的引擎闪现） */
 .v3-canvas.v3-on ~ .v3-svg {
   display: none;
 }
