@@ -68,7 +68,14 @@ function initTheme(): void {
     .matchMedia('(prefers-color-scheme: dark)')
     .addEventListener('change', () => applyMode(getMode()));
 
-  document.addEventListener('astro:page-load', () => refreshThemeLabels());
+  // DEF-THEME-1：ClientRouter 的 html 级 swap 会擦掉 <html> 上的运行时属性
+  // （data-theme/data-theme-mode 不在新页 SSR html 里，morphdom 属性同步即移除），
+  // 预绘 inline 脚本 swap 时不重放——故每次 page-load 从 localStorage 重放 applyMode，
+  // 与 local-reactions 的"文档级委托 + page-load 再水合"同构。
+  document.addEventListener('astro:page-load', () => {
+    applyMode(getMode());
+    refreshThemeLabels();
+  });
 }
 
 initTheme();

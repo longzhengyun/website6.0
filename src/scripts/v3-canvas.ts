@@ -180,8 +180,12 @@ function bindGlobal() {
   });
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => initAll());
 
-  // ClientRouter：每次页面装载（含 SPA 进出首页）从 URL 重解析 seed 再初始化
-  document.addEventListener('astro:page-load', initAll);
+  // ClientRouter：每次页面装载（含 SPA 进出首页）从 URL 重解析 seed 再初始化；
+  // DEF-THEME-1：v3-js 是 html 级 class，swap 后被擦除且本模块不重执行——随 page-load 重放
+  document.addEventListener('astro:page-load', () => {
+    document.documentElement.classList.add('v3-js');
+    initAll();
+  });
 }
 
 bindGlobal();
