@@ -18,6 +18,7 @@ const Ajv = require('ajv/dist/2020');
 
 // Q3（P-3a）数据质量辅助：源级时区错标补偿 / 未来日期钳制护栏 / 落盘断言
 import { applyTzMislabel, clampFutureDate, findDateViolations } from '../pipeline/src/dates/quality.mjs';
+import { fetchWithEmptyRetry } from '../pipeline/src/fetch/retry.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -365,24 +366,32 @@ async function main() {
   const fetchOne = async (source) => {
     const rec = { id: source.id, status: 'ok', items_fetched: 0, items_new: 0, ms: 0, error: null };
     const t0 = Date.now();
-    try {
-      const r = await fetch(source.url, {
-        signal: AbortSignal.timeout(source.fetch_timeout_ms ?? dflt.fetch_timeout_ms),
-        headers: { 'user-agent': dflt.user_agent, accept: 'application/rss+xml, application/atom+xml, application/xml, text/xml' },
-      });
-      if (!r.ok) throw new Error(`http_${r.status}`);
-      const xml = await r.text();
-      // schema 契约 url 必须 ^https://：feed 内 http 直链在解析处统一升级为 https（数据侧归一化，fp 与入库同源一致；schema 零漂移）
-      const items = parseFeed(xml, source)
-        .map((i) => ({ ...i, url: String(i.url || '').replace(/^http:\/\//i, 'https://') }))
-        .filter((i) => /^https?:\/\//.test(i.url || '') && i.title);
-      rec.items_fetched = items.length;
-      return { source, items, rec };
-    } catch (e) {
-      rec.status = 'failed';
-      rec.error = String(e?.message || e).slice(0, 160);
-      return { source, items: [], rec };
-    } finally { rec.ms = Date.now() - t0; }
+    const attemptOnce = async () => {
+      try {
+        const r = await fetch(source.url, {
+          signal: AbortSignal.timeout(source.fetch_timeout_ms ?? dflt.fetch_timeout_ms),
+          headers: { 'user-agent': dflt.user_agent, accept: 'application/rss+xml, application/atom+xml, application/xml, text/xml' },
+        });
+        if (!r.ok) throw new Error(`http_${r.status}`);
+        const xml = await r.text();
+        // schema 契约 url 必须 ^https://：feed 内 http 直链在解析处统一升级为 https（数据侧归一化，fp 与入库同源一致；schema 零漂移）
+        const items = parseFeed(xml, source)
+          .map((i) => ({ ...i, url: String(i.url || '').replace(/^http:\/\//i, 'https://') }))
+          .filter((i) => /^https?:\/\//.test(i.url || '') && i.title);
+        return { ok: true, items, error: null };
+      } catch (e) {
+        return { ok: false, items: [], error: String(e?.message || e).slice(0, 160) };
+      }
+    };
+    // 抓取层微加固（seq=526 选项 2；依据与率值引用见 pipeline/src/fetch/retry.mjs 头注）：
+    // 网络失败或 200 空解析延迟重试 1 次；重试后仍空/仍败 => 维持原语义，G5 fail 口径不动
+    const res = await fetchWithEmptyRetry(attemptOnce, {
+      onRetry: (n, reason, lastError) => log('fetch_retry', `${source.id} attempt=${n} reason=${reason}${lastError ? ' last_error=' + lastError.slice(0, 80) : ''}`),
+    });
+    rec.items_fetched = res.items.length;
+    if (!res.ok) { rec.status = 'failed'; rec.error = res.error; }
+    rec.ms = Date.now() - t0;
+    return { source, items: res.items, rec };
   };
   // 并发≤4
   const results = [];
