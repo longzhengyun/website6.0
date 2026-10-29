@@ -258,13 +258,28 @@ function runGesture(canvas: HTMLCanvasElement, tile: HTMLElement, stopper: { can
 
 const stoppers: { cancel(): void }[] = [];
 
+// F3FIX-01（测试 seq=1055 项⑥）：入场=session 级一次性。claim=本 session 首次申领；
+// 与 index.astro 行内闸同键 'l0-entered'。storage 不可用=退化为允许（保首演，不阻断首帧动画）。
+function sessionEnterClaim(): boolean {
+  try {
+    if (sessionStorage.getItem('l0-entered')) return false;
+    sessionStorage.setItem('l0-entered', '1');
+    return true;
+  } catch {
+    return true;
+  }
+}
+
 function initAll() {
   for (const s of stoppers) s.cancel();
   stoppers.length = 0;
-  // F3-03：SPA 进出首页再水合入场闸（首次加载=index.astro 行内脚本解析期置位；
-  // morphdom swap 后属性随新树丢失，此处重判重挂=每次进首页一次性重演；门禁/reduce=不置位静帧）
+  // F3-03/F3FIX-01：SPA 进出首页再水合入场闸（首次加载=index.astro 行内脚本解析期置位并申领；
+  // morphdom swap 后属性随新树丢失，此处仅当 session 未申领过才重挂=每次回首页不再重演；
+  // 门禁/reduce=不置位静帧）
   const heroSec = document.getElementById('v3-canvas');
-  if (heroSec && !isStaticMode()) heroSec.setAttribute('data-l0-enter', '');
+  if (heroSec && !isStaticMode() && !heroSec.hasAttribute('data-l0-enter') && sessionEnterClaim()) {
+    heroSec.setAttribute('data-l0-enter', '');
+  }
   const rng = mulberry32(hashSeedStr('L0-TILES'));
   document.querySelectorAll<HTMLElement>('[data-tile]').forEach((tile) => {
     if (!tile.isConnected) return;

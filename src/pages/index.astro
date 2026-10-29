@@ -182,7 +182,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <!-- F3-03（测试 seq=1030）：一次性入场闸——解析期同步判定 reduce/低端门禁
            （阈值与 l0-tiles.ts isStaticMode 同口径 hc≤4‖dm≤4）；通过=置 data-l0-enter，
            入场 CSS 只在 M 档 no-preference 生效（global.css F3-03 节）。
-           门禁态/reduce=不置位=静态首帧制式；SPA 回首页由 l0-tiles.ts page-load 再水合 -->
+           门禁态/reduce=不置位=静态首帧制式；F3FIX-01=入场 session 级一次性
+           （ sessionStorage 'l0-entered' 申领；SPA 回首页 l0-tiles.ts 仅未申领才重挂） -->
       <script is:inline>
         (function () {
           try {
@@ -192,7 +193,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
             const hc = navigator.hardwareConcurrency;
             const dm = navigator.deviceMemory;
             if ((typeof hc === 'number' && hc <= 4) || (typeof dm === 'number' && dm <= 4)) return;
-            sec.setAttribute('data-l0-enter', '');
+            let claim = true;
+            try {
+              claim = !sessionStorage.getItem('l0-entered');
+              sessionStorage.setItem('l0-entered', '1');
+            } catch (e) {
+              claim = true; /* storage 不可用=退化为允许，保首演 */
+            }
+            if (claim) sec.setAttribute('data-l0-enter', '');
           } catch (e) {
             /* 门禁判定失败=保守静帧，不伤一屏构成 */
           }
