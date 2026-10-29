@@ -25,6 +25,13 @@
   --color-signal: var(--c-signal);
   --color-teal: var(--c-teal);
   --color-warn: var(--c-warn);
+  --color-demo-1: var(--c-demo-1);
+  --color-demo-2: var(--c-demo-2);
+  --color-demo-3: var(--c-demo-3);
+  --color-demo-4: var(--c-demo-4);
+  --color-demo-5: var(--c-demo-5);
+  --color-demo-6: var(--c-demo-6);
+  --color-tile: var(--c-tile);
 
   --breakpoint-sm: 425px;
   --breakpoint-md: 768px;
@@ -61,14 +68,27 @@
   --c-accent-legacy: #e5484d;
   /* DESIGN.md §R-C6：--c-warn 双模式，亮色 #b45309（fff 5.02:1 / bg 4.81:1） */
   --c-warn: #b45309;
+  /* 演示专用六色（07 册 v2.1 --demo-1..6，色值参考 motion.dev 演示调色板身份，禁复制其用途）：
+     只允许出现在首页演示瓦片/演示墙/图表数据内部；页面底色、大标、正文、导航禁用。
+     黄 #fbd509 不做站点主 accent（佳瑞主色=蓝+信标红，§5 边界清单）。 */
+  --c-demo-1: #fbd509; /* 黄 · spring 演示 */
+  --c-demo-2: #52cd86; /* 绿 · 状态/成功演示 */
+  --c-demo-3: #3e98ff; /* 蓝 · timeline 演示 */
+  --c-demo-4: #a16ce5; /* 紫 · 手势路径演示 */
+  --c-demo-5: #f767c1; /* 粉 · 数据演示 */
+  --c-demo-6: #ff4945; /* 红 · 演示内警示位（非信标红） */
+  /* 哑光演示瓦片底（07 册：玻璃拟态退场；08 册：#141414 与 #080808 明度差承担 60% 形体可辨） */
+  --c-tile: #141414;
   color-scheme: light;
 }
 
 /* SYNC:dark —— 以下两个暗色块必须成对修改（L-1 三态：媒体查询回退 + 显式 data-theme） */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    /* 三期底：#0b0d11 → #0d1117（微提亮容纳玻璃层） */
-    --c-bg: #0d1117;
+    /* 三期底 v2.1（07 册）：#0d1117 → #080808 近黑纸面（编辑式审美地基，与 motion.dev 同档）。
+       面积律 v2.1 总律：页面底色与文字只用黑/白/灰 + 信标红点；--demo-1..6 六色只存在于
+       演示瓦片与图表数据内，禁上页面底色/大标/正文/导航。 */
+    --c-bg: #080808;
     --c-surface: #14171d;
     --c-ink: #e8ecf5;
     --c-ink-muted: #8b98ab;
@@ -93,7 +113,7 @@
 }
 
 :root[data-theme="dark"] {
-  --c-bg: #0d1117;
+  --c-bg: #080808;
   --c-surface: #14171d;
   --c-ink: #e8ecf5;
   --c-ink-muted: #8b98ab;
