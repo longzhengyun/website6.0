@@ -186,11 +186,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <script is:inline>
         (function () {
           try {
-            var sec = document.currentScript && document.currentScript.closest('#v3-canvas');
+            const sec = document.currentScript && document.currentScript.closest('#v3-canvas');
             if (!sec || sec.hasAttribute('data-l0-enter')) return;
             if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-            var hc = navigator.hardwareConcurrency;
-            var dm = navigator.deviceMemory;
+            const hc = navigator.hardwareConcurrency;
+            const dm = navigator.deviceMemory;
             if ((typeof hc === 'number' && hc <= 4) || (typeof dm === 'number' && dm <= 4)) return;
             sec.setAttribute('data-l0-enter', '');
           } catch (e) {
