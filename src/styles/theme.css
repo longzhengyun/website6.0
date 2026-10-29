@@ -91,7 +91,9 @@
     --c-bg: #080808;
     --c-surface: #14171d;
     --c-ink: #e8ecf5;
-    --c-ink-muted: #8b98ab;
+    /* F1-01 裁定（项目 seq=971 选 b）：正文语义位判据锚=二期 dark 实测 7.64:1（≥7 文字档组），
+       换皮批不得静默降档 → 回值 #9ba3af（#080808 上 7.87:1；surface 不动；light 档历史豁免不判缺陷） */
+    --c-ink-muted: #9ba3af;
     /* 装饰档（4.97:1@#0d1117 / 4.71:1@#14171d） */
     --c-ink-faint: #7b8394;
     --c-line: rgba(47, 111, 237, 0.12);
@@ -116,7 +118,8 @@
   --c-bg: #080808;
   --c-surface: #14171d;
   --c-ink: #e8ecf5;
-  --c-ink-muted: #8b98ab;
+  /* F1-01 裁定（seq=971 选 b）：回值 #9ba3af，与上方媒体查询块成对（SYNC:dark） */
+  --c-ink-muted: #9ba3af;
   --c-ink-faint: #7b8394;
   --c-line: rgba(47, 111, 237, 0.12);
   /* S2 制式沿用：暗色 accent-strong 跟随暗色 accent；实心位文字用 --c-accent-ink(#fff, 4.56:1) */
