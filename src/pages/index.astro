@@ -9,7 +9,7 @@ import statsRaw from '../data/news-stats.json';
 import { site } from '../data/site';
 import { taglines } from '../data/taglines';
 import { sortedItems } from '../data/news';
-import { beijingDate, beijingMonthDay } from '../lib/date';
+import { beijingDate } from '../lib/date';
 
 const latest = sortedItems.slice(0, 2);
 
@@ -45,7 +45,7 @@ const caps = [
 ];
 
 // F2-4：N-5 导流行（HAS_V3_CANVAS/guideItems）退役——4 链 + regenerate 全部升格进 L2 终端舱（07 册主舞台）；
-// #vitals 锚点位由 L2 section 承接（史实兼容），M 端 375px 无 JS 内容入口=既有 md:hidden 新闻条（A4 承担者不动）
+// #vitals 锚点位由 L2 section 承接（史实兼容）；F3-02 起 M 端无 JS 内容入口=暗格 SSR 链+tab-bar「资讯」格
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
@@ -202,32 +202,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
     <!-- R-MHOME-1(D2a)：M 端静帧已并入上方 hero 背景层，独立 40vh 条位退役 -->
 
-    <!-- R-MHOME-1(A)：M 端新闻条 1 条制式（标题 truncate/日期/↗ 与 D 端及 /news 一致）；
-         SSR 直出零 JS；D 端由下方既有超紧凑双条 bar 承载，互不重叠 -->
-    {
-      latest.length > 0 && (
-        <section class="shell md:hidden" aria-labelledby="pulse-m-title">
-          <h2 id="pulse-m-title" class="sr-only">最新新闻速览</h2>
-          <div class="border-t border-line pt-3">
-            <a href={latest[0].url} target="_blank" rel="noopener noreferrer" class="block min-w-0">
-              <p class="t-small text-ink arrow-link flex items-baseline gap-2 min-w-0">
-                <span class="row-num t-label shrink-0">01/</span>
-                <span class="truncate">{latest[0].title_zh}</span>
-                <span class="arrow text-[0.7em] shrink-0" aria-hidden="true">↗</span>
-              </p>
-              <p class="t-label text-ink-muted mt-1">{beijingMonthDay(latest[0].published_at)}</p>
-            </a>
-            <p class="t-label mt-2">
-              <a
-                class="arrow-link text-ink-muted hover:text-ink transition-colors inline-flex items-center gap-2 min-h-[44px]"
-                href={`${base}/news`}
-              >全部新闻 →</a
-              >
-            </p>
-          </div>
-        </section>
-      )
-    }
+    <!-- F3-02（测试 seq=1030/项目 seq=1033 裁定）：二期「最新新闻速览」M 专用 section
+         （md:hidden，rect [0,617,375,107]，含外链 42px 命中+border-t）=02 册 M 预算表外
+         无授权构成，移除出屏。/news 无 JS 可达性=暗格 SSR 链 + tab-bar「资讯」格（FF-5
+         中文化落地）双入口承载，A4 职责移交，无入口损失；D 端 L2 终端舱 tail -f feed 不受影响 -->
 
     <!-- F2-4 L1 能力光谱（01 册 L1 × 07 册 v2.1）：编辑式短句节题（带句号，GlyphTitle 转曲字集 v2 扩
          动/的/中/文/直/读/。）+ 每项配微型活演示 + M-15 滚动 scrub 进场（animation-timeline: view()，
