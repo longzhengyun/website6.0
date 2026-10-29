@@ -25,16 +25,20 @@ function systemMode(): 'light' | 'dark' {
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
-export function cycleMode(): void {
-  const cur = getMode();
-  const next = MODES[(MODES.indexOf(cur) + 1) % MODES.length];
-  applyMode(next);
+export function setMode(mode: ThemeMode): void {
+  applyMode(mode);
   try {
-    localStorage.setItem(THEME_STORAGE_KEY, next);
+    localStorage.setItem(THEME_STORAGE_KEY, mode);
   } catch {
     // 存储不可用时仅本次会话生效
   }
   refreshThemeLabels();
+}
+
+export function cycleMode(): void {
+  const cur = getMode();
+  const next = MODES[(MODES.indexOf(cur) + 1) % MODES.length];
+  setMode(next);
 }
 
 export function refreshThemeLabels(): void {
@@ -45,6 +49,10 @@ export function refreshThemeLabels(): void {
   document.querySelectorAll<HTMLElement>('[data-theme-toggle]').forEach((el) => {
     el.setAttribute('aria-label', `切换主题（当前：${LABEL[mode]}，点击切换到下一个）`);
   });
+  // F3-4 弧排三点：当前档 aria-pressed=true（设计裁定 seq=1003 制式）
+  document.querySelectorAll<HTMLElement>('[data-theme-set]').forEach((el) => {
+    el.setAttribute('aria-pressed', String(el.dataset.themeSet === mode));
+  });
 }
 
 function initTheme(): void {
@@ -53,6 +61,14 @@ function initTheme(): void {
 
   // 文档级委托，跨 ClientRouter 页面交换持续有效
   document.addEventListener('click', (ev) => {
+    // F3-4 弧排三点：直接置档（light/dark/auto），优先于循环制式
+    const setBtn = (ev.target as Element | null)?.closest?.<HTMLElement>('[data-theme-set]');
+    const want = setBtn?.dataset.themeSet;
+    if (want === 'light' || want === 'dark' || want === 'auto') {
+      ev.preventDefault();
+      setMode(want);
+      return;
+    }
     const btn = (ev.target as Element | null)?.closest?.<HTMLElement>('[data-theme-toggle]');
     if (btn) {
       ev.preventDefault();
