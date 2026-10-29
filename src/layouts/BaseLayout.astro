@@ -64,6 +64,15 @@ const paletteIndex = [
         el.dataset.themeMode = mode;
       })();
     </script>
+    <script is:inline>
+      // M-10 圆形扩散圆心（04 册）：任意指针按下即记录视口坐标 → --vt-x/--vt-y，
+      // 转场时新页快照从该点 clip-path circle 展开；无 JS=默认 50% 圆心（CSS fallback）
+      addEventListener('pointerdown', function (e) {
+        const s = document.documentElement.style;
+        s.setProperty('--vt-x', e.clientX + 'px');
+        s.setProperty('--vt-y', e.clientY + 'px');
+      }, { passive: true });
+    </script>
     <script>import '../scripts/theme'; import '../scripts/local-reactions';</script>
     <title>{title}</title>
     <meta name="description" content={desc} />

@@ -32,7 +32,9 @@ const desktopNav = nav.filter((n) => n.href !== '/');
             aria-current={isActive(item.href, current) ? 'page' : undefined}
           >
             <span class="text-ink-faint mr-1">{item.num}/</span>
-            {item.label}
+            <!-- M-13 rolling-text（07 册新增，04 册编号续）：双 span 同列叠放，hover 翻滚 180ms spring 自写；
+                 第二枚 aria-hidden=读屏只读一遍；reduce/无动画=不翻滚（.roll 规则整体在 no-preference 闸门内） -->
+            <span class="roll"><i>{item.label}</i><i aria-hidden="true">{item.label}</i></span>
           </a>
         ))
       }

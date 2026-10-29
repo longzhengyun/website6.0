@@ -14,7 +14,7 @@ import { beijingDate, beijingMonthDay } from '../lib/date';
 const latest = sortedItems.slice(0, 2);
 
 // F2-3 D-3 暗格（01 册）：今日（北京时间口径）信号条数，构建期计数，零 JS；
-// 0 → 「静默中」文案；条数翻牌 M-12 随 F2-5 接入
+// 0 → 「静默中」文案；条数翻牌 M-12 已接入（F2-5，.dc-roll）
 const todayBj = beijingDate(new Date().toISOString());
 const signalsToday = sortedItems.filter((it) => beijingDate(it.published_at) === todayBj).length;
 
@@ -159,9 +159,24 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       >
         <canvas aria-hidden="true"></canvas>
       </DemoTile>
-      <!-- F2-3 D-3 暗格：今日（北京时间）信号条数，构建期计数；整格=→ /news 链接；翻牌动效随 F2-5 -->
+      <!-- F2-3 D-3 暗格：今日（北京时间）信号条数，构建期计数；整格=→ /news 链接；
+           F2-5 M-12 翻牌：每位 0-9 竖列 SSR 直落终值（无 JS/reduce 可直读），view() entry 段补进视口一跳；
+           sr-only 承载读屏数值，数字列 aria-hidden -->
       <a class="l0-darkcell" href={`${base}/news`}>
-        <span class="l0-dc-num">{signalsToday > 0 ? String(signalsToday) : '0'}</span>
+        <span class="l0-dc-num">
+          <span class="sr-only">{signalsToday}</span>
+          <span class="dc-roll" aria-hidden="true">
+            {
+              String(signalsToday)
+                .split('')
+                .map((d) => (
+                  <span class="dc-digit" style={`--d:${d}`}>
+                    {'0123456789'.split('').map((n) => <i>{n}</i>)}
+                  </span>
+                ))
+            }
+          </span>
+        </span>
         <span class="l0-dc-label">
           {signalsToday > 0 ? `条信号 · 今日 ${todayBj}` : '静默中 · 今日无新信号'}
         </span>
@@ -289,6 +304,32 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           <span class="mag-ball" aria-hidden="true"></span>
           <span class="cell-cap">magnet · M-14 磁吸</span>
         </div>
+      </div>
+    </section>
+
+    <!-- F2-5 L3 深空入口（01 册 §L3 × 07 册「场层压暗去粒子」）：三枚哑光悬浮球=传统内页入口；
+         场层压暗/去粒子已由 F2-1 安静 mesh 覆盖（alpha≤0.06 零粒子）；V2 环境带位归合拢批；
+         视差 0.6x 与悬浮呼吸均 CSS-only（scroll()/keyframes），降级=静置球体。D 档专属，M 档 F3 另案。 -->
+    <section class="shell shell-wide max-md:hidden l3-sec" aria-labelledby="l3-title">
+      <h2 id="l3-title" class="l3-glyph">
+        <GlyphTitle text="深空入口" />
+      </h2>
+      <div class="l3-orbs">
+        <a class="orb" href={`${base}/about`}>
+          <span class="orb-dot" aria-hidden="true"></span>
+          <span class="orb-zh">关于</span>
+          <span class="orb-en">about</span>
+        </a>
+        <a class="orb" href={`${base}/news`}>
+          <span class="orb-dot" aria-hidden="true"></span>
+          <span class="orb-zh">资讯</span>
+          <span class="orb-en">news</span>
+        </a>
+        <a class="orb" href={`${base}/resume`}>
+          <span class="orb-dot" aria-hidden="true"></span>
+          <span class="orb-zh">档案</span>
+          <span class="orb-en">résumé</span>
+        </a>
       </div>
     </section>
   </article>

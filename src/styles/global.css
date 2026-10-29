@@ -305,11 +305,24 @@ html[data-enhanced] .chip-row.enhanced-only {
   }
 }
 
-/* A3 View Transitions：根交叉淡入 200ms；L3：reduce 下同帧替换（spec §5 A3 降级列） */
-::view-transition-old(root),
+/* M-10 页面转场（04 册圆形扩散，F2-5 复核升级替换 A3 交叉淡入）：
+   旧页快照定格在底，新页自指针坐标 clip-path circle 展开 420ms ease-out；
+   圆心=BaseLayout pointerdown 写 --vt-x/--vt-y（无 JS=屏心）；不支持 VT=reduced=直切（ClientRouter 默认） */
+@keyframes vt-circle-in {
+  from {
+    clip-path: circle(0px at var(--vt-x, 50%) var(--vt-y, 50%));
+  }
+  to {
+    clip-path: circle(150% at var(--vt-x, 50%) var(--vt-y, 50%));
+  }
+}
+::view-transition-old(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
 ::view-transition-new(root) {
-  animation-duration: 200ms;
-  animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  animation: vt-circle-in 420ms cubic-bezier(0.33, 1, 0.68, 1);
+  mix-blend-mode: normal;
 }
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-old(root),
@@ -818,7 +831,7 @@ html {
 }
 
 /* ---- F2-3 D-3 暗格「今日 N 条信号」（01 册：首屏左下常驻暗格；构建期计数，北京时间口径；
-     整格=→ /news 链接；条数翻牌 M-12 随 F2-5）---- */
+     整格=→ /news 链接；条数翻牌 M-12 已接入=本文件 F2-5 块 .dc-roll）---- */
 .l0-darkcell {
   display: none;
 }
@@ -1270,6 +1283,158 @@ html {
       animation: scrub-spin linear both;
       animation-timeline: view();
       animation-range: entry 30% cover 75%;
+    }
+  }
+}
+
+/* ================= F2-5：M-13 翻滚导航 / M-12 暗格翻牌 / L3 深空入口（07 册新增 × 01 册 L3） ================= */
+
+/* ---- M-13 rolling-text nav hover（04 册 M-13，实现自写不引 motion.dev 代码）：
+     inline-grid 同格叠双 span，hover 双枚同步翻滚（上枚 0→-100% 出、下枚 100%→0 入）180ms spring 近似（尾段过冲）；
+     整块 no-preference 闸门（DEF-1 口径）：reduce=不翻滚、双枚重叠同字视觉无差 ---- */
+.roll {
+  display: inline-grid;
+  overflow: hidden;
+}
+.roll > i {
+  grid-area: 1 / 1;
+  font-style: normal;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .roll > i {
+    transition: transform 180ms cubic-bezier(0.22, 1.4, 0.36, 1);
+  }
+  .roll > i:last-child {
+    transform: translateY(100%);
+  }
+  a:hover .roll > i:first-child,
+  a:focus-visible .roll > i:first-child {
+    transform: translateY(-100%);
+  }
+  a:hover .roll > i:last-child,
+  a:focus-visible .roll > i:last-child {
+    transform: translateY(0%);
+  }
+}
+
+/* ---- M-12 暗格条数翻牌（04 册 M-12）：每位数字 0-9 竖列，SSR 终值=base transform（无 JS/reduce 直读）；
+     进视口一跳由 view() entry 段 scrub（≈0.6s 行程），与 M-15 同族最前沿口径（D-1 放行） ---- */
+.dc-roll {
+  display: inline-flex;
+}
+.dc-digit {
+  display: block;
+  height: 1em;
+  overflow: hidden;
+}
+.dc-digit > i {
+  display: block;
+  font-style: normal;
+  line-height: 1em;
+  transform: translateY(calc(var(--d) * -1em));
+}
+@keyframes dc-flip {
+  from {
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .dc-digit > i {
+      animation: dc-flip linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+  }
+}
+
+/* ---- F2-5 L3 深空入口（01 册 §L3 × 07 册「压暗去粒子」）：三枚哑光悬浮球=传统内页入口（about/news/resume）；
+     玻璃球制式随玻璃拟态退场→哑光 radial 实底（07 册 §3）；粒子=无（F2-1 安静 mesh 场已覆盖整页）；
+     V2 环境带位归合拢批（06 册修订素材未进仓）；视差 0.6x=scroll(root) 位移近似（内容 1x 时本层慢速漂移） ---- */
+.l3-sec {
+  margin: 18vh 0 12vh;
+}
+.l3-glyph {
+  width: min(30vw, 430px);
+  transform: rotate(-1.5deg);
+}
+.l3-orbs {
+  display: flex;
+  justify-content: center;
+  gap: clamp(1.5rem, 5vw, 5rem);
+  margin-top: 7vh;
+}
+.orb {
+  width: clamp(130px, 15vw, 200px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  background: radial-gradient(circle at 32% 26%, #1e1e1e 0%, #101010 58%, #0b0b0b 100%);
+  box-shadow: inset 0 0 0 1px rgba(232, 236, 245, 0.05);
+  transition:
+    box-shadow 180ms ease-out,
+    translate 180ms ease-out;
+}
+.orb:hover,
+.orb:focus-visible {
+  box-shadow:
+    inset 0 0 0 1px rgba(232, 236, 245, 0.16),
+    0 0 42px rgba(232, 236, 245, 0.06);
+}
+.orb-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--c-signal);
+}
+.orb-zh {
+  font-size: 1.375rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #e8ecf5; /* 球体=哑光深灰实底跨主题恒定（--c-tile 同族），瓦内墨阶固定，不随 --c-ink 翻转 */
+}
+.orb-en {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9ba3af; /* 瓦内固定墨阶（--c-tile 同族跨主题恒定） */
+}
+@keyframes orb-float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -12px;
+  }
+}
+@keyframes l3-parallax {
+  from {
+    translate: 0 -6vh;
+  }
+  to {
+    translate: 0 10vh;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .orb {
+    animation: orb-float 7s ease-in-out infinite;
+  }
+  .orb:nth-child(2) {
+    animation-delay: -2.4s;
+  }
+  .orb:nth-child(3) {
+    animation-delay: -4.8s;
+  }
+  @supports (animation-timeline: scroll()) {
+    .l3-orbs {
+      animation: l3-parallax linear both;
+      animation-timeline: scroll(root block);
     }
   }
 }
