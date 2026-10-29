@@ -76,9 +76,10 @@ const genTime = `${stats.generated_at.slice(0, 16).replace('T', ' ')}Z`;
 const runUrl = `https://github.com/longzhengyun/website6.0/actions/runs/${stats.run_id}`;
 ---
 
-<details class="vitals-card border border-line bg-surface">
+<details class="vitals-card glass-card border border-line">
   <summary class="t-label text-ink-muted px-4 py-3 cursor-pointer list-none flex items-center gap-3">
-    <span class={health.glyph !== '●' ? 'text-warn' : ''} aria-hidden="true">{health.glyph}</span>
+    <!-- 心跳点=活信号语义位，取三期信标红 --sig-red（05 册 §1；图形件 ≥3:1） -->
+    <span class={health.glyph !== '●' ? 'text-warn' : 'text-signal'} aria-hidden="true">{health.glyph}</span>
     <span>数据心跳 · {stats.mode} · {genTime}</span>
     <span class="text-ink-faint ml-auto">{health.text}</span>
   </summary>

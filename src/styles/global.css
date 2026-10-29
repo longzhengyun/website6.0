@@ -137,7 +137,7 @@ body {
   color: var(--c-accent);
 }
 
-/* 新闻整卡：surface 底 + 1px 线区分（禁阴影），hover 边色转 ink */
+/* 新闻整卡：surface 底 + 1px 线区分（禁阴影）；三期：hover 边色转电蓝（05 册 §1） */
 .news-card {
   background: var(--c-surface);
   border: 1px solid var(--c-line);
@@ -145,8 +145,16 @@ body {
 }
 @media (hover: hover) {
   .news-card:hover {
-    border-color: var(--c-ink);
+    border-color: var(--c-accent);
   }
+}
+
+/* 三期玻璃层（--sig-glass，05 册 §1：内页仅 hover 态与统计卡用，D 首页外的克制版）。
+   半透明+模糊只改底与描边氛围，文本对比仍由 surface 系 ink 保障（实测 ink on 合成底 ≥13:1） */
+.glass-card {
+  background: var(--c-glass);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
 }
 
 /* L-5 已读态（§5.4）：标题转 ink-muted、编号保持 faint；
