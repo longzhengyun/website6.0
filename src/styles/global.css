@@ -1071,11 +1071,12 @@ html[data-enhanced] body.home-onescreen .theme-arc {
   }
 }
 /* M 端顶栏 44 预算：簇 -3° 旋转包围盒 51px 会顶出视口（实测 y=-4 裁命中区），
-   下移 8px 使旋转盒顶≈0（flex 居中 -4 + 8）；底沿压入 hero 透明区 ~8px，
-   不影响零滚动（transform 盒在视口内，实测 scrollH 不变） */
+   下移 8px 使旋转盒顶≈0；seq=1033 项 8=设计 seq=1025 观察项追加：y=0 余量归零，
+   真机刘海/safe-area 有风险 → 再下移 4px（margin-top 12，盒顶 y≈4 留安全余量）。
+   底沿压入 hero 透明区 ~12px，不影响零滚动（transform 盒在视口内，随批探针复测） */
 @media (max-width: 767px) {
   html[data-enhanced] body.home-onescreen .theme-arc {
-    margin-top: 8px;
+    margin-top: 12px;
   }
 }
 /* 首页三点上屏时隐藏二期方框钮（仅 header 内，tab-bar「主题」格循环制式不动） */
