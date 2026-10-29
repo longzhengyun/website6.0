@@ -1,0 +1,33 @@
+---
+/**
+ * F2-4 L2 终端舱六格 odometer（01 册 L2「cat vitals.json → 六格实时工程状态」× 07 册演示墙吸收）：
+ * - 数据=构建期 news-stats.json 快照（与 VitalsCard 同源）；SSR 直出终值=无 JS 完整可读；
+ * - 数字格 data-count → l2-wall.ts 首次进视口 0→终值 count-up（reduce/低端不启动，终值即静态真相）；
+ * - 文字载体=恒定 ink 系（瓦面 #141414 不翻三态，同 F2-3 瓦片口径）；数值单位小字 ink-muted。
+ */
+interface Cell {
+  label: string;
+  value: number | string;
+  suffix?: string;
+}
+interface Props {
+  cells: Cell[];
+  class?: string;
+}
+const { cells, class: cls } = Astro.props;
+const fmt = (v: number | string): string => (typeof v === 'number' ? v.toLocaleString('en-US') : v);
+---
+
+<div class:list={['odo-grid', cls]}>
+  {
+    cells.map((c) => (
+      <div class="odo-cell">
+        <span class="odo-val" data-count={typeof c.value === 'number' ? String(c.value) : undefined}>
+          {fmt(c.value)}
+          {c.suffix && <span class="odo-suffix">{c.suffix}</span>}
+        </span>
+        <span class="odo-label">{c.label}</span>
+      </div>
+    ))
+  }
+</div>

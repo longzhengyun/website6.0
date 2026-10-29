@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import VitalsCard from '../components/VitalsCard.astro';
 import CanvasLayer from '../components/CanvasLayer.astro';
 import SignalField from '../components/SignalField.astro';
 import GlyphTitle from '../components/GlyphTitle.astro';
 import DemoTile from '../components/DemoTile.astro';
+import VitalsOdometer from '../components/VitalsOdometer.astro';
+import statsRaw from '../data/news-stats.json';
 import { site } from '../data/site';
 import { taglines } from '../data/taglines';
 import { sortedItems } from '../data/news';
@@ -17,17 +18,35 @@ const latest = sortedItems.slice(0, 2);
 const todayBj = beijingDate(new Date().toISOString());
 const signalsToday = sortedItems.filter((it) => beijingDate(it.published_at) === todayBj).length;
 
-// N-5 导流行（shared/t2-n3n5-homepage-proposal.md rev1.1 §3）：SSR 静态零 JS。
-// N-3 已合入本批：HAS_V3_CANVAS=true → 第 4 链 $ open canvas?（R-MHOME-1 后 #v3-canvas=hero section，
-// D/M 两档锚点均可命中：M 端静帧已并入 hero 背景、hero 本身占屏主体）+ ↻ regenerate 尾链。
-const HAS_V3_CANVAS = true;
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const guideItems = [
-  { cmd: 'cat DESIGN.md', href: `${base}/about#design` },
-  { cmd: 'ls heartbeat', href: '#vitals' },
-  { cmd: 'tail -f feed', href: `${base}/news` },
-  ...(HAS_V3_CANVAS ? [{ cmd: 'open canvas?', href: '#v3-canvas' }] : []),
+// F2-4 L2 终端舱六格（01 册「cat vitals.json → 六格实时工程状态」）：构建期 news-stats 快照，
+// 与 VitalsCard 同源；SSR 直出终值，count-up 仅为首屏进视口一次性表演（l2-wall.ts）
+const stats = statsRaw as unknown as {
+  news_items_total: number;
+  sources: unknown[];
+  counts: { fetched: number; new_items: number; ai_enriched: number };
+  llm: { calls: number };
+};
+const odoCells = [
+  { label: '收录条目', value: stats.news_items_total },
+  { label: 'RSS 源', value: stats.sources.length },
+  { label: '本批抓取', value: stats.counts.fetched },
+  { label: '本批新增', value: stats.counts.new_items },
+  { label: 'AI 扩写', value: stats.counts.ai_enriched },
+  { label: 'LLM 调用', value: stats.llm.calls },
 ];
+
+// F2-4 L1 技能胶囊（01 册：五枚全胶囊各异旋转 + 两枚内嵌示波器 mini-canvas=技术展示本体）
+const caps = [
+  { name: 'React', rot: -3, scope: true },
+  { name: 'WebGL', rot: 2.5, scope: true },
+  { name: '动效工程', rot: -1.5, scope: false },
+  { name: 'Astro', rot: 4, scope: false },
+  { name: '无障碍工程', rot: -2, scope: false },
+];
+
+// F2-4：N-5 导流行（HAS_V3_CANVAS/guideItems）退役——4 链 + regenerate 全部升格进 L2 终端舱（07 册主舞台）；
+// #vitals 锚点位由 L2 section 承接（史实兼容），M 端 375px 无 JS 内容入口=既有 md:hidden 新闻条（A4 承担者不动）
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BaseLayout
@@ -178,117 +197,113 @@ const guideItems = [
       )
     }
 
-    <!-- N-5 技术亮点导流行：hero 下缘、脉动条上方；D 端单行 flex。R-MHOME-1(D3)：M 端整体迁 /about
-         （05 小节），本行 max-md:hidden 仅 D 档保留（D 档零回归）。
-         A4 锁定句（产品比对 seq=444-③）：本行=375px 无 JS 场景内容入口承担者，删除/降级须重判 A4（只做加法）。
-         制式：$ … mono t-label 终端语言（404/OG 同源）+ arrow-link hover A4 参数；命中区 M 端 ≥44px。
-         同页锚点口径（n5-hash-probe2 双向对照）：不加 data-astro-reload——ClientRouter 对同页 hash
-         链接拦截后仍原生滚到锚点（真实点击 scrollY/hash 均正确）；曾观测“不滚动”为探针几何伪影
-         （400px 视口下点击坐标落在视口外，命中为空）。测试 A7'-5 可达断言按此口径。 -->
-    <section class="shell pb-12 md:pb-4 max-md:hidden" aria-labelledby="guide-title">
-      <h2 id="guide-title" class="sr-only">技术亮点</h2>
-      <nav
-        aria-label="技术亮点导流"
-        class="grid grid-cols-2 items-baseline gap-x-8 border-t border-line pt-4 md:flex md:gap-y-0"
-      >
+    <!-- F2-4 L1 能力光谱（01 册 L1 × 07 册 v2.1）：编辑式短句节题（带句号，GlyphTitle 转曲字集 v2 扩
+         动/的/中/文/直/读/。）+ 每项配微型活演示 + M-15 滚动 scrub 进场（animation-timeline: view()，
+         不支持=静态可见；reduce 总闸 no-preference 闸门）。技能胶囊群五枚全胶囊各异旋转（01 册禁栅格），
+         星座连线 path draw-on 由 scrub 驱动，两枚内嵌示波器 mini-canvas=技术展示本体。
+         D 档专属（max-md:hidden，M 档一屏制式保留至 F3）；旧 N-5 导流行/vitals 卡内容迁 L2 终端舱（07 册升格主舞台）。 -->
+    <section id="spectrum" class="shell shell-wide max-md:hidden l1-sec" aria-labelledby="l1-title">
+      <h2 id="l1-title" class="l1-glyph">
+        <GlyphTitle text="能力光谱" />
+      </h2>
+      <div class="l1-row l1-row-a">
+        <span class="l1-statement"><GlyphTitle text="动的信号。" /></span>
+        <!-- 微型演示①=scrub 本体：方块旋转/进度点随滚动直读（M-15 演示即内容） -->
+        <span class="l1-mini" aria-hidden="true">
+          <span class="scrub-box"></span>
+          <span class="scrub-rail"><span class="scrub-dot"></span></span>
+          <span class="mini-cap">M-15 · view()</span>
+        </span>
+      </div>
+      <div class="l1-caps">
+        <svg class="l1-links" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true">
+          <path pathLength="1" d="M70 160 L260 50 L470 175 L660 60 L900 140" />
+        </svg>
         {
-          guideItems.map((g) => (
-            <a
-              href={g.href}
-              class="arrow-link t-label inline-flex min-h-[44px] items-center gap-2 text-ink-muted transition-colors hover:text-ink md:min-h-0"
-            >
-              <span class="text-ink-faint" aria-hidden="true">
-                $
-              </span>
-              <span>{g.cmd}</span>
-              <span class="arrow text-[0.7em] shrink-0" aria-hidden="true">
-                →
-              </span>
-            </a>
+          caps.map((c) => (
+            <span class="cap" style={`--rot:${c.rot}deg`}>
+              {c.scope && <canvas data-scope aria-hidden="true"></canvas>}
+              <span>{c.name}</span>
+            </span>
           ))
         }
-        {
-          HAS_V3_CANVAS && (
-            // ↻ regenerate：画布交互件（§2.2 换 seed 走 replaceState 不触 ClientRouter navigate）；
-            // 无 JS 时 visibility:hidden（不可聚焦、布局预位防 CLS），v3-canvas 模块首执后显形
-            <button
-              type="button"
-              data-v3-regen
-              class="arrow-link t-label inline-flex min-h-[44px] items-center gap-2 text-ink-muted transition-colors hover:text-ink md:min-h-0"
-            >
-              <span class="text-ink-faint" aria-hidden="true">↻</span>
-              <span>regenerate seed</span>
-            </button>
-          )
-        }
-      </nav>
+      </div>
+      <div class="l1-row l1-row-b">
+        <span class="l1-statement"><GlyphTitle text="中文直读。" /></span>
+        <!-- 微型演示②=scramble 解码：RSS→AI 中文扩写的叙事本体；SSR=终值可读，无 JS 不表演 -->
+        <span class="l1-mini" aria-hidden="true">
+          <span class="scramble" data-scramble="RSS 直连 · 中文直读 · 把噪声滤成结构">RSS 直连 · 中文直读 · 把噪声滤成结构</span>
+          <span class="mini-cap">M-05 · decode</span>
+        </span>
+      </div>
     </section>
 
-    <!-- R15 桌面超紧凑新闻动态条（≤64px、单行两项、仅标题级）；移动端由同步脚本整块移出 DOM（非隐藏） -->
-    {
-      latest.length > 0 && (
-        <section class="shell hidden md:block" data-home-pulse aria-labelledby="pulse-title">
-          <h2 id="pulse-title" class="sr-only">最新新闻速览</h2>
-          <div class="flex items-baseline gap-8 border-t border-line pt-3">
-            {latest.map((item, i) => (
-              <a
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="min-w-0 flex-1 block"
-              >
-                <p class="t-small text-ink arrow-link flex items-baseline gap-2 min-w-0">
-                  <span class="row-num t-label shrink-0">
-                    {String(i + 1).padStart(2, '0')}/
-                  </span>
-                  <span class="truncate">{item.title_zh}</span>
-                  <span class="arrow text-[0.7em] shrink-0" aria-hidden="true">↗</span>
-                </p>
-                <p class="t-label text-ink-muted mt-1">{beijingMonthDay(item.published_at)}</p>
-              </a>
-            ))}
-            <a
-              class="arrow-link shrink-0 t-label text-ink-muted hover:text-ink transition-colors"
-              href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/news`}
-            >
-              全部新闻 →
-            </a>
+    <!-- F2-4 L2 演示墙（01 册「工程信号台」× 07 册 bento 升级）：终端舱吸收 N-5 导流行全部 4 链 +
+         vitals（cat vitals.json 六格 odometer）+ changelog 闭环 + regenerate seed 画布件；
+         12 动效矩阵复用为格内容（stagger/scrub/blur/draw/磁吸演示）；宽/高/旋转卡各≥1（bento 不等大）；
+         瓦缘=08 册案 B：WallField shader 按矩形 SDF 统一驱动（.wf-canvas 覆盖层，l2-wall.ts）；
+         M-14 磁吸 ±12px 全格生效。id=vitals 保留（N-5 锚点史实兼容）。D 档专属，M 档 F3 另案。 -->
+    <section id="vitals" class="shell shell-wide max-md:hidden l2-sec scroll-mt-6" aria-labelledby="l2-title">
+      <h2 id="l2-title" class="l2-glyph">
+        <GlyphTitle text="工程信号台" />
+      </h2>
+      <p class="l2-lede t-h2 text-ink-muted">演示即内容 —— 每格一个活演示、一段代码或一格数据。</p>
+      <div class="wall" data-wall>
+        <canvas class="wf-canvas" data-wf aria-hidden="true"></canvas>
+        <div class="cell cell-term" data-cell data-edge="--c-demo-3">
+          <div class="term" data-term>
+            <p class="t-line"><span class="t-p" aria-hidden="true">$</span> <span class="t-cmd">open /docs</span> <span class="t-out">→ <a class="arrow-link t-link" href={`${base}/about#design`}>DESIGN.md 设计契约</a></span></p>
+            <p class="t-line"><span class="t-p" aria-hidden="true">$</span> <span class="t-cmd">whoami</span> <span class="t-out">→ jary · {site.role}</span></p>
+            <p class="t-line"><span class="t-p" aria-hidden="true">$</span> <span class="t-cmd">cat vitals.json</span> <span class="t-out">→ 六格工程状态 · 构建期快照（北京 {beijingDate(new Date().toISOString())}）</span></p>
+            <VitalsOdometer cells={odoCells} class="term-odo" />
+            <p class="t-line"><span class="t-p" aria-hidden="true">$</span> <span class="t-cmd">tail -f feed</span> <span class="t-out">→ {latest.length > 0 ? latest[0].title_zh : '静默中'} <a class="arrow-link t-link" href={`${base}/news`}>/news 全部 →</a></span></p>
+            <p class="t-line"><span class="t-p" aria-hidden="true">$</span> <span class="t-cmd">cat changelog</span> <span class="t-out">→ <a class="arrow-link t-link" href={`${base}/changelog`}>迭代档案（N-1 闭环）</a></span></p>
+            <p class="t-line"><span class="t-p" aria-hidden="true">$</span> <button type="button" data-v3-regen class="t-cmd t-regen">regenerate seed</button> <span class="t-out">→ 换 ?seed= 重算 L0 信号场</span></p>
           </div>
-        </section>
-      )
-    }
-    <script is:inline>
-      (function () {
-        if (!window.matchMedia('(min-width: 768px)').matches) {
-          const el = document.querySelector('[data-home-pulse]');
-          if (el) el.parentNode.removeChild(el);
-        }
-      })();
-    </script>
-
-    <!-- L-4：工程状态卡收进独立 shell 版心，随 hero section 的既有间距节奏落底；
-         id=vitals 为 N-5 `$ ls heartbeat` 同页锚点（rev1.1 §3） -->
-    <section id="vitals" class="shell mt-8 md:mt-10 scroll-mt-6 max-md:hidden" aria-label="站点工程状态">
-      <VitalsCard />
-      <!-- N-1 叙事闭环：状态卡（现在）→ 版本时间线（历史）；SSR 零 JS，同导流行制式 -->
-      <p class="t-label mt-3">
-        <a
-          href={`${base}/changelog`}
-          class="arrow-link text-ink-muted hover:text-ink focus-visible:text-ink transition-colors inline-flex items-center gap-2 min-h-[44px]"
-        >$ cat changelog（迭代档案）<span class="arrow" aria-hidden="true">→</span></a>
-      </p>
+        </div>
+        <div class="cell cell-code" data-cell data-edge="--c-demo-4">
+          <pre class="code"><code><span class="tk-c">// 弹簧族 · 本站自写半隐式欧拉（04 册）</span>
+<span class="tk-k">const</span> <span class="tk-f">spring</span> = &#123; k: <span class="tk-n">260</span>, d: <span class="tk-n">20</span>, m: <span class="tk-n">1</span> &#125;
+<span class="tk-f">animate</span>(ball, &#123; x: <span class="tk-n">220</span>, transition: spring &#125;)</code></pre>
+          <span class="cell-cap">code · 参数可见化</span>
+        </div>
+        <div class="cell cell-stagger" data-cell data-edge="--c-demo-1">
+          <span class="stg" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="cell-cap">stagger · 交错入场</span>
+        </div>
+        <div class="cell cell-blur" data-cell data-edge="--c-demo-2">
+          <span class="blur-word" aria-hidden="true">信号</span>
+          <span class="cell-cap">blur-in · 模糊聚焦</span>
+        </div>
+        <div class="cell cell-draw" data-cell data-edge="--c-demo-5">
+          <svg class="draw-svg" viewBox="0 0 220 90" aria-hidden="true">
+            <path pathLength="1" d="M8 70 C 60 10, 90 92, 130 44 S 200 18, 212 60" />
+          </svg>
+          <span class="cell-cap">draw-on · 路径描画</span>
+        </div>
+        <div class="cell cell-scrub" data-cell data-edge="--c-demo-3">
+          <span class="scrub-box big" aria-hidden="true"></span>
+          <span class="cell-cap">scrub · 滚动直读</span>
+        </div>
+        <div class="cell cell-magnet" data-cell data-edge="--c-demo-6">
+          <span class="mag-ball" aria-hidden="true"></span>
+          <span class="cell-cap">magnet · M-14 磁吸</span>
+        </div>
+      </div>
     </section>
   </article>
   <!-- N-3/F2-1 客户端：仅首页引用 → 独立小 chunk。load/astro:page-load 后动态 import：
        不进 modulepreload、不与首屏字体/LCP 抢带宽（实测静态 import 时 LCP Δ≈+45ms，改此法 Δ≈0，见回执）；
        模块内部自绑 astro:page-load，SPA 进出首页正常重初始化。
        F2-1：v3-canvas（M 端 strip 静帧+regen 写 URL 职责）与 signal-field（D 端 L0 场）并行装载；
-       F2-3：l0-tiles（瓦片光带呼吸 + spring/手势 canvas，D-only）随批装载 -->
+       F2-3：l0-tiles（瓦片光带呼吸 + spring/手势 canvas，D-only）随批装载；
+       F2-4：l2-wall（案 B WallField shader + M-14 磁吸 + 终端打字 + odometer + scramble + 示波器） -->
   <script>
     const once = () => {
       import('../scripts/v3-canvas');
       import('../scripts/signal-field');
       import('../scripts/l0-tiles');
+      import('../scripts/l2-wall');
     };
     window.addEventListener('load', once, { once: true });
     document.addEventListener('astro:page-load', once, { once: true });
