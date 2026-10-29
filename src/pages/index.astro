@@ -311,12 +311,30 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </section>
 
     <!-- F2-5 L3 深空入口（01 册 §L3 × 07 册「场层压暗去粒子」）：三枚哑光悬浮球=传统内页入口；
-         场层压暗/去粒子已由 F2-1 安静 mesh 覆盖（alpha≤0.06 零粒子）；V2 环境带位归合拢批；
+         场层压暗/去粒子已由 F2-1 安静 mesh 覆盖（alpha≤0.06 零粒子）；
+         V2 环境带=合拢批 H3 进仓（06 册修订稿「静默数据带」素材，webm 64KB+mp4 20KB+poster 1.4KB）；
          视差 0.6x 与悬浮呼吸均 CSS-only（scroll()/keyframes），降级=静置球体。D 档专属，M 档 F3 另案。 -->
     <section class="shell shell-wide max-md:hidden l3-sec" aria-labelledby="l3-title">
       <h2 id="l3-title" class="l3-glyph">
         <GlyphTitle text="深空入口" />
       </h2>
+      <!-- 合拢批 H3：V2 环境带（装饰层 aria-hidden）；src 不进 HTML——signal-field.ts 可见性驱动运行时注入
+           （进屏才载流+播放、离屏暂停省电；reduce/低端=poster webp 静帧；无 JS=静帧 poster 同样成立） -->
+      <figure class="l3-band" aria-hidden="true">
+        <video
+          class="l3-band-v"
+          muted
+          loop
+          playsinline
+          preload="none"
+          tabindex="-1"
+          width="1280"
+          height="720"
+          poster={`${base}/videos/V2-silent-band-poster.webp`}
+          data-webm={`${base}/videos/V2-silent-band.webm`}
+          data-mp4={`${base}/videos/V2-silent-band.mp4`}
+        ></video>
+      </figure>
       <div class="l3-orbs">
         <a class="orb" href={`${base}/about`}>
           <span class="orb-dot" aria-hidden="true"></span>

@@ -1644,7 +1644,8 @@ html[data-theme='light'] body.home-onescreen > header::after {
 
 /* ---- F2-5 L3 深空入口（01 册 §L3 × 07 册「压暗去粒子」）：三枚哑光悬浮球=传统内页入口（about/news/resume）；
      玻璃球制式随玻璃拟态退场→哑光 radial 实底（07 册 §3）；粒子=无（F2-1 安静 mesh 场已覆盖整页）；
-     V2 环境带位归合拢批（06 册修订素材未进仓）；视差 0.6x=scroll(root) 位移近似（内容 1x 时本层慢速漂移） ---- */
+     V2 环境带=合拢批 H3 进仓（06 册替换稿「静默数据带」，长窗制式见 .l3-band）；
+     视差 0.6x=scroll(root) 位移近似（内容 1x 时本层慢速漂移） ---- */
 .l3-sec {
   margin: 18vh 0 12vh;
 }
@@ -1652,6 +1653,26 @@ html[data-theme='light'] body.home-onescreen > header::after {
   width: min(30vw, 430px);
   transform: rotate(-1.5deg);
 }
+
+/* 合拢批 H3：V2 环境带（asset-manifest「64vw 长窗」制式落 L3 位）。
+   降级链：无 JS / reduce / 低端（signal-field.ts 不注 src）=poster webp 静帧；
+   进屏注流播放、离屏 pause（省电）；自动播放被拦=保持 poster。 */
+.l3-band {
+  margin: 4.5vh auto 0;
+  width: min(64vw, 1080px);
+  height: clamp(120px, 15vw, 208px);
+  border-radius: 999px;
+  overflow: hidden;
+  opacity: 0.9;
+  box-shadow: inset 0 0 0 1px rgba(232, 236, 245, 0.05);
+}
+.l3-band-v {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .l3-orbs {
   display: flex;
   justify-content: center;

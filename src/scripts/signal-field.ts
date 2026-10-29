@@ -228,6 +228,44 @@ declare global {
   }
 }
 
+/* 合拢批 H3：L3 V2 环境带——可见性驱动播放（进屏注 src+play，离屏 pause 省电）；
+ * reduce/低端=不注 src=poster webp 静帧制式（与 isStaticMode 同口径阈值）；
+ * webm 优先（canPlayType），H.264 mp4 兜底。resize/主题重跑 initAll 时旧 IO 先 disconnect。 */
+let bandIO: IntersectionObserver | null = null;
+
+function bindL3Band() {
+  bandIO?.disconnect();
+  bandIO = null;
+  const video = document.querySelector<HTMLVideoElement>('.l3-band-v');
+  if (!video || !video.isConnected || !video.dataset.webm) return;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const nav = navigator as Navigator & { deviceMemory?: number };
+  const lowEnd =
+    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 4) ||
+    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 4);
+  if (reduce || lowEnd) return;
+  const src = video.canPlayType('video/webm;codecs=vp9') ? video.dataset.webm : video.dataset.mp4;
+  bandIO = new IntersectionObserver(
+    (entries) => {
+      for (const en of entries) {
+        if (en.isIntersecting) {
+          if (!video.src && src) {
+            video.src = src;
+            video.load();
+          }
+          void video.play().catch(() => {
+            /* 自动播放被拦=静帧 poster，不伤页面 */
+          });
+        } else {
+          video.pause();
+        }
+      }
+    },
+    { rootMargin: '120px' },
+  );
+  bandIO.observe(video);
+}
+
 function initAll() {
   document.querySelectorAll<HTMLElement>('[data-sf]').forEach((el) => {
     if (!el.isConnected) return;
@@ -238,6 +276,7 @@ function initAll() {
       /* 氛围层单实例失败不影响页面其余部分 */
     }
   });
+  bindL3Band();
 }
 
 function bindGlobal() {
