@@ -261,6 +261,10 @@ const stoppers: { cancel(): void }[] = [];
 function initAll() {
   for (const s of stoppers) s.cancel();
   stoppers.length = 0;
+  // F3-03：SPA 进出首页再水合入场闸（首次加载=index.astro 行内脚本解析期置位；
+  // morphdom swap 后属性随新树丢失，此处重判重挂=每次进首页一次性重演；门禁/reduce=不置位静帧）
+  const heroSec = document.getElementById('v3-canvas');
+  if (heroSec && !isStaticMode()) heroSec.setAttribute('data-l0-enter', '');
   const rng = mulberry32(hashSeedStr('L0-TILES'));
   document.querySelectorAll<HTMLElement>('[data-tile]').forEach((tile) => {
     if (!tile.isConnected) return;

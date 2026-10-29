@@ -937,10 +937,12 @@ html {
     display: none;
   }
   .l0-tile-spring {
-    transform: rotate(-5deg);
+    --l0-rot: -5deg; /* F3-03：旋转单源（静态帧=入场终帧），带外口径见设计裁断 seq=1038 */
+    transform: rotate(var(--l0-rot));
   }
   .l0-tile-timeline {
-    transform: rotate(7deg);
+    --l0-rot: 7deg;
+    transform: rotate(var(--l0-rot));
     margin-left: -16px;
     margin-top: 10px;
   }
@@ -999,6 +1001,41 @@ html {
   }
   .tagline-line {
     margin-top: 10px;
+  }
+
+  /* F3-03（测试 seq=1030 判据项 F3-03）：一次性入场 ≥2 —— 大标 draw-on 0.9s（02 册预算行字面）
+     + 双瓦 stagger（320/470ms 延迟）。触发=section[data-l0-enter]（index 行内脚本解析期置位，
+     reduce/低端门禁态=不置位→静态首帧制式；l0-tiles.ts astro:page-load 再水合）。
+     仅 M 档 + no-preference 双闸门；D 档 F2 已过判定面零触碰。
+     瓦片终帧 transform 与静态旋转一致（--l0-rot 单源），动画 fill=both 落位无缝。 */
+  @media (prefers-reduced-motion: no-preference) {
+    #v3-canvas[data-l0-enter] .l0-title {
+      animation: l0-draw-on 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    #v3-canvas[data-l0-enter] .l0-tile-spring {
+      animation: l0-tile-in 520ms cubic-bezier(0.22, 1, 0.36, 1) 320ms both;
+    }
+    #v3-canvas[data-l0-enter] .l0-tile-timeline {
+      animation: l0-tile-in 520ms cubic-bezier(0.22, 1, 0.36, 1) 470ms both;
+    }
+  }
+}
+@keyframes l0-draw-on {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 -4% 0 0);
+  }
+}
+@keyframes l0-tile-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) rotate(var(--l0-rot, 0deg)) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(var(--l0-rot, 0deg));
   }
 }
 

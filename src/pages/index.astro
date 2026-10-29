@@ -179,6 +179,25 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           {signalsToday > 0 ? `条信号 · 今日 ${todayBj}` : '静默中 · 今日无新信号'}
         </span>
       </a>
+      <!-- F3-03（测试 seq=1030）：一次性入场闸——解析期同步判定 reduce/低端门禁
+           （阈值与 l0-tiles.ts isStaticMode 同口径 hc≤4‖dm≤4）；通过=置 data-l0-enter，
+           入场 CSS 只在 M 档 no-preference 生效（global.css F3-03 节）。
+           门禁态/reduce=不置位=静态首帧制式；SPA 回首页由 l0-tiles.ts page-load 再水合 -->
+      <script is:inline>
+        (function () {
+          try {
+            var sec = document.currentScript && document.currentScript.closest('#v3-canvas');
+            if (!sec || sec.hasAttribute('data-l0-enter')) return;
+            if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var hc = navigator.hardwareConcurrency;
+            var dm = navigator.deviceMemory;
+            if ((typeof hc === 'number' && hc <= 4) || (typeof dm === 'number' && dm <= 4)) return;
+            sec.setAttribute('data-l0-enter', '');
+          } catch (e) {
+            /* 门禁判定失败=保守静帧，不伤一屏构成 */
+          }
+        })();
+      </script>
     </section>
 
     <!-- R-MHOME-1(D2a)：M 端静帧已并入上方 hero 背景层，独立 40vh 条位退役 -->
