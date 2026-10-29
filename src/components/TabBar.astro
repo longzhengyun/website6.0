@@ -3,6 +3,9 @@ import { nav, relativePath, isActive } from '../data/site';
 import ThemeToggle from './ThemeToggle.astro';
 
 const current = relativePath(Astro.url.pathname);
+// A（设计 seq=1025 观察项→seq=1033 排修）：tab 字面中文化=05 册定案「首页/资讯/关于+⌘K」；
+// 仅 tab-bar 局部映射，不动共享 nav 数据（桌面 M-13 滚字判定面零触碰）；主题/⌘K 格制式保留
+const tabZh: Record<string, string> = { '/': '首页', '/news': '资讯', '/about': '关于' };
 ---
 
 <!-- F3-01（测试 seq=1030/项目 seq=1033）：五枚等分撑满（li flex-1，无 justify-around 间隙死区），
@@ -23,7 +26,7 @@ const current = relativePath(Astro.url.pathname);
             ]}
             aria-current={isActive(item.href, current) ? 'page' : undefined}
           >
-            <span class="tab-label">{item.label}</span>
+            <span class="tab-label">{tabZh[item.href] ?? item.label}</span>
           </a>
         </li>
       ))
