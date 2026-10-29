@@ -1,6 +1,6 @@
 {
-  "run_id": "40832928414",
-  "generated_at": "2026-10-29T07:03:12.066Z",
+  "run_id": "40887688149",
+  "generated_at": "2026-10-29T14:03:32.219Z",
   "mode": "ai",
   "llm": {
     "key_present": true,
@@ -8,19 +8,19 @@
     "model": "qwen3.8-omni-flash",
     "token_budget": 100000,
     "budget_exceeded": false,
-    "calls": 9,
+    "calls": 7,
     "batches_failed": 0,
     "aborted": false,
-    "input_tokens": 39990,
-    "output_tokens": 30193
+    "input_tokens": 33961,
+    "output_tokens": 28239
   },
   "sources": [
     {
       "id": "hn-frontpage",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 20,
-      "ms": 1874,
+      "items_new": 13,
+      "ms": 477,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 591,
+      "ms": 969,
       "error": null
     },
     {
@@ -36,15 +36,15 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 243,
+      "ms": 530,
       "error": null
     },
     {
       "id": "css-tricks",
       "status": "ok",
       "items_fetched": 15,
-      "items_new": 0,
-      "ms": 613,
+      "items_new": 2,
+      "ms": 1290,
       "error": null
     },
     {
@@ -52,15 +52,15 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 136,
+      "ms": 302,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 3,
-      "ms": 90,
+      "items_new": 1,
+      "ms": 133,
       "error": null
     },
     {
@@ -68,32 +68,32 @@
       "status": "ok",
       "items_fetched": 407,
       "items_new": 10,
-      "ms": 91,
+      "ms": 151,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 10,
-      "ms": 1389,
+      "items_new": 8,
+      "ms": 1376,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 10,
-      "ms": 5925,
+      "items_new": 15,
+      "ms": 2781,
       "error": null
     }
   ],
   "counts": {
     "fetched": 612,
-    "in_window": 53,
+    "in_window": 49,
     "deduped_existing": 65,
-    "new_items": 53,
-    "ai_enriched": 53,
+    "new_items": 49,
+    "ai_enriched": 49,
     "re_enriched": 0,
     "dropped_invalid": 0,
     "dropped_nonzh_r17": 0,

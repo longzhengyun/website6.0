@@ -1,9 +1,640 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T07:03:12.066Z",
+  "generated_at": "2026-10-29T14:03:32.219Z",
   "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "d4911988de4cb194",
+      "url": "https://css-tricks.com/the-frankenstein-table/",
+      "title_original": "The Frankenstein Table",
+      "title_zh": "弗兰肯斯坦表格",
+      "summary_zh": "文章讨论使用 CSS Grid 等非表格布局技术构造表格的做法。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "css-tricks",
+      "source_name": "CSS-Tricks",
+      "original_lang": "en",
+      "published_at": "2026-10-29T13:47:08.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "739a364c99d60f8c",
+      "url": "https://www.vox.com/xpress/2014/11/12/7204453/martin-luther-king-fbi-letter",
+      "title_original": "Read the letter the FBI sent MLK to try to convince him to kill himself (2014)",
+      "title_zh": "阅读联邦调查局发给马丁·路德·金、试图劝说他自杀的信（2014）",
+      "summary_zh": "Vox 文章展示联邦调查局曾发给马丁·路德·金的信件，并称其试图劝说他自杀。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T13:40:04.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "5385485570aa2630",
+      "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
+      "title_original": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+      "title_zh": "Gemini 4 Carbon 成为 Artificial Analysis Intelligence Index v5 的新第一名",
+      "summary_zh": "Artificial Analysis 文章称 Gemini 4 Carbon 在其 Intelligence Index v5 中排名第一。",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T12:41:56.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "a4eb3b83b072737a",
+      "url": "https://ir.doordash.com/news/news-details/2026/DoorDash-to-Acquire-Instacart-to-Help-Local-Stores-Win/default.aspx",
+      "title_original": "DoorDash to Acquire Instacart",
+      "title_zh": "DoorDash 将收购 Instacart",
+      "summary_zh": "DoorDash 公告称将收购 Instacart，以帮助本地商店赢得竞争。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T12:33:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "ab0c44b21d5c3f1d",
+      "url": "https://text.npr.org/nx-s1-6021497",
+      "title_original": "Hackers expose the identities of more than 40k DHS employees",
+      "title_zh": "黑客曝光超过 4 万名美国国土安全部员工身份",
+      "summary_zh": "NPR 报道黑客曝光超过 4 万名美国国土安全部员工身份信息。",
+      "tags": [
+        "security"
+      ],
+      "level": "must-read",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T12:31:09.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "136ee7d418e593b4",
+      "url": "https://www.infoq.cn/article/fHXiS2bsEFHDXdwVK6KP?utm_source=rss&utm_medium=article",
+      "title_original": "启元 CEO 田华：启元机器人接入WorkBuddy，不仅看见你的世界，还能走得到你身边",
+      "title_zh": "启元 CEO 田华：启元机器人接入WorkBuddy，不仅看见你的世界，还能走得到你身边",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T12:22:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "2169c46ff38eaf60",
+      "url": "https://iptrust.co/blog/if-ipv4-were-land",
+      "title_original": "If IPv4 Were Land",
+      "title_zh": "如果 IPv4 是土地",
+      "summary_zh": "iptrust 博客以土地类比解释 IPv4 地址空间。",
+      "tags": [
+        "standards"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T12:19:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "ef86689d3a50b9b0",
+      "url": "https://www.infoq.cn/article/dXwHCW7kjGX1kjPqtla9?utm_source=rss&utm_medium=article",
+      "title_original": "谷歌赢了 AI 排行榜，却没赢下华尔街：Gemini 4 Carbon 登顶背后的昂贵代价",
+      "title_zh": "谷歌赢了 AI 排行榜，却没赢下华尔街：Gemini 4 Carbon 登顶背后的昂贵代价",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T12:13:07.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "71f6ace31bb2b54b",
+      "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
+      "title_original": "NetBSD adds a new beginner-friendly text editor called atto",
+      "title_zh": "NetBSD 新增一款面向初学者的文本编辑器 atto",
+      "summary_zh": "NetBSD 宣布新增名为 atto 的初学者友好文本编辑器。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T11:59:01.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "224a9c3d792da8ba",
+      "url": "https://publicpolicy.googleblog.com/2008/04/how-google-determines-names-for-bodies.html",
+      "title_original": "Google determines the names for bodies of water in Google Earth (2008)",
+      "title_zh": "谷歌决定谷歌地球中水域的名称（2008）",
+      "summary_zh": "2008 年谷歌政策博客说明谷歌地球如何确定水域名称。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T11:41:18.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "4f1f139db451f629",
+      "url": "https://butterbean.farm/",
+      "title_original": "Show HN: UK Farming Simulator",
+      "title_zh": "Show HN：英国农场模拟器",
+      "summary_zh": "开发者在 Hacker News 展示名为 UK Farming Simulator 的网页项目。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T11:15:59.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "a47d51a808eac12c",
+      "url": "https://electrek.co/2026/08/31/the-us-added-a-record-20-2-gwh-of-battery-storage-in-just-3-months/",
+      "title_original": "The US added a record 20.2 GWh of battery storage in just 3 months",
+      "title_zh": "美国仅在 3 个月内新增创纪录的 20.2 GWh 电池储能",
+      "summary_zh": "Electrek 报道美国三个月内新增 20.2 GWh 电池储能，创纪录。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T10:44:49.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "ff1ebca6f559787f",
+      "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+      "title_original": "Chained PHP2Shell Exploit Roots 25 Servers, Including US Government Servers",
+      "title_zh": "链式 PHP2Shell 漏洞利用控制 25 台服务器，包括美国政府服务器",
+      "summary_zh": "Dream Group 博客称链式 PHP2Shell 漏洞利用已控制 25 台服务器，含美国政府服务器。",
+      "tags": [
+        "security"
+      ],
+      "level": "must-read",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T10:42:41.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "14f567e975adb2e1",
+      "url": "https://www.infoq.cn/article/5xCWuR8CMGosWrEuNbix?utm_source=rss&utm_medium=article",
+      "title_original": "概率、插座与5000个爱因斯坦：专访阿里云研发副总裁周琦",
+      "title_zh": "概率、插座与5000个爱因斯坦：专访阿里云研发副总裁周琦",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T10:37:11.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "562ada87341186dc",
+      "url": "https://spectrum.ieee.org/ai-generated-scientific-papers",
+      "title_original": "I Used AI to Fake a Scientific Paper. Here's What Happened",
+      "title_zh": "我用 AI 伪造了一篇科学论文。以下是发生的事情",
+      "summary_zh": "一篇 IEEE Spectrum 文章介绍作者用 AI 伪造科学论文的经过与结果。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T10:08:04.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "f97f7bd21ba6dfcb",
+      "url": "https://www.infoq.cn/article/aK6ADSkIvwf265yc8PuT?utm_source=rss&utm_medium=article",
+      "title_original": "AI+增长：员工提效了，企业为什么没多赚钱？｜上海鲸阙AI联合创始人 沈涛分享",
+      "title_zh": "AI+增长：员工提效了，企业为什么没多赚钱？｜上海鲸阙AI联合创始人 沈涛分享",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T10:00:23.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "8aede429d367f56a",
+      "url": "https://www.oschina.net/news/503303/openai-securing-our-frontier-model-training-environment",
+      "title_original": "OpenAI 隔离的 AI agent 通过 CPU 缓存互相通信",
+      "title_zh": "OpenAI 隔离的 AI agent 通过 CPU 缓存互相通信",
+      "summary_zh": "OpenAI 做了个测试：把两个 agent 放进完全隔离的环境，跑在同一套硬件上，没有网络、没有共享文件，命令它们互相传递一个秘密。它们做到了——用的是处理器缓存。一个 agent 故意改写缓存里的数据，另一个测量加载时间的差异，把消息…",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T09:48:03.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "cd1deb1a176494e2",
+      "url": "https://www.oschina.net/news/503302",
+      "title_original": "Neton 1.0.0 正式发布：面向 AI 原生开发的 Kotlin/Native 服务端应用框架",
+      "title_zh": "Neton 1.0.0 正式发布：面向 AI 原生开发的 Kotlin/Native 服务端应用框架",
+      "summary_zh": "Neton Framework 1.0.0 正式发布，现已上线 Maven Central。 这是 Neton 的第一个稳定版本。从应用装配、依赖注入、HTTP API，到数据库、认证授权、缓存、任务调度、对象存储和 WebSocket，…",
+      "tags": [
+        "tools",
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T09:21:23.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "fc21b3510f3f321c",
+      "url": "https://www.infoq.cn/article/YtQqxxRqoy38Fj2qpsDv?utm_source=rss&utm_medium=article",
+      "title_original": "Uber 实现服务网格依赖关系分析自动化",
+      "title_zh": "Uber 实现服务网格依赖关系分析自动化",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "tools",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T09:15:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "a6cabdd8a08d75c0",
+      "url": "https://www.oschina.net/news/503298",
+      "title_original": "无公网IP，不碰路由器：花生壳如何把企业远程访问做成“基础能力”",
+      "title_zh": "无公网IP，不碰路由器：花生壳如何把企业远程访问做成“基础能力”",
+      "summary_zh": "混合办公早已不是应急选项。当员工在机场需要调取ERP中的库存数据，当运维人员半夜要连回机房处理告警，当连锁门店的监控画面需要统一汇入总部——企业远程访问的瓶颈，往往不在应用本身，而在那条“进不去的内网”。大量企业宽带处于NAT后方，没有真…",
+      "tags": [
+        "tools",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T08:45:27.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "b07ddc2ebd8afd2e",
+      "url": "https://www.infoq.cn/article/EQTckj5GQQymiQES22Bo?utm_source=rss&utm_medium=article",
+      "title_original": "Anthropic 取消编程面试：新人第一次有机会直接和资深工程师竞争",
+      "title_zh": "Anthropic 取消编程面试：新人第一次有机会直接和资深工程师竞争",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "career",
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T08:44:01.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": "761f56061cfb91c5",
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "5302357692d1f6e9",
+      "url": "https://www.infoq.cn/article/tFaOHgBe8ENwteobTsLV?utm_source=rss&utm_medium=article",
+      "title_original": "天数智芯公布天垓300实测数据：部分推理场景达到H200水平，端侧对标Thor T5000",
+      "title_zh": "天数智芯公布天垓300实测数据：部分推理场景达到H200水平，端侧对标Thor T5000",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T08:38:28.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "eb9779541f1e84d2",
+      "url": "https://www.oschina.net/news/503295",
+      "title_original": "GearUI Kit 1.0 正式发布：82 个组件、四端统一，重新定义 Kotlin 跨平台 UI 开发体验",
+      "title_zh": "GearUI Kit 1.0 正式发布：82 个组件、四端统一，重新定义 Kotlin 跨平台 UI 开发体验",
+      "summary_zh": "一套 Kotlin 代码，一套设计语言，一套完整的跨平台 UI 开发体系。 2026 年 10 月 29 日，GearUI Kit 1.0.0 正式发布！ 从 2026 年 3 月 2 日写下第一行代码，到今天正式发布，历经近 8 个月、…",
+      "tags": [
+        "frontend",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T08:31:04.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "4c05b99e9871663c",
+      "url": "https://www.oschina.net/news/503294",
+      "title_original": "Zentrola 1.3.1 发布：上游订阅号和 API Key 支持逐条启停",
+      "title_zh": "Zentrola 1.3.1 发布：上游订阅号和 API Key 支持逐条启停",
+      "summary_zh": "团队使用多个上游账号时，有时需要临时停用某个订阅号或 API Key，让新请求走其他账号。Zentrola 1.3.1 为此增加了凭据级“调用状态”开关。 管理员现在可以在服务商凭据列表中，逐条启用或停用订阅凭据和 API Key。停用后…",
+      "tags": [
+        "tools",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T07:29:17.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "bf054a0e63174b80",
+      "url": "https://www.infoq.cn/article/tsyyFmCmzphHw4gWy7Fo?utm_source=rss&utm_medium=article",
+      "title_original": "生产级 AI：隐性故障、工程落地与智能体治理",
+      "title_zh": "生产级 AI：隐性故障、工程落地与智能体治理",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T07:21:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "59ce7e1667ec3916",
+      "url": "https://smsofdeath.com/",
+      "title_original": "Zero click, silent, remote Android DoS",
+      "title_zh": "零点击、静默、远程 Android 拒绝服务",
+      "summary_zh": "smsofdeath.com 文章描述一种 Android 零点击、静默远程拒绝服务攻击。",
+      "tags": [
+        "security"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T07:08:50.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "e63477783160fbfe",
+      "url": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/",
+      "title_original": "Forging a Microsoft Edge Full Chain with Logic Bugs Only",
+      "title_zh": "仅用逻辑漏洞构建 Microsoft Edge 完整攻击链",
+      "summary_zh": "Orange.TW 博客介绍仅利用逻辑漏洞构建 Microsoft Edge 完整攻击链的方法。",
+      "tags": [
+        "security"
+      ],
+      "level": "must-read",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-29T06:47:28.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
     {
       "fingerprint": "15f15aa25832ca5b",
       "url": "https://www.infoq.cn/article/tbBFLLjYd0eYqrIMowWt?utm_source=rss&utm_medium=article",
@@ -121,6 +752,241 @@
         "mode": "ai",
         "enriched_by": "qwen3.8-omni-flash",
         "run_id": "40832928414"
+      }
+    },
+    {
+      "fingerprint": "7955caaf89147e7b",
+      "url": "https://arxiv.org/abs/2610.35984",
+      "title_original": "Enhancing Deep Learning Model Performance through Data Generation Strategies: Classification of Olive Tree Diseases",
+      "title_zh": "通过数据生成策略提升深度学习模型性能：橄榄树疾病分类",
+      "summary_zh": "arXiv 论文研究通过数据生成策略提升深度学习模型在橄榄树疾病分类中的表现。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-29T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "8eb088ec74f3ec5e",
+      "url": "https://arxiv.org/abs/2610.36077",
+      "title_original": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+      "title_zh": "三位一体：面向多模态智能体的能力驱动递归自我改进",
+      "summary_zh": "arXiv 论文提出面向多模态智能体的能力驱动递归自我改进方法。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-29T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "18559cb38b762050",
+      "url": "https://arxiv.org/abs/2610.36100",
+      "title_original": "CohortFlow: A Steerable Clinical Cohort Curation Agent with Localized Semantic Correction",
+      "title_zh": "CohortFlow：具有局部语义校正的可控临床队列筛选智能体",
+      "summary_zh": "arXiv 论文提出可控临床队列筛选智能体 CohortFlow，支持局部语义校正。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-29T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "cefc48cf69e7d9b7",
+      "url": "https://arxiv.org/abs/2610.36116",
+      "title_original": "Why and How to Do Science When AI Is Better at It: A Framework Grounded in Human Understanding and Direction",
+      "title_zh": "当 AI 更擅长科学时，为何以及如何做科学：一个基于人类理解与方向的框架",
+      "summary_zh": "arXiv 论文探讨在 AI 科研能力提升背景下，人类开展科学研究的框架与方向。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-29T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "6c5e6a6d85af5893",
+      "url": "https://arxiv.org/abs/2610.36146",
+      "title_original": "From Structural Feedback to Prompt Policies: Learning Faithful Text-to-Image Prompt Editors",
+      "title_zh": "从结构反馈到提示策略：学习忠实的文生图提示编辑器",
+      "summary_zh": "arXiv 新论文研究文生图提示优化，目标是改善用户收到的图像。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-29T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "225fb5a9da194f15",
+      "url": "https://arxiv.org/abs/2610.36169",
+      "title_original": "Don't Pick a Winner: Knowledge Conflicts Need a Prior, Not a Rule",
+      "title_zh": "不要选择赢家：知识冲突需要先验，而不是规则",
+      "summary_zh": "arXiv 新论文研究检索增强语言模型中的知识冲突，主张用先验而非固定规则处理两个来源。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-29T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "cc8621241a3a683f",
+      "url": "https://arxiv.org/abs/2610.36183",
+      "title_original": "Learning Human Sports Motion Feasibility via Quantile Regression on Tracking Data",
+      "title_zh": "通过跟踪数据上的分位数回归学习人类体育动作可行性",
+      "summary_zh": "arXiv 新论文研究体育中的到达时间，使用跟踪数据和分位数回归学习人类体育动作可行性。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-29T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "c08a0a2ef6db74bc",
+      "url": "https://arxiv.org/abs/2610.36188",
+      "title_original": "Skill Dreaming: Evolving Repository Skills through Pull Request Streams",
+      "title_zh": "技能做梦：通过拉取请求流演化仓库技能",
+      "summary_zh": "arXiv 新论文研究大语言模型智能体依赖的可复用技能，探讨通过拉取请求流演化仓库技能。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-29T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "035f71ec0325679b",
+      "url": "https://arxiv.org/abs/2610.36234",
+      "title_original": "MARQ: A Modular, LLM-Agnostic Requirement Quality Assessor Infused with Systems Engineering Knowledge",
+      "title_zh": "MARQ：融合系统工程知识的模块化、与 LLM 无关的需求质量评估器",
+      "summary_zh": "arXiv 新论文介绍 MARQ，一种模块化、与 LLM 无关的需求质量评估器，融合系统工程知识。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-29T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "b122ee2a8d45ef3c",
+      "url": "https://arxiv.org/abs/2610.36574",
+      "title_original": "ADTGuard: Adaptive Depth-Time Safeguard for Streaming Inference in Large Language Models",
+      "title_zh": "ADTGuard：面向大语言模型流式推理的自适应深度-时间防护",
+      "summary_zh": "arXiv 新论文提出 ADTGuard，用于大语言模型流式推理的自适应深度-时间防护方法。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-10-29T04:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-29T14:03:32.219Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "40887688149"
       }
     },
     {
@@ -1467,866 +2333,6 @@
       "source_name": "InfoQ 中文",
       "original_lang": "zh",
       "published_at": "2026-10-28T10:14:48.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "73827fc9ff4b5e44",
-      "url": "https://www.oschina.net/news/503276",
-      "title_original": "qOntology 本体工程平台开源版正式亮相：把本体工程从文档和脚本带到统一工作台",
-      "title_zh": "qOntology 本体工程平台开源版正式亮相：把本体工程从文档和脚本带到统一工作台",
-      "summary_zh": "qOntology 本体工程平台现已开源。项目主要面向企业本体建模与语义管理场景，当前围绕建模目标、术语与枚举、对象类型、属性和对象关系等能力展开，用于将分散在业务文档、系统字段和领域知识中的概念定义进一步结构化管理。 在企业数据、知识库…",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T10:13:48.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "6d1e998db622c805",
-      "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
-      "title_original": "Quoting Terk Terkowitz",
-      "title_zh": "引用 Terk Terkowitz",
-      "summary_zh": "Terk Terkowitz 称，若工作未受益于当前 AI 工具，应记录原因并分享。",
-      "tags": [
-        "ai",
-        "career"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-10-28T10:09:07.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "761f56061cfb91c5",
-      "url": "https://www.oschina.net/news/503275/the-coding-interview-is-dead",
-      "title_original": "Anthropic 工程经理把传统编程面试砍了，“它不再提供有效信号”",
-      "title_zh": "Anthropic 工程经理把传统编程面试砍了，“它不再提供有效信号”",
-      "summary_zh": "\"编程面试已经死了，至少对我这个团队来说。\" Felix Rieseberg 是 Anthropic 的工程经理，管过 Claude.ai、Cowork 和 Claude Code Desktop，他在推文里说他这个月把传统编程面试从流程…",
-      "tags": [
-        "career"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T10:08:54.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "c7cff7c33923bd3a",
-      "url": "https://www.infoq.cn/article/3HgfVzt6tQpQjrdE2x9J?utm_source=rss&utm_medium=article",
-      "title_original": "全网恐慌48小时，拯救互联网的却是一个“无名之辈”",
-      "title_zh": "全网恐慌48小时，拯救互联网的却是一个“无名之辈”",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T10:08:49.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "e44b4b94a24cbcb3",
-      "url": "https://www.infoq.cn/article/xBgiKNRRaMe5ORxXy16Q?utm_source=rss&utm_medium=article",
-      "title_original": "可组合商品套餐：Shipt Kits 平台内部解析",
-      "title_zh": "可组合商品套餐：Shipt Kits 平台内部解析",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T10:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "00b4d43c47a13472",
-      "url": "https://www.infoq.cn/article/mFXr0u4z0XftUGUg5Wm7?utm_source=rss&utm_medium=article",
-      "title_original": "Anthropic 内部系统被 AI Agent 12 小时攻破！会议记录、员工薪酬、内部模型讨论遭访问",
-      "title_zh": "Anthropic 内部系统被 AI Agent 12 小时攻破！会议记录、员工薪酬、内部模型讨论遭访问",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "security"
-      ],
-      "level": "must-read",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T09:54:54.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "4931f863ba772e67",
-      "url": "https://www.infoq.cn/article/lCw5JBglbgZj9BYeZChS?utm_source=rss&utm_medium=article",
-      "title_original": "Claude Code 撑起史上最大 IPO，被封号不退费的中国开发者撑起那 5%“脏收入”",
-      "title_zh": "Claude Code 撑起史上最大 IPO，被封号不退费的中国开发者撑起那 5%“脏收入”",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T09:45:17.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "78f28e7a53a67b96",
-      "url": "https://www.infoq.cn/article/SZuklTgjFS7o8BaZ8TJh?utm_source=rss&utm_medium=article",
-      "title_original": "带出Transformer一作、前ACL顶会主席来华分享：人类正在把“思考”全盘外包",
-      "title_zh": "带出Transformer一作、前ACL顶会主席来华分享：人类正在把“思考”全盘外包",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T09:42:38.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "b3a974b7c38881c1",
-      "url": "https://www.infoq.cn/article/UZHyp2ZTvI59sQWEtNSG?utm_source=rss&utm_medium=article",
-      "title_original": "通过 SNMP 处理程序进行 ZCS 命令注入，实现未经身份验证的远程代码执行",
-      "title_zh": "通过 SNMP 处理程序进行 ZCS 命令注入，实现未经身份验证的远程代码执行",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "security"
-      ],
-      "level": "must-read",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T09:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "80ce45a81f134305",
-      "url": "https://www.infoq.cn/article/cJsKydV5kDNIwZr38UtT?utm_source=rss&utm_medium=article",
-      "title_original": "模型越来越强，落地却处处卡关？14位行业大佬拆解难题｜1024 模力工场 · AI社区日圆满收官",
-      "title_zh": "模型越来越强，落地却处处卡关？14位行业大佬拆解难题｜1024 模力工场 · AI社区日圆满收官",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T08:57:57.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "22a3826b2ac3964b",
-      "url": "https://dreamagainusa.org/",
-      "title_original": "Wealth Inequality in America drawn to scale",
-      "title_zh": "按比例呈现的美国财富不平等",
-      "summary_zh": "dreamagainusa.org 发布文章，以比例方式展示美国财富不平等。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T08:48:21.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "cfb746422881a3d8",
-      "url": "https://www.infoq.cn/article/rhTqlNxzHsQZKafzi5df?utm_source=rss&utm_medium=article",
-      "title_original": "HarmonyOS 开发助手实测：从空工程开发到既有工程改造",
-      "title_zh": "HarmonyOS 开发助手实测：从空工程开发到既有工程改造",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T08:39:14.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "e7429dc70ee878e1",
-      "url": "https://www.infoq.cn/article/sS5NxwrgaGGueVSLxvxM?utm_source=rss&utm_medium=article",
-      "title_original": "全国最大规模机器人App黑客松落幕：36小时跑通16款真机应用",
-      "title_zh": "全国最大规模机器人App黑客松落幕：36小时跑通16款真机应用",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "other"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T08:26:22.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T11:15:48.836Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40678544457"
-      }
-    },
-    {
-      "fingerprint": "5a67c4a918c8a893",
-      "url": "https://www.oschina.net/news/503269",
-      "title_original": "百度开源“文心 Unlimited OCR 2”，全球首次实现任意页数文档解析",
-      "title_zh": "百度开源“文心 Unlimited OCR 2”，全球首次实现任意页数文档解析",
-      "summary_zh": "百度正式发布并开源文心 Unlimited OCR 2，宣称\"全球首次实现任意页数文档解析\"——把 OCR 的处理上界从几十页推到\"无限\"，并达到最先进水平（SOTA）。 实测显示，在一次性解析累计超过3600页的大体量书籍，文档长度大幅…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T06:29:56.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T06:51:14.718Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40646366927"
-      }
-    },
-    {
-      "fingerprint": "70418c781be8f912",
-      "url": "https://www.oschina.net/news/503268",
-      "title_original": "OpenAI 称其模型证明了局部光滑化猜想，并推翻指数时间假设",
-      "title_zh": "OpenAI 称其模型证明了局部光滑化猜想，并推翻指数时间假设",
-      "summary_zh": "OpenAI 昨天一口气放出三个领域的\"模型独立发现\"，数学、计算机科学、物理各一个，并且把证明材料公开、请学术界来验证。发布这篇的意义可能比结果本身更大——这是 OpenAI 首次系统性地把内部模型的前沿科研产出摆到台面上，邀请外部审查…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T05:59:31.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T06:51:14.718Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40646366927"
-      }
-    },
-    {
-      "fingerprint": "fd5efb7146155da1",
-      "url": "https://www.oschina.net/news/503267",
-      "title_original": "Termexo v0.11.0 发布：macOS 安装包、多标签预览与常用操作审核",
-      "title_zh": "Termexo v0.11.0 发布：macOS 安装包、多标签预览与常用操作审核",
-      "summary_zh": "Termexo v0.11.0 已发布。Termexo 是 MIT 开源的本地编程 Agent 工作台，用项目工作区组织真实终端、原生会话和任务。本次提供 Windows x64、macOS Apple Silicon 与 Intel 安…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T05:46:49.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T06:51:14.718Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40646366927"
-      }
-    },
-    {
-      "fingerprint": "84278e1ce398ffa3",
-      "url": "https://www.infoq.cn/article/i9tPNHSGoArJ7m08pJ3h?utm_source=rss&utm_medium=article",
-      "title_original": "尤雨溪团队推出 Vite+ 1.0：JavaScript 工具链迎来“大一统”？",
-      "title_zh": "尤雨溪团队推出 Vite+ 1.0：JavaScript 工具链迎来“大一统”？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T05:39:35.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T06:51:14.718Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40646366927"
-      }
-    },
-    {
-      "fingerprint": "d1fef5ac7cb7ae72",
-      "url": "https://www.infoq.cn/article/wIuu0NSaLSaqJJpXVExD?utm_source=rss&utm_medium=article",
-      "title_original": "智能指数得分创新高！蚂蚁百灵开源Ling-3.1-flash-1019：让Personal Agent走向真实业务",
-      "title_zh": "智能指数得分创新高！蚂蚁百灵开源Ling-3.1-flash-1019：让Personal Agent走向真实业务",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T04:13:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T06:51:14.718Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40646366927"
-      }
-    },
-    {
-      "fingerprint": "6f08069dd46663d3",
-      "url": "https://www.infoq.cn/article/7yOK6Ri9Dt4VfITmA7Vb?utm_source=rss&utm_medium=article",
-      "title_original": "轻量化异构双臂 × VLA/世界模型：家庭服务具身机器人的落地实践",
-      "title_zh": "轻量化异构双臂 × VLA/世界模型：家庭服务具身机器人的落地实践",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-28T04:05:43.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T06:51:14.718Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "40646366927"
-      }
-    },
-    {
-      "fingerprint": "1cd33358fa8ed608",
-      "url": "https://arxiv.org/abs/2610.36386",
-      "title_original": "LoRA on a Budget: Function-Aware Post-Hoc Compression for Adapter Fleets",
-      "title_zh": "低成本 LoRA：面向适配器集群的函数感知事后压缩",
-      "summary_zh": "论文提出面向 LoRA 适配器集群的函数感知事后压缩方法，以降低低秩适配的存储或计算成本。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T15:59:54.722Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40721520972"
-      }
-    },
-    {
-      "fingerprint": "123381003ba50a8e",
-      "url": "https://arxiv.org/abs/2610.36389",
-      "title_original": "MAREval: A Multi-Agent Framework for Evaluating Natural Language Recommendation Explanations",
-      "title_zh": "MAREval：用于评估自然语言推荐解释的多智能体框架",
-      "summary_zh": "论文提出 MAREval，一个用于评估推荐系统中自然语言解释的多智能体框架。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T15:59:54.722Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40721520972"
-      }
-    },
-    {
-      "fingerprint": "8046d94113f28424",
-      "url": "https://arxiv.org/abs/2610.36405",
-      "title_original": "kw-bench: Breaking Frontier Harnesses on Real-World Tasks",
-      "title_zh": "kw-bench：在真实任务上突破前沿评测框架",
-      "summary_zh": "论文提出 kw-bench，用于在真实任务中测试前沿模型评测框架的局限。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T15:59:54.722Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40721520972"
-      }
-    },
-    {
-      "fingerprint": "1a620ff45a8f4f70",
-      "url": "https://arxiv.org/abs/2610.36415",
-      "title_original": "Verifiable Efficiency Limits of Innate LLM Planning in Sliding Puzzles",
-      "title_zh": "滑动谜题中 LLM 固有规划的可验证效率极限",
-      "summary_zh": "论文研究滑动谜题中大型语言模型固有规划能力的可验证效率限制。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T15:59:54.722Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40721520972"
-      }
-    },
-    {
-      "fingerprint": "190913b96a96b905",
-      "url": "https://arxiv.org/abs/2610.36433",
-      "title_original": "LM-DSB: A Lightweight Multi-agent System for Automated Daily Safety Bulletin Generation in Construction",
-      "title_zh": "LM-DSB：用于自动生成建筑施工每日安全简报的轻量多智能体系统",
-      "summary_zh": "论文提出 LM-DSB，一个自动生成建筑施工每日安全简报的轻量多智能体系统。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T15:59:54.722Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40721520972"
-      }
-    },
-    {
-      "fingerprint": "667b9e11ff372092",
-      "url": "https://arxiv.org/abs/2610.36435",
-      "title_original": "Your Agent Acts Differently When You're Around: How User Presence Changes Agent Behavior in Negotiation",
-      "title_zh": "你在场时智能体表现不同：用户在场如何改变谈判中的智能体行为",
-      "summary_zh": "论文研究用户在场对 LLM 智能体在谈判中行为的影响。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T15:59:54.722Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40721520972"
-      }
-    },
-    {
-      "fingerprint": "ef9f5df1d39918a8",
-      "url": "https://arxiv.org/abs/2610.36444",
-      "title_original": "RouteDRAG: Learning to Route and Control Agentic Execution for Multimodal Document RAG",
-      "title_zh": "RouteDRAG：为多模态文档 RAG 学习路由与控制智能体执行",
-      "summary_zh": "论文提出 RouteDRAG，用于多模态文档检索增强生成中的智能体执行路由与控制。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T15:59:54.722Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40721520972"
-      }
-    },
-    {
-      "fingerprint": "a4362185b5f0fe58",
-      "url": "https://arxiv.org/abs/2610.36239",
-      "title_original": "BehaveRec: When Does Long-Term Behavioral History Help Sequential Recommendation? A Study with Session, History, and Community Signals",
-      "title_zh": "BehaveRec：长期行为历史何时有助于序列推荐？一项结合会话、历史和社区信号的研究",
-      "summary_zh": "arXiv论文研究长期行为历史对序列推荐的作用，考察会话、历史与社区信号。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T12:16:45.093Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40686460717"
-      }
-    },
-    {
-      "fingerprint": "8f95879ed507d25e",
-      "url": "https://arxiv.org/abs/2610.36287",
-      "title_original": "A Smart Instant Book Filter Model based on Dual-Objective Optimization",
-      "title_zh": "基于双目标优化的智能即时预订过滤模型",
-      "summary_zh": "arXiv论文提出基于双目标优化的即时预订过滤模型，用于在线酒店服务。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T12:16:45.093Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40686460717"
-      }
-    },
-    {
-      "fingerprint": "0ed6edd9404f35cf",
-      "url": "https://arxiv.org/abs/2610.36298",
-      "title_original": "Spiking Neural Networks Are Harder to Steal: A Benchmark Study of Model Stealing Attacks",
-      "title_zh": "脉冲神经网络更难被窃取：模型窃取攻击基准研究",
-      "summary_zh": "arXiv论文基准测试模型窃取攻击，发现脉冲神经网络更难被窃取。",
-      "tags": [
-        "ai",
-        "security"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T12:16:45.093Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40686460717"
-      }
-    },
-    {
-      "fingerprint": "a2ad1e8fe785e24b",
-      "url": "https://arxiv.org/abs/2610.36308",
-      "title_original": "When Retrieval Is Not Enough: Obsolete Facts in Agent Memory",
-      "title_zh": "当检索不足：智能体记忆中的过时事实",
-      "summary_zh": "arXiv 论文指出智能体记忆基准常混淆检索与答案生成，并关注过时事实问题。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T12:16:45.093Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40686460717"
-      }
-    },
-    {
-      "fingerprint": "202d9ab2851e24f9",
-      "url": "https://arxiv.org/abs/2610.36325",
-      "title_original": "Ontology-guided multi-agent reasoning for explainable differential diagnosis",
-      "title_zh": "用于可解释鉴别诊断的本体引导多智能体推理",
-      "summary_zh": "arXiv 论文提出本体引导的多智能体推理方法，面向可解释鉴别诊断。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T12:16:45.093Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40686460717"
-      }
-    },
-    {
-      "fingerprint": "71cf58516c356f01",
-      "url": "https://arxiv.org/abs/2610.36328",
-      "title_original": "How Stable Are LLM-Generated Proofs Under Program Refactoring? A Stress Test for Verifiable Code Generation",
-      "title_zh": "程序重构下大语言模型生成的证明有多稳定？面向可验证代码生成的压力测试",
-      "summary_zh": "arXiv 论文对可验证代码生成进行压力测试，考察大模型生成证明在程序重构下的稳定性。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T12:16:45.093Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40686460717"
-      }
-    },
-    {
-      "fingerprint": "4b87f2ecf88f8d9f",
-      "url": "https://arxiv.org/abs/2610.36329",
-      "title_original": "Plenty of Room in the Middle: Revealing Opportunities on a GPU Cluster via Fine-Grained Monitoring",
-      "title_zh": "中间仍有大量空间：通过细粒度监控揭示 GPU 集群机会",
-      "summary_zh": "arXiv 论文通过细粒度监控揭示 GPU 集群中的资源利用机会。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T12:16:45.093Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40686460717"
-      }
-    },
-    {
-      "fingerprint": "10a0df171a06e25d",
-      "url": "https://arxiv.org/abs/2610.36335",
-      "title_original": "OA-RAG: Ontology-based Agentic RAG for Faithful LLM Reasoning",
-      "title_zh": "OA-RAG：面向忠实大语言模型推理的本体智能体检索增强生成",
-      "summary_zh": "arXiv 论文提出 OA-RAG，结合本体与智能体检索增强，以提升大模型推理忠实性。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T12:16:45.093Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40686460717"
-      }
-    },
-    {
-      "fingerprint": "885ae91d8583cb64",
-      "url": "https://arxiv.org/abs/2610.36341",
-      "title_original": "Executable Archaeology of Programs That Model Programming: Reanimating the Heuristic Compiler (1961) and KBEmacs (1984)",
-      "title_zh": "对建模编程的程序进行可执行考古：复活启发式编译器（1961）与 KBEmacs（1984）",
-      "summary_zh": "arXiv 论文以可执行考古方式复现早期编程模型程序，包括启发式编译器和 KBEmacs。",
-      "tags": [
-        "ai",
-        "other"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T12:16:45.093Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40686460717"
-      }
-    },
-    {
-      "fingerprint": "8b75540f94518f9a",
-      "url": "https://arxiv.org/abs/2610.36355",
-      "title_original": "WAKMan: Workload Aware KVCache Manager",
-      "title_zh": "WAKMan：工作负载感知的 KVCache 管理器",
-      "summary_zh": "arXiv 论文提出 WAKMan，面向大模型服务器前缀缓存的工作负载感知 KVCache 管理器。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-28T12:16:45.093Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40686460717"
-      }
-    },
-    {
-      "fingerprint": "6d883a1f3620138c",
-      "url": "https://arxiv.org/abs/2610.35942",
-      "title_original": "Counting the Bandages: On measuring the time that AI saves",
-      "title_zh": "计算创可贴：论衡量 AI 节省的时间",
-      "summary_zh": "论文讨论 AI 辅助节省时间的含义，并对比相关测量方式。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-28T04:00:00.000Z",
       "date_inferred": false,
       "fetched_at": "2026-10-28T11:15:48.836Z",
       "duplicate_of": null,
