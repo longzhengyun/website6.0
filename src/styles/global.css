@@ -1003,7 +1003,10 @@ html {
      section pb 8→4、tagline mt 12→10：667 档余量再分配给顶呼吸 */
   #v3-canvas {
     justify-content: safe flex-end;
-    padding-bottom: 4px;
+    /* F3-02 连带：速览区（107px）移除后 flex-end 锚定使大标中心落 49.9%（780）越出
+       02 册 24–42% 重心带 → 底部改留 88px 场呼吸（下呼吸给拇指空带，上呼吸仍为主体）：
+       复测大标中心 39.2%(780)/28.9%(667) 回带，双轴零滚动不破（667 余量 171≥88） */
+    padding-bottom: 88px;
   }
   .tagline-line {
     margin-top: 10px;
