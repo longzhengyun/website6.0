@@ -3,6 +3,7 @@
  * 消费管线同批产物 src/data/news-stats.json，零 JS（原生 details/summary）。
  * 口径：rss_only / 源降级 均据实陈述，不假装精确；warn 语义色不占 accent 预算（DESIGN.md R-C6）。 */
 import { news } from '../data/news';
+import { beijingDateTime } from '../lib/date';
 
 interface StatsSource {
   id: string;
@@ -72,7 +73,8 @@ const llmNote = !stats.llm.key_present
   : `${stats.llm.provider ?? '未知'} · ${stats.llm.model ?? '未知'} · ${stats.llm.calls} 批调用${
       stats.llm.batches_failed > 0 ? `（${stats.llm.batches_failed} 批失败）` : ''
     }${stats.llm.budget_exceeded ? ' · token 预算超限' : ''}${stats.llm.aborted ? ' · 中途放弃' : ''}`;
-const genTime = `${stats.generated_at.slice(0, 16).replace('T', ' ')}Z`;
+// D-4 重定义（seq=841）：UTC 入库不动，显示层转北京时间（F1-3）
+const genTime = `${beijingDateTime(stats.generated_at)} 北京`;
 const runUrl = `https://github.com/longzhengyun/website6.0/actions/runs/${stats.run_id}`;
 ---
 

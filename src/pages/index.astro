@@ -5,6 +5,7 @@ import CanvasLayer from '../components/CanvasLayer.astro';
 import { site } from '../data/site';
 import { taglines } from '../data/taglines';
 import { sortedItems } from '../data/news';
+import { beijingMonthDay } from '../lib/date';
 
 const latest = sortedItems.slice(0, 2);
 
@@ -100,7 +101,7 @@ const guideItems = [
                 <span class="truncate">{latest[0].title_zh}</span>
                 <span class="arrow text-[0.7em] shrink-0" aria-hidden="true">↗</span>
               </p>
-              <p class="t-label text-ink-muted mt-1">{latest[0].published_at.slice(5, 10)}</p>
+              <p class="t-label text-ink-muted mt-1">{beijingMonthDay(latest[0].published_at)}</p>
             </a>
             <p class="t-label mt-2">
               <a
@@ -180,7 +181,7 @@ const guideItems = [
                   <span class="truncate">{item.title_zh}</span>
                   <span class="arrow text-[0.7em] shrink-0" aria-hidden="true">↗</span>
                 </p>
-                <p class="t-label text-ink-muted mt-1">{item.published_at.slice(5, 10)}</p>
+                <p class="t-label text-ink-muted mt-1">{beijingMonthDay(item.published_at)}</p>
               </a>
             ))}
             <a

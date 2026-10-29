@@ -158,8 +158,10 @@ body {
 }
 
 /* L-5 已读态（§5.4）：标题转 ink-muted、编号保持 faint；
-   禁删除线/透明度<1（对比度地板 4.5）；非颜色线索由 sr-only「（已读）」补足（脚本注入） */
-.news-card.is-read .t-h2 {
+   禁删除线/透明度<1（对比度地板 4.5）；非颜色线索由 sr-only「（已读）」补足（脚本注入）。
+   F1-3：/news 标题类位 t-h2→.n-title（scoped 类会带 data-astro-cid 属性，选择器补 [class*=n-title] 兼容） */
+.news-card.is-read .t-h2,
+.news-card.is-read [class*='n-title'] {
   color: var(--c-ink-muted);
 }
 .news-card.is-read .row-num {

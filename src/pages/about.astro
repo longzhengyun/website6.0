@@ -155,17 +155,24 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </section>
 
     <!-- R-MHOME-1(D3)：首页导流行 4 链 + 状态卡 #vitals 迁入本小节（S 端首页一屏减法的大承接位）。
-         字面=产品确认单 shared/product-rmhome1-copy-confirm.md ①：标题「05/ 技术亮点与工程状态」、
-         引言、id="vitals" 与 aria-label 原字面全部不动，仅 href 落点归实现。
-         ↻ regenerate 按钮不在本页出现——v3-canvas 模块只随首页执行，/about 上它是死控件（改指/换 seed
-         均无落点），按产品「撞到字面-几何冲突回一句话」口径随回执报备，不静默改词。 -->
+         三期 F1-4（05 册 §3）：小节扩容为「工程信号台（移动版）」——L1 能力光谱胶囊 + L2 信号台
+         vitals 六格 + $ 终端演示静态版，传统栅格呈现（胶囊/blob 出格构图只属于首页）；
+         id=tech-status/#vitals 与 4 条命令锚点制式原样保留（首页导流行落点不变）。 -->
     <section id="tech-status" aria-labelledby="tech-status-title" class="mb-12 md:mb-16 scroll-mt-6">
       <h2 id="tech-status-title" class="t-h2 zh-title mb-3">
-        <span class="row-num t-label mr-3">05/</span>技术亮点与工程状态
+        <span class="row-num t-label mr-3">05/</span>工程信号台（移动版）
       </h2>
       <p class="t-body text-ink-muted mb-6 max-w-[42em]">
-        四条命令看懂这个站怎么运转；下方是它的实时工程状态。
+        能力光谱、四条命令与本站实时工程状态——首页信号场核心叙事的内页承接位，传统栅格呈现。
       </p>
+      <p class="t-label text-ink-faint uppercase mb-2">capability spectrum / 能力光谱</p>
+      <ul class="flex flex-wrap gap-2 mb-6" aria-label="能力光谱">
+        {
+          ['React', 'WebGL', '动效工程', 'Astro', '无障碍工程'].map((c) => (
+            <li class="chip t-label inline-flex items-center px-3">{c}</li>
+          ))
+        }
+      </ul>
       <nav
         aria-label="技术亮点导流"
         class="grid grid-cols-2 items-baseline gap-x-8 border-t border-line pt-4"
@@ -192,6 +199,16 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           ))
         }
       </nav>
+      <!-- 05 册 §3 L3：$ 终端演示静态版——首页信号场终端语言的內页静态承接（零 JS）。
+           静态示意不谎报实时数据：输出行只演命令语法，活化留待 F2 信号场联动。 -->
+      <div class="mt-6">
+        <p class="t-label text-ink-faint uppercase mb-2">terminal demo / 终端演示</p>
+        <pre class="ask-slot block px-4 py-3 text-[13px] leading-[1.6]" role="img" aria-label="终端演示静态示意：open 命令、whoami、查看工程状态三个命令行">
+<span class="text-ink-faint" aria-hidden="true">$</span> open /about  <span class="text-ink-faint">↗ 佳瑞网 · 信号场</span>
+<span class="text-ink-faint" aria-hidden="true">$</span> whoami  <span class="text-ink-faint">→ jary · frontend engineer</span>
+<span class="text-ink-faint" aria-hidden="true">$</span> cat vitals.json  <span class="text-ink-faint">→ 见下方数据心跳 ▾</span></pre>
+        <p class="t-label text-ink-faint mt-2">静态示意版 · 实时信号见下方心跳卡与首页信号场</p>
+      </div>
       <!-- 状态卡容器：id/aria-label 与首页原字面一致（迁入后仍为页内锚点，$ ls heartbeat 同页语义成立）；
            第 4 链落点 #v3-canvas 在首页 hero section（D/M 两档均在文档流可达，产品注意项②满足,不隐藏） -->
       <section id="vitals" class="mt-6 scroll-mt-6" aria-label="站点工程状态">
