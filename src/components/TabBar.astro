@@ -5,11 +5,14 @@ import ThemeToggle from './ThemeToggle.astro';
 const current = relativePath(Astro.url.pathname);
 ---
 
+<!-- F3-01（测试 seq=1030/项目 seq=1033）：五枚等分撑满（li flex-1，无 justify-around 间隙死区），
+     每枚 ≥ 视口宽/5（375→75px）×56 高，elementFromPoint 全行落 a/button；BUG-M4-03 收缩制式
+     （.tab-bar .tab-item flex:1 1 0+省略号）保持不变 -->
 <nav aria-label="移动端导航" class="tab-bar md:hidden no-print">
-  <ul class="h-14 flex items-stretch justify-around">
+  <ul class="h-14 flex items-stretch">
     {
       nav.map((item) => (
-        <li class="flex min-w-0">
+        <li class="flex min-w-0 flex-1">
           <a
             href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${item.href}`}
             class:list={[
@@ -25,10 +28,10 @@ const current = relativePath(Astro.url.pathname);
         </li>
       ))
     }
-    <li class="flex min-w-0">
+    <li class="flex min-w-0 flex-1">
       <ThemeToggle variant="tab" />
     </li>
-    <li class="flex min-w-0">
+    <li class="flex min-w-0 flex-1">
       <button
         type="button"
         data-palette-open
