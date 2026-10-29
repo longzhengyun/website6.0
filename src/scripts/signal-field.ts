@@ -2,10 +2,11 @@
  * F2-1 安静 mesh 场客户端（04 册 M-01 v2.1 改稿；配套 src/components/SignalField.astro）。
  * 硬边界：
  * - 峰值合成 alpha ≤0.06（07 册「亮度压到不可察觉」）；去粒子；流速减半（原 0.8px/f → 0.4px/f 制式）；
- * - 信标 3→1：唯一红点 #f4544f（token --c-signal 实读），01 册首位 (18vw,64vh)，2.4s 呼吸+脉冲环；
+ * - 散点（F3-0 设计走查 seq=993 修正）：原「信标 3→1」红点与 03 册大标挂件构成 L0 双红点违例，
+ *   本位降为白/灰静态散点（--c-ink-muted 实读，01 册散点语义，无呼吸/脉冲环），L0 唯一红点=大标挂件；
  * - seed：?seed= 覆盖（与 v3 同源 [/^[\w.-]{1,64}$/] 白名单），mulberry32(hashSeedStr(seed)) 派生三带相位/抖幅 → uniform，
  *   同 seed 同场可复现；regenerate 按钮（[data-v3-regen]）换 seed 后随 URL 重初始化；
- * - 颜色零新 hex：--c-accent（带色起点）/--c-teal（带色终点）/--c-signal（信标）getComputedStyle 实读，三态主题翻转重绘；
+ * - 颜色零新 hex：--c-accent（带色起点）/--c-teal（带色终点）/--c-ink-muted（散点）getComputedStyle 实读，三态主题翻转重绘；
  * - reduce / 低端（hardwareConcurrency≤4 ‖ deviceMemory≤4）/ M 端 = 单帧静图；D 档 rAF 常驻，页签隐藏停帧省电。
  * 与 v3-canvas 同策略：仅首页引用 → 独立小 chunk，load/astro:page-load 后动态 import，不抢首屏带宽。
  */
@@ -13,8 +14,7 @@ import { hashSeedStr, mulberry32 } from '../lib/v3-art.mjs';
 
 const MQ_DESK = '(min-width: 768px)';
 const ALPHA_CEIL = 0.06; // 三带合成总顶（07 册）
-const BEACON = { x: 0.18, yTop: 0.64 }; // 01 册首信标位（18vw, 64vh）
-const BEACON_PERIOD = 2.4; // s（M-01 参数沿用）
+const BEACON = { x: 0.18, yTop: 0.64 }; // 01 册散点位（18vw, 64vh；原信标位，F3-0 起为灰散点）
 
 const VERT = `#version 300 es
 void main(){
@@ -29,7 +29,7 @@ uniform float uTime;
 uniform vec2 uBand[3];   // x=相位偏移 y=抖幅系数（seed 派生）
 uniform vec3 uBlue;
 uniform vec3 uTeal;
-uniform vec3 uSignal;
+uniform vec3 uScatter;  // 白/灰散点（--c-ink-muted 实读，非信标红）
 uniform vec2 uBeacon;    // uv（y 向上）
 out vec4 o;
 
@@ -76,16 +76,13 @@ void main(){
   }
   if (aBand > ${ALPHA_CEIL.toFixed(2)}){ col *= ${ALPHA_CEIL.toFixed(2)} / aBand; aBand = ${ALPHA_CEIL.toFixed(2)}; }
 
-  // 信标（3→1）：核心点呼吸 + 2.4s 脉冲环（图形件，不受 0.06 顶压制；#f4544f 实读）
+  // 散点（F3-0 seq=993 修正）：静态白/灰小点，无呼吸无脉冲环，不占 07 册「L0 唯一红点」额度；
+  // 01 册散点语义=非信号源的构图呼吸件。亮度受 0.06 顶同族约束（≤0.10 观感级）。
   vec2 dxy = (uv - uBeacon) * vec2(uRes.x / uRes.y, 1.0);
   float bd = length(dxy);
-  float breathe = 0.55 + 0.45 * sin(6.2831853 * uTime / ${BEACON_PERIOD.toFixed(1)});
-  float core = (1.0 - smoothstep(0.0032, 0.0055, bd)) * breathe;
-  float rp = fract(uTime / ${BEACON_PERIOD.toFixed(1)});
-  float ring = (1.0 - smoothstep(0.0, 0.0032, abs(bd - rp * 0.05))) * (1.0 - rp) * 0.30;
+  float aB = (1.0 - smoothstep(0.0030, 0.0052, bd)) * 0.10;
 
-  float aB = clamp(core + ring, 0.0, 1.0);
-  col += uSignal * aB;               // 预乘累加（canvas premultipliedAlpha 默认 true）
+  col += uScatter * aB;              // 预乘累加（canvas premultipliedAlpha 默认 true）
   float a = clamp(aBand + aB, 0.0, 1.0);
   o = vec4(col, a);
 }`;
@@ -114,7 +111,7 @@ function readTokens() {
   return {
     blue: hexToRgb(cs.getPropertyValue('--c-accent') || '#2f6fed'),
     teal: hexToRgb(cs.getPropertyValue('--c-teal') || '#37d0c0'),
-    signal: hexToRgb(cs.getPropertyValue('--c-signal') || '#f4544f'),
+    scatter: hexToRgb(cs.getPropertyValue('--c-ink-muted') || '#9ba3af'),
   };
 }
 
@@ -173,7 +170,7 @@ function initOne(root: HTMLElement) {
     band: u('uBand[0]'),
     blue: u('uBlue'),
     teal: u('uTeal'),
-    signal: u('uSignal'),
+    scatter: u('uScatter'),
     beacon: u('uBeacon'),
   };
 
@@ -187,7 +184,7 @@ function initOne(root: HTMLElement) {
   gl.uniform2fv(loc.band, new Float32Array(band));
   gl.uniform3fv(loc.blue, tokens.blue);
   gl.uniform3fv(loc.teal, tokens.teal);
-  gl.uniform3fv(loc.signal, tokens.signal);
+  gl.uniform3fv(loc.scatter, tokens.scatter);
   gl.uniform2f(loc.beacon, BEACON.x, 1 - BEACON.yTop);
 
   const draw = (t: number) => {
@@ -206,7 +203,7 @@ function initOne(root: HTMLElement) {
   canvas.classList.add('sf-on');
 
   if (!desktop || reduce || lowEnd) {
-    draw(0); // 单帧静图（reduce/低端/M 共用；M 实际已在上方 rect<2 返回）
+    draw(0); // 单帧静图（reduce/低端/M 共用；F3 起 M 端渲染=一屏场主体层）
     return;
   }
 
