@@ -1,0 +1,31 @@
+---
+/**
+ * F2-3 L0 哑光演示瓦片（01 册胶囊位 × 07 册 demo-as-content 改稿 × 08 册光影拼框案 A）：
+ * - 本体：哑光 #141414（--c-tile）、radius 46px、旋转 -3°~+6°、可叠压 8–20%（摆位由宿主 class 决定）；
+ * - 边缘=08 册案 A 四条独立渐隐光带（.tile-edge 独立图层，V4 合规口径 §6），
+ *   --edge 取该瓦片演示主色；呼吸 7s/相位 mulberry32(瓦片 id) 派生、hover 0.55 断口保留，
+ *   由 src/scripts/l0-tiles.ts WAAPI 驱动（reduced-motion 静止 0.18）；
+ * - 参数可见化（07 册「演示即内容」编辑表达）：角落 mono 标注演示参数；
+ * - 瓦片内彩色元素仅做图形件（≥3:1），文字载体一律 ink 系（H4）。
+ */
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'div'> {
+  tileId: 'spring' | 'timeline' | 'gesture';
+  edge: string; // CSS 颜色（demo token）
+  caption: string;
+  param: string;
+}
+const { tileId, edge, caption, param, class: cls, ...rest } = Astro.props;
+---
+
+<div data-tile={tileId} class:list={['tile', cls]} style={`--edge:${edge}`} {...rest}>
+  <div class="tile-edge" aria-hidden="true"></div>
+  <div class="tile-head">
+    <span class="tile-caption">{caption}</span>
+    <span class="tile-param">{param}</span>
+  </div>
+  <div class="tile-body">
+    <slot />
+  </div>
+</div>

@@ -4,12 +4,18 @@ import VitalsCard from '../components/VitalsCard.astro';
 import CanvasLayer from '../components/CanvasLayer.astro';
 import SignalField from '../components/SignalField.astro';
 import GlyphTitle from '../components/GlyphTitle.astro';
+import DemoTile from '../components/DemoTile.astro';
 import { site } from '../data/site';
 import { taglines } from '../data/taglines';
 import { sortedItems } from '../data/news';
-import { beijingMonthDay } from '../lib/date';
+import { beijingDate, beijingMonthDay } from '../lib/date';
 
 const latest = sortedItems.slice(0, 2);
+
+// F2-3 D-3 暗格（01 册）：今日（北京时间口径）信号条数，构建期计数，零 JS；
+// 0 → 「静默中」文案；条数翻牌 M-12 随 F2-5 接入
+const todayBj = beijingDate(new Date().toISOString());
+const signalsToday = sortedItems.filter((it) => beijingDate(it.published_at) === todayBj).length;
 
 // N-5 导流行（shared/t2-n3n5-homepage-proposal.md rev1.1 §3）：SSR 静态零 JS。
 // N-3 已合入本批：HAS_V3_CANVAS=true → 第 4 链 $ open canvas?（R-MHOME-1 后 #v3-canvas=hero section，
@@ -40,7 +46,7 @@ const guideItems = [
          pb 64→32 收容器留白，字号按 R5 裁定不动 -->
     <section
       id="v3-canvas"
-      class="shell shell-wide relative pt-[20vh] pb-16 md:pb-16 max-md:flex-1 max-md:pb-8 max-md:pt-0 max-md:flex max-md:flex-col max-md:justify-center"
+      class="shell shell-wide relative pt-[20vh] pb-16 md:pb-16 md:min-h-[100svh] max-md:flex-1 max-md:pb-8 max-md:pt-0 max-md:flex max-md:flex-col max-md:justify-center"
       aria-labelledby="hero-title"
     >
       <!-- F2-1 D 端 L0 安静 mesh 场（01 册 L0 × 07 册 §4-01：同 shader 链路降亮 ≤0.06、去粒子、
@@ -59,8 +65,9 @@ const guideItems = [
         </span>
         <!-- F2-2 D 端大标图片化（03 册主案 × 07 册排版律）：实色白 900 SVG 转曲「佳瑞网」+ 信标红点挂件，
              -3° 斜置（01 册 L0）；JARY 保留为 mono 签名层（03 册中文优先）；
-             删除原「Jary·佳瑞网」文本大标与 text-accent 圆点（霓虹/高亮位让位）。L0 绝对摆位由 F2-3 整stage 接管 -->
-        <span class="hidden md:inline">
+             删除原「Jary·佳瑞网」文本大标与 text-accent 圆点（霓虹/高亮位让位）。
+             F2-3：D 端挂 L0 绝对舞台（12vw/30vh，CSS .l0-title）；M 端流内制式不动 -->
+        <span class="hidden md:inline l0-title">
           <span class="hero-title-d block">
             <GlyphTitle text="佳瑞网" beacon />
           </span>
@@ -95,6 +102,51 @@ const guideItems = [
           if (window.__tagline) el.textContent = window.__tagline;
         })();
       </script>
+
+      <!-- F2-3 L0 演示瓦片×3（01 册胶囊位 × 07 册「演示即内容」参数可见化 × 08 册案 A 光影拼框）：
+           ①弹簧=自写半隐式欧拉 k260/d20/m1（04 册弹簧族）②时间轴=纯 CSS 4.2s linear 扫掠
+           ③手势=pointer 60pt 渐隐路径 + 空闲 Lissajous 自走；canvas/装饰均 aria-hidden，
+           语义由 caption+param 文字承载（H4：瓦内文字恒定 ink 系，彩色仅图形件 ≥3:1）。
+           动画全部受 l0-tiles.ts reduce/低端单帧闸与全局 reduced-motion 总闸约束；M 端整层不渲染（F3 另案） -->
+      <DemoTile
+        tileId="spring"
+        edge="var(--c-demo-1)"
+        caption="弹簧回弹"
+        param="k260 · d20 · m1"
+        class="l0-tile-spring"
+      >
+        <canvas aria-hidden="true"></canvas>
+      </DemoTile>
+      <DemoTile
+        tileId="timeline"
+        edge="var(--c-demo-3)"
+        caption="时间轴轨道"
+        param="4.2s · linear"
+        class="l0-tile-timeline"
+      >
+        <div class="tl-wrap" aria-hidden="true">
+          <span class="tl-line" style="top: 24%"></span>
+          <span class="tl-line" style="top: 50%"></span>
+          <span class="tl-line" style="top: 76%"></span>
+          <span class="tl-head"></span>
+        </div>
+      </DemoTile>
+      <DemoTile
+        tileId="gesture"
+        edge="var(--c-demo-4)"
+        caption="手势路径"
+        param="trail 60pt"
+        class="l0-tile-gesture"
+      >
+        <canvas aria-hidden="true"></canvas>
+      </DemoTile>
+      <!-- F2-3 D-3 暗格：今日（北京时间）信号条数，构建期计数；整格=→ /news 链接；翻牌动效随 F2-5 -->
+      <a class="l0-darkcell" href={`${base}/news`}>
+        <span class="l0-dc-num">{signalsToday > 0 ? String(signalsToday) : '0'}</span>
+        <span class="l0-dc-label">
+          {signalsToday > 0 ? `条信号 · 今日 ${todayBj}` : '静默中 · 今日无新信号'}
+        </span>
+      </a>
     </section>
 
     <!-- R-MHOME-1(D2a)：M 端静帧已并入上方 hero 背景层，独立 40vh 条位退役 -->
@@ -230,11 +282,13 @@ const guideItems = [
   <!-- N-3/F2-1 客户端：仅首页引用 → 独立小 chunk。load/astro:page-load 后动态 import：
        不进 modulepreload、不与首屏字体/LCP 抢带宽（实测静态 import 时 LCP Δ≈+45ms，改此法 Δ≈0，见回执）；
        模块内部自绑 astro:page-load，SPA 进出首页正常重初始化。
-       F2-1：v3-canvas（M 端 strip 静帧+regen 写 URL 职责）与 signal-field（D 端 L0 场）并行装载 -->
+       F2-1：v3-canvas（M 端 strip 静帧+regen 写 URL 职责）与 signal-field（D 端 L0 场）并行装载；
+       F2-3：l0-tiles（瓦片光带呼吸 + spring/手势 canvas，D-only）随批装载 -->
   <script>
     const once = () => {
       import('../scripts/v3-canvas');
       import('../scripts/signal-field');
+      import('../scripts/l0-tiles');
     };
     window.addEventListener('load', once, { once: true });
     document.addEventListener('astro:page-load', once, { once: true });

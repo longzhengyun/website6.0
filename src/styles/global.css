@@ -653,14 +653,200 @@ html {
 .hero-sub-d {
   display: none;
 }
+
+/* ---- F2-3 D 端 L0 舞台（01 册 L0：大标+副行+三演示瓦片+D-3 暗格同层斜置拼贴）----
+   hero section 升为 100svh 绝对舞台（仅 D 档）；M 端流内制式一律不动（F3 另案）。
+   摆位口径：大标 12vw/30vh（-3° 在 .hero-title-d 层）、轮播 tagline 挂大标下 12.5vw/56vh、
+   副行「让信号穿越噪声」左列 12.5vw/72vh（+1.5°；初版 60vw/58vh 与手势瓦叠压遮字，截图证据修正）；瓦片①弹簧 55vw/12vh(-4°) ②时间轴 70vw/36vh(+6°) ③手势 56vw/60vh(+2°)，
+   叠压 8–20% 允许（01 册拼贴律）；D-3 暗格左下 4vw/88vh。 */
 @media (min-width: 768px) {
   .hero-sub-d {
+    position: absolute;
+    left: 12.5vw;
+    top: 72vh;
+    margin-top: 0;
     display: block;
-    margin-top: 1.75rem;
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 0.35em;
     color: var(--c-ink-muted);
     transform: rotate(1.5deg);
+  }
+  .l0-title {
+    position: absolute;
+    left: 12vw;
+    top: 30vh;
+  }
+  .tagline-line {
+    position: absolute;
+    left: 12.5vw;
+    top: 56vh;
+    margin-top: 0;
+  }
+}
+
+/* ---- F2-3 哑光演示瓦片（07 册：玻璃拟态退场→#141414 哑光；08 册案 A 光影拼框）----
+   瓦片面恒定 --c-tile（跨三态不翻面：08 册形体可辨=与场底 #080808 的明度差，亮档呈墨色卡片），
+   故瓦片内文字不用会翻面的 --c-ink*，取暗档同值恒定灰阶（局部变量，非新全局 token）：
+   caption #e8ecf5（15.9:1）、param #9ba3af（7.87:1）——均 ≥AA 文字档。
+   .tile-edge=案 A 四条 2px 芯独立渐隐光带图层（伪元素/独立图层口径 §6），
+   芯色 var(--edge)=该瓦演示主色（仅演示件内部用色，面积律合规），blur(1.2px)，
+   长度 70%/62%/66%/74% 居中自动留角隙 ≥12%；基态 0.18=无 JS 静峰（reduced/hover 态由 l0-tiles.ts WAAPI 驱动）。 */
+.tile {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tile {
+    --tile-ink: #e8ecf5;
+    --tile-ink-muted: #9ba3af;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: var(--c-tile);
+    border-radius: 46px;
+    padding: 1rem 1.25rem 1.1rem;
+    overflow: hidden; /* 光带 blur 与 canvas 圆角裁切同层 */
+  }
+  .l0-tile-spring {
+    left: 55vw;
+    top: 12vh;
+    width: 34vw;
+    height: 26vh;
+    transform: rotate(-4deg);
+  }
+  .l0-tile-timeline {
+    left: 70vw;
+    top: 36vh;
+    width: 24vw;
+    height: 24vh;
+    transform: rotate(6deg);
+  }
+  .l0-tile-gesture {
+    left: 56vw;
+    top: 60vh;
+    width: 30vw;
+    height: 28vh;
+    transform: rotate(2deg);
+  }
+}
+.tile-edge {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.18;
+  filter: blur(1.2px);
+  background:
+    linear-gradient(to right, transparent 0%, var(--edge) 30%, var(--edge) 70%, transparent 100%) 50% 0 / 70% 2px no-repeat,
+    linear-gradient(to bottom, transparent 0%, var(--edge) 30%, var(--edge) 70%, transparent 100%) 100% 50% / 2px 62% no-repeat,
+    linear-gradient(to left, transparent 0%, var(--edge) 30%, var(--edge) 70%, transparent 100%) 50% 100% / 66% 2px no-repeat,
+    linear-gradient(to top, transparent 0%, var(--edge) 30%, var(--edge) 70%, transparent 100%) 0 50% / 2px 74% no-repeat;
+}
+.tile-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.tile-caption {
+  color: var(--tile-ink);
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+.tile-param {
+  color: var(--tile-ink-muted);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.tile-body {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+.tile-body canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ② 时间轴瓦=纯 CSS（4.2s linear 扫掠 playhead + 三轨节点线；演示主色 demo-3 蓝仅图形件 ≥3:1） */
+.tl-wrap {
+  position: absolute;
+  inset: 0.25rem 0 0.25rem;
+}
+.tl-line {
+  position: absolute;
+  left: 2%;
+  right: 2%;
+  height: 2px;
+  background: rgba(232, 236, 245, 0.14);
+  border-radius: 1px;
+}
+.tl-head {
+  position: absolute;
+  top: -6%;
+  bottom: -6%;
+  width: 2px;
+  left: 0;
+  background: var(--c-demo-3);
+  animation: tl-sweep 4.2s linear infinite;
+}
+@keyframes tl-sweep {
+  0% {
+    left: 0;
+    opacity: 0.25;
+  }
+  8%,
+  92% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0.25;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tl-head {
+    animation: none;
+    left: 46%;
+    opacity: 1;
+  }
+}
+
+/* ---- F2-3 D-3 暗格「今日 N 条信号」（01 册：首屏左下常驻暗格；构建期计数，北京时间口径；
+     整格=→ /news 链接；条数翻牌 M-12 随 F2-5）---- */
+.l0-darkcell {
+  display: none;
+}
+@media (min-width: 768px) {
+  .l0-darkcell {
+    display: inline-flex;
+    position: absolute;
+    left: 4vw;
+    top: 88vh;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding: 0.55rem 1rem;
+    border-radius: 14px;
+    background: rgba(232, 236, 245, 0.06);
+    color: var(--c-ink);
+    transition: background 180ms ease-out;
+  }
+  .l0-darkcell:hover,
+  .l0-darkcell:focus-visible {
+    background: rgba(232, 236, 245, 0.12);
+  }
+  .l0-dc-num {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--c-signal); /* 信标红=允许上页的强调位（图形级数字，#080808 上 5.61:1） */
+  }
+  .l0-dc-label {
+    color: var(--c-ink-muted);
   }
 }
