@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import VitalsCard from '../components/VitalsCard.astro';
 import CanvasLayer from '../components/CanvasLayer.astro';
+import SignalField from '../components/SignalField.astro';
 import { site } from '../data/site';
 import { taglines } from '../data/taglines';
 import { sortedItems } from '../data/news';
@@ -41,8 +42,10 @@ const guideItems = [
       class="shell shell-wide relative pt-[20vh] pb-16 md:pb-16 max-md:flex-1 max-md:pb-8 max-md:pt-0 max-md:flex max-md:flex-col max-md:justify-center"
       aria-labelledby="hero-title"
     >
-      <!-- V3 画布 D 端氛围层：hero 全出血（z=-1，文本层在其后渲染自然盖于其上）；M 端 CSS 隐藏 -->
-      <CanvasLayer variant="hero" />
+      <!-- F2-1 D 端 L0 安静 mesh 场（01 册 L0 × 07 册 §4-01：同 shader 链路降亮 ≤0.06、去粒子、
+           流速减半、grain、信标 3→1）；二期 V3 hero 折线层在 D 档退役（N-3 链保留至 F3 收口：
+           strip 仍为 M 端 hero 背景，#v3-canvas 锚点位不变=section 本身） -->
+      <SignalField />
       <!-- V3 M 端静帧（R-MHOME-1 D2a 并入 hero 背景）：同 seed 0x5EED、alpha 带 0.04–0.14、
            叠印语义不变；D 端 CSS 隐藏（原 40vh 独立条位退役，零高度成本） -->
       <CanvasLayer variant="strip" />
@@ -216,11 +219,15 @@ const guideItems = [
       </p>
     </section>
   </article>
-  <!-- N-3 客户端：仅首页引用 → 独立小 chunk。load/astro:page-load 后动态 import：
+  <!-- N-3/F2-1 客户端：仅首页引用 → 独立小 chunk。load/astro:page-load 后动态 import：
        不进 modulepreload、不与首屏字体/LCP 抢带宽（实测静态 import 时 LCP Δ≈+45ms，改此法 Δ≈0，见回执）；
-       模块内部自绑 astro:page-load，SPA 进出首页正常重初始化 -->
+       模块内部自绑 astro:page-load，SPA 进出首页正常重初始化。
+       F2-1：v3-canvas（M 端 strip 静帧+regen 写 URL 职责）与 signal-field（D 端 L0 场）并行装载 -->
   <script>
-    const once = () => import('../scripts/v3-canvas');
+    const once = () => {
+      import('../scripts/v3-canvas');
+      import('../scripts/signal-field');
+    };
     window.addEventListener('load', once, { once: true });
     document.addEventListener('astro:page-load', once, { once: true });
   </script>

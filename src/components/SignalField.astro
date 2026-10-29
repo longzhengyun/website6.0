@@ -1,0 +1,17 @@
+---
+/**
+ * F2-1 三期 L0「安静 mesh」场层（01 册 L0 底层信号场 × 07 册 §4-01 降亮改稿 × 04 册 M-01）：
+ * - 链路保留：WebGL2 fragment shader fbm 波形三带（20° 斜向，主蓝→青）+ 信标 pulse；
+ * - v2.1 制式：峰值 alpha 合成总顶 ≤0.06（不可察觉=近黑纸面一层呼吸）、去粒子飞溅、流速减半（0.4px/f 口径）、
+ *   叠 feTurbulence 细噪点 grain（CSS 层，不占 shader 预算）、信标 3→1（#f4544f，01 册首位置 (18vw,64vh)）；
+ * - mulberry32 seed 可复现保留：URL ?seed= 换场彩蛋沿用（与 v3 画布同源 PRNG，单源 lib/v3-art.mjs）；
+ * - 氛围层纪律同 N-3：aria-hidden、指针穿透、可全删不损信息、不占 accent 预算；M 档（<768）不渲染（F3 另案）。
+ * 降级台账形态（04 册 M-01 行）：无 JS = 近黑纸面静态渐变静帧（CSS 层，非二进制资产）；reduce/低端 = 单帧静图。
+ */
+---
+
+<div data-sf aria-hidden="true" class="sf-root">
+  <canvas class="sf-canvas"></canvas>
+  <div class="sf-poster"></div>
+  <div class="sf-grain"></div>
+</div>
