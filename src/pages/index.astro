@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import VitalsCard from '../components/VitalsCard.astro';
 import CanvasLayer from '../components/CanvasLayer.astro';
 import SignalField from '../components/SignalField.astro';
+import GlyphTitle from '../components/GlyphTitle.astro';
 import { site } from '../data/site';
 import { taglines } from '../data/taglines';
 import { sortedItems } from '../data/news';
@@ -56,15 +57,22 @@ const guideItems = [
         >
           Jary
         </span>
+        <!-- F2-2 D 端大标图片化（03 册主案 × 07 册排版律）：实色白 900 SVG 转曲「佳瑞网」+ 信标红点挂件，
+             -3° 斜置（01 册 L0）；JARY 保留为 mono 签名层（03 册中文优先）；
+             删除原「Jary·佳瑞网」文本大标与 text-accent 圆点（霓虹/高亮位让位）。L0 绝对摆位由 F2-3 整stage 接管 -->
         <span class="hidden md:inline">
-          <span class="hero-en">Jary</span><span class="text-accent">·</span><span
-            class="zh-title">佳瑞网</span
-          >
+          <span class="hero-title-d block">
+            <GlyphTitle text="佳瑞网" beacon />
+          </span>
+          <span class="hero-jary-sign t-label">JARY · WEB FRONT-END ENGINEER</span>
         </span>
       </h1>
-      <p class="t-h2 text-ink-muted mt-6 max-w-[34em]">
+      <!-- F2-2：D 端 role 行并入大标下 mono 签名（去重复）；L0 副标「让信号穿越噪声」上首屏
+           （01 册：细体 +1.5°；手写感细体无授权字源→细字重+宽字距替代，随 F2 回报备案）；M 端既有 role 行保留至 F3 -->
+      <p class="t-h2 text-ink-muted mt-6 max-w-[34em] md:hidden">
         {site.role}
       </p>
+      <p class="hero-sub-d">让信号穿越噪声</p>
       <!-- R16 三行制轮播副行：SSR 渲池首条（无 JS 稳定降级），同步内联脚本首帧前原位替换随机条目；
            固定单行行盒防 CLS；window 级记忆=整页刷新重抽、ClientRouter 站内跳转不重抽；不进 aria-live -->
       <p class="t-label text-ink-muted mt-3 tagline-line">

@@ -601,3 +601,66 @@ html {
 .sf-canvas.sf-on ~ .sf-poster {
   display: none;
 }
+
+/* ---- F2-2 大标/节题 SVG 转曲图片化（03 册主案 × 07 册排版律：实色白 900、紧字距、无描边无发光）----
+   fill 走 --c-ink：暗档 #e8ecf5（≈白 on #080808 17:1，H4 稳）；亮档自动翻黑，三态零分支。
+   宿主层控制尺寸与旋转（width + transform），本层只管着色与信标挂件。 */
+.glyph-title {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.glyph-title path {
+  fill: var(--c-ink);
+}
+.gt-beacon {
+  fill: var(--c-signal);
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: gt-beacon-pulse 2.4s ease-in-out infinite;
+}
+@keyframes gt-beacon-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.86);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-beacon {
+    animation: none;
+    opacity: 0.9;
+  }
+}
+
+/* ---- F2-2 D 端 L0 大标摆位（01 册：占位 12–54vw 宽 42vw、-3° 斜置；副标 +1.5° 细体）----
+   L0 绝对舞台由 F2-3 接管后改挂 stage 坐标；本批=流内摆位先行，D-only（M 端制式不动） */
+.hero-title-d {
+  width: min(42vw, 620px);
+  transform: rotate(-3deg);
+}
+.hero-jary-sign {
+  display: block;
+  margin-top: 0.75rem;
+  color: var(--c-ink-muted);
+  letter-spacing: 0.3em;
+}
+.hero-sub-d {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero-sub-d {
+    display: block;
+    margin-top: 1.75rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.35em;
+    color: var(--c-ink-muted);
+    transform: rotate(1.5deg);
+  }
+}
