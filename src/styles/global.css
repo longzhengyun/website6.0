@@ -977,6 +977,12 @@ html {
     color: var(--c-ink-muted);
     font-size: 0.8125rem;
   }
+  /* R1（设计 seq=1025 修项建议）：light 态白系底 rgba(232,236,245,.06) 在纸面上不可见
+     → 深底安静底色 rgba(20,24,31,0.06)，无边框无投影（seq=1033 R1 口径）；仅 M 首页，
+     D 档 F2 判定面不触碰 */
+  html[data-theme='light'] .l0-darkcell {
+    background: rgba(20, 24, 31, 0.06);
+  }
 
   /* 一屏收敛（仅首页 home-onescreen）：顶栏行高 44（发丝线改光带=见 F3-4 基础块，双端共用）；
      页脚退役，tab-bar 全高留白挂 main */
