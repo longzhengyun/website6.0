@@ -569,7 +569,8 @@ html {
 
 /* ---- F2-1 三期 L0 安静 mesh 场（01 册 L0 × 07 册 §4-01 × 04 册 M-01 v2.1 改稿）----
    氛围层纪律同 N-3：aria-hidden、指针穿透、可全删不损信息、不占「每屏 accent ≤3 处」预算。
-   D 档（≥768）专属：M 端整层不渲染（display:none → client rect<2 → 客户端跳过，F3 另案）。
+   D/M 共用（F3 起 M 端接管场主体层，07 §4-02）：M 端 display 由下方 F3 块放开，
+   signal-field.ts 对 M 渲染单帧静图（rAF 常驻仅 D）。
    CLS 护栏：绝对层零布局占位；canvas 初始透明、绘妥 .sf-on 提升（同 DEF-N3-1 口径）；
    无 JS 列=静态渐变 poster（近黑纸面，三态随 token）；WebGL2 不可用=poster+grain 静面（台账备案，不判缺陷）。 */
 .sf-root {
@@ -862,6 +863,252 @@ html {
   .l0-dc-label {
     color: var(--c-ink-muted);
   }
+}
+
+/* ==== F3 M 档首页一屏（02 册构成预算 × 07 册 §4-02 × 放行单 seq=985）====
+   判据沿用 R-MHOME-1 双轴零滚动（scrollH==innerHeight && scrollW==innerWidth，布局自然收敛为主，
+   overflow-x clip 仅兜底）；dvh/safe-area 链不动（02 册「安全」节）。
+   构成=场层(mesh 静帧) + 转曲大标 + 副标 + 轮播副行 + 2 枚哑光演示瓦(07 §4-02 替代 02 册玻璃胶囊，
+   放行单口径) + D-3 暗格 + tab-bar；页脚在 M 首页退役=构成决策（tab-bar 接管底部，
+   主内容底部留白改挂 main.one-screen），随 F3 回报披露。
+   顶栏按 02 册「44 无底边线」= border 移除 + 行高 44，但保持流内占位（悬浮绝对化会顶移全内容
+   破坏 flex 收敛判据，偏差随 F3 回报披露）。 */
+@media (max-width: 767px) {
+  /* 场主体层：L0 安静 mesh 上 M（07 §4-02 随 01 册）；二期 V3 折线 strip 退役（CSS 隐藏 →
+     rect<2 跳过绘制；.v3-js/regen URL 写链在 html 层不受影响）；无 JS=poster 渐变静面 */
+  .sf-root {
+    display: block;
+  }
+  .v3-root[data-v3='strip'] {
+    display: none;
+  }
+
+  /* 大标：转曲图片化上 M（02 册预算 ~150 行位；375 宽下 adv 比 H/W≈0.338 物理上限 → 86vw≈322
+     高≈109，余量让给场留白；x 居中偏左 8% → margin-left 6vw）；-3° 沿用 .hero-title-d 基础层 */
+  .l0-title {
+    display: inline-block;
+    width: min(86vw, 444px);
+    margin-left: 6vw;
+  }
+  .hero-title-d {
+    width: 100%;
+  }
+  .hero-jary-sign {
+    font-size: 0.6875rem;
+    letter-spacing: 0.24em;
+    margin-top: 0.4rem;
+  }
+  /* 副标：预算第 3 行 26px（1.125rem）+1.5°，大标右下叠压 12px */
+  .hero-sub-d {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: 4vw;
+    margin-top: -12px;
+    font-size: 1.125rem;
+    letter-spacing: 0.35em;
+    color: var(--c-ink-muted);
+    transform: rotate(1.5deg);
+  }
+
+  /* 场主体区：2 枚哑光演示瓦流内并排（spring -5° / timeline +7°，叠压 16px=02 册拼贴律）；
+     手势瓦 M 端不渲染——必须用本无分层规则隐藏（Tailwind max-md:hidden 在 utilities 层，
+     会被无分层 .tile display:flex 压过，repo 已知 gotcha 同 enhanced-only 案）；
+     命中区：瓦片非交互展示件，tap 职责在暗格/tab-bar */
+  .l0-tiles {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+  }
+  .tile {
+    --tile-ink: #e8ecf5;
+    --tile-ink-muted: #9ba3af;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 46%;
+    height: 132px;
+    background: var(--c-tile);
+    border-radius: 46px;
+    padding: 0.7rem 1rem 0.8rem;
+    overflow: hidden; /* 光带 blur 裁切同 D 制式 */
+  }
+  .l0-tile-gesture {
+    display: none;
+  }
+  .l0-tile-spring {
+    transform: rotate(-5deg);
+  }
+  .l0-tile-timeline {
+    transform: rotate(7deg);
+    margin-left: -16px;
+    margin-top: 10px;
+  }
+  /* 窄瓦头部：caption/param 纵排防溢出（D 档横排制式不动） */
+  .tile-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+  }
+
+  /* D-3 暗格：左下常驻（02 册 36 形态 + 命中区 ≥44 透明扩展=min-height） */
+  .l0-darkcell {
+    display: inline-flex;
+    align-self: flex-start;
+    margin-left: 6vw;
+    margin-top: 16px;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding: 0.55rem 1rem;
+    min-height: 44px;
+    border-radius: 14px;
+    background: rgba(232, 236, 245, 0.06);
+    color: var(--c-ink);
+  }
+  .l0-dc-num {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--c-signal);
+  }
+  .l0-dc-label {
+    color: var(--c-ink-muted);
+    font-size: 0.8125rem;
+  }
+
+  /* 一屏收敛（仅首页 home-onescreen）：顶栏行高 44（发丝线改光带=见 F3-4 基础块，双端共用）；
+     页脚退役，tab-bar 全高留白挂 main */
+  body.home-onescreen > header .h-14 {
+    height: 44px;
+  }
+  body.home-onescreen > footer {
+    display: none;
+  }
+  main.one-screen {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom));
+  }
+
+  /* 留白分布（02 册「余量全让场呼吸、分布在上半区」× 重心判据 24–42% 视高）：
+     hero 内容贴底（safe flex-end）=上半区整块留白；装不下时 safe 回退 start 不产生滚动
+     （零滚动主判据优先于重心）。justify-center 对称留白会把重心压到 ~20%，弃用。
+     safe 关键字不支持的引擎=声明无效回落 justify-center（制式不破）。
+     section pb 8→4、tagline mt 12→10：667 档余量再分配给顶呼吸 */
+  #v3-canvas {
+    justify-content: safe flex-end;
+    padding-bottom: 4px;
+  }
+  .tagline-line {
+    margin-top: 10px;
+  }
+}
+
+/* ==== F3-4 首页顶栏制式（设计裁定 seq=1003 F2-01=B）====
+   ①主题切换=无框弧排三点（☀/☾/◐）：三枚圆形命中区 44×44，浅弧 R≈90px/角距 24°→矢高≈3px
+     （侧位上移 3px），整簇 -3°；零 border 零背景框；当前档=实色（设计口径 #e8ecf5=暗档 ink，
+     用 var(--c-ink) 三态等价翻转）+ 下方 2px 圆点指示（--c-accent 蓝）；非当前档=#9ba3af 50%；
+     hover=亮度提至 100% + scale 1.08（cubic-bezier(0.22,1.2,0.36,1)≈spring k260/d20，M-14 同族）；
+     aria-pressed 由 theme.ts 同步，Tab 序=DOM 序（light→dark→auto），点击=直接置档零功能回退。
+     门控：仅 body.home-onescreen（首页）+ html[data-enhanced]（无 JS=隐藏，沿用二期方框制式于内页）。
+   ②header 发丝线=双端渐隐光带：border-width 保持 0，::after 1px 横向渐变
+     transparent→rgba(232,236,245,0.10)/light rgba(20,24,31,0.12)→transparent，占宽 80% 居中
+     （两端各 10% 渐隐）——08 册光带同语言族，非闭合矩形，V4 字面与精神双合规。 */
+.theme-arc {
+  display: none;
+}
+html[data-enhanced] body.home-onescreen .theme-arc {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 2px;
+  margin-left: auto; /* M 端（nav 组隐藏）贴右；D 端改固定间距（下方 media），避免双 auto margin 均分把导航拉回居中 */
+  transform: rotate(-3deg);
+}
+@media (min-width: 768px) {
+  html[data-enhanced] body.home-onescreen .theme-arc {
+    margin-left: 2rem;
+  }
+}
+/* M 端顶栏 44 预算：簇 -3° 旋转包围盒 51px 会顶出视口（实测 y=-4 裁命中区），
+   下移 8px 使旋转盒顶≈0（flex 居中 -4 + 8）；底沿压入 hero 透明区 ~8px，
+   不影响零滚动（transform 盒在视口内，实测 scrollH 不变） */
+@media (max-width: 767px) {
+  html[data-enhanced] body.home-onescreen .theme-arc {
+    margin-top: 8px;
+  }
+}
+/* 首页三点上屏时隐藏二期方框钮（仅 header 内，tab-bar「主题」格循环制式不动） */
+body.home-onescreen > header [data-theme-toggle] {
+  display: none;
+}
+.ta-btn {
+  --ty: 0px;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+  color: rgba(155, 163, 175, 0.5);
+  transform: translateY(var(--ty)) scale(1);
+  transition:
+    transform 180ms cubic-bezier(0.22, 1.2, 0.36, 1),
+    color 120ms ease-out;
+}
+.ta-btn:nth-child(1),
+.ta-btn:nth-child(3) {
+  --ty: -3px;
+}
+.ta-btn:hover {
+  color: var(--c-ink);
+  transform: translateY(var(--ty)) scale(1.08);
+}
+.ta-btn:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 2px;
+}
+.ta-btn[aria-pressed='true'] {
+  color: var(--c-ink);
+}
+.ta-btn[aria-pressed='true']::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 2px;
+  height: 2px;
+  margin-left: -1px;
+  border-radius: 9999px;
+  background: var(--c-accent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .ta-btn {
+    transition: none;
+  }
+  .ta-btn:hover {
+    transform: translateY(var(--ty)) scale(1);
+  }
+}
+body.home-onescreen > header {
+  position: relative;
+  border-bottom-width: 0;
+}
+body.home-onescreen > header::after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 0;
+  height: 1px;
+  pointer-events: none;
+  background: linear-gradient(to right, transparent, rgba(232, 236, 245, 0.1), transparent);
+}
+html[data-theme='light'] body.home-onescreen > header::after {
+  background: linear-gradient(to right, transparent, rgba(20, 24, 31, 0.12), transparent);
 }
 
 /* ==== F2-4 L1 能力光谱（01 册 × 07 册 v2.1：编辑式短句节题 + 微型活演示 + M-15 scrub 进场）====

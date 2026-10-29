@@ -69,24 +69,19 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       aria-labelledby="hero-title"
     >
       <!-- F2-1 D 端 L0 安静 mesh 场（01 册 L0 × 07 册 §4-01：同 shader 链路降亮 ≤0.06、去粒子、
-           流速减半、grain、信标 3→1）；二期 V3 hero 折线层在 D 档退役（N-3 链保留至 F3 收口：
-           strip 仍为 M 端 hero 背景，#v3-canvas 锚点位不变=section 本身） -->
+           流速减半、grain、信标收敛为大标挂件）；F3 起 mesh 同层上 M=一屏场主体（07 §4-02）。
+           二期 V3 hero 折线层 D/M 双档退役（CSS 隐藏→rect<2 跳过绘制；.v3-js/regen 写链保留，
+           #v3-canvas 锚点位不变=section 本身，N-3 链收口） -->
       <SignalField />
-      <!-- V3 M 端静帧（R-MHOME-1 D2a 并入 hero 背景）：同 seed 0x5EED、alpha 带 0.04–0.14、
-           叠印语义不变；D 端 CSS 隐藏（原 40vh 独立条位退役，零高度成本） -->
+      <!-- V3 M 端静帧（R-MHOME-1 D2a 曾并入 hero 背景）：F3 起由 L0 mesh 接管场主体层，
+           strip 双档不再渲染；CanvasLayer noscript 降级列随 CSS 隐藏一并让位 sf-poster -->
       <CanvasLayer variant="strip" />
       <h1 id="hero-title" class="t-display">
-        <span class="md:hidden zh-title block text-[2.25rem]! leading-[1.2]">佳瑞网</span>
-        <span
-          class="md:hidden hero-en-mono t-label text-[0.875rem]! inline-block mt-2 border-b-2 border-accent pb-1"
-        >
-          Jary
-        </span>
-        <!-- F2-2 D 端大标图片化（03 册主案 × 07 册排版律）：实色白 900 SVG 转曲「佳瑞网」+ 信标红点挂件，
-             -3° 斜置（01 册 L0）；JARY 保留为 mono 签名层（03 册中文优先）；
-             删除原「Jary·佳瑞网」文本大标与 text-accent 圆点（霓虹/高亮位让位）。
-             F2-3：D 端挂 L0 绝对舞台（12vw/30vh，CSS .l0-title）；M 端流内制式不动 -->
-        <span class="hidden md:inline l0-title">
+        <!-- F2-2 大标图片化（03 册主案 × 07 册排版律）：实色白 900 SVG 转曲「佳瑞网」+ 信标红点挂件（L0 唯一红点），
+             -3° 斜置（01 册 L0）；JARY 签名行=角色语义承载（mono 小字，03 册中文优先）。
+             F3（02 册 M 预算）：M 端并入同一转曲大标（原二期文本制式 2.25rem+Jary mono+role 行退役），
+             D 端挂 L0 绝对舞台（12vw/30vh，CSS .l0-title），M 端流内 x 居中偏左 8% -->
+        <span class="l0-title">
           <span class="hero-title-d block">
             <GlyphTitle text="佳瑞网" beacon />
           </span>
@@ -94,10 +89,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         </span>
       </h1>
       <!-- F2-2：D 端 role 行并入大标下 mono 签名（去重复）；L0 副标「让信号穿越噪声」上首屏
-           （01 册：细体 +1.5°；手写感细体无授权字源→细字重+宽字距替代，随 F2 回报备案）；M 端既有 role 行保留至 F3 -->
-      <p class="t-h2 text-ink-muted mt-6 max-w-[34em] md:hidden">
-        {site.role}
-      </p>
+           （01 册：细体 +1.5°；手写感细体无授权字源→细字重+宽字距替代，随 F2 回报备案；
+           设计走查 seq=993 专业意见：hero-jary-sign 保留为签名位，站主目检按此口径）。
+           F3：M 端副标=预算第 3 行（1.125rem，+1.5°，压大标右下叠 12px，CSS .hero-sub-d M 分支） -->
       <p class="hero-sub-d">让信号穿越噪声</p>
       <!-- R16 三行制轮播副行：SSR 渲池首条（无 JS 稳定降级），同步内联脚本首帧前原位替换随机条目；
            固定单行行盒防 CLS；window 级记忆=整页刷新重抽、ClientRouter 站内跳转不重抽；不进 aria-live -->
@@ -122,43 +116,47 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         })();
       </script>
 
-      <!-- F2-3 L0 演示瓦片×3（01 册胶囊位 × 07 册「演示即内容」参数可见化 × 08 册案 A 光影拼框）：
+      <!-- F2-3 L0 演示瓦片（01 册胶囊位 × 07 册「演示即内容」参数可见化 × 08 册案 A 光影拼框）：
            ①弹簧=自写半隐式欧拉 k260/d20/m1（04 册弹簧族）②时间轴=纯 CSS 4.2s linear 扫掠
            ③手势=pointer 60pt 渐隐路径 + 空闲 Lissajous 自走；canvas/装饰均 aria-hidden，
            语义由 caption+param 文字承载（H4：瓦内文字恒定 ink 系，彩色仅图形件 ≥3:1）。
-           动画全部受 l0-tiles.ts reduce/低端单帧闸与全局 reduced-motion 总闸约束；M 端整层不渲染（F3 另案） -->
-      <DemoTile
-        tileId="spring"
-        edge="var(--c-demo-1)"
-        caption="弹簧回弹"
-        param="k260 · d20 · m1"
-        class="l0-tile-spring"
-      >
-        <canvas aria-hidden="true"></canvas>
-      </DemoTile>
-      <DemoTile
-        tileId="timeline"
-        edge="var(--c-demo-3)"
-        caption="时间轴轨道"
-        param="4.2s · linear"
-        class="l0-tile-timeline"
-      >
-        <div class="tl-wrap" aria-hidden="true">
-          <span class="tl-line" style="top: 24%"></span>
-          <span class="tl-line" style="top: 50%"></span>
-          <span class="tl-line" style="top: 76%"></span>
-          <span class="tl-head"></span>
-        </div>
-      </DemoTile>
-      <DemoTile
-        tileId="gesture"
-        edge="var(--c-demo-4)"
-        caption="手势路径"
-        param="trail 60pt"
-        class="l0-tile-gesture"
-      >
-        <canvas aria-hidden="true"></canvas>
-      </DemoTile>
+           动画全部受 l0-tiles.ts reduce/低端单帧闸与全局 reduced-motion 总闸约束。
+           F3（02 册 M 预算）：D 端三枚绝对舞台不变；M 端=场主体区 2 枚流内瓦片（弹簧+时间轴，
+           -5°/+7° 叠压 16px；07 §4-02「1–2 个哑光演示瓦片」），手势瓦 M 端不渲染（max-md:hidden）。 -->
+      <div class="l0-tiles">
+        <DemoTile
+          tileId="spring"
+          edge="var(--c-demo-1)"
+          caption="弹簧回弹"
+          param="k260 · d20 · m1"
+          class="l0-tile-spring"
+        >
+          <canvas aria-hidden="true"></canvas>
+        </DemoTile>
+        <DemoTile
+          tileId="timeline"
+          edge="var(--c-demo-3)"
+          caption="时间轴轨道"
+          param="4.2s · linear"
+          class="l0-tile-timeline"
+        >
+          <div class="tl-wrap" aria-hidden="true">
+            <span class="tl-line" style="top: 24%"></span>
+            <span class="tl-line" style="top: 50%"></span>
+            <span class="tl-line" style="top: 76%"></span>
+            <span class="tl-head"></span>
+          </div>
+        </DemoTile>
+        <DemoTile
+          tileId="gesture"
+          edge="var(--c-demo-4)"
+          caption="手势路径"
+          param="trail 60pt"
+          class="l0-tile-gesture max-md:hidden"
+        >
+          <canvas aria-hidden="true"></canvas>
+        </DemoTile>
+      </div>
       <!-- F2-3 D-3 暗格：今日（北京时间）信号条数，构建期计数；整格=→ /news 链接；
            F2-5 M-12 翻牌：每位 0-9 竖列 SSR 直落终值（无 JS/reduce 可直读），view() entry 段补进视口一跳；
            sr-only 承载读屏数值，数字列 aria-hidden -->

@@ -97,8 +97,9 @@ const paletteIndex = [
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
     <ClientRouter />
   </head>
-  <!-- R-FOOTER-1：sticky footer 骨架（flex 列 + main flex-1）；spine/TabBar 为 fixed 出流、CommandPalette 根 hidden，均不受影响 -->
-  <body class="min-h-screen flex flex-col antialiased">
+  <!-- R-FOOTER-1：sticky footer 骨架（flex 列 + main flex-1）；spine/TabBar 为 fixed 出流、CommandPalette 根 hidden，均不受影响
+      F3（02 册）：home-onescreen=M 首页一屏构成专用（顶栏 44 无底线、页脚由 tab-bar 接管底部） -->
+  <body class:list={['min-h-screen flex flex-col antialiased', oneScreen && 'home-onescreen']}>
     <a
       href="#main"
       class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-surface focus:border focus:border-line focus:px-4 focus:py-2"

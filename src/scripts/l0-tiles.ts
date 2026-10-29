@@ -7,7 +7,8 @@
  * - spring 演示=自写半隐式欧拉积分（stiffness 260/damping 20/mass 1，04 册弹簧族），目标每 2.6s 换向，
  *   拖尾=最近 40 样本衰减；手势演示=pointer 采样 60pt 紫色渐隐路径，空闲 2.4s 后自走 Lissajous 环（周期性=可循环）。
  * - 低端（hardwareConcurrency≤4 ‖ deviceMemory≤4）/reduce=单帧静图；astro:page-load 重初始化（旧 rAF 全停）。
- * - 颜色实读 token（--c-demo-1/--c-demo-4），零新 hex；仅 D 档渲染（瓦片 M 端 display:none → 跳过）。
+ * - 颜色实读 token（--c-demo-1/--c-demo-4），零新 hex；F3 起 M 档上 2 枚（spring/timeline），
+ *   手势瓦 max-md:hidden=隐藏件按 rect<4 跳过（零 rAF 成本）。
  */
 import { hashSeedStr, mulberry32 } from '../lib/v3-art.mjs';
 
@@ -260,11 +261,12 @@ const stoppers: { cancel(): void }[] = [];
 function initAll() {
   for (const s of stoppers) s.cancel();
   stoppers.length = 0;
-  const desktop = matchMedia('(min-width: 768px)').matches;
-  if (!desktop) return; // M 档瓦片不渲染（F3 另案）
   const rng = mulberry32(hashSeedStr('L0-TILES'));
   document.querySelectorAll<HTMLElement>('[data-tile]').forEach((tile) => {
     if (!tile.isConnected) return;
+    // F3：M 档 2 枚上屏（spring/timeline），手势瓦 max-md:hidden → rect<4 跳过（D 档三枚全活）
+    const r = tile.getBoundingClientRect();
+    if (r.width < 4 || r.height < 4) return;
     const edge = tile.querySelector<HTMLElement>('.tile-edge');
     const phase = rng(); // 每瓦片独立相位（同页不同步，可复现）
     if (edge) driveEdge(tile, edge, phase);
