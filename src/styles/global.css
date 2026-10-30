@@ -1791,7 +1791,8 @@ html[data-theme='light'] body.home-onescreen > header::after {
 }
 
 /* ---- M-12 暗格条数翻牌（04 册 M-12）：每位数字 0-9 竖列，SSR 终值=base transform（无 JS/reduce 直读）；
-     进视口一跳由 view() entry 段 scrub（≈0.6s 行程），与 M-15 同族最前沿口径（D-1 放行） ---- */
+     FB-8-1（②2A）：view() 滚动驱动在一屏无滚动场景即刻 finished 后 Chromium 对 after 相隐式 to 帧
+     不重绘（d>0 列空白，现网实验闭环）→ 改时限 0.6s one-shot+显式 to 帧，delay 0.9s 对齐入场节拍 ---- */
 .dc-roll {
   display: inline-flex;
 }
@@ -1810,14 +1811,13 @@ html[data-theme='light'] body.home-onescreen > header::after {
   from {
     transform: translateY(0);
   }
+  to {
+    transform: translateY(calc(var(--d) * -1em));
+  }
 }
 @media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: view()) {
-    .dc-digit > i {
-      animation: dc-flip linear both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 35%;
-    }
+  .dc-digit > i {
+    animation: dc-flip 0.6s linear 0.9s both;
   }
 }
 
