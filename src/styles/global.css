@@ -1179,14 +1179,15 @@ body.home-onescreen > header [data-theme-toggle] {
     color 120ms ease-out;
 }
 /* FB-3(P5=c) 端点 ty 重算（设计终稿 §6，替代 FB-1 的 ±46px 键臂口径）：
-   端点距簇心 ±68px，旋转 -1.5° 纵向贡献 = 68×sin1.5° ≈ ±1.8px（左端下沉、右端上抬）；
-   目标净位移=对称浅弧 −3/0/−3 → 反推 --ty 左 −4.8 / 中 0 / 右 −1.2。
-   自验项：端点顶边实测 <1px 时整簇 margin-top +2px（不改弧值）。 */
+   FB-5 修正：§6 假设端点距簇心 ±68px（贡献 ±1.8px），实测布局=3×44px+2×2px gap → 臂长 ±46px、
+   旋转纵向贡献 ±46×sin1.5°≈±1.2px（探针 W1920 实测左右 cy 差 1.19px > FB-T-01 判据 0.5px）。
+   设计目标「对称浅弧 −3/0/−3」不变，按实际臂长重算：左 −4.2 / 中 0 / 右 −1.8。
+   自验项：端点顶边实测 <1px 时整簇 margin-top +2px（不改弧值）——实测 ≥2.4px，不触发。 */
 .ta-btn:nth-child(1) {
-  --ty: -4.8px;
+  --ty: -4.2px;
 }
 .ta-btn:nth-child(3) {
-  --ty: -1.2px;
+  --ty: -1.8px;
 }
 .ta-btn svg {
   display: block;
