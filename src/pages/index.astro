@@ -117,7 +117,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       </script>
 
       <!-- F2-3 L0 演示瓦片（01 册胶囊位 × 07 册「演示即内容」参数可见化 × 08 册案 A 光影拼框）：
-           ①弹簧=自写半隐式欧拉 k260/d20/m1（04 册弹簧族）②时间轴=纯 CSS 4.2s linear 扫掠
+           ①弹簧=自写半隐式欧拉 k260/d12/m1（04 册弹簧族；FB-6 A 欠阻尼 d20→12，FB-8-1 文案同步）②时间轴=纯 CSS 4.2s linear 扫掠
            ③手势=pointer 60pt 渐隐路径 + 空闲 Lissajous 自走；canvas/装饰均 aria-hidden，
            语义由 caption+param 文字承载（H4：瓦内文字恒定 ink 系，彩色仅图形件 ≥3:1）。
            动画全部受 l0-tiles.ts reduce/低端单帧闸与全局 reduced-motion 总闸约束。
@@ -128,7 +128,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           tileId="spring"
           edge="var(--c-demo-1)"
           caption="弹簧回弹"
-          param="k260 · d20 · m1"
+          param="k260 · d12 · m1"
           class="l0-tile-spring"
         >
           <canvas aria-hidden="true"></canvas>

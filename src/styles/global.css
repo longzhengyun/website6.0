@@ -970,27 +970,30 @@ body {
     letter-spacing: 0.24em;
     margin-top: 0.4rem;
   }
-  /* 副标：预算第 3 行 26px（1.125rem）+1.5°，大标右下叠压 12px */
+  /* 副标：预算第 3 行 26px（1.125rem）+1.5°，大标右下叠压 12px
+     FB-8-3（①选项 A，站主 seq=1292 裁定）：叠压 -12→-6 行距放宽一档 */
   .hero-sub-d {
     display: block;
     width: max-content;
     margin-left: auto;
     margin-right: 4vw;
-    margin-top: -12px;
+    margin-top: -6px;
     font-size: 1.125rem;
     letter-spacing: 0.35em;
     color: var(--c-ink-muted);
     transform: rotate(1.5deg);
   }
 
-  /* 场主体区：2 枚哑光演示瓦流内并排（spring -5° / timeline +7°，叠压 16px=02 册拼贴律）；
+  /* 场主体区：2 枚哑光演示瓦流内并排（spring -5° / timeline +7°）；
      手势瓦 M 端不渲染——必须用本无分层规则隐藏（Tailwind max-md:hidden 在 utilities 层，
      会被无分层 .tile display:flex 压过，repo 已知 gotcha 同 enhanced-only 案）；
-     命中区：瓦片非交互展示件，tap 职责在暗格/tab-bar */
+     命中区：瓦片非交互展示件，tap 职责在暗格/tab-bar。
+     FB-8-3（①选项 A，站主 seq=1292 裁定）：垂直预算重排——瓦高 132→148、
+     叠压 16→8px、行距放宽；上留白目标 35%→~20%（分档见下方 min-height 覆盖） */
   .l0-tiles {
     display: flex;
     justify-content: center;
-    margin-top: 14px;
+    margin-top: 30px;
   }
   .tile {
     --tile-ink: #e8ecf5;
@@ -999,7 +1002,7 @@ body {
     flex-direction: column;
     position: relative;
     width: 46%;
-    height: 132px;
+    height: 148px;
     background: var(--c-tile);
     border-radius: 46px;
     padding: 0.7rem 1rem 0.8rem;
@@ -1015,8 +1018,8 @@ body {
   .l0-tile-timeline {
     --l0-rot: 7deg;
     transform: rotate(var(--l0-rot));
-    margin-left: -16px;
-    margin-top: 10px;
+    margin-left: -8px;
+    margin-top: 12px;
   }
   /* 窄瓦头部：caption/param 纵排防溢出（D 档横排制式不动） */
   .tile-head {
@@ -1025,12 +1028,13 @@ body {
     gap: 0.1rem;
   }
 
-  /* D-3 暗格：左下常驻（02 册 36 形态 + 命中区 ≥44 透明扩展=min-height） */
+  /* D-3 暗格：左下常驻（02 册 36 形态 + 命中区 ≥44 透明扩展=min-height）
+     FB-8-3：mt 16→30（基础档；≥740 视高分档覆盖） */
   .l0-darkcell {
     display: inline-flex;
     align-self: flex-start;
     margin-left: 6vw;
-    margin-top: 16px;
+    margin-top: 30px;
     align-items: baseline;
     gap: 0.6rem;
     padding: 0.55rem 1rem;
@@ -1082,6 +1086,32 @@ body {
   }
   .tagline-line {
     margin-top: 10px;
+  }
+
+  /* FB-8-3（①选项 A）垂直预算分档：844/932 主流机（h≥740）把余量从「顶部 35% 空洞」
+     重排为「行距放宽+下呼吸」——tiles/darkcell 间距与底部呼吸随视高抬升，大标上移；
+     667 及以下保持基础档（stack+pb ≤ h-100 零滚动制式不动）。结构/制式零改动，只动预算分配 */
+  @media (min-height: 740px) {
+    #v3-canvas {
+      padding-bottom: 104px;
+    }
+    .l0-tiles {
+      margin-top: 48px;
+    }
+    .l0-darkcell {
+      margin-top: 48px;
+    }
+  }
+  @media (min-height: 800px) {
+    #v3-canvas {
+      padding-bottom: 112px;
+    }
+    .l0-tiles {
+      margin-top: 60px;
+    }
+    .l0-darkcell {
+      margin-top: 60px;
+    }
   }
 
   /* F3-03（测试 seq=1030 判据项 F3-03）：一次性入场 ≥2 —— 大标 draw-on 0.9s（02 册预算行字面）
@@ -1223,6 +1253,15 @@ body.home-onescreen > header [data-theme-toggle] {
   .ta-btn:hover {
     transform: translateY(var(--ty)) scale(1);
   }
+}
+/* ---- FB-8-2（站主 seq=1277 裁③「隐藏亮/暗切换，一直保持暗色」）：入口全隐，逻辑恒暗见
+     theme.ts / BaseLayout 预绘（SYNC:FORCE_DARK）。亮色 CSS 与组件 markup 零删除=全可逆
+     （恢复=删本块 + 翻三处 FORCE_DARK）；!important 兜底覆盖 .theme-arc flex 与 .tab-item 制式；
+     tab-bar 主题 li 摘除后余 4 枚 flex-1 自动等分（390→97.5px/格 ≥44 命中区达标） ---- */
+.theme-arc,
+[data-theme-toggle],
+.tab-bar .tab-item-theme {
+  display: none !important;
 }
 body.home-onescreen > header {
   position: relative;
@@ -1791,7 +1830,8 @@ html[data-theme='light'] body.home-onescreen > header::after {
 }
 
 /* ---- M-12 暗格条数翻牌（04 册 M-12）：每位数字 0-9 竖列，SSR 终值=base transform（无 JS/reduce 直读）；
-     进视口一跳由 view() entry 段 scrub（≈0.6s 行程），与 M-15 同族最前沿口径（D-1 放行） ---- */
+     FB-8-1（②2A）：view() 滚动驱动在一屏无滚动场景即刻 finished 后 Chromium 对 after 相隐式 to 帧
+     不重绘（d>0 列空白，现网实验闭环）→ 改时限 0.6s one-shot+显式 to 帧，delay 0.9s 对齐入场节拍 ---- */
 .dc-roll {
   display: inline-flex;
 }
@@ -1810,14 +1850,13 @@ html[data-theme='light'] body.home-onescreen > header::after {
   from {
     transform: translateY(0);
   }
+  to {
+    transform: translateY(calc(var(--d) * -1em));
+  }
 }
 @media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: view()) {
-    .dc-digit > i {
-      animation: dc-flip linear both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 35%;
-    }
+  .dc-digit > i {
+    animation: dc-flip 0.6s linear 0.9s both;
   }
 }
 

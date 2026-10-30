@@ -3,9 +3,17 @@ export const THEME_STORAGE_KEY = 'theme-mode';
 export const MODES = ['auto', 'light', 'dark'] as const;
 export type ThemeMode = (typeof MODES)[number];
 
+// FB-8-2（站主 seq=1277 裁③「隐藏亮/暗切换，一直保持暗色」）：恒暗单源标志。
+// SYNC:FORCE_DARK —— 本常量与 BaseLayout.astro 预绘脚本内联 FORCE_DARK、BaseLayout frontmatter
+// FORCE_DARK（⌘K 条目过滤）三处必须同值；置 false 即整体放开（亮色 CSS 零删除，全可逆）。
+// 口径：true 时不读取也不擦除 localStorage（放开后用户原偏好自动恢复）；
+// 入口隐藏见 global.css FB-8-2 节（.theme-arc / [data-theme-toggle] / .tab-item-theme）。
+export const FORCE_DARK = true;
+
 export const LABEL: Record<ThemeMode, string> = { auto: '跟随系统', light: '亮色', dark: '暗色' };
 
 export function getMode(): ThemeMode {
+  if (FORCE_DARK) return 'dark';
   try {
     const v = localStorage.getItem(THEME_STORAGE_KEY);
     if (v === 'light' || v === 'dark' || v === 'auto') return v;
@@ -26,6 +34,7 @@ function systemMode(): 'light' | 'dark' {
 }
 
 export function setMode(mode: ThemeMode): void {
+  if (FORCE_DARK) return; // SYNC:FORCE_DARK 双保险：入口已隐藏，任何残余触发（theme:cycle/旧引用）不改态
   applyMode(mode);
   try {
     localStorage.setItem(THEME_STORAGE_KEY, mode);
