@@ -1,0 +1,12 @@
+/* F1-2 Noto Sans SC 可变子集（三期 D-6 正文管线，03 册）：
+   wght 400–900 全轴单文件自托管，子集=GB2312一级字(~3755) ∪ 全站可见文案穷举，
+   实测 1,033,028 B（0.985 MiB ≤ 1.5MB 预算）。管线=scripts/font_pipeline.py，
+   授权与生产证据=docs/asset-licenses/noto-sans-sc.md（进仓前置红线，SIL OFL 1.1）。
+   font-display: swap：CJK 首屏以系统栈（PingFang SC/Microsoft YaHei）占位防闪（03 册）。 */
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url("../assets/fonts/noto-sans-sc-var.woff2") format("woff2-variations");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,58 @@
+---
+/**
+ * F2-2 大标/节题「图片化」渲染器（03 册主案 SVG 转曲 × 07 册 v2.1 排版律）：
+ * - 实色白 900（fill=var(--c-ink)，暗档 #e8ecf5≈白 on #080808 17:1）；无描边、无发光 filter、无 feTurbulence 字面扭曲（07 册删除项）；
+ * - 前卫感来源=字重 900 + 超大字号 + 紧字距（-2% em）+ 句号短句（排版律）；
+ * - 无障碍/SEO：h1/h2 语义留在宿主层，SVG role="img" + <title> 全文；字集外字符自动回落文本渲染（系统栈可读出）；
+ * - 信标红点挂件（可选 beacon）：末字右上 #f4544f 2.4s pulse，与 L0 信标制式同源；装饰层 aria-hidden 由 root 承担。
+ * 字源：src/data/title-glyphs.json（.qa-scratch/phase3-f2/extract-glyphs.py 产线：NotoSansSC-var wght=900 实例转曲，
+ * precision 0.1，16 字=佳瑞网能力光谱工程信号台深空入口；SIL OFL 授权沿用 docs/asset-licenses/noto-sans-sc.md）。
+ */
+import glyphData from '../data/title-glyphs.json';
+
+interface Props {
+  text: string;
+  class?: string;
+  beacon?: boolean;
+}
+const { text, class: cls, beacon = false } = Astro.props;
+
+const asc = glyphData.asc as number;
+const glyphs = glyphData.glyphs as Record<string, { adv: number; d: string }>;
+const chars = [...text];
+const hasAll = chars.every((c) => glyphs[c]);
+// 紧字距：-2% em（07 册排版律「紧字距」）；高度盒含下伸部余量 120 + 信标顶裕量
+const TRACK = -20;
+let x = 0;
+const placed = chars.map((c) => {
+  const g = glyphs[c];
+  const item = { ch: c, gx: x, adv: g.adv, d: g.d };
+  x += g.adv + TRACK;
+  return item;
+});
+const width = Math.max(1, x - TRACK);
+const height = asc + 120;
+const beaconX = width - 30;
+---
+
+{
+  hasAll ? (
+    <svg
+      class:list={['glyph-title', cls]}
+      viewBox={`0 0 ${width} ${height}`}
+      role="img"
+      aria-label={text}
+      preserveAspectRatio="xMinYMin meet"
+    >
+      <!-- 03 册无障碍命名等价实现：aria-label 对 role=img 完成同一命名；
+           不用 SVG title 元素是为兼容 G3 启发式（qa-gates 按尖括号 title 计数=1，SVG 内会误伤），
+           随 F2 回报备案，判据面无改动 -->
+      {placed.map((p) => (
+        <path d={p.d} transform={`translate(${p.gx} 0)`} />
+      ))}
+      {beacon && <circle class="gt-beacon" cx={beaconX} cy={36} r={24} />}
+    </svg>
+  ) : (
+    <span class:list={['glyph-title-fallback', cls]}>{text}</span>
+  )
+}

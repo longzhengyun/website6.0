@@ -41,6 +41,40 @@ export interface ChangelogEntry {
 
 export const changelog: ChangelogEntry[] = [
   {
+    version: 'v6.0 三期 · 信号场',
+    date: '2026-10-26 ~ 10-29（在途）',
+    theme: '首页视觉与动效大改版——近黑纸面编辑式排版 + 演示即内容，内页回归传统',
+    status: '合拢批执行中：F1/F2/F4/F3（主批+修正批）三方验收全通过，feat/phase3-signal-field 已推远端；本条目所列 commit 以合拢批合入 master 为核验前提（在途如实披露，非承诺日期）',
+    why: '站主 seq=841 拍板 B「信号场」+ 加强方向；seq=848 澄清范围总则——出格仅首页（D/M 双端）、内页回归传统沿用 token、/news 字号调小、新闻中文+北京时间；纯静态 GitHub Pages/无后端/无数据库红线不变。seq=895 否旧意向图后 seq=902 裁定对标 motion.dev 身份（v2.1=07 册），seq=922 方向门禁通过并修正瓦片为光影拼框（v2.2=08 册）。执行期两项裁断：F2-01 顶栏制式取 B 弧三点（seq=1003）、F3 修正批 7 项按测试复验与快核收口（seq=1033/1041/1058）。',
+    whySource: [
+      { label: '6b03ddf（F2-0 token 换轨 v2.1，07 册落地起点）', href: commitRef('6b03ddf') },
+      { label: 'fc30ccf（F1-02 素材档案 v1.1 口径，seq=971 裁定落点）', href: commitRef('fc30ccf') },
+    ],
+    what: [
+      '首页底色换轨 #080808 近黑纸面；黑白灰+信标红为页面唯一常驻色，六演示色只存在于演示瓦片与图表内（07 册面积律）；Noto Sans SC 可变子集自托管',
+      '大标「佳瑞网」图片化：实色白 900 SVG 转曲超大排版+信标红点挂件，无描边无发光；M 端一次性入场（draw-on 0.9s+瓦片 stagger，reduce/低端=静态首帧）',
+      'D 端首页滚动叙事四层：L0 安静 mesh 场层（峰值 alpha≤0.06 去粒子+grain）+演示瓦片（spring/timeline/手势，光影拼框光带呼吸）、L1 编辑式节题+滚动 scrub、L2 bento 演示墙（终端打字/vitals odometer/磁吸）、L3 深空入口+V2「静默数据带」环境带（自产 6s 无缝循环，可见性驱动播放）',
+      'M 端首页严格一屏（02 册预算表）：375×780/667 双轴零滚动、大标重心带 24–42%、tab-bar 五枚等分中文制式（首页/资讯/关于/主题/⌘K）、暗格命中 ≥44',
+      '导航 M-13 翻滚 hover、主题弧排三点+发丝线渐隐光带；内页（/news /about /changelog /resume/404）传统结构换 token 皮，/news 字号调小，新闻日期北京时间渲染',
+      'F4 视频全部自产（canvas 确定性管线+ffmpeg CRF31，首末帧差 ≤3/255 实测），授权证据归档 docs/asset-licenses/；V1 大标字内 mask 按「可选增强」评估后不启用登记（原型实测字腔对比度峰值仅 1.2:1，违「字仍读得出」硬条款）',
+    ],
+    evidence: [
+      { label: '4ba9d7f…25de7f5（F1 基座换皮批：token/字体/内页/北京时间）', href: commitRef('4ba9d7f') },
+      { label: 'a8ea4b1 / c2661b7（F4 自产证据归档+重产替换）', href: commitRef('a8ea4b1') },
+      { label: '6b03ddf…5d6b4f0（F2 主批六步：token 换轨/场层/大标/瓦片/演示墙/翻滚导航+L3）', href: commitRef('6b03ddf') },
+      { label: '3140242 / 93644f5 / 87f5ed0（F3 主批：走查修正+M 一屏上屏+顶栏弧三点）', href: commitRef('3140242') },
+      { label: 'f1e678b…ab7ed29（F3 修正批 7 项+重心连带，测试窄面回归 5/6→收口）', href: commitRef('ab7ed29') },
+      { label: '1fa9973（F3FIX-01 入场 session 级一次性）', href: commitRef('1fa9973') },
+      { label: 'be7c79b（V2 环境带进仓接 L3）', href: commitRef('be7c79b') },
+      { label: 'docs/asset-licenses/（V1/V2/字体自产证据）', href: fileRef('docs/asset-licenses') },
+    ],
+    next: [
+      '合拢批剩余项与全量回归、部署清单呈站主后进行现网验收与上线目检（条件，非承诺日期）',
+      'V1 字内 mask 若未来启用：需素材重产为 bright 题材或混合制式并重新设计裁定（评估结论已登记）',
+      '弧簇真机刘海余量、dvh 工具栏伸缩、~21MB 前置体量实测：站主上线目检项',
+    ],
+  },
+  {
     version: 'v6.0 二期 T2',
     date: '2026-10-28（在途）',
     theme: '首页叙事完成 + 站主实报三修——主色定案、导流行、画布、时间线、主题跨页修复、页脚适配、移动端首页一屏',

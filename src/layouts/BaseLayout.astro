@@ -2,6 +2,7 @@
 import { ClientRouter } from 'astro:transitions';
 import '@fontsource-variable/geist/index.css';
 import '@fontsource-variable/geist-mono/index.css';
+import '../styles/fonts.css';
 import '../styles/theme.css';
 import '../styles/global.css';
 import SiteHeader from '../components/SiteHeader.astro';
@@ -63,6 +64,15 @@ const paletteIndex = [
         el.dataset.themeMode = mode;
       })();
     </script>
+    <script is:inline>
+      // M-10 圆形扩散圆心（04 册）：任意指针按下即记录视口坐标 → --vt-x/--vt-y，
+      // 转场时新页快照从该点 clip-path circle 展开；无 JS=默认 50% 圆心（CSS fallback）
+      addEventListener('pointerdown', function (e) {
+        const s = document.documentElement.style;
+        s.setProperty('--vt-x', e.clientX + 'px');
+        s.setProperty('--vt-y', e.clientY + 'px');
+      }, { passive: true });
+    </script>
     <script>import '../scripts/theme'; import '../scripts/local-reactions';</script>
     <title>{title}</title>
     <meta name="description" content={desc} />
@@ -87,8 +97,9 @@ const paletteIndex = [
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
     <ClientRouter />
   </head>
-  <!-- R-FOOTER-1：sticky footer 骨架（flex 列 + main flex-1）；spine/TabBar 为 fixed 出流、CommandPalette 根 hidden，均不受影响 -->
-  <body class="min-h-screen flex flex-col antialiased">
+  <!-- R-FOOTER-1：sticky footer 骨架（flex 列 + main flex-1）；spine/TabBar 为 fixed 出流、CommandPalette 根 hidden，均不受影响
+      F3（02 册）：home-onescreen=M 首页一屏构成专用（顶栏 44 无底线、页脚由 tab-bar 接管底部） -->
+  <body class:list={['min-h-screen flex flex-col antialiased', oneScreen && 'home-onescreen']}>
     <a
       href="#main"
       class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-surface focus:border focus:border-line focus:px-4 focus:py-2"

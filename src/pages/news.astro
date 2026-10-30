@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import VitalsCard from '../components/VitalsCard.astro';
 import { site } from '../data/site';
 import { sortedItems, allTags } from '../data/news';
+import { beijingDateTime } from '../lib/date';
 ---
 
 <BaseLayout
@@ -49,21 +50,23 @@ import { sortedItems, allTags } from '../data/news';
                   target="_blank"
                   rel="noopener noreferrer"
                   data-news-key={item.fingerprint}
-                  class="news-card block p-5 sm:p-6"
+                  class="news-card block px-5 sm:px-6 py-4"
                 >
                   <div class="md:grid md:grid-cols-[3fr_1fr] md:gap-8">
                     <div class="min-w-0">
-                      <h2 class="t-h2 zh-title arrow-link">
+                      <h2 class="n-title arrow-link">
                         <span class="row-num t-label mr-3">{String(i + 1).padStart(2, '0')}/</span>
                         {item.title_zh}
                         <span class="arrow text-[0.7em]" aria-hidden="true">↗</span>
                       </h2>
-                      <p class="t-body text-ink-muted mt-2 clamp-2">{item.summary_zh}</p>
+                      <p class="n-summary text-ink-muted mt-2 clamp-2">{item.summary_zh}</p>
                     </div>
                     <div class="md:text-right mt-3 md:mt-0">
-                      <p class="t-label text-ink-muted">{item.published_at.slice(0, 10)}</p>
-                      <p class="t-label text-ink-muted mt-1 md:mt-3">{item.source_name}</p>
-                      <p class="t-label text-ink-muted mt-1 md:mt-3">
+                      <p class="n-meta t-label text-ink-muted">
+                        <time datetime={item.published_at}>{beijingDateTime(item.published_at)} 北京</time>
+                      </p>
+                      <p class="n-meta t-label text-ink-muted mt-1 md:mt-3">{item.source_name}</p>
+                      <p class="n-meta t-label text-ink-muted mt-1 md:mt-3">
                         {item.tags.map((t) => `#${t}`).join(' ')}
                       </p>
                     </div>
@@ -81,6 +84,24 @@ import { sortedItems, allTags } from '../data/news';
     </footer>
   </article>
 
+  <style>
+    /* F1-3 /news 字号调小（站主 seq=841 点名动作，05 册 §2）：
+       标题 0.9375rem(15px) / 摘要 0.8125rem(13px) / meta 0.75rem(12px)，行距 1.5 */
+    .n-title {
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      font-weight: 600;
+      color: var(--c-ink);
+    }
+    .n-summary {
+      font-size: 0.8125rem;
+      line-height: 1.5;
+    }
+    .n-meta {
+      font-size: 0.75rem;
+      line-height: 1.5;
+    }
+  </style>
   <script>
     const group = document.querySelector<HTMLElement>('[data-filter]');
     const items = [...document.querySelectorAll<HTMLElement>('[data-news-item]')];

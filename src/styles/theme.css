@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
-/* website6.0 设计 token —— 源：shared/website6.0-impl-design-spec.md v1.0 §2
+/* website6.0 设计 token —— 三期「信号场」定稿（源：shared/phase3-design-final-v2/README.md token 表
+   + 05-inner-pages-tokens.md §1 承接清单；站主 seq=841 D-1 拍板、seq=864 项目 F1 派单）。
+   二期源 spec：shared/website6.0-impl-design-spec.md v1.0 §2（legacy 变量保留致敬位）。
    三态主题（L-1）：auto 跟随系统 / light / dark，由 data-theme 显式覆写；
-   accent 每屏 ≤3 处；正文禁用朱红小字（亮色模式小字用 accent-ink-safe）。 */
+   accent（蓝）每屏 ≤3 处；--sig-red 信标红仅「活信号」语义位（心跳点/未读数/CTA 焦点），
+   正文小字禁直接取信标色（亮色信标 #e5484d on bg 仅 3.65:1，图形件 ≥3:1 达标即可）。 */
 
 @theme {
-  --font-sans: "Geist Variable", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC",
-    ui-sans-serif, sans-serif;
+  --font-sans: "Geist Variable", "Noto Sans SC", "PingFang SC", "Microsoft YaHei",
+    "Noto Sans CJK SC", ui-sans-serif, sans-serif;
   --font-mono: "Geist Mono Variable", "SF Mono", "Cascadia Code", ui-monospace, monospace;
 
   --color-bg: var(--c-bg);
@@ -18,7 +21,17 @@
   --color-accent: var(--c-accent);
   --color-accent-ink: var(--c-accent-ink);
   --color-accent-strong: var(--c-accent-strong);
+  --color-accent-text: var(--c-accent-text);
+  --color-signal: var(--c-signal);
+  --color-teal: var(--c-teal);
   --color-warn: var(--c-warn);
+  --color-demo-1: var(--c-demo-1);
+  --color-demo-2: var(--c-demo-2);
+  --color-demo-3: var(--c-demo-3);
+  --color-demo-4: var(--c-demo-4);
+  --color-demo-5: var(--c-demo-5);
+  --color-demo-6: var(--c-demo-6);
+  --color-tile: var(--c-tile);
 
   --breakpoint-sm: 425px;
   --breakpoint-md: 768px;
@@ -28,62 +41,102 @@
 }
 
 :root {
-  --c-bg: #fafaf8;
+  --c-bg: #f5f7fb;
   --c-surface: #ffffff;
-  --c-ink: #14161a;
-  --c-ink-muted: #5a5e66;
-  /* BUG-M4R-01 R-1：装饰档 ink-faint 加深至 AA 地板值（4.90:1@#FAFAF8 / 5.12:1@#fff） */
-  --c-ink-faint: #6a6e76;
-  --c-line: #e3e2de;
-  --c-accent: #e5484d;
+  --c-ink: #14181f;
+  --c-ink-muted: #5b6472;
+  /* 装饰档 ink-faint：AA 地板值（4.66:1@#f5f7fb / 5.00:1@#fff） */
+  --c-ink-faint: #68707c;
+  /* 描边=电蓝 12% 透明（05 册 §1：网格感保留，传统=允许对齐矩形） */
+  --c-line: rgba(47, 111, 237, 0.12);
+  /* 一期/二期主色朱红 → 三期电蓝（README 定稿：--sig-blue light #2563eb）。
+     文字位实测 4.82:1@bg / 5.17:1@surface ≥AA */
+  --c-accent: #2563eb;
   --c-accent-ink: #ffffff;
-  /* DESIGN.md §R-C3：实心 accent+白字 <18.66px bold 场景改用 accent-strong（fff 5.05:1） */
-  --c-accent-strong: #c93a3f;
+  /* R-C3：实心 accent+白字场景加深档（fff 6.70:1） */
+  --c-accent-strong: #1d4ed8;
+  /* 暗色档 accent 文字安全变体（#2f6fed on #0d1117 仅 4.16:1 <AA）：
+     亮色直接取 accent 即可（5.17:1），本变量仅 dark 覆写生效 */
+  --c-accent-text: var(--c-accent);
+  /* 信标红（--sig-red，W1 裁定由 #f2555a 演化）：仅活信号元素（图形件 3.65:1 ≥3 达标） */
+  --c-signal: #e5484d;
+  /* 数据高光/成功态（05 册：≤15% 面积；图形件 ≥3:1） */
+  --c-teal: #0d9488;
+  /* 玻璃层（--sig-glass，卡片专用；内页仅 hover 态与统计卡用） */
+  --c-glass: rgba(255, 255, 255, 0.55);
+  /* legacy 致敬位：二期朱红保留变量（当前无引用；站主 seq=422 主色史实可在档案层追溯） */
+  --c-accent-legacy: #e5484d;
   /* DESIGN.md §R-C6：--c-warn 双模式，亮色 #b45309（fff 5.02:1 / bg 4.81:1） */
   --c-warn: #b45309;
+  /* 演示专用六色（07 册 v2.1 --demo-1..6，色值参考 motion.dev 演示调色板身份，禁复制其用途）：
+     只允许出现在首页演示瓦片/演示墙/图表数据内部；页面底色、大标、正文、导航禁用。
+     黄 #fbd509 不做站点主 accent（佳瑞主色=蓝+信标红，§5 边界清单）。 */
+  --c-demo-1: #fbd509; /* 黄 · spring 演示 */
+  --c-demo-2: #52cd86; /* 绿 · 状态/成功演示 */
+  --c-demo-3: #3e98ff; /* 蓝 · timeline 演示 */
+  --c-demo-4: #a16ce5; /* 紫 · 手势路径演示 */
+  --c-demo-5: #f767c1; /* 粉 · 数据演示 */
+  --c-demo-6: #ff4945; /* 红 · 演示内警示位（非信标红） */
+  /* 哑光演示瓦片底（07 册：玻璃拟态退场；08 册：#141414 与 #080808 明度差承担 60% 形体可辨） */
+  --c-tile: #141414;
   color-scheme: light;
 }
 
 /* SYNC:dark —— 以下两个暗色块必须成对修改（L-1 三态：媒体查询回退 + 显式 data-theme） */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --c-bg: #0b0d11;
+    /* 三期底 v2.1（07 册）：#0d1117 → #080808 近黑纸面（编辑式审美地基，与 motion.dev 同档）。
+       面积律 v2.1 总律：页面底色与文字只用黑/白/灰 + 信标红点；--demo-1..6 六色只存在于
+       演示瓦片与图表数据内，禁上页面底色/大标/正文/导航。 */
+    --c-bg: #080808;
     --c-surface: #14171d;
-    --c-ink: #f2f3f0;
+    --c-ink: #e8ecf5;
+    /* F1-01 裁定（项目 seq=971 选 b）：正文语义位判据锚=二期 dark 实测 7.64:1（≥7 文字档组），
+       换皮批不得静默降档 → 回值 #9ba3af（#080808 上 7.87:1；surface 不动；light 档历史豁免不判缺陷） */
     --c-ink-muted: #9ba3af;
-    /* BUG-M4R-01 R-1：暗色装饰档加深（5.11:1@#0B0D11 / 4.71:1@#14171D） */
+    /* 装饰档（4.97:1@#0d1117 / 4.71:1@#14171d） */
     --c-ink-faint: #7b8394;
-    --c-line: #262b33;
-    /* T2 主色定案（站主 seq=422）：暗色 accent #ff7b81 → #f2555a（bg 5.76:1 / surface 5.32:1，
-       两档均 ≥AA 文字地板；DESIGN.md §36 备选档实测值沿用） */
-    --c-accent: #f2555a;
-    --c-accent-ink: #0b0d11;
-    /* S2（设计走查）：暗色 accent-strong 跟随暗色 accent #f2555a（原亮色派生 #c93a3f 脏红语义不合）。
-       注意：暗色下实心 accent 位文字须用 --c-accent-ink(#0b0d11)，白字在 #f2555a 上仅 ~3.4:1 不达标 */
-    --c-accent-strong: #f2555a;
-    /* DESIGN.md §R-C6：暗色 warn #ffa94d（bg 10.22:1 / surface 9.43:1） */
+    --c-line: rgba(47, 111, 237, 0.12);
+    /* 三期主色：暗色朱红 #f2555a → 电蓝 #2f6fed（波形主色/链接/面板描边）。
+       文字位改用 --c-accent-text（#6fa1ff，7.41:1）；本值用于描边/指示条/焦点环（图形件 ≥3:1 达标） */
+    --c-accent: #2f6fed;
+    --c-accent-ink: #ffffff;
+    --c-accent-strong: #2f6fed;
+    --c-accent-text: #6fa1ff;
+    /* 信标红暗档（图形件 5.61:1@bg / 5.32:1@surface；文字位亦 ≥AA） */
+    --c-signal: #f4544f;
+    --c-teal: #37d0c0;
+    --c-glass: rgba(13, 17, 23, 0.55);
+    --c-accent-legacy: #f2555a;
+    /* DESIGN.md §R-C6：暗色 warn #ffa94d（bg 9.94:1） */
     --c-warn: #ffa94d;
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --c-bg: #0b0d11;
+  --c-bg: #080808;
   --c-surface: #14171d;
-  --c-ink: #f2f3f0;
+  --c-ink: #e8ecf5;
+  /* F1-01 裁定（seq=971 选 b）：回值 #9ba3af，与上方媒体查询块成对（SYNC:dark） */
   --c-ink-muted: #9ba3af;
   --c-ink-faint: #7b8394;
-  --c-line: #262b33;
-  --c-accent: #f2555a;
-  --c-accent-ink: #0b0d11;
-  /* S2：与上方媒体查询暗色块成对（SYNC:dark），暗色 accent-strong = #f2555a（T2 主色定案 seq=422） */
-  --c-accent-strong: #f2555a;
+  --c-line: rgba(47, 111, 237, 0.12);
+  /* S2 制式沿用：暗色 accent-strong 跟随暗色 accent；实心位文字用 --c-accent-ink(#fff, 4.56:1) */
+  --c-accent: #2f6fed;
+  --c-accent-ink: #ffffff;
+  --c-accent-strong: #2f6fed;
+  --c-accent-text: #6fa1ff;
+  --c-signal: #f4544f;
+  --c-teal: #37d0c0;
+  --c-glass: rgba(13, 17, 23, 0.55);
+  --c-accent-legacy: #f2555a;
   --c-warn: #ffa94d;
   color-scheme: dark;
 }
 /* SYNC:dark-end */
 
-/* ---- 字号阶梯（M=375 基线 / D=≥768 覆写，spec §2.2）---- */
+/* ---- 字号阶梯（M=375 基线 / D=≥768 覆写，spec §2.2；内页制式不动）---- */
 .t-display {
   font-size: 3rem;
   line-height: 1.02;
@@ -145,13 +198,14 @@
   }
 }
 
-/* 中文标题字重上限（spec §2.2 注意） */
+/* 中文标题字重上限（spec §2.2 注意；三期 03 册：内页标题走 900 字重文本——
+   Noto Sans SC 可变子集入栈后 CJK 900 真实可渲染，上限解除） */
 .zh-title {
-  font-weight: 600;
+  font-weight: 900;
   line-height: 1.2;
 }
 
-/* ---- 版心与栅格（spec §2.4）---- */
+/* ---- 版心与栅格（spec §2.4；内页保 square 栅格，胶囊/blob 只属于首页）---- */
 .shell {
   width: 100%;
   margin-inline: auto;
