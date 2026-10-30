@@ -180,7 +180,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         </span>
       </a>
       <!-- F3-03（测试 seq=1030）：一次性入场闸——解析期同步判定 reduce/低端门禁
-           （阈值与 l0-tiles.ts isStaticMode 同口径 hc≤4‖dm≤4）；通过=置 data-l0-enter，
+           （阈值与 l0-tiles.ts isStaticMode 同口径 hc≤2‖dm≤2；FB-4=P4 站主 seq=1174 放宽）；通过=置 data-l0-enter，
            入场 CSS 只在 M 档 no-preference 生效（global.css F3-03 节）。
            门禁态/reduce=不置位=静态首帧制式；F3FIX-01=入场 session 级一次性
            （ sessionStorage 'l0-entered' 申领；SPA 回首页 l0-tiles.ts 仅未申领才重挂） -->
@@ -192,7 +192,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
             if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
             const hc = navigator.hardwareConcurrency;
             const dm = navigator.deviceMemory;
-            if ((typeof hc === 'number' && hc <= 4) || (typeof dm === 'number' && dm <= 4)) return;
+            if ((typeof hc === 'number' && hc <= 2) || (typeof dm === 'number' && dm <= 2)) return;
             let claim = true;
             try {
               claim = !sessionStorage.getItem('l0-entered');
@@ -228,7 +228,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <span class="l1-statement"><GlyphTitle text="动的信号。" /></span>
         <!-- 微型演示①=scrub 本体：方块旋转/进度点随滚动直读（M-15 演示即内容） -->
         <span class="l1-mini" aria-hidden="true">
-          <span class="scrub-box"></span>
+          <!-- FB-6 D：scrub-own=自主层包裹（spin 9s+pulse 4s 走独立 rotate/scale 属性，与内层 view() 直读 transform 正交叠加） -->
+          <span class="scrub-own"><span class="scrub-box"></span></span>
           <span class="scrub-rail"><span class="scrub-dot"></span></span>
           <span class="mini-cap">M-15 · view()</span>
         </span>
@@ -236,6 +237,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <div class="l1-caps">
         <svg class="l1-links" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true">
           <path pathLength="1" d="M70 160 L260 50 L470 175 L660 60 L900 140" />
+          <!-- FB-6 E：星座连线常驻光点（offset-path 同 d，3.2s 循环；两枚相位错半周期；
+               offset-path 不支持=display:none 隐藏降级，reduce=静） -->
+          <g class="link-dot ld1" aria-hidden="true"><circle class="ld-halo" r="10" /><circle class="ld-core" r="6" /></g>
+          <g class="link-dot ld2" aria-hidden="true"><circle class="ld-halo" r="10" /><circle class="ld-core" r="6" /></g>
         </svg>
         {
           caps.map((c) => (
@@ -296,11 +301,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <div class="cell cell-draw" data-cell data-edge="--c-demo-5">
           <svg class="draw-svg" viewBox="0 0 220 90" aria-hidden="true">
             <path pathLength="1" d="M8 70 C 60 10, 90 92, 130 44 S 200 18, 212 60" />
+            <!-- FB-6 F：终点光点（offset-path 同 d，随 draw-loop 6s 节拍；不支持=隐藏） -->
+            <circle class="draw-dot" r="4" aria-hidden="true" />
           </svg>
           <span class="cell-cap">draw-on · 路径描画</span>
         </div>
         <div class="cell cell-scrub" data-cell data-edge="--c-demo-3">
-          <span class="scrub-box big" aria-hidden="true"></span>
+          <span class="scrub-own"><span class="scrub-box big"></span></span>
           <span class="cell-cap">scrub · 滚动直读</span>
         </div>
         <div class="cell cell-magnet" data-cell data-edge="--c-demo-6">
@@ -334,6 +341,17 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           data-webm={`${base}/videos/V2-silent-band.webm`}
           data-mp4={`${base}/videos/V2-silent-band.mp4`}
         ></video>
+        <!-- FB-5（P3=L1 设计 §5）：V2 长窗存在感=DOM 装饰 overlay（不重渲视频、零新二进制、可全删不损信息）。
+             4 枚白/灰 1–2px 散点星 + 1 枚红信标 4px（4s alternate ±8% 慢移，中值 46%）；
+             reduce=星显、信标静停 46% 位（tl-head 制式）；随 figure 既有 aria-hidden 语义封闭 -->
+        <span class="l3-band-deco">
+          <i class="bd-star bs1"></i>
+          <i class="bd-star bs2"></i>
+          <i class="bd-star bs3"></i>
+          <i class="bd-star bs4"></i>
+          <i class="bd-beacon" aria-hidden="true"></i>
+        </span>
+        <span class="l3-band-label" aria-hidden="true">DEEP SPACE · 深空入口</span>
       </figure>
       <div class="l3-orbs">
         <a class="orb" href={`${base}/about`}>

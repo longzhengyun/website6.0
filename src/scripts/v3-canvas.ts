@@ -1,7 +1,7 @@
 /**
  * N-3 V3 画布客户端（rev1.1 §2；与 src/lib/v3-art.mjs 单源同几何——canvas 与无 JS SVG 同 seed 等价）。
  * 硬边界：默认 seed 0x5EED（SSR data-seed），?seed= 覆盖且刷新保持；D 端 ≤8s 入场逐段揭示后 rAF 全停；
- * reduce / 低端（hardwareConcurrency≤4 ‖ deviceMemory≤4）=终帧静图；M 端（<768）=静帧条零持续动画；
+ * reduce / 低端（hardwareConcurrency≤2 ‖ deviceMemory≤2；FB-4=P4 站主 seq=1174 放宽）=终帧静图；M 端（<768）=静帧条零持续动画；
  * regenerate=history.replaceState（不触 ClientRouter navigate）+ 同帧重绘（INP≤100ms）；astro:page-load 重初始化；
  * 配色经 getComputedStyle 实读 --c-accent（var 注入，零新 hex）；每帧绘制预算 ≤4ms（超预算自动降批不减总量）。
  * 设计口径「脚本 inlined 于首页」按「不进公共包」落实：模块仅首页引用 → vite 独立小 chunk，
@@ -91,8 +91,8 @@ function initOne(root: HTMLElement) {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const nav = navigator as Navigator & { deviceMemory?: number };
   const lowEnd =
-    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 4) ||
-    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 4);
+    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 2) ||
+    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 2);
   const animate = desktop && !reduce && !lowEnd;
 
   const { color, cap } = currentAccent();

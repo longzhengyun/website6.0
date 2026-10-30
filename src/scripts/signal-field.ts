@@ -1,19 +1,25 @@
 /**
  * F2-1 安静 mesh 场客户端（04 册 M-01 v2.1 改稿；配套 src/components/SignalField.astro）。
  * 硬边界：
- * - 峰值合成 alpha ≤0.06（07 册「亮度压到不可察觉」）；去粒子；流速减半（原 0.8px/f → 0.4px/f 制式）；
+ * - 峰值合成 alpha 双档（FB-5 设计 §5）：暗档 ≤0.06（三期已验收面不回退）；亮档「暗影场」≤0.09（硬上限 0.10）；去粒子；流速减半（原 0.8px/f → 0.4px/f 制式，两档同速）；
  * - 散点（F3-0 设计走查 seq=993 修正）：原「信标 3→1」红点与 03 册大标挂件构成 L0 双红点违例，
  *   本位降为白/灰静态散点（--c-ink-muted 实读，01 册散点语义，无呼吸/脉冲环），L0 唯一红点=大标挂件；
  * - seed：?seed= 覆盖（与 v3 同源 [/^[\w.-]{1,64}$/] 白名单），mulberry32(hashSeedStr(seed)) 派生三带相位/抖幅 → uniform，
  *   同 seed 同场可复现；regenerate 按钮（[data-v3-regen]）换 seed 后随 URL 重初始化；
  * - 颜色零新 hex：--c-accent（带色起点）/--c-teal（带色终点）/--c-ink-muted（散点）getComputedStyle 实读，三态主题翻转重绘；
- * - reduce / 低端（hardwareConcurrency≤4 ‖ deviceMemory≤4）/ M 端 = 单帧静图；D 档 rAF 常驻，页签隐藏停帧省电。
+ * - reduce / 低端（hardwareConcurrency≤2 ‖ deviceMemory≤2；FB-4=P4 站主 seq=1174 放宽）/ M 端 = 单帧静图；D 档 rAF 常驻，页签隐藏停帧省电。
  * 与 v3-canvas 同策略：仅首页引用 → 独立小 chunk，load/astro:page-load 后动态 import，不抢首屏带宽。
  */
 import { hashSeedStr, mulberry32 } from '../lib/v3-art.mjs';
 
 const MQ_DESK = '(min-width: 768px)';
-const ALPHA_CEIL = 0.06; // 三带合成总顶（07 册）
+/* FB-5（P3=L1，设计 §5/§8）：ALPHA_CEIL 单常量拆 data-theme 分支——
+   暗档峰值 0.06 保持（观感不回退=三期已验收面）；亮档「暗影场」峰值 0.09、硬上限 0.10 不得再抬。
+   合成方向亮档反转：带色压暗+去饱和（multiply 族观感），在白底上呈低饱和蓝青暗斑。散点不分支：
+   --c-ink-muted 亮档实读即 #5b6472 系灰、α=0.10 同值达标。流速两档同（0.02/s 制式不动）。 */
+const CEIL_DARK = 0.06;
+const CEIL_LIGHT = 0.09;
+const CEIL_HARD = 0.1;
 const BEACON = { x: 0.18, yTop: 0.64 }; // 01 册散点位（18vw, 64vh；原信标位，F3-0 起为灰散点）
 
 const VERT = `#version 300 es
@@ -31,6 +37,8 @@ uniform vec3 uBlue;
 uniform vec3 uTeal;
 uniform vec3 uScatter;  // 白/灰散点（--c-ink-muted 实读，非信标红）
 uniform vec2 uBeacon;    // uv（y 向上）
+uniform float uCeil;     // 合成总顶（暗 0.06 / 亮 0.09，硬上限 0.10）
+uniform float uLight;    // 1=亮档「暗影场」（带色压暗去饱和）0=暗档原制式
 out vec4 o;
 
 float hash21(vec2 p){
@@ -71,10 +79,13 @@ void main(){
     float glow = exp(-d * d / 0.0018);                       // 带核高斯衰减
     float shimmer = 0.65 + 0.35 * fbm(vec2(cx * 2.6, across * 9.0)); // 波形纹理
     float w = (0.05 - fj * 0.008) * glow * shimmer;          // 主带最亮，副带渐次
-    col += mix(uBlue, uTeal, clamp(along * 0.5 + 0.2 + fj * 0.13, 0.0, 1.0)) * w;
+    vec3 bc = mix(uBlue, uTeal, clamp(along * 0.5 + 0.2 + fj * 0.13, 0.0, 1.0));
+    // 亮档反转：压暗×0.38 + 灰蓝底抬升（低饱和暗斑）；暗档 uLight=0 恒等原值
+    bc = mix(bc, bc * 0.38 + vec3(0.09, 0.12, 0.15), uLight);
+    col += bc * w;
     aBand += w;
   }
-  if (aBand > ${ALPHA_CEIL.toFixed(2)}){ col *= ${ALPHA_CEIL.toFixed(2)} / aBand; aBand = ${ALPHA_CEIL.toFixed(2)}; }
+  if (aBand > uCeil){ col *= uCeil / aBand; aBand = uCeil; }
 
   // 散点（F3-0 seq=993 修正）：静态白/灰小点，无呼吸无脉冲环，不占 07 册「L0 唯一红点」额度；
   // 01 册散点语义=非信号源的构图呼吸件。亮度受 0.06 顶同族约束（≤0.10 观感级）。
@@ -172,6 +183,8 @@ function initOne(root: HTMLElement) {
     teal: u('uTeal'),
     scatter: u('uScatter'),
     beacon: u('uBeacon'),
+    ceil: u('uCeil'),
+    light: u('uLight'),
   };
 
   const seed = seedFromLocation() || root.getAttribute('data-seed') || '0x5EED';
@@ -186,6 +199,10 @@ function initOne(root: HTMLElement) {
   gl.uniform3fv(loc.teal, tokens.teal);
   gl.uniform3fv(loc.scatter, tokens.scatter);
   gl.uniform2f(loc.beacon, BEACON.x, 1 - BEACON.yTop);
+  // FB-5：data-theme 分支（MutationObserver 主题翻转即重跑 initOne，本读取恒为当前档）
+  const light = document.documentElement.getAttribute('data-theme') === 'light';
+  gl.uniform1f(loc.ceil, Math.min(light ? CEIL_LIGHT : CEIL_DARK, CEIL_HARD));
+  gl.uniform1f(loc.light, light ? 1 : 0);
 
   const draw = (t: number) => {
     gl.clear(gl.COLOR_BUFFER_BIT);
@@ -197,8 +214,8 @@ function initOne(root: HTMLElement) {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const nav = navigator as Navigator & { deviceMemory?: number };
   const lowEnd =
-    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 4) ||
-    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 4);
+    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 2) ||
+    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 2);
 
   canvas.classList.add('sf-on');
 
@@ -241,8 +258,8 @@ function bindL3Band() {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const nav = navigator as Navigator & { deviceMemory?: number };
   const lowEnd =
-    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 4) ||
-    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 4);
+    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 2) ||
+    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 2);
   if (reduce || lowEnd) return;
   const src = video.canPlayType('video/webm;codecs=vp9') ? video.dataset.webm : video.dataset.mp4;
   bandIO = new IntersectionObserver(

@@ -537,8 +537,10 @@ html[data-enhanced] .chip-row.enhanced-only {
 }
 
 /* R-MHOME-1 兜底护栏（判据① scrollW==innerWidth 防横向回归）：
-   clip 不生成滚动容器、不破坏 sticky、也不掩盖纵向超高（scrollH 检查仍会暴露实际问题） */
-html {
+   clip 不生成滚动容器、不破坏 sticky、也不掩盖纵向超高（scrollH 检查仍会暴露实际问题）
+   FB-2(R3)：body 同加 clip 双保险——版心封顶后仍防未来单点溢出形成水平滚动手感 */
+html,
+body {
   overflow-x: clip;
 }
 .v3-canvas {
@@ -595,11 +597,13 @@ html {
 .sf-canvas.sf-on {
   opacity: 1;
 }
-/* feTurbulence 细噪点 grain（07 册「叠细噪点 grain」；构造级=内联 data URI，零二进制资产） */
+/* feTurbulence 细噪点 grain（07 册「叠细噪点 grain」；构造级=内联 data URI，零二进制资产；
+   FB-5 设计 §5：双档变量化——噪点强度由 --sf-grain-a 承担（暗 0.05/亮 0.07），URI 内 rect 恒 1 */
 .sf-grain {
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  opacity: var(--sf-grain-a, 0.05);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
   background-repeat: repeat;
 }
 /* 无 JS / WebGL 缺失降级列：近黑纸面一层静态呼吸（04 册 M-01 降级形态=poster 渐变场，非位图；
@@ -653,9 +657,10 @@ html {
 }
 
 /* ---- F2-2 D 端 L0 大标摆位（01 册：占位 12–54vw 宽 42vw、-3° 斜置；副标 +1.5° 细体）----
-   L0 绝对舞台由 F2-3 接管后改挂 stage 坐标；本批=流内摆位先行，D-only（M 端制式不动） */
+   L0 绝对舞台由 F2-3 接管后改挂 stage 坐标；本批=流内摆位先行，D-only（M 端制式不动）
+   FB-1(P1=B)：D 档比例件 vw→cqw 等值机械换算（占位），终稿数值待设计重校表回填 */
 .hero-title-d {
-  width: min(42vw, 620px);
+  width: min(47.25cqw, 620px);
   transform: rotate(-3deg);
 }
 .hero-jary-sign {
@@ -668,6 +673,73 @@ html {
   display: none;
 }
 
+/* FB-6 C（P2 站主项「让信号穿越噪声」）：hero 副标信号扫掠层——160px 渐变遮罩
+   （transparent→demo-3 18%→transparent）每 5.6s 左→右划过一次（划过段 1.4s=周期 25%），
+   扫掠窗口内副标做 ±0.5px 双位 text-shadow 微抖（叙事=信号亮带穿过噪声）。
+   纯装饰 ::before/::after（伪元素天然不入 a11y 树），SSR 文案与 reduce 静帧制式不动；D-only。 */
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .hero-sub-d {
+    overflow: hidden;
+  }
+  .hero-sub-d::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -160px;
+    width: 160px;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--c-demo-3) 18%, transparent), transparent);
+    animation: hc-sweep 5.6s linear infinite;
+  }
+  .hero-sub-d {
+    animation: hc-noise 5.6s linear infinite;
+  }
+}
+@keyframes hc-sweep {
+  0% {
+    left: -160px;
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 1;
+  }
+  25% {
+    left: calc(100% + 160px);
+    opacity: 0;
+  }
+  100% {
+    left: calc(100% + 160px);
+    opacity: 0;
+  }
+}
+@keyframes hc-noise {
+  0%,
+  24%,
+  100% {
+    text-shadow: none;
+  }
+  7% {
+    text-shadow:
+      0.5px -0.5px 0 color-mix(in srgb, var(--c-demo-3) 55%, transparent),
+      -0.5px 0.5px 0 color-mix(in srgb, var(--c-demo-5) 45%, transparent);
+  }
+  11% {
+    text-shadow: none;
+  }
+  15% {
+    text-shadow:
+      -0.5px 0.5px 0 color-mix(in srgb, var(--c-demo-3) 55%, transparent),
+      0.5px -0.5px 0 color-mix(in srgb, var(--c-demo-5) 45%, transparent);
+  }
+  18% {
+    text-shadow: none;
+  }
+}
+
 /* ---- F2-3 D 端 L0 舞台（01 册 L0：大标+副行+三演示瓦片+D-3 暗格同层斜置拼贴）----
    hero section 升为 100svh 绝对舞台（仅 D 档）；M 端流内制式一律不动（F3 另案）。
    摆位口径：大标 12vw/30vh（-3° 在 .hero-title-d 层）、轮播 tagline 挂大标下 12.5vw/56vh、
@@ -676,7 +748,7 @@ html {
 @media (min-width: 768px) {
   .hero-sub-d {
     position: absolute;
-    left: 12.5vw;
+    left: 12.2cqw;
     top: 72vh;
     margin-top: 0;
     display: block;
@@ -688,12 +760,12 @@ html {
   }
   .l0-title {
     position: absolute;
-    left: 12vw;
+    left: 11.6cqw;
     top: 30vh;
   }
   .tagline-line {
     position: absolute;
-    left: 12.5vw;
+    left: 12.2cqw;
     top: 56vh;
     margin-top: 0;
   }
@@ -722,23 +794,23 @@ html {
     overflow: hidden; /* 光带 blur 与 canvas 圆角裁切同层 */
   }
   .l0-tile-spring {
-    left: 55vw;
+    left: 60cqw;
     top: 12vh;
-    width: 34vw;
+    width: 38.25cqw;
     height: 26vh;
     transform: rotate(-4deg);
   }
   .l0-tile-timeline {
-    left: 70vw;
+    left: 71cqw; /* FB-2 重校（设计 §2）：纯换算 76.9 会压出容器，左收进版心 */
     top: 36vh;
-    width: 24vw;
+    width: 26cqw;
     height: 24vh;
     transform: rotate(6deg);
   }
   .l0-tile-gesture {
-    left: 56vw;
+    left: 61.1cqw;
     top: 60vh;
-    width: 30vw;
+    width: 33.75cqw;
     height: 28vh;
     transform: rotate(2deg);
   }
@@ -840,7 +912,7 @@ html {
   .l0-darkcell {
     display: inline-flex;
     position: absolute;
-    left: 4vw;
+    left: 2.6cqw;
     top: 88vh;
     align-items: baseline;
     gap: 0.6rem;
@@ -1066,7 +1138,7 @@ html[data-enhanced] body.home-onescreen .theme-arc {
   align-items: flex-start;
   gap: 2px;
   margin-left: auto; /* M 端（nav 组隐藏）贴右；D 端改固定间距（下方 media），避免双 auto margin 均分把导航拉回居中 */
-  transform: rotate(-3deg);
+  transform: rotate(-1.5deg); /* FB-3(P5=c)：-3°→-1.5°，配合端点 ty 重算消除 ◐ 净抬 5.4px 脱线 */
 }
 @media (min-width: 768px) {
   html[data-enhanced] body.home-onescreen .theme-arc {
@@ -1106,9 +1178,21 @@ body.home-onescreen > header [data-theme-toggle] {
     transform 180ms cubic-bezier(0.22, 1.2, 0.36, 1),
     color 120ms ease-out;
 }
-.ta-btn:nth-child(1),
+/* FB-3(P5=c) 端点 ty 重算（设计终稿 §6，替代 FB-1 的 ±46px 键臂口径）：
+   FB-5 修正：§6 假设端点距簇心 ±68px（贡献 ±1.8px），实测布局=3×44px+2×2px gap → 臂长 ±46px、
+   旋转纵向贡献 ±46×sin1.5°≈±1.2px（探针 W1920 实测左右 cy 差 1.19px > FB-T-01 判据 0.5px）。
+   设计目标「对称浅弧 −3/0/−3」不变，按实际臂长重算：左 −4.2 / 中 0 / 右 −1.8。
+   自验项：端点顶边实测 <1px 时整簇 margin-top +2px（不改弧值）——实测 ≥2.4px，不触发。 */
+.ta-btn:nth-child(1) {
+  --ty: -4.2px;
+}
 .ta-btn:nth-child(3) {
-  --ty: -3px;
+  --ty: -1.8px;
+}
+.ta-btn svg {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 .ta-btn:hover {
   color: var(--c-ink);
@@ -1163,6 +1247,8 @@ html[data-theme='light'] body.home-onescreen > header::after {
 .l1-sec {
   margin-top: 14vh;
 }
+/* FB-2（设计 §3-1 不动族）：min(xvw,cap)/clamp 封顶族全部保持 vw——已封顶不属
+   「vw×居中版心」bug 类；换算 cqw 会破坏 768–1199 平板带流式。以下 8 处维持原 vw。 */
 .l1-glyph {
   width: min(28vw, 400px);
   transform: rotate(-2deg);
@@ -1226,6 +1312,25 @@ html[data-theme='light'] body.home-onescreen > header::after {
   border-radius: 50%;
   background: var(--c-demo-1);
 }
+/* FB-6 D：自主层包裹——rotate/scale 独立属性走时间线（spin 9s + pulse 4s），
+   与内层 .scrub-box 的 view() 直读 transform 正交叠加=双层合成；不支持独立变换属性=静置（无感） */
+.scrub-own {
+  display: grid;
+  place-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+/* FB-6 E：连线光点默认隐藏，@supports(offset-path) 且 no-preference 才显形常驻 */
+.l1-links .link-dot {
+  display: none;
+}
+.l1-links .ld-core {
+  fill: var(--c-ink);
+}
+.l1-links .ld-halo {
+  fill: var(--c-accent-text);
+  opacity: 0.32;
+}
 .l1-links {
   position: absolute;
   inset: -10% 0;
@@ -1287,19 +1392,6 @@ html[data-theme='light'] body.home-onescreen > header::after {
         transform: rotate(150deg) scale(1.08);
       }
     }
-    .scrub-dot {
-      animation: scrub-run linear both;
-      animation-timeline: view();
-      animation-range: entry 10% cover 70%;
-    }
-    @keyframes scrub-run {
-      from {
-        left: 0;
-      }
-      to {
-        left: calc(100% - 10px);
-      }
-    }
     .l1-links path {
       stroke-dasharray: 1;
       stroke-dashoffset: 1;
@@ -1313,11 +1405,65 @@ html[data-theme='light'] body.home-onescreen > header::after {
       }
     }
   }
+  /* FB-6 D：轨道点常驻自主往返（2.8s alternate ease-in-out，不绑 view()——
+     不支持 view() 的引擎=只剩自主层，降级面更全）；left 基值 62% 保留为 reduce/无 JS 静位 */
+  .scrub-dot {
+    animation: dot-shuttle 2.8s ease-in-out infinite alternate;
+  }
+  @keyframes dot-shuttle {
+    from {
+      left: 0;
+    }
+    to {
+      left: calc(100% - 10px);
+    }
+  }
+  /* FB-6 D：色块自主层（内层 view() 直读 transform 不动，rotate/scale 独立属性正交叠加） */
+  .scrub-own {
+    animation:
+      own-spin 9s linear infinite,
+      own-pulse 4s ease-in-out infinite;
+  }
+  @keyframes own-spin {
+    to {
+      rotate: 1turn;
+    }
+  }
+  @keyframes own-pulse {
+    0%,
+    100% {
+      scale: 0.9;
+    }
+    50% {
+      scale: 1;
+    }
+  }
+  @supports (offset-path: path("M0 0 L1 1")) {
+    /* FB-6 E：连线常驻光点（同 d 的 CSS Motion Path，viewBox 用户单位；两枚相位错半周期） */
+    .l1-links .link-dot {
+      display: block;
+      offset-path: path("M70 160 L260 50 L470 175 L660 60 L900 140");
+      offset-rotate: 0deg;
+      animation: link-run 3.2s linear infinite;
+    }
+    .l1-links .ld2 {
+      animation-delay: -1.6s;
+    }
+    @keyframes link-run {
+      from {
+        offset-distance: 0%;
+      }
+      to {
+        offset-distance: 100%;
+      }
+    }
+  }
 }
 
 /* ==== F2-4 L2 演示墙（07 册 bento：宽/高/旋转卡各≥1；案 B 边缘光=WallField shader 覆盖层）==== */
+/* FB-2(R2)：margin 简写会吞掉 .shell 的 margin-inline:auto（L2/L3 整段左锚根因），改 margin-block 让回水平居中 */
 .l2-sec {
-  margin: 16vh 0 12vh;
+  margin-block: 16vh 12vh;
 }
 .l2-glyph {
   width: min(32vw, 460px);
@@ -1517,6 +1663,11 @@ html[data-theme='light'] body.home-onescreen > header::after {
   background: var(--c-demo-6);
   transform: translate(-50%, -50%) translate(var(--bx, 0px), var(--by, 0px));
 }
+/* FB-6 F：draw-on 终点光点默认隐藏（reduce/无 JS/不支持 offset-path=不可见静制式） */
+.draw-dot {
+  display: none;
+  fill: var(--c-demo-5);
+}
 @media (prefers-reduced-motion: no-preference) {
   .stg i {
     animation: stg-rise 2.4s ease-in-out infinite;
@@ -1577,6 +1728,34 @@ html[data-theme='light'] body.home-onescreen > header::after {
       animation: scrub-spin linear both;
       animation-timeline: view();
       animation-range: entry 30% cover 75%;
+    }
+  }
+  @supports (offset-path: path("M0 0 L1 1")) {
+    /* FB-6 F：终点光点随 draw-loop 节拍——0-45% 沿路径行至末端、45-60% 停驻发光、60-100% 淡出回位 */
+    .draw-dot {
+      display: block;
+      offset-path: path("M8 70 C 60 10, 90 92, 130 44 S 200 18, 212 60");
+      offset-rotate: 0deg;
+      animation: draw-tip 6s ease-in-out infinite;
+    }
+    @keyframes draw-tip {
+      0% {
+        offset-distance: 0%;
+        opacity: 1;
+      }
+      45% {
+        offset-distance: 100%;
+        opacity: 1;
+      }
+      60% {
+        offset-distance: 100%;
+        opacity: 0.2;
+      }
+      70%,
+      100% {
+        offset-distance: 100%;
+        opacity: 0;
+      }
     }
   }
 }
@@ -1647,7 +1826,7 @@ html[data-theme='light'] body.home-onescreen > header::after {
      V2 环境带=合拢批 H3 进仓（06 册替换稿「静默数据带」，长窗制式见 .l3-band）；
      视差 0.6x=scroll(root) 位移近似（内容 1x 时本层慢速漂移） ---- */
 .l3-sec {
-  margin: 18vh 0 12vh;
+  margin-block: 18vh 12vh; /* FB-2(R2)：同 L2，禁 margin 简写吞居中 */
 }
 .l3-glyph {
   width: min(30vw, 430px);
@@ -1658,13 +1837,86 @@ html[data-theme='light'] body.home-onescreen > header::after {
    降级链：无 JS / reduce / 低端（signal-field.ts 不注 src）=poster webp 静帧；
    进屏注流播放、离屏 pause（省电）；自动播放被拦=保持 poster。 */
 .l3-band {
+  position: relative; /* FB-5：overlay 装饰层包含块 */
   margin: 4.5vh auto 0;
   width: min(64vw, 1080px);
   height: clamp(120px, 15vw, 208px);
   border-radius: 999px;
   overflow: hidden;
   opacity: 0.9;
-  box-shadow: inset 0 0 0 1px rgba(232, 236, 245, 0.05);
+  /* FB-5（设计 §5）：窗框描边显影双档（暗 0.05→0.10 抬亮、亮 rgba(20,24,31,0.14)），值走 --band-line */
+  box-shadow: inset 0 0 0 1px var(--band-line, rgba(232, 236, 245, 0.1));
+}
+/* FB-5 V2 长窗存在感装饰层（不重渲视频）：散点星+红信标+mono 小标；全删不损信息 */
+.l3-band-deco {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.bd-star {
+  position: absolute;
+  border-radius: 50%;
+}
+.bs1 {
+  left: 14%;
+  top: 30%;
+  width: 1px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.85);
+}
+.bs2 {
+  left: 31%;
+  top: 64%;
+  width: 2px;
+  height: 2px;
+  background: rgba(155, 163, 175, 0.85);
+}
+.bs3 {
+  left: 58%;
+  top: 26%;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.75);
+}
+.bs4 {
+  left: 79%;
+  top: 58%;
+  width: 1px;
+  height: 1px;
+  background: rgba(155, 163, 175, 0.9);
+}
+/* 红信标=活信号语义位（D-4 口径）：4s alternate ±8% 慢移，基位即 reduce 静停位 46%（tl-head 制式） */
+.bd-beacon {
+  position: absolute;
+  left: 46%;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--c-signal);
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes bd-drift {
+    from {
+      left: 38%;
+    }
+    to {
+      left: 54%;
+    }
+  }
+  .bd-beacon {
+    animation: bd-drift 4s ease-in-out infinite alternate;
+  }
+}
+.l3-band-label {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  pointer-events: none; /* FB-6（测试 FB-G-05 裁②）：纯装饰小标不入交互/无障碍树 */
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--band-label, rgba(232, 236, 245, 0.65));
 }
 .l3-band-v {
   display: block;
@@ -1705,6 +1957,21 @@ html[data-theme='light'] body.home-onescreen > header::after {
   height: 6px;
   border-radius: 50%;
   background: var(--c-signal);
+}
+/* FB-5（设计 §5）：三圆入口红点呼吸 7s/0.18 → 5s/0.30（α 1↔0.7）；reduce=静点不呼吸 */
+@keyframes orb-dot-breathe {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .orb-dot {
+    animation: orb-dot-breathe 5s ease-in-out infinite;
+  }
 }
 .orb-zh {
   font-size: 1.375rem;

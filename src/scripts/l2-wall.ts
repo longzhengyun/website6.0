@@ -23,8 +23,8 @@ function isStaticMode(): boolean {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const nav = navigator as Navigator & { deviceMemory?: number };
   const lowEnd =
-    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 4) ||
-    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 4);
+    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 2) ||
+    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 2);
   return reduce || lowEnd;
 }
 
@@ -300,8 +300,14 @@ function initMagnet(cells: HTMLElement[], wf: WF | null, staticMode: boolean): M
   if (staticMode) return { cancel: () => {} };
   const state = cells.map((el) => ({ el, tx: 0, ty: 0, cx: 0, cy: 0, i: 0 }));
   const ball = document.querySelector<HTMLElement>('.mag-ball');
+  const magCell = cells.find((c) => c.classList.contains('cell-magnet')) || null;
   let ballT = { x: 0, y: 0 };
   const ballC = { x: 0, y: 0 };
+  // FB-6 F：磁吸格红球自主 Lissajous 慢漂（±8% 格宽/格高，8s 整频循环）——指针静默 1.6s 后接管，
+  // 磁吸优先级不变（回到格内即切回指针目标）；挂进既有 loop=零新增常驻 rAF
+  const ballT0 = performance.now();
+  let magActive = -10000;
+  let magRect: DOMRect | null = magCell ? magCell.getBoundingClientRect() : null;
   let raf = 0;
   cells.forEach((el, idx) => {
     el.addEventListener('pointerenter', () => {
@@ -315,6 +321,7 @@ function initMagnet(cells: HTMLElement[], wf: WF | null, staticMode: boolean): M
       s.tx = Math.max(-1, Math.min(1, dx)) * MAG_MAX;
       s.ty = Math.max(-1, Math.min(1, dy)) * MAG_MAX;
       if (ball && el.classList.contains('cell-magnet')) {
+        magActive = performance.now();
         ballT = { x: Math.max(-1, Math.min(1, dx)) * r.width * 0.3, y: Math.max(-1, Math.min(1, dy)) * r.height * 0.3 };
       }
     });
@@ -335,6 +342,14 @@ function initMagnet(cells: HTMLElement[], wf: WF | null, staticMode: boolean): M
       s.el.style.setProperty('--my', `${s.cy.toFixed(2)}px`);
     }
     if (ball) {
+      const now = performance.now();
+      if (magRect && now - magActive > 1600) {
+        const u = ((now - ballT0) / 8000) % 1;
+        ballT = {
+          x: Math.sin(u * Math.PI * 2) * magRect.width * 0.08,
+          y: Math.sin(u * Math.PI * 4 + 1) * magRect.height * 0.08,
+        };
+      }
       ballC.x += (ballT.x - ballC.x) * 0.14;
       ballC.y += (ballT.y - ballC.y) * 0.14;
       ball.style.setProperty('--bx', `${ballC.x.toFixed(2)}px`);
