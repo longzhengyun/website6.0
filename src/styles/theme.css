@@ -47,8 +47,9 @@
   --c-ink-muted: #5b6472;
   /* 装饰档 ink-faint：AA 地板值（4.66:1@#f5f7fb / 5.00:1@#fff） */
   --c-ink-faint: #68707c;
-  /* 描边=电蓝 12% 透明（05 册 §1：网格感保留，传统=允许对齐矩形） */
-  --c-line: rgba(47, 111, 237, 0.12);
+  /* FB-5（P3=L1 设计 §5）：亮档描边 0.12→0.18，accent 基 rgba(37,99,235,…)；
+     装饰线非文字无对比度判据；暗档 0.12 两处不动（SYNC:dark 成对块） */
+  --c-line: rgba(37, 99, 235, 0.18);
   /* 一期/二期主色朱红 → 三期电蓝（README 定稿：--sig-blue light #2563eb）。
      文字位实测 4.82:1@bg / 5.17:1@surface ≥AA */
   --c-accent: #2563eb;
@@ -79,6 +80,11 @@
   --c-demo-6: #ff4945; /* 红 · 演示内警示位（非信标红） */
   /* 哑光演示瓦片底（07 册：玻璃拟态退场；08 册：#141414 与 #080808 明度差承担 60% 形体可辨） */
   --c-tile: #141414;
+  /* FB-5（P3=L1 设计 §5）：grain 双档变量化——亮档 0.05→0.07，暗档 0.05 不动 */
+  --sf-grain-a: 0.07;
+  /* FB-5 V2 长窗：描边显影双档（亮 rgba(20,24,31,0.14)）+ mono 小标（亮=ink 65%） */
+  --band-line: rgba(20, 24, 31, 0.14);
+  --band-label: rgba(20, 24, 31, 0.65);
   color-scheme: light;
 }
 
@@ -110,6 +116,9 @@
     --c-accent-legacy: #f2555a;
     /* DESIGN.md §R-C6：暗色 warn #ffa94d（bg 9.94:1） */
     --c-warn: #ffa94d;
+    --sf-grain-a: 0.05;
+    --band-line: rgba(232, 236, 245, 0.1);
+    --band-label: rgba(232, 236, 245, 0.65);
     color-scheme: dark;
   }
 }
@@ -132,6 +141,10 @@
   --c-glass: rgba(13, 17, 23, 0.55);
   --c-accent-legacy: #f2555a;
   --c-warn: #ffa94d;
+  /* FB-5 grain 双档：与媒体查询暗块成对（SYNC:dark） */
+  --sf-grain-a: 0.05;
+  --band-line: rgba(232, 236, 245, 0.1);
+  --band-label: rgba(232, 236, 245, 0.65);
   color-scheme: dark;
 }
 /* SYNC:dark-end */

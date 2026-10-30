@@ -597,11 +597,13 @@ body {
 .sf-canvas.sf-on {
   opacity: 1;
 }
-/* feTurbulence 细噪点 grain（07 册「叠细噪点 grain」；构造级=内联 data URI，零二进制资产） */
+/* feTurbulence 细噪点 grain（07 册「叠细噪点 grain」；构造级=内联 data URI，零二进制资产；
+   FB-5 设计 §5：双档变量化——噪点强度由 --sf-grain-a 承担（暗 0.05/亮 0.07），URI 内 rect 恒 1 */
 .sf-grain {
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  opacity: var(--sf-grain-a, 0.05);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
   background-repeat: repeat;
 }
 /* 无 JS / WebGL 缺失降级列：近黑纸面一层静态呼吸（04 册 M-01 降级形态=poster 渐变场，非位图；
@@ -1675,13 +1677,85 @@ html[data-theme='light'] body.home-onescreen > header::after {
    降级链：无 JS / reduce / 低端（signal-field.ts 不注 src）=poster webp 静帧；
    进屏注流播放、离屏 pause（省电）；自动播放被拦=保持 poster。 */
 .l3-band {
+  position: relative; /* FB-5：overlay 装饰层包含块 */
   margin: 4.5vh auto 0;
   width: min(64vw, 1080px);
   height: clamp(120px, 15vw, 208px);
   border-radius: 999px;
   overflow: hidden;
   opacity: 0.9;
-  box-shadow: inset 0 0 0 1px rgba(232, 236, 245, 0.05);
+  /* FB-5（设计 §5）：窗框描边显影双档（暗 0.05→0.10 抬亮、亮 rgba(20,24,31,0.14)），值走 --band-line */
+  box-shadow: inset 0 0 0 1px var(--band-line, rgba(232, 236, 245, 0.1));
+}
+/* FB-5 V2 长窗存在感装饰层（不重渲视频）：散点星+红信标+mono 小标；全删不损信息 */
+.l3-band-deco {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.bd-star {
+  position: absolute;
+  border-radius: 50%;
+}
+.bs1 {
+  left: 14%;
+  top: 30%;
+  width: 1px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.85);
+}
+.bs2 {
+  left: 31%;
+  top: 64%;
+  width: 2px;
+  height: 2px;
+  background: rgba(155, 163, 175, 0.85);
+}
+.bs3 {
+  left: 58%;
+  top: 26%;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.75);
+}
+.bs4 {
+  left: 79%;
+  top: 58%;
+  width: 1px;
+  height: 1px;
+  background: rgba(155, 163, 175, 0.9);
+}
+/* 红信标=活信号语义位（D-4 口径）：4s alternate ±8% 慢移，基位即 reduce 静停位 46%（tl-head 制式） */
+.bd-beacon {
+  position: absolute;
+  left: 46%;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--c-signal);
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes bd-drift {
+    from {
+      left: 38%;
+    }
+    to {
+      left: 54%;
+    }
+  }
+  .bd-beacon {
+    animation: bd-drift 4s ease-in-out infinite alternate;
+  }
+}
+.l3-band-label {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--band-label, rgba(232, 236, 245, 0.65));
 }
 .l3-band-v {
   display: block;
@@ -1722,6 +1796,21 @@ html[data-theme='light'] body.home-onescreen > header::after {
   height: 6px;
   border-radius: 50%;
   background: var(--c-signal);
+}
+/* FB-5（设计 §5）：三圆入口红点呼吸 7s/0.18 → 5s/0.30（α 1↔0.7）；reduce=静点不呼吸 */
+@keyframes orb-dot-breathe {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .orb-dot {
+    animation: orb-dot-breathe 5s ease-in-out infinite;
+  }
 }
 .orb-zh {
   font-size: 1.375rem;

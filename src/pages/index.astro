@@ -334,6 +334,17 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           data-webm={`${base}/videos/V2-silent-band.webm`}
           data-mp4={`${base}/videos/V2-silent-band.mp4`}
         ></video>
+        <!-- FB-5（P3=L1 设计 §5）：V2 长窗存在感=DOM 装饰 overlay（不重渲视频、零新二进制、可全删不损信息）。
+             4 枚白/灰 1–2px 散点星 + 1 枚红信标 4px（4s alternate ±8% 慢移，中值 46%）；
+             reduce=星显、信标静停 46% 位（tl-head 制式）；随 figure 既有 aria-hidden 语义封闭 -->
+        <span class="l3-band-deco">
+          <i class="bd-star bs1"></i>
+          <i class="bd-star bs2"></i>
+          <i class="bd-star bs3"></i>
+          <i class="bd-star bs4"></i>
+          <i class="bd-beacon"></i>
+        </span>
+        <span class="l3-band-label">DEEP SPACE · 深空入口</span>
       </figure>
       <div class="l3-orbs">
         <a class="orb" href={`${base}/about`}>
