@@ -970,27 +970,30 @@ body {
     letter-spacing: 0.24em;
     margin-top: 0.4rem;
   }
-  /* 副标：预算第 3 行 26px（1.125rem）+1.5°，大标右下叠压 12px */
+  /* 副标：预算第 3 行 26px（1.125rem）+1.5°，大标右下叠压 12px
+     FB-8-3（①选项 A，站主 seq=1292 裁定）：叠压 -12→-6 行距放宽一档 */
   .hero-sub-d {
     display: block;
     width: max-content;
     margin-left: auto;
     margin-right: 4vw;
-    margin-top: -12px;
+    margin-top: -6px;
     font-size: 1.125rem;
     letter-spacing: 0.35em;
     color: var(--c-ink-muted);
     transform: rotate(1.5deg);
   }
 
-  /* 场主体区：2 枚哑光演示瓦流内并排（spring -5° / timeline +7°，叠压 16px=02 册拼贴律）；
+  /* 场主体区：2 枚哑光演示瓦流内并排（spring -5° / timeline +7°）；
      手势瓦 M 端不渲染——必须用本无分层规则隐藏（Tailwind max-md:hidden 在 utilities 层，
      会被无分层 .tile display:flex 压过，repo 已知 gotcha 同 enhanced-only 案）；
-     命中区：瓦片非交互展示件，tap 职责在暗格/tab-bar */
+     命中区：瓦片非交互展示件，tap 职责在暗格/tab-bar。
+     FB-8-3（①选项 A，站主 seq=1292 裁定）：垂直预算重排——瓦高 132→148、
+     叠压 16→8px、行距放宽；上留白目标 35%→~20%（分档见下方 min-height 覆盖） */
   .l0-tiles {
     display: flex;
     justify-content: center;
-    margin-top: 14px;
+    margin-top: 30px;
   }
   .tile {
     --tile-ink: #e8ecf5;
@@ -999,7 +1002,7 @@ body {
     flex-direction: column;
     position: relative;
     width: 46%;
-    height: 132px;
+    height: 148px;
     background: var(--c-tile);
     border-radius: 46px;
     padding: 0.7rem 1rem 0.8rem;
@@ -1015,8 +1018,8 @@ body {
   .l0-tile-timeline {
     --l0-rot: 7deg;
     transform: rotate(var(--l0-rot));
-    margin-left: -16px;
-    margin-top: 10px;
+    margin-left: -8px;
+    margin-top: 12px;
   }
   /* 窄瓦头部：caption/param 纵排防溢出（D 档横排制式不动） */
   .tile-head {
@@ -1025,12 +1028,13 @@ body {
     gap: 0.1rem;
   }
 
-  /* D-3 暗格：左下常驻（02 册 36 形态 + 命中区 ≥44 透明扩展=min-height） */
+  /* D-3 暗格：左下常驻（02 册 36 形态 + 命中区 ≥44 透明扩展=min-height）
+     FB-8-3：mt 16→30（基础档；≥740 视高分档覆盖） */
   .l0-darkcell {
     display: inline-flex;
     align-self: flex-start;
     margin-left: 6vw;
-    margin-top: 16px;
+    margin-top: 30px;
     align-items: baseline;
     gap: 0.6rem;
     padding: 0.55rem 1rem;
@@ -1082,6 +1086,32 @@ body {
   }
   .tagline-line {
     margin-top: 10px;
+  }
+
+  /* FB-8-3（①选项 A）垂直预算分档：844/932 主流机（h≥740）把余量从「顶部 35% 空洞」
+     重排为「行距放宽+下呼吸」——tiles/darkcell 间距与底部呼吸随视高抬升，大标上移；
+     667 及以下保持基础档（stack+pb ≤ h-100 零滚动制式不动）。结构/制式零改动，只动预算分配 */
+  @media (min-height: 740px) {
+    #v3-canvas {
+      padding-bottom: 104px;
+    }
+    .l0-tiles {
+      margin-top: 48px;
+    }
+    .l0-darkcell {
+      margin-top: 48px;
+    }
+  }
+  @media (min-height: 800px) {
+    #v3-canvas {
+      padding-bottom: 112px;
+    }
+    .l0-tiles {
+      margin-top: 60px;
+    }
+    .l0-darkcell {
+      margin-top: 60px;
+    }
   }
 
   /* F3-03（测试 seq=1030 判据项 F3-03）：一次性入场 ≥2 —— 大标 draw-on 0.9s（02 册预算行字面）
