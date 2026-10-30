@@ -307,7 +307,7 @@ function initMagnet(cells: HTMLElement[], wf: WF | null, staticMode: boolean): M
   // 磁吸优先级不变（回到格内即切回指针目标）；挂进既有 loop=零新增常驻 rAF
   const ballT0 = performance.now();
   let magActive = -10000;
-  let magRect: DOMRect | null = magCell ? magCell.getBoundingClientRect() : null;
+  const magRect: DOMRect | null = magCell ? magCell.getBoundingClientRect() : null;
   let raf = 0;
   cells.forEach((el, idx) => {
     el.addEventListener('pointerenter', () => {
