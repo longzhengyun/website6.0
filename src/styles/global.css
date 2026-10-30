@@ -1912,6 +1912,7 @@ html[data-theme='light'] body.home-onescreen > header::after {
   position: absolute;
   left: 16px;
   top: 16px;
+  pointer-events: none; /* FB-6（测试 FB-G-05 裁②）：纯装饰小标不入交互/无障碍树 */
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.2em;
