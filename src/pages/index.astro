@@ -228,7 +228,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <span class="l1-statement"><GlyphTitle text="动的信号。" /></span>
         <!-- 微型演示①=scrub 本体：方块旋转/进度点随滚动直读（M-15 演示即内容） -->
         <span class="l1-mini" aria-hidden="true">
-          <span class="scrub-box"></span>
+          <!-- FB-6 D：scrub-own=自主层包裹（spin 9s+pulse 4s 走独立 rotate/scale 属性，与内层 view() 直读 transform 正交叠加） -->
+          <span class="scrub-own"><span class="scrub-box"></span></span>
           <span class="scrub-rail"><span class="scrub-dot"></span></span>
           <span class="mini-cap">M-15 · view()</span>
         </span>
@@ -236,6 +237,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <div class="l1-caps">
         <svg class="l1-links" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true">
           <path pathLength="1" d="M70 160 L260 50 L470 175 L660 60 L900 140" />
+          <!-- FB-6 E：星座连线常驻光点（offset-path 同 d，3.2s 循环；两枚相位错半周期；
+               offset-path 不支持=display:none 隐藏降级，reduce=静） -->
+          <g class="link-dot ld1"><circle class="ld-halo" r="10" /><circle class="ld-core" r="6" /></g>
+          <g class="link-dot ld2"><circle class="ld-halo" r="10" /><circle class="ld-core" r="6" /></g>
         </svg>
         {
           caps.map((c) => (
@@ -296,11 +301,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <div class="cell cell-draw" data-cell data-edge="--c-demo-5">
           <svg class="draw-svg" viewBox="0 0 220 90" aria-hidden="true">
             <path pathLength="1" d="M8 70 C 60 10, 90 92, 130 44 S 200 18, 212 60" />
+            <!-- FB-6 F：终点光点（offset-path 同 d，随 draw-loop 6s 节拍；不支持=隐藏） -->
+            <circle class="draw-dot" r="4" />
           </svg>
           <span class="cell-cap">draw-on · 路径描画</span>
         </div>
         <div class="cell cell-scrub" data-cell data-edge="--c-demo-3">
-          <span class="scrub-box big" aria-hidden="true"></span>
+          <span class="scrub-own"><span class="scrub-box big"></span></span>
           <span class="cell-cap">scrub · 滚动直读</span>
         </div>
         <div class="cell cell-magnet" data-cell data-edge="--c-demo-6">

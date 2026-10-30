@@ -673,6 +673,73 @@ body {
   display: none;
 }
 
+/* FB-6 C（P2 站主项「让信号穿越噪声」）：hero 副标信号扫掠层——160px 渐变遮罩
+   （transparent→demo-3 18%→transparent）每 5.6s 左→右划过一次（划过段 1.4s=周期 25%），
+   扫掠窗口内副标做 ±0.5px 双位 text-shadow 微抖（叙事=信号亮带穿过噪声）。
+   纯装饰 ::before/::after（伪元素天然不入 a11y 树），SSR 文案与 reduce 静帧制式不动；D-only。 */
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .hero-sub-d {
+    overflow: hidden;
+  }
+  .hero-sub-d::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -160px;
+    width: 160px;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--c-demo-3) 18%, transparent), transparent);
+    animation: hc-sweep 5.6s linear infinite;
+  }
+  .hero-sub-d {
+    animation: hc-noise 5.6s linear infinite;
+  }
+}
+@keyframes hc-sweep {
+  0% {
+    left: -160px;
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 1;
+  }
+  25% {
+    left: calc(100% + 160px);
+    opacity: 0;
+  }
+  100% {
+    left: calc(100% + 160px);
+    opacity: 0;
+  }
+}
+@keyframes hc-noise {
+  0%,
+  24%,
+  100% {
+    text-shadow: none;
+  }
+  7% {
+    text-shadow:
+      0.5px -0.5px 0 color-mix(in srgb, var(--c-demo-3) 55%, transparent),
+      -0.5px 0.5px 0 color-mix(in srgb, var(--c-demo-5) 45%, transparent);
+  }
+  11% {
+    text-shadow: none;
+  }
+  15% {
+    text-shadow:
+      -0.5px 0.5px 0 color-mix(in srgb, var(--c-demo-3) 55%, transparent),
+      0.5px -0.5px 0 color-mix(in srgb, var(--c-demo-5) 45%, transparent);
+  }
+  18% {
+    text-shadow: none;
+  }
+}
+
 /* ---- F2-3 D 端 L0 舞台（01 册 L0：大标+副行+三演示瓦片+D-3 暗格同层斜置拼贴）----
    hero section 升为 100svh 绝对舞台（仅 D 档）；M 端流内制式一律不动（F3 另案）。
    摆位口径：大标 12vw/30vh（-3° 在 .hero-title-d 层）、轮播 tagline 挂大标下 12.5vw/56vh、
@@ -1244,6 +1311,25 @@ html[data-theme='light'] body.home-onescreen > header::after {
   border-radius: 50%;
   background: var(--c-demo-1);
 }
+/* FB-6 D：自主层包裹——rotate/scale 独立属性走时间线（spin 9s + pulse 4s），
+   与内层 .scrub-box 的 view() 直读 transform 正交叠加=双层合成；不支持独立变换属性=静置（无感） */
+.scrub-own {
+  display: grid;
+  place-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+/* FB-6 E：连线光点默认隐藏，@supports(offset-path) 且 no-preference 才显形常驻 */
+.l1-links .link-dot {
+  display: none;
+}
+.l1-links .ld-core {
+  fill: var(--c-ink);
+}
+.l1-links .ld-halo {
+  fill: var(--c-accent-text);
+  opacity: 0.32;
+}
 .l1-links {
   position: absolute;
   inset: -10% 0;
@@ -1305,19 +1391,6 @@ html[data-theme='light'] body.home-onescreen > header::after {
         transform: rotate(150deg) scale(1.08);
       }
     }
-    .scrub-dot {
-      animation: scrub-run linear both;
-      animation-timeline: view();
-      animation-range: entry 10% cover 70%;
-    }
-    @keyframes scrub-run {
-      from {
-        left: 0;
-      }
-      to {
-        left: calc(100% - 10px);
-      }
-    }
     .l1-links path {
       stroke-dasharray: 1;
       stroke-dashoffset: 1;
@@ -1328,6 +1401,59 @@ html[data-theme='light'] body.home-onescreen > header::after {
     @keyframes scrub-draw {
       to {
         stroke-dashoffset: 0;
+      }
+    }
+  }
+  /* FB-6 D：轨道点常驻自主往返（2.8s alternate ease-in-out，不绑 view()——
+     不支持 view() 的引擎=只剩自主层，降级面更全）；left 基值 62% 保留为 reduce/无 JS 静位 */
+  .scrub-dot {
+    animation: dot-shuttle 2.8s ease-in-out infinite alternate;
+  }
+  @keyframes dot-shuttle {
+    from {
+      left: 0;
+    }
+    to {
+      left: calc(100% - 10px);
+    }
+  }
+  /* FB-6 D：色块自主层（内层 view() 直读 transform 不动，rotate/scale 独立属性正交叠加） */
+  .scrub-own {
+    animation:
+      own-spin 9s linear infinite,
+      own-pulse 4s ease-in-out infinite;
+  }
+  @keyframes own-spin {
+    to {
+      rotate: 1turn;
+    }
+  }
+  @keyframes own-pulse {
+    0%,
+    100% {
+      scale: 0.9;
+    }
+    50% {
+      scale: 1;
+    }
+  }
+  @supports (offset-path: path("M0 0 L1 1")) {
+    /* FB-6 E：连线常驻光点（同 d 的 CSS Motion Path，viewBox 用户单位；两枚相位错半周期） */
+    .l1-links .link-dot {
+      display: block;
+      offset-path: path("M70 160 L260 50 L470 175 L660 60 L900 140");
+      offset-rotate: 0deg;
+      animation: link-run 3.2s linear infinite;
+    }
+    .l1-links .ld2 {
+      animation-delay: -1.6s;
+    }
+    @keyframes link-run {
+      from {
+        offset-distance: 0%;
+      }
+      to {
+        offset-distance: 100%;
       }
     }
   }
@@ -1536,6 +1662,11 @@ html[data-theme='light'] body.home-onescreen > header::after {
   background: var(--c-demo-6);
   transform: translate(-50%, -50%) translate(var(--bx, 0px), var(--by, 0px));
 }
+/* FB-6 F：draw-on 终点光点默认隐藏（reduce/无 JS/不支持 offset-path=不可见静制式） */
+.draw-dot {
+  display: none;
+  fill: var(--c-demo-5);
+}
 @media (prefers-reduced-motion: no-preference) {
   .stg i {
     animation: stg-rise 2.4s ease-in-out infinite;
@@ -1596,6 +1727,34 @@ html[data-theme='light'] body.home-onescreen > header::after {
       animation: scrub-spin linear both;
       animation-timeline: view();
       animation-range: entry 30% cover 75%;
+    }
+  }
+  @supports (offset-path: path("M0 0 L1 1")) {
+    /* FB-6 F：终点光点随 draw-loop 节拍——0-45% 沿路径行至末端、45-60% 停驻发光、60-100% 淡出回位 */
+    .draw-dot {
+      display: block;
+      offset-path: path("M8 70 C 60 10, 90 92, 130 44 S 200 18, 212 60");
+      offset-rotate: 0deg;
+      animation: draw-tip 6s ease-in-out infinite;
+    }
+    @keyframes draw-tip {
+      0% {
+        offset-distance: 0%;
+        opacity: 1;
+      }
+      45% {
+        offset-distance: 100%;
+        opacity: 1;
+      }
+      60% {
+        offset-distance: 100%;
+        opacity: 0.2;
+      }
+      70%,
+      100% {
+        offset-distance: 100%;
+        opacity: 0;
+      }
     }
   }
 }

@@ -4,8 +4,11 @@
  * - 光带呼吸 L(t)=0.5+0.5·sin(2πt/7+φ)（WAAPI opacity，φ=mulberry32(hashSeedStr(瓦片id)) 派生，可复现）；
  *   静态峰值 0.18；hover/focus-within → 暂停呼吸、180ms 弹性补满至 0.55（断口保留、退出 φ 不重置）；
  *   reduced-motion=静止 0.18 不呼吸（08 册 §8）。
- * - spring 演示=自写半隐式欧拉积分（stiffness 260/damping 20/mass 1，04 册弹簧族），目标每 2.6s 换向，
- *   拖尾=最近 40 样本衰减；手势演示=pointer 采样 60pt 紫色渐隐路径，空闲 2.4s 后自走 Lissajous 环（周期性=可循环）。
+ * - spring 演示=自写半隐式欧拉积分（FB-6 A 增强：stiffness 260/damping 20→12/mass 1——欠阻尼出 2-3 次
+ *   可见衰减振荡=真「回弹」，判据单周期 ≥2 次过冲；目标每 2.0s 换向（原 2.6）；拖尾=最近 40 样本衰减 α 顶 0.5（原 0.35）；
+ *   目标空心圈 1.2s 呼吸 scale 1→1.15）；手势演示=pointer 采样 90pt（原 60）紫色渐隐路径，空闲 2.4s 后自走 Lissajous 环，
+ *   FB-6 B 增强：常驻光点沿幽灵 Lissajous 环 6s 循环（demo-4 实心 6px+12px 发光晕），幽灵环 α 0.14→0.22——
+ *   判据=不碰鼠标瓦内恒有可见运动体。
  * - 低端（hardwareConcurrency≤2 ‖ deviceMemory≤2；FB-4=P4 站主 seq=1174 放宽）/reduce=单帧静图；astro:page-load 重初始化（旧 rAF 全停）。
  * - 颜色实读 token（--c-demo-1/--c-demo-4），零新 hex；F3 起 M 档上 2 枚（spring/timeline），
  *   手势瓦 max-md:hidden=隐藏件按 rect<4 跳过（零 rAF 成本）。
@@ -15,7 +18,7 @@ import { hashSeedStr, mulberry32 } from '../lib/v3-art.mjs';
 const EDGE_PEAK = 0.18;
 const EDGE_HOVER = 0.55;
 const BREATHE_MS = 7000;
-const SPRING = { k: 260, d: 20, m: 1 };
+const SPRING = { k: 260, d: 12, m: 1 }; // FB-6 A：d 20→12（欠阻尼可见回弹）
 
 function tokenColor(name: string, fallback: string): string {
   const v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
@@ -128,7 +131,8 @@ function runSpring(canvas: HTMLCanvasElement, stopper: { cancel(): void }) {
     const dt = Math.min(0.032, (now - last) / 1000);
     last = now;
     acc += dt;
-    if (acc > 2.6) {
+    if (acc > 2.0) {
+      // FB-6 A：换向 2.6→2.0s
       acc = 0;
       target = target > w / 2 ? w * 0.12 : w * 0.85;
     }
@@ -149,7 +153,7 @@ function runSpring(canvas: HTMLCanvasElement, stopper: { cancel(): void }) {
     ctx.globalAlpha = 1;
     for (let i = 0; i < trail.length; i++) {
       const p = trail[i];
-      ctx.globalAlpha = (i / trail.length) * 0.35;
+      ctx.globalAlpha = (i / trail.length) * 0.5; // FB-6 A：拖尾 α 0.35→0.5
       ctx.beginPath();
       ctx.arc(p.x, h * 0.5, 2.2, 0, Math.PI * 2);
       ctx.fill();
@@ -159,11 +163,12 @@ function runSpring(canvas: HTMLCanvasElement, stopper: { cancel(): void }) {
     ctx.beginPath();
     ctx.arc(x, h * 0.5, Math.min(9, h * 0.12), 0, Math.PI * 2);
     ctx.fill();
-    // 目标锚点（空心圈）
+    // 目标锚点（空心圈）：FB-6 A 加 1.2s 呼吸 scale 1→1.15
+    const ringR = 12 * (1 + 0.15 * (0.5 - 0.5 * Math.cos((now / 1200) * Math.PI * 2)));
     ctx.strokeStyle = color;
     ctx.globalAlpha = 0.6;
     ctx.beginPath();
-    ctx.arc(target, h * 0.5, 12, 0, Math.PI * 2);
+    ctx.arc(target, h * 0.5, ringR, 0, Math.PI * 2);
     ctx.stroke();
     ctx.globalAlpha = 1;
     const raf = requestAnimationFrame(step);
@@ -185,20 +190,40 @@ function runGesture(canvas: HTMLCanvasElement, tile: HTMLElement, stopper: { can
   let lastMove = -10;
   const t0 = performance.now();
   const staticMode = isStaticMode();
-  const draw = () => {
+  // FB-6 B：幽灵 Lissajous 环参数化（自走/常驻光点/静态采样共用）
+  const loopPt = (u: number) => ({
+    x: w * 0.5 + Math.sin(u * Math.PI * 2) * w * 0.32,
+    y: h * 0.5 + Math.sin(u * Math.PI * 4 + 1.2) * h * 0.3,
+  });
+  const draw = (now = t0) => {
     ctx.clearRect(0, 0, w, h);
-    // 基准 Lissajous 幽灵路径（静态环，pointer 路径在其上覆写）
+    // 基准 Lissajous 幽灵路径（FB-6 B：α 0.14→0.22），pointer 路径在其上覆写
+    ctx.fillStyle = color;
     ctx.strokeStyle = color;
-    ctx.globalAlpha = 0.14;
+    ctx.globalAlpha = 0.22;
     ctx.beginPath();
     for (let i = 0; i <= 120; i++) {
-      const u = i / 120;
-      const px = w * 0.5 + Math.sin(u * Math.PI * 2) * w * 0.32;
-      const py = h * 0.5 + Math.sin(u * Math.PI * 4 + 1.2) * h * 0.3;
-      if (i === 0) ctx.moveTo(px, py);
-      else ctx.lineTo(px, py);
+      const p = loopPt(i / 120);
+      if (i === 0) ctx.moveTo(p.x, p.y);
+      else ctx.lineTo(p.x, p.y);
     }
     ctx.stroke();
+    // FB-6 B：常驻光点沿幽灵环 6s 循环（实心 6px + 12px 发光晕）；静态帧=固定 u 位
+    const du = ((now - t0) / 6000) % 1;
+    const dp = loopPt(staticMode ? 0.15 : du);
+    const halo = ctx.createRadialGradient(dp.x, dp.y, 1, dp.x, dp.y, 12);
+    halo.addColorStop(0, color);
+    halo.addColorStop(1, 'rgba(161,108,229,0)');
+    ctx.globalAlpha = 0.55;
+    ctx.fillStyle = halo;
+    ctx.beginPath();
+    ctx.arc(dp.x, dp.y, 12, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = color;
+    ctx.globalAlpha = 1;
+    ctx.beginPath();
+    ctx.arc(dp.x, dp.y, 6, 0, Math.PI * 2);
+    ctx.fill();
     ctx.globalAlpha = 1;
     for (let i = 1; i < pts.length; i++) {
       ctx.strokeStyle = color;
@@ -221,16 +246,13 @@ function runGesture(canvas: HTMLCanvasElement, tile: HTMLElement, stopper: { can
   };
   if (staticMode) {
     // 静图=预置一段 Lissajous 采样
-    for (let i = 0; i <= 60; i++) {
-      const u = i / 60;
-      pts.push({ x: w * 0.5 + Math.sin(u * Math.PI * 2) * w * 0.32, y: h * 0.5 + Math.sin(u * Math.PI * 4 + 1.2) * h * 0.3 });
-    }
+    for (let i = 0; i <= 60; i++) pts.push(loopPt(i / 60));
     draw();
     return;
   }
   const push = (x: number, y: number) => {
     pts.push({ x, y });
-    if (pts.length > 60) pts.shift();
+    if (pts.length > 90) pts.shift(); // FB-6 B：拖尾 60→90pt
   };
   tile.addEventListener('pointermove', (e) => {
     const r = canvas.getBoundingClientRect();
@@ -244,9 +266,10 @@ function runGesture(canvas: HTMLCanvasElement, tile: HTMLElement, stopper: { can
     if (now - lastMove > 2400) {
       // 空闲自走：整数频率 Lissajous，(u+p) mod 1 周期化
       const u = ((now - t0) / 6000) % 1;
-      push(w * 0.5 + Math.sin(u * Math.PI * 2) * w * 0.32, h * 0.5 + Math.sin(u * Math.PI * 4 + 1.2) * h * 0.3);
+      const p = loopPt(u);
+      push(p.x, p.y);
     }
-    if (pts.length > 1) draw();
+    draw(now); // FB-6 B：常驻光点用帧时刻（pointer 活跃时也持续走环）
     const raf = requestAnimationFrame(step);
     stopper.cancel = () => cancelAnimationFrame(raf);
   };
