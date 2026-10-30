@@ -88,8 +88,10 @@
   color-scheme: light;
 }
 
-/* SYNC:dark —— 以下两个暗色块必须成对修改（L-1 三态：媒体查询回退 + 显式 data-theme） */
-@media (prefers-color-scheme: dark) {
+/* SYNC:dark —— 以下两个暗色块必须成对修改（L-1 三态：媒体查询回退 + 显式 data-theme）。
+   FB-8-2（站主 seq=1277 裁③恒暗）：媒体查询加 light 枚举=去 prefers-color-scheme 门，
+   无 JS（无 data-theme）也恒暗；恢复系统跟随=去掉 ", (prefers-color-scheme: light)" */
+@media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
   :root:not([data-theme]) {
     /* 三期底 v2.1（07 册）：#0d1117 → #080808 近黑纸面（编辑式审美地基，与 motion.dev 同档）。
        面积律 v2.1 总律：页面底色与文字只用黑/白/灰 + 信标红点；--demo-1..6 六色只存在于

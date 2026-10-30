@@ -33,12 +33,17 @@ const siteUrl = Astro.site ?? new URL(Astro.url.origin);
 const route = relativePath(Astro.url.pathname); // 去 base：'/' | '/news' | '/about' | '/resume'
 const pageAbsoluteUrl = new URL(route === '/' ? '' : route.slice(1), siteUrl).toString();
 const ogImageUrl = ogImage ? new URL(ogImage.replace(/^\/+/, ''), siteUrl).toString() : '';
+// FB-8-2（站主 seq=1277 裁③恒暗）：SYNC:FORCE_DARK 三处同值之一（本 frontmatter 过滤 ⌘K
+// 主题条目 + 下方预绘内联脚本 + scripts/theme.ts）。置 false 整体放开，亮色 CSS 零删除。
+const FORCE_DARK = true;
 const paletteIndex = [
   { label: 'Home 首页', href: '/' },
   { label: 'News 业内新闻', href: '/news' },
   { label: 'About 关于', href: '/about' },
   { label: 'Résumé 在线简历', href: '/resume' },
-  { label: '切换主题（跟随系统 → 亮色 → 暗色）', action: 'theme-toggle' },
+  ...(FORCE_DARK
+    ? []
+    : [{ label: '切换主题（跟随系统 → 亮色 → 暗色）', action: 'theme-toggle' }]),
   ...news.items.slice(0, 12).map((i) => ({ label: i.title_zh, href: i.url, external: true })),
 ];
 ---
@@ -50,7 +55,15 @@ const paletteIndex = [
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <script is:inline>
       // L-1 预绘：首帧前写入实际解析值（auto 也解析），杜绝 FOUC；与 theme.ts 的 SYNC:dark 两块 token 对应
+      // FB-8-2：SYNC:FORCE_DARK 三处同值之二——true=恒暗，不读 localStorage（不擦除，放开后原偏好恢复）
       (function () {
+        var FORCE_DARK = true;
+        var el = document.documentElement;
+        if (FORCE_DARK) {
+          el.setAttribute('data-theme', 'dark');
+          el.dataset.themeMode = 'dark';
+          return;
+        }
         let mode = 'auto';
         try {
           const v = localStorage.getItem('theme-mode');
@@ -59,7 +72,6 @@ const paletteIndex = [
         const resolved = mode === 'auto'
           ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
           : mode;
-        const el = document.documentElement;
         el.setAttribute('data-theme', resolved);
         el.dataset.themeMode = mode;
       })();

@@ -1224,6 +1224,15 @@ body.home-onescreen > header [data-theme-toggle] {
     transform: translateY(var(--ty)) scale(1);
   }
 }
+/* ---- FB-8-2（站主 seq=1277 裁③「隐藏亮/暗切换，一直保持暗色」）：入口全隐，逻辑恒暗见
+     theme.ts / BaseLayout 预绘（SYNC:FORCE_DARK）。亮色 CSS 与组件 markup 零删除=全可逆
+     （恢复=删本块 + 翻三处 FORCE_DARK）；!important 兜底覆盖 .theme-arc flex 与 .tab-item 制式；
+     tab-bar 主题 li 摘除后余 4 枚 flex-1 自动等分（390→97.5px/格 ≥44 命中区达标） ---- */
+.theme-arc,
+[data-theme-toggle],
+.tab-bar .tab-item-theme {
+  display: none !important;
+}
 body.home-onescreen > header {
   position: relative;
   border-bottom-width: 0;
