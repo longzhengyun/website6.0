@@ -57,8 +57,8 @@ const paletteIndex = [
       // L-1 预绘：首帧前写入实际解析值（auto 也解析），杜绝 FOUC；与 theme.ts 的 SYNC:dark 两块 token 对应
       // FB-8-2：SYNC:FORCE_DARK 三处同值之二——true=恒暗，不读 localStorage（不擦除，放开后原偏好恢复）
       (function () {
-        var FORCE_DARK = true;
-        var el = document.documentElement;
+        const FORCE_DARK = true;
+        const el = document.documentElement;
         if (FORCE_DARK) {
           el.setAttribute('data-theme', 'dark');
           el.dataset.themeMode = 'dark';
