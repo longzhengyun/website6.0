@@ -658,7 +658,7 @@ body {
    L0 绝对舞台由 F2-3 接管后改挂 stage 坐标；本批=流内摆位先行，D-only（M 端制式不动）
    FB-1(P1=B)：D 档比例件 vw→cqw 等值机械换算（占位），终稿数值待设计重校表回填 */
 .hero-title-d {
-  width: min(42cqw, 620px);
+  width: min(47.25cqw, 620px);
   transform: rotate(-3deg);
 }
 .hero-jary-sign {
@@ -679,7 +679,7 @@ body {
 @media (min-width: 768px) {
   .hero-sub-d {
     position: absolute;
-    left: 12.5cqw;
+    left: 12.2cqw;
     top: 72vh;
     margin-top: 0;
     display: block;
@@ -691,12 +691,12 @@ body {
   }
   .l0-title {
     position: absolute;
-    left: 12cqw;
+    left: 11.6cqw;
     top: 30vh;
   }
   .tagline-line {
     position: absolute;
-    left: 12.5cqw;
+    left: 12.2cqw;
     top: 56vh;
     margin-top: 0;
   }
@@ -725,23 +725,23 @@ body {
     overflow: hidden; /* 光带 blur 与 canvas 圆角裁切同层 */
   }
   .l0-tile-spring {
-    left: 55cqw;
+    left: 60cqw;
     top: 12vh;
-    width: 34cqw;
+    width: 38.25cqw;
     height: 26vh;
     transform: rotate(-4deg);
   }
   .l0-tile-timeline {
-    left: 70cqw;
+    left: 71cqw; /* FB-2 重校（设计 §2）：纯换算 76.9 会压出容器，左收进版心 */
     top: 36vh;
-    width: 24cqw;
+    width: 26cqw;
     height: 24vh;
     transform: rotate(6deg);
   }
   .l0-tile-gesture {
-    left: 56cqw;
+    left: 61.1cqw;
     top: 60vh;
-    width: 30cqw;
+    width: 33.75cqw;
     height: 28vh;
     transform: rotate(2deg);
   }
@@ -843,7 +843,7 @@ body {
   .l0-darkcell {
     display: inline-flex;
     position: absolute;
-    left: 4cqw;
+    left: 2.6cqw;
     top: 88vh;
     align-items: baseline;
     gap: 0.6rem;
@@ -1109,14 +1109,15 @@ body.home-onescreen > header [data-theme-toggle] {
     transform 180ms cubic-bezier(0.22, 1.2, 0.36, 1),
     color 120ms ease-out;
 }
-/* FB-3(P5=c) 端点 ty 重算：-1.5° 倾斜在端点（±46px）附加 ±1.2px 垂直位移（sin1.5°×46），
-   左端下沉/右端上抬 → ty 预补偿使视觉弧保持对称 −3/0/−3（净位移=设计矢高口径）。
-   终稿若设计重校（seq=1176 任务 4）只改本组数字。 */
+/* FB-3(P5=c) 端点 ty 重算（设计终稿 §6，替代 FB-1 的 ±46px 键臂口径）：
+   端点距簇心 ±68px，旋转 -1.5° 纵向贡献 = 68×sin1.5° ≈ ±1.8px（左端下沉、右端上抬）；
+   目标净位移=对称浅弧 −3/0/−3 → 反推 --ty 左 −4.8 / 中 0 / 右 −1.2。
+   自验项：端点顶边实测 <1px 时整簇 margin-top +2px（不改弧值）。 */
 .ta-btn:nth-child(1) {
-  --ty: -4.2px;
+  --ty: -4.8px;
 }
 .ta-btn:nth-child(3) {
-  --ty: -1.8px;
+  --ty: -1.2px;
 }
 .ta-btn svg {
   display: block;
@@ -1176,8 +1177,10 @@ html[data-theme='light'] body.home-onescreen > header::after {
 .l1-sec {
   margin-top: 14vh;
 }
+/* FB-2（设计 §3-1 不动族）：min(xvw,cap)/clamp 封顶族全部保持 vw——已封顶不属
+   「vw×居中版心」bug 类；换算 cqw 会破坏 768–1199 平板带流式。以下 8 处维持原 vw。 */
 .l1-glyph {
-  width: min(28cqw, 400px);
+  width: min(28vw, 400px);
   transform: rotate(-2deg);
   margin-bottom: 4rem;
 }
@@ -1192,7 +1195,7 @@ html[data-theme='light'] body.home-onescreen > header::after {
   flex-direction: row-reverse;
 }
 .l1-statement {
-  width: min(36cqw, 540px);
+  width: min(36vw, 540px);
   display: block;
 }
 .l1-row-a .l1-statement {
@@ -1334,7 +1337,7 @@ html[data-theme='light'] body.home-onescreen > header::after {
   margin-block: 16vh 12vh;
 }
 .l2-glyph {
-  width: min(32cqw, 460px);
+  width: min(32vw, 460px);
   transform: rotate(1.5deg);
 }
 .l2-lede {
@@ -1664,7 +1667,7 @@ html[data-theme='light'] body.home-onescreen > header::after {
   margin-block: 18vh 12vh; /* FB-2(R2)：同 L2，禁 margin 简写吞居中 */
 }
 .l3-glyph {
-  width: min(30cqw, 430px);
+  width: min(30vw, 430px);
   transform: rotate(-1.5deg);
 }
 
@@ -1673,8 +1676,8 @@ html[data-theme='light'] body.home-onescreen > header::after {
    进屏注流播放、离屏 pause（省电）；自动播放被拦=保持 poster。 */
 .l3-band {
   margin: 4.5vh auto 0;
-  width: min(64cqw, 1080px);
-  height: clamp(120px, 15cqw, 208px);
+  width: min(64vw, 1080px);
+  height: clamp(120px, 15vw, 208px);
   border-radius: 999px;
   overflow: hidden;
   opacity: 0.9;
@@ -1690,11 +1693,11 @@ html[data-theme='light'] body.home-onescreen > header::after {
 .l3-orbs {
   display: flex;
   justify-content: center;
-  gap: clamp(1.5rem, 5cqw, 5rem);
+  gap: clamp(1.5rem, 5vw, 5rem);
   margin-top: 7vh;
 }
 .orb {
-  width: clamp(130px, 15cqw, 200px);
+  width: clamp(130px, 15vw, 200px);
   aspect-ratio: 1;
   border-radius: 50%;
   display: flex;
