@@ -41,14 +41,29 @@ const desktopNav = nav.filter((n) => n.href !== '/');
       </nav>
       <ThemeToggle variant="header" />
     </div>
-    <!-- F3-4（设计裁定 seq=1003，F2-01=B）：首页顶栏=无框弧排三点（☀/☾/◐，命中 44×44，
-         浅弧 R≈90/角距 24°→矢高≈3px，簇 -3°）；仅 body.home-onescreen 且 JS 增强态显示
-         （CSS .theme-arc 门控），内页沿用二期方框制式（范围总则：出格仅首页）。
-         aria-pressed 由 theme.ts 同步当前档；点击=直接置档（零回退：Tab 序/语义保持） -->
+    <!-- F3-4（设计裁定 seq=1003，F2-01=B）：首页顶栏=无框弧排三点（命中 44×44，浅弧矢高≈3px）；
+         仅 body.home-onescreen 且 JS 增强态显示（CSS .theme-arc 门控），内页沿用二期方框制式。
+         aria-pressed 由 theme.ts 同步当前档；点击=直接置档（零回退：Tab 序/语义保持）
+         FB-3(P5=站主 seq=1174 c 案)：三枚 unicode 字形度量跨平台不齐（U+2600/263E/25D0 字面/基线各异）
+         → 换同尺寸 16px 内联 SVG（currentColor 随态翻转）；簇旋 -3°→-1.5°，端点 --ty 重算见 global.css -->
     <div class="theme-arc" role="group" aria-label="主题模式">
-      <button type="button" class="ta-btn" data-theme-set="light" aria-pressed="false" aria-label="亮色主题">☀</button>
-      <button type="button" class="ta-btn" data-theme-set="dark" aria-pressed="false" aria-label="暗色主题">☾</button>
-      <button type="button" class="ta-btn" data-theme-set="auto" aria-pressed="false" aria-label="跟随系统主题">◐</button>
+      <button type="button" class="ta-btn" data-theme-set="light" aria-pressed="false" aria-label="亮色主题">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">
+          <circle cx="8" cy="8" r="3.1" fill="currentColor" />
+          <path d="M8 .9v2.2M8 12.9v2.2M.9 8h2.2M12.9 8h2.2M2.9 2.9l1.6 1.6M11.5 11.5l1.6 1.6M13.1 2.9l-1.6 1.6M4.5 11.5l-1.6 1.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+      </button>
+      <button type="button" class="ta-btn" data-theme-set="dark" aria-pressed="false" aria-label="暗色主题">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">
+          <path d="M13.4 10.6A6.6 6.6 0 0 1 5.4 2.6 6.6 6.6 0 1 0 13.4 10.6Z" fill="currentColor" />
+        </svg>
+      </button>
+      <button type="button" class="ta-btn" data-theme-set="auto" aria-pressed="false" aria-label="跟随系统主题">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">
+          <circle cx="8" cy="8" r="6.2" stroke="currentColor" stroke-width="1.4" fill="none" />
+          <path d="M8 1.8a6.2 6.2 0 0 1 0 12.4Z" fill="currentColor" />
+        </svg>
+      </button>
     </div>
   </div>
 </header>

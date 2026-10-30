@@ -6,7 +6,7 @@
  *   reduced-motion=静止 0.18 不呼吸（08 册 §8）。
  * - spring 演示=自写半隐式欧拉积分（stiffness 260/damping 20/mass 1，04 册弹簧族），目标每 2.6s 换向，
  *   拖尾=最近 40 样本衰减；手势演示=pointer 采样 60pt 紫色渐隐路径，空闲 2.4s 后自走 Lissajous 环（周期性=可循环）。
- * - 低端（hardwareConcurrency≤4 ‖ deviceMemory≤4）/reduce=单帧静图；astro:page-load 重初始化（旧 rAF 全停）。
+ * - 低端（hardwareConcurrency≤2 ‖ deviceMemory≤2；FB-4=P4 站主 seq=1174 放宽）/reduce=单帧静图；astro:page-load 重初始化（旧 rAF 全停）。
  * - 颜色实读 token（--c-demo-1/--c-demo-4），零新 hex；F3 起 M 档上 2 枚（spring/timeline），
  *   手势瓦 max-md:hidden=隐藏件按 rect<4 跳过（零 rAF 成本）。
  */
@@ -26,8 +26,8 @@ function isStaticMode(): boolean {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const nav = navigator as Navigator & { deviceMemory?: number };
   const lowEnd =
-    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 4) ||
-    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 4);
+    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 2) ||
+    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 2);
   return reduce || lowEnd;
 }
 

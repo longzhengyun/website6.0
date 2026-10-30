@@ -23,8 +23,8 @@ function isStaticMode(): boolean {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const nav = navigator as Navigator & { deviceMemory?: number };
   const lowEnd =
-    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 4) ||
-    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 4);
+    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 2) ||
+    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 2);
   return reduce || lowEnd;
 }
 

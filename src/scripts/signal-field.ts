@@ -7,7 +7,7 @@
  * - seed：?seed= 覆盖（与 v3 同源 [/^[\w.-]{1,64}$/] 白名单），mulberry32(hashSeedStr(seed)) 派生三带相位/抖幅 → uniform，
  *   同 seed 同场可复现；regenerate 按钮（[data-v3-regen]）换 seed 后随 URL 重初始化；
  * - 颜色零新 hex：--c-accent（带色起点）/--c-teal（带色终点）/--c-ink-muted（散点）getComputedStyle 实读，三态主题翻转重绘；
- * - reduce / 低端（hardwareConcurrency≤4 ‖ deviceMemory≤4）/ M 端 = 单帧静图；D 档 rAF 常驻，页签隐藏停帧省电。
+ * - reduce / 低端（hardwareConcurrency≤2 ‖ deviceMemory≤2；FB-4=P4 站主 seq=1174 放宽）/ M 端 = 单帧静图；D 档 rAF 常驻，页签隐藏停帧省电。
  * 与 v3-canvas 同策略：仅首页引用 → 独立小 chunk，load/astro:page-load 后动态 import，不抢首屏带宽。
  */
 import { hashSeedStr, mulberry32 } from '../lib/v3-art.mjs';
@@ -197,8 +197,8 @@ function initOne(root: HTMLElement) {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const nav = navigator as Navigator & { deviceMemory?: number };
   const lowEnd =
-    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 4) ||
-    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 4);
+    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 2) ||
+    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 2);
 
   canvas.classList.add('sf-on');
 
@@ -241,8 +241,8 @@ function bindL3Band() {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const nav = navigator as Navigator & { deviceMemory?: number };
   const lowEnd =
-    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 4) ||
-    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 4);
+    (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 2) ||
+    (typeof nav.deviceMemory === 'number' && nav.deviceMemory <= 2);
   if (reduce || lowEnd) return;
   const src = video.canPlayType('video/webm;codecs=vp9') ? video.dataset.webm : video.dataset.mp4;
   bandIO = new IntersectionObserver(

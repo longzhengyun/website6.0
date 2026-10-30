@@ -229,6 +229,13 @@
     max-width: 1328px; /* 首页 hero 区 1280 */
   }
 }
+/* FB-1（P1=B 站主 seq=1174）：D 档起 .shell-wide 升格为查询容器，全站首页比例件
+   vw→cqw 收敛到版心（修 R1「vw×居中版心」整类溢出；M 档 <768 不受影响仍用 vw） */
+@media (min-width: 768px) {
+  .shell-wide {
+    container-type: inline-size;
+  }
+}
 
 /* 移动端底部 tab 条避让（spec §6.2：56px + 安全区） */
 .tab-bar {
