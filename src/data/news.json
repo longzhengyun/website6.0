@@ -1,9 +1,286 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T16:06:55.395Z",
-  "mode": "ai",
+  "generated_at": "2026-10-30T07:05:07.668Z",
+  "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "e256ed0ec902b461",
+      "url": "https://www.infoq.cn/minibook/lmVM6XjSDMpMb6QTbK0l?utm_source=rss&utm_medium=article",
+      "title_original": "2026年AI技术演进与2027年趋势前瞻报告",
+      "title_zh": "2026年AI技术演进与2027年趋势前瞻报告",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T06:41:36.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "183c0d84c975d711",
+      "url": "https://www.infoq.cn/article/cyfZ34rycDPzIrzohosZ?utm_source=rss&utm_medium=article",
+      "title_original": "NestJS 12：ESM 包、标准模式验证和原生可观测性",
+      "title_zh": "NestJS 12：ESM 包、标准模式验证和原生可观测性",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "cbb3940d99dd4a02",
+      "url": "https://www.oschina.net/news/503310/mistral-large-4-oss",
+      "title_original": "万亿参数模型 Mistral Large 4 开放权重，用更少的 token 打平了最高分",
+      "title_zh": "万亿参数模型 Mistral Large 4 开放权重，用更少的 token 打平了最高分",
+      "summary_zh": "Mistral 把 Mistral Large 4（内部代号 Le Chonk）的权重开源出来了：1 万亿参数、原生多模态、开源权重里编码能力最强。这是到目前为止开放权重阵营里体量最大的一批模型，而且是从零开始在欧洲的基础设施上进行训练。…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T03:30:21.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "d4073f79934a18f9",
+      "url": "https://www.infoq.cn/article/FJqN3mFVyN1lMqHOiegs?utm_source=rss&utm_medium=article",
+      "title_original": "谷歌推出 EnvHarness，支持自进化智能体动态环境学习",
+      "title_zh": "谷歌推出 EnvHarness，支持自进化智能体动态环境学习",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T03:22:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "27531f3e00eb01b3",
+      "url": "https://www.oschina.net/news/503309",
+      "title_original": "Pico CSS 停止维护，作者解释称“AI 能直接生成它要做的事”",
+      "title_zh": "Pico CSS 停止维护，作者解释称“AI 能直接生成它要做的事”",
+      "summary_zh": "Pico CSS 停在 v2.1.1 了。这个以\"给语义化 HTML 用的极简 CSS 框架\"出名的项目，在 GitHub Discussion 里宣布不再维护，仓库归档，不再接受 issue、PR 和发布新版本。 理由写得直接，而且把账…",
+      "tags": [
+        "ai",
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T03:12:25.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "810260d0a796ace8",
+      "url": "https://www.infoq.cn/article/5EaQcXCgMWaZaRvFBeoh?utm_source=rss&utm_medium=article",
+      "title_original": "4 条提示词，如何把 98 条产品评论变成工程决策依据 ｜ 技术实践",
+      "title_zh": "4 条提示词，如何把 98 条产品评论变成工程决策依据 ｜ 技术实践",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T03:07:04.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "1227d4159d2a8762",
+      "url": "https://www.oschina.net/news/503308",
+      "title_original": "MiniMax Code 团队把自己每天用的 16 个 Agent 技能开源了",
+      "title_zh": "MiniMax Code 团队把自己每天用的 16 个 Agent 技能开源了",
+      "summary_zh": "MiniMax Code 团队把他们自己天天在用的工作流和 skills 开源了。仓库开头第一句就把定位说清楚了：这不是提示词合集，也不是\"最佳实践\"清单，而是团队里的人每天真在用的东西——怎么让 AI 写的代码保持高标准、怎么判断一个任…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T02:57:23.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "b4818ca0105902d6",
+      "url": "https://www.oschina.net/news/503307/qwenputer-risc-v",
+      "title_original": "拿注意力层当内存——有人在 Qwen 权重里编译了一颗 RISC-V CPU",
+      "title_zh": "拿注意力层当内存——有人在 Qwen 权重里编译了一颗 RISC-V CPU",
+      "summary_zh": "开发者 Divyansh Agrawal 往 Qwen 3.5 4B 的权重里编译了一颗真正的 RISC-V CPU，然后用模型自己的 Gated DeltaNet 注意力层当内存。他给这东西起名 Qwenputer。 先把话说明白：这不…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T02:50:44.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "db62ef054365a033",
+      "url": "https://www.infoq.cn/article/u23wUVUDcFqL7hLBWXuW?utm_source=rss&utm_medium=article",
+      "title_original": "腾讯 AI Lab 又一核心骨干去向确认！“王者绝悟”前技术负责人叶德珩加入字节 Seed",
+      "title_zh": "腾讯 AI Lab 又一核心骨干去向确认！“王者绝悟”前技术负责人叶德珩加入字节 Seed",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T02:04:10.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "0cc6af7e6288f600",
+      "url": "https://www.infoq.cn/article/pwQAXtApbhdQRN2vQfdS?utm_source=rss&utm_medium=article",
+      "title_original": "希望这不会拖慢创新：DuckLabs 被收购，社区既高兴又警惕",
+      "title_zh": "希望这不会拖慢创新：DuckLabs 被收购，社区既高兴又警惕",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T02:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "c132b8d66f28bf49",
+      "url": "https://www.infoq.cn/article/UNli8x0wc8XUNjI5ETya?utm_source=rss&utm_medium=article",
+      "title_original": "Chainguard 推出面向 AI 编码智能体的安全工作区与安全校验能力",
+      "title_zh": "Chainguard 推出面向 AI 编码智能体的安全工作区与安全校验能力",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T01:23:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
+    {
+      "fingerprint": "10359c1d695cd187",
+      "url": "https://www.infoq.cn/article/dfj1fLfP8iVLKFtEfr69?utm_source=rss&utm_medium=article",
+      "title_original": "Java 近期资讯：JDK 28 JEP、Azul Payara、Gatherers4j、Google ADK、Yupiik 与 Apache Camel CVE",
+      "title_zh": "Java 近期资讯：JDK 28 JEP、Azul Payara、Gatherers4j、Google ADK、Yupiik 与 Apache Camel CVE",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "security"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T00:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
+      }
+    },
     {
       "fingerprint": "700f3e4bbfb43c82",
       "url": "https://news.ycombinator.com/item?id=50291116",
@@ -281,6 +558,29 @@
         "mode": "ai",
         "enriched_by": "qwen3.8-omni-flash",
         "run_id": "40887688149"
+      }
+    },
+    {
+      "fingerprint": "36b9d6357317bd12",
+      "url": "https://www.oschina.net/news/503305",
+      "title_original": "VibeVoice-ASR-BitNet 实测：AIGCPanel 上 CPU 实时转写",
+      "title_zh": "VibeVoice-ASR-BitNet 实测：AIGCPanel 上 CPU 实时转写",
+      "summary_zh": "微软把语音识别模型从 4.62GB 压到 1.58GB，AIGCPanel 把它做成了一键运行包。 过去想在本地跑出能用的中文转写，常见路径要么上显卡，要么花半天折腾 Python 和 CUDA。纯 CPU 的方案不是没有，但大多在速度和…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-29T12:34:53.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-30T07:05:07.668Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41017870704"
       }
     },
     {
@@ -2033,307 +2333,6 @@
       "source_name": "Hacker News Front Page",
       "original_lang": "en",
       "published_at": "2026-10-29T00:25:45.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "aa86647721bdcfb6",
-      "url": "https://www.infoq.cn/article/YmgmEh686wTClmj3PY8o?utm_source=rss&utm_medium=article",
-      "title_original": "亚马逊云科技开源智能体“决策器”和“安全箱”，但并发与冷启动仍待解决",
-      "title_zh": "亚马逊云科技开源智能体“决策器”和“安全箱”，但并发与冷启动仍待解决",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "fd6c7c6c47f5d504",
-      "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
-      "title_original": "GitLab Security Incident: Attempted Exploitation of CVE-2026-97229",
-      "title_zh": "GitLab 安全事件：试图利用 CVE-2026-97229",
-      "summary_zh": "GitLab 披露安全事件，涉及对 CVE-2026-97229 的利用尝试。",
-      "tags": [
-        "security",
-        "tools"
-      ],
-      "level": "must-read",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T23:45:46.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "5d2a2027ecbb796f",
-      "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
-      "title_original": "StackOverflow now gets fewer than 1000 questions a month",
-      "title_zh": "StackOverflow 现在每月问题少于 1000 个",
-      "summary_zh": "查询数据显示，StackOverflow 每月提问量已低于 1000 个。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T23:35:02.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "bfb31ceb6c55c182",
-      "url": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
-      "title_original": "Quoting Ted Sanders",
-      "title_zh": "引用泰德·桑德斯",
-      "summary_zh": "该帖引用泰德·桑德斯观点，称大语言模型性能具有多维度，不存在固定排序保证。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-10-28T23:23:21.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "0208fcbf07b6abfb",
-      "url": "https://formlabs.com/products/form-studio-1-basic-founders-edition/",
-      "title_original": "Formlabs Studio 1 $699 Resin Printer",
-      "title_zh": "Formlabs Studio 1 699 美元树脂打印机",
-      "summary_zh": "Formlabs 推出售价 699 美元的 Studio 1 树脂打印机。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T21:19:30.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "95a4dce76755d444",
-      "url": "https://furbo.org/2026/10/28/a-health-update/",
-      "title_original": "A Health Update",
-      "title_zh": "一份健康更新",
-      "summary_zh": "作者发布个人健康状况更新。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T21:13:21.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "69dbb9011b73222b",
-      "url": "https://nango.dev/careers",
-      "title_original": "Nango (YC W23) Is Hiring Across Eng, FDE, Marketing, DevRel",
-      "title_zh": "Nango（YC W23）正在招聘工程、FDE、市场营销和 DevRel 岗位",
-      "summary_zh": "Nango 发布招聘信息，涵盖工程、FDE、市场营销和 DevRel 等岗位。",
-      "tags": [
-        "career"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T21:00:06.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "ccadbcecb1b5df46",
-      "url": "https://v12.sh/blog/the-case-of-the-9bit-aes-key",
-      "title_original": "The case of the 9 bit AES key",
-      "title_zh": "9 位 AES 密钥的案例",
-      "summary_zh": "博客讲述一个与 9 位 AES 密钥相关的案例。",
-      "tags": [
-        "security"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T20:51:44.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "29f0d4517b8b3b85",
-      "url": "https://www.cartesia.ai/blog/from-tokens-to-bytes-part-1",
-      "title_original": "Scaling Hierarchical Networks",
-      "title_zh": "扩展层次网络",
-      "summary_zh": "文章讨论层次网络的扩展，Hacker News 有讨论。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T18:07:41.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "82b84e0cc9cf4a02",
-      "url": "https://www.quantamagazine.org/how-spiders-spin-silk-dope-into-natures-toughest-material-20261028/",
-      "title_original": "Spiders Spin 'Silk Dope' into Nature's Toughest Material",
-      "title_zh": "蜘蛛将“丝液”纺成自然界最强韧材料",
-      "summary_zh": "文章介绍蜘蛛如何将丝液加工为自然界最强韧材料，Hacker News 有讨论。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T17:45:24.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "50d36c1a28126eb5",
-      "url": "https://nullpt.rs/fingerprinting-bioweapons",
-      "title_original": "Why is this fingerprinting script creating bioweapons?",
-      "title_zh": "为什么这个指纹脚本在制造生物武器？",
-      "summary_zh": "文章质疑某指纹脚本与生物武器制造的关联，Hacker News 有讨论。",
-      "tags": [
-        "security"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T17:13:29.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "4771015fefbf7d34",
-      "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
-      "title_original": "MacBook Pro with PROLED XDR Display and Touch",
-      "title_zh": "配备 PROLED XDR 显示屏和触控功能的 MacBook Pro",
-      "summary_zh": "苹果新闻室发布 MacBook Pro 相关消息，Hacker News 有讨论。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T17:10:37.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T07:03:12.066Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40832928414"
-      }
-    },
-    {
-      "fingerprint": "a92d7b7ef0e2da4d",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-      "title_original": "Gemini 4 Carbon",
-      "title_zh": "Gemini 4 Carbon",
-      "summary_zh": "谷歌博客发布 Gemini 4 Carbon 模型介绍，Hacker News 有讨论。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-28T17:01:23.000Z",
       "date_inferred": false,
       "fetched_at": "2026-10-29T07:03:12.066Z",
       "duplicate_of": null,
