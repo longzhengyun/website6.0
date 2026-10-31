@@ -1,9 +1,124 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T06:59:12.908Z",
-  "mode": "ai",
+  "generated_at": "2026-10-31T15:19:23.705Z",
+  "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "dab9b85dd38b8c07",
+      "url": "https://www.infoq.cn/article/HHgKMMKa8BNZYQuMFSMS?utm_source=rss&utm_medium=article",
+      "title_original": "AI 编程导师挑战低端 Android 手机！不用服务器，Python 和 SQL 直接在浏览器里运行",
+      "title_zh": "AI 编程导师挑战低端 Android 手机！不用服务器，Python 和 SQL 直接在浏览器里运行",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T12:43:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-31T15:19:23.705Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41214275733"
+      }
+    },
+    {
+      "fingerprint": "314b6c960f46ca24",
+      "url": "https://www.infoq.cn/video/4qjamMQLVIoZvytUQwpI?utm_source=rss&utm_medium=article",
+      "title_original": "每天上千万次创建：Agent Sandbox 为什么会成为新算力形态？",
+      "title_zh": "每天上千万次创建：Agent Sandbox 为什么会成为新算力形态？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T08:15:46.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-31T15:19:23.705Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41214275733"
+      }
+    },
+    {
+      "fingerprint": "afd66af3c0e474d9",
+      "url": "https://www.infoq.cn/article/qRZCxTQbL1CwAUy28Zm8?utm_source=rss&utm_medium=article",
+      "title_original": "一边拥抱 JDK 27，一边保留 JDK 21：Helidon 开启双轨发布",
+      "title_zh": "一边拥抱 JDK 27，一边保留 JDK 21：Helidon 开启双轨发布",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T07:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-31T15:19:23.705Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41214275733"
+      }
+    },
+    {
+      "fingerprint": "9cd2afdc652a67eb",
+      "url": "https://www.infoq.cn/article/acC46slIVKJg1O0ac8w4?utm_source=rss&utm_medium=article",
+      "title_original": "当AI从“会想”走向“会干”——腾讯云与英特尔共筑Agentic AI执行新底座",
+      "title_zh": "当AI从“会想”走向“会干”——腾讯云与英特尔共筑Agentic AI执行新底座",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T06:49:01.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-31T15:19:23.705Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41214275733"
+      }
+    },
+    {
+      "fingerprint": "2a15c677b8ad90da",
+      "url": "https://www.infoq.cn/article/9OhgYkwYlPYgTbAvWlGz?utm_source=rss&utm_medium=article",
+      "title_original": "Flink 负责时间，Iceberg 负责记忆：Pinterest 如何最终确认数据分区？",
+      "title_zh": "Flink 负责时间，Iceberg 负责记忆：Pinterest 如何最终确认数据分区？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-31T15:19:23.705Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41214275733"
+      }
+    },
     {
       "fingerprint": "2e338f4975c6ee04",
       "url": "https://arxiv.org/abs/2610.37720",
@@ -260,6 +375,52 @@
         "mode": "ai",
         "enriched_by": "qwen3.8-omni-flash",
         "run_id": "41178747206"
+      }
+    },
+    {
+      "fingerprint": "96de64f9543f19ce",
+      "url": "https://www.infoq.cn/article/tNLFh02J0koQswlY5Oqe?utm_source=rss&utm_medium=article",
+      "title_original": "GitHub Actions Runner Controller 0.15.0 致力于实现大规模场景下的可靠性",
+      "title_zh": "GitHub Actions Runner Controller 0.15.0 致力于实现大规模场景下的可靠性",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T02:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-31T15:19:23.705Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41214275733"
+      }
+    },
+    {
+      "fingerprint": "a9ffca13fcec86d6",
+      "url": "https://www.infoq.cn/article/fcdAAd69U452t9b39rLU?utm_source=rss&utm_medium=article",
+      "title_original": "终于不是 AI 了：Lambda 直接运行 Express，API Gateway 还需要吗？",
+      "title_zh": "终于不是 AI 了：Lambda 直接运行 Express，API Gateway 还需要吗？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T00:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-10-31T15:19:23.705Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41214275733"
       }
     },
     {
@@ -2161,169 +2322,6 @@
       "source_name": "Hacker News Front Page",
       "original_lang": "en",
       "published_at": "2026-10-29T11:41:18.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "4f1f139db451f629",
-      "url": "https://butterbean.farm/",
-      "title_original": "Show HN: UK Farming Simulator",
-      "title_zh": "Show HN：英国农场模拟器",
-      "summary_zh": "开发者在 Hacker News 展示名为 UK Farming Simulator 的网页项目。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T11:15:59.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "a47d51a808eac12c",
-      "url": "https://electrek.co/2026/08/31/the-us-added-a-record-20-2-gwh-of-battery-storage-in-just-3-months/",
-      "title_original": "The US added a record 20.2 GWh of battery storage in just 3 months",
-      "title_zh": "美国仅在 3 个月内新增创纪录的 20.2 GWh 电池储能",
-      "summary_zh": "Electrek 报道美国三个月内新增 20.2 GWh 电池储能，创纪录。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T10:44:49.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "ff1ebca6f559787f",
-      "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
-      "title_original": "Chained PHP2Shell Exploit Roots 25 Servers, Including US Government Servers",
-      "title_zh": "链式 PHP2Shell 漏洞利用控制 25 台服务器，包括美国政府服务器",
-      "summary_zh": "Dream Group 博客称链式 PHP2Shell 漏洞利用已控制 25 台服务器，含美国政府服务器。",
-      "tags": [
-        "security"
-      ],
-      "level": "must-read",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T10:42:41.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "14f567e975adb2e1",
-      "url": "https://www.infoq.cn/article/5xCWuR8CMGosWrEuNbix?utm_source=rss&utm_medium=article",
-      "title_original": "概率、插座与5000个爱因斯坦：专访阿里云研发副总裁周琦",
-      "title_zh": "概率、插座与5000个爱因斯坦：专访阿里云研发副总裁周琦",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-29T10:37:11.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "562ada87341186dc",
-      "url": "https://spectrum.ieee.org/ai-generated-scientific-papers",
-      "title_original": "I Used AI to Fake a Scientific Paper. Here's What Happened",
-      "title_zh": "我用 AI 伪造了一篇科学论文。以下是发生的事情",
-      "summary_zh": "一篇 IEEE Spectrum 文章介绍作者用 AI 伪造科学论文的经过与结果。",
-      "tags": [
-        "ai",
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T10:08:04.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "f97f7bd21ba6dfcb",
-      "url": "https://www.infoq.cn/article/aK6ADSkIvwf265yc8PuT?utm_source=rss&utm_medium=article",
-      "title_original": "AI+增长：员工提效了，企业为什么没多赚钱？｜上海鲸阙AI联合创始人 沈涛分享",
-      "title_zh": "AI+增长：员工提效了，企业为什么没多赚钱？｜上海鲸阙AI联合创始人 沈涛分享",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-29T10:00:23.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "8aede429d367f56a",
-      "url": "https://www.oschina.net/news/503303/openai-securing-our-frontier-model-training-environment",
-      "title_original": "OpenAI 隔离的 AI agent 通过 CPU 缓存互相通信",
-      "title_zh": "OpenAI 隔离的 AI agent 通过 CPU 缓存互相通信",
-      "summary_zh": "OpenAI 做了个测试：把两个 agent 放进完全隔离的环境，跑在同一套硬件上，没有网络、没有共享文件，命令它们互相传递一个秘密。它们做到了——用的是处理器缓存。一个 agent 故意改写缓存里的数据，另一个测量加载时间的差异，把消息…",
-      "tags": [
-        "ai",
-        "security"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-29T09:48:03.000Z",
       "date_inferred": false,
       "fetched_at": "2026-10-29T14:03:32.219Z",
       "duplicate_of": null,
