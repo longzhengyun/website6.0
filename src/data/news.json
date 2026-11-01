@@ -1,9 +1,520 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T15:19:23.705Z",
-  "mode": "rss_only",
+  "generated_at": "2026-11-01T07:30:32.983Z",
+  "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "d3a5c860416350b8",
+      "url": "https://www.infoq.cn/article/9aUBUMmhC4s5mEJgXHDL?utm_source=rss&utm_medium=article",
+      "title_original": "移动身份系统的密码学基础：ISO/IEC 18013-5 企业架构蓝图",
+      "title_zh": "移动身份系统的密码学基础：ISO/IEC 18013-5 企业架构蓝图",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-01T06:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "c804735042ba1b38",
+      "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+      "title_original": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
+      "title_zh": "巴西法院因法庭文件中的提示注入处罚律师",
+      "summary_zh": "报道称，巴西法院因律师在法庭文件中引入提示注入行为而对其作出处罚。",
+      "tags": [
+        "security",
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-01T02:19:53.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "973aa90f1f10c8ab",
+      "url": "https://www.otape.org/",
+      "title_original": "OTape",
+      "title_zh": "OTape",
+      "summary_zh": "该条目链接至 OTape 项目页面，并在 Hacker News 上有少量讨论。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-01T02:18:46.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "8974207dc103cae3",
+      "url": "https://www.infoq.cn/article/z8vQa2zzGyLiTxIZ8PXH?utm_source=rss&utm_medium=article",
+      "title_original": "如果 AI 幻觉也有预算，超支之后该怎么办？",
+      "title_zh": "如果 AI 幻觉也有预算，超支之后该怎么办？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-01T02:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "39ee96f3b35f3b96",
+      "url": "https://arxiv.org/abs/2409.02292",
+      "title_original": "Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM (2024)",
+      "title_zh": "通过 RAM 无线电信号拼写信息从气隙计算机泄露机密（2024）",
+      "summary_zh": "一篇 2024 年论文提出，可通过内存辐射的无线电信号从气隙计算机泄露机密信息。",
+      "tags": [
+        "security"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-01T01:46:29.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "6d1f79546fa5a2ec",
+      "url": "https://bbrouter.com/bbrouter/ben-eater-sap-1",
+      "title_original": "Show HN: BBRouter – Ben Eater's 8-bit computer, simulated on 3D breadboards",
+      "title_zh": "Show HN：BBRouter——本·伊特的 8 位计算机，在 3D 面包板上模拟",
+      "summary_zh": "作者因常接错本·伊特 8 位计算机线路，开发了逼真的虚拟面包板编辑器以进行模拟。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-01T00:10:30.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "873c70095f40de59",
+      "url": "https://emarzion.github.io/KSRT/",
+      "title_original": "Constructing a Quine from Kleene's Second Recursion Theorem",
+      "title_zh": "从克林尼第二递归定理构造 Quine",
+      "summary_zh": "文章介绍如何依据克林尼第二递归定理构造 Quine 程序。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T23:55:21.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "041f0f68734f51c2",
+      "url": "https://uvdn7.github.io/altoids-project/",
+      "title_original": "Altoids Project",
+      "title_zh": "Altoids 项目",
+      "summary_zh": "该条目链接至 Altoids 项目页面，并在 Hacker News 上有讨论。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T22:54:55.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "6725a773cbcfd0fd",
+      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+      "title_original": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+      "title_zh": "Memdoor：由 5 个 Qwen3.8-27B 模型组成的团队在 LiveCodeBench Hard 上击败 Fable 5",
+      "summary_zh": "Memdoor 示例显示，由 5 个 Qwen3.8-27B 模型组成的团队在 LiveCodeBench Hard 上超过 Fable 5。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T22:46:12.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "2a6e580066fc66e3",
+      "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
+      "title_original": "An Italian farmer found some unknown seeds in his attic and planted them",
+      "title_zh": "一位意大利农民在阁楼发现一些未知种子并种下它们",
+      "summary_zh": "史密森尼杂志报道，一位意大利农民在阁楼发现未知种子并将其种下。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T22:41:06.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "4ea2bbfbe1de5d96",
+      "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+      "title_original": "ChatGPT and Codex usage limits merging",
+      "title_zh": "ChatGPT 与 Codex 使用限制合并",
+      "summary_zh": "OpenAI 帮助文档说明，ChatGPT 与 Codex 的使用限制正在合并。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T21:49:07.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "cd2df5da4ad72e95",
+      "url": "https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate",
+      "title_original": "Surviving \"The Graduate\"",
+      "title_zh": "在《毕业生》中幸存",
+      "summary_zh": "该归档链接指向一篇题为《在〈毕业生〉中幸存》的文章，Hacker News 上有较多讨论。",
+      "tags": [
+        "other"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T20:02:06.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "1a9ec1373c3bf145",
+      "url": "https://karpathy.bearblog.dev/hacker-tube/",
+      "title_original": "HackerTube: YouTube built from videos recommended by HN",
+      "title_zh": "HackerTube：由 HN 推荐视频构建的 YouTube",
+      "summary_zh": "HackerTube 是类 YouTube 界面，收录自 2007 年起由 39834 条 HN 评论推荐的 6454 个视频。",
+      "tags": [
+        "frontend",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T19:56:53.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "3c488a5d9e8fc9b7",
+      "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+      "title_original": "Anthropic blocks users for anything touching training larger models",
+      "title_zh": "Anthropic 封禁任何触及训练更大模型的用户",
+      "summary_zh": "有文章称，Anthropic 因用户涉及训练更大模型而对其实施封禁。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T19:39:19.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "af71a5cc40079265",
+      "url": "https://epoyraz.github.io/nes-contra-us/",
+      "title_original": "Show HN: NES Contra (1987) port (ASM –> C and then C –> WebAssembly)",
+      "title_zh": "Show HN：NES《魂斗罗》（1987）移植（ASM → C，然后 C → WebAssembly）",
+      "summary_zh": "该项目基于 vermiceli 的《魂斗罗》注释反汇编，将 NES 原版从汇编移植为 C，再编译为 WebAssembly。",
+      "tags": [
+        "frontend",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T19:18:48.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "5545fe355a55d4d0",
+      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+      "title_original": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+      "title_zh": "TCP 释放后使用漏洞：CVE-2026-98432 / CVSS 9.8",
+      "summary_zh": "文章披露 Linux IPv4 TCP 存在释放后使用漏洞 CVE-2026-98432，CVSS 评分 9.8。",
+      "tags": [
+        "security"
+      ],
+      "level": "must-read",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T19:16:30.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "c7db79e425991029",
+      "url": "https://fullycharged.show/podcasts/podcast-361-why-electrification-could-cut-global-energy-use-in-half/",
+      "title_original": "Electrification Could Cut Global Energy Use in Half",
+      "title_zh": "电气化可能将全球能源使用减半",
+      "summary_zh": "播客讨论电气化可能使全球能源使用量减少一半。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T19:13:34.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "c1092cc2051b352e",
+      "url": "https://www.daemonology.net/blog/2026-10-31-The-Duty-of-a-Scholar.html",
+      "title_original": "The Duty of a Scholar",
+      "title_zh": "学者的职责",
+      "summary_zh": "博客文章讨论学者应承担的职责。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T19:07:36.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "075d6f6e4d0cc3d5",
+      "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid/",
+      "title_original": "It's the memory latency, stupid",
+      "title_zh": "是内存延迟，蠢货",
+      "summary_zh": "文章指出系统性能瓶颈主要来自内存延迟。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T18:38:16.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "f9220c3a290bbfef",
+      "url": "https://www.oschina.net/news/503327",
+      "title_original": "Jync v1.9.0 · Webhook 告警与 ETL 批次",
+      "title_zh": "Jync v1.9.0 · Webhook 告警与 ETL 批次",
+      "summary_zh": "新增 Webhook 告警通知与 ETL 批次，ETL 连接类型扩到 7 种新库；同步链路修复了租约与连接池的一组问题。 新增 Webhook 告警通知：同步失败、CDC 异常等按分类推送，支持冷却时间与通用/钉钉/企业微信/飞书格式；地…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T16:53:21.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "26ad248a14cd0c08",
+      "url": "https://jepsen.io/analyses/particledb-1.1.4",
+      "title_original": "Jepsen: ParticleDB 1.1.4",
+      "title_zh": "Jepsen：ParticleDB 1.1.4",
+      "summary_zh": "Jepsen 发布针对 ParticleDB 1.1.4 的一致性测试报告。",
+      "tags": [
+        "tools"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T13:39:52.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "778916995661ca3b",
+      "url": "https://github.com/kerlenton/bootgpt",
+      "title_original": "Show HN: A language model that lives in a boot sector",
+      "title_zh": "Show HN：一个存在于引导扇区中的语言模型",
+      "summary_zh": "该项目受引导扇区演示场景启发，尝试在 512 字节内实现语言模型。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T12:58:29.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
     {
       "fingerprint": "dab9b85dd38b8c07",
       "url": "https://www.infoq.cn/article/HHgKMMKa8BNZYQuMFSMS?utm_source=rss&utm_medium=article",
@@ -25,6 +536,53 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "41214275733"
+      }
+    },
+    {
+      "fingerprint": "1c640f88e053cb51",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "title_original": "Do the math: How we took over ChatGPT accounts",
+      "title_zh": "算一算：我们如何接管 ChatGPT 账户",
+      "summary_zh": "文章称研究人员发现 OpenAI 相关缺陷，并演示如何接管 ChatGPT 账户。",
+      "tags": [
+        "security",
+        "ai"
+      ],
+      "level": "must-read",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-10-31T10:30:11.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "qwen3.8-omni-flash",
+        "run_id": "41285034670"
+      }
+    },
+    {
+      "fingerprint": "15e8ac95592df927",
+      "url": "https://www.oschina.net/news/503326",
+      "title_original": "酷瓜云课堂（网校企业版）v2.0.3 发布，PHP在线网校系统",
+      "title_zh": "酷瓜云课堂（网校企业版）v2.0.3 发布，PHP在线网校系统",
+      "summary_zh": "更新内容 【增加】后台登录双因素验证（2FA/TOTP），支持在安全设置中开启 【增加】资金、积分、发票流水记录事前/事后余额 【增加】编辑器远程图片本地化开关（biz.editor.save_remote_image） 【优化】文件上传…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T08:50:03.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41285034670"
       }
     },
     {
@@ -117,6 +675,29 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "41214275733"
+      }
+    },
+    {
+      "fingerprint": "c4de242efa6a8ef5",
+      "url": "https://www.oschina.net/news/503325",
+      "title_original": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
+      "title_zh": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
+      "summary_zh": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T04:46:42.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41285034670"
       }
     },
     {
@@ -355,6 +936,29 @@
       }
     },
     {
+      "fingerprint": "5ce664d564162c95",
+      "url": "https://www.oschina.net/news/503324",
+      "title_original": "MiniToolDesk v1.0 发布：纯前端离线开发者工具箱，杜绝数据泄露与广告骚扰",
+      "title_zh": "MiniToolDesk v1.0 发布：纯前端离线开发者工具箱，杜绝数据泄露与广告骚扰",
+      "summary_zh": "近日，现代化纯前端离线开发者工具箱 MiniToolDesk v1.0 正式发布，并同步上架 Google Chrome 网上应用店与微软 Edge 官方扩展中心。 该项目致力于解决日常研发工作中，在线转换工具满屏牛皮癣广告、以及敏感数据…",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T03:14:25.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41285034670"
+      }
+    },
+    {
       "fingerprint": "3ab4a2ac04ee9b82",
       "url": "https://news.ycombinator.com/item?id=50312756",
       "title_original": "Tell HN: Scribd Breached",
@@ -375,6 +979,29 @@
         "mode": "ai",
         "enriched_by": "qwen3.8-omni-flash",
         "run_id": "41178747206"
+      }
+    },
+    {
+      "fingerprint": "92b80ccda6f9177d",
+      "url": "https://www.oschina.net/news/503323",
+      "title_original": "DataY 轻量数据平台，v1.0.5 版本更新",
+      "title_zh": "DataY 轻量数据平台，v1.0.5 版本更新",
+      "summary_zh": "DataY 是一套开源、轻量的一体化数据平台，理念很简单： 数据平台可以很小，功能不打折。 传统数据平台往往需要 Hadoop、Spark、Flink、ClickHouse 一整套组件，几十台机器起步，运维门槛高。DataY 选择另一条路…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-31T02:40:41.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41285034670"
       }
     },
     {
@@ -445,6 +1072,29 @@
         "mode": "ai",
         "enriched_by": "qwen3.8-omni-flash",
         "run_id": "41178747206"
+      }
+    },
+    {
+      "fingerprint": "f1749652418ee001",
+      "url": "https://www.oschina.net/news/503322",
+      "title_original": "Jync v1.8.2 · 日志 CDC 覆盖信创数据库，并发与审计更稳",
+      "title_zh": "Jync v1.8.2 · 日志 CDC 覆盖信创数据库，并发与审计更稳",
+      "summary_zh": "日志 CDC 从 MySQL / Oracle / PostgreSQL / SQL Server 扩到更多国产与兼容数据库：崖山 YStream、达梦 DM8 LogMiner、openGauss 等 PG 方言家族、MySQL 兼容家…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-10-30T23:32:43.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-01T07:30:32.983Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41285034670"
       }
     },
     {
@@ -1677,658 +2327,6 @@
         "mode": "ai",
         "enriched_by": "qwen3.8-omni-flash",
         "run_id": "41085156220"
-      }
-    },
-    {
-      "fingerprint": "10359c1d695cd187",
-      "url": "https://www.infoq.cn/article/dfj1fLfP8iVLKFtEfr69?utm_source=rss&utm_medium=article",
-      "title_original": "Java 近期资讯：JDK 28 JEP、Azul Payara、Gatherers4j、Google ADK、Yupiik 与 Apache Camel CVE",
-      "title_zh": "Java 近期资讯：JDK 28 JEP、Azul Payara、Gatherers4j、Google ADK、Yupiik 与 Apache Camel CVE",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "security"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-30T00:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-30T07:05:07.668Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41017870704"
-      }
-    },
-    {
-      "fingerprint": "cfee38c25797a9a1",
-      "url": "https://github.com/mottopanikeiku/doomformer",
-      "title_original": "Show HN: I Turned DOOM into a Transformer",
-      "title_zh": "Show HN：我把《DOOM》变成了 Transformer",
-      "summary_zh": "作者展示将《DOOM》转化为 Transformer 的项目。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T23:25:46.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-30T15:55:39.302Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41085156220"
-      }
-    },
-    {
-      "fingerprint": "88899755dba00e8d",
-      "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
-      "title_original": "API credits benefit for eligible ChatGPT subscriptions",
-      "title_zh": "符合条件的 ChatGPT 订阅可获得 API 额度福利",
-      "summary_zh": "文章介绍符合条件的 ChatGPT 订阅可获得 API 额度福利，并提及 Anthropic 本月早些时候宣布新福利。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-10-29T22:48:29.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-30T15:55:39.302Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41085156220"
-      }
-    },
-    {
-      "fingerprint": "6d4f02716eed3439",
-      "url": "https://adcochrane.wordpress.com/2026/10/29/lighthouses-war-and-a-puffling-the-isle-of-may/",
-      "title_original": "Lighthouses, War and a Puffling",
-      "title_zh": "灯塔、战争与一只小海鹦",
-      "summary_zh": "博客文章讲述梅岛上的灯塔、战争历史与小海鹦。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T22:11:08.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-30T15:55:39.302Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41085156220"
-      }
-    },
-    {
-      "fingerprint": "2cf1fb795ba0396c",
-      "url": "https://labs.ycombinator.com/projects/games/index.html",
-      "title_original": "We ran AI agent swarms in Minecraft and Mindustry",
-      "title_zh": "我们在《Minecraft》和《Mindustry》中运行了 AI 智能体集群",
-      "summary_zh": "Y Combinator Labs 展示在《Minecraft》和《Mindustry》中运行 AI 智能体集群的项目。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T21:40:28.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-30T15:55:39.302Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41085156220"
-      }
-    },
-    {
-      "fingerprint": "541ef083bcb7fa92",
-      "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
-      "title_original": "Binance-hacker-1029 – $5.6B stolen from Binance",
-      "title_zh": "Binance-hacker-1029——币安被盗 56 亿美元",
-      "summary_zh": "Arkham 页面展示与币安被盗 56 亿美元相关的黑客实体信息。",
-      "tags": [
-        "security",
-        "other"
-      ],
-      "level": "must-read",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T21:38:59.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-30T15:55:39.302Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41085156220"
-      }
-    },
-    {
-      "fingerprint": "7b84f0e97724d28a",
-      "url": "https://github.com/SheepSeb/tinyworldformer",
-      "title_original": "A tiny world model running games on a Raspberry Pi Pico 2 W",
-      "title_zh": "一个在 Raspberry Pi Pico 2 W 上运行游戏的小型世界模型",
-      "summary_zh": "GitHub 项目 tinyworldformer 展示可在 Raspberry Pi Pico 2 W 上运行游戏的小型世界模型。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T20:32:28.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-30T15:55:39.302Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41085156220"
-      }
-    },
-    {
-      "fingerprint": "e65fcafff408f808",
-      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
-      "title_original": "Building a multiplayer game world with autonomous Fable-class models",
-      "title_zh": "使用自主 Fable 级模型构建多人游戏世界",
-      "summary_zh": "该文章讲述如何使用自主 Fable 级模型构建多人游戏世界。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-10-29T17:00:26.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T06:59:12.908Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41178747206"
-      }
-    },
-    {
-      "fingerprint": "700f3e4bbfb43c82",
-      "url": "https://news.ycombinator.com/item?id=50291116",
-      "title_original": "Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents",
-      "title_zh": "Launch HN：Simantic（YC F26）——面向 AI 智能体的固件模拟",
-      "summary_zh": "Simantic 团队在 Launch HN 介绍其面向 AI 智能体的固件模拟层。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T15:56:32.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T16:06:55.395Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40908292071"
-      }
-    },
-    {
-      "fingerprint": "b4cab35c0ca3aada",
-      "url": "https://www.washingtonpost.com/climate-environment/2026/10/27/i-saw-future-driving-mexico-its-off-limits-americans/",
-      "title_original": "Mexico is a showroom for electric vehicles you can't buy in the U.S.",
-      "title_zh": "墨西哥是你无法在美国购买的电动汽车的展示厅",
-      "summary_zh": "《华盛顿邮报》报道，墨西哥展示了无法在美国购买的电动汽车。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T15:30:22.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T16:06:55.395Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40908292071"
-      }
-    },
-    {
-      "fingerprint": "a1f8d24a51e36d46",
-      "url": "https://trakkr.ai/trakkr-research/zombie-stats",
-      "title_original": "Only 40% of AI-cited statistics trace back to a study",
-      "title_zh": "只有 40% 的 AI 引用统计数据可追溯到研究",
-      "summary_zh": "Trakkr 研究显示，AI 引用的统计数据中仅 40% 可追溯到原始研究。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T15:06:17.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T16:06:55.395Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40908292071"
-      }
-    },
-    {
-      "fingerprint": "ed353e0ff3167409",
-      "url": "https://yle.fi/a/74-20254086",
-      "title_original": "Finland investigate Google over destruction of 250k trees",
-      "title_zh": "芬兰因谷歌破坏 25 万棵树展开调查",
-      "summary_zh": "Yle 报道，芬兰正就谷歌破坏约 25 万棵树一事展开调查。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T14:57:41.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T16:06:55.395Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40908292071"
-      }
-    },
-    {
-      "fingerprint": "e4af34a2153ac44b",
-      "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
-      "title_original": "DoorDash is acquiring Instacart for $17B",
-      "title_zh": "DoorDash 将以 170 亿美元收购 Instacart",
-      "summary_zh": "DoorDash 宣布将以 170 亿美元收购 Instacart。",
-      "tags": [
-        "other"
-      ],
-      "level": "trending",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T14:40:43.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T16:06:55.395Z",
-      "duplicate_of": "a4eb3b83b072737a",
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40908292071"
-      }
-    },
-    {
-      "fingerprint": "ac8e8f57e6764ba4",
-      "url": "https://github.com/owls-on-wires/keplearn",
-      "title_original": "Keplearn: Extract Equations from Data in Seconds",
-      "title_zh": "Keplearn：在数秒内从数据中提取方程",
-      "summary_zh": "Keplearn 是 GitHub 项目，宣称可在数秒内从数据中提取方程。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T14:22:53.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T16:06:55.395Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40908292071"
-      }
-    },
-    {
-      "fingerprint": "5a25565ab71a8d06",
-      "url": "https://mistral.ai/news/mistral-large-4-oss/",
-      "title_original": "Mistral Large 4 (Le Chonk) is now Open Weight",
-      "title_zh": "Mistral Large 4（Le Chonk）现已开放权重",
-      "summary_zh": "Mistral 宣布 Mistral Large 4（Le Chonk）开放权重。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T14:13:21.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T16:06:55.395Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40908292071"
-      }
-    },
-    {
-      "fingerprint": "2d0c2102a7199551",
-      "url": "https://simonwillison.net/2026/Oct/29/ben-hylak/",
-      "title_original": "Quoting Ben Hylak",
-      "title_zh": "引用本·海拉克",
-      "summary_zh": "本·海拉克称，他希望产品作为无头 MCP 接入智能体，让用户无需思考。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-10-29T14:06:27.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T16:06:55.395Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40908292071"
-      }
-    },
-    {
-      "fingerprint": "540b1c17cdd19889",
-      "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
-      "title_original": "Why are good developers so wary of agentic development?",
-      "title_zh": "为什么优秀开发者对智能体开发如此警惕？",
-      "summary_zh": "Martin Fowler 博客讨论优秀开发者对智能体开发保持谨慎的原因。",
-      "tags": [
-        "ai",
-        "career"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T13:58:41.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T16:06:55.395Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40908292071"
-      }
-    },
-    {
-      "fingerprint": "d4911988de4cb194",
-      "url": "https://css-tricks.com/the-frankenstein-table/",
-      "title_original": "The Frankenstein Table",
-      "title_zh": "弗兰肯斯坦表格",
-      "summary_zh": "文章讨论使用 CSS Grid 等非表格布局技术构造表格的做法。",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "css-tricks",
-      "source_name": "CSS-Tricks",
-      "original_lang": "en",
-      "published_at": "2026-10-29T13:47:08.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "739a364c99d60f8c",
-      "url": "https://www.vox.com/xpress/2014/11/12/7204453/martin-luther-king-fbi-letter",
-      "title_original": "Read the letter the FBI sent MLK to try to convince him to kill himself (2014)",
-      "title_zh": "阅读联邦调查局发给马丁·路德·金、试图劝说他自杀的信（2014）",
-      "summary_zh": "Vox 文章展示联邦调查局曾发给马丁·路德·金的信件，并称其试图劝说他自杀。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T13:40:04.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "5385485570aa2630",
-      "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
-      "title_original": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
-      "title_zh": "Gemini 4 Carbon 成为 Artificial Analysis Intelligence Index v5 的新第一名",
-      "summary_zh": "Artificial Analysis 文章称 Gemini 4 Carbon 在其 Intelligence Index v5 中排名第一。",
-      "tags": [
-        "ai"
-      ],
-      "level": "trending",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T12:41:56.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "36b9d6357317bd12",
-      "url": "https://www.oschina.net/news/503305",
-      "title_original": "VibeVoice-ASR-BitNet 实测：AIGCPanel 上 CPU 实时转写",
-      "title_zh": "VibeVoice-ASR-BitNet 实测：AIGCPanel 上 CPU 实时转写",
-      "summary_zh": "微软把语音识别模型从 4.62GB 压到 1.58GB，AIGCPanel 把它做成了一键运行包。 过去想在本地跑出能用的中文转写，常见路径要么上显卡，要么花半天折腾 Python 和 CUDA。纯 CPU 的方案不是没有，但大多在速度和…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-29T12:34:53.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-30T07:05:07.668Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41017870704"
-      }
-    },
-    {
-      "fingerprint": "a4eb3b83b072737a",
-      "url": "https://ir.doordash.com/news/news-details/2026/DoorDash-to-Acquire-Instacart-to-Help-Local-Stores-Win/default.aspx",
-      "title_original": "DoorDash to Acquire Instacart",
-      "title_zh": "DoorDash 将收购 Instacart",
-      "summary_zh": "DoorDash 公告称将收购 Instacart，以帮助本地商店赢得竞争。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T12:33:05.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "ab0c44b21d5c3f1d",
-      "url": "https://text.npr.org/nx-s1-6021497",
-      "title_original": "Hackers expose the identities of more than 40k DHS employees",
-      "title_zh": "黑客曝光超过 4 万名美国国土安全部员工身份",
-      "summary_zh": "NPR 报道黑客曝光超过 4 万名美国国土安全部员工身份信息。",
-      "tags": [
-        "security"
-      ],
-      "level": "must-read",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T12:31:09.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "136ee7d418e593b4",
-      "url": "https://www.infoq.cn/article/fHXiS2bsEFHDXdwVK6KP?utm_source=rss&utm_medium=article",
-      "title_original": "启元 CEO 田华：启元机器人接入WorkBuddy，不仅看见你的世界，还能走得到你身边",
-      "title_zh": "启元 CEO 田华：启元机器人接入WorkBuddy，不仅看见你的世界，还能走得到你身边",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-29T12:22:05.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "2169c46ff38eaf60",
-      "url": "https://iptrust.co/blog/if-ipv4-were-land",
-      "title_original": "If IPv4 Were Land",
-      "title_zh": "如果 IPv4 是土地",
-      "summary_zh": "iptrust 博客以土地类比解释 IPv4 地址空间。",
-      "tags": [
-        "standards"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T12:19:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "ef86689d3a50b9b0",
-      "url": "https://www.infoq.cn/article/dXwHCW7kjGX1kjPqtla9?utm_source=rss&utm_medium=article",
-      "title_original": "谷歌赢了 AI 排行榜，却没赢下华尔街：Gemini 4 Carbon 登顶背后的昂贵代价",
-      "title_zh": "谷歌赢了 AI 排行榜，却没赢下华尔街：Gemini 4 Carbon 登顶背后的昂贵代价",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "trending",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-29T12:13:07.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "71f6ace31bb2b54b",
-      "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
-      "title_original": "NetBSD adds a new beginner-friendly text editor called atto",
-      "title_zh": "NetBSD 新增一款面向初学者的文本编辑器 atto",
-      "summary_zh": "NetBSD 宣布新增名为 atto 的初学者友好文本编辑器。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T11:59:01.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
-      }
-    },
-    {
-      "fingerprint": "224a9c3d792da8ba",
-      "url": "https://publicpolicy.googleblog.com/2008/04/how-google-determines-names-for-bodies.html",
-      "title_original": "Google determines the names for bodies of water in Google Earth (2008)",
-      "title_zh": "谷歌决定谷歌地球中水域的名称（2008）",
-      "summary_zh": "2008 年谷歌政策博客说明谷歌地球如何确定水域名称。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-29T11:41:18.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-29T14:03:32.219Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "40887688149"
       }
     }
   ]
