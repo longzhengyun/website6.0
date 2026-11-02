@@ -1,6 +1,6 @@
 {
-  "run_id": "41407780470",
-  "generated_at": "2026-11-02T07:40:26.293Z",
+  "run_id": "41510254327",
+  "generated_at": "2026-11-02T19:28:45.270Z",
   "mode": "ai",
   "llm": {
     "key_present": true,
@@ -8,19 +8,19 @@
     "model": "deepseek-v4-pro-0813",
     "token_budget": 100000,
     "budget_exceeded": false,
-    "calls": 10,
-    "batches_failed": 4,
+    "calls": 9,
+    "batches_failed": 2,
     "aborted": false,
-    "input_tokens": 10547,
-    "output_tokens": 4854
+    "input_tokens": 16880,
+    "output_tokens": 10716
   },
   "sources": [
     {
       "id": "hn-frontpage",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 15,
-      "ms": 12562,
+      "items_new": 20,
+      "ms": 533,
       "error": null
     },
     {
@@ -28,23 +28,23 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 586,
+      "ms": 459,
       "error": null
     },
     {
       "id": "smashing",
       "status": "ok",
       "items_fetched": 40,
-      "items_new": 1,
-      "ms": 252,
+      "items_new": 0,
+      "ms": 438,
       "error": null
     },
     {
       "id": "css-tricks",
       "status": "ok",
       "items_fetched": 15,
-      "items_new": 0,
-      "ms": 749,
+      "items_new": 1,
+      "ms": 912,
       "error": null
     },
     {
@@ -52,15 +52,15 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 248,
+      "ms": 265,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 4,
-      "ms": 158,
+      "items_new": 5,
+      "ms": 187,
       "error": null
     },
     {
@@ -68,43 +68,41 @@
       "status": "ok",
       "items_fetched": 297,
       "items_new": 10,
-      "ms": 381,
+      "ms": 279,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 9,
-      "ms": 1285,
+      "items_new": 10,
+      "ms": 1801,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 13,
-      "ms": 2491,
+      "items_new": 3,
+      "ms": 2733,
       "error": null
     }
   ],
   "counts": {
     "fetched": 502,
-    "in_window": 52,
-    "deduped_existing": 6,
-    "new_items": 52,
-    "ai_enriched": 12,
+    "in_window": 49,
+    "deduped_existing": 33,
+    "new_items": 49,
+    "ai_enriched": 29,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 20,
+    "dropped_nonzh_r17": 16,
     "future_clamped": 0
   },
   "news_items_total": 100,
   "degraded_all_sources": false,
   "errors": [
-    "enrichment batch 0 failed: Unexpected end of JSON input",
-    "enrichment batch 10 failed: Unexpected end of JSON input",
-    "enrichment batch 30 failed: Unterminated string in JSON at position 432 (line 14 column 51)",
-    "enrichment batch 40 failed: Unexpected end of JSON input"
+    "enrichment batch 10 failed: Unterminated string in JSON at position 1332 (line 48 column 8)",
+    "enrichment batch 30 failed: Unexpected end of JSON input"
   ]
 }
