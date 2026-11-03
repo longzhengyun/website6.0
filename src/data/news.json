@@ -1,9 +1,423 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T19:28:45.270Z",
-  "mode": "ai",
+  "generated_at": "2026-11-03T07:54:09.665Z",
+  "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "4f230293e2958815",
+      "url": "https://www.infoq.cn/article/YwAayF1ylWb7oN4P0lyC?utm_source=rss&utm_medium=article",
+      "title_original": "构建面向 Agentic 推理的下一代 LLM 推理引擎",
+      "title_zh": "构建面向 Agentic 推理的下一代 LLM 推理引擎",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T07:40:16.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "4ad8f1a98e3b6098",
+      "url": "https://www.infoq.cn/article/a2X4KVOXOt6lACRv8IWh?utm_source=rss&utm_medium=article",
+      "title_original": "AI 复刻 Adobe 系列软件开发者坦言：项目远未准备就绪",
+      "title_zh": "AI 复刻 Adobe 系列软件开发者坦言：项目远未准备就绪",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T07:12:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "d76af12ed004a7b3",
+      "url": "https://www.infoq.cn/article/zZutPTX8bsr6NWQYNC3A?utm_source=rss&utm_medium=article",
+      "title_original": "从模型调用到任务交付：MaaS 如何走进 Agent 生产",
+      "title_zh": "从模型调用到任务交付：MaaS 如何走进 Agent 生产",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T06:40:18.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "b3b095df41c31a10",
+      "url": "https://www.oschina.net/news/503368",
+      "title_original": "Jync v1.11.0 · MongoDB 专属迁移",
+      "title_zh": "Jync v1.11.0 · MongoDB 专属迁移",
+      "summary_zh": "Jync v1.11.0 · MongoDB 专属迁移 「专属迁移」新增 MongoDB → MongoDB 与 MongoDB → KingbaseES 两种整库一次性复制，与实时同步、ETL 完全隔离；ES / OpenSearch …",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T05:33:51.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "646da547cbe4e26c",
+      "url": "https://www.infoq.cn/article/PJdTzbUNPBhvKEd6QuxZ?utm_source=rss&utm_medium=article",
+      "title_original": "Netflix 通过工作负载认证将 AWS IAM 与内部身份系统连接了起来",
+      "title_zh": "Netflix 通过工作负载认证将 AWS IAM 与内部身份系统连接了起来",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T05:04:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "a3e99bff592dc9cb",
+      "url": "https://www.infoq.cn/article/UNTqkzASI7dJuq65kSNZ?utm_source=rss&utm_medium=article",
+      "title_original": "微软向6万员工发出自愿离职邀请：覆盖全球超四分之一员工，副总裁也在列",
+      "title_zh": "微软向6万员工发出自愿离职邀请：覆盖全球超四分之一员工，副总裁也在列",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T05:03:43.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "c15023e8086d156d",
+      "url": "https://www.infoq.cn/article/IMWM7ZXDi99sMiUVZBIF?utm_source=rss&utm_medium=article",
+      "title_original": "Anthropic团队零Rust经验起步，靠Claude完成核心API跨语言重构：CPU省40%，延迟降20%",
+      "title_zh": "Anthropic团队零Rust经验起步，靠Claude完成核心API跨语言重构：CPU省40%，延迟降20%",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T04:51:41.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "8f0b0826413a4bb2",
+      "url": "https://www.infoq.cn/article/xaWSKT3MlZjbuJw16Vem?utm_source=rss&utm_medium=article",
+      "title_original": "“别再像 2024 年那样用 Claude 了！”Claude Cowork 工程负责人：有些 Skill 删掉反而更好",
+      "title_zh": "“别再像 2024 年那样用 Claude 了！”Claude Cowork 工程负责人：有些 Skill 删掉反而更好",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T04:49:51.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "424d8b03801ee23d",
+      "url": "https://www.oschina.net/news/503367/cisco-unlimited-ai-tokens-rewrite-legacy-code",
+      "title_original": "思科给一个 27 岁工程师无限 token，让他重写 98% 的遗留代码",
+      "title_zh": "思科给一个 27 岁工程师无限 token，让他重写 98% 的遗留代码",
+      "summary_zh": "Cisco 总裁兼首席产品官 Jeetu Patel 给了一个 27 岁工程师无限量的 AI token。原话是在一场小型圆桌晚宴上说的：\"我给了他无限的 tokens，因为他要去重构代码。所以我说，去吧，随便用。\" 这人叫 Padman…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T04:12:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "f0667ab9f2bee016",
+      "url": "https://www.infoq.cn/article/NIXfxPlElNVwNtbYZPz2?utm_source=rss&utm_medium=article",
+      "title_original": "致敬每一份专业与热爱！QCon 上海 2026 优秀出品人与明星讲师揭晓",
+      "title_zh": "致敬每一份专业与热爱！QCon 上海 2026 优秀出品人与明星讲师揭晓",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T03:27:48.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "20efccf4feed1ca4",
+      "url": "https://www.oschina.net/news/503364",
+      "title_original": "GFlow v1.4.1 发布：审批流转全程留痕、审批消息直达 IM、开放外部系统集成",
+      "title_zh": "GFlow v1.4.1 发布：审批流转全程留痕、审批消息直达 IM、开放外部系统集成",
+      "summary_zh": "GFlow（极风工作流平台）基于 RuleGo 规则引擎构建，核心理念是：AI 先审 · 人再签 · 签完自动办——大模型先审风险，低风险自动直通；会签、加签、任意退回，中国式审批一个不少；审批通过那一刻，入账、通知、回写业务系统由规则链…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T03:14:56.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "ac84231215f56f32",
+      "url": "https://www.infoq.cn/article/xt0ovZNNw9HEAOv59Mcj?utm_source=rss&utm_medium=article",
+      "title_original": "Spring Security 7 中的服务端 DPoP 和令牌交换",
+      "title_zh": "Spring Security 7 中的服务端 DPoP 和令牌交换",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "security"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T03:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "31cb7ba335d790d5",
+      "url": "https://www.infoq.cn/article/JmVl0yY2RYIBNpuD0xuu?utm_source=rss&utm_medium=article",
+      "title_original": "谷歌宁愿少卖云算力，也要先把算力留给 Gemini：皮查伊罕见长访谈，披露 AI 自我改进与算力争夺内幕",
+      "title_zh": "谷歌宁愿少卖云算力，也要先把算力留给 Gemini：皮查伊罕见长访谈，披露 AI 自我改进与算力争夺内幕",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T02:45:58.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "faf9d3f2ad2d30f9",
+      "url": "https://www.infoq.cn/article/M6Q9I3DFrozJOREx9ztL?utm_source=rss&utm_medium=article",
+      "title_original": "框架选不对，Claude 开发成本多一倍：前端十年框架膨胀，终于有人买单了",
+      "title_zh": "框架选不对，Claude 开发成本多一倍：前端十年框架膨胀，终于有人买单了",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T02:38:04.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "263e3726fd72d9dc",
+      "url": "https://www.oschina.net/news/503357",
+      "title_original": "ShopXO 免费开源商城系统 v6.9.3 版本已发布",
+      "title_zh": "ShopXO 免费开源商城系统 v6.9.3 版本已发布",
+      "summary_zh": "更新日志 1.【新增】同城急送插件，对接快递100聚合运力与达达配送，支持门店端查看骑手、回调日志与发货同步 2.【新增】小票打印公共可视化设计，多门店/飞鹅小票统一设计能力，并支持多商户 3.【新增】门店小票增加大屏叫号号码展示，打印测…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T02:16:27.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "afd083dc12ae53b4",
+      "url": "https://www.infoq.cn/article/DliBOqGrOaxaXvqlBjGR?utm_source=rss&utm_medium=article",
+      "title_original": "从提效到扩能：AI 驱动小团队的能力突破与组织演进｜AICon北京",
+      "title_zh": "从提效到扩能：AI 驱动小团队的能力突破与组织演进｜AICon北京",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T02:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "1963a2931d0c4e5f",
+      "url": "https://www.oschina.net/news/503356",
+      "title_original": "DBPanel 1.1.3 发布：增强网站防护与版本化部署，新增空间清理",
+      "title_zh": "DBPanel 1.1.3 发布：增强网站防护与版本化部署，新增空间清理",
+      "summary_zh": "DBPanel 1.1.3 发布。本次更新重点完善网站防护、部署管理、磁盘清理和系统更新，让服务器日常运维中的发布、清理与升级操作更加清晰、可控。 DBPanel 是面向 Linux 服务器的可视化管理面板，提供运行环境安装、网站管理、数…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T01:41:48.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "5c7609d836bde64e",
+      "url": "https://www.infoq.cn/article/uIxYaSdYatN2Z7gPOaTU?utm_source=rss&utm_medium=article",
+      "title_original": "eMudhra 中间证书颁发机构（CA）安全漏洞",
+      "title_zh": "eMudhra 中间证书颁发机构（CA）安全漏洞",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T01:00:54.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
     {
       "fingerprint": "5010fb296f767bbc",
       "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
@@ -327,6 +741,52 @@
         "mode": "ai",
         "enriched_by": "deepseek-v4-pro-0813",
         "run_id": "41510254327"
+      }
+    },
+    {
+      "fingerprint": "720c45a2fb121ee6",
+      "url": "https://www.oschina.net/news/503354",
+      "title_original": "Cordonix 0.0.5 发布：新增原生手机工具与 Windows 进程查询",
+      "title_zh": "Cordonix 0.0.5 发布：新增原生手机工具与 Windows 进程查询",
+      "summary_zh": "Cordonix 0.0.5 已发布。Cordonix（简称 cdx）是面向 AI 编程代理的原生本地工具运行时，使用 C11 实现，通过 MCP stdio 服务和 JSON 命令行接口提供本地程序执行、内存文件工作区、严格编码处理、目…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-02T12:47:49.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "c5c492e10d10782e",
+      "url": "https://www.infoq.cn/article/q3GxjwqlYQbIZDYsJ2Uf?utm_source=rss&utm_medium=article",
+      "title_original": "腾讯云助力企业打造 AI 原生生产力飞轮",
+      "title_zh": "腾讯云助力企业打造 AI 原生生产力飞轮",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-02T12:22:50.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T07:54:09.665Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41599370484"
       }
     },
     {
@@ -1863,469 +2323,6 @@
         "mode": "ai",
         "enriched_by": "qwen3.8-omni-flash",
         "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "5545fe355a55d4d0",
-      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
-      "title_original": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
-      "title_zh": "TCP 释放后使用漏洞：CVE-2026-98432 / CVSS 9.8",
-      "summary_zh": "文章披露 Linux IPv4 TCP 存在释放后使用漏洞 CVE-2026-98432，CVSS 评分 9.8。",
-      "tags": [
-        "security"
-      ],
-      "level": "must-read",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T19:16:30.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "c7db79e425991029",
-      "url": "https://fullycharged.show/podcasts/podcast-361-why-electrification-could-cut-global-energy-use-in-half/",
-      "title_original": "Electrification Could Cut Global Energy Use in Half",
-      "title_zh": "电气化可能将全球能源使用减半",
-      "summary_zh": "播客讨论电气化可能使全球能源使用量减少一半。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T19:13:34.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "c1092cc2051b352e",
-      "url": "https://www.daemonology.net/blog/2026-10-31-The-Duty-of-a-Scholar.html",
-      "title_original": "The Duty of a Scholar",
-      "title_zh": "学者的职责",
-      "summary_zh": "博客文章讨论学者应承担的职责。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T19:07:36.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "075d6f6e4d0cc3d5",
-      "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid/",
-      "title_original": "It's the memory latency, stupid",
-      "title_zh": "是内存延迟，蠢货",
-      "summary_zh": "文章指出系统性能瓶颈主要来自内存延迟。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T18:38:16.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "f9220c3a290bbfef",
-      "url": "https://www.oschina.net/news/503327",
-      "title_original": "Jync v1.9.0 · Webhook 告警与 ETL 批次",
-      "title_zh": "Jync v1.9.0 · Webhook 告警与 ETL 批次",
-      "summary_zh": "新增 Webhook 告警通知与 ETL 批次，ETL 连接类型扩到 7 种新库；同步链路修复了租约与连接池的一组问题。 新增 Webhook 告警通知：同步失败、CDC 异常等按分类推送，支持冷却时间与通用/钉钉/企业微信/飞书格式；地…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-31T16:53:21.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "26ad248a14cd0c08",
-      "url": "https://jepsen.io/analyses/particledb-1.1.4",
-      "title_original": "Jepsen: ParticleDB 1.1.4",
-      "title_zh": "Jepsen：ParticleDB 1.1.4",
-      "summary_zh": "Jepsen 发布针对 ParticleDB 1.1.4 的一致性测试报告。",
-      "tags": [
-        "tools"
-      ],
-      "level": "trending",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T13:39:52.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "778916995661ca3b",
-      "url": "https://github.com/kerlenton/bootgpt",
-      "title_original": "Show HN: A language model that lives in a boot sector",
-      "title_zh": "Show HN：一个存在于引导扇区中的语言模型",
-      "summary_zh": "该项目受引导扇区演示场景启发，尝试在 512 字节内实现语言模型。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T12:58:29.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "dab9b85dd38b8c07",
-      "url": "https://www.infoq.cn/article/HHgKMMKa8BNZYQuMFSMS?utm_source=rss&utm_medium=article",
-      "title_original": "AI 编程导师挑战低端 Android 手机！不用服务器，Python 和 SQL 直接在浏览器里运行",
-      "title_zh": "AI 编程导师挑战低端 Android 手机！不用服务器，Python 和 SQL 直接在浏览器里运行",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-31T12:43:05.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T15:19:23.705Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41214275733"
-      }
-    },
-    {
-      "fingerprint": "1c640f88e053cb51",
-      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
-      "title_original": "Do the math: How we took over ChatGPT accounts",
-      "title_zh": "算一算：我们如何接管 ChatGPT 账户",
-      "summary_zh": "文章称研究人员发现 OpenAI 相关缺陷，并演示如何接管 ChatGPT 账户。",
-      "tags": [
-        "security",
-        "ai"
-      ],
-      "level": "must-read",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T10:30:11.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "15e8ac95592df927",
-      "url": "https://www.oschina.net/news/503326",
-      "title_original": "酷瓜云课堂（网校企业版）v2.0.3 发布，PHP在线网校系统",
-      "title_zh": "酷瓜云课堂（网校企业版）v2.0.3 发布，PHP在线网校系统",
-      "summary_zh": "更新内容 【增加】后台登录双因素验证（2FA/TOTP），支持在安全设置中开启 【增加】资金、积分、发票流水记录事前/事后余额 【增加】编辑器远程图片本地化开关（biz.editor.save_remote_image） 【优化】文件上传…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-31T08:50:03.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "314b6c960f46ca24",
-      "url": "https://www.infoq.cn/video/4qjamMQLVIoZvytUQwpI?utm_source=rss&utm_medium=article",
-      "title_original": "每天上千万次创建：Agent Sandbox 为什么会成为新算力形态？",
-      "title_zh": "每天上千万次创建：Agent Sandbox 为什么会成为新算力形态？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-31T08:15:46.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T15:19:23.705Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41214275733"
-      }
-    },
-    {
-      "fingerprint": "afd66af3c0e474d9",
-      "url": "https://www.infoq.cn/article/qRZCxTQbL1CwAUy28Zm8?utm_source=rss&utm_medium=article",
-      "title_original": "一边拥抱 JDK 27，一边保留 JDK 21：Helidon 开启双轨发布",
-      "title_zh": "一边拥抱 JDK 27，一边保留 JDK 21：Helidon 开启双轨发布",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-31T07:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T15:19:23.705Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41214275733"
-      }
-    },
-    {
-      "fingerprint": "9cd2afdc652a67eb",
-      "url": "https://www.infoq.cn/article/acC46slIVKJg1O0ac8w4?utm_source=rss&utm_medium=article",
-      "title_original": "当AI从“会想”走向“会干”——腾讯云与英特尔共筑Agentic AI执行新底座",
-      "title_zh": "当AI从“会想”走向“会干”——腾讯云与英特尔共筑Agentic AI执行新底座",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-31T06:49:01.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T15:19:23.705Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41214275733"
-      }
-    },
-    {
-      "fingerprint": "2a15c677b8ad90da",
-      "url": "https://www.infoq.cn/article/9OhgYkwYlPYgTbAvWlGz?utm_source=rss&utm_medium=article",
-      "title_original": "Flink 负责时间，Iceberg 负责记忆：Pinterest 如何最终确认数据分区？",
-      "title_zh": "Flink 负责时间，Iceberg 负责记忆：Pinterest 如何最终确认数据分区？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-10-31T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T15:19:23.705Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41214275733"
-      }
-    },
-    {
-      "fingerprint": "c4de242efa6a8ef5",
-      "url": "https://www.oschina.net/news/503325",
-      "title_original": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
-      "title_zh": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
-      "summary_zh": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-10-31T04:46:42.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "2e338f4975c6ee04",
-      "url": "https://arxiv.org/abs/2610.37720",
-      "title_original": "LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes",
-      "title_zh": "LRMoE：面向内存受限节点高效 MoE 训练的需求侧负载再校准",
-      "summary_zh": "arXiv 论文提出 LRMoE，用于在内存受限节点上高效训练稀疏混合专家模型。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-31T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T06:59:12.908Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41178747206"
-      }
-    },
-    {
-      "fingerprint": "17c024935e19a141",
-      "url": "https://arxiv.org/abs/2610.37731",
-      "title_original": "Amortized Localized Posterior Inference for Model Calibration with Application to an Ocean Turbulence Closure",
-      "title_zh": "用于模型校准的摊销局部后验推断及其在海洋湍流闭合中的应用",
-      "summary_zh": "arXiv 论文提出摊销局部后验推断方法，用于模型校准，并应用于海洋湍流闭合。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-31T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T06:59:12.908Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41178747206"
-      }
-    },
-    {
-      "fingerprint": "3cf54c91cb07b425",
-      "url": "https://arxiv.org/abs/2610.37732",
-      "title_original": "ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions",
-      "title_zh": "ThinkJev：一次思考、每种预算，用于校准类型化决策",
-      "summary_zh": "arXiv 论文提出 ThinkJev，用于让语言模型产生校准的类型化决策。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-31T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T06:59:12.908Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41178747206"
-      }
-    },
-    {
-      "fingerprint": "4131f32dcc0451ab",
-      "url": "https://arxiv.org/abs/2610.37739",
-      "title_original": "OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery",
-      "title_zh": "OpenFrontiers：开放研究问题集合与科学再发现基准",
-      "summary_zh": "arXiv 论文提出 OpenFrontiers，汇集开放研究问题并建立科学再发现基准，评估大语言模型。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-31T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T06:59:12.908Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41178747206"
-      }
-    },
-    {
-      "fingerprint": "0b73660e31921f56",
-      "url": "https://arxiv.org/abs/2610.37786",
-      "title_original": "WebAnything: From the Wild Web to Scalable Agent Environments",
-      "title_zh": "WebAnything：从野生网络到可扩展智能体环境",
-      "summary_zh": "该论文指出 Web 智能体需要多样、可执行、可重置的网站环境，并提出 WebAnything。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-10-31T04:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-10-31T06:59:12.908Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41178747206"
       }
     }
   ]
