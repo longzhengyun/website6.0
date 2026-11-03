@@ -1,9 +1,334 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-03T07:54:09.665Z",
-  "mode": "rss_only",
+  "generated_at": "2026-11-03T17:01:48.459Z",
+  "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "13fa338a0a914dda",
+      "url": "https://news.ycombinator.com/item?id=50354336",
+      "title_original": "Gitbook Breached",
+      "title_zh": "GitBook 被入侵",
+      "summary_zh": "用户就 GitBook 可用性问题联系支持后收到回复，显示其可能遭到入侵；官方公告尚未发布。",
+      "tags": [
+        "security",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-03T16:45:49.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "fb02c93fd281f7df",
+      "url": "https://www.quili.ai/",
+      "title_original": "Quili AI",
+      "title_zh": "Quili AI",
+      "summary_zh": "该条目为 Quili AI 官网文章在 Hacker News 上的讨论，原帖获得 68 分、39 条评论。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-03T15:49:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "85e8d2e97aef4d93",
+      "url": "https://concepts.laxmena.com/",
+      "title_original": "Show HN: Interactive notes on RLHF, attention, LoRA and LLM evals",
+      "title_zh": "Show HN：关于 RLHF、注意力、LoRA 和 LLM 评估的交互式笔记",
+      "summary_zh": "Hacker News 上的 Show HN 项目，提供关于 RLHF、注意力、LoRA 和 LLM 评估的交互式笔记，含官网和评论区链接。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-03T15:48:35.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "5973d0308d2f526a",
+      "url": "https://hissingkitty.com/hacker-churn",
+      "title_original": "Show HN: HackerChurn – which SaaS tools HN wants to cancel",
+      "title_zh": "Show HN：HackerChurn——HN 用户想要取消的 SaaS 工具",
+      "summary_zh": "Hacker News 上的 Show HN 项目 HackerChurn，用于列出 HN 用户想要取消的 SaaS 工具，提供官网和评论区链接。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-03T15:41:52.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "d0fdf85d4bb4dbf0",
+      "url": "https://blog.bear.app/2026/11/bear-turns-10-and-it-still-feels-like-day-one/",
+      "title_original": "Bear turns 10, and it still feels like day one",
+      "title_zh": "Bear 迎来 10 周年，感觉仍如第一天",
+      "summary_zh": "Bear 官方博客发布十周年文章，称这款应用虽已上线十年，使用体验仍如最初。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-03T15:41:46.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "11f1e40873fb558e",
+      "url": "https://homosabiens.substack.com/p/no-brother-of-mine-will-play-the",
+      "title_original": "No brother of mine will play the flute",
+      "title_zh": "我的兄弟绝不吹长笛",
+      "summary_zh": "一篇来自 Substack 的文章《我的兄弟绝不吹长笛》，并在 Hacker News 上被讨论。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-03T15:40:04.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "12dfb26aa54a72e7",
+      "url": "https://www.nbcnews.com/health/health-news/study-estimates-75-nfl-players-died-15-year-span-may-cte-rcna605975",
+      "title_original": "Study estimates 75% of NFL players who died over 15-year span had CTE",
+      "title_zh": "研究估计 15 年间去世的 NFL 球员中 75% 患有 CTE",
+      "summary_zh": "NBC 新闻报道的一项研究估计，在 15 年跨度内去世的 NFL 球员中，约 75% 患有 CTE。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-03T15:38:04.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "da1b5997a61e624a",
+      "url": "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/",
+      "title_original": "Kalshi and its co-founders face felony charges for violating Utah gambling laws",
+      "title_zh": "Kalshi 及其联合创始人因违反犹他州赌博法面临重罪指控",
+      "summary_zh": "Kalshi 及联合创始人因被指违反犹他州赌博法而面临重罪指控；特朗普政府据报起诉犹他州，以阻止该州全面禁止该平台。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-03T15:29:15.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "35eaf0d06c77e9dd",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "title_original": "Schools that block Google’s A.I. will lose student access to its search engine",
+      "title_zh": "屏蔽谷歌 AI 的学校将失去学生对谷歌搜索引擎的访问权限",
+      "summary_zh": "据谷歌博客，屏蔽谷歌 AI 的学校将失去学生对其搜索引擎的访问权限，来源含博客链接和 Hacker News 讨论。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-03T15:25:47.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "e3bc71be0e917360",
+      "url": "https://dilshan.github.io/tiny-basic/",
+      "title_original": "Tiny Basic for Arduino",
+      "title_zh": "适用于 Arduino 的 Tiny Basic",
+      "summary_zh": "一个为 Arduino 提供的 Tiny Basic 项目，含有官网和 Hacker News 讨论链接。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-03T15:17:07.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "630fc479ac9d324d",
+      "url": "https://www.infoq.cn/article/tIt75FRqU2hwy4eWrOIu?utm_source=rss&utm_medium=article",
+      "title_original": "AI教AI开车！百度首次披露Apollo World世界模型，让无人驾驶突破“不可能三角”",
+      "title_zh": "AI教AI开车！百度首次披露Apollo World世界模型，让无人驾驶突破“不可能三角”",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T13:26:32.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "1a15bca820274d8f",
+      "url": "https://www.oschina.net/news/503374",
+      "title_original": "AI 训练 AI！百度首次披露 Apollo World 世界模型，让无人驾驶突破“不可能三角”",
+      "title_zh": "AI 训练 AI！百度首次披露 Apollo World 世界模型，让无人驾驶突破“不可能三角”",
+      "summary_zh": "“世界模型，重点不是渲染的画质是否好看，而是模拟器是否能忠实还原现实物理规律和行为的因果”。11月3日，在深圳举行的百度AI Day·Apollo专场上，百度Apollo首次披露面向物理AI的智能体驱动全模态世界模型Apollo Worl…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T11:50:21.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "ef596d8882983e07",
+      "url": "https://www.infoq.cn/article/fvNWWYEmke5xJVsHEIIi?utm_source=rss&utm_medium=article",
+      "title_original": "AI 改变的是数据接口，而不是查询引擎",
+      "title_zh": "AI 改变的是数据接口，而不是查询引擎",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T09:07:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "bbb4eacf1e3a514a",
+      "url": "https://www.infoq.cn/article/z1ZeGD2FDqi6xLvSJjSl?utm_source=rss&utm_medium=article",
+      "title_original": "前迪士尼 AI 高管出任 CPO，Utopai Studios 技术布局再提速",
+      "title_zh": "前迪士尼 AI 高管出任 CPO，Utopai Studios 技术布局再提速",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T08:11:29.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41680101317"
+      }
+    },
     {
       "fingerprint": "4f230293e2958815",
       "url": "https://www.infoq.cn/article/YwAayF1ylWb7oN4P0lyC?utm_source=rss&utm_medium=article",
@@ -25,6 +350,29 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "41599370484"
+      }
+    },
+    {
+      "fingerprint": "c01db993959ccc89",
+      "url": "https://www.oschina.net/news/503372",
+      "title_original": "qModel 算法模型平台开源版 v1.4.3 版本发布：支持 API 获取输入参数，提升模型输出可读性",
+      "title_zh": "qModel 算法模型平台开源版 v1.4.3 版本发布：支持 API 获取输入参数，提升模型输出可读性",
+      "summary_zh": "模型能够成功接入，并不代表调用体验已经足够顺畅。 在实际使用中，一个 API 模型往往不仅由算法工程师维护，还会被系统开发、业务分析等不同角色调用。输入参数较多时，需要反复对照接口文档填写；返回结果包含多层 JSON 结构时，又需要额外确…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T07:20:31.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-03T17:01:48.459Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41680101317"
       }
     },
     {
@@ -1966,356 +2314,6 @@
       "source_name": "Hacker News Front Page",
       "original_lang": "en",
       "published_at": "2026-11-01T02:19:53.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "973aa90f1f10c8ab",
-      "url": "https://www.otape.org/",
-      "title_original": "OTape",
-      "title_zh": "OTape",
-      "summary_zh": "该条目链接至 OTape 项目页面，并在 Hacker News 上有少量讨论。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-01T02:18:46.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "8974207dc103cae3",
-      "url": "https://www.infoq.cn/article/z8vQa2zzGyLiTxIZ8PXH?utm_source=rss&utm_medium=article",
-      "title_original": "如果 AI 幻觉也有预算，超支之后该怎么办？",
-      "title_zh": "如果 AI 幻觉也有预算，超支之后该怎么办？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-01T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "39ee96f3b35f3b96",
-      "url": "https://arxiv.org/abs/2409.02292",
-      "title_original": "Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM (2024)",
-      "title_zh": "通过 RAM 无线电信号拼写信息从气隙计算机泄露机密（2024）",
-      "summary_zh": "一篇 2024 年论文提出，可通过内存辐射的无线电信号从气隙计算机泄露机密信息。",
-      "tags": [
-        "security"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-01T01:46:29.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "6d1f79546fa5a2ec",
-      "url": "https://bbrouter.com/bbrouter/ben-eater-sap-1",
-      "title_original": "Show HN: BBRouter – Ben Eater's 8-bit computer, simulated on 3D breadboards",
-      "title_zh": "Show HN：BBRouter——本·伊特的 8 位计算机，在 3D 面包板上模拟",
-      "summary_zh": "作者因常接错本·伊特 8 位计算机线路，开发了逼真的虚拟面包板编辑器以进行模拟。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-01T00:10:30.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "873c70095f40de59",
-      "url": "https://emarzion.github.io/KSRT/",
-      "title_original": "Constructing a Quine from Kleene's Second Recursion Theorem",
-      "title_zh": "从克林尼第二递归定理构造 Quine",
-      "summary_zh": "文章介绍如何依据克林尼第二递归定理构造 Quine 程序。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T23:55:21.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "785d4ceb71a807a6",
-      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
-      "title_original": "How We Took Over ChatGPT Accounts",
-      "title_zh": "我们如何接管 ChatGPT 账户",
-      "summary_zh": "Parameter Labs 介绍了其发现的针对 ChatGPT 实现的漏洞，以及接管账户的过程。",
-      "tags": [
-        "security",
-        "ai"
-      ],
-      "level": "must-read",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-10-31T23:15:22.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-02T19:28:45.270Z",
-      "duplicate_of": "1c640f88e053cb51",
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "41510254327"
-      }
-    },
-    {
-      "fingerprint": "041f0f68734f51c2",
-      "url": "https://uvdn7.github.io/altoids-project/",
-      "title_original": "Altoids Project",
-      "title_zh": "Altoids 项目",
-      "summary_zh": "该条目链接至 Altoids 项目页面，并在 Hacker News 上有讨论。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T22:54:55.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "6725a773cbcfd0fd",
-      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-      "title_original": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-      "title_zh": "Memdoor：由 5 个 Qwen3.8-27B 模型组成的团队在 LiveCodeBench Hard 上击败 Fable 5",
-      "summary_zh": "Memdoor 示例显示，由 5 个 Qwen3.8-27B 模型组成的团队在 LiveCodeBench Hard 上超过 Fable 5。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T22:46:12.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "2a6e580066fc66e3",
-      "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
-      "title_original": "An Italian farmer found some unknown seeds in his attic and planted them",
-      "title_zh": "一位意大利农民在阁楼发现一些未知种子并种下它们",
-      "summary_zh": "史密森尼杂志报道，一位意大利农民在阁楼发现未知种子并将其种下。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T22:41:06.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "9fc5ee213b01bfec",
-      "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
-      "title_original": "datasette-llm 0.1a9",
-      "title_zh": "datasette-llm 0.1a9",
-      "summary_zh": "datasette-llm 0.1a9 发布，作者预告 Datasette Agent 将有重大升级，本次为中间版本。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-10-31T22:10:01.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-02T19:28:45.270Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "41510254327"
-      }
-    },
-    {
-      "fingerprint": "4ea2bbfbe1de5d96",
-      "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
-      "title_original": "ChatGPT and Codex usage limits merging",
-      "title_zh": "ChatGPT 与 Codex 使用限制合并",
-      "summary_zh": "OpenAI 帮助文档说明，ChatGPT 与 Codex 的使用限制正在合并。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T21:49:07.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "cd2df5da4ad72e95",
-      "url": "https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate",
-      "title_original": "Surviving \"The Graduate\"",
-      "title_zh": "在《毕业生》中幸存",
-      "summary_zh": "该归档链接指向一篇题为《在〈毕业生〉中幸存》的文章，Hacker News 上有较多讨论。",
-      "tags": [
-        "other"
-      ],
-      "level": "trending",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T20:02:06.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "1a9ec1373c3bf145",
-      "url": "https://karpathy.bearblog.dev/hacker-tube/",
-      "title_original": "HackerTube: YouTube built from videos recommended by HN",
-      "title_zh": "HackerTube：由 HN 推荐视频构建的 YouTube",
-      "summary_zh": "HackerTube 是类 YouTube 界面，收录自 2007 年起由 39834 条 HN 评论推荐的 6454 个视频。",
-      "tags": [
-        "frontend",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T19:56:53.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "3c488a5d9e8fc9b7",
-      "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
-      "title_original": "Anthropic blocks users for anything touching training larger models",
-      "title_zh": "Anthropic 封禁任何触及训练更大模型的用户",
-      "summary_zh": "有文章称，Anthropic 因用户涉及训练更大模型而对其实施封禁。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T19:39:19.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "af71a5cc40079265",
-      "url": "https://epoyraz.github.io/nes-contra-us/",
-      "title_original": "Show HN: NES Contra (1987) port (ASM –> C and then C –> WebAssembly)",
-      "title_zh": "Show HN：NES《魂斗罗》（1987）移植（ASM → C，然后 C → WebAssembly）",
-      "summary_zh": "该项目基于 vermiceli 的《魂斗罗》注释反汇编，将 NES 原版从汇编移植为 C，再编译为 WebAssembly。",
-      "tags": [
-        "frontend",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-10-31T19:18:48.000Z",
       "date_inferred": false,
       "fetched_at": "2026-11-01T07:30:32.983Z",
       "duplicate_of": null,
