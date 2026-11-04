@@ -2,8 +2,10 @@ name: Deploy GitHub Pages
 
 # website6.0 部署骨架 v1（开发运维产出，基于 website5.0 deploy-pages.yml 改造）
 # 归属仓库：longzhengyun/website6.0 → .github/workflows/deploy-pages.yml
-# 与 5.0 差异：SITE_URL 改为仓库 Variable 可切换（M4 路径地址 → M5 换绑后改 www.jary8.com）、
+# 与 5.0 差异：SITE_URL 默认值=子路径托管基址 https://longzhengyun.github.io/website6.0/（FB-9，2026-11 jary8.com 停用；
+# 仓库 Variable SITE_URL 保留为覆盖通道，当前未设置）、
 # 新增类型检查步骤与产物密钥痕迹 grep 门禁（后端红线 1/3）。
+# FB-9 起不再部署 CNAME（域名已移除；artifact 含 CNAME 会触发 Pages 自动重绑死域，见 R1 裁定）。
 
 on:
   push:
@@ -25,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      SITE_URL: ${{ vars.SITE_URL || 'https://www.jary8.com/' }}
+      SITE_URL: ${{ vars.SITE_URL || 'https://longzhengyun.github.io/website6.0/' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -50,15 +52,6 @@ jobs:
 
       - name: QA gates G2-G5 (test baseline §2.1)
         run: node scripts/qa-gates.mjs
-
-      - name: Verify CNAME and place it in artifact
-        shell: bash
-        run: |
-          set -euo pipefail
-          test -f public/CNAME || { echo "::error::public/CNAME missing (frontend owns this file)"; exit 1; }
-          [ "$(tr -d '\r\n' < public/CNAME)" = "www.jary8.com" ] || { echo "::error::public/CNAME must be exactly www.jary8.com, got: $(cat public/CNAME)"; exit 1; }
-          cp -f public/CNAME dist/CNAME
-          echo "CNAME -> $(cat dist/CNAME)"
 
       - name: Secret trace scan on build output (gate, backend redline 1/3)
         shell: bash

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://jary8.com/schemas/news.schema.json",
+  "$id": "https://longzhengyun.github.io/website6.0/schemas/news.schema.json",
   "title": "website6.0 news.json",
   "description": "构建期新闻管线产物。前端唯一数据契约：两种模式（ai/rss_only）下同构，前端无需感知模式。生成方与校验规则见 website6.0-impl-backend-pipeline.md。",
   "type": "object",
