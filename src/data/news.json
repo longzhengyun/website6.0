@@ -1,9 +1,193 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-03T17:01:48.459Z",
-  "mode": "ai",
+  "generated_at": "2026-11-04T07:29:28.541Z",
+  "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "98e5da259a6b80b5",
+      "url": "https://www.infoq.cn/article/6oGyozHwd1WjYyEGjpbk?utm_source=rss&utm_medium=article",
+      "title_original": "员工都会用一点 AI，团队下一步怎么走？",
+      "title_zh": "员工都会用一点 AI，团队下一步怎么走？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-04T07:17:15.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-04T07:29:28.541Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41792591749"
+      }
+    },
+    {
+      "fingerprint": "0244216cce5362a2",
+      "url": "https://www.infoq.cn/article/F1ms7x7KI1p7UfocCywh?utm_source=rss&utm_medium=article",
+      "title_original": "如何把目标定得更大胆：写给 AI 使用者的实践指南",
+      "title_zh": "如何把目标定得更大胆：写给 AI 使用者的实践指南",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-04T07:15:13.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-04T07:29:28.541Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41792591749"
+      }
+    },
+    {
+      "fingerprint": "c2703d6ae2923f5a",
+      "url": "https://www.oschina.net/news/503388",
+      "title_original": "Jync v1.12.0 · 同步前检查、内容校验与诊断包",
+      "title_zh": "Jync v1.12.0 · 同步前检查、内容校验与诊断包",
+      "summary_zh": "Jync v1.12.0 · 同步前检查、内容校验与诊断包 新增 同步前检查：项目页可在不写入任何数据的情况下排练下一轮：源/目标连通性、待执行的 CREATE/ALTER/DROP、目标表缺失/缺列/类型不兼容、游标列与索引、CDC 可…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-04T07:04:17.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-04T07:29:28.541Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41792591749"
+      }
+    },
+    {
+      "fingerprint": "08a60b20be24ba63",
+      "url": "https://www.infoq.cn/article/mcHCe07TQ08mEZtqcWi1?utm_source=rss&utm_medium=article",
+      "title_original": "Uber 总裁跳槽 OpenAI！曾掌舵谷歌、Snap 公关，Brockman 亲自发文欢迎",
+      "title_zh": "Uber 总裁跳槽 OpenAI！曾掌舵谷歌、Snap 公关，Brockman 亲自发文欢迎",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-04T06:02:24.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-04T07:29:28.541Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41792591749"
+      }
+    },
+    {
+      "fingerprint": "7cf487b7f14d17cc",
+      "url": "https://www.infoq.cn/article/bFKTeyCOlydWMYi91H4q?utm_source=rss&utm_medium=article",
+      "title_original": "大模型会击穿具身智能吗？稚晖君带领团队深刻复盘并解答",
+      "title_zh": "大模型会击穿具身智能吗？稚晖君带领团队深刻复盘并解答",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-04T03:02:35.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-04T07:29:28.541Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41792591749"
+      }
+    },
+    {
+      "fingerprint": "aa28c43b9e57a701",
+      "url": "https://www.oschina.net/news/503381",
+      "title_original": "Apache SeaTunnel 社区 2026 年 10 月贡献总结报告",
+      "title_zh": "Apache SeaTunnel 社区 2026 年 10 月贡献总结报告",
+      "summary_zh": "> 数据范围：本报告基于 apache/seatunnel 仓库 dev 分支的合并提交记录，统计窗口为 2026-10-01 至 2026-10-31（UTC），覆盖完整自然月。 一、本月社区整体贡献数据 1.1 数据概览 指标 202…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-04T02:16:53.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-04T07:29:28.541Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41792591749"
+      }
+    },
+    {
+      "fingerprint": "8578f54cff6f612a",
+      "url": "https://www.oschina.net/news/503380",
+      "title_original": "Skyeye 云企业级AI+零代码智能制造系统-AI应用 - v4.1.10发布",
+      "title_zh": "Skyeye 云企业级AI+零代码智能制造系统-AI应用 - v4.1.10发布",
+      "summary_zh": "Skyeye 云企业级AI+零代码智能制造，智能制造一体化，采用 SpringBoot+ UNI-APP + Ant Design Vue 的零代码平台开发模式。包含 100 多种电子流程，CRM、PM、ERP、MES、ADM、OA、EH…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-04T02:09:26.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-04T07:29:28.541Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41792591749"
+      }
+    },
+    {
+      "fingerprint": "5669f8353e97b841",
+      "url": "https://www.infoq.cn/article/BGkTakB51rl6ybIh4sYJ?utm_source=rss&utm_medium=article",
+      "title_original": "给 AI 业务单独划一块地：帆软怎么重新安排事、人和组织｜AICon北京",
+      "title_zh": "给 AI 业务单独划一块地：帆软怎么重新安排事、人和组织｜AICon北京",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-04T02:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-04T07:29:28.541Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41792591749"
+      }
+    },
     {
       "fingerprint": "13fa338a0a914dda",
       "url": "https://news.ycombinator.com/item?id=50354336",
@@ -235,6 +419,29 @@
         "mode": "ai",
         "enriched_by": "deepseek-v4-pro-0813",
         "run_id": "41680101317"
+      }
+    },
+    {
+      "fingerprint": "7936742503a692d1",
+      "url": "https://www.oschina.net/news/503375",
+      "title_original": "Nginx 配置没人敢动？这台服务器的 SSL 证书续期，我终于不用手动了",
+      "title_zh": "Nginx 配置没人敢动？这台服务器的 SSL 证书续期，我终于不用手动了",
+      "summary_zh": "Nginx 配置没人敢动？老系统的 SSL 证书续期，真的不应该这么折腾 做运维久了，应该都遇到过这种服务器。 一台 Linux 服务器，上面跑着几十个网站，Nginx 配置文件堆了好几层目录。主配置文件里面 include 了一堆子配置…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-03T14:30:28.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-04T07:29:28.541Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "41792591749"
       }
     },
     {
@@ -2112,215 +2319,6 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "41407780470"
-      }
-    },
-    {
-      "fingerprint": "7b9836f901528139",
-      "url": "https://www.oschina.net/news/503330",
-      "title_original": "花了三年搭了一套 iPaaS 低代码平台，今天决定把 Demo 开源",
-      "title_zh": "花了三年搭了一套 iPaaS 低代码平台，今天决定把 Demo 开源",
-      "summary_zh": "前言 做了好几年管理系统，每次给客户上 OA、CRM 或者 SaaS，总觉得重复造轮子的事情太多。表单、列表、审批流程、打印模板……这些东西几乎每个项目都要从头写一遍，但真正的业务逻辑却只占 20%。 于是我开始做一套可视化的低代码平台：…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-01T14:00:35.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-02T07:40:26.293Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41407780470"
-      }
-    },
-    {
-      "fingerprint": "881ae67dff4241cc",
-      "url": "https://www.oschina.net/news/503329",
-      "title_original": "拾趣 (Magpie) v0.1.19 发布，AI 更智能，内容识别更精准",
-      "title_zh": "拾趣 (Magpie) v0.1.19 发布，AI 更智能，内容识别更精准",
-      "summary_zh": "拾趣 (Magpie) v0.1.19 发布，AI 更智能，内容识别更精准 拾趣 (Magpie)是一款跨平台沉浸式自定义AI 划词工具 划选或双击，浮动条随即弹出：翻译、解释、总结实时呈现；复制、搜索、写入 Obsidian、预填日历，…",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-01T11:17:10.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-02T07:40:26.293Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "41407780470"
-      }
-    },
-    {
-      "fingerprint": "b33def291734e23b",
-      "url": "https://www.infoq.cn/article/xCFDK8KZvvDY5V1R0fqM?utm_source=rss&utm_medium=article",
-      "title_original": "复用已有计算结果，动态表增量刷新如何实现性能与成本双优化 ｜ 技术实践",
-      "title_zh": "复用已有计算结果，动态表增量刷新如何实现性能与成本双优化 ｜ 技术实践",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-01T11:12:53.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-02T07:40:26.293Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41407780470"
-      }
-    },
-    {
-      "fingerprint": "61f5cfa3194e7e08",
-      "url": "https://www.infoq.cn/article/adFNTX7Qiy7yYIGEmTlk?utm_source=rss&utm_medium=article",
-      "title_original": "从近两小时到 30 秒，SQL 查询性能优化有了新解法 ｜ 技术实践",
-      "title_zh": "从近两小时到 30 秒，SQL 查询性能优化有了新解法 ｜ 技术实践",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-01T10:58:12.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-02T07:40:26.293Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41407780470"
-      }
-    },
-    {
-      "fingerprint": "aeba95d4735b3953",
-      "url": "https://www.infoq.cn/article/0ap8HB0DwK6Xa1lBSNVy?utm_source=rss&utm_medium=article",
-      "title_original": "写好的 Skill 如何让整个团队复用？Snowflake CoCo 打通共享与治理流程 ｜ 技术实践",
-      "title_zh": "写好的 Skill 如何让整个团队复用？Snowflake CoCo 打通共享与治理流程 ｜ 技术实践",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-01T10:24:53.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-02T07:40:26.293Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41407780470"
-      }
-    },
-    {
-      "fingerprint": "e17889f326dc80f5",
-      "url": "https://www.infoq.cn/article/8mCjWWFLdjDA2vb51QZs?utm_source=rss&utm_medium=article",
-      "title_original": "当 AI 能读懂二进制，闭源软件还剩多少护城河？",
-      "title_zh": "当 AI 能读懂二进制，闭源软件还剩多少护城河？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-01T09:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-02T07:40:26.293Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41407780470"
-      }
-    },
-    {
-      "fingerprint": "37ebf2db8d6ac491",
-      "url": "https://www.oschina.net/os2026/winners",
-      "title_original": "2026 上海开源软件应用创新大赛获奖名单",
-      "title_zh": "2026 上海开源软件应用创新大赛获奖名单",
-      "summary_zh": "大赛圆满落幕，恭喜所有获奖选手，感谢所有参赛的选手和评委。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-01T08:43:11.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-02T07:40:26.293Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "41407780470"
-      }
-    },
-    {
-      "fingerprint": "d3a5c860416350b8",
-      "url": "https://www.infoq.cn/article/9aUBUMmhC4s5mEJgXHDL?utm_source=rss&utm_medium=article",
-      "title_original": "移动身份系统的密码学基础：ISO/IEC 18013-5 企业架构蓝图",
-      "title_zh": "移动身份系统的密码学基础：ISO/IEC 18013-5 企业架构蓝图",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-01T06:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41285034670"
-      }
-    },
-    {
-      "fingerprint": "c804735042ba1b38",
-      "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
-      "title_original": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
-      "title_zh": "巴西法院因法庭文件中的提示注入处罚律师",
-      "summary_zh": "报道称，巴西法院因律师在法庭文件中引入提示注入行为而对其作出处罚。",
-      "tags": [
-        "security",
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-01T02:19:53.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-01T07:30:32.983Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "qwen3.8-omni-flash",
-        "run_id": "41285034670"
       }
     }
   ]
