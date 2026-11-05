@@ -1,6 +1,6 @@
 {
-  "run_id": "41875467233",
-  "generated_at": "2026-11-04T17:13:46.712Z",
+  "run_id": "41990484919",
+  "generated_at": "2026-11-05T07:54:28.901Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
@@ -20,7 +20,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 20,
-      "ms": 4185,
+      "ms": 14848,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 564,
+      "ms": 524,
       "error": null
     },
     {
@@ -36,7 +36,7 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 1,
-      "ms": 270,
+      "ms": 776,
       "error": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "ok",
       "items_fetched": 15,
       "items_new": 2,
-      "ms": 1246,
+      "ms": 758,
       "error": null
     },
     {
@@ -52,59 +52,59 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 251,
+      "ms": 229,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 4,
-      "ms": 436,
+      "items_new": 5,
+      "ms": 122,
       "error": null
     },
     {
       "id": "arxiv-cs-ai",
       "status": "ok",
-      "items_fetched": 413,
+      "items_fetched": 359,
       "items_new": 10,
-      "ms": 194,
+      "ms": 228,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 11,
-      "ms": 1555,
+      "items_new": 7,
+      "ms": 1436,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 4,
-      "ms": 2985,
+      "items_new": 7,
+      "ms": 3315,
       "error": null
     }
   ],
   "counts": {
-    "fetched": 618,
+    "fetched": 564,
     "in_window": 52,
-    "deduped_existing": 20,
+    "deduped_existing": 22,
     "new_items": 52,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 37,
+    "dropped_nonzh_r17": 38,
     "future_clamped": 0
   },
   "news_items_total": 100,
   "degraded_all_sources": false,
   "errors": [
-    "enrichment batch 0 failed: fetch failed",
-    "enrichment batch 10 failed: fetch failed",
-    "enrichment batch 20 failed: fetch failed",
+    "enrichment batch 0 failed: Unterminated string in JSON at position 1479 (line 56 column 21)",
+    "enrichment batch 10 failed: Unexpected end of JSON input",
+    "enrichment batch 20 failed: Unterminated string in JSON at position 577 (line 1 column 578)",
     "AI aborted after consecutive failures, remainder stored rss_only"
   ]
 }
