@@ -1,7 +1,7 @@
 {
-  "run_id": "41990484919",
-  "generated_at": "2026-11-05T07:54:28.901Z",
-  "mode": "rss_only",
+  "run_id": "42074063504",
+  "generated_at": "2026-11-05T17:23:10.956Z",
+  "mode": "ai",
   "llm": {
     "key_present": true,
     "provider": "tongyi",
@@ -9,10 +9,10 @@
     "token_budget": 100000,
     "budget_exceeded": false,
     "calls": 6,
-    "batches_failed": 3,
-    "aborted": true,
-    "input_tokens": 0,
-    "output_tokens": 0
+    "batches_failed": 1,
+    "aborted": false,
+    "input_tokens": 22781,
+    "output_tokens": 14535
   },
   "sources": [
     {
@@ -20,7 +20,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 20,
-      "ms": 14848,
+      "ms": 1223,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 524,
+      "ms": 813,
       "error": null
     },
     {
@@ -36,7 +36,7 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 1,
-      "ms": 776,
+      "ms": 274,
       "error": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "ok",
       "items_fetched": 15,
       "items_new": 2,
-      "ms": 758,
+      "ms": 692,
       "error": null
     },
     {
@@ -52,15 +52,15 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 229,
+      "ms": 215,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 5,
-      "ms": 122,
+      "items_new": 4,
+      "ms": 140,
       "error": null
     },
     {
@@ -68,43 +68,40 @@
       "status": "ok",
       "items_fetched": 359,
       "items_new": 10,
-      "ms": 228,
+      "ms": 180,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 7,
-      "ms": 1436,
+      "items_new": 3,
+      "ms": 1580,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 7,
-      "ms": 3315,
+      "items_new": 3,
+      "ms": 2471,
       "error": null
     }
   ],
   "counts": {
     "fetched": 564,
-    "in_window": 52,
-    "deduped_existing": 22,
-    "new_items": 52,
-    "ai_enriched": 0,
+    "in_window": 43,
+    "deduped_existing": 31,
+    "new_items": 43,
+    "ai_enriched": 33,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 38,
+    "dropped_nonzh_r17": 10,
     "future_clamped": 0
   },
   "news_items_total": 100,
   "degraded_all_sources": false,
   "errors": [
-    "enrichment batch 0 failed: Unterminated string in JSON at position 1479 (line 56 column 21)",
-    "enrichment batch 10 failed: Unexpected end of JSON input",
-    "enrichment batch 20 failed: Unterminated string in JSON at position 577 (line 1 column 578)",
-    "AI aborted after consecutive failures, remainder stored rss_only"
+    "enrichment batch 20 failed: Unexpected end of JSON input"
   ]
 }
