@@ -1,9 +1,265 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-06T07:55:06.452Z",
+  "generated_at": "2026-11-06T16:45:35.337Z",
   "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "dce0d8e47b349737",
+      "url": "https://www.ycombinator.com/companies/mbodi-ai/jobs",
+      "title_original": "Mbodi AI (YC P25) Is Hiring Research and Robotic Engineers",
+      "title_zh": "Mbodi AI（YC P25）正在招聘研究与机器人工程师",
+      "summary_zh": "Mbodi AI（YC P25）发布招聘信息，寻找研究与机器人工程师。",
+      "tags": [
+        "ai",
+        "career"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T12:00:42.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "7ace9bb51dd23355",
+      "url": "https://github.com/Unleash/unleash",
+      "title_original": "We've built an open-source feature flag server for 11 years",
+      "title_zh": "我们构建开源功能开关服务器已有 11 年",
+      "summary_zh": "Unleash 团队介绍其已开发 11 年的开源功能开关服务器，代码托管于 GitHub。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T11:40:06.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "4930533eac042624",
+      "url": "https://www.oschina.net/news/503457",
+      "title_original": "2026 开源行业解决方案创新赛「开源基础软件与解决方案赛道」决赛名单公布",
+      "title_zh": "2026 开源行业解决方案创新赛「开源基础软件与解决方案赛道」决赛名单公布",
+      "summary_zh": "第四届开放原子大赛 · 2026 开源行业解决方案创新赛「开源基础软件与解决方案赛道」决赛入围名单今日公布，以下 10 支队伍成功晋级，将于 11 月 13 日在北京亦庄通明湖会展中心参加总决赛。 现将入围名单按报名时间顺序公示如下： 项…",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-06T11:23:16.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "515eab3709d2228e",
+      "url": "https://www.oschina.net/news/503456",
+      "title_original": "2026 开源行业解决方案创新赛「开源智能硬件解决方案赛道」决赛名单公布",
+      "title_zh": "2026 开源行业解决方案创新赛「开源智能硬件解决方案赛道」决赛名单公布",
+      "summary_zh": "第四届开放原子大赛 · 2026 开源行业解决方案创新赛「开源智能硬件解决方案赛道」决赛入围名单今日公布，以下 10 支队伍成功晋级，将于 11 月 13 日在北京亦庄通明湖会展中心参加总决赛。 现将入围名单按报名时间顺序公示如下： 项目…",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-06T10:54:23.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "5eb6f69cfb37a9ae",
+      "url": "https://jhr.pensoft.net/articles.php?id=9096",
+      "title_original": "Living beyond the limits of survival: wood ants trapped in a gigantic pitfall (2016)",
+      "title_zh": "超越生存极限：困于巨大陷阱中的木蚁（2016）",
+      "summary_zh": "2016 年文章记录木蚁被困在大型陷阱中并超越生存极限的现象。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T10:21:15.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "d18ddd9c12e46dd9",
+      "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+      "title_original": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+      "title_zh": "荷兰“理想主义”银行 ASN 屏蔽非谷歌 Android，包括 GrapheneOS",
+      "summary_zh": "荷兰 ASN 银行阻止非谷歌 Android 设备使用其银行应用，包括 GrapheneOS。",
+      "tags": [
+        "security"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T09:27:12.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "7951c5b8003d194f",
+      "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+      "title_original": "AI for scientific discovery: How researchers use Claude",
+      "title_zh": "用于科学发现的 AI：研究人员如何使用 Claude",
+      "summary_zh": "Anthropic 研究页面介绍研究人员如何使用 Claude 辅助科学发现。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T09:13:30.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "97e2b6ba98a922d5",
+      "url": "https://www.infoq.cn/article/lGoA1ZSw6ojeh68GVlBl?utm_source=rss&utm_medium=article",
+      "title_original": "Cloudflare 与 VoidZero 联合推出 tsrs：由 AI 生成的 TypeScript 编译器 Rust 移植版",
+      "title_zh": "Cloudflare 与 VoidZero 联合推出 tsrs：由 AI 生成的 TypeScript 编译器 Rust 移植版",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend",
+        "tools",
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-06T09:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "f02d763a4f6d9e5b",
+      "url": "https://www.norvig.com/chomsky.html",
+      "title_original": "Chomsky and the Two Cultures of Statistical Learning (2011)",
+      "title_zh": "乔姆斯基与统计学习的两种文化（2011）",
+      "summary_zh": "Peter Norvig 的文章讨论乔姆斯基与统计学习两种文化之间的分歧。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T08:18:36.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "f3ab8a31cfb90250",
+      "url": "https://smashingmagazine.com/2026/11/ux-insiders-community-in-house-ux-people/",
+      "title_original": "A New Community For In-House UX People",
+      "title_zh": "面向企业内部 UX 人员的新社区",
+      "summary_zh": "为在企业内部从事用户体验工作的人员建立了一个新的小型社区。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "smashing",
+      "source_name": "Smashing Magazine",
+      "original_lang": "en",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "e2beb7d8117a0f98",
+      "url": "https://worldstrike.fun/",
+      "title_original": "Multiplayer tanks that demolish real buildings from OpenStreetMap",
+      "title_zh": "多人在线坦克游戏，可摧毁来自 OpenStreetMap 的真实建筑",
+      "summary_zh": "一款多人在线坦克游戏，可摧毁基于 OpenStreetMap 数据生成的真实建筑。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T07:55:48.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
     {
       "fingerprint": "cd1fcd114a991c8b",
       "url": "https://www.oschina.net/news/503451",
@@ -28,6 +284,53 @@
       }
     },
     {
+      "fingerprint": "c1341098da6d4c5b",
+      "url": "https://apps.metaebene.me/en/kugelblitz",
+      "title_original": "Kugelblitz – Mac-Native Google Earth Alternative",
+      "title_zh": "Kugelblitz——Mac 原生的 Google Earth 替代品",
+      "summary_zh": "Kugelblitz 是一款 Mac 原生应用，提供 Google Earth 替代功能。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T07:47:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "bec042b19afda6a8",
+      "url": "https://github.com/ppmpreetham/BUI",
+      "title_original": "Blender's UI and Runtime: Much Faster Than GPUI",
+      "title_zh": "Blender 的 UI 和运行时：比 GPUI 快得多",
+      "summary_zh": "文章比较 Blender 的 UI 与运行时和 GPUI 的性能，称前者更快。",
+      "tags": [
+        "tools",
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T07:40:35.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
       "fingerprint": "ff6804b5fd256015",
       "url": "https://www.infoq.cn/article/upfROwtEl8R75H24D13J?utm_source=rss&utm_medium=article",
       "title_original": "DigitalOcean 推出学习与数据服务，帮助 AI 智能体进行自我迭代",
@@ -48,6 +351,29 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "42183990504"
+      }
+    },
+    {
+      "fingerprint": "5222b774813a87d8",
+      "url": "https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/",
+      "title_original": "Britain to make salary disclosure in job ads mandatory",
+      "title_zh": "英国将强制要求在招聘广告中披露薪资",
+      "summary_zh": "路透社报道，英国将强制要求在招聘广告中披露薪资。",
+      "tags": [
+        "career"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T07:22:04.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
       }
     },
     {
@@ -209,6 +535,241 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "42183990504"
+      }
+    },
+    {
+      "fingerprint": "a67cb9c83dfc1363",
+      "url": "https://arxiv.org/abs/2611.06996",
+      "title_original": "Trust Responsive Runtime Authorization for Agentic AI with Empirical Characterization of Policy Behavior and Parameter Sensitivity",
+      "title_zh": "面向智能体 AI 的信任响应式运行时授权：策略行为与参数敏感性实证表征",
+      "summary_zh": "研究将自主智能体运行时上下文估计转化为授权决策的策略，并对策略行为和参数敏感性进行实证表征。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-06T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "6bcd57996b1f8a44",
+      "url": "https://arxiv.org/abs/2611.07048",
+      "title_original": "Adapting the Process of Adaptation: Darwinian, Lamarckian, and Agent-Directed Evolution in AI",
+      "title_zh": "适应过程的适应：AI 中的达尔文式、拉马克式与智能体导向进化",
+      "summary_zh": "研究人工智能中达尔文式、拉马克式和智能体导向进化如何适应并塑造智能过程。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-06T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "e4ba57732a447796",
+      "url": "https://arxiv.org/abs/2611.07051",
+      "title_original": "Closed-Loop Agent Evaluation: Layered Measurement and Self-Calibration",
+      "title_zh": "闭环智能体评估：分层测量与自校准",
+      "summary_zh": "针对已上线智能体，提出分层测量与自校准的闭环评估方法，以判断其是否正常完成工作。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-06T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "a47dad607e0fe978",
+      "url": "https://arxiv.org/abs/2611.07066",
+      "title_original": "Cooperative Multi-Agent Reinforcement Learning via Epigraph-Form Guided Exploration",
+      "title_zh": "通过上镜图形式引导探索的协作多智能体强化学习",
+      "summary_zh": "提出一种基于上镜图形式引导探索的方法，用于在多智能体强化学习中发现协作行为。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-06T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "c8010e54f7a16719",
+      "url": "https://arxiv.org/abs/2611.07073",
+      "title_original": "When Verification Is Not Agreement: Cross-Agent LLM-to-Dafny Formalization",
+      "title_zh": "当验证不等于一致：跨智能体 LLM 到 Dafny 的形式化",
+      "summary_zh": "研究多个智能体将 LLM 输出形式化为 Dafny 时，形式化验证通过并不等于语义一致的问题。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-06T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "4c861a74d24931e0",
+      "url": "https://arxiv.org/abs/2611.07088",
+      "title_original": "Synthesizing symbolic models of human and machine reasoning at scale",
+      "title_zh": "大规模合成人类与机器推理的符号模型",
+      "summary_zh": "研究如何大规模合成人类与机器推理的符号模型。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-06T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "c8d7e92544712596",
+      "url": "https://arxiv.org/abs/2611.07123",
+      "title_original": "PromptOps: Iterative Prompt Optimization for LLM-as-a-Judge Systems",
+      "title_zh": "PromptOps：面向 LLM 作为评判系统的迭代提示优化",
+      "summary_zh": "提出 PromptOps 方法，对将大语言模型用作自动评判器的系统进行迭代式提示优化。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-06T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "428a0ceb14f776de",
+      "url": "https://arxiv.org/abs/2611.07247",
+      "title_original": "Goal Revelation as a Bridge Between Information-Theoretic Empowerment and Capability-Based Human Power",
+      "title_zh": "目标揭示：信息论赋权与基于能力的人类权力之间的桥梁",
+      "summary_zh": "讨论目标揭示如何连接信息论赋权与基于能力的人类权力，涉及 AI 安全中智能体的权力获取问题。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-06T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "43fe88b25001f574",
+      "url": "https://arxiv.org/abs/2611.07296",
+      "title_original": "Robust Ranking of Port Impacts from Impending Tropical Cyclones: A Two-Stage Recommendation System",
+      "title_zh": "对即将来临的热带气旋对港口影响的稳健排序：一种两阶段推荐系统",
+      "summary_zh": "针对热带气旋威胁多个港口的场景，提出一种两阶段推荐系统，对港口可能受到的影响进行稳健排序，以支持防备规划。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-06T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
+      "fingerprint": "9676afc47cb10f4a",
+      "url": "https://arxiv.org/abs/2611.07372",
+      "title_original": "EnvOpt: Automated Optimization for Agent Environments",
+      "title_zh": "EnvOpt：智能体环境的自动化优化",
+      "summary_zh": "提出 EnvOpt，用于自动优化智能体环境；论文认为 LLM 智能体的成本与成功取决于模型、harness 及环境等因素。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-06T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
       }
     },
     {
@@ -1071,6 +1632,30 @@
       }
     },
     {
+      "fingerprint": "a403fe7c2676005e",
+      "url": "https://smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/",
+      "title_original": "Making Immersive LLM Chat Experiences More Accessible",
+      "title_zh": "让沉浸式大语言模型聊天体验更易于访问",
+      "summary_zh": "随着大语言模型聊天模式变得普遍，提升其可访问性对确保所有用户都能使用至关重要。",
+      "tags": [
+        "ai",
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "smashing",
+      "source_name": "Smashing Magazine",
+      "original_lang": "en",
+      "published_at": "2026-11-05T13:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-06T16:45:35.337Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42255290991"
+      }
+    },
+    {
       "fingerprint": "c5ca51374c960089",
       "url": "https://phoboslab.org/log/2026/11/n64-ulc-codec",
       "title_original": "Obscure audio codec is a perfect fit for the N64",
@@ -1738,582 +2323,6 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "41990484919"
-      }
-    },
-    {
-      "fingerprint": "cd09dc87fba0a54b",
-      "url": "https://simonwillison.net/2026/Nov/4/datasette-llm/",
-      "title_original": "datasette-llm 0.1a10",
-      "title_zh": "datasette-llm 0.1a10",
-      "summary_zh": "datasette-llm 0.1a10 发布，修复了影响 agent.datasette.io 演示站点的错误，该错误涉及可用 LLM 集合。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-11-04T15:26:02.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T07:55:06.452Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42183990504"
-      }
-    },
-    {
-      "fingerprint": "3a38b77c26899bef",
-      "url": "https://css-tricks.com/smashing-ai-conference/",
-      "title_original": "Smashing AI Conference",
-      "title_zh": "Smashing AI 大会",
-      "summary_zh": "AI 2027 Conference 是一场面向设计师和工程师的在线直播活动，讨论 AI 的现状与未来预期。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "css-tricks",
-      "source_name": "CSS-Tricks",
-      "original_lang": "en",
-      "published_at": "2026-11-04T15:02:51.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T07:55:06.452Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42183990504"
-      }
-    },
-    {
-      "fingerprint": "6711bb7f8571d457",
-      "url": "https://www.infoq.cn/article/TeOb9MgqfeLOoNdxtMH2?utm_source=rss&utm_medium=article",
-      "title_original": "当 Agent 成为数据库新用户，腾讯云如何解决“未知”的难题？",
-      "title_zh": "当 Agent 成为数据库新用户，腾讯云如何解决“未知”的难题？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T14:00:23.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "47993a15810332e1",
-      "url": "https://www.infoq.cn/article/VUmIUJ0ST9xIlPoViXmz?utm_source=rss&utm_medium=article",
-      "title_original": "Token 暴涨 5000 倍之后，企业 Agent 落地还卡在哪里？",
-      "title_zh": "Token 暴涨 5000 倍之后，企业 Agent 落地还卡在哪里？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T13:56:58.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "610210caf7625ea0",
-      "url": "https://www.infoq.cn/article/UtKS9EofSoyd2P7Otx7e?utm_source=rss&utm_medium=article",
-      "title_original": "谷歌 Data Agent Kit 正式发布：安全防护分为 Skill 与 IAM",
-      "title_zh": "谷歌 Data Agent Kit 正式发布：安全防护分为 Skill 与 IAM",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T12:01:56.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "5ac2520db559f633",
-      "url": "https://www.infoq.cn/article/hdmi6FdjpYSEvuMhPOAa?utm_source=rss&utm_medium=article",
-      "title_original": "Anthropic 为重要开源项目新增可选安全扫描服务",
-      "title_zh": "Anthropic 为重要开源项目新增可选安全扫描服务",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T11:53:34.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "940792df59b927bb",
-      "url": "https://www.infoq.cn/article/cNO8PCwQoZMRHhIyVDrB?utm_source=rss&utm_medium=article",
-      "title_original": "Vercel Labs 开源 fx：一款专为嵌入式应用设计的 Zig 编程代理",
-      "title_zh": "Vercel Labs 开源 fx：一款专为嵌入式应用设计的 Zig 编程代理",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T10:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "7610c86617a6d74f",
-      "url": "https://www.infoq.cn/article/pgmES06L2MAH2TCSMhJ9?utm_source=rss&utm_medium=article",
-      "title_original": "Harbor 新增 Docker Sandboxes 支持，可在隔离的 MicroVM 中运行可重现的 AI 代理评估",
-      "title_zh": "Harbor 新增 Docker Sandboxes 支持，可在隔离的 MicroVM 中运行可重现的 AI 代理评估",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T09:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "968f455edd892eae",
-      "url": "https://www.oschina.net/news/503394",
-      "title_original": "调问更新 10.19 ~ 11.3：测评计分能力全面升级，问卷设计与管理体验持续优化",
-      "title_zh": "调问更新 10.19 ~ 11.3：测评计分能力全面升级，问卷设计与管理体验持续优化",
-      "summary_zh": "DWSurvey 更新日志 测评计分能力全面升级，问卷设计与管理体验持续优化 坚持前后端代码 100% 开源 助力企业建设自主可控的问卷调研系统 官网地址www.diaowen.net ➔ 源码下载Gitee 仓库 ➔ 本次更新：新增迫选…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T08:55:48.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "89fbd54d81232b6e",
-      "url": "https://www.oschina.net/news/503393",
-      "title_original": "仓颉语言原生 Coding Agent：cjh，一个文件就是整个开发团队",
-      "title_zh": "仓颉语言原生 Coding Agent：cjh，一个文件就是整个开发团队",
-      "summary_zh": "项目地址 GitHub: https://github.com/yangyongzhen/cjh 它是什么 cjh 是一个用华为仓颉语言从零实现的交互式编码代理（coding agent harness）。在终端里用自然语言描述任务，Ag…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T08:44:14.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "f60e09dd7144e79a",
-      "url": "https://www.oschina.net/p/pingwaf",
-      "title_original": "PingWAF - 面向现代 Web 应用的高性能分布式安全防护平台",
-      "title_zh": "PingWAF - 面向现代 Web 应用的高性能分布式安全防护平台",
-      "summary_zh": "PingWAF 基于 Rust 构建，是一款开源 Web 应用防火墙（WAF）与反向代理安全平台。项目以 Pingap 和 Cloudflare Pingora 为底层代理技术，融合语义级攻击检测、智能规则匹配、CC 防护、Bot 管理、…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T08:37:50.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "919f316062c2b244",
-      "url": "https://www.infoq.cn/article/c3vTLNrRwfCzw8SAmz90?utm_source=rss&utm_medium=article",
-      "title_original": "研究发现：AI 生成代码受下游环节瓶颈制约，无法提升整体生产力",
-      "title_zh": "研究发现：AI 生成代码受下游环节瓶颈制约，无法提升整体生产力",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T08:20:50.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "a8bb10da3737d7e4",
-      "url": "https://www.infoq.cn/article/L5Q1XJbFSubVNB9DGJsl?utm_source=rss&utm_medium=article",
-      "title_original": "刚刚，被李飞飞团队写进代码库的具身底座，现身乌镇峰会“上岗抓药”",
-      "title_zh": "刚刚，被李飞飞团队写进代码库的具身底座，现身乌镇峰会“上岗抓药”",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T07:51:17.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "70a9d23e30654281",
-      "url": "https://www.oschina.net/news/503390",
-      "title_original": "qData 数据中台专业版 v3.0.1 发布：模型设计、版本管理与指标建模迎来多项升级！",
-      "title_zh": "qData 数据中台专业版 v3.0.1 发布：模型设计、版本管理与指标建模迎来多项升级！",
-      "summary_zh": "qData 数据中台专业版 v3.0.1 发布。 在 v3.0.0 数据建模体系升级的基础上，本次版本继续围绕业务规划、数据建模、指标管理和数据集成几个环节补充功能。 其中，数据建模部分进一步完善了业务实体关系、概念模型关系图以及贴源、维…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T07:48:32.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "788f588dcfdec80e",
-      "url": "https://www.infoq.cn/article/q9iebpvFozfy4bgCYUyE?utm_source=rss&utm_medium=article",
-      "title_original": "月烧 1.5 万亿 token，年烧 1.32 亿美元？Cursor 工程师的账单，凡人只能仰望",
-      "title_zh": "月烧 1.5 万亿 token，年烧 1.32 亿美元？Cursor 工程师的账单，凡人只能仰望",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T07:48:18.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "b88517cd8918a2ad",
-      "url": "https://www.infoq.cn/article/C1C1DThg8z1Dy0rZAmLB?utm_source=rss&utm_medium=article",
-      "title_original": "同一个模型从 30 分到 95 分：拉开差距的不是模型，是Harness",
-      "title_zh": "同一个模型从 30 分到 95 分：拉开差距的不是模型，是Harness",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T07:40:50.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "f90a54ecff9454ca",
-      "url": "https://www.infoq.cn/article/OiyNEtFwV05opvsLTcvK?utm_source=rss&utm_medium=article",
-      "title_original": "Linux内核也能造了？Codex 11天写出13.9万行新内核，Rocky Linux 10跑起来了",
-      "title_zh": "Linux内核也能造了？Codex 11天写出13.9万行新内核，Rocky Linux 10跑起来了",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T07:30:50.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T17:13:46.712Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41875467233"
-      }
-    },
-    {
-      "fingerprint": "98e5da259a6b80b5",
-      "url": "https://www.infoq.cn/article/6oGyozHwd1WjYyEGjpbk?utm_source=rss&utm_medium=article",
-      "title_original": "员工都会用一点 AI，团队下一步怎么走？",
-      "title_zh": "员工都会用一点 AI，团队下一步怎么走？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T07:17:15.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T07:29:28.541Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41792591749"
-      }
-    },
-    {
-      "fingerprint": "0244216cce5362a2",
-      "url": "https://www.infoq.cn/article/F1ms7x7KI1p7UfocCywh?utm_source=rss&utm_medium=article",
-      "title_original": "如何把目标定得更大胆：写给 AI 使用者的实践指南",
-      "title_zh": "如何把目标定得更大胆：写给 AI 使用者的实践指南",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T07:15:13.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T07:29:28.541Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41792591749"
-      }
-    },
-    {
-      "fingerprint": "c2703d6ae2923f5a",
-      "url": "https://www.oschina.net/news/503388",
-      "title_original": "Jync v1.12.0 · 同步前检查、内容校验与诊断包",
-      "title_zh": "Jync v1.12.0 · 同步前检查、内容校验与诊断包",
-      "summary_zh": "Jync v1.12.0 · 同步前检查、内容校验与诊断包 新增 同步前检查：项目页可在不写入任何数据的情况下排练下一轮：源/目标连通性、待执行的 CREATE/ALTER/DROP、目标表缺失/缺列/类型不兼容、游标列与索引、CDC 可…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T07:04:17.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T07:29:28.541Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41792591749"
-      }
-    },
-    {
-      "fingerprint": "08a60b20be24ba63",
-      "url": "https://www.infoq.cn/article/mcHCe07TQ08mEZtqcWi1?utm_source=rss&utm_medium=article",
-      "title_original": "Uber 总裁跳槽 OpenAI！曾掌舵谷歌、Snap 公关，Brockman 亲自发文欢迎",
-      "title_zh": "Uber 总裁跳槽 OpenAI！曾掌舵谷歌、Snap 公关，Brockman 亲自发文欢迎",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T06:02:24.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T07:29:28.541Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41792591749"
-      }
-    },
-    {
-      "fingerprint": "7cf487b7f14d17cc",
-      "url": "https://www.infoq.cn/article/bFKTeyCOlydWMYi91H4q?utm_source=rss&utm_medium=article",
-      "title_original": "大模型会击穿具身智能吗？稚晖君带领团队深刻复盘并解答",
-      "title_zh": "大模型会击穿具身智能吗？稚晖君带领团队深刻复盘并解答",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T03:02:35.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T07:29:28.541Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41792591749"
-      }
-    },
-    {
-      "fingerprint": "aa28c43b9e57a701",
-      "url": "https://www.oschina.net/news/503381",
-      "title_original": "Apache SeaTunnel 社区 2026 年 10 月贡献总结报告",
-      "title_zh": "Apache SeaTunnel 社区 2026 年 10 月贡献总结报告",
-      "summary_zh": "> 数据范围：本报告基于 apache/seatunnel 仓库 dev 分支的合并提交记录，统计窗口为 2026-10-01 至 2026-10-31（UTC），覆盖完整自然月。 一、本月社区整体贡献数据 1.1 数据概览 指标 202…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T02:16:53.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T07:29:28.541Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41792591749"
-      }
-    },
-    {
-      "fingerprint": "8578f54cff6f612a",
-      "url": "https://www.oschina.net/news/503380",
-      "title_original": "Skyeye 云企业级AI+零代码智能制造系统-AI应用 - v4.1.10发布",
-      "title_zh": "Skyeye 云企业级AI+零代码智能制造系统-AI应用 - v4.1.10发布",
-      "summary_zh": "Skyeye 云企业级AI+零代码智能制造，智能制造一体化，采用 SpringBoot+ UNI-APP + Ant Design Vue 的零代码平台开发模式。包含 100 多种电子流程，CRM、PM、ERP、MES、ADM、OA、EH…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T02:09:26.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T07:29:28.541Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41792591749"
-      }
-    },
-    {
-      "fingerprint": "5669f8353e97b841",
-      "url": "https://www.infoq.cn/article/BGkTakB51rl6ybIh4sYJ?utm_source=rss&utm_medium=article",
-      "title_original": "给 AI 业务单独划一块地：帆软怎么重新安排事、人和组织｜AICon北京",
-      "title_zh": "给 AI 业务单独划一块地：帆软怎么重新安排事、人和组织｜AICon北京",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-04T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-04T07:29:28.541Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41792591749"
       }
     }
   ]
