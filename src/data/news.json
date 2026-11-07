@@ -1,9 +1,310 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-06T16:45:35.337Z",
+  "generated_at": "2026-11-07T07:08:06.372Z",
   "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "c43acc78d3d535b8",
+      "url": "https://www.infoq.cn/article/K1bCIbHxeu3wLIjdusgr?utm_source=rss&utm_medium=article",
+      "title_original": "CyberwIIOS：如何驾驭大模型在 OT 侧跨越“幻觉”与“失控”｜AICon北京",
+      "title_zh": "CyberwIIOS：如何驾驭大模型在 OT 侧跨越“幻觉”与“失控”｜AICon北京",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-07T02:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "5fa3f04e06b85780",
+      "url": "https://www.infoq.cn/article/pMNGPheLLJ8hkfikmjUU?utm_source=rss&utm_medium=article",
+      "title_original": "线上 Worker 变慢，本地却复现不了？Cloudflare 让开发者直接看生产环境火焰图",
+      "title_zh": "线上 Worker 变慢，本地却复现不了？Cloudflare 让开发者直接看生产环境火焰图",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-07T01:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "60724c835de1389a",
+      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "title_original": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+      "title_zh": "一个能向 Opus 求助的 Jev，以 4 倍更低的成本实现 Opus 的准确度",
+      "summary_zh": "介绍一种可请求 Opus 辅助的 Jev，用四分之一的成本达到 Opus 的准确度。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T19:48:51.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "19e5a3d3b856bd20",
+      "url": "https://pwn.ai/blog/firecracker-escape",
+      "title_original": "Firecracker VM Escape: PwnEscape Part 2",
+      "title_zh": "Firecracker 虚拟机逃逸：PwnEscape 第 2 部分",
+      "summary_zh": "本文是 Firecracker 虚拟机逃逸系列的第二部分，介绍 PwnEscape 漏洞利用。",
+      "tags": [
+        "security"
+      ],
+      "level": "must-read",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T19:33:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "c18d658a7097a990",
+      "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+      "title_original": "GitHub's new Git storage architecture",
+      "title_zh": "GitHub 的新 Git 存储架构",
+      "summary_zh": "GitHub 介绍其新的 Git 存储架构。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T19:24:21.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "c1c67cc6800fc35a",
+      "url": "https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
+      "title_original": "Restaurant Delivery Payment-Skimming Campaign",
+      "title_zh": "餐厅外卖支付信息窃取活动",
+      "summary_zh": "介绍针对餐厅外卖场景的支付信息窃取活动。",
+      "tags": [
+        "security"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T19:19:27.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "056b61ee1363cf81",
+      "url": "https://css-tricks.com/css-tricks-redesign-preview/",
+      "title_original": "RSS Club: CSS-Tricks Redesign Preview",
+      "title_zh": "RSS Club：CSS-Tricks 改版预览",
+      "summary_zh": "CSS-Tricks 向 RSS 订阅者提供网站改版预览。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "css-tricks",
+      "source_name": "CSS-Tricks",
+      "original_lang": "en",
+      "published_at": "2026-11-06T18:52:59.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "62db0f07a0b247b1",
+      "url": "https://devvm.dev/",
+      "title_original": "Devvm.dev: One VM for every project",
+      "title_zh": "Devvm.dev：每个项目一个虚拟机",
+      "summary_zh": "Devvm.dev 为每个项目提供一个虚拟机环境。",
+      "tags": [
+        "tools"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T17:30:22.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "b7aa5d4fa5c79c45",
+      "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+      "title_original": "Quoting Nilay Patel",
+      "title_zh": "引用 Nilay Patel",
+      "summary_zh": "该引述认为产品不够好，难以让用户为相关成本付费，也不能强制用户听抱怨。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "simonwillison",
+      "source_name": "Simon Willison (Web.dev for AI)",
+      "original_lang": "en",
+      "published_at": "2026-11-06T17:13:12.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "1a6a9b3378ba5cd7",
+      "url": "https://mattlakeman.org/2026/11/05/notes-on-san-marino/",
+      "title_original": "Notes on San Marino",
+      "title_zh": "关于圣马力诺的笔记",
+      "summary_zh": "关于圣马力诺的笔记文章。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T17:12:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "1c0e2b2010398178",
+      "url": "https://kevinboone.me/efitest_index.html",
+      "title_original": "First steps in bare-metal programming using UEFI",
+      "title_zh": "使用 UEFI 进行裸机编程的第一步",
+      "summary_zh": "介绍使用 UEFI 进行裸机编程的入门步骤。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T16:50:29.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "485654c1f98a7cdc",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "title_original": "Gemini Omni 1.2 Flash",
+      "title_zh": "Gemini Omni 1.2 Flash",
+      "summary_zh": "谷歌发布 Gemini Omni 1.2 Flash 模型。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T13:35:27.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "3d951e64c858db64",
+      "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
+      "title_original": "Tesla to wind down Cybertruck production",
+      "title_zh": "特斯拉将逐步停止 Cybertruck 生产",
+      "summary_zh": "特斯拉将逐步停止 Cybertruck 的生产。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-06T12:13:51.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T07:08:06.372Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42349961096"
+      }
+    },
     {
       "fingerprint": "dce0d8e47b349737",
       "url": "https://www.ycombinator.com/companies/mbodi-ai/jobs",
@@ -2023,306 +2324,6 @@
         "mode": "ai",
         "enriched_by": "deepseek-v4-pro-0813",
         "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "bbb7f69db5debade",
-      "url": "https://arxiv.org/abs/2611.05512",
-      "title_original": "SlackBench: Benchmarking Agents on Collaborative Projects Grounded in Real Code Repositories",
-      "title_zh": "SlackBench：在基于真实代码库的协作项目上基准测试智能体",
-      "summary_zh": "论文提出SlackBench基准，在基于真实代码库的协作项目环境中评估AI智能体的能力。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-05T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "d00df6c93ac0026c",
-      "url": "https://arxiv.org/abs/2611.05524",
-      "title_original": "MA-SafeDiffuser: Safe Multi-Agent Planning with Diffusion Probabilistic Models",
-      "title_zh": "MA-SafeDiffuser：基于扩散概率模型的安全多智能体规划",
-      "summary_zh": "论文提出MA-SafeDiffuser，将SafeDiffuser扩展到多智能体场景，用扩散概率模型实现安全规划。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-05T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "f6365caf171c45c9",
-      "url": "https://arxiv.org/abs/2611.05542",
-      "title_original": "Towards Efficient Whole Page Ranking with One-Pass Inference",
-      "title_zh": "面向高效整页排序的单遍推理",
-      "summary_zh": "论文研究整页排序中广告与自然内容的联合优化，通过单遍推理提升效率。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-05T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "f7611aabca8b1329",
-      "url": "https://www.infoq.cn/article/hHzARIJTeqoqYpjNKEuq?utm_source=rss&utm_medium=article",
-      "title_original": "谷歌发布 ML Drift：为各类 GPU 加速端侧 AI 推理",
-      "title_zh": "谷歌发布 ML Drift：为各类 GPU 加速端侧 AI 推理",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T07:54:28.901Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41990484919"
-      }
-    },
-    {
-      "fingerprint": "c30f663697f876ff",
-      "url": "https://www.oschina.net/news/503406",
-      "title_original": "DSH Sessivra 0.3.0-dev.26 发布：拖拽会话即可分屏",
-      "title_zh": "DSH Sessivra 0.3.0-dev.26 发布：拖拽会话即可分屏",
-      "summary_zh": "DSH Sessivra 是 DeepSeek Harness 的非官方开源协作插件。0.3.0-dev.26 已发布到 npm 和 GitHub，新增同一页面的会话分屏。主会话可以留在左侧核对产物，右侧打开子会话查看执行轨迹，两边保留各…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T03:24:14.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T07:54:28.901Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41990484919"
-      }
-    },
-    {
-      "fingerprint": "7b4954f3d9845247",
-      "url": "https://www.infoq.cn/article/u4fAoAH5vZPCV4TVqAcO?utm_source=rss&utm_medium=article",
-      "title_original": "谷歌用 Gemini 4 Argon 一夜优化 ADK 代码库的 20 万行代码",
-      "title_zh": "谷歌用 Gemini 4 Argon 一夜优化 ADK 代码库的 20 万行代码",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T03:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T07:54:28.901Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41990484919"
-      }
-    },
-    {
-      "fingerprint": "fc86df62222213aa",
-      "url": "https://www.oschina.net/news/503405",
-      "title_original": "拾趣 (Magpie) v0.1.20 发布：全新截图操作，翻译、解释、总结...",
-      "title_zh": "拾趣 (Magpie) v0.1.20 发布：全新截图操作，翻译、解释、总结...",
-      "summary_zh": "拾趣 (Magpie)是一款跨平台沉浸式自定义AI 划词工具 划选或双击，浮动条随即弹出：翻译、解释、总结实时呈现；复制、搜索、写入 Obsidian、预填日历，结果直接落地。图片、视频与扫描文档中的文字，框选亦可识别——处理在原地完成，…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T02:36:28.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T07:54:28.901Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41990484919"
-      }
-    },
-    {
-      "fingerprint": "b4d7e2009c05be6a",
-      "url": "https://www.oschina.net/news/503403",
-      "title_original": "🔥🔥开源接口平台 v6.5.0 发布，升级 JDK 25",
-      "title_zh": "🔥🔥开源接口平台 v6.5.0 发布，升级 JDK 25",
-      "summary_zh": "ApiGo 是一款在线接口开发和管理平台，多数据库插件化数据源框架、SQL2API 。支持 WorkBuddy、千问办公、Trea Work、豆包等 AI 办公平台 MCP 接入。支持接入（mysql、oracle、达梦、TiDB、Dol…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T02:02:49.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T07:54:28.901Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41990484919"
-      }
-    },
-    {
-      "fingerprint": "1bc7eb89b4ced8e4",
-      "url": "https://www.infoq.cn/article/XieGrL5pws7jG1zxKPle?utm_source=rss&utm_medium=article",
-      "title_original": "AI Coding 增量风险管控：Skill 门禁与 Harness 落地实践｜AICon北京",
-      "title_zh": "AI Coding 增量风险管控：Skill 门禁与 Harness 落地实践｜AICon北京",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T07:54:28.901Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41990484919"
-      }
-    },
-    {
-      "fingerprint": "df3642c58022be87",
-      "url": "https://www.oschina.net/news/503402",
-      "title_original": "禅道开源版 22.7 发布，运行环境升级为 PHP 8.4，完善了系统通知渠道，优化系统通知文案",
-      "title_zh": "禅道开源版 22.7 发布，运行环境升级为 PHP 8.4，完善了系统通知渠道，优化系统通知文案",
-      "summary_zh": "大家好，禅道开源版22.7发布！本次发布补充了禅道对象的通知渠道，让更多业务对象的动态都能及时触达干系人；优化系统通知文案，消息提示更加准确清晰，方便用户快速知晓后续如何处理。 新版本将为用户带来更好的使用体验和更高的工作效率，感谢大家一…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T01:46:42.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T07:54:28.901Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41990484919"
-      }
-    },
-    {
-      "fingerprint": "2c34c5a390aa2286",
-      "url": "https://www.infoq.cn/article/C61Q16LQIDq45l0iCCzV?utm_source=rss&utm_medium=article",
-      "title_original": "混元 Hy4 实测：腾讯的产品基因，模型继承了几分？",
-      "title_zh": "混元 Hy4 实测：腾讯的产品基因，模型继承了几分？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T01:44:25.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T07:54:28.901Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41990484919"
-      }
-    },
-    {
-      "fingerprint": "4141e307099b1663",
-      "url": "https://www.oschina.net/news/503401",
-      "title_original": "JeecgBoot V3.9.6 发布，67 项安全漏洞集中修复，AI 图像生成上线",
-      "title_zh": "JeecgBoot V3.9.6 发布，67 项安全漏洞集中修复，AI 图像生成上线",
-      "summary_zh": "前言 JeecgBoot V3.9.6 是一次以「安全」为主线的版本。距离 V3.9.5 发布两个多月，这一版集中处理了社区和安全研究人员报告的 67 项安全漏洞，覆盖越权访问、租户隔离、登录爆破、短信轰炸、SQL 注入、SSRF、XSS…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T01:30:09.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T07:54:28.901Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41990484919"
-      }
-    },
-    {
-      "fingerprint": "f505d9950d0b0879",
-      "url": "https://www.infoq.cn/article/yRvSUCFFcZEEXCgxyAO2?utm_source=rss&utm_medium=article",
-      "title_original": "Cloudflare 通过优化一致性哈希节省了 100 TB 内存",
-      "title_zh": "Cloudflare 通过优化一致性哈希节省了 100 TB 内存",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T01:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T07:54:28.901Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "41990484919"
       }
     }
   ]
