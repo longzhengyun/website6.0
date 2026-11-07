@@ -1,9 +1,55 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-07T07:08:06.372Z",
+  "generated_at": "2026-11-07T15:39:12.213Z",
   "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "9a59b2f6f0c9487a",
+      "url": "https://www.oschina.net/news/503464",
+      "title_original": ":fire: xbatis 1.10.15 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
+      "title_zh": ":fire: xbatis 1.10.15 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
+      "summary_zh": "推荐理由： 强、强、强 ，单表？连表？不想连表？让你直接少写 1/3 甚至 2/3 的持久层代码；API 简单 快捷 优雅 简洁 构建 SQL 非常强！用过的 没用过的都来体验，虽然有 AI 了，但是真正好用的 ORM 的还不能忽略的，除…",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-07T09:40:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T15:39:12.213Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42387392200"
+      }
+    },
+    {
+      "fingerprint": "21444624ea1429e4",
+      "url": "https://www.infoq.cn/article/mF9A6U1M6SQFWfEKOJGW?utm_source=rss&utm_medium=article",
+      "title_original": "不复制海量数据，直接查询 S3：CSIRO 重构基因组分析架构",
+      "title_zh": "不复制海量数据，直接查询 S3：CSIRO 重构基因组分析架构",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-07T08:11:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T15:39:12.213Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42387392200"
+      }
+    },
     {
       "fingerprint": "c43acc78d3d535b8",
       "url": "https://www.infoq.cn/article/K1bCIbHxeu3wLIjdusgr?utm_source=rss&utm_medium=article",
@@ -49,6 +95,30 @@
         "mode": "ai",
         "enriched_by": "deepseek-v4-pro-0813",
         "run_id": "42349961096"
+      }
+    },
+    {
+      "fingerprint": "1c4d3cd9d70f04c4",
+      "url": "https://www.oschina.net/news/503458",
+      "title_original": "Jync v1.14.0 · 应用内 HTTPS 与配置包迁移",
+      "title_zh": "Jync v1.14.0 · 应用内 HTTPS 与配置包迁移",
+      "summary_zh": "Jync v1.14.0 新增 应用内 HTTPS：「系统配置」可直接上传 PKCS#12 / JKS 密钥库或 PEM 证书链与私钥，由 Jync 自己提供 HTTPS，不必再改 nginx 或环境变量。 证书与加密后的密钥库口令存放在…",
+      "tags": [
+        "security",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-07T00:59:08.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-07T15:39:12.213Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42387392200"
       }
     },
     {
@@ -2240,75 +2310,6 @@
       "title_original": "Challenge-Aware Knowledge Recruitment with Meta-Agent Supervision for Medical Multi-Agent Reasoning",
       "title_zh": "面向医学多智能体推理的挑战感知知识招募与元智能体监督",
       "summary_zh": "论文提出用于医学多智能体推理的挑战感知知识招募方法，并引入元智能体监督，以改进大模型在复杂医学问答中的表现。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-05T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "abdb707b0a55aeaa",
-      "url": "https://arxiv.org/abs/2611.05394",
-      "title_original": "A Feasibility Condition for Confidence-Gated Tiered LLM Inference",
-      "title_zh": "置信门控分层大语言模型推理的可行性条件",
-      "summary_zh": "论文研究将大语言模型计算分布到多个层级的分层推理，并给出置信门控分层推理的可行性条件。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-05T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "4ced9b5daa264ea9",
-      "url": "https://arxiv.org/abs/2611.05450",
-      "title_original": "Towards Robust Long-Lived Agents: Benchmarking Experience Lifecycles in Evolving Environments",
-      "title_zh": "迈向稳健的长寿命智能体：在演化环境中基准测试经验生命周期",
-      "summary_zh": "论文面向从一次性任务转向长期运行的智能体，提出在演化环境中评估经验生命周期的基准，以衡量其稳健性。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-05T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "9e109f910ff861b4",
-      "url": "https://arxiv.org/abs/2611.05459",
-      "title_original": "Can Large Language Models Review the Scientific Literature? A Test Against a 102-Article Benchmark",
-      "title_zh": "大型语言模型能否评审科学文献：基于102篇文章基准的测试",
-      "summary_zh": "论文通过102篇文章基准测试，评估大型语言模型在科学文献评审任务上的表现。",
       "tags": [
         "ai"
       ],
