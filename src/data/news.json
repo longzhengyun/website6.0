@@ -1,9 +1,32 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-08T07:17:31.299Z",
-  "mode": "rss_only",
+  "generated_at": "2026-11-08T15:57:22.806Z",
+  "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "ed8558430dc76233",
+      "url": "https://www.infoq.cn/article/xd9o6TyQ8GLON3dmiWpG?utm_source=rss&utm_medium=article",
+      "title_original": "AI 生成视频何时才能告别“抽卡”？藏在高效生成背后的返工与成本难题",
+      "title_zh": "AI 生成视频何时才能告别“抽卡”？藏在高效生成背后的返工与成本难题",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-08T08:19:44.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
+      }
+    },
     {
       "fingerprint": "0dfade59e5059b6c",
       "url": "https://www.infoq.cn/article/Qs0pJ5M43c56hdozHiR0?utm_source=rss&utm_medium=article",
@@ -51,6 +74,52 @@
       }
     },
     {
+      "fingerprint": "bb30ad069227b20f",
+      "url": "https://github.com/dmunozv04/isponsorblocktv",
+      "title_original": "ISponsorBlockTV: SponsorBlock client for all YouTube TV clients",
+      "title_zh": "ISponsorBlockTV：适用于所有 YouTube TV 客户端的 SponsorBlock 客户端",
+      "summary_zh": "一个适用于所有 YouTube TV 客户端的 SponsorBlock 客户端。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-08T03:47:19.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
+      }
+    },
+    {
+      "fingerprint": "149c124f7b07d2a1",
+      "url": "https://caleb.software/posts/claude-to-pi.html",
+      "title_original": "Goodbye Claude, hello Pi",
+      "title_zh": "再见 Claude，你好 Pi",
+      "summary_zh": "作者记录从 Claude 转向 Pi 的经历与原因。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-08T03:11:48.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
+      }
+    },
+    {
       "fingerprint": "3f055489ae702bd7",
       "url": "https://www.oschina.net/news/503469",
       "title_original": "zlang v0.12.14.1 发布，支持中文编程、支持 Web 开发/桌面应用开发的国产全自研编程语言",
@@ -71,6 +140,30 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "42458166266"
+      }
+    },
+    {
+      "fingerprint": "fd273feaa8fd4ac1",
+      "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
+      "title_original": "Consumer brain wave headsets threaten privacy",
+      "title_zh": "消费级脑波头戴设备威胁隐私",
+      "summary_zh": "文章称可穿戴设备制造商正在收集脑波数据用于训练 AI，可能威胁用户隐私。",
+      "tags": [
+        "security",
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-08T02:02:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
       }
     },
     {
@@ -140,6 +233,171 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "42458166266"
+      }
+    },
+    {
+      "fingerprint": "5f8103aa8ad8e667",
+      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+      "title_original": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "title_zh": "datasette #3046：不要向 Firefox 提供 HTML 页面的 link: rel=next HTTP 头",
+      "summary_zh": "Datasette 问题 #3046 提出，针对 Firefox 的 HTML 页面不再提供 link: rel=next HTTP 头。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "simonwillison",
+      "source_name": "Simon Willison (Web.dev for AI)",
+      "original_lang": "en",
+      "published_at": "2026-11-07T23:57:46.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
+      }
+    },
+    {
+      "fingerprint": "cc9dd90ef8beb10b",
+      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+      "title_original": "GitHub New pull request overview page in public preview",
+      "title_zh": "GitHub 新拉取请求概览页面进入公开预览",
+      "summary_zh": "GitHub 新的 Pull Request 概览页面进入公开预览。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-07T23:09:40.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
+      }
+    },
+    {
+      "fingerprint": "02f417c22eb761e6",
+      "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
+      "title_original": "Making any integer with four 2s (2025)",
+      "title_zh": "用四个 2 构造任意整数（2025）",
+      "summary_zh": "文章探讨仅用四个数字 2 和数学运算构造任意整数的方法。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-07T22:38:58.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
+      }
+    },
+    {
+      "fingerprint": "10bdc73097cfd238",
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "title_original": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "title_zh": "Claude Code 的“Don't Ask Again”在 1,122 个公开 GitHub 文件中暴露密码",
+      "summary_zh": "安全公司 Apiiro 称 Claude Code 的“Don’t Ask Again”功能导致编码代理在公开 GitHub 仓库中暴露密码等机密，涉及 1,122 个文件。",
+      "tags": [
+        "security",
+        "ai",
+        "tools"
+      ],
+      "level": "must-read",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-07T20:45:32.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
+      }
+    },
+    {
+      "fingerprint": "afa17e14952fa299",
+      "url": "https://blog.bosscher.ch/posts/openstick/",
+      "title_original": "What I run on my $10 USD OpenStick homelab",
+      "title_zh": "我在 10 美元 OpenStick 家庭实验室上运行的东西",
+      "summary_zh": "作者介绍在一台约 10 美元的 OpenStick 设备上运行的家庭实验室服务。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-07T18:12:12.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
+      }
+    },
+    {
+      "fingerprint": "55aa1dc18cbb251b",
+      "url": "https://github.com/hedgerow-dev/coldframe",
+      "title_original": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+      "title_zh": "Show HN: Coldframe，一个伪装成超市冰箱控制器的蜜罐",
+      "summary_zh": "Coldframe 是一个蜜罐，伪装成超市制冷控制器，受工业控制系统相关事件启发。",
+      "tags": [
+        "security",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-07T17:27:30.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
+      }
+    },
+    {
+      "fingerprint": "5be9cd76a11a8ae6",
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "title_original": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "title_zh": "MaxxBench——“DeepSWE 分数不错，但这是真的吗？”",
+      "summary_zh": "MaxxBench 质疑 DeepSWE 等编码基准分数的可信度，并介绍相关研究背景。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-07T17:19:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-08T15:57:22.806Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42497374981"
       }
     },
     {
@@ -2060,263 +2318,6 @@
       "source_name": "Hacker News Front Page",
       "original_lang": "en",
       "published_at": "2026-11-05T14:34:18.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "0ada5e6099fcc1f9",
-      "url": "https://mcp-explained.com/",
-      "title_original": "MCP Explained",
-      "title_zh": "MCP 解释",
-      "summary_zh": "文章解释 MCP（Model Context Protocol）的概念与用法。",
-      "tags": [
-        "ai",
-        "standards"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-05T14:08:35.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "e97832c0fc5e2d39",
-      "url": "https://rakhim.exotext.com/i-wish-tech-companies-knew-more-about-me",
-      "title_original": "I wish tech companies knew more about me",
-      "title_zh": "我希望科技公司更了解我",
-      "summary_zh": "文章讨论科技公司对用户了解不足的问题及作者期望。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-05T13:40:52.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "7b5273e9b6d415b7",
-      "url": "https://www.oschina.net/news/503431",
-      "title_original": "SonnetDB 5.0 正式发布：增强 SQL 与事务，开放九模型 MCP 读写",
-      "title_zh": "SonnetDB 5.0 正式发布：增强 SQL 与事务，开放九模型 MCP 读写",
-      "summary_zh": "SonnetDB 5.0 正式发布：增强 SQL 与事务，开放九模型 MCP 读写 SonnetDB 5.0.0 已于 2026 年 11 月 4 日正式发布。相较 4.0，本次主版本更新重点增强 SQL 与关系事务、精确类型、.NET …",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T13:18:52.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T07:55:06.452Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42183990504"
-      }
-    },
-    {
-      "fingerprint": "c8d06251698dcc37",
-      "url": "https://www.theverge.com/news/1027379/discord-ditching-electron-web-app",
-      "title_original": "Discord is ditching Electron and its new app uses less RAM",
-      "title_zh": "Discord 放弃 Electron，新应用内存占用更低",
-      "summary_zh": "Discord 弃用 Electron，新应用内存占用更低。",
-      "tags": [
-        "frontend",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-05T13:05:28.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "d4445603d7b87811",
-      "url": "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
-      "title_original": "Download your favourite YouTube videos",
-      "title_zh": "下载你喜欢的 YouTube 视频",
-      "summary_zh": "文章讨论下载 YouTube 视频以保存个人收藏。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-05T13:00:11.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "a403fe7c2676005e",
-      "url": "https://smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/",
-      "title_original": "Making Immersive LLM Chat Experiences More Accessible",
-      "title_zh": "让沉浸式大语言模型聊天体验更易于访问",
-      "summary_zh": "随着大语言模型聊天模式变得普遍，提升其可访问性对确保所有用户都能使用至关重要。",
-      "tags": [
-        "ai",
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "smashing",
-      "source_name": "Smashing Magazine",
-      "original_lang": "en",
-      "published_at": "2026-11-05T13:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T16:45:35.337Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42255290991"
-      }
-    },
-    {
-      "fingerprint": "c5ca51374c960089",
-      "url": "https://phoboslab.org/log/2026/11/n64-ulc-codec",
-      "title_original": "Obscure audio codec is a perfect fit for the N64",
-      "title_zh": "一种冷门音频编解码器非常适合 N64",
-      "summary_zh": "文章介绍一种冷门音频编解码器，以及其适合 N64 平台的原因。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-05T12:51:48.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "8915bcc371e9e602",
-      "url": "https://www.oschina.net/news/503430",
-      "title_original": "Jync v1.13.0 · Redis 缓存投影与 MySQL 5.7 自动适配",
-      "title_zh": "Jync v1.13.0 · Redis 缓存投影与 MySQL 5.7 自动适配",
-      "summary_zh": "Jync v1.13.0 Redis 缓存投影与 MySQL 5.7 自动适配 新增 Redis 作为实时同步的目标：项目页的「目标类型」可选 Redis，源端 CDC 持续把每一行的变化投影到缓存。Redis 是目标端专属能力，不是新的…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T12:44:02.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T07:55:06.452Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42183990504"
-      }
-    },
-    {
-      "fingerprint": "52e57828ad3107dc",
-      "url": "https://www.oschina.net/news/503429/ernie-5-5-flash-base",
-      "title_original": "百度发布最新基座模型 ERNIE 5.5 Flash Base：效率、开源、高性价比",
-      "title_zh": "百度发布最新基座模型 ERNIE 5.5 Flash Base：效率、开源、高性价比",
-      "summary_zh": "11 月 5 日，百度正式开源最新基座模型文心 5.5 Flash Base（ERNIE 5.5 Flash Base）。模型采用 MoE 架构，总参数量 2800 亿，每个 Token 激活 140 亿参数，使用 33.5 万亿个 To…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T11:39:18.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "32d2c044fbf53fc2",
-      "url": "https://www.infoq.cn/article/UMlHzxNiS9tFfG9KadYs?utm_source=rss&utm_medium=article",
-      "title_original": "模型之外，腾讯还在补什么？",
-      "title_zh": "模型之外，腾讯还在补什么？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T11:13:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-05T17:23:10.956Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42074063504"
-      }
-    },
-    {
-      "fingerprint": "fe8a0b6adae3691b",
-      "url": "https://www.oschina.net/news/503428",
-      "title_original": "用 AI 写后端，为什么还是在造轮子？",
-      "title_zh": "用 AI 写后端，为什么还是在造轮子？",
-      "summary_zh": "很多人已经习惯让 AI 写代码： 生成一个 CRUD 接口、补一段 SQL、写一个工具类，效率确实比手敲高。 但真正落到一个企业后台项目上，你会发现节奏并没有变快多少。AI 帮你写完了接口，接下来还是要处理权限、菜单、工作流、报表、审计日…",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-05T10:52:19.000Z",
       "date_inferred": false,
       "fetched_at": "2026-11-05T17:23:10.956Z",
       "duplicate_of": null,
