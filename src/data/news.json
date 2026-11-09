@@ -1,9 +1,217 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T07:58:09.527Z",
-  "mode": "ai",
+  "generated_at": "2026-11-09T19:47:44.054Z",
+  "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "9d4dd051469b2568",
+      "url": "https://www.infoq.cn/article/YPQyY6bqhzhtO8MN6XUb?utm_source=rss&utm_medium=article",
+      "title_original": "不想当管理者，就用不好 Coding Agent？Anthropic 工程师长文谈 Agent 管理实战",
+      "title_zh": "不想当管理者，就用不好 Coding Agent？Anthropic 工程师长文谈 Agent 管理实战",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-09T10:24:32.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-09T19:47:44.054Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42686709767"
+      }
+    },
+    {
+      "fingerprint": "36ca191169be19be",
+      "url": "https://www.oschina.net/news/503488",
+      "title_original": "🔥🔥ApiGo 5.5 发布，新增数据行列级权限",
+      "title_zh": "🔥🔥ApiGo 5.5 发布，新增数据行列级权限",
+      "summary_zh": "ApiGo 是面向企业的 AI Agent 受控数据服务网关与 API 与 MCP 构建平台，通过WorkBuddy、千问办公等 AI 智能体，一句话即可完成受控的 API 与 MCP 的创建发布，帮助企业把 ERP、CRM、SRM 等存…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-09T09:29:47.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-09T19:47:44.054Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42686709767"
+      }
+    },
+    {
+      "fingerprint": "863d8346955b94b1",
+      "url": "https://www.oschina.net/news/503487",
+      "title_original": "千星达成！开源终端 uniTerm v1.12 发布：Docker 多租户部署、本地服务、终端录制与批量执行齐上线",
+      "title_zh": "千星达成！开源终端 uniTerm v1.12 发布：Docker 多租户部署、本地服务、终端录制与批量执行齐上线",
+      "summary_zh": "uniTerm 是一款轻量级一站式开源终端软件。整合终端、文件传输、远程桌面、数据库客户端、容器等 5 大类协议于一身，覆盖 32 种协议，安装包不到 20 MB；内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 …",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-09T09:04:39.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-09T19:47:44.054Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42686709767"
+      }
+    },
+    {
+      "fingerprint": "3c1cc2133bf26709",
+      "url": "https://www.infoq.cn/article/1g0PWSVhNkb0sgud4heO?utm_source=rss&utm_medium=article",
+      "title_original": "千问“死磕”Personal Agent：为什么下限比上限更重要？",
+      "title_zh": "千问“死磕”Personal Agent：为什么下限比上限更重要？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-09T09:02:39.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-09T19:47:44.054Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42686709767"
+      }
+    },
+    {
+      "fingerprint": "c40e3d103277e4f3",
+      "url": "https://www.infoq.cn/article/CUgMFMX7uRJNMec1pfYo?utm_source=rss&utm_medium=article",
+      "title_original": "AI越来越聪明，企业却快管不住了：Gartner 2027年十大趋势，智能体治理成新战场",
+      "title_zh": "AI越来越聪明，企业却快管不住了：Gartner 2027年十大趋势，智能体治理成新战场",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-09T08:55:59.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-09T19:47:44.054Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42686709767"
+      }
+    },
+    {
+      "fingerprint": "1364ad0edb950154",
+      "url": "https://www.oschina.net/news/503486",
+      "title_original": "能力再扩充！deepin Skills 上架应用商店，小 U 同学直接调用",
+      "title_zh": "能力再扩充！deepin Skills 上架应用商店，小 U 同学直接调用",
+      "summary_zh": "什么是 deepin Skills？ deepin Skills 将 deepin 生态中长期实践验证的框架知识、插件接口、工程实践、评估用例以及系统操作能力，组织为可按需加载的技能文档与调用能力。 简单来说，这是一套 deepin 原生…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-09T08:41:10.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-09T19:47:44.054Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42686709767"
+      }
+    },
+    {
+      "fingerprint": "dae08992560f8822",
+      "url": "https://www.infoq.cn/article/1Mz0ADa02PxcDsVfpVEb?utm_source=rss&utm_medium=article",
+      "title_original": "千问办公2.0发布，首个支持多人与Agent协作的Team Agent来了",
+      "title_zh": "千问办公2.0发布，首个支持多人与Agent协作的Team Agent来了",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-09T08:26:51.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-09T19:47:44.054Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42686709767"
+      }
+    },
+    {
+      "fingerprint": "87541c98c3cc306d",
+      "url": "https://www.oschina.net/news/503485",
+      "title_original": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
+      "title_zh": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
+      "summary_zh": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-09T08:24:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-09T19:47:44.054Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42686709767"
+      }
+    },
+    {
+      "fingerprint": "5823e64e588d70f4",
+      "url": "https://www.infoq.cn/article/mBvmvcQ8a8ty2Ob1xN64?utm_source=rss&utm_medium=article",
+      "title_original": "不能把整个安全体系押在大模型上：AI 分诊 CVE，人工审查仍不能少",
+      "title_zh": "不能把整个安全体系押在大模型上：AI 分诊 CVE，人工审查仍不能少",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-09T08:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-09T19:47:44.054Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42686709767"
+      }
+    },
     {
       "fingerprint": "0adb6deb8609c54f",
       "url": "https://www.oschina.net/news/503483",
@@ -2126,215 +2334,6 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "42183990504"
-      }
-    },
-    {
-      "fingerprint": "eda75f3a0f2cb648",
-      "url": "https://www.oschina.net/news/503436",
-      "title_original": "ModStartBlog v12.0.0 一键安装、主题焕新、安全加固与体验升级",
-      "title_zh": "ModStartBlog v12.0.0 一键安装、主题焕新、安全加固与体验升级",
-      "summary_zh": "系统介绍 ModStart 是一个基于 Laravel 模块化极速开发框架。模块市场拥有丰富的功能应用，支持后台一键快速安装，让开发者能快的实现业务功能开发。 系统完全开源，基于 Apache 2.0 开源协议。 功能特性 丰富的模块市场…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-06T06:16:12.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T07:55:06.452Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42183990504"
-      }
-    },
-    {
-      "fingerprint": "0eb2cfea20dcb80a",
-      "url": "https://www.oschina.net/news/503435",
-      "title_original": "ModStart v12.0.0 图形化安装、安全加固与后台体验全面升级",
-      "title_zh": "ModStart v12.0.0 图形化安装、安全加固与后台体验全面升级",
-      "summary_zh": "系统介绍 ModStart 是一个基于 Laravel 模块化极速开发框架。模块市场拥有丰富的功能应用，支持后台一键快速安装，让开发者能快的实现业务功能开发。 系统完全开源，基于 Apache 2.0 开源协议，免费且不限制商业使用。 功…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-06T06:13:41.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T07:55:06.452Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42183990504"
-      }
-    },
-    {
-      "fingerprint": "99c3395e8389fa93",
-      "url": "https://www.infoq.cn/article/zJmwNj2Erc0Ol10eSIIY?utm_source=rss&utm_medium=article",
-      "title_original": "NgRx 22 发布：引入 Resource Extensions 和动态 DeepSignal，增强 Angular 状态管理能力",
-      "title_zh": "NgRx 22 发布：引入 Resource Extensions 和动态 DeepSignal，增强 Angular 状态管理能力",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-06T06:01:37.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T07:55:06.452Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42183990504"
-      }
-    },
-    {
-      "fingerprint": "a67cb9c83dfc1363",
-      "url": "https://arxiv.org/abs/2611.06996",
-      "title_original": "Trust Responsive Runtime Authorization for Agentic AI with Empirical Characterization of Policy Behavior and Parameter Sensitivity",
-      "title_zh": "面向智能体 AI 的信任响应式运行时授权：策略行为与参数敏感性实证表征",
-      "summary_zh": "研究将自主智能体运行时上下文估计转化为授权决策的策略，并对策略行为和参数敏感性进行实证表征。",
-      "tags": [
-        "ai",
-        "security"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-06T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T16:45:35.337Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42255290991"
-      }
-    },
-    {
-      "fingerprint": "6bcd57996b1f8a44",
-      "url": "https://arxiv.org/abs/2611.07048",
-      "title_original": "Adapting the Process of Adaptation: Darwinian, Lamarckian, and Agent-Directed Evolution in AI",
-      "title_zh": "适应过程的适应：AI 中的达尔文式、拉马克式与智能体导向进化",
-      "summary_zh": "研究人工智能中达尔文式、拉马克式和智能体导向进化如何适应并塑造智能过程。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-06T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T16:45:35.337Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42255290991"
-      }
-    },
-    {
-      "fingerprint": "e4ba57732a447796",
-      "url": "https://arxiv.org/abs/2611.07051",
-      "title_original": "Closed-Loop Agent Evaluation: Layered Measurement and Self-Calibration",
-      "title_zh": "闭环智能体评估：分层测量与自校准",
-      "summary_zh": "针对已上线智能体，提出分层测量与自校准的闭环评估方法，以判断其是否正常完成工作。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-06T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T16:45:35.337Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42255290991"
-      }
-    },
-    {
-      "fingerprint": "a47dad607e0fe978",
-      "url": "https://arxiv.org/abs/2611.07066",
-      "title_original": "Cooperative Multi-Agent Reinforcement Learning via Epigraph-Form Guided Exploration",
-      "title_zh": "通过上镜图形式引导探索的协作多智能体强化学习",
-      "summary_zh": "提出一种基于上镜图形式引导探索的方法，用于在多智能体强化学习中发现协作行为。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-06T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T16:45:35.337Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42255290991"
-      }
-    },
-    {
-      "fingerprint": "c8010e54f7a16719",
-      "url": "https://arxiv.org/abs/2611.07073",
-      "title_original": "When Verification Is Not Agreement: Cross-Agent LLM-to-Dafny Formalization",
-      "title_zh": "当验证不等于一致：跨智能体 LLM 到 Dafny 的形式化",
-      "summary_zh": "研究多个智能体将 LLM 输出形式化为 Dafny 时，形式化验证通过并不等于语义一致的问题。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-06T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T16:45:35.337Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42255290991"
-      }
-    },
-    {
-      "fingerprint": "4c861a74d24931e0",
-      "url": "https://arxiv.org/abs/2611.07088",
-      "title_original": "Synthesizing symbolic models of human and machine reasoning at scale",
-      "title_zh": "大规模合成人类与机器推理的符号模型",
-      "summary_zh": "研究如何大规模合成人类与机器推理的符号模型。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-06T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-06T16:45:35.337Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42255290991"
       }
     }
   ]
