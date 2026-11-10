@@ -1,9 +1,124 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T08:25:01.890Z",
-  "mode": "ai",
+  "generated_at": "2026-11-10T17:01:44.502Z",
+  "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "ff1df516f0fcff3f",
+      "url": "https://www.infoq.cn/article/juu2R26yD8B6ABUEQuWB?utm_source=rss&utm_medium=article",
+      "title_original": "接大模型别再自己配 Key、搭代理了，火山引擎 IGA Pages 一步搞定",
+      "title_zh": "接大模型别再自己配 Key、搭代理了，火山引擎 IGA Pages 一步搞定",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-10T10:58:56.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-10T17:01:44.502Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42860600096"
+      }
+    },
+    {
+      "fingerprint": "b0566b4853301de2",
+      "url": "https://www.infoq.cn/article/8tquwes1yGbmTeyOjOId?utm_source=rss&utm_medium=article",
+      "title_original": "近 700 亿美元 IPO 定价突然撤回！Anthropic 最快今天路演，下周冲刺上市",
+      "title_zh": "近 700 亿美元 IPO 定价突然撤回！Anthropic 最快今天路演，下周冲刺上市",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-10T10:54:18.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-10T17:01:44.502Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42860600096"
+      }
+    },
+    {
+      "fingerprint": "da20494987e4c3ac",
+      "url": "https://www.oschina.net/news/503514",
+      "title_original": "10x 工程师变成 100x 了，普通工程师还是那么普通",
+      "title_zh": "10x 工程师变成 100x 了，普通工程师还是那么普通",
+      "summary_zh": "一位 CTO 用反证法证明：我们还没被 AI 取代，但理由可能和你想的不一样。 shaharglazner 是 keepalerting 的联合创始人兼 CTO，11 月 9 日他在 X 上发了篇长文《On Being an Engine…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-10T10:08:13.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-10T17:01:44.502Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42860600096"
+      }
+    },
+    {
+      "fingerprint": "6551ef6f75dab496",
+      "url": "https://www.infoq.cn/article/UltsRzyiYdLd4r1S3mkm?utm_source=rss&utm_medium=article",
+      "title_original": "Chrome 想终结“去邮箱复制验证码”，但隐私真的更好了吗？",
+      "title_zh": "Chrome 想终结“去邮箱复制验证码”，但隐私真的更好了吗？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-10T09:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-10T17:01:44.502Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42860600096"
+      }
+    },
+    {
+      "fingerprint": "5687ad9f96de32bc",
+      "url": "https://www.oschina.net/news/503510",
+      "title_original": "qOntology 本体工程平台开源版 v1.1.1 发布：完善项目详情与抽取任务管理，统一建模交互体验",
+      "title_zh": "qOntology 本体工程平台开源版 v1.1.1 发布：完善项目详情与抽取任务管理，统一建模交互体验",
+      "summary_zh": "本次 qOntology 本体建模平台开源版 v1.1.1 更新，没有新增核心业务能力，主要围绕页面形态升级、组件标准化和交互样式优化展开。 同时，针对 AI 辅助建模、本体建模项目关联等问题进行了修复，并对项目管理、数据源、建模配置及抽…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-10T08:39:17.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-10T17:01:44.502Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42860600096"
+      }
+    },
     {
       "fingerprint": "51ab05ae81379465",
       "url": "https://www.infoq.cn/article/MQTTu6dgGxHBZm1wOLPI?utm_source=rss&utm_medium=article",
@@ -2214,123 +2329,6 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "42458166266"
-      }
-    },
-    {
-      "fingerprint": "9a59b2f6f0c9487a",
-      "url": "https://www.oschina.net/news/503464",
-      "title_original": ":fire: xbatis 1.10.15 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
-      "title_zh": ":fire: xbatis 1.10.15 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
-      "summary_zh": "推荐理由： 强、强、强 ，单表？连表？不想连表？让你直接少写 1/3 甚至 2/3 的持久层代码；API 简单 快捷 优雅 简洁 构建 SQL 非常强！用过的 没用过的都来体验，虽然有 AI 了，但是真正好用的 ORM 的还不能忽略的，除…",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-07T09:40:05.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-07T15:39:12.213Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42387392200"
-      }
-    },
-    {
-      "fingerprint": "21444624ea1429e4",
-      "url": "https://www.infoq.cn/article/mF9A6U1M6SQFWfEKOJGW?utm_source=rss&utm_medium=article",
-      "title_original": "不复制海量数据，直接查询 S3：CSIRO 重构基因组分析架构",
-      "title_zh": "不复制海量数据，直接查询 S3：CSIRO 重构基因组分析架构",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-07T08:11:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-07T15:39:12.213Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42387392200"
-      }
-    },
-    {
-      "fingerprint": "c43acc78d3d535b8",
-      "url": "https://www.infoq.cn/article/K1bCIbHxeu3wLIjdusgr?utm_source=rss&utm_medium=article",
-      "title_original": "CyberwIIOS：如何驾驭大模型在 OT 侧跨越“幻觉”与“失控”｜AICon北京",
-      "title_zh": "CyberwIIOS：如何驾驭大模型在 OT 侧跨越“幻觉”与“失控”｜AICon北京",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "security"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-07T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-07T07:08:06.372Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42349961096"
-      }
-    },
-    {
-      "fingerprint": "5fa3f04e06b85780",
-      "url": "https://www.infoq.cn/article/pMNGPheLLJ8hkfikmjUU?utm_source=rss&utm_medium=article",
-      "title_original": "线上 Worker 变慢，本地却复现不了？Cloudflare 让开发者直接看生产环境火焰图",
-      "title_zh": "线上 Worker 变慢，本地却复现不了？Cloudflare 让开发者直接看生产环境火焰图",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-07T01:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-07T07:08:06.372Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42349961096"
-      }
-    },
-    {
-      "fingerprint": "1c4d3cd9d70f04c4",
-      "url": "https://www.oschina.net/news/503458",
-      "title_original": "Jync v1.14.0 · 应用内 HTTPS 与配置包迁移",
-      "title_zh": "Jync v1.14.0 · 应用内 HTTPS 与配置包迁移",
-      "summary_zh": "Jync v1.14.0 新增 应用内 HTTPS：「系统配置」可直接上传 PKCS#12 / JKS 密钥库或 PEM 证书链与私钥，由 Jync 自己提供 HTTPS，不必再改 nginx 或环境变量。 证书与加密后的密钥库口令存放在…",
-      "tags": [
-        "security",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-07T00:59:08.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-07T15:39:12.213Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42387392200"
       }
     }
   ]
