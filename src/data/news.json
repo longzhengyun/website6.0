@@ -1,9 +1,661 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T17:01:44.502Z",
-  "mode": "rss_only",
+  "generated_at": "2026-11-11T07:44:33.253Z",
+  "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "9c540c0e76ab4aaf",
+      "url": "https://www.infoq.cn/article/xCQx0qBofJYfBdVrxVxt?utm_source=rss&utm_medium=article",
+      "title_original": "阿里云发布基于 AMD 第六代 EPYC 处理器的第十代 ECS 企业级实例",
+      "title_zh": "阿里云发布基于 AMD 第六代 EPYC 处理器的第十代 ECS 企业级实例",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T06:44:48.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "4bd6d8fca0727cd4",
+      "url": "https://arxiv.org/abs/2611.12936",
+      "title_original": "LandslideFM: A Foundation Model Towards Unified Landslide Perception and Understanding",
+      "title_zh": "LandslideFM：一个面向统一滑坡感知与理解的基础模型",
+      "summary_zh": "该论文提出了 LandslideFM，一个面向滑坡感知与理解统一建模的基础模型，用于智能滑坡检测。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-11T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "e15dfd244ed580c8",
+      "url": "https://arxiv.org/abs/2611.12937",
+      "title_original": "Tracing Psychometric Inference in Large Language Models",
+      "title_zh": "追踪大语言模型中的心理测量推断",
+      "summary_zh": "该研究追踪大语言模型中的心理测量推断，考察模型是否在内部表征心理构念。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-11T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "4ce35f7b37fafd91",
+      "url": "https://arxiv.org/abs/2611.12938",
+      "title_original": "Graph Visualizations in Prompts for Knowledge Graph Question Answering",
+      "title_zh": "知识图谱问答提示中的图可视化",
+      "summary_zh": "研究了多模态输入何时及如何改善知识图谱问答，重点关注提示中的图可视化。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-11T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "d5c99bc6d6e5d968",
+      "url": "https://arxiv.org/abs/2611.12940",
+      "title_original": "Reinforcement Learning based control of Cancer Chemotherapy treatments",
+      "title_zh": "基于强化学习的癌症化疗治疗控制",
+      "summary_zh": "论文研究基于强化学习的癌症化疗治疗控制方法。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-11T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "166bd6fc93935b5b",
+      "url": "https://arxiv.org/abs/2611.12941",
+      "title_original": "AI Governance Should Prioritize Control and Knowledge Boundaries Over Limiting Intelligence",
+      "title_zh": "AI 治理应优先考虑控制与知识边界，而非限制智能",
+      "summary_zh": "该文提出 AI 治理应优先设定控制和知识边界，而非限制智能。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-11T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "4d203c940610d876",
+      "url": "https://arxiv.org/abs/2611.12942",
+      "title_original": "Tabular Foundation Models vs Tuned Gradient Boosting for Telecom Churn: A Profit- and Calibration-Aware Evaluation",
+      "title_zh": "表格基础模型与调优梯度提升在电信客户流失预测中的利润与校准感知评估",
+      "summary_zh": "论文在电信客户流失预测任务上评估表格基础模型与调优梯度提升，兼顾利润和校准。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-11T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "79262989e256613b",
+      "url": "https://arxiv.org/abs/2611.12950",
+      "title_original": "SetPrint: Black-Box LLM Fingerprinting via Setwise Correspondence of Response Changes",
+      "title_zh": "SetPrint：基于响应变化集合对应关系的黑盒 LLM 指纹识别",
+      "summary_zh": "论文提出 SetPrint，通过响应变化的集合对应关系实现黑盒大语言模型指纹识别。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-11T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "a28aecbd7bcbf75e",
+      "url": "https://www.infoq.cn/article/gzNdPqAMp1Wh1JQ9d2JA?utm_source=rss&utm_medium=article",
+      "title_original": "Agent 从 Demo 到生产，究竟还差几步？4周实战课来了",
+      "title_zh": "Agent 从 Demo 到生产，究竟还差几步？4周实战课来了",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai",
+        "career"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T04:02:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "b97ce564a68ee560",
+      "url": "https://www.infoq.cn/article/SgXuVvzbHr8lKrihTAZW?utm_source=rss&utm_medium=article",
+      "title_original": "Cloudflare 推出面向 AI 应用程序的 Web Search API",
+      "title_zh": "Cloudflare 推出面向 AI 应用程序的 Web Search API",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T03:06:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "2b6022a8999091af",
+      "url": "https://www.infoq.cn/article/I49cXCJFBpOW3PcgPTW3?utm_source=rss&utm_medium=article",
+      "title_original": "基于 AgentKit 重塑研发协作：从编码提效到组织效能跃迁｜AICon北京",
+      "title_zh": "基于 AgentKit 重塑研发协作：从编码提效到组织效能跃迁｜AICon北京",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T02:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "74d7ee1743945d17",
+      "url": "https://www.oschina.net/news/503523",
+      "title_original": "openKylin 社区 2026 年度贡献榜单公布！",
+      "title_zh": "openKylin 社区 2026 年度贡献榜单公布！",
+      "summary_zh": "openKylin 社区 2026 年度贡献榜单公布！",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T01:43:09.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "63466917301e31e1",
+      "url": "https://www.infoq.cn/article/mfy0RUYOqEAW8imUrGTY?utm_source=rss&utm_medium=article",
+      "title_original": "微软 10 月安全更新修复 1400 余个漏洞，其中一个已遭利用",
+      "title_zh": "微软 10 月安全更新修复 1400 余个漏洞，其中一个已遭利用",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T01:06:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "35032a86ccb9ebc9",
+      "url": "https://www.oschina.net/news/503520",
+      "title_original": "DjangoAdmin 敏捷开发框架 Django+EleVue 版本 v2.8.2 发布",
+      "title_zh": "DjangoAdmin 敏捷开发框架 Django+EleVue 版本 v2.8.2 发布",
+      "summary_zh": "v2.8.2 更新内容： 1、大版本全新重构； DjangoAdmin 一款基于 Django、Vue3、TypeScript、ElementPlus、Vite、VueRouter 等技术栈构建的前后端分离企业级数据中台解决方案。内置精细…",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T00:48:11.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "d0ce5ae84ab449e5",
+      "url": "https://www.oschina.net/news/503519",
+      "title_original": "RXThinkCMF 敏捷开发框架 Laravel13+NaiveVue 版本 v2.6.0 发布",
+      "title_zh": "RXThinkCMF 敏捷开发框架 Laravel13+NaiveVue 版本 v2.6.0 发布",
+      "summary_zh": "v2.6.0 更新内容： 1、修复近用户反馈的问题； 项目介绍 一款基于 Laravel13、Vue3、TypeScript、NaiveUI、Vite、VueRouter 等技术栈构建的前后端分离企业级数据中台解决方案。内置精细化到按钮及…",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T00:30:19.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "ab7b71ea882de237",
+      "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
+      "title_original": "Six Math Essentials",
+      "title_zh": "六个数学要点",
+      "summary_zh": "陶哲轩网站上一篇题为《六个数学要点》的文章。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-10T20:58:44.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "0e94bc1826c48b12",
+      "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+      "title_original": "Scion is back and is going to sell a kei truck in America",
+      "title_zh": "Scion 回归，并将在美国销售 Kei 卡车",
+      "summary_zh": "Scion 品牌回归，并计划在美国销售一款 Kei 卡车。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-10T19:50:46.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "f78c0432b3d55b15",
+      "url": "https://fingerprinting.study/",
+      "title_original": "A comprehensive study of how fingerprintable users are",
+      "title_zh": "关于用户可被指纹识别程度的全面研究",
+      "summary_zh": "一项研究对用户可被指纹识别的程度进行了全面分析。",
+      "tags": [
+        "security"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-10T19:03:54.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "96e2dd8c2efc74b8",
+      "url": "https://starlink.com/mini-2",
+      "title_original": "Starlink Mini 2",
+      "title_zh": "Starlink Mini 2",
+      "summary_zh": "Starlink 发布 Mini 2 产品相关信息。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-10T18:22:32.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "a377d628449e50ac",
+      "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+      "title_original": "Synaptics patent claims stop work on DisplayLink drivers",
+      "title_zh": "Synaptics 的专利主张导致 DisplayLink 驱动停止开发",
+      "summary_zh": "Synaptics 的专利主张已导致 DisplayLink 驱动程序的开发工作中止。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-10T18:02:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "a4978faa7e166cdb",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "title_original": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "title_zh": "Show HN：让你的编码代理摆脱约 2019 年的 JavaScript，用上现代 Web 原生能力",
+      "summary_zh": "该项目展示如何利用现代浏览器原生能力替代旧式 JavaScript 代码与依赖。",
+      "tags": [
+        "frontend",
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-10T18:01:15.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "001cd33c965241bc",
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "title_original": "Claude Whiteboards, Claude Sheets, and Claude Data",
+      "title_zh": "Claude Whiteboards、Claude Sheets 和 Claude Data",
+      "summary_zh": "Anthropic 发布关于 Claude Whiteboards、Claude Sheets 和 Claude Data 的资源文章。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-10T17:55:07.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "86eadbab0d2e1b36",
+      "url": "https://blog.val.town/winding-down",
+      "title_original": "Val Town is winding down",
+      "title_zh": "Val Town 逐步关停",
+      "summary_zh": "Val Town 在博客中宣布平台正在逐步关停。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-10T17:31:14.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "5476963170cf3d57",
+      "url": "https://www.oschina.net/news/503518",
+      "title_original": "OwnCoder 0.2.0 发布，面向开发者的桌面端 AI 编程工具",
+      "title_zh": "OwnCoder 0.2.0 发布，面向开发者的桌面端 AI 编程工具",
+      "summary_zh": "修复了一些bug，优化了效果。 有时候我们总想多做点什么，告诉LLM要怎么做，最后发现，什么都不说，让LLM自行判断才是最好的。说的越多，越容易带偏。 佛家说，放下自己的执着。 道家讲无为，或许对LLM会很适用。无为，就是让LLM自己判断…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-10T17:13:40.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "8535a4406a16c1ee",
+      "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
+      "title_original": "AMD's Zen 6 Family: Feeding the Beast",
+      "title_zh": "AMD 的 Zen 6 家族：喂养这头野兽",
+      "summary_zh": "Chips and Cheese 刊文分析 AMD Zen 6 系列处理器架构。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-10T17:02:32.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "de70251373cb79f1",
+      "url": "https://neil.fraser.name/news/2026/11/10/",
+      "title_original": ".name Grandfathered",
+      "title_zh": ".name 被豁免保留",
+      "summary_zh": "关于 .name 顶级域被豁免保留的后续信息；此前曾讨论其终止。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-10T16:37:44.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4-pro-0813",
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "2f86bb24a38a91a1",
+      "url": "https://www.oschina.net/news/503517",
+      "title_original": "phimint v0.8.0 发布：模型选择跨重启生效、终端贴图、长输出不再消失",
+      "title_zh": "phimint v0.8.0 发布：模型选择跨重启生效、终端贴图、长输出不再消失",
+      "summary_zh": "phimint v0.8.0 已发布（2026-11-09） phimint 是一个用 Rust 写的终端 AI 编码 agent：一条命令装上、配好 API key，就能在终端里把需求变成跑通的代码——读代码、改多个文件、编译、测试、按…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-10T14:33:10.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42981673445"
+      }
+    },
+    {
+      "fingerprint": "9887f37a5d7a0a87",
+      "url": "https://www.oschina.net/news/503516",
+      "title_original": "YuanQi（UIEIP）低代码平台 v1.0 开源：一个 Go 单文件，装下建模、表单、权限、流程与 AI 知识库（MIT）",
+      "title_zh": "YuanQi（UIEIP）低代码平台 v1.0 开源：一个 Go 单文件，装下建模、表单、权限、流程与 AI 知识库（MIT）",
+      "summary_zh": "做企业后台这些年，最耗人的从来不是业务逻辑本身。 一个能用的后台管理系统，业务代码通常只占 20%，剩下 80% 全是公共设施：数据表怎么建模、表单怎么做校验和联动、RBAC 怎么拼、数据范围和按钮权限怎么控、审批流怎么接、统一登录怎么对…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-10T12:25:47.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T07:44:33.253Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "42981673445"
+      }
+    },
     {
       "fingerprint": "ff1df516f0fcff3f",
       "url": "https://www.infoq.cn/article/juu2R26yD8B6ABUEQuWB?utm_source=rss&utm_medium=article",
@@ -1677,658 +2329,6 @@
         "mode": "ai",
         "enriched_by": "deepseek-v4-pro-0813",
         "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "cbb3669ab653c07a",
-      "url": "https://www.infoq.cn/article/6kuDZAK0IFkKviGrGzIR?utm_source=rss&utm_medium=article",
-      "title_original": "2.5小时一个零日，400多个root提权：Linux被AI挖成了筛子，人类逆向几周才看懂一个",
-      "title_zh": "2.5小时一个零日，400多个root提权：Linux被AI挖成了筛子，人类逆向几周才看懂一个",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "security"
-      ],
-      "level": "must-read",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-09T02:25:36.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "f4b12f09a51f1e1b",
-      "url": "https://www.oschina.net/news/503476",
-      "title_original": "Vue 动态表单 FormCreate 3.2 发布!",
-      "title_zh": "Vue 动态表单 FormCreate 3.2 发布!",
-      "summary_zh": "FormCreate 是一个可以通过 JSON 生成具有动态渲染、数据收集、验证和提交功能的表单生成组件。支持8个UI框架，并且支持生成任何 Vue 组件。内置20种常用表单组件和自定义组件，再复杂的表单都可以轻松搞定。目前在OA系统、E…",
-      "tags": [
-        "frontend",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-09T02:20:45.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "83a6db9a2bbc573c",
-      "url": "https://www.infoq.cn/article/wUArox9MHiAoyWPgRxpp?utm_source=rss&utm_medium=article",
-      "title_original": "从“能写代码”到“能交付”：腾讯轻量云 LoopForge 多 Agent 编排实践｜AICon北京",
-      "title_zh": "从“能写代码”到“能交付”：腾讯轻量云 LoopForge 多 Agent 编排实践｜AICon北京",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-09T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "71c843041955ebc1",
-      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
-      "title_original": "parse_number() as a SQLite extension: C vs Rust",
-      "title_zh": "SQLite 扩展 parse_number()：C 与 Rust 对比",
-      "summary_zh": "作者研究用 C 和 Rust 编写 SQLite 扩展 parse_number() 的易用性与差异。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-11-08T22:26:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "7b9ff6aeb5b3a91e",
-      "url": "https://www.infoq.cn/article/YZx670AAiudsqZjx3UNo?utm_source=rss&utm_medium=article",
-      "title_original": "Agent 越用越多，企业为何仍不够 AI Native？",
-      "title_zh": "Agent 越用越多，企业为何仍不够 AI Native？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T16:08:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "2f0579e96d47c8c5",
-      "url": "https://www.oschina.net/news/503472",
-      "title_original": "积木报表漏洞清零计划：10 月以来修复 32 个安全漏洞，另加固 5 项",
-      "title_zh": "积木报表漏洞清零计划：10 月以来修复 32 个安全漏洞，另加固 5 项",
-      "summary_zh": "涉及产品：积木报表（JimuReport）、积木 BI 大屏 / 仪表盘（JimuBI）、Chat2BI 统计时间：2026 年 9 月 11 日 – 11 月 3 日 推荐版本：积木报表 / 积木 BI 2.5.6.1，JeecgBoo…",
-      "tags": [
-        "security"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T14:10:19.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "ac27c4ddf038cad2",
-      "url": "https://www.oschina.net/news/503471",
-      "title_original": "KnowForge 2026.0.10：从知识库，开始长出一点“社区”了",
-      "title_zh": "KnowForge 2026.0.10：从知识库，开始长出一点“社区”了",
-      "summary_zh": "KnowForge 2026.0.10 正式发布。 本次更新主要围绕 内容采集稳定性、用户关系与内容发现体验 进行了增强，同时进一步完善了后台任务与章节管理能力。 内容采集更稳定了 这次重点解决了整站采集过程中，遇到异常页面后可能长时间卡…",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T13:24:40.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "c396dd28936596dc",
-      "url": "https://www.oschina.net/news/503470",
-      "title_original": "Jync v2.0.0 · Spring Boot 4.1 平台升级",
-      "title_zh": "Jync v2.0.0 · Spring Boot 4.1 平台升级",
-      "summary_zh": "升级内容 Spring Boot 4.1.2：Spring Framework 7.0、Spring Security 7.1、Hibernate ORM 7.4、Tomcat 11、Jackson 3、Lettuce 7、MongoDB…",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T09:29:02.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "ed8558430dc76233",
-      "url": "https://www.infoq.cn/article/xd9o6TyQ8GLON3dmiWpG?utm_source=rss&utm_medium=article",
-      "title_original": "AI 生成视频何时才能告别“抽卡”？藏在高效生成背后的返工与成本难题",
-      "title_zh": "AI 生成视频何时才能告别“抽卡”？藏在高效生成背后的返工与成本难题",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T08:19:44.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "0dfade59e5059b6c",
-      "url": "https://www.infoq.cn/article/Qs0pJ5M43c56hdozHiR0?utm_source=rss&utm_medium=article",
-      "title_original": "顶尖 AI 实验室正在成为“人才黑洞”！Claude Code 团队工程师离职后首次受访",
-      "title_zh": "顶尖 AI 实验室正在成为“人才黑洞”！Claude Code 团队工程师离职后首次受访",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T07:03:06.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T07:17:31.299Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42458166266"
-      }
-    },
-    {
-      "fingerprint": "d095a04a1a2ce60c",
-      "url": "https://www.infoq.cn/article/zTFVgklcTFZvgE2fkV7A?utm_source=rss&utm_medium=article",
-      "title_original": "租户隔离做了四层，就能放心了吗？工程师提醒：还得看得见边界是否生效",
-      "title_zh": "租户隔离做了四层，就能放心了吗？工程师提醒：还得看得见边界是否生效",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T06:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T07:17:31.299Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42458166266"
-      }
-    },
-    {
-      "fingerprint": "bb30ad069227b20f",
-      "url": "https://github.com/dmunozv04/isponsorblocktv",
-      "title_original": "ISponsorBlockTV: SponsorBlock client for all YouTube TV clients",
-      "title_zh": "ISponsorBlockTV：适用于所有 YouTube TV 客户端的 SponsorBlock 客户端",
-      "summary_zh": "一个适用于所有 YouTube TV 客户端的 SponsorBlock 客户端。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-08T03:47:19.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "149c124f7b07d2a1",
-      "url": "https://caleb.software/posts/claude-to-pi.html",
-      "title_original": "Goodbye Claude, hello Pi",
-      "title_zh": "再见 Claude，你好 Pi",
-      "summary_zh": "作者记录从 Claude 转向 Pi 的经历与原因。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-08T03:11:48.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "3f055489ae702bd7",
-      "url": "https://www.oschina.net/news/503469",
-      "title_original": "zlang v0.12.14.1 发布，支持中文编程、支持 Web 开发/桌面应用开发的国产全自研编程语言",
-      "title_zh": "zlang v0.12.14.1 发布，支持中文编程、支持 Web 开发/桌面应用开发的国产全自研编程语言",
-      "summary_zh": "0.12.14.1 2026-11-02 calvin * 完善了文档中的对象函数的异常 * 修正了一些异常的设置错误 * 引入打包成安装程序交付 0.12.14.0 2026-10-29 calvin * 支持声明变量时非缺省构造+赋值…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T02:57:35.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T07:17:31.299Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42458166266"
-      }
-    },
-    {
-      "fingerprint": "fd273feaa8fd4ac1",
-      "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
-      "title_original": "Consumer brain wave headsets threaten privacy",
-      "title_zh": "消费级脑波头戴设备威胁隐私",
-      "summary_zh": "文章称可穿戴设备制造商正在收集脑波数据用于训练 AI，可能威胁用户隐私。",
-      "tags": [
-        "security",
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-08T02:02:38.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "6abfbdfc006575d6",
-      "url": "https://www.infoq.cn/article/sy9XMK3zJ3jPwHBN5fQV?utm_source=rss&utm_medium=article",
-      "title_original": "从约束到进化：Ontology 与 AI 自迭代的实践｜AICon北京",
-      "title_zh": "从约束到进化：Ontology 与 AI 自迭代的实践｜AICon北京",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T07:17:31.299Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42458166266"
-      }
-    },
-    {
-      "fingerprint": "8343df5515155a11",
-      "url": "https://www.oschina.net/news/503468",
-      "title_original": "🔥🔥🔥 拾趣 (Magpie) v0.1.21 发布：解锁图片识别新模式，优化使用体验",
-      "title_zh": "🔥🔥🔥 拾趣 (Magpie) v0.1.21 发布：解锁图片识别新模式，优化使用体验",
-      "summary_zh": "拾趣 (Magpie)是一款跨平台沉浸式自定义AI 划词工具 划选或双击，浮动条随即弹出：翻译、解释、总结实时呈现；复制、搜索、写入 Obsidian、预填日历，结果直接落地。图片、视频与扫描文档中的文字，框选亦可识别——处理在原地完成，…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T01:17:24.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T07:17:31.299Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42458166266"
-      }
-    },
-    {
-      "fingerprint": "30ea7531d8cd5fe3",
-      "url": "https://www.infoq.cn/article/gOcDmZM2MPAQhWtNb6IJ?utm_source=rss&utm_medium=article",
-      "title_original": "自动路由真能省钱吗？便宜模型出错后，人类修一小时可能更贵",
-      "title_zh": "自动路由真能省钱吗？便宜模型出错后，人类修一小时可能更贵",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-08T01:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T07:17:31.299Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42458166266"
-      }
-    },
-    {
-      "fingerprint": "5f8103aa8ad8e667",
-      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
-      "title_original": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
-      "title_zh": "datasette #3046：不要向 Firefox 提供 HTML 页面的 link: rel=next HTTP 头",
-      "summary_zh": "Datasette 问题 #3046 提出，针对 Firefox 的 HTML 页面不再提供 link: rel=next HTTP 头。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-11-07T23:57:46.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "cc9dd90ef8beb10b",
-      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
-      "title_original": "GitHub New pull request overview page in public preview",
-      "title_zh": "GitHub 新拉取请求概览页面进入公开预览",
-      "summary_zh": "GitHub 新的 Pull Request 概览页面进入公开预览。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-07T23:09:40.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "02f417c22eb761e6",
-      "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
-      "title_original": "Making any integer with four 2s (2025)",
-      "title_zh": "用四个 2 构造任意整数（2025）",
-      "summary_zh": "文章探讨仅用四个数字 2 和数学运算构造任意整数的方法。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-07T22:38:58.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "10bdc73097cfd238",
-      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-      "title_original": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-      "title_zh": "Claude Code 的“Don't Ask Again”在 1,122 个公开 GitHub 文件中暴露密码",
-      "summary_zh": "安全公司 Apiiro 称 Claude Code 的“Don’t Ask Again”功能导致编码代理在公开 GitHub 仓库中暴露密码等机密，涉及 1,122 个文件。",
-      "tags": [
-        "security",
-        "ai",
-        "tools"
-      ],
-      "level": "must-read",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-07T20:45:32.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "dfd5aeba955b0650",
-      "url": "https://simonwillison.net/2026/Nov/7/hn-50407316/",
-      "title_original": "Terry Pratchett's Study",
-      "title_zh": "特里·普拉切特的书房",
-      "summary_zh": "Hacker News 上关于特里·普拉切特书房的一条评论；原评论内容未完整提供。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-11-07T19:34:24.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "afa17e14952fa299",
-      "url": "https://blog.bosscher.ch/posts/openstick/",
-      "title_original": "What I run on my $10 USD OpenStick homelab",
-      "title_zh": "我在 10 美元 OpenStick 家庭实验室上运行的东西",
-      "summary_zh": "作者介绍在一台约 10 美元的 OpenStick 设备上运行的家庭实验室服务。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-07T18:12:12.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "55aa1dc18cbb251b",
-      "url": "https://github.com/hedgerow-dev/coldframe",
-      "title_original": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
-      "title_zh": "Show HN: Coldframe，一个伪装成超市冰箱控制器的蜜罐",
-      "summary_zh": "Coldframe 是一个蜜罐，伪装成超市制冷控制器，受工业控制系统相关事件启发。",
-      "tags": [
-        "security",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-07T17:27:30.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "5be9cd76a11a8ae6",
-      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
-      "title_original": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
-      "title_zh": "MaxxBench——“DeepSWE 分数不错，但这是真的吗？”",
-      "summary_zh": "MaxxBench 质疑 DeepSWE 等编码基准分数的可信度，并介绍相关研究背景。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-07T17:19:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T15:57:22.806Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42497374981"
-      }
-    },
-    {
-      "fingerprint": "36a82b96cbcbd2d0",
-      "url": "https://www.oschina.net/news/503467",
-      "title_original": "Cordonix 0.4.1 发布：每日后台更新，完善全部 MCP 工具说明",
-      "title_zh": "Cordonix 0.4.1 发布：每日后台更新，完善全部 MCP 工具说明",
-      "summary_zh": "Cordonix 0.4.1 已发布。Cordonix（简称 cdx）是一款面向 AI 编程智能体的原生执行与文件工作区工具，使用 C11 实现，支持 Windows 和 Linux，通过 MCP 提供本地程序执行、文件读取、编码转换和内…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-07T17:15:32.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T07:17:31.299Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42458166266"
-      }
-    },
-    {
-      "fingerprint": "93a001fe17792645",
-      "url": "https://www.oschina.net/news/503466",
-      "title_original": "OpenGoLive 0.9.8 发布：改进数据恢复，新增本地编辑冲突检测与组权限",
-      "title_zh": "OpenGoLive 0.9.8 发布：改进数据恢复，新增本地编辑冲突检测与组权限",
-      "summary_zh": "OpenGoLive（html-golive）0.9.8 已发布。它是一款 MIT 开源的自部署 HTML 发布与管理工具，可将报告、看板和小工具部署到自己的电脑、NAS 或内网服务器，提供 CLI 和中英文管理台。 本次更新主要包括： …",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-07T16:14:13.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-08T07:17:31.299Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42458166266"
       }
     }
   ]
