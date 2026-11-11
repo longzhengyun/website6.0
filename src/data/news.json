@@ -1,9 +1,331 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-11T07:44:33.253Z",
-  "mode": "ai",
+  "generated_at": "2026-11-11T17:06:08.111Z",
+  "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "4312e73e5fb17c7d",
+      "url": "https://www.infoq.cn/article/YiANe38yfSYitvZOtab0?utm_source=rss&utm_medium=article",
+      "title_original": "谷歌最强模型 Gemini 4 Carbon 全面开放：一夜重写 OpenCode 桌面应用、价格仅为 Fable 5.2 的 1/4",
+      "title_zh": "谷歌最强模型 Gemini 4 Carbon 全面开放：一夜重写 OpenCode 桌面应用、价格仅为 Fable 5.2 的 1/4",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T13:05:37.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "a09c45131b311753",
+      "url": "https://www.infoq.cn/article/1PdshF8SLevbGZbbZHoP?utm_source=rss&utm_medium=article",
+      "title_original": "Anthropic 一夜逼疯微软？Claude 杀入办公软件腹地：能自己参会、做表格、生成PPT",
+      "title_zh": "Anthropic 一夜逼疯微软？Claude 杀入办公软件腹地：能自己参会、做表格、生成PPT",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T12:52:45.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "de222d1760d3b829",
+      "url": "https://www.infoq.cn/article/iaCUbU8Fwz6G6bDlQ9BV?utm_source=rss&utm_medium=article",
+      "title_original": "上下文也是成本：Agent 效率优化的新思路 ｜ 技术趋势",
+      "title_zh": "上下文也是成本：Agent 效率优化的新思路 ｜ 技术趋势",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T11:05:46.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "04fc8cda76e8f8ac",
+      "url": "https://www.oschina.net/news/503535",
+      "title_original": "Casvisor 开源：Apache-2.0 的堡垒机，一个 Go 二进制支持 SSH、RDP、VNC、Telnet 与会话录像",
+      "title_zh": "Casvisor 开源：Apache-2.0 的堡垒机，一个 Go 二进制支持 SSH、RDP、VNC、Telnet 与会话录像",
+      "summary_zh": "Casvisor 是一个 Apache-2.0 协议的开源堡垒机（jump server），后端用 Go、前端用 React 编写，把 SSH、RDP、VNC、Telnet 四种远程协议的接入、权限和审计做在了同一个二进制里，被管理的服务…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T10:40:01.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "c1290c7feb8afa09",
+      "url": "https://www.infoq.cn/article/P2UWjVdAmPzOBaxd0v4f?utm_source=rss&utm_medium=article",
+      "title_original": "从 AI 工具到业务落地：兰州安宁 OPC 大会将聚焦 FDE 实践与企业 AI 转型",
+      "title_zh": "从 AI 工具到业务落地：兰州安宁 OPC 大会将聚焦 FDE 实践与企业 AI 转型",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T10:36:17.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "8f423da2c46cb53c",
+      "url": "https://www.infoq.cn/article/GUXzTTTFvwWY7yx6WMyS?utm_source=rss&utm_medium=article",
+      "title_original": "如何提升 AI 的环境可持续性",
+      "title_zh": "如何提升 AI 的环境可持续性",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T10:33:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "71e46fa5f5c1d14d",
+      "url": "https://www.infoq.cn/article/HKFSZ6a0DM97BV7FXP2t?utm_source=rss&utm_medium=article",
+      "title_original": "工程师招聘跌至巅峰时期一半！Manus 取消传统编程面试，产品经理开始直接写代码",
+      "title_zh": "工程师招聘跌至巅峰时期一半！Manus 取消传统编程面试，产品经理开始直接写代码",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T09:47:04.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "93b5af9ea890c17b",
+      "url": "https://www.infoq.cn/article/x0B056QFxzYEewT1Et34?utm_source=rss&utm_medium=article",
+      "title_original": "Agent 正在终结 Pull Request？连 GitHub 也开始重新审视传统开发流程",
+      "title_zh": "Agent 正在终结 Pull Request？连 GitHub 也开始重新审视传统开发流程",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T09:40:57.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "430f49b407e6df19",
+      "url": "https://www.infoq.cn/article/7wd1IyRiffi1vPz6goHS?utm_source=rss&utm_medium=article",
+      "title_original": "面向产业决策的升级：蚂蚁数科LingDT-Decision 首发信息抽取能力",
+      "title_zh": "面向产业决策的升级：蚂蚁数科LingDT-Decision 首发信息抽取能力",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T09:23:19.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "b4712500c36e4241",
+      "url": "https://www.infoq.cn/article/py4PRbBWJSPm5aV10gHq?utm_source=rss&utm_medium=article",
+      "title_original": "Datadog 推出面向 SRE 故障排查的专用 AI 模型",
+      "title_zh": "Datadog 推出面向 SRE 故障排查的专用 AI 模型",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T09:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "f31ee1b78e6e0a27",
+      "url": "https://www.infoq.cn/article/0qQcqvV13GtRKGgmsPqW?utm_source=rss&utm_medium=article",
+      "title_original": "多云 FinOps：一种用于跨云成本优化的工程框架",
+      "title_zh": "多云 FinOps：一种用于跨云成本优化的工程框架",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T08:49:32.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "b8418e925c102540",
+      "url": "https://www.oschina.net/news/503533",
+      "title_original": "qOntology 本体建模平台开源版 v1.1.2 发布：完善项目版本展示，优化建模交互与页面布局",
+      "title_zh": "qOntology 本体建模平台开源版 v1.1.2 发布：完善项目版本展示，优化建模交互与页面布局",
+      "summary_zh": "qOntology 本体建模平台开源版 v1.1.2 围绕系统交互规范、详情页面完善和列表展示优化进行了更新。 本次版本统一调整了批量操作、数据启用状态下的操作限制及无数据页面展示，同时对项目管理、数据源、模型市场、建模目标等业务页面进行…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T08:15:44.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "fa8f0f61aef51c7b",
+      "url": "https://www.oschina.net/news/503532",
+      "title_original": "yuanqi‑open（UIEIP）v1.0 更新：SSO 单点登录示例 yuanqi‑ssodemo 维护完成｜Go 单文件一体化企业低代码平台",
+      "title_zh": "yuanqi‑open（UIEIP）v1.0 更新：SSO 单点登录示例 yuanqi‑ssodemo 维护完成｜Go 单文件一体化企业低代码平台",
+      "summary_zh": "项目简介 yuanqi‑open（UIEIP 远齐低代码开发平台）是基于 Go+Vue3 的一体化企业后台底座，以 MIT 协议开源，v1.0 版本发布于 2026‑10‑06。项目将数据建模、表单、RBAC 权限、工作流、门户 CMS、…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T07:23:28.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
+    {
+      "fingerprint": "4ea99d3eeac96b13",
+      "url": "https://www.oschina.net/news/503531",
+      "title_original": "开源企业数仓 Apache Cloudberry 2.2.0 发布",
+      "title_zh": "开源企业数仓 Apache Cloudberry 2.2.0 发布",
+      "summary_zh": "Apache Cloudberry™ (Incubating) 是 Apache 软件基金会孵化项目，由 Greenplum 和 PostgreSQL 衍生而来，作为领先的开源 MPP 数据库，可用于建设企业级数据仓库，并适用于大规模分析…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-11T07:14:35.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-11T17:06:08.111Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43064785018"
+      }
+    },
     {
       "fingerprint": "9c540c0e76ab4aaf",
       "url": "https://www.infoq.cn/article/xCQx0qBofJYfBdVrxVxt?utm_source=rss&utm_medium=article",
@@ -1993,335 +2315,6 @@
       "source_name": "arXiv cs.AI new",
       "original_lang": "en",
       "published_at": "2026-11-09T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "d6c421cd589c192b",
-      "url": "https://arxiv.org/abs/2611.08640",
-      "title_original": "Aspect-wise Pairwise Tournaments for Test-Time Selection",
-      "title_zh": "测试时选择的按方面成对锦标赛",
-      "summary_zh": "arXiv 新预印本，研究按方面成对锦标赛方法，用于 LLM 测试时选择并扩展测试时计算。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-09T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "9428592458d5ca5d",
-      "url": "https://arxiv.org/abs/2611.08644",
-      "title_original": "Decision Context: Persistent Behavioral Learning for AI Agents",
-      "title_zh": "决策上下文：AI 智能体的持久行为学习",
-      "summary_zh": "arXiv 新预印本，研究 LLM 智能体跨会话行为学习，提出决策上下文以保留用户纠正。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-09T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "605714b8c1bb680f",
-      "url": "https://arxiv.org/abs/2611.08647",
-      "title_original": "IWIBench: Evaluating Gradient-Free Model Driven Intra-weight Injection",
-      "title_zh": "IWIBench：评估无梯度模型驱动的权重内注入",
-      "summary_zh": "arXiv 新预印本，提出 IWIBench，用于评估无梯度、模型驱动的权重内注入技术。",
-      "tags": [
-        "ai",
-        "security"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-09T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "35763772b1a22165",
-      "url": "https://arxiv.org/abs/2611.08666",
-      "title_original": "Pdb or Not to Be: Comparing Debugging Interfaces With Pass$_{X}$@$k$",
-      "title_zh": "Pdb 还是不 Pdb：用 Pass$_{X}$@$k$ 比较调试接口",
-      "summary_zh": "研究比较交互式调试接口，并采用 Pass_X@k 等指标评估调试能力。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-09T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "ac1d3ebd6931f5cd",
-      "url": "https://arxiv.org/abs/2611.08669",
-      "title_original": "ChainFlow: Few-Step Latent Flow Matching for Speculative Decoding",
-      "title_zh": "ChainFlow：用于投机解码的少步潜在流匹配",
-      "summary_zh": "提出 ChainFlow，一种用于投机解码的少步潜在流匹配方法，以加速大语言模型推理。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-09T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "0c7ea1040e74ff23",
-      "url": "https://arxiv.org/abs/2611.08682",
-      "title_original": "Transporting the Past: An Optimal Transport View of Backtracking Counterfactuals",
-      "title_zh": "运送过去：回溯反事实的最优传输视角",
-      "summary_zh": "研究结构因果模型中的回溯反事实推断，并用最优传输视角进行分析。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-09T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "b173ed0a424e1eec",
-      "url": "https://arxiv.org/abs/2611.08684",
-      "title_original": "Cancellation Is Not Enough: What Retries Leave Behind in an Overloaded LLM Engine",
-      "title_zh": "取消还不够：重试在过载的 LLM 引擎中留下了什么",
-      "summary_zh": "分析在过载 LLM 引擎中，客户端和代理重试超时调用后仍会遗留的资源与负载问题。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "arxiv-cs-ai",
-      "source_name": "arXiv cs.AI new",
-      "original_lang": "en",
-      "published_at": "2026-11-09T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "895a24bce3e028e0",
-      "url": "https://www.infoq.cn/article/jXBV6ib9g8g2Gw6kDaYh?utm_source=rss&utm_medium=article",
-      "title_original": "得票最高的功能终于来了，OpenTofu 开始内置代码检查",
-      "title_zh": "得票最高的功能终于来了，OpenTofu 开始内置代码检查",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-09T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "45e8de741ea9e45e",
-      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
-      "title_original": "The Web Is More Than Enough, by Paul Ford",
-      "title_zh": "网络绰绰有余，保罗·福特",
-      "summary_zh": "这是 Hacker News 上关于保罗·福特《网络绰绰有余》一文的评论；原评论具体内容未完整提供。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-11-09T04:32:33.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "7a56e2062f93f8c0",
-      "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
-      "title_original": "Hide your slop PR descriptions behind <details><summary>",
-      "title_zh": "把杂乱的 PR 描述隐藏在 <details><summary> 后面",
-      "summary_zh": "作者的大多数项目改动由 Claude Code 或 Codex 代为创建 PR；文章建议用 <details><summary> 折叠冗长 PR 描述。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-11-09T04:25:05.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "8c1d5a690c94d1b6",
-      "url": "https://www.infoq.cn/article/w8RTJSY44DJJy97uagQr?utm_source=rss&utm_medium=article",
-      "title_original": "Java 近期资讯：JDK 28 发布日程、Oracle 关键补丁、eMudhra 证书、Apache POI、WildFly、Azul 与 BellSoft",
-      "title_zh": "Java 近期资讯：JDK 28 发布日程、Oracle 关键补丁、eMudhra 证书、Apache POI、WildFly、Azul 与 BellSoft",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "tools",
-        "security"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-09T03:27:27.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "a38330d79a71bbc6",
-      "url": "https://www.oschina.net/news/503478",
-      "title_original": "GrantForge 2026.4.0 正式发布：新增四大数据系统，组织同步与细粒度授权全面升级",
-      "title_zh": "GrantForge 2026.4.0 正式发布：新增四大数据系统，组织同步与细粒度授权全面升级",
-      "summary_zh": "GrantForge 2026.4.0 正式发布！ 本次版本新增 Elasticsearch、Apache Doris、MongoDB、Redis/Valkey 四类数据系统的服务插件及 Agent，进一步扩展统一权限治理能力。 同时，新…",
-      "tags": [
-        "tools",
-        "security"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-09T03:19:10.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "66121d809836a165",
-      "url": "https://www.oschina.net/news/503477",
-      "title_original": ":clap:日志审计系统 WGLOG v2.3.1 正式发布",
-      "title_zh": ":clap:日志审计系统 WGLOG v2.3.1 正式发布",
-      "summary_zh": "WGLOG 日志审计系统是私有化部署的 B/S 系统，只需要在本地搭建好 WGLOG 后，所有用户都通过浏览器来访问使用即可，不需要在安装任何组件和客户端。 WGLOG 是一款功能完善的日志审计管理系统，主要用于实时收集服务器、主机、网络…",
-      "tags": [
-        "security",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-09T03:02:06.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-09T07:58:09.527Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42582523161"
-      }
-    },
-    {
-      "fingerprint": "714c0fc4bce0c449",
-      "url": "https://www.infoq.cn/article/49JGp1l7v97riBlPpZ1q?utm_source=rss&utm_medium=article",
-      "title_original": "Harness 已经很准了，为什么还需要一个 Agent Native Database",
-      "title_zh": "Harness 已经很准了，为什么还需要一个 Agent Native Database",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-09T02:44:00.000Z",
       "date_inferred": false,
       "fetched_at": "2026-11-09T07:58:09.527Z",
       "duplicate_of": null,
