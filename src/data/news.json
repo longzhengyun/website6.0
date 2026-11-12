@@ -1,9 +1,32 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T08:18:50.979Z",
-  "mode": "ai",
+  "generated_at": "2026-11-12T17:34:56.984Z",
+  "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "6c0ef706b0d8d20a",
+      "url": "https://www.infoq.cn/article/3u1PmO0HqQXBFNibKZoe?utm_source=rss&utm_medium=article",
+      "title_original": "LinkedIn 基于 OpenTelemetry 追踪用户动作全链路：从前端点击到后端服务",
+      "title_zh": "LinkedIn 基于 OpenTelemetry 追踪用户动作全链路：从前端点击到后端服务",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-12T08:44:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-12T17:34:56.984Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43270904393"
+      }
+    },
     {
       "fingerprint": "42fdecdb94ff60e1",
       "url": "https://www.oschina.net/news/503545",
@@ -2290,29 +2313,6 @@
       "pipeline": {
         "mode": "rss_only",
         "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "1cd01b15863e291a",
-      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
-      "title_original": "Locating the source of a mysterious beep",
-      "title_zh": "定位神秘蜂鸣声的来源",
-      "summary_zh": "作者记录定位神秘蜂鸣声来源的过程。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-10T00:10:46.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
         "run_id": "42782424799"
       }
     }
