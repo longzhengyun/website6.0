@@ -1,9 +1,262 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T17:34:56.984Z",
+  "generated_at": "2026-11-13T07:55:46.275Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "80968b55014f106a",
+      "url": "https://www.infoq.cn/article/AVoPIHgU8BvWY12j1sQ5?utm_source=rss&utm_medium=article",
+      "title_original": "在银行业为基于 Kubernetes 的平台打造云原生文化",
+      "title_zh": "在银行业为基于 Kubernetes 的平台打造云原生文化",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T07:18:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
+    {
+      "fingerprint": "ec3ece083b8b387b",
+      "url": "https://www.infoq.cn/article/7Wih8vL541W3vkq1WAHi?utm_source=rss&utm_medium=article",
+      "title_original": "奥运史上第一次，一朵云整体留给了举办国",
+      "title_zh": "奥运史上第一次，一朵云整体留给了举办国",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T06:21:31.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
+    {
+      "fingerprint": "75f7bda3f7219819",
+      "url": "https://www.infoq.cn/article/oKGTGPNZuleM61QqQOVf?utm_source=rss&utm_medium=article",
+      "title_original": "应用只是冰山一角：构建大规模移动应用基础设施需要什么",
+      "title_zh": "应用只是冰山一角：构建大规模移动应用基础设施需要什么",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
+    {
+      "fingerprint": "1e2ded69e03b433e",
+      "url": "https://www.infoq.cn/article/rFGveY8SswQhcMjroStB?utm_source=rss&utm_medium=article",
+      "title_original": "黄仁勋辞职：把扁平化推到极致的创始人，体面退场的代价",
+      "title_zh": "黄仁勋辞职：把扁平化推到极致的创始人，体面退场的代价",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T03:28:14.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
+    {
+      "fingerprint": "ed13c7107c2e24fe",
+      "url": "https://www.infoq.cn/article/1pCuIRtm5HYwTyR4fIhA?utm_source=rss&utm_medium=article",
+      "title_original": "Docker 呼吁通过隔离与治理保障智能体安全",
+      "title_zh": "Docker 呼吁通过隔离与治理保障智能体安全",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T03:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
+    {
+      "fingerprint": "d0e3ea2f52cf545c",
+      "url": "https://www.infoq.cn/article/dkQAAL0SSdhIq1h61eKx?utm_source=rss&utm_medium=article",
+      "title_original": "GFlow：面向游戏设计的多 Agent 协作与验证实践｜AICon北京",
+      "title_zh": "GFlow：面向游戏设计的多 Agent 协作与验证实践｜AICon北京",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T02:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
+    {
+      "fingerprint": "3875a8a4c8f2fed3",
+      "url": "https://www.infoq.cn/article/joYjCTbwWFSkbACK5lje?utm_source=rss&utm_medium=article",
+      "title_original": "谷歌推出 LiteRT Tensor API，用于构建、定制与优化端侧机器学习模型",
+      "title_zh": "谷歌推出 LiteRT Tensor API，用于构建、定制与优化端侧机器学习模型",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T01:17:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
+    {
+      "fingerprint": "8b522e5f61f50772",
+      "url": "https://www.oschina.net/news/503552",
+      "title_original": "MetaForge 2026.0.0 正式发布：从数据库管理到可视化分析，700+ 项改进带来全面升级",
+      "title_zh": "MetaForge 2026.0.0 正式发布：从数据库管理到可视化分析，700+ 项改进带来全面升级",
+      "summary_zh": "从 DataCap 到 MetaForge，我们迎来了一次真正意义上的全面升级。 2026 年 11 月，开源数据管理平台 MetaForge 2026.0.0 正式发布。 距离 2025.1.1 版本发布已经过去一年多。在此期间，我们围…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T00:03:54.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
+    {
+      "fingerprint": "ac24b2edc4422aa9",
+      "url": "https://www.oschina.net/news/503551",
+      "title_original": "Jync 捷同 v2.1.0 发布：CDC 流内 DDL 闭环，ETL 支持主键更新",
+      "title_zh": "Jync 捷同 v2.1.0 发布：CDC 流内 DDL 闭环，ETL 支持主键更新",
+      "summary_zh": "新增 TLS「服务器路径」证书模式：证书页新增路径标签页，密钥库或 PEM 填服务器绝对路径即可，原地替换文件完成续期，无需重新上传。 配置文件证书模式：app.tls.keystore-path、pem-cert-path 等键或环境变…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-12T23:24:55.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
+    {
+      "fingerprint": "5e4217b3e36e198a",
+      "url": "https://www.oschina.net/news/503550",
+      "title_original": "Argus v0.5.0 发布：纯 Rust 与 GPU 原生绘制的现代 Windows 任务管理器（已获 1.4k Star）",
+      "title_zh": "Argus v0.5.0 发布：纯 Rust 与 GPU 原生绘制的现代 Windows 任务管理器（已获 1.4k Star）",
+      "summary_zh": "开源现代 Windows 任务管理器 Argus 现已正式发布 v0.5.0 版本。目前项目在 GitHub 上已获得超过 1,400 颗 Star，支持简体中文、繁体中文、英、日、德、法、西、俄 8 种语言，并提供官网浏览器端实时交互预…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-12T21:00:22.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
+    {
+      "fingerprint": "5c590f1cf82a828a",
+      "url": "https://www.oschina.net/news/503549",
+      "title_original": "星甘（StarGantt）支持 .mpp 双向读写了：导进来能改，改完能导回去",
+      "title_zh": "星甘（StarGantt）支持 .mpp 双向读写了：导进来能改，改完能导回去",
+      "summary_zh": "星甘（StarGantt）支持 .mpp 双向读写了：导进来能改，改完能导回去 用项目管理的人，大概率都碰过 .mpp 文件。老团队攒了几年的 Project 文件躺在文件夹里，想搬到线上协作，几百条任务一条条重录不现实。甲方发来一个 .…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-12T14:41:15.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T07:55:46.275Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43389236004"
+      }
+    },
     {
       "fingerprint": "6c0ef706b0d8d20a",
       "url": "https://www.infoq.cn/article/3u1PmO0HqQXBFNibKZoe?utm_source=rss&utm_medium=article",
@@ -2054,259 +2307,6 @@
       "source_name": "InfoQ 中文",
       "original_lang": "zh",
       "published_at": "2026-11-10T03:56:55.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "33c0f7619bb758f3",
-      "url": "https://www.oschina.net/news/503499/claude-fable-and-mythos-5-2",
-      "title_original": "Anthropic 发布 Fable 5.2 与 Mythos 5.2，声称“8 天写出一个能开机的操作系统”",
-      "title_zh": "Anthropic 发布 Fable 5.2 与 Mythos 5.2，声称“8 天写出一个能开机的操作系统”",
-      "summary_zh": "Anthropic 在 11 月 9 日发布了 Claude Fable 5.2 和 Claude Mythos 5.2。这两个名字看起来像两条产品线，实际上是同一个底层模型——Fable 带完整的网络安全和生物学防护，对所有用户开放；M…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T03:37:45.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "ad2f09c029ee3c59",
-      "url": "https://www.infoq.cn/article/mZlISiZL9c1eurrsZRpo?utm_source=rss&utm_medium=article",
-      "title_original": "硅谷疯炒 AI 自我进化，李飞飞、Jeff Dean 齐泼冷水：无限加速不可信",
-      "title_zh": "硅谷疯炒 AI 自我进化，李飞飞、Jeff Dean 齐泼冷水：无限加速不可信",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T03:28:43.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "e7d9d1552b0e6960",
-      "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "title_original": "CoreWeave bond yield tops 16% as AI credit stress rises",
-      "title_zh": "随着 AI 信贷压力上升，CoreWeave 债券收益率突破 16%",
-      "summary_zh": "CoreWeave 债券收益率超过 16%，反映 AI 相关信贷压力上升。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-10T03:20:06.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "28105eb79b58dd0e",
-      "url": "https://www.oschina.net/news/503498",
-      "title_original": "qOntology 本体工程平台开源版 v1.1.0 发布：AI 辅助建模、知识图谱多视图！企业本体 FDE 的超强工具！",
-      "title_zh": "qOntology 本体工程平台开源版 v1.1.0 发布：AI 辅助建模、知识图谱多视图！企业本体 FDE 的超强工具！",
-      "summary_zh": "qOntology 本体工程平台开源版 v1.1.0 围绕本体工程中的知识整理、模型维护与图谱探索进行更新，重点增强 AI 辅助建模和知识图谱多视图能力，同时补充项目版本管理、约束规则配置，并对本体应用及基础管理页面进行调整。 本次更新关…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T03:07:06.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "bc4de2086918ee2a",
-      "url": "https://www.infoq.cn/article/sBjhhysFKZibZpXQZEGy?utm_source=rss&utm_medium=article",
-      "title_original": "Anthropic 重做源代码管理系统：提交量增长 12 倍，传统架构开始失效",
-      "title_zh": "Anthropic 重做源代码管理系统：提交量增长 12 倍，传统架构开始失效",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T03:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "571c6809eb0001bc",
-      "url": "https://www.infoq.cn/article/W7VPoeNBPX4y2u72WAGM?utm_source=rss&utm_medium=article",
-      "title_original": "触觉也能 Token 化！蚂蚁灵波发布通用触觉模型，把“具身原生”推进到机器人指尖",
-      "title_zh": "触觉也能 Token 化！蚂蚁灵波发布通用触觉模型，把“具身原生”推进到机器人指尖",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T02:40:29.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "b2b3e14ee59a3676",
-      "url": "https://www.oschina.net/news/503496",
-      "title_original": ":fire::fire::fire:vmr 0.8.1 发布 ：一款可扩展跨平台 SDK 超级版本管理工具",
-      "title_zh": ":fire::fire::fire:vmr 0.8.1 发布 ：一款可扩展跨平台 SDK 超级版本管理工具",
-      "summary_zh": "近日，跨平台 SDK 版本管理工具 vmr (Version Manager) 迎来重要更新。作为一款专为现代开发者设计的轻量级工具，vmr 致力于解决开发者在同一台机器上管理多套开发工具（如 Go、Node.js、Python、JDK、…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T02:30:22.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "67b900bf496d8cbc",
-      "url": "https://www.infoq.cn/article/rsMuS4cuc2ir68ulGgEs?utm_source=rss&utm_medium=article",
-      "title_original": "ADD 资产驱动开发：让 AI Coding 懂业务、守规范、稳架构、实现端到端交付｜AICon北京",
-      "title_zh": "ADD 资产驱动开发：让 AI Coding 懂业务、守规范、稳架构、实现端到端交付｜AICon北京",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "b5679cf365d4f71a",
-      "url": "https://broyojo.com/python-formalization/",
-      "title_original": "Formalizing CPython",
-      "title_zh": "形式化 CPython",
-      "summary_zh": "文章介绍对 CPython 进行形式化的工作。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-10T01:56:48.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "d132fed0b7209adb",
-      "url": "https://www.oschina.net/news/503494",
-      "title_original": "ip2region 3.19.0 发布 - 数据更新 & Logstash 插件 & CI 测试",
-      "title_zh": "ip2region 3.19.0 发布 - 数据更新 & Logstash 插件 & CI 测试",
-      "summary_zh": "ip2region 是一个离线的 IP 数据管理框架和定位库，同时支持 IPv4 和 IPv6，支持亿级别的 IP 断管理，10 微秒级别的查询性能，提供了很多主流编程语言的 xdb 数据格式的生成和查询实现。 ip2region 官方社…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T01:54:35.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "6a3897058aa87dfc",
-      "url": "https://www.infoq.cn/article/yuRNB72KsEbjGYSkV7FY?utm_source=rss&utm_medium=article",
-      "title_original": "Airbnb 借助 Chronon 将推荐延迟从两天缩短至秒级",
-      "title_zh": "Airbnb 借助 Chronon 将推荐延迟从两天缩短至秒级",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T01:11:00.000Z",
       "date_inferred": false,
       "fetched_at": "2026-11-10T08:25:01.890Z",
       "duplicate_of": null,
