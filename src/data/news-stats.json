@@ -1,6 +1,6 @@
 {
-  "run_id": "43389236004",
-  "generated_at": "2026-11-13T07:55:46.275Z",
+  "run_id": "43470304111",
+  "generated_at": "2026-11-13T17:11:41.503Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
@@ -20,7 +20,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 20,
-      "ms": 417,
+      "ms": 2369,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 582,
+      "ms": 454,
       "error": null
     },
     {
@@ -36,15 +36,15 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 1,
-      "ms": 248,
+      "ms": 360,
       "error": null
     },
     {
       "id": "css-tricks",
       "status": "ok",
       "items_fetched": 15,
-      "items_new": 1,
-      "ms": 723,
+      "items_new": 2,
+      "ms": 718,
       "error": null
     },
     {
@@ -52,15 +52,15 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 225,
+      "ms": 226,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 6,
-      "ms": 69,
+      "items_new": 5,
+      "ms": 159,
       "error": null
     },
     {
@@ -68,15 +68,15 @@
       "status": "ok",
       "items_fetched": 537,
       "items_new": 10,
-      "ms": 105,
+      "ms": 248,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 7,
-      "ms": 1118,
+      "items_new": 3,
+      "ms": 1367,
       "error": null
     },
     {
@@ -84,15 +84,15 @@
       "status": "ok",
       "items_fetched": 50,
       "items_new": 4,
-      "ms": 2232,
+      "ms": 3146,
       "error": null
     }
   ],
   "counts": {
     "fetched": 742,
-    "in_window": 49,
-    "deduped_existing": 22,
-    "new_items": 49,
+    "in_window": 45,
+    "deduped_existing": 26,
+    "new_items": 45,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,

@@ -1,9 +1,170 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-13T07:55:46.275Z",
+  "generated_at": "2026-11-13T17:11:41.503Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "4e908c74d8413a1d",
+      "url": "https://www.infoq.cn/video/FwbOyyfoAmkQPMTItMDN?utm_source=rss&utm_medium=article",
+      "title_original": "从快速部署到记忆共享，数据库如何支撑 Agent 应用？",
+      "title_zh": "从快速部署到记忆共享，数据库如何支撑 Agent 应用？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T12:54:12.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T17:11:41.503Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43470304111"
+      }
+    },
+    {
+      "fingerprint": "7bd553c77d770fcd",
+      "url": "https://www.infoq.cn/article/e0aglHW78pZuik3CWqdo?utm_source=rss&utm_medium=article",
+      "title_original": "智能互动 Agent 在快手商业场景的落地实践",
+      "title_zh": "智能互动 Agent 在快手商业场景的落地实践",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T11:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T17:11:41.503Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43470304111"
+      }
+    },
+    {
+      "fingerprint": "42553558bfeba09e",
+      "url": "https://www.oschina.net/news/503572",
+      "title_original": "通用代码生成器光船，特默尔尝鲜版二，人工智能设置项目会话",
+      "title_zh": "通用代码生成器光船，特默尔尝鲜版二，人工智能设置项目会话",
+      "summary_zh": "通用代码生成器光船，特默尔尝鲜版二，人工智能设置项目会话 通用代码生成器光船已发布1.1.0特默尔尝鲜版二。特默尔尝鲜版二支持人工智能生成会话和项目设置功能。相关视频请见： https://www.bilibili.com/video/B…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T09:32:32.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T17:11:41.503Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43470304111"
+      }
+    },
+    {
+      "fingerprint": "dee4aa83a5c3930e",
+      "url": "https://www.oschina.net/news/503570",
+      "title_original": "qData 数据中台开源版 v1.6.7 发布：修复消息通知与时间范围增量读取问题",
+      "title_zh": "qData 数据中台开源版 v1.6.7 发布：修复消息通知与时间范围增量读取问题",
+      "summary_zh": "在数据中台的日常使用中，消息通知、数据增量读取以及 ETL 字段处理，都是开发人员和平台使用者经常接触的功能。 相关逻辑能否按照预期执行，不仅影响日常操作，也关系到数据集成任务的处理过程。 本次 qData 数据中台开源版 v1.6.7 …",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T09:07:20.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T17:11:41.503Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43470304111"
+      }
+    },
+    {
+      "fingerprint": "685df34be3a96349",
+      "url": "https://www.infoq.cn/article/MU0txcPXXuGdGKBNa6a2?utm_source=rss&utm_medium=article",
+      "title_original": "容器隔离还不够：Edera 从虚拟机监控器层限制 AI 智能体",
+      "title_zh": "容器隔离还不够：Edera 从虚拟机监控器层限制 AI 智能体",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T09:06:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T17:11:41.503Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43470304111"
+      }
+    },
+    {
+      "fingerprint": "94433ac54650c5fc",
+      "url": "https://www.oschina.net/news/503569/in-memoriam-tim-peters-1952-2026",
+      "title_original": "写《Python 之禅》的那个人走了",
+      "title_zh": "写《Python 之禅》的那个人走了",
+      "summary_zh": "Python 创始人 Guido van Rossum 在 Python 官方论坛发了一条帖子，标题只有一行：In Memoriam: Tim Peters 1952–2026。 「我非常悲痛地宣布，Tim Peters 已于今年 7 月…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T09:02:57.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T17:11:41.503Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43470304111"
+      }
+    },
+    {
+      "fingerprint": "97bb05054c6c79c8",
+      "url": "https://www.oschina.net/news/503568/nvidia-announces-ceo-transition",
+      "title_original": "黄仁勋辞任英伟达 CEO，CFO 接任临时掌门",
+      "title_zh": "黄仁勋辞任英伟达 CEO，CFO 接任临时掌门",
+      "summary_zh": "英伟达 11 月 12 日宣布，联合创始人黄仁勋辞去 CEO 职务。CFO 科莱特·克雷斯（Colette Kress）出任临时 CEO。 一家 4 万亿美元的公司，在 AI 投资周期最关键的节点上，暂时由一位财务背景的高管掌舵。 这是一…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-13T08:39:45.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-13T17:11:41.503Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "43470304111"
+      }
+    },
     {
       "fingerprint": "80968b55014f106a",
       "url": "https://www.infoq.cn/article/AVoPIHgU8BvWY12j1sQ5?utm_source=rss&utm_medium=article",
@@ -2150,169 +2311,6 @@
       "pipeline": {
         "mode": "ai",
         "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "ce4dbf8bda2b0229",
-      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
-      "title_original": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
-      "title_zh": "Amazon 用 Strands Decider 替代 Sonnet 4.6，节省数百万美元",
-      "summary_zh": "Amazon 用 Strands Decider 替换 Sonnet 4.6，称节省了数百万美元。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-10T06:01:08.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "0a0bdf251ed26b18",
-      "url": "https://www.infoq.cn/article/STFszc8JxPkXGeV9QRH3?utm_source=rss&utm_medium=article",
-      "title_original": "突破 Kubernetes 的 CPU 抽象，Uber 为异构服务器重新定义“一核”",
-      "title_zh": "突破 Kubernetes 的 CPU 抽象，Uber 为异构服务器重新定义“一核”",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T05:27:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "57554f45696b97e4",
-      "url": "https://maurycyz.com/projects/fading/",
-      "title_original": "Your TV can see through walls",
-      "title_zh": "你的电视能看穿墙壁",
-      "summary_zh": "该项目展示了利用电视信号进行穿墙感知的方法。",
-      "tags": [
-        "security"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-10T05:24:45.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "2346cb5af20c422a",
-      "url": "https://www.oschina.net/news/503502",
-      "title_original": "想做一套设备管理系统，权限报表真的要自己写吗",
-      "title_zh": "想做一套设备管理系统，权限报表真的要自己写吗",
-      "summary_zh": "想做一套设备管理系统，权限报表真的要自己写吗 给智能硬件客户搭一套设备管理后台，或者把自己团队的传感器、网关管起来，需求方开口往往只有三句话：要有设备台账、能看到在线状态、能导出报表。字段听起来都简单，真正动手之后你会发现，难的地方不在设…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T04:45:02.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "b4b28bdfb980c543",
-      "url": "https://www.ultorg.com/",
-      "title_original": "Ultorg: The User Interface for Relational Databases",
-      "title_zh": "Ultorg：关系数据库的用户界面",
-      "summary_zh": "Ultorg 是一个面向关系数据库的用户界面。",
-      "tags": [
-        "tools",
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-10T03:59:39.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "560e0f5e713e7ef0",
-      "url": "https://www.oschina.net/news/503501",
-      "title_original": "2026 开源行业解决方案创新赛总决赛评委阵容公布",
-      "title_zh": "2026 开源行业解决方案创新赛总决赛评委阵容公布",
-      "summary_zh": "第四届开放原子大赛 · 2026 开源行业解决方案创新赛总决赛将于 11 月 13 日在北京亦庄通明湖会议中心举行，本届大赛由北京市经济和信息化局、开放原子开源基金会联合主办，开源中国承办，以「开源赋能行业创新，方案驱动场景落地」为主题，…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T03:57:26.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "42782424799"
-      }
-    },
-    {
-      "fingerprint": "cae4dfcdc5c31d69",
-      "url": "https://www.infoq.cn/article/dLF01VxLUZpLX40Wmlv7?utm_source=rss&utm_medium=article",
-      "title_original": "openJiuwen首发Agent Device Foundation，重新定义Agent与物理世界的交互方式",
-      "title_zh": "openJiuwen首发Agent Device Foundation，重新定义Agent与物理世界的交互方式",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-10T03:56:55.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-10T08:25:01.890Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
         "run_id": "42782424799"
       }
     }
