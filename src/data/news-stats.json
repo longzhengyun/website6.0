@@ -1,6 +1,6 @@
 {
-  "run_id": "43470304111",
-  "generated_at": "2026-11-13T17:11:41.503Z",
+  "run_id": "43571854750",
+  "generated_at": "2026-11-14T07:36:13.675Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
@@ -20,7 +20,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 20,
-      "ms": 2369,
+      "ms": 442,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 454,
+      "ms": 1252,
       "error": null
     },
     {
@@ -36,7 +36,7 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 1,
-      "ms": 360,
+      "ms": 282,
       "error": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "ok",
       "items_fetched": 15,
       "items_new": 2,
-      "ms": 718,
+      "ms": 709,
       "error": null
     },
     {
@@ -52,23 +52,23 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 226,
+      "ms": 124,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 5,
-      "ms": 159,
+      "items_new": 3,
+      "ms": 104,
       "error": null
     },
     {
       "id": "arxiv-cs-ai",
       "status": "ok",
-      "items_fetched": 537,
-      "items_new": 10,
-      "ms": 248,
+      "items_fetched": 0,
+      "items_new": 0,
+      "ms": 4247,
       "error": null
     },
     {
@@ -76,27 +76,27 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 3,
-      "ms": 1367,
+      "ms": 992,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 4,
-      "ms": 3146,
+      "items_new": 1,
+      "ms": 3453,
       "error": null
     }
   ],
   "counts": {
-    "fetched": 742,
-    "in_window": 45,
-    "deduped_existing": 26,
-    "new_items": 45,
+    "fetched": 205,
+    "in_window": 30,
+    "deduped_existing": 19,
+    "new_items": 30,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 38,
+    "dropped_nonzh_r17": 26,
     "future_clamped": 0
   },
   "news_items_total": 100,
