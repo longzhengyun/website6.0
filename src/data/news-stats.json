@@ -1,6 +1,6 @@
 {
-  "run_id": "43827530704",
-  "generated_at": "2026-11-16T07:58:15.420Z",
+  "run_id": "43940744672",
+  "generated_at": "2026-11-16T19:34:45.569Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
@@ -20,7 +20,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 20,
-      "ms": 355,
+      "ms": 3210,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 624,
+      "ms": 338,
       "error": null
     },
     {
@@ -36,15 +36,15 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 228,
+      "ms": 213,
       "error": null
     },
     {
       "id": "css-tricks",
       "status": "ok",
       "items_fetched": 15,
-      "items_new": 0,
-      "ms": 711,
+      "items_new": 1,
+      "ms": 1088,
       "error": null
     },
     {
@@ -52,15 +52,15 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 233,
+      "ms": 201,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 7,
-      "ms": 111,
+      "items_new": 6,
+      "ms": 479,
       "error": null
     },
     {
@@ -68,7 +68,7 @@
       "status": "ok",
       "items_fetched": 276,
       "items_new": 10,
-      "ms": 153,
+      "ms": 100,
       "error": null
     },
     {
@@ -76,23 +76,23 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 7,
-      "ms": 1510,
+      "ms": 1385,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 7,
-      "ms": 2920,
+      "items_new": 3,
+      "ms": 3136,
       "error": null
     }
   ],
   "counts": {
     "fetched": 481,
-    "in_window": 51,
-    "deduped_existing": 5,
-    "new_items": 51,
+    "in_window": 47,
+    "deduped_existing": 19,
+    "new_items": 47,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,
@@ -102,9 +102,9 @@
   "news_items_total": 100,
   "degraded_all_sources": false,
   "errors": [
-    "enrichment batch 0 failed: http_403",
-    "enrichment batch 10 failed: http_403",
-    "enrichment batch 20 failed: http_403",
+    "enrichment batch 0 failed: fetch failed",
+    "enrichment batch 10 failed: fetch failed",
+    "enrichment batch 20 failed: fetch failed",
     "AI aborted after consecutive failures, remainder stored rss_only"
   ]
 }
