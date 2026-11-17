@@ -1,9 +1,32 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T09:12:13.179Z",
+  "generated_at": "2026-11-17T18:35:21.703Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "4e2078a6e9cf260f",
+      "url": "https://www.infoq.cn/article/X8xujm6xovp7z2YzWbpM?utm_source=rss&utm_medium=article",
+      "title_original": "面向多智能体应用的大模型推理调度与缓存优化｜AICon北京",
+      "title_zh": "面向多智能体应用的大模型推理调度与缓存优化｜AICon北京",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-17T10:53:07.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-17T18:35:21.703Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44149419159"
+      }
+    },
     {
       "fingerprint": "0cc562caa1d0df71",
       "url": "https://www.oschina.net/news/503620",
@@ -2282,29 +2305,6 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "43181882429"
-      }
-    },
-    {
-      "fingerprint": "4312e73e5fb17c7d",
-      "url": "https://www.infoq.cn/article/YiANe38yfSYitvZOtab0?utm_source=rss&utm_medium=article",
-      "title_original": "谷歌最强模型 Gemini 4 Carbon 全面开放：一夜重写 OpenCode 桌面应用、价格仅为 Fable 5.2 的 1/4",
-      "title_zh": "谷歌最强模型 Gemini 4 Carbon 全面开放：一夜重写 OpenCode 桌面应用、价格仅为 Fable 5.2 的 1/4",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-11T13:05:37.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-11T17:06:08.111Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43064785018"
       }
     }
   ]
