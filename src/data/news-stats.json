@@ -1,6 +1,6 @@
 {
-  "run_id": "44149419159",
-  "generated_at": "2026-11-17T18:35:21.703Z",
+  "run_id": "44267736723",
+  "generated_at": "2026-11-18T08:31:48.935Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
@@ -20,7 +20,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 20,
-      "ms": 1498,
+      "ms": 141,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 654,
+      "ms": 888,
       "error": null
     },
     {
@@ -36,75 +36,75 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 2,
-      "ms": 403,
+      "ms": 94,
       "error": null
     },
     {
       "id": "css-tricks",
-      "status": "ok",
-      "items_fetched": 15,
-      "items_new": 1,
-      "ms": 984,
-      "error": null
+      "status": "failed",
+      "items_fetched": 0,
+      "items_new": 0,
+      "ms": 4207,
+      "error": "http_415"
     },
     {
       "id": "mozilla-hacks",
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 152,
+      "ms": 142,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 6,
-      "ms": 404,
+      "items_new": 5,
+      "ms": 50,
       "error": null
     },
     {
       "id": "arxiv-cs-ai",
       "status": "ok",
-      "items_fetched": 717,
+      "items_fetched": 401,
       "items_new": 10,
-      "ms": 125,
+      "ms": 68,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 1,
-      "ms": 1137,
+      "items_new": 11,
+      "ms": 1284,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 0,
-      "ms": 2096,
+      "items_new": 7,
+      "ms": 2813,
       "error": null
     }
   ],
   "counts": {
-    "fetched": 922,
-    "in_window": 40,
-    "deduped_existing": 37,
-    "new_items": 40,
+    "fetched": 591,
+    "in_window": 55,
+    "deduped_existing": 20,
+    "new_items": 55,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 39,
+    "dropped_nonzh_r17": 37,
     "future_clamped": 0
   },
   "news_items_total": 100,
   "degraded_all_sources": false,
   "errors": [
-    "enrichment batch 0 failed: http_403",
-    "enrichment batch 10 failed: http_403",
-    "enrichment batch 20 failed: http_403",
+    "enrichment batch 0 failed: fetch failed",
+    "enrichment batch 10 failed: fetch failed",
+    "enrichment batch 20 failed: fetch failed",
     "AI aborted after consecutive failures, remainder stored rss_only"
   ]
 }
