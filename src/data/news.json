@@ -1,9 +1,239 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T08:31:48.935Z",
+  "generated_at": "2026-11-18T18:02:00.605Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "ed088ed42db49823",
+      "url": "https://www.oschina.net/news/503647",
+      "title_original": "18 年铸就开源创新基础设施，开源中国「模力方舟词元养成计划」发布",
+      "title_zh": "18 年铸就开源创新基础设施，开源中国「模力方舟词元养成计划」发布",
+      "summary_zh": "GOTC 2026 于 11 月 14 日圆满落幕，主会场上，开源中国董事长马越发表演讲，系统回顾开源中国 18 年的发展历程，分享从开源社区、源代码社区、研发效能平台到人工智能平台、创新孵化平台的五次阶段演进。现场，开源中国统一品牌标识…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-18T11:59:15.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-18T18:02:00.605Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44365160940"
+      }
+    },
+    {
+      "fingerprint": "1983398b01c9d1c9",
+      "url": "https://www.oschina.net/news/503646/java4shell-write-once-rce-everywhere",
+      "title_original": "Java 被曝内存损坏漏洞“Java4Shell”，藏在 Base64 解码器里",
+      "title_zh": "Java 被曝内存损坏漏洞“Java4Shell”，藏在 Base64 解码器里",
+      "summary_zh": "Calif 安全团队近日发现了 Java 的内存损坏漏洞，出现在 Base64 解码器里。 这句话本身就足够反常。Java 最大的卖点之一就是内存安全——它替你管理内存、检查访问，把 C 和 C++ 里那类问题挡在门外。但 Java 自身…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-18T11:24:42.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-18T18:02:00.605Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44365160940"
+      }
+    },
+    {
+      "fingerprint": "a2b291643ffa8a8c",
+      "url": "https://www.infoq.cn/article/Ae5uw6m9wC2gj5QUCC36?utm_source=rss&utm_medium=article",
+      "title_original": "从“能写代码”到“能交付”：腾讯轻量云 LoopForge 云端 Loop实践",
+      "title_zh": "从“能写代码”到“能交付”：腾讯轻量云 LoopForge 云端 Loop实践",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-18T10:59:07.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-18T18:02:00.605Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44365160940"
+      }
+    },
+    {
+      "fingerprint": "58cd5a7895f808a9",
+      "url": "https://www.infoq.cn/video/xsEfht2OwBZQBvWVHSIb?utm_source=rss&utm_medium=article",
+      "title_original": "Agent 驱动 MaaS 新范式，如何让模型能力随需而用？",
+      "title_zh": "Agent 驱动 MaaS 新范式，如何让模型能力随需而用？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-18T10:50:07.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-18T18:02:00.605Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44365160940"
+      }
+    },
+    {
+      "fingerprint": "356edc532f5f462f",
+      "url": "https://www.infoq.cn/article/ZukzUBeu7k74T9UGCkfh?utm_source=rss&utm_medium=article",
+      "title_original": "从 AI 试点到规模化生产：Snowflake 驻场前沿工程师如何助力企业实现 AI 落地 ｜ 技术趋势",
+      "title_zh": "从 AI 试点到规模化生产：Snowflake 驻场前沿工程师如何助力企业实现 AI 落地 ｜ 技术趋势",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-18T10:44:20.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-18T18:02:00.605Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44365160940"
+      }
+    },
+    {
+      "fingerprint": "48d6b7f61d8e42bb",
+      "url": "https://www.oschina.net/news/503645",
+      "title_original": "Goodlink 全新传输协议，叠加 BBR 拥塞控制算法与丢包补偿",
+      "title_zh": "Goodlink 全新传输协议，叠加 BBR 拥塞控制算法与丢包补偿",
+      "summary_zh": "全网最简单、最快、零成本的内网穿透 外出办公, 对比市面上的远程工具, 无论画质、软件适配, 都不如 windows 自带的远程桌面, 但外出如何使用 windows远程桌面？ 是否可以无需远程桌面, 直接访问公司的内网 WEB, GIT…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-18T10:43:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-18T18:02:00.605Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44365160940"
+      }
+    },
+    {
+      "fingerprint": "16cdf87b49fd43cc",
+      "url": "https://www.infoq.cn/video/uzyzSB9HkO1wwi5w4w9F?utm_source=rss&utm_medium=article",
+      "title_original": "如何让 Agent 从“能跑起来”到“可规模化、可信赖地持续生产”？",
+      "title_zh": "如何让 Agent 从“能跑起来”到“可规模化、可信赖地持续生产”？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-18T10:24:16.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-18T18:02:00.605Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44365160940"
+      }
+    },
+    {
+      "fingerprint": "72d13b9274ceb6d5",
+      "url": "https://www.infoq.cn/article/GSGpEUU4dCdppTCmaOSy?utm_source=rss&utm_medium=article",
+      "title_original": "业务本体：面向 AI 与数据分析，统一规范业务概念与指标口径 ｜ 技术趋势",
+      "title_zh": "业务本体：面向 AI 与数据分析，统一规范业务概念与指标口径 ｜ 技术趋势",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-18T10:23:22.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-18T18:02:00.605Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44365160940"
+      }
+    },
+    {
+      "fingerprint": "9c114572b76e46a1",
+      "url": "https://www.oschina.net/news/503644/ms-mai-code-2-and-mai-code-2-flash",
+      "title_original": "微软编程模型「MAI Code」上新，用 Claude Opus 5.5 百分之五的价格拿到 96% 的性能",
+      "title_zh": "微软编程模型「MAI Code」上新，用 Claude Opus 5.5 百分之五的价格拿到 96% 的性能",
+      "summary_zh": "微软宣布推出新版本编程模型：MAI Code 2 和 Code 2 Flash。它给 MAI Code 2 定的核心卖点写在小标题里：「不到一半的价格，交付生产级质量」。 具体数字更有冲击力。在 DeepSWE 1.1、Terminal …",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-18T09:50:27.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-18T18:02:00.605Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44365160940"
+      }
+    },
+    {
+      "fingerprint": "7f7fcf36b931470b",
+      "url": "https://www.oschina.net/news/503643/ms-blames-monster-email-outage-on-software-defect",
+      "title_original": "微软将大规模服务中断归咎于 7 月份修复程序中引入的软件缺陷",
+      "title_zh": "微软将大规模服务中断归咎于 7 月份修复程序中引入的软件缺陷",
+      "summary_zh": "微软给出的解释，最值得看的是这一句：他们的负载测试「偏向使用核心数更少的较弱硬件」。 这话出自 11 月 15 日发布的初步事故报告。报告说，11 月 12 日那场让 Exchange Online 全球宕机近一天的故障，根子埋在 7 月…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-18T08:58:48.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-18T18:02:00.605Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44365160940"
+      }
+    },
     {
       "fingerprint": "8ef4f59bdcdbcef9",
       "url": "https://www.infoq.cn/video/AWswNIWpvlNvaWY8MTDd?utm_source=rss&utm_medium=article",
@@ -2074,236 +2304,6 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "43389236004"
-      }
-    },
-    {
-      "fingerprint": "5e4217b3e36e198a",
-      "url": "https://www.oschina.net/news/503550",
-      "title_original": "Argus v0.5.0 发布：纯 Rust 与 GPU 原生绘制的现代 Windows 任务管理器（已获 1.4k Star）",
-      "title_zh": "Argus v0.5.0 发布：纯 Rust 与 GPU 原生绘制的现代 Windows 任务管理器（已获 1.4k Star）",
-      "summary_zh": "开源现代 Windows 任务管理器 Argus 现已正式发布 v0.5.0 版本。目前项目在 GitHub 上已获得超过 1,400 颗 Star，支持简体中文、繁体中文、英、日、德、法、西、俄 8 种语言，并提供官网浏览器端实时交互预…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-12T21:00:22.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-13T07:55:46.275Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43389236004"
-      }
-    },
-    {
-      "fingerprint": "5c590f1cf82a828a",
-      "url": "https://www.oschina.net/news/503549",
-      "title_original": "星甘（StarGantt）支持 .mpp 双向读写了：导进来能改，改完能导回去",
-      "title_zh": "星甘（StarGantt）支持 .mpp 双向读写了：导进来能改，改完能导回去",
-      "summary_zh": "星甘（StarGantt）支持 .mpp 双向读写了：导进来能改，改完能导回去 用项目管理的人，大概率都碰过 .mpp 文件。老团队攒了几年的 Project 文件躺在文件夹里，想搬到线上协作，几百条任务一条条重录不现实。甲方发来一个 .…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-12T14:41:15.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-13T07:55:46.275Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43389236004"
-      }
-    },
-    {
-      "fingerprint": "6c0ef706b0d8d20a",
-      "url": "https://www.infoq.cn/article/3u1PmO0HqQXBFNibKZoe?utm_source=rss&utm_medium=article",
-      "title_original": "LinkedIn 基于 OpenTelemetry 追踪用户动作全链路：从前端点击到后端服务",
-      "title_zh": "LinkedIn 基于 OpenTelemetry 追踪用户动作全链路：从前端点击到后端服务",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-12T08:44:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-12T17:34:56.984Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43270904393"
-      }
-    },
-    {
-      "fingerprint": "42fdecdb94ff60e1",
-      "url": "https://www.oschina.net/news/503545",
-      "title_original": "全球化筑基，AI 赋能新体验，openKylin 3.0 SP1 正式发布",
-      "title_zh": "全球化筑基，AI 赋能新体验，openKylin 3.0 SP1 正式发布",
-      "summary_zh": "OpenAtom openKylin（以下简称“openKylin”）社区今日正式发布 openKylin 3.0 SP1 版本。本次版本更新以国际化为底座，围绕国际化体验、AI 融合、硬件生态、系统质量四大方向完成全面升级：新增阿拉伯语…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-12T07:13:17.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-12T08:18:50.979Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43181882429"
-      }
-    },
-    {
-      "fingerprint": "07a1fc2382d30fab",
-      "url": "https://www.infoq.cn/article/Fikt82HLToqb6ZANB2xj?utm_source=rss&utm_medium=article",
-      "title_original": "Google 终于让 PyTorch 原生跑上 TPU，开发者：“早该如此！”",
-      "title_zh": "Google 终于让 PyTorch 原生跑上 TPU，开发者：“早该如此！”",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-12T07:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-12T08:18:50.979Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43181882429"
-      }
-    },
-    {
-      "fingerprint": "a247f031d5c2a46c",
-      "url": "https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/",
-      "title_original": "Humble Bundle just killed most of their security through vibecoding",
-      "title_zh": "Humble Bundle 刚刚通过 Vibe Coding 摧毁了大部分安全",
-      "summary_zh": "Humble Bundle 被指因 Vibe Coding 导致大部分安全措施失效。",
-      "tags": [
-        "security"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-12T06:52:48.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-12T08:18:50.979Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "43181882429"
-      }
-    },
-    {
-      "fingerprint": "a615175f3798f935",
-      "url": "https://www.getlazarus.org/forums/topic/17/",
-      "title_original": "I'm Working on a FOSS Linux Pinbal Simulation Engine",
-      "title_zh": "我正在开发一个 FOSS Linux 弹球模拟引擎",
-      "summary_zh": "作者正在开发一款 FOSS Linux 弹球模拟引擎。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-12T05:49:34.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-12T08:18:50.979Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "43181882429"
-      }
-    },
-    {
-      "fingerprint": "a55b5f101c337239",
-      "url": "https://www.infoq.cn/article/COuPKpA6rTf05C6JM10y?utm_source=rss&utm_medium=article",
-      "title_original": "智能体 AI 架构中记忆、知识与上下文的系统化方案",
-      "title_zh": "智能体 AI 架构中记忆、知识与上下文的系统化方案",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-12T05:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-12T08:18:50.979Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43181882429"
-      }
-    },
-    {
-      "fingerprint": "809d0957517b8b4f",
-      "url": "https://blog.darlinghq.org/2026/11/08/development-update-q4-2026/",
-      "title_original": "Darling Development Update – Q4 2026",
-      "title_zh": "Darling 开发更新 – 2026 年第四季度",
-      "summary_zh": "Darling 项目发布 2026 年第四季度开发更新。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-12T04:32:31.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-12T08:18:50.979Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4-pro-0813",
-        "run_id": "43181882429"
-      }
-    },
-    {
-      "fingerprint": "fbe8698bdbdfa898",
-      "url": "https://www.oschina.net/news/503542/microsoft-announcing-dotnet-11",
-      "title_original": ".NET 11 正式发布，C# 15 补上了它欠缺二十年的东西",
-      "title_zh": ".NET 11 正式发布，C# 15 补上了它欠缺二十年的东西",
-      "summary_zh": ".NET 11 在 11 月 10 日正式发布。这是 STS（标准支持期）版本，两年支持，不是 LTS——.NET 10 仍然是那个长期支持的选项。版本号本身没什么好说的，值得看的是这次几个实打实的变化。 C# 15：union type…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-12T03:23:19.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-12T08:18:50.979Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43181882429"
       }
     }
   ]
