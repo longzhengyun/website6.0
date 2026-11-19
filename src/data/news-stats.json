@@ -1,6 +1,6 @@
 {
-  "run_id": "44490447037",
-  "generated_at": "2026-11-19T08:46:39.943Z",
+  "run_id": "44585806696",
+  "generated_at": "2026-11-19T18:15:26.007Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
@@ -20,7 +20,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 20,
-      "ms": 3599,
+      "ms": 3444,
       "error": null
     },
     {
@@ -28,39 +28,39 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 418,
+      "ms": 993,
       "error": null
     },
     {
       "id": "smashing",
       "status": "ok",
       "items_fetched": 40,
-      "items_new": 1,
-      "ms": 348,
+      "items_new": 0,
+      "ms": 274,
       "error": null
     },
     {
       "id": "css-tricks",
-      "status": "failed",
-      "items_fetched": 0,
-      "items_new": 0,
-      "ms": 4310,
-      "error": "http_415"
+      "status": "ok",
+      "items_fetched": 15,
+      "items_new": 2,
+      "ms": 741,
+      "error": null
     },
     {
       "id": "mozilla-hacks",
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 111,
+      "ms": 249,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 7,
-      "ms": 70,
+      "items_new": 6,
+      "ms": 134,
       "error": null
     },
     {
@@ -68,31 +68,31 @@
       "status": "ok",
       "items_fetched": 362,
       "items_new": 10,
-      "ms": 106,
+      "ms": 188,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 14,
-      "ms": 1003,
+      "items_new": 2,
+      "ms": 1180,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 14,
-      "ms": 2141,
+      "items_new": 5,
+      "ms": 3022,
       "error": null
     }
   ],
   "counts": {
-    "fetched": 552,
-    "in_window": 66,
-    "deduped_existing": 18,
-    "new_items": 66,
+    "fetched": 567,
+    "in_window": 45,
+    "deduped_existing": 44,
+    "new_items": 45,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,

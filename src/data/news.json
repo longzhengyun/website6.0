@@ -1,9 +1,170 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-19T08:46:39.943Z",
+  "generated_at": "2026-11-19T18:15:26.007Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "23f4d2f3996ee0d9",
+      "url": "https://www.infoq.cn/article/Mf3Zbm9JF3RWbkvjMKYZ?utm_source=rss&utm_medium=article",
+      "title_original": "Sam Altman罕见发声：我不担心Anthropic先上市，市场上不缺投资者",
+      "title_zh": "Sam Altman罕见发声：我不担心Anthropic先上市，市场上不缺投资者",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-19T14:57:55.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-19T18:15:26.007Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44585806696"
+      }
+    },
+    {
+      "fingerprint": "294514d485965fad",
+      "url": "https://www.oschina.net/news/503685/llm-assisted-reverse-engineering",
+      "title_original": "二十年逆向老手：LLM 给我的好奇心装上了涡轮增压",
+      "title_zh": "二十年逆向老手：LLM 给我的好奇心装上了涡轮增压",
+      "summary_zh": "一名从事硬件和软件逆向已有二十年的工程师，最近半年做出了许多他自称「每一个手做都要花好几年」的成果。 他的原话是：在 2026 年，有了 AI 的辅助，这个过程被大幅加速了。 他用什么 主力是 DeepSeek Harness + Dee…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-19T10:57:36.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-19T18:15:26.007Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44585806696"
+      }
+    },
+    {
+      "fingerprint": "4139759b18c4c7dc",
+      "url": "https://www.oschina.net/news/503684/anthropic-prices-initial-public-offering",
+      "title_original": "Anthropic IPO 发行价定了：每股 83 美元",
+      "title_zh": "Anthropic IPO 发行价定了：每股 83 美元",
+      "summary_zh": "Anthropic 把 IPO 发行价定在了每股 83 美元。发行规模 9.8 亿股 A 类普通股，其中 9.5635 亿股由 Anthropic 自己卖出，2365 万股来自现有股东。公司不会从后者那部分拿到任何收益。按这个数字算，募资…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-19T10:10:51.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-19T18:15:26.007Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44585806696"
+      }
+    },
+    {
+      "fingerprint": "9d527acfccc97d04",
+      "url": "https://www.infoq.cn/article/6xqcZfMgJ99ZQiGFbjym?utm_source=rss&utm_medium=article",
+      "title_original": "模型刚接进业务，CEO又要换新：红帽如何接住企业AI落地难题？",
+      "title_zh": "模型刚接进业务，CEO又要换新：红帽如何接住企业AI落地难题？",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-19T10:05:40.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-19T18:15:26.007Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44585806696"
+      }
+    },
+    {
+      "fingerprint": "068a299f66d4276f",
+      "url": "https://www.oschina.net/news/503681",
+      "title_original": "wlnmp 一键安装包更新 261119（修复NGINX2Root漏洞）",
+      "title_zh": "wlnmp 一键安装包更新 261119（修复NGINX2Root漏洞）",
+      "summary_zh": "wlnmp 一键安装包 261119 更新内容如下： （更新）nginx1.30.7。 受NGINX2Root漏洞影响，请所有用户尽快更新Nginx至该版本，更新任何版本前，请做好数据备份。 该版本重写了/etc/init.d/nginx…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-19T09:45:39.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-19T18:15:26.007Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44585806696"
+      }
+    },
+    {
+      "fingerprint": "64b7276aa99e6443",
+      "url": "https://www.oschina.net/news/503679/nginx-http2-rce-vulnerabilities",
+      "title_original": "NGINX 被曝两个高危 RCE，其中一个在代码里藏了十年",
+      "title_zh": "NGINX 被曝两个高危 RCE，其中一个在代码里藏了十年",
+      "summary_zh": "NGINX 近日被曝出两个高危漏洞：编号 CVE-2026-123633 和 CVE-2026-123007，都能让未认证的攻击者在服务器上执行任意代码。CVSS 4.0 都是 9.2，两个都要求服务器启用了 HTTP/2。 它们由五个团…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-19T09:15:27.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-19T18:15:26.007Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44585806696"
+      }
+    },
+    {
+      "fingerprint": "1eef91a1028190a0",
+      "url": "https://www.oschina.net/news/503678",
+      "title_original": "clice v1.0 正式发布，采用现代 C++ 编写的 C/C++ 语言服务器",
+      "title_zh": "clice v1.0 正式发布，采用现代 C++ 编写的 C/C++ 语言服务器",
+      "summary_zh": "clice v1.0 发布了。 它是一个 C/C++ 语言服务器，基于 LLVM/Clang，但和同样基于 Clang 的 clangd 走了完全不同的一条路——作者说这是彻底的重新设计，目标是解决这些语言服务器中因为架构问题而数年无法解…",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-19T08:48:06.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-19T18:15:26.007Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "44585806696"
+      }
+    },
     {
       "fingerprint": "e69eab28cd0041f6",
       "url": "https://www.infoq.cn/article/rtBT5s1opGGazFgQi0YS?utm_source=rss&utm_medium=article",
@@ -2136,167 +2297,6 @@
       "source_name": "InfoQ 中文",
       "original_lang": "zh",
       "published_at": "2026-11-16T06:23:27.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-16T07:58:15.420Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43827530704"
-      }
-    },
-    {
-      "fingerprint": "22d895b96521459f",
-      "url": "https://www.infoq.cn/article/sIqEVPmL3P9PExLjPzPW?utm_source=rss&utm_medium=article",
-      "title_original": "AI 写得快，谁来接住生产责任",
-      "title_zh": "AI 写得快，谁来接住生产责任",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-16T06:10:03.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-16T07:58:15.420Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43827530704"
-      }
-    },
-    {
-      "fingerprint": "b4f0985233d01400",
-      "url": "https://www.oschina.net/news/503591",
-      "title_original": "ifreeSFTP 桌面 SFTP 客户端 rust 重构版发布",
-      "title_zh": "ifreeSFTP 桌面 SFTP 客户端 rust 重构版发布",
-      "summary_zh": "桌面 SFTP 客户端——Windows 与 Linux 双平台，双窗格、多标签，远程至远程。快速、安全、完全免费。Rust + egui 原生实现，单文件、零随包运行时。 为什么选 iFreeSftp 多文件夹传输飞快——超过阈值的目录…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-16T05:52:04.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-16T07:58:15.420Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43827530704"
-      }
-    },
-    {
-      "fingerprint": "8d830ee8cd08ef60",
-      "url": "https://www.oschina.net/news/503588/asahi-linux-drops-mit-for-gpl",
-      "title_original": "Asahi Linux 许可证从 MIT 换成 GPL，因为有人拿 AI 洗了它的代码",
-      "title_zh": "Asahi Linux 许可证从 MIT 换成 GPL，因为有人拿 AI 洗了它的代码",
-      "summary_zh": "Asahi Linux 是今天你能在 Apple Silicon Mac 上运行 Linux 的底层。多年来，这个开源项目把自己大部分代码放在 MIT 许可证下，好让任何人——包括各种 BSD——都能按需复用。现在这条路走到头了。 Asa…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-16T03:59:50.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-16T07:58:15.420Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43827530704"
-      }
-    },
-    {
-      "fingerprint": "17deba64992503ec",
-      "url": "https://my.oschina.net/u/5729420/blog/19791498",
-      "title_original": "PostgreSQL 19 将是一个质量优良的新版本",
-      "title_zh": "PostgreSQL 19 将是一个质量优良的新版本",
-      "summary_zh": "PostgreSQL 每个大版本的发布都会带来一批值得关注的新特性。但对于生产环境而言，升级数据库的价值并不仅仅在于获得新的 SQL 语法或者新的功能，更重要的是能否解决现有版本在性能、并发、稳定性以及运维管理方面长期存在的问题。 回顾 …",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-16T03:26:14.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-16T07:58:15.420Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43827530704"
-      }
-    },
-    {
-      "fingerprint": "d8868ee8ef0b0ad2",
-      "url": "https://www.oschina.net/news/503586/ai-usage-generates-a-fragile-codebase",
-      "title_original": "一个 100% 用 AI 写代码的工程师，开始担心它把代码库写“脆弱”了",
-      "title_zh": "一个 100% 用 AI 写代码的工程师，开始担心它把代码库写“脆弱”了",
-      "summary_zh": "Evan X. Merz 现在 100% 的代码都用 AI 生成。不是因为他信这个，是因为他认为这才符合当今的行业标准。 今年 5 月他从 Meta 被裁。他对原因有个猜测：「我怀疑原因之一，是我比一些同事更抗拒把 AI/LLM 当作编码…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-16T03:23:14.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-16T07:58:15.420Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43827530704"
-      }
-    },
-    {
-      "fingerprint": "4eb7c7f8b69c6585",
-      "url": "https://www.oschina.net/oa2026/winners",
-      "title_original": "2026 开源行业解决方案创新赛获奖名单公布",
-      "title_zh": "2026 开源行业解决方案创新赛获奖名单公布",
-      "summary_zh": "第四届开放原子大赛 · 2026 开源行业解决方案创新赛，由开放原子开源基金会主办、开源中国承办，北京市经济和信息化局作为联合主办单位，参与赛事方向指导、产业资源协调和重点成果对接。 大赛共设 52 个奖项，总奖池价值 100 万元。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-16T02:54:06.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-16T07:58:15.420Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "43827530704"
-      }
-    },
-    {
-      "fingerprint": "f90fcfbc2cafbbe5",
-      "url": "https://www.oschina.net/news/503582",
-      "title_original": "GOTC 2026 圆满落幕，技术峰会首次以“游园”形式开放",
-      "title_zh": "GOTC 2026 圆满落幕，技术峰会首次以“游园”形式开放",
-      "summary_zh": "11 月 14 日，由开源中国 OSCHINA、Gitee、MoArk 主办的 GOTC 2026 全球开源技术峰会在北京经济技术开发区通明湖会展中心圆满落幕。本届峰会以“开源 × AI・创新新生力”为主题，首次将 GOTC 延续五年的“…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-16T02:33:49.000Z",
       "date_inferred": false,
       "fetched_at": "2026-11-16T07:58:15.420Z",
       "duplicate_of": null,
