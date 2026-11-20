@@ -1,6 +1,6 @@
 {
-  "run_id": "44585806696",
-  "generated_at": "2026-11-19T18:15:26.007Z",
+  "run_id": "44703243614",
+  "generated_at": "2026-11-20T08:31:54.817Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
@@ -20,7 +20,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 20,
-      "ms": 3444,
+      "ms": 15901,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 993,
+      "ms": 329,
       "error": null
     },
     {
@@ -36,7 +36,7 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 274,
+      "ms": 226,
       "error": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "ok",
       "items_fetched": 15,
       "items_new": 2,
-      "ms": 741,
+      "ms": 743,
       "error": null
     },
     {
@@ -52,7 +52,7 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 249,
+      "ms": 274,
       "error": null
     },
     {
@@ -60,39 +60,39 @@
       "status": "ok",
       "items_fetched": 30,
       "items_new": 6,
-      "ms": 134,
+      "ms": 94,
       "error": null
     },
     {
       "id": "arxiv-cs-ai",
       "status": "ok",
-      "items_fetched": 362,
+      "items_fetched": 400,
       "items_new": 10,
-      "ms": 188,
+      "ms": 134,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 2,
-      "ms": 1180,
+      "items_new": 7,
+      "ms": 1344,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 5,
-      "ms": 3022,
+      "items_new": 11,
+      "ms": 8586,
       "error": null
     }
   ],
   "counts": {
-    "fetched": 567,
-    "in_window": 45,
-    "deduped_existing": 44,
-    "new_items": 45,
+    "fetched": 605,
+    "in_window": 56,
+    "deduped_existing": 37,
+    "new_items": 56,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,
