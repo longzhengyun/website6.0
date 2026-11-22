@@ -1,26 +1,26 @@
 {
-  "run_id": "45000615066",
-  "generated_at": "2026-11-22T07:58:37.370Z",
-  "mode": "rss_only",
+  "run_id": "45047707673",
+  "generated_at": "2026-11-22T17:08:24.086Z",
+  "mode": "ai",
   "llm": {
     "key_present": true,
     "provider": "tongyi",
     "model": "deepseek-v4.1-flash",
     "token_budget": 100000,
     "budget_exceeded": false,
-    "calls": 6,
-    "batches_failed": 3,
-    "aborted": true,
-    "input_tokens": 0,
-    "output_tokens": 0
+    "calls": 3,
+    "batches_failed": 0,
+    "aborted": false,
+    "input_tokens": 15781,
+    "output_tokens": 5241
   },
   "sources": [
     {
       "id": "hn-frontpage",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 20,
-      "ms": 302,
+      "items_new": 18,
+      "ms": 1430,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 510,
+      "ms": 476,
       "error": null
     },
     {
@@ -36,7 +36,7 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 213,
+      "ms": 202,
       "error": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "ok",
       "items_fetched": 15,
       "items_new": 0,
-      "ms": 801,
+      "ms": 632,
       "error": null
     },
     {
@@ -52,15 +52,15 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 397,
+      "ms": 143,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 1,
-      "ms": 83,
+      "items_new": 0,
+      "ms": 84,
       "error": null
     },
     {
@@ -68,7 +68,7 @@
       "status": "ok",
       "items_fetched": 0,
       "items_new": 0,
-      "ms": 4176,
+      "ms": 4044,
       "error": null
     },
     {
@@ -76,35 +76,30 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 3,
-      "ms": 1703,
+      "ms": 996,
       "error": null
     },
     {
       "id": "oschina-news",
       "status": "ok",
       "items_fetched": 50,
-      "items_new": 0,
-      "ms": 3000,
+      "items_new": 1,
+      "ms": 2924,
       "error": null
     }
   ],
   "counts": {
     "fetched": 205,
-    "in_window": 24,
-    "deduped_existing": 18,
-    "new_items": 24,
-    "ai_enriched": 0,
+    "in_window": 22,
+    "deduped_existing": 9,
+    "new_items": 22,
+    "ai_enriched": 22,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 21,
+    "dropped_nonzh_r17": 0,
     "future_clamped": 0
   },
   "news_items_total": 100,
   "degraded_all_sources": false,
-  "errors": [
-    "enrichment batch 0 failed: fetch failed",
-    "enrichment batch 10 failed: fetch failed",
-    "enrichment batch 20 failed: fetch failed",
-    "AI aborted after consecutive failures, remainder stored rss_only"
-  ]
+  "errors": []
 }

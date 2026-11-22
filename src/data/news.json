@@ -1,9 +1,340 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-22T07:58:37.370Z",
-  "mode": "rss_only",
+  "generated_at": "2026-11-22T17:08:24.086Z",
+  "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "75e39449cd870252",
+      "url": "https://www.oschina.net/news/503727",
+      "title_original": "从算力底座到行业落地，华为智启未来主题论坛亮相 2026 世界计算大会",
+      "title_zh": "从算力底座到行业落地，华为智启未来主题论坛亮相 2026 世界计算大会",
+      "summary_zh": "11 月 20 日，2026 世界计算大会举办期间，由华为主办的“数智共昇 鸿湘有为”智启未来主题论坛在长沙举办。论坛深度对接湖南省“AI+”发展战略，围绕计算前沿技术、产业生态演进与人工智能行业落地实践展开研讨，既有面向产业全局的趋势判…",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-22T16:18:42.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "a23c1d39add00a44",
+      "url": "https://www.lemonde.fr/en/opinion/article/2026/11/22/as-science-increasingly-shows-the-role-chemical-substances-play-in-lifestyle-diseases-europe-weakens-its-regulations_6786595_23.html",
+      "title_original": "Europe weakens chemical rules as science links them to 'lifestyle diseases'",
+      "title_zh": "欧洲放宽化学品规则，科学将其与“生活方式疾病”联系起来",
+      "summary_zh": "文章讨论科学日益显示化学品与“生活方式疾病”的关联，而欧洲正在削弱相关化学品规则。",
+      "tags": [
+        "standards",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T15:42:40.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "429baa2b982e8297",
+      "url": "https://osw-alliance.net/en/",
+      "title_original": "Open Social Web Alliance",
+      "title_zh": "开放社交网络联盟",
+      "summary_zh": "该条目链接到开放社交网络联盟（Open Social Web Alliance）网站，并附有 Hacker News 讨论。",
+      "tags": [
+        "standards",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T15:24:32.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "f47963d35b6c6418",
+      "url": "https://www.neowin.net/news/backblaze-customers-worried-of-personal-data-salesharing-after-policy-update/",
+      "title_original": "Backblaze customers worried of personal data sale/sharing after policy update",
+      "title_zh": "Backblaze 客户在政策更新后担忧个人数据被出售或共享",
+      "summary_zh": "Backblaze 更新政策后，客户担心个人数据被出售或共享。",
+      "tags": [
+        "security",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T15:16:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": "635d581c26061737",
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "9e90f9c0947157e7",
+      "url": "https://github.com/gulivan/worker755",
+      "title_original": "Show HN: I built a game where you are an LLM's subagent",
+      "title_zh": "Show HN：我制作了一款游戏，你在其中扮演 LLM 的子代理",
+      "summary_zh": "作者发布一款游戏，玩家在其中扮演大语言模型的子代理。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T13:56:58.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "d25de59c6fa8a666",
+      "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
+      "title_original": "U.N. Climate Talks Collapse in a Bitter Clash over Fossil Fuels",
+      "title_zh": "联合国气候谈判因化石燃料问题激烈冲突而破裂",
+      "summary_zh": "COP31 气候峰会因化石燃料问题上的激烈冲突而谈判破裂。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T13:37:10.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "aaa55aaf59895092",
+      "url": "https://simonwillison.net/2026/Nov/21/muru/",
+      "title_original": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
+      "title_zh": "Muru——由 mod_WSGI 创建者打造的面向 Python 应用的 AI 辅助 Rust 服务器",
+      "summary_zh": "mod_WSGI 创建者推出 Muru，一个面向 Python 应用的 AI 辅助 Rust 服务器。",
+      "tags": [
+        "tools",
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T09:57:01.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "93720fe6c7458c12",
+      "url": "https://www.infoq.cn/video/UUqekkOQ8haEXZ792UjU?utm_source=rss&utm_medium=article",
+      "title_original": "财务团队的 AI 蓝图",
+      "title_zh": "财务团队的 AI 蓝图",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-22T09:54:58.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "f2bc8277cf6044c5",
+      "url": "https://www.infoq.cn/video/mihBFvImttvJlSFUqC49?utm_source=rss&utm_medium=article",
+      "title_original": "打造 AI 优先的销售与营销运营体系",
+      "title_zh": "打造 AI 优先的销售与营销运营体系",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-22T09:41:49.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "df2675053d7a1bac",
+      "url": "https://www.infoq.cn/video/Ly5HbhY4pNMCF04abkFo?utm_source=rss&utm_medium=article",
+      "title_original": "智能体企业新前沿：驱动高效智能",
+      "title_zh": "智能体企业新前沿：驱动高效智能",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-22T09:38:28.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "d7e78f94bca2cb94",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "title_original": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "title_zh": "2028 年 Anthropic 87% 的电力将来自天然气，11% 来自煤炭",
+      "summary_zh": "分析称，到 2028 年 Anthropic 的电力将有 87% 来自天然气、11% 来自煤炭。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T08:57:34.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "4c603406c2ef68d6",
+      "url": "https://eli.thegreenplace.net/2026/notes-on-the-discrete-fourier-transform-dft/",
+      "title_original": "Notes on the discrete Fourier transform (DFT)",
+      "title_zh": "离散傅里叶变换（DFT）笔记",
+      "summary_zh": "一篇介绍离散傅里叶变换（DFT）的技术笔记。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T06:52:25.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "2a3dc20019c6a4be",
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "title_original": "Fast-Anything: Don't rewrite it in Rust. Rewrite the 5% that's slow",
+      "title_zh": "Fast-Anything：不要用 Rust 重写它，只重写那 5% 慢的部分",
+      "summary_zh": "Fast-Anything 项目主张不要用 Rust 重写整个项目，而只重写其中 5% 的慢速部分。",
+      "tags": [
+        "tools",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T04:10:09.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "32444da7c87047c1",
+      "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+      "title_original": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+      "title_zh": "丰田、日产和本田将标准化零部件以降低成本",
+      "summary_zh": "丰田、日产和本田计划标准化部分零部件，以降低生产成本。",
+      "tags": [
+        "standards",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T04:04:56.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
     {
       "fingerprint": "de1135db8c16df1a",
       "url": "https://www.infoq.cn/article/fs4IuBTjwIwR1xUgdjqt?utm_source=rss&utm_medium=article",
@@ -25,6 +356,53 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "45000615066"
+      }
+    },
+    {
+      "fingerprint": "26c5ca669b141704",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "title_original": "Data Processing Incidents on Inference Providers",
+      "title_zh": "推理服务提供商的数据处理事件",
+      "summary_zh": "OpenRouter 发布公告，说明多家推理服务提供商出现的数据处理相关事件。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T02:14:14.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "9b3998d4b9b4980b",
+      "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+      "title_original": "The Mythology of Conscious AI",
+      "title_zh": "有意识 AI 的神话",
+      "summary_zh": "Noema 杂志文章，讨论围绕人工智能是否具有意识的种种神话式叙事。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T02:10:02.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
       }
     },
     {
@@ -71,6 +449,148 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "45000615066"
+      }
+    },
+    {
+      "fingerprint": "2d924019d03d360b",
+      "url": "https://stulle.app/",
+      "title_original": "Sandwich Simulator",
+      "title_zh": "三明治模拟器",
+      "summary_zh": "一个名为 Sandwich Simulator 的网页模拟器，在 Hacker News 获得 440 分和 152 条评论。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-22T00:07:59.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "dcc1d692c9d97d55",
+      "url": "https://alperenkeles.com/posts/vocab-for-testing/",
+      "title_original": "A Better Vocabulary for Testing",
+      "title_zh": "一套更好的测试词汇",
+      "summary_zh": "一篇关于用更准确的词汇描述软件测试实践的文章。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-21T22:15:39.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "f65a0c30765c2957",
+      "url": "https://github.com/sebaandrada-cell/PcapAnalyzer",
+      "title_original": "PcapAnalyzer – self-hosted pcap analyzer with 27 problem detectors",
+      "title_zh": "PcapAnalyzer——带 27 个问题检测器的自托管 pcap 分析工具",
+      "summary_zh": "开源项目 PcapAnalyzer，可自托管运行，内置 27 个问题检测器，用于分析 pcap 抓包文件。",
+      "tags": [
+        "security",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-21T22:09:58.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "58996b7311d70d67",
+      "url": "https://linebender.org/blog/next-100-guis/",
+      "title_original": "Advice for the next 100 Rust GUIs",
+      "title_zh": "给接下来 100 个 Rust GUI 的建议",
+      "summary_zh": "Linebender 博客文章，就 Rust GUI 生态的后续发展提出一系列建议。",
+      "tags": [
+        "frontend",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-21T21:17:53.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "414bab6a17e87f29",
+      "url": "https://www.pandex.io",
+      "title_original": "Pandex – Official European Law for AI Agents, over MCP",
+      "title_zh": "Pandex——通过 MCP 提供面向 AI 智能体的欧洲官方法律",
+      "summary_zh": "Pandex 通过 MCP 协议向 AI 智能体提供欧洲法律法规内容，便于检索与引用。",
+      "tags": [
+        "ai",
+        "standards"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-21T20:47:41.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
+      }
+    },
+    {
+      "fingerprint": "6c69e97c5257c80c",
+      "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+      "title_original": "Inkling-2-Mini in 5.4 GB Memory",
+      "title_zh": "在 5.4 GB 内存中运行 Inkling-2-Mini",
+      "summary_zh": "一个 GitHub 项目展示如何在 5.4 GB 内存中运行 Inkling-2-Mini 模型。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-21T18:02:19.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T17:08:24.086Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45047707673"
       }
     },
     {
@@ -1820,514 +2340,6 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "44703243614"
-      }
-    },
-    {
-      "fingerprint": "3f7f7cffebe4ba59",
-      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
-      "title_original": "Token fraud is here and it’s BAD (YouTube)",
-      "title_zh": "Token 欺诈已经出现，而且很严重（YouTube）",
-      "summary_zh": "一段视频讨论“token 欺诈”现象，涉及 ChatPRD 创始人 Claire Vo 运营的 AI 平台，并称该问题严重。",
-      "tags": [
-        "security",
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-11-20T02:49:57.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "9a0d24c8b472838d",
-      "url": "https://www.oschina.net/news/503693/anthropics-historic-debut-put",
-      "title_original": "史上最大 IPO，Anthropic 上市首日市值达 1.271 万亿美元",
-      "title_zh": "史上最大 IPO，Anthropic 上市首日市值达 1.271 万亿美元",
-      "summary_zh": "Anthropic 于 2026 年 11 月 19 日在纳斯达克挂牌上市，股票代码“ANT”。上市首日，其开盘价 111.50 美元，比 83 美元的发行价高出 34%。按开盘价算，估值冲到 2 万亿美元附近——超过了 SpaceX 今…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T02:48:09.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T08:31:54.817Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44703243614"
-      }
-    },
-    {
-      "fingerprint": "72860ba9b196b158",
-      "url": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
-      "title_original": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
-      "title_zh": "Postgres 19 Repack：更快的内置表膨胀清理",
-      "summary_zh": "介绍 Postgres 19 的 repack 功能：速度更快，并内置表膨胀清理能力。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T02:43:49.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "97dffa3b72860b1f",
-      "url": "https://github.com/openssl/openssl/pull/33652",
-      "title_original": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
-      "title_zh": "OpenSSL：EVP_EncodeBlock() 存在缓冲区溢出（CVE-2026-121481，CVSS 9.8）",
-      "summary_zh": "OpenSSL 披露 EVP_EncodeBlock() 中的缓冲区溢出漏洞，CVSS 评分为 9.8。",
-      "tags": [
-        "security"
-      ],
-      "level": "must-read",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T02:01:09.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "2089a1d144652881",
-      "url": "https://www.infoq.cn/article/KBcjdx4ZlUj4hyI7zvdd?utm_source=rss&utm_medium=article",
-      "title_original": "Snowflake Expedition 大会亮出哪些新能力？一文梳理重磅更新 ｜ 技术趋势",
-      "title_zh": "Snowflake Expedition 大会亮出哪些新能力？一文梳理重磅更新 ｜ 技术趋势",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T08:31:54.817Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44703243614"
-      }
-    },
-    {
-      "fingerprint": "3c83b3cb570c5d88",
-      "url": "https://www.infoq.cn/article/tfy0PQW5LMZCXlCugMo6?utm_source=rss&utm_medium=article",
-      "title_original": "Cloudflare 重构 D1 控制平面，支持数百万数据库规模",
-      "title_zh": "Cloudflare 重构 D1 控制平面，支持数百万数据库规模",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T08:31:54.817Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44703243614"
-      }
-    },
-    {
-      "fingerprint": "b648af7e65653914",
-      "url": "https://www.infoq.cn/article/YTGHxcabs0RI3btLIUxm?utm_source=rss&utm_medium=article",
-      "title_original": "火山引擎 Agent-Native 团队的上下文管理实践｜AICon北京",
-      "title_zh": "火山引擎 Agent-Native 团队的上下文管理实践｜AICon北京",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T08:31:54.817Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44703243614"
-      }
-    },
-    {
-      "fingerprint": "f5a2ba7355633a38",
-      "url": "https://www.oschina.net/news/503689",
-      "title_original": "qKnow 智能体构建平台专业版 v3.1.6 发布：底座组件标准化升级，主题与品牌定制能力上线",
-      "title_zh": "qKnow 智能体构建平台专业版 v3.1.6 发布：底座组件标准化升级，主题与品牌定制能力上线",
-      "summary_zh": "随着智能体应用逐步落地，平台除了需要持续完善核心业务能力，也需要关注基础组件、系统配置和应用运行等方面的建设。对于企业私有化部署场景而言，平台界面是否统一、主题能否灵活调整、品牌信息是否便于配置，都会影响项目交付和日常使用体验。 本次 q…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T01:09:49.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T08:31:54.817Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44703243614"
-      }
-    },
-    {
-      "fingerprint": "1df80ba4eb1bc779",
-      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
-      "title_original": "PostgreSQL 19 Released",
-      "title_zh": "PostgreSQL 19 发布",
-      "summary_zh": "PostgreSQL 19 发布。往年新版本通常在九月推出，今年的发布提前了两个月。",
-      "tags": [
-        "other"
-      ],
-      "level": "trending",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-11-19T20:43:57.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "9a4228edcadb1e49",
-      "url": "https://www.oschina.net/news/503687",
-      "title_original": "Casvisor 2.0.0 发布：新增系统账号与自动改密、MySQL 和 PostgreSQL 审计、作业中心",
-      "title_zh": "Casvisor 2.0.0 发布：新增系统账号与自动改密、MySQL 和 PostgreSQL 审计、作业中心",
-      "summary_zh": "Apache-2.0 开源堡垒机 Casvisor 发布 2.0.0。该版本补齐了系统账号、数据库审计、批量作业、访问申请和审计日志导出等能力，仍是单个 Go 二进制，没有企业版。 系统账号与改密 一个资产现在可以挂多个系统账号（如 ro…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T18:03:08.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T08:31:54.817Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44703243614"
-      }
-    },
-    {
-      "fingerprint": "109751d7d5111a60",
-      "url": "https://www.oschina.net/news/503686",
-      "title_original": "Jync v2.4.1 · TDengine 轮询源与布尔 / 改列修复",
-      "title_zh": "Jync v2.4.1 · TDengine 轮询源与布尔 / 改列修复",
-      "summary_zh": "新增 TDengine 轮询源：新增 TDengine 3.x 预设（预设数 35 种），经官方驱动 3.10.0 的 WebSocket 接口（6041 端口）读取，需自备 taos-jdbcdriver-3.10.0-dist.jar…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T15:50:25.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T08:31:54.817Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44703243614"
-      }
-    },
-    {
-      "fingerprint": "23f4d2f3996ee0d9",
-      "url": "https://www.infoq.cn/article/Mf3Zbm9JF3RWbkvjMKYZ?utm_source=rss&utm_medium=article",
-      "title_original": "Sam Altman罕见发声：我不担心Anthropic先上市，市场上不缺投资者",
-      "title_zh": "Sam Altman罕见发声：我不担心Anthropic先上市，市场上不缺投资者",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T14:57:55.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T18:15:26.007Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44585806696"
-      }
-    },
-    {
-      "fingerprint": "b4c5a5a35c97edd1",
-      "url": "https://css-tricks.com/almanac/functions/s/scroll-state/",
-      "title_original": "scroll-state()",
-      "title_zh": "scroll-state()",
-      "summary_zh": "介绍 CSS 的 scroll-state() 查询，指出它虽名为 scroll，却与用户反复滚动页面的行为无关。",
-      "tags": [
-        "frontend",
-        "standards"
-      ],
-      "level": "general",
-      "source_id": "css-tricks",
-      "source_name": "CSS-Tricks",
-      "original_lang": "en",
-      "published_at": "2026-11-19T14:57:54.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "294514d485965fad",
-      "url": "https://www.oschina.net/news/503685/llm-assisted-reverse-engineering",
-      "title_original": "二十年逆向老手：LLM 给我的好奇心装上了涡轮增压",
-      "title_zh": "二十年逆向老手：LLM 给我的好奇心装上了涡轮增压",
-      "summary_zh": "一名从事硬件和软件逆向已有二十年的工程师，最近半年做出了许多他自称「每一个手做都要花好几年」的成果。 他的原话是：在 2026 年，有了 AI 的辅助，这个过程被大幅加速了。 他用什么 主力是 DeepSeek Harness + Dee…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T10:57:36.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T18:15:26.007Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44585806696"
-      }
-    },
-    {
-      "fingerprint": "4139759b18c4c7dc",
-      "url": "https://www.oschina.net/news/503684/anthropic-prices-initial-public-offering",
-      "title_original": "Anthropic IPO 发行价定了：每股 83 美元",
-      "title_zh": "Anthropic IPO 发行价定了：每股 83 美元",
-      "summary_zh": "Anthropic 把 IPO 发行价定在了每股 83 美元。发行规模 9.8 亿股 A 类普通股，其中 9.5635 亿股由 Anthropic 自己卖出，2365 万股来自现有股东。公司不会从后者那部分拿到任何收益。按这个数字算，募资…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T10:10:51.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T18:15:26.007Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44585806696"
-      }
-    },
-    {
-      "fingerprint": "9d527acfccc97d04",
-      "url": "https://www.infoq.cn/article/6xqcZfMgJ99ZQiGFbjym?utm_source=rss&utm_medium=article",
-      "title_original": "模型刚接进业务，CEO又要换新：红帽如何接住企业AI落地难题？",
-      "title_zh": "模型刚接进业务，CEO又要换新：红帽如何接住企业AI落地难题？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T10:05:40.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T18:15:26.007Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44585806696"
-      }
-    },
-    {
-      "fingerprint": "068a299f66d4276f",
-      "url": "https://www.oschina.net/news/503681",
-      "title_original": "wlnmp 一键安装包更新 261119（修复NGINX2Root漏洞）",
-      "title_zh": "wlnmp 一键安装包更新 261119（修复NGINX2Root漏洞）",
-      "summary_zh": "wlnmp 一键安装包 261119 更新内容如下： （更新）nginx1.30.7。 受NGINX2Root漏洞影响，请所有用户尽快更新Nginx至该版本，更新任何版本前，请做好数据备份。 该版本重写了/etc/init.d/nginx…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T09:45:39.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T18:15:26.007Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44585806696"
-      }
-    },
-    {
-      "fingerprint": "64b7276aa99e6443",
-      "url": "https://www.oschina.net/news/503679/nginx-http2-rce-vulnerabilities",
-      "title_original": "NGINX 被曝两个高危 RCE，其中一个在代码里藏了十年",
-      "title_zh": "NGINX 被曝两个高危 RCE，其中一个在代码里藏了十年",
-      "summary_zh": "NGINX 近日被曝出两个高危漏洞：编号 CVE-2026-123633 和 CVE-2026-123007，都能让未认证的攻击者在服务器上执行任意代码。CVSS 4.0 都是 9.2，两个都要求服务器启用了 HTTP/2。 它们由五个团…",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T09:15:27.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T18:15:26.007Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44585806696"
-      }
-    },
-    {
-      "fingerprint": "1eef91a1028190a0",
-      "url": "https://www.oschina.net/news/503678",
-      "title_original": "clice v1.0 正式发布，采用现代 C++ 编写的 C/C++ 语言服务器",
-      "title_zh": "clice v1.0 正式发布，采用现代 C++ 编写的 C/C++ 语言服务器",
-      "summary_zh": "clice v1.0 发布了。 它是一个 C/C++ 语言服务器，基于 LLVM/Clang，但和同样基于 Clang 的 clangd 走了完全不同的一条路——作者说这是彻底的重新设计，目标是解决这些语言服务器中因为架构问题而数年无法解…",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T08:48:06.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T18:15:26.007Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44585806696"
-      }
-    },
-    {
-      "fingerprint": "e69eab28cd0041f6",
-      "url": "https://www.infoq.cn/article/rtBT5s1opGGazFgQi0YS?utm_source=rss&utm_medium=article",
-      "title_original": "杀入Agent主场之后：两年内部分替代自回归，扩散智能的底气从何而来？| 专访",
-      "title_zh": "杀入Agent主场之后：两年内部分替代自回归，扩散智能的底气从何而来？| 专访",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T08:32:33.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T08:46:39.943Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44490447037"
-      }
-    },
-    {
-      "fingerprint": "556c818552ac914b",
-      "url": "https://www.infoq.cn/video/Cfrl4QYhD3dHMuhGt6hw?utm_source=rss&utm_medium=article",
-      "title_original": "Agent 实干派：从人人可用到全栈工程进化 | InfoQ 小编探班",
-      "title_zh": "Agent 实干派：从人人可用到全栈工程进化 | InfoQ 小编探班",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T08:16:29.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T08:46:39.943Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44490447037"
-      }
-    },
-    {
-      "fingerprint": "b0f8805fb9492d44",
-      "url": "https://www.infoq.cn/article/NR0Wal4xOQ3b5flxE0Hi?utm_source=rss&utm_medium=article",
-      "title_original": "价值为先，金融智能体应用实践 | TF技术前线188期报名",
-      "title_zh": "价值为先，金融智能体应用实践 | TF技术前线188期报名",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T08:11:32.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T08:46:39.943Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44490447037"
       }
     }
   ]
