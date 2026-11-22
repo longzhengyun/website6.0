@@ -1,9 +1,78 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-21T16:46:09.611Z",
+  "generated_at": "2026-11-22T07:58:37.370Z",
   "mode": "rss_only",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "de1135db8c16df1a",
+      "url": "https://www.infoq.cn/article/fs4IuBTjwIwR1xUgdjqt?utm_source=rss&utm_medium=article",
+      "title_original": "Pinterest 联合英特尔将开源性能分析推向互联网级规模",
+      "title_zh": "Pinterest 联合英特尔将开源性能分析推向互联网级规模",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-22T03:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T07:58:37.370Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "45000615066"
+      }
+    },
+    {
+      "fingerprint": "a729b50598368f4a",
+      "url": "https://www.infoq.cn/article/721YPdyIZ1D8xz20D22C?utm_source=rss&utm_medium=article",
+      "title_original": "智能体身份国际标准化：体系布局与研制实践｜AICon北京",
+      "title_zh": "智能体身份国际标准化：体系布局与研制实践｜AICon北京",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-22T02:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T07:58:37.370Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "45000615066"
+      }
+    },
+    {
+      "fingerprint": "b8470b477572a3a6",
+      "url": "https://www.infoq.cn/article/XhtWUmaolJECUhPX2jzY?utm_source=rss&utm_medium=article",
+      "title_original": "亚马逊云科技推出 TorchNeuron，可以直接在 AWS Trainium 上运行 PyTorch 模型，无需任何修改",
+      "title_zh": "亚马逊云科技推出 TorchNeuron，可以直接在 AWS Trainium 上运行 PyTorch 模型，无需任何修改",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-22T02:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-22T07:58:37.370Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "rss_only",
+        "enriched_by": null,
+        "run_id": "45000615066"
+      }
+    },
     {
       "fingerprint": "d37760741bcc4655",
       "url": "https://www.oschina.net/news/503716",
@@ -2252,75 +2321,6 @@
       "source_name": "InfoQ 中文",
       "original_lang": "zh",
       "published_at": "2026-11-19T08:11:32.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T08:46:39.943Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44490447037"
-      }
-    },
-    {
-      "fingerprint": "a1a81eadce91a7b1",
-      "url": "https://www.infoq.cn/article/DQlimzDy7bqiZ3mc5Vvq?utm_source=rss&utm_medium=article",
-      "title_original": "快与真：范式首批国产算力训练的Phai系列模型，究竟有什么不同",
-      "title_zh": "快与真：范式首批国产算力训练的Phai系列模型，究竟有什么不同",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "frontend"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T08:08:30.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T08:46:39.943Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44490447037"
-      }
-    },
-    {
-      "fingerprint": "66ae1e90a2f98ec7",
-      "url": "https://www.oschina.net/news/503675/google-gemini-4-neon",
-      "title_original": "Gemini 4 Neon 发布：Google 在最强和最便宜之间，塞进了一个中间档",
-      "title_zh": "Gemini 4 Neon 发布：Google 在最强和最便宜之间，塞进了一个中间档",
-      "summary_zh": "Gemini 4 系列现在是三个档位：Carbon 攻坚最难的长周期项目，Hydrogen 负责日常快速执行，新来的 Neon 卡在中间——按 Google 自己的说法，是「平衡深度与效率」。 输入每百万 token 3 美元，缓存输入 …",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T07:45:47.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-19T08:46:39.943Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "rss_only",
-        "enriched_by": null,
-        "run_id": "44490447037"
-      }
-    },
-    {
-      "fingerprint": "ae80de27a4b8c4a1",
-      "url": "https://www.infoq.cn/minibook/UAGTBMHJ8mTIx95CFzmo?utm_source=rss&utm_medium=article",
-      "title_original": "街道办 AI 智能化白皮书",
-      "title_zh": "街道办 AI 智能化白皮书",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-19T07:41:28.000Z",
       "date_inferred": false,
       "fetched_at": "2026-11-19T08:46:39.943Z",
       "duplicate_of": null,

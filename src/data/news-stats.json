@@ -1,6 +1,6 @@
 {
-  "run_id": "44926345290",
-  "generated_at": "2026-11-21T16:46:09.611Z",
+  "run_id": "45000615066",
+  "generated_at": "2026-11-22T07:58:37.370Z",
   "mode": "rss_only",
   "llm": {
     "key_present": true,
@@ -8,9 +8,9 @@
     "model": "deepseek-v4.1-flash",
     "token_budget": 100000,
     "budget_exceeded": false,
-    "calls": 2,
-    "batches_failed": 1,
-    "aborted": false,
+    "calls": 6,
+    "batches_failed": 3,
+    "aborted": true,
     "input_tokens": 0,
     "output_tokens": 0
   },
@@ -19,8 +19,8 @@
       "id": "hn-frontpage",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 8,
-      "ms": 2244,
+      "items_new": 20,
+      "ms": 302,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
       "status": "ok",
       "items_fetched": 10,
       "items_new": 0,
-      "ms": 315,
+      "ms": 510,
       "error": null
     },
     {
@@ -36,7 +36,7 @@
       "status": "ok",
       "items_fetched": 40,
       "items_new": 0,
-      "ms": 228,
+      "ms": 213,
       "error": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "ok",
       "items_fetched": 15,
       "items_new": 0,
-      "ms": 6954,
+      "ms": 801,
       "error": null
     },
     {
@@ -52,15 +52,15 @@
       "status": "ok",
       "items_fetched": 20,
       "items_new": 0,
-      "ms": 172,
+      "ms": 397,
       "error": null
     },
     {
       "id": "simonwillison",
       "status": "ok",
       "items_fetched": 30,
-      "items_new": 0,
-      "ms": 93,
+      "items_new": 1,
+      "ms": 83,
       "error": null
     },
     {
@@ -68,15 +68,15 @@
       "status": "ok",
       "items_fetched": 0,
       "items_new": 0,
-      "ms": 4250,
+      "ms": 4176,
       "error": null
     },
     {
       "id": "infoq-cn",
       "status": "ok",
       "items_fetched": 20,
-      "items_new": 0,
-      "ms": 1611,
+      "items_new": 3,
+      "ms": 1703,
       "error": null
     },
     {
@@ -84,24 +84,27 @@
       "status": "ok",
       "items_fetched": 50,
       "items_new": 0,
-      "ms": 4666,
+      "ms": 3000,
       "error": null
     }
   ],
   "counts": {
     "fetched": 205,
-    "in_window": 8,
-    "deduped_existing": 48,
-    "new_items": 8,
+    "in_window": 24,
+    "deduped_existing": 18,
+    "new_items": 24,
     "ai_enriched": 0,
     "re_enriched": 0,
     "dropped_invalid": 0,
-    "dropped_nonzh_r17": 8,
+    "dropped_nonzh_r17": 21,
     "future_clamped": 0
   },
   "news_items_total": 100,
   "degraded_all_sources": false,
   "errors": [
-    "enrichment batch 0 failed: fetch failed"
+    "enrichment batch 0 failed: fetch failed",
+    "enrichment batch 10 failed: fetch failed",
+    "enrichment batch 20 failed: fetch failed",
+    "AI aborted after consecutive failures, remainder stored rss_only"
   ]
 }
