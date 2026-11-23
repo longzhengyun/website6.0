@@ -1,9 +1,709 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-23T08:59:55.925Z",
-  "mode": "rss_only",
+  "generated_at": "2026-11-23T21:19:35.976Z",
+  "mode": "ai",
   "stats_ref": "news-stats.json",
   "items": [
+    {
+      "fingerprint": "2456aae0dcbaf026",
+      "url": "https://cardcatalogforlife.substack.com/p/wikipedia-has-hidden-doors-heres",
+      "title_original": "Wikipedia Has Hidden Doors",
+      "title_zh": "维基百科有隐藏的门",
+      "summary_zh": "一篇 Substack 文章介绍维基百科中一些不为人知的隐藏入口，并在 Hacker News 上引发讨论。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T21:09:14.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "8ca3bd8f647bd5a0",
+      "url": "https://aeon.co/essays/the-origins-of-the-state-are-not-agrarian-but-pastoralist",
+      "title_original": "The horse made the state",
+      "title_zh": "马造就了国家",
+      "summary_zh": "Aeon 的一篇文章提出，国家的起源并非来自农业社会，而是来自游牧社会。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T20:59:12.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "0bb5fdcc92fa3ebf",
+      "url": "https://arm.jonpalmisc.com/",
+      "title_original": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
+      "title_zh": "应 Arm 的要求，本站将于 2026 年 12 月 4 日停止运营 :(",
+      "summary_zh": "一个网站在首页公告称，应 Arm 方面的要求，站点将于 2026 年 12 月 4 日停止运营。",
+      "tags": [
+        "other"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T19:17:55.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "6851a6a04065867c",
+      "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+      "title_original": "Apple removed my open-source app from EU App Stores after 9 years",
+      "title_zh": "9 年后，苹果将我的开源应用从欧盟 App Store 下架",
+      "summary_zh": "一位开发者在 GitHub 讨论区称，其开源应用在运营 9 年后被苹果从欧盟区 App Store 移除。",
+      "tags": [
+        "tools",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T18:48:10.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "86e9f5c95662b124",
+      "url": "https://www.greptile.com/blog/trex-computer-use",
+      "title_original": "How should an LLM see a computer?",
+      "title_zh": "LLM 应该如何看待一台计算机？",
+      "summary_zh": "Greptile 博客文章探讨让大语言模型操作计算机时，应以何种方式理解屏幕与界面信息。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T17:19:25.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "5d4fbf8ddc9ca1d0",
+      "url": "https://blog.kagi.com/kagi-mail-public-beta",
+      "title_original": "Kagi Mail (public beta)",
+      "title_zh": "Kagi 邮箱（公开测试）",
+      "summary_zh": "Kagi 官方博客宣布其邮箱产品进入公开测试阶段。",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T17:17:01.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "53510b5370cd8096",
+      "url": "https://twitter.com/ylecun/status/2124550037912920090",
+      "title_original": "Dario is hyping the dangers so OSS models are illegal and he stays in control",
+      "title_zh": "Dario 大肆渲染危险，是为了让开源模型变得非法，从而保持自己的控制地位",
+      "summary_zh": "一条推文指责 Dario 夸大 AI 风险，认为其目的在于推动禁止开源模型并维持自身控制权。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T17:07:26.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "146b79248d0a360d",
+      "url": "https://www.easypost.com/careers/",
+      "title_original": "EasyPost (YC S13) Is Hiring",
+      "title_zh": "EasyPost（YC S13）正在招聘",
+      "summary_zh": "EasyPost 在其招聘页面发布岗位信息。",
+      "tags": [
+        "career"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T17:00:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "69a7af6d9248e5ad",
+      "url": "https://ladybird.org/posts/alpha/",
+      "title_original": "Ladybird is now in alpha",
+      "title_zh": "Ladybird 进入 alpha 阶段",
+      "summary_zh": "Ladybird 浏览器项目发布公告，宣布其进入 alpha 阶段。",
+      "tags": [
+        "frontend",
+        "tools"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T16:13:12.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "3484d4a65cc0b513",
+      "url": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3jzqe/cyberleek_posted_the_gta_6_xbox_build_executable/",
+      "title_original": "Cyberleek posted the GTA 6 Xbox build executable",
+      "title_zh": "Cyberleek 发布了 GTA 6 Xbox 构建版本的可执行文件",
+      "summary_zh": "Reddit 帖子称，用户 Cyberleek 发布了《GTA 6》Xbox 构建版本的可执行文件。",
+      "tags": [
+        "other",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T14:49:44.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "3f1e3d33b9acc8f9",
+      "url": "https://css-tricks.com/using-frontend-fallbacks/",
+      "title_original": "Using Fallbacks for a Robust Front-End",
+      "title_zh": "使用回退方案构建健壮的前端",
+      "summary_zh": "介绍在前端开发中使用回退（fallback）机制提升健壮性，既能静默规避错误，也能在异常时提供替代方案。",
+      "tags": [
+        "frontend"
+      ],
+      "level": "general",
+      "source_id": "css-tricks",
+      "source_name": "CSS-Tricks",
+      "original_lang": "en",
+      "published_at": "2026-11-23T14:21:44.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "d2239469fe885689",
+      "url": "https://css-tricks.com/dev-material-archive/",
+      "title_original": "Dev Material Archive",
+      "title_zh": "开发资料档案库",
+      "summary_zh": "一个收录网络开发相关文章的档案库，旨在重新找回并保存已失传的网页开发文章与帖子。",
+      "tags": [
+        "frontend",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "css-tricks",
+      "source_name": "CSS-Tricks",
+      "original_lang": "en",
+      "published_at": "2026-11-23T14:18:50.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "39b7363c4e0edea6",
+      "url": "https://boland.dev/snet/",
+      "title_original": "Building a wireless network adapter for the Super Nintendo",
+      "title_zh": "为超级任天堂打造无线网络适配器",
+      "summary_zh": "作者分享了为超级任天堂（SNES）主机自制无线网络适配器的过程与技术细节。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T14:16:37.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "cf5164636ad3b77e",
+      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+      "title_original": "Nvidia Reinstates Jensen Huang as CEO",
+      "title_zh": "英伟达重新任命黄仁勋为首席执行官",
+      "summary_zh": "英伟达宣布重新任命黄仁勋为公司首席执行官，多家媒体对此进行了报道。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T14:00:18.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "9f183e9f9f75c876",
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "title_original": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+      "title_zh": "NariQ：在 10 GB 文件中实现 BF16 级别的 Qwen3.8-27B",
+      "summary_zh": "NariQ 将 Qwen3.8-27B 量化为 3 位及更低精度，模型文件约 10 GB，在智能体任务、数学等场景接近 BF16 质量。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T13:42:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "d497cc3428644548",
+      "url": "https://github.com/mikuta0407/win4wine",
+      "title_original": "Win4wine – Run Windows Shell as the Linux Desktop on Wine",
+      "title_zh": "Win4wine——在 Wine 上把 Windows Shell 当作 Linux 桌面运行",
+      "summary_zh": "Win4wine 项目可在 Wine 上运行 Windows Shell，并将其作为 Linux 桌面使用。",
+      "tags": [
+        "tools",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T12:28:11.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "0420b36ef0165792",
+      "url": "https://www.infoq.cn/video/its3v5OfmRuikL5SeWUu?utm_source=rss&utm_medium=article",
+      "title_original": "企业 AI 发展新趋势：推动 AI Agent 迈向规模化应用的新阶段",
+      "title_zh": "企业 AI 发展新趋势：推动 AI Agent 迈向规模化应用的新阶段",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-23T11:52:07.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "d5ebd560c8944223",
+      "url": "https://www.infoq.cn/video/qWRo8T0IdKoI7RBuQwNd?utm_source=rss&utm_medium=article",
+      "title_original": "AI 时代的数据工程：如何打造 AI 原生团队",
+      "title_zh": "AI 时代的数据工程：如何打造 AI 原生团队",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai",
+        "career"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-23T11:40:31.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "c51851c7d73a6b25",
+      "url": "https://blogs.gentoo.org/mgorny/2026/10/27/the-next-circle-of-security-hell/",
+      "title_original": "The next circle of security hell",
+      "title_zh": "下一个安全地狱轮回",
+      "summary_zh": "一篇讨论软件安全领域接连出现的新一轮棘手问题的博客文章。",
+      "tags": [
+        "security"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T11:34:16.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "2f0ea28c76b9c87e",
+      "url": "https://www.infoq.cn/video/zDX7VX1ZLsWM2BNMJLc1?utm_source=rss&utm_medium=article",
+      "title_original": "重塑财务职能：引领 AI 时代的转型",
+      "title_zh": "重塑财务职能：引领 AI 时代的转型",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-23T11:33:50.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "20d4c8c8afcf099b",
+      "url": "https://github.com/os6/nospeaker",
+      "title_original": "Nospeaker ─ Make your MacBook's trackpad talk using its haptic motor",
+      "title_zh": "Nospeaker——用触觉马达让你的 MacBook 触控板“说话”",
+      "summary_zh": "Nospeaker 项目利用 MacBook 触控板内置的触觉马达，让触控板发出声音。",
+      "tags": [
+        "tools",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T11:31:54.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "3a08cc97ac1de963",
+      "url": "https://www.infoq.cn/video/cw3OFxCPlVBE625COukc?utm_source=rss&utm_medium=article",
+      "title_original": "当你的下一位客户是 AI Agent：企业营销与销售的 AI 发展前景",
+      "title_zh": "当你的下一位客户是 AI Agent：企业营销与销售的 AI 发展前景",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-23T11:16:30.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "ccbf83b3f623158c",
+      "url": "https://www.infoq.cn/video/pZRYMTB7olLHTR3BuxaB?utm_source=rss&utm_medium=article",
+      "title_original": "构建主权 AI 技术栈：开放权重、前沿模型与企业控制平面",
+      "title_zh": "构建主权 AI 技术栈：开放权重、前沿模型与企业控制平面",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-23T11:08:40.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "66dcbc2fc5d7e83e",
+      "url": "https://www.oschina.net/news/503757",
+      "title_original": "特斯拉新版 FSD 的炫酷画面，由车机上的 1B 模型实时生成",
+      "title_zh": "特斯拉新版 FSD 的炫酷画面，由车机上的 1B 模型实时生成",
+      "summary_zh": "马斯克在 X 上解释了特斯拉新版 FSD 那个看起来非常酷炫的显示效果是怎么做出来的：不是 3D 渲染，是一个 1B 的扩散模型在车机上实时生成视频。 他写得很直白： \"We've had a ~pixel-perfect world m…",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-23T10:56:06.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "0747f8087cc806d0",
+      "url": "https://www.oschina.net/news/503756",
+      "title_original": "智谱官宣 GLM-5.4：采用 Loop Transformer 架构、开启“泛 Coding”能力",
+      "title_zh": "智谱官宣 GLM-5.4：采用 Loop Transformer 架构、开启“泛 Coding”能力",
+      "summary_zh": "智谱官方刚刚发布了 GLM-5.4 的技术公告，把架构、数据、能力提升，以及限制都摆出来了。 先说最硬的一个数字：GLM-5.4 是在 750B 的基座上，对其中 28 层做两轮循环。官方的说法是\"智能水平达到 2-3T 级模型\"。 官方…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-23T10:30:11.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "37cdd999434ac0c8",
+      "url": "https://www.oschina.net/news/503754/postgresql-19-released",
+      "title_original": "PostgreSQL 19 正式发布",
+      "title_zh": "PostgreSQL 19 正式发布",
+      "summary_zh": "PostgreSQL 19 发布后，社区最关注的不是新功能，而是问了一句：这是史上 bug 最少的 .0 版本，那我还要不要等 .1？ 有人给出很实在的答案：关键生产系统还是等等，因为正式版装机的基数远大于 beta/RC 阶段，很多问题…",
+      "tags": [
+        "other"
+      ],
+      "level": "trending",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-23T10:15:05.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "f1db7ce98881d890",
+      "url": "https://z.ai/blog/glm-5.4",
+      "title_original": "GLM-5.4: Toward generalized coding with our first loop transformer",
+      "title_zh": "GLM-5.4：以首个循环 Transformer 迈向通用编码",
+      "summary_zh": "智谱发布 GLM-5.4，采用其首个循环 Transformer 结构，目标是提升通用编码能力。",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T10:06:43.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "d93a6886907134e4",
+      "url": "https://jola.dev/posts/you-cant-afford-ssh-keys-disk",
+      "title_original": "Don't keep your SSH keys on disk",
+      "title_zh": "不要把你的 SSH 密钥放在磁盘上",
+      "summary_zh": "文章论述将 SSH 密钥以文件形式保存在磁盘上的风险，并主张改用其他保管方式。",
+      "tags": [
+        "security"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T09:55:38.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "5add501cf4d5ed14",
+      "url": "https://www.infoq.cn/article/7912LtESaQAFaci2lFor?utm_source=rss&utm_medium=article",
+      "title_original": "Java 近期新闻：TornadoVM、A2A Java、Open Liberty、Open J Proxy、Gradle、EclipseStore",
+      "title_zh": "Java 近期新闻：TornadoVM、A2A Java、Open Liberty、Open J Proxy、Gradle、EclipseStore",
+      "summary_zh": "点击查看原文>",
+      "tags": [
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "infoq-cn",
+      "source_name": "InfoQ 中文",
+      "original_lang": "zh",
+      "published_at": "2026-11-23T09:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "0f48ce918ee5be39",
+      "url": "https://www.oschina.net/news/503750/google-deepmind-genie-4",
+      "title_original": "谷歌世界模型 Genie 4 更新，支持“实时”更改世界",
+      "title_zh": "谷歌世界模型 Genie 4 更新，支持“实时”更改世界",
+      "summary_zh": "在生成的世界里走着走着，打一行字，天气就变了；再打一行，一个角色出现在你面前；想换个走向，直接说。 Genie 4 最核心的升级就是这个：你可以在一段生成世界的中途，用文字改写它。 之前的 Project Genie 是「生成一个世界然后…",
+      "tags": [
+        "ai"
+      ],
+      "level": "trending",
+      "source_id": "oschina-news",
+      "source_name": "OSCHINA 开源中国",
+      "original_lang": "zh",
+      "published_at": "2026-11-23T08:59:18.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
     {
       "fingerprint": "4f66b59d77a17f05",
       "url": "https://www.oschina.net/news/503748",
@@ -327,6 +1027,241 @@
       }
     },
     {
+      "fingerprint": "cd02a86f341630ad",
+      "url": "https://arxiv.org/abs/2611.26663",
+      "title_original": "Adding One More Agent: How AI Team Size and Formation Shape Productivity and Diversity in Human-AI Brainstorming Teams",
+      "title_zh": "再加一个智能体：AI 团队规模与构成如何影响人机头脑风暴团队的产出与多样性",
+      "summary_zh": "论文研究生成式 AI 虽提升个人生产力，但在人机头脑风暴团队中增加 AI 智能体数量对产出与多样性的影响。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-23T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "585cc50ff286833b",
+      "url": "https://arxiv.org/abs/2611.26717",
+      "title_original": "Coherence by Construction: Synthesizing CTI Knowledge Graphs and the Formal Limits of Coherence Validation",
+      "title_zh": "构造即一致：合成 CTI 知识图谱与一致性验证的形式化边界",
+      "summary_zh": "论文探讨用模型合成网络威胁情报知识图谱等关系型训练数据，并分析一致性验证在形式上的局限。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-23T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "2ffd747d4cc71821",
+      "url": "https://arxiv.org/abs/2611.26722",
+      "title_original": "TOUMAII: A 4.5M-Pair Tool-Calling Preference Dataset and Its Source-Agnostic Generator",
+      "title_zh": "TOUMAII：一个 450 万对工具调用偏好数据集及其与来源无关的生成器",
+      "summary_zh": "论文面向企业智能体多步任务执行，构建含 450 万对样本的工具调用偏好数据集，并提出不依赖数据来源的生成器。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-23T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "461a81e08dcc750a",
+      "url": "https://arxiv.org/abs/2611.26782",
+      "title_original": "ChatAtom: A Multi-Agent LLM System for Molecular Dynamics Simulation and Visualization",
+      "title_zh": "ChatAtom：用于分子动力学模拟与可视化的多智能体大模型系统",
+      "summary_zh": "论文提出 ChatAtom 多智能体大模型系统，用于分子动力学模拟的执行与结果可视化。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-23T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "ba63b85712814233",
+      "url": "https://arxiv.org/abs/2611.26794",
+      "title_original": "Beyond Final Answers: Interpretable Tumor Immune Microenvironment Reasoning from H&E and mIF",
+      "title_zh": "超越最终答案：从 H&E 与 mIF 图像进行可解释的肿瘤免疫微环境推理",
+      "summary_zh": "论文关注肿瘤免疫微环境指标的可解释推理，基于 H&E 与多重免疫荧光（mIF）图像，而不只给出最终预测结果。",
+      "tags": [
+        "ai",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-23T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "9e7d1b0c4460f6f1",
+      "url": "https://arxiv.org/abs/2611.26797",
+      "title_original": "Memorization and Generalization in Generative Models: A Perspective From Energy-based Modeling and Associative Memory",
+      "title_zh": "生成模型中的记忆与泛化：基于能量建模与联想记忆的视角",
+      "summary_zh": "论文从能量建模与联想记忆的角度，分析生成模型在记忆训练数据与泛化到新样本之间的关系。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-23T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "03465724b88b0cc0",
+      "url": "https://arxiv.org/abs/2611.26870",
+      "title_original": "Beyond Demographic Discrimination: Benchmarking Normative-Descriptive Calibration in LLMs",
+      "title_zh": "超越人口统计歧视：评估大模型中的规范性与描述性校准",
+      "summary_zh": "论文提出对大模型在规范性判断与描述性事实之间校准程度的评测方法，范围超出常见的人口统计偏见测试。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-23T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "d255db050aaeae04",
+      "url": "https://arxiv.org/abs/2611.26903",
+      "title_original": "Towards Robust Partial-Edit Deepfake Localization: An edit and Generator Conditioned Analysis",
+      "title_zh": "迈向稳健的部分编辑深度伪造定位：一项编辑与生成器条件分析",
+      "summary_zh": "该论文研究部分编辑深度伪造定位，识别被操纵区域，并分析编辑与生成器条件。",
+      "tags": [
+        "ai",
+        "security"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-23T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "7afd1e283c6656dc",
+      "url": "https://arxiv.org/abs/2611.26906",
+      "title_original": "Budget-Aware Predict-and-Verify Theorem Proving with Heterogeneous LLM Solvers",
+      "title_zh": "预算感知的预测与验证定理证明：使用异构 LLM 求解器",
+      "summary_zh": "研究在预算约束下，使用异构大语言模型求解器进行预测与验证的定理证明方法。",
+      "tags": [
+        "ai",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-23T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
+      "fingerprint": "9727016a4ca8e93e",
+      "url": "https://arxiv.org/abs/2611.26910",
+      "title_original": "AstronautBench: Measuring Agent Self-Improvement Across Episodes Through Knowledge, Evidence, and Progress",
+      "title_zh": "AstronautBench：通过知识、证据与进展衡量智能体跨回合自我改进",
+      "summary_zh": "提出 AstronautBench 基准，从知识、证据与进展维度衡量 LLM 智能体跨回合的自我改进能力。",
+      "tags": [
+        "ai"
+      ],
+      "level": "general",
+      "source_id": "arxiv-cs-ai",
+      "source_name": "arXiv cs.AI new",
+      "original_lang": "en",
+      "published_at": "2026-11-23T05:00:00.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
       "fingerprint": "32678208c6112d7a",
       "url": "https://www.oschina.net/news/503739/nadella-admits-vs-code-faded-in-six-months",
       "title_original": "微软 CEO 纳德拉承认，VS Code 的护城河被人从终端绕过去了",
@@ -347,6 +1282,30 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "45143099845"
+      }
+    },
+    {
+      "fingerprint": "b7cf04a84828baaf",
+      "url": "https://github.com/AFK-surf/xnulinux",
+      "title_original": "XNU Linux: Full OS X GUI Userspace on Linux",
+      "title_zh": "XNU Linux：在 Linux 上运行完整的 OS X 图形界面用户空间",
+      "summary_zh": "XNU Linux 项目旨在 Linux 上运行完整的 OS X 图形界面用户空间。",
+      "tags": [
+        "tools",
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T03:49:24.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
       }
     },
     {
@@ -580,6 +1539,29 @@
       }
     },
     {
+      "fingerprint": "eab63579d6f6bbeb",
+      "url": "https://spelunkr.tv",
+      "title_original": "Free alternative TV network built from the Internet Archive's forgotten videos",
+      "title_zh": "用互联网档案馆被遗忘的视频搭建的免费替代电视网络",
+      "summary_zh": "一个以互联网档案馆中被遗忘的视频为素材搭建的免费替代电视网络网站。",
+      "tags": [
+        "other"
+      ],
+      "level": "general",
+      "source_id": "hn-frontpage",
+      "source_name": "Hacker News Front Page",
+      "original_lang": "en",
+      "published_at": "2026-11-23T01:13:51.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
+      }
+    },
+    {
       "fingerprint": "b6e3196005121397",
       "url": "https://www.oschina.net/news/503729",
       "title_original": "🔥 拾趣 Magpie v0.2.0 发布：模型视图更准确，词典功能上新，多项细节优化",
@@ -600,6 +1582,30 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "45143099845"
+      }
+    },
+    {
+      "fingerprint": "71ff2ee8bf23be9b",
+      "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+      "title_original": "Select Styling Specimens",
+      "title_zh": "Select 样式样本集",
+      "summary_zh": "一个展示 HTML select 元素样式的工具。作者因各浏览器默认渲染的输入框外观不一致而制作此样本集。",
+      "tags": [
+        "frontend",
+        "tools"
+      ],
+      "level": "general",
+      "source_id": "simonwillison",
+      "source_name": "Simon Willison (Web.dev for AI)",
+      "original_lang": "en",
+      "published_at": "2026-11-22T19:45:06.000Z",
+      "date_inferred": false,
+      "fetched_at": "2026-11-23T21:19:35.976Z",
+      "duplicate_of": null,
+      "pipeline": {
+        "mode": "ai",
+        "enriched_by": "deepseek-v4.1-flash",
+        "run_id": "45268449740"
       }
     },
     {
@@ -1327,1010 +2333,6 @@
         "mode": "rss_only",
         "enriched_by": null,
         "run_id": "45143099845"
-      }
-    },
-    {
-      "fingerprint": "d37760741bcc4655",
-      "url": "https://www.oschina.net/news/503716",
-      "title_original": "具身智创·生态共融，2026人形机器人开发者大会将于11月25日举办",
-      "title_zh": "具身智创·生态共融，2026人形机器人开发者大会将于11月25日举办",
-      "summary_zh": "为贯彻落实国务院关于推动人形机器人产业发展的决策部署，汇聚全球开发者协同创新，由北京经济技术开发区管理委员会指导的2026人形机器人开发者大会拟于2026年11月25日在北京亦庄北人亦创国际会展中心会议厅（南）举办。 大会以“具身智创·生…",
-      "tags": [
-        "ai",
-        "other"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-21T07:03:13.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "73b8e6cd4b52d07c",
-      "url": "https://amateurphotographer.com/latest/these-astonishing-insect-portraits-reveal-a-hidden-world-you-never-knew-existed/",
-      "title_original": "Surprisingly Adorable Insect Portraits",
-      "title_zh": "令人意外地可爱的昆虫肖像",
-      "summary_zh": "一组昆虫肖像摄影作品，呈现人们平时难以看到的微观世界。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-21T06:44:14.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "4fd24093a1461ec1",
-      "url": "https://ricapar.net/ClawDOS/",
-      "title_original": "ClawDOS – An AI coding agent for DOS",
-      "title_zh": "ClawDOS——面向 DOS 的 AI 编程智能体",
-      "summary_zh": "一个运行于 DOS 环境的 AI 编程智能体项目，附带项目页面与讨论链接。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-21T05:38:01.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "635d581c26061737",
-      "url": "https://www.backblaze.com/company/policy/privacy",
-      "title_original": "Backblaze Notice at Collection and Privacy Policy",
-      "title_zh": "Backblaze 的信息收集告知与隐私政策",
-      "summary_zh": "Backblaze 公布其信息收集告知与隐私政策文本。",
-      "tags": [
-        "security",
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-21T03:23:16.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "03e36868411e0ea7",
-      "url": "https://www.infoq.cn/article/TrWuo2vEZRl2xB2XXZNX?utm_source=rss&utm_medium=article",
-      "title_original": "智能体 AI 架构：当前挑战与未来机遇",
-      "title_zh": "智能体 AI 架构：当前挑战与未来机遇",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-21T03:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "4940277caa961fbb",
-      "url": "https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-your-brain/",
-      "title_original": "Clojure will affect the way you think about programming (2017)",
-      "title_zh": "Clojure 会改变你对编程的思考方式（2017）",
-      "summary_zh": "一篇 2017 年的文章，论述 Clojure 语言如何影响开发者对编程的思考方式。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-21T02:40:39.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "51b6050d9f7cb316",
-      "url": "https://www.infoq.cn/article/vhoobUFbLs2hUlTBA4HZ?utm_source=rss&utm_medium=article",
-      "title_original": "TaoDesign 的知识工程实践：从设计资产到 Agent 持续进化｜AICon北京",
-      "title_zh": "TaoDesign 的知识工程实践：从设计资产到 Agent 持续进化｜AICon北京",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-21T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "ebd4ecab5831dca3",
-      "url": "https://www.infoq.cn/article/6swrOq5xUXwVqrREwJwc?utm_source=rss&utm_medium=article",
-      "title_original": "Entire Git Forge：面向编码智能体重构 Git 协作方式",
-      "title_zh": "Entire Git Forge：面向编码智能体重构 Git 协作方式",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "tools",
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-21T02:00:00.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "9a9e9d6e4076ab01",
-      "url": "https://www.ruv.is/english/2026-11-20-serious-cyberattack-thought-backed-by-wealthy-operators-493411",
-      "title_original": "Serious cyberattack thought backed by wealthy operators",
-      "title_zh": "严重网络攻击被认为有财力雄厚的运营者支持",
-      "summary_zh": "冰岛媒体报道称，一桩严重网络攻击被怀疑由资金雄厚的运营者提供支持。",
-      "tags": [
-        "security"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T23:29:30.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "61dcc6fa995985d2",
-      "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid",
-      "title_original": "Sir Brian May adds new dimension to Hera asteroid",
-      "title_zh": "布莱恩·梅爵士为赫拉小行星任务增添新维度",
-      "summary_zh": "欧空局介绍布莱恩·梅参与赫拉小行星探测任务相关内容，为任务增添新的呈现维度。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T23:19:44.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "3293eb0f037addf5",
-      "url": "https://news.ycombinator.com/item?id=50583761",
-      "title_original": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
-      "title_zh": "Ask HN：我已失业两年，有 15 年经验，在美国，该怎么办？",
-      "summary_zh": "一位美国资深软件工程师称自己拥有 15 年经验、曾在财富 50 强公司任职，目前已失业两年，发帖寻求建议。",
-      "tags": [
-        "career"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T23:18:32.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "5465256941915f1b",
-      "url": "https://ninlive.com/",
-      "title_original": "NINLIVE: The Nine Inch Nails live archive",
-      "title_zh": "NINLIVE：九寸钉现场演出档案库",
-      "summary_zh": "一个收录 Nine Inch Nails 现场演出资料的在线档案站点。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T22:30:47.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "bd3614c30b5d6b83",
-      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
-      "title_original": "Inkling 2 Mini",
-      "title_zh": "Inkling 2 Mini",
-      "summary_zh": "Thinking Machines 发布名为 Inkling 2 Mini 的新条目，附带官方新闻链接与讨论。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T20:12:19.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "24102431fdfe804a",
-      "url": "https://signoregalilei.com/2026/11/20/and-yet-it-moves/",
-      "title_original": "And yet, it moves",
-      "title_zh": "然而，它仍在移动",
-      "summary_zh": "一篇标题取自伽利略相关说法的文章，具体内容未在摘要中给出。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T20:07:55.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "a8c812cefc0f3f3f",
-      "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
-      "title_original": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
-      "title_zh": "DreamCoder：来自《Mastering Emacs》作者的编码工具与 IDE",
-      "summary_zh": "《Mastering Emacs》作者发布 DreamCoder，其中包含编码工具与 IDE。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T20:03:59.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "0df7b71bba4fa10b",
-      "url": "https://scottaaronson.blog/?p=10344",
-      "title_original": "The stochastic parrots have apparently proved the Riemann Hypothesis",
-      "title_zh": "随机鹦鹉显然已经证明了黎曼猜想",
-      "summary_zh": "文章讨论所谓“随机鹦鹉”（语言模型）似乎已证明黎曼猜想这一说法。",
-      "tags": [
-        "ai"
-      ],
-      "level": "trending",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T20:03:07.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": "3b3270b0917323ae",
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "c3446b23e48f37df",
-      "url": "https://winedroid.soham.sh/demo/",
-      "title_original": "Winedroid – run Android apps without Android (WASM demo)",
-      "title_zh": "Winedroid——无需 Android 即可运行 Android 应用（WASM 演示）",
-      "summary_zh": "Winedroid 提供 WASM 演示，可在没有 Android 的环境下运行 Android 应用。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T19:30:16.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "0d8e213cc0d8372d",
-      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
-      "title_original": "Quoting Ravi Vakil",
-      "title_zh": "引自 Ravi Vakil",
-      "summary_zh": "Ravi Vakil 的引语，涉及 Alessandro Masullo 提出的广义黎曼猜想证明，以及 Brian Conrad 正在仔细审阅该证明的情况。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-11-20T19:21:49.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "541f0f41a26e8fbe",
-      "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
-      "title_original": "Hurried Announcement: Alessandro Masullo GRH",
-      "title_zh": "仓促的公告：Alessandro Masullo 的广义黎曼猜想",
-      "summary_zh": "一则仓促发布的公告，内容涉及 Alessandro Masullo 提出的广义黎曼猜想证明。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T18:33:14.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "c884460ec18c9cae",
-      "url": "https://manidoraisamy.com/developer-to-architect.html",
-      "title_original": "We promoted developers into architects without informing them",
-      "title_zh": "我们把开发者提拔为架构师，却没有告知他们",
-      "summary_zh": "文章讲述团队将开发者提拔为架构师，却未就此与当事人沟通所带来的问题。",
-      "tags": [
-        "career"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T18:17:51.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "111a51744cb7f878",
-      "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
-      "title_original": "Vibecoding an inference chip",
-      "title_zh": "用 vibe coding 打造一颗推理芯片",
-      "summary_zh": "作者讲述如何以 vibe coding 的方式设计一颗推理芯片。",
-      "tags": [
-        "ai",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T18:15:16.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "447c4f9c35ce8af3",
-      "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
-      "title_original": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
-      "title_zh": "无外力驱动的纳维–斯托克斯奇点与广义黎曼猜想",
-      "summary_zh": "陶哲轩博客文章，讨论无外力驱动情形下的纳维–斯托克斯奇点与广义黎曼猜想。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T17:21:36.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "054ddb7e73b778f0",
-      "url": "https://github.com/XITRIX/ppsspp-nx2/blob/master/SWITCH2-GAMESHARE.md",
-      "title_original": "Running two PSP emulators on one Switch 2 and sharing one via GameShare",
-      "title_zh": "在一台 Switch 2 上运行两个 PSP 模拟器，并通过 GameShare 共享其中一个",
-      "summary_zh": "文章介绍如何在一台 Switch 2 上同时运行两个 PSP 模拟器，并通过 GameShare 功能共享其中一个。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T17:14:03.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "9e4d32c6771429a1",
-      "url": "https://certuvia.com/blog/postgres-19",
-      "title_original": "PostgreSQL 19: A hands-on tour with runnable browser examples",
-      "title_zh": "PostgreSQL 19：带可运行浏览器示例的实操导览",
-      "summary_zh": "文章以可直接在浏览器中运行的示例，逐步演示 PostgreSQL 19 的新特性与用法。",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T17:08:56.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "0217300bae3fe729",
-      "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
-      "title_original": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
-      "title_zh": "谷歌员工要求雇主不要惩罚不愿使用 AI 的学校",
-      "summary_zh": "谷歌员工发起联名请愿，要求公司不要惩罚拒绝采用 AI 工具的学校。",
-      "tags": [
-        "ai",
-        "career"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T16:59:27.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "6de61fb8a31c5d00",
-      "url": "https://news.ycombinator.com/item?id=50577613",
-      "title_original": "I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA",
-      "title_zh": "我是 Peter Roberts，为 YC 和初创公司工作的移民律师。AMA",
-      "summary_zh": "为 YC 与初创公司服务的移民律师 Peter Roberts 在 Hacker News 开帖答问，话题由提问者决定。",
-      "tags": [
-        "career"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T16:45:25.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "7220e54bdf8a93f9",
-      "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
-      "title_original": "Quoting Levent Alpöge",
-      "title_zh": "引自 Levent Alpöge",
-      "summary_zh": "一段引用：Levent Alpöge 称与 Claude 合作发现了黎曼猜想的证明，并表示该方法可轻易扩展。",
-      "tags": [
-        "ai",
-        "other"
-      ],
-      "level": "general",
-      "source_id": "simonwillison",
-      "source_name": "Simon Willison (Web.dev for AI)",
-      "original_lang": "en",
-      "published_at": "2026-11-20T16:30:48.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "03b179946dd0e551",
-      "url": "https://arxiv.org/abs/2611.21885",
-      "title_original": "Language Models Can Rewrite Their Own Weights",
-      "title_zh": "语言模型能够重写自身权重",
-      "summary_zh": "一篇 arXiv 论文提出，语言模型可以重写自身的权重参数。",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T16:29:06.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "f3bb721442cb0b97",
-      "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
-      "title_original": "I'll never buy Framework hardware again",
-      "title_zh": "我再也不会买 Framework 的硬件了",
-      "summary_zh": "作者讲述自己使用 Framework 笔记本的经历，并表示今后不再购买该品牌硬件。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T16:06:30.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "bf82adff4bf6ffb3",
-      "url": "https://github.com/tristanbuckmaster/navier-stokes/",
-      "title_original": "Finite-time blow-up for the Navier–Stokes equations",
-      "title_zh": "纳维–斯托克斯方程的有限时间爆破",
-      "summary_zh": "一份公开材料给出纳维–斯托克斯方程在有限时间内发生爆破的证明。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T15:34:31.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "b14c0a58f3466ef7",
-      "url": "https://slopstrap.mikelacher.com/",
-      "title_original": "Slopstrap – Make your site look hastily vibecoded",
-      "title_zh": "Slopstrap——让你的网站看起来像是匆忙 vibe coding 出来的",
-      "summary_zh": "Slopstrap 提供样式，让网站看起来像匆忙用 AI 编码搭出来的产物。",
-      "tags": [
-        "frontend",
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T15:24:11.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-21T08:16:15.840Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44884059504"
-      }
-    },
-    {
-      "fingerprint": "f953fe4968a4385e",
-      "url": "https://css-tricks.com/andy-clarke-standout-designs-for-the-web-interview/",
-      "title_original": "Andy Clarke answers six questions about Standout Designs for the Web",
-      "title_zh": "安迪·克拉克就《Standout Designs for the Web》回答六个问题",
-      "summary_zh": "网页设计师、作家、Stuff & Nonsense 创始人安迪·克拉克推出新电子书《Standout Designs for the Web》，并就此回答六个问题。",
-      "tags": [
-        "frontend",
-        "other"
-      ],
-      "level": "general",
-      "source_id": "css-tricks",
-      "source_name": "CSS-Tricks",
-      "original_lang": "en",
-      "published_at": "2026-11-20T15:03:47.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "44b655258efa2ec9",
-      "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
-      "title_original": "Why there are still no non-WebKit browsers on iOS",
-      "title_zh": "为什么 iOS 上仍然没有非 WebKit 浏览器",
-      "summary_zh": "Mozilla 博客文章解释 iOS 上至今仍只有 WebKit 内核浏览器可用的原因。",
-      "tags": [
-        "frontend",
-        "standards"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T15:03:31.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "3b3270b0917323ae",
-      "url": "https://alpo.ge/remark.pdf",
-      "title_original": "Anthropic employee claims general proof of the Riemann Hypothesis [pdf]",
-      "title_zh": "Anthropic 员工声称给出黎曼猜想的一般性证明 [pdf]",
-      "summary_zh": "一名 Anthropic 员工发布 PDF 文档，声称给出了黎曼猜想的通用证明。",
-      "tags": [
-        "other"
-      ],
-      "level": "trending",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T14:16:21.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "cdb079564327b565",
-      "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
-      "title_original": "If you stop writing code, you also get worse at reviewing it",
-      "title_zh": "如果你不再写代码，你审查代码的能力也会变差",
-      "summary_zh": "文章认为长期不写代码会削弱开发者评审代码的能力。",
-      "tags": [
-        "career"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T12:41:38.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "7b3c906cbd18ea0c",
-      "url": "https://www.infoq.cn/article/3xzCDJBbDREm4EJFJWrH?utm_source=rss&utm_medium=article",
-      "title_original": "财报再亮眼也没用！黄仁勋想回去，英伟达董事会偏不让",
-      "title_zh": "财报再亮眼也没用！黄仁勋想回去，英伟达董事会偏不让",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "career",
-        "other"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T10:48:14.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "035035ef3ef6e8ba",
-      "url": "https://www.infoq.cn/video/ODJ7iuw7swP8TlU4SiAB?utm_source=rss&utm_medium=article",
-      "title_original": "AI 来了，团队究竟怎么变？",
-      "title_zh": "AI 来了，团队究竟怎么变？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "career"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T10:43:54.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "0aa1a9bc9710e0c2",
-      "url": "https://www.infoq.cn/article/tDxNggErsJNeb53ZkYeF?utm_source=rss&utm_medium=article",
-      "title_original": "“美国大豆包”又发新模型，Neon 接入 Antigravity 后编程解题率升至三倍多",
-      "title_zh": "“美国大豆包”又发新模型，Neon 接入 Antigravity 后编程解题率升至三倍多",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T10:41:34.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "0e849b5d4259167a",
-      "url": "https://jeanmicheljarre.com/aaa/the-making-of-oxygene",
-      "title_original": "The Making of Oxygene",
-      "title_zh": "《Oxygene》的创作过程",
-      "summary_zh": "介绍让-米歇尔·雅尔专辑《Oxygene》的创作过程与幕后。",
-      "tags": [
-        "other"
-      ],
-      "level": "general",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T10:41:10.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "6feb1b29fad9ab8b",
-      "url": "https://www.infoq.cn/video/qafOtORWUX0eD0WfSlYi?utm_source=rss&utm_medium=article",
-      "title_original": "Agent 上岗，你敢放手吗？",
-      "title_zh": "Agent 上岗，你敢放手吗？",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai",
-        "career"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T10:25:42.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "7786b207dc13a6d5",
-      "url": "https://www.infoq.cn/article/LCqRiGDSeMBfXo4iktdA?utm_source=rss&utm_medium=article",
-      "title_original": "华为云开源昇腾原生具身世界模型CloudRobo-WM1.2，两项评测均列第一",
-      "title_zh": "华为云开源昇腾原生具身世界模型CloudRobo-WM1.2，两项评测均列第一",
-      "summary_zh": "点击查看原文>",
-      "tags": [
-        "ai"
-      ],
-      "level": "general",
-      "source_id": "infoq-cn",
-      "source_name": "InfoQ 中文",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T10:19:11.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "413cb2261643ca16",
-      "url": "https://www.oschina.net/news/503711",
-      "title_original": ":fire: xbatis 1.10.11 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
-      "title_zh": ":fire: xbatis 1.10.11 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
-      "summary_zh": "推荐理由： 强、强、强 ，单表？连表？不想连表？让你直接少写 1/3 甚至 2/3 的持久层代码；API 简单 快捷 优雅 简洁 构建 SQL 非常强！用过的 没用过的都来体验，虽然有 AI 了，但是真正好用的 ORM 的还不能忽略的，除…",
-      "tags": [
-        "tools"
-      ],
-      "level": "general",
-      "source_id": "oschina-news",
-      "source_name": "OSCHINA 开源中国",
-      "original_lang": "zh",
-      "published_at": "2026-11-20T10:02:48.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
-      }
-    },
-    {
-      "fingerprint": "3381c1b46b2b81fa",
-      "url": "https://architectlabs.com/blog/frostbite",
-      "title_original": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-      "title_zh": "Frostbite：一种由 AI 发现、设计并验证的新 CPU 架构",
-      "summary_zh": "介绍名为 Frostbite 的新 CPU 架构，据称由 AI 完成发现、设计与验证。",
-      "tags": [
-        "ai",
-        "other"
-      ],
-      "level": "trending",
-      "source_id": "hn-frontpage",
-      "source_name": "Hacker News Front Page",
-      "original_lang": "en",
-      "published_at": "2026-11-20T10:01:41.000Z",
-      "date_inferred": false,
-      "fetched_at": "2026-11-20T17:46:21.340Z",
-      "duplicate_of": null,
-      "pipeline": {
-        "mode": "ai",
-        "enriched_by": "deepseek-v4.1-flash",
-        "run_id": "44786422900"
       }
     }
   ]
